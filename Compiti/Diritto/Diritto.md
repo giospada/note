@@ -232,3 +232,4 @@ scopo: maggiore ponderazione nella formazione delle leggi e “controllo” reci
 difetto: procedimento lungo e senza limite temporale: si allungano i tempi di lavoro del Parlamento.
 
 
+
