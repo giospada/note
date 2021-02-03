@@ -1,8 +1,10 @@
 
 
 
-
-
+Buisness:
+- Creare una mini fabbrica per produrli
+- servizio prima delle autostrade per l'affitto
+- cerare di diventare l'importatore europeo
 
 
 
@@ -49,7 +51,7 @@
 **Jiang**:
 - monitorare e cercare di 
 
-**RIki**:
+**Riki**:
 - case green
 
 **Salerno**

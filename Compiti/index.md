@@ -37,6 +37,12 @@ usare il ':call CreateIndex()' comando per fare l'update
 - [Italiano.md](Italiano/Italiano.md)
 - [Italiano4.md](Italiano/Italiano4.md)
 
+### Ricerca
+
+- [Index](Ricerca/index.md)
+- [PTCO.md](Ricerca/PTCO.md)
+- [Vietnam.md](Ricerca/Vietnam.md)
+
 ### Storia
 
 - [Index](Storia/index.md)

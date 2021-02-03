@@ -231,6 +231,9 @@ per criteri contabili:
   concretizzano il pagamento e la riscossione delle entrate e delle spese 
   ovvero considera i flussi rffettivi di cassa in entrata e uscita 
 
+
+
+
   
 Pag 105 Politiche ecomomiche 
 il bilancio è una visione programmatica 
@@ -258,4 +261,165 @@ entrate ordinarie:
 
 
 
+### Bilancio UE
 
+nell' unione europea esistono due gruppi di stati:
+- unione europea
+- unione economica e monetaria: che devono far per forza parte dell'unione europea
+
+il **bilancio europeo** viene redatto ogni **sette anni** e 
+consente di **retizzale politiche europee** deve essere sempre in equilibrio
+tra le entrate e le spese (**pareggio**)
+
+redatto dal consiglio e approvato dal parlamento
+
+**Entrate**:
+- **contributi dei vari stati membri**:che contribuiscono per 1% del loro PIL
+- **dazi doganali**: che sono l'unica imposta prelevata direttamente prelevata 
+  dall'UE
+
+**Uscite**:
+- **Politiche di coesione**: politiche d'aiuto alle regioni con il PIL più basso
+- **Politica Agricola Comunitaria**:  sostegno dei redditi degli agricoltori
+ e la difesa del territorio rurale
+- **funzionamento delle amministrazioni europee**:finanziano per esempio
+ i centri di prima accoglienza
+
+### Fondi strutturali 
+
+**Fondi Strutturali** sono uno strumento pe attuare le politiche economiche
+progetti specifici contro le disuguaglianze e le differenze 
+
+- fondo di coesione: ambinete  e trasporti
+- fondo sociale europeo
+- fondo europeo di scilu
+<!-- TODO -->
+
+
+### Finanza pubblica nell'Eurozona
+
+
+per l'ingresso e per restare nell'Eurozona devono rispettare dei parametri
+creati nel **Trattato di Maastrich**
+
+- rapporto tra il deficit pubblico e PIL ingeriore al 3% annuo
+- rapporto tra debito pbblico e PIL ingeriore al 60%
+
+**Politiche economiche di rientro** sono delle politiche attuate dagli 
+stati per 
+
+### Crisi 2008
+
+gli stati avevano un debito ubblico già alto
+
++ le entrate fiscali degli stati:diminuite per le imposte sui redditi
++ aumento della disoccupazine: che ha portato a politiche per 
+  il sostegno dei redditi famigliari
++ gli stati hanno aiutato le banche
+
+
+### Fiscal Compact
+
+è un trattato per la stabilità gli stati si impegnano ad aderire
+alle politiche fiscali
+
+sostiene gli stati sottoscritti in caso di crisi economica imponendo 
+constirzioni sui bilanci nazionali **misure di austerity**
+
+riforma della costituzione art 81:
+principio di sotenibilità del debito pubblico e principio di pareggio
+nel bilancio
+
+il saldo non deve essere negativo e in caso di violazione se non per 
+casi eccezionali (calamità naturali) deve prevedere meccanismi di aggiustamento automoatici
+
+### Le spese e le Entrate pubbliche
+
+il settore pubblico è l'insieme degli enti pubblici che hanno lo scopo di realizare le funzioni dell'amministrazione di uno stato e si differenziano:
+- centrali : nazionali
+- locali: solo una parte 
+- enti di previdenza:sia locale che centrale e si occupano di pensioni
+
+enti statali: se ne occupa lo 
+
+
+### finalità ente pubblico
+
+- conscitivo: che chiunque può visionare il bilancio dell'ente pubblico
+- politica: che deve rivelare gli obbiettivie i risultati previsti dai soggetti pubblici
+- autorizzativa: che ogni spesa deve essere preventivamente approvata e una volta approvata e dopo è constretto attarla
+
+### Conto consolidato delle amminstrazioni pubbliche italiane
+
+è un documento nel quale trovano collocazione le entrate e le spese degli enti
+aggrega quindi occorre sommare i saldi delle parti uguali ( somma le entrate 
+e le uscite dei tre settori Centrali, Locali e Prevvidenziali)
+
+
+La contabilità delle amministrazioni segue:
+- **contabilità economica** la contabilita dell'aquisto o vendita di risorse
+- **competenza economica** cioè devono essere registrate nel momento in cui
+ avviene indipendentemente da quando verrà pagato
+
+### Le spese pubbliche
+
+Y(reddito)=I(investimenti)+C(consumi)+G(spesa pubblica)
+
+la spesa pubblica è l'insieme di risorse che lo stato mette per realizzare le 
+loro finialità
+
+moltiplicatore keynesiano: il meccanismo degli aumenti della spesa pubblica
+che producono incrementi proporzionali nel PIL
+
+### Il criterio della destinazione economica 
+
+- **spese correnti**: spese che vengono attute per li normale funzionamento 
+ dell'attuale amministrazione
+- **spese conto capitale**: spese che modificano il patrimonio delle 
+ amministrazioni pubbliche
+ 
+### criterio della frequenza
+- **spese ordinarie**:sono spese che ricorrono con regolarità nel tempo
+- **spese straordinarie**:spese che vengono effettuate una volta ogni tanto
+ per imprevisti
+
+### Le Entrate pubbliche
+
+costituiscono l'insieme delle risorse economiche che premettono alle 
+amministrazioni pubbliche di svolgere le loro funzioni principali
+
+- **entrate tribuarie**: entrate che lo stato
+- **entrate extratributarie**:
+    - **rediti del partimonio pubblico**:es musei
+    - **il debito pubblico**: es prestiti chesti a vario titolo
+     
+oltre che alle spese le entrate servono per:
+- redistribuire le risorse
+- stabilizzare il sistema economico
+- correzione dell inefficenze
+
+### citerio della destinazione econmica
+
+- entrate correnti: prevengono con sistematicità all'ente pubblico
+- entrate in conto capitale: incidio sul patrimonio pubblico
+- entrate originarie: generate dal patrimonio pubblico o da un attività 
+  economica fatta da una azienda pubblica
+- prezzo:è il corrispettivo pagato dal cittadini per beni o sevizi prodotti
+ dallo stato
+    - pubblico:mira solo a coprire i costi di produzione
+    - privato:è quello che scaturisce dal mercato
+    - politico:più basso di quello per coprire i costi
+     
+entrate derivate: sono prelevamenti coattivi di ricchezza
+- imposte:sono il corrispettivo dei servizi
+    - imposte dirette:colpiscono direttamente il reddito e il patrimonio
+    - imposte indirette: colpiscono i consumi e i trasferimenti di ricchezza
+    - contributi sociali:osno richiesti ai lavoratori e ai datori di lavoro 
+  prestazioni di varia natura
+- tasse:sono il corrispettivo per servizi indivuduali richiesti
+- contributi fiscali:sono versati da chi benicicia di un servizio pubblico 
+ anche non richiesto
+
+frequenza temporale:
+- entate ordinarie:si ripetono con regolarià
+- entrate straordinarie: presentano carattere di eccezionalita

@@ -3,13 +3,12 @@
 usare il ':call CreateIndex()' comando per fare l'update 
 ---
 
-
-
 # Index
 
 ### Files
 
 - [Notable.md](Notable.md)
+- [README.md](README.md)
 
 
 ### Compiti
@@ -21,8 +20,8 @@ usare il ':call CreateIndex()' comando per fare l'update
 - [Info](Compiti/Info/index.md)
 - [Inglese](Compiti/Inglese/index.md)
 - [Italiano](Compiti/Italiano/index.md)
+- [Ricerca](Compiti/Ricerca/index.md)
 - [Storia](Compiti/Storia/index.md)
-- [Ricerche](Compiti/Ricerca/index.md)
 
 ### Computer
 
