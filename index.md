@@ -20,6 +20,7 @@ usare il ':call CreateIndex()' comando per fare l'update
 - [Inglese](Compiti/Inglese/index.md)
 - [Italiano](Compiti/Italiano/index.md)
 - [Storia](Compiti/Storia/index.md)
+- [Ricerche](Compiti/Ricerca/index.md)
 
 ### Computer
 

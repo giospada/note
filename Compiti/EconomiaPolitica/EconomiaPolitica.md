@@ -230,10 +230,30 @@ per criteri contabili:
 - **bilancio di casa** considera importante il momento materiale in cui si 
   concretizzano il pagamento e la riscossione delle entrate e delle spese 
   ovvero considera i flussi rffettivi di cassa in entrata e uscita 
--
+
   
+Pag 105 Politiche ecomomiche 
+il bilancio è una visione programmatica 
 
+il bilancio UE deve essere in pareggio(non si vuole indebitare)
 
+i finanziamenti che arrivano dai contibuti statali di ogni paese
+\+ dazi doganali dai paesi extra ue e vengono spesi nella politica economica
+europea
+
+il coniglio dell'unione predispone le poiltiche di coesione/agricole/di 
+amministrazione e funzionamento
+
+strumenti finanziari in cui si destinano i fondi 
+regioni e governo devono predisporre i piani per questi fondi
+
+i due parametri rapporto pil e deficit pubbico
+
+il debito si riduce solo con la cresita
+
+entrate ordinarie:
+- prezzo :è un corrispettivo del bene che compri
+- le imposte: 
 
 
 
