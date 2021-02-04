@@ -233,3 +233,38 @@ difetto: procedimento lungo e senza limite temporale: si allungano i tempi di la
 
 
 
+
+
+### Verifica di diritto
+
+
+- parlamento 
+- governo 
+
+Governo:
+1. Funzini
+2. Composizione
+3. Formazione:
+    - inizio legislatura
+    - in seguito a dimissioni del  presidente per crisi di governo 
+      parlamentare o extraparlamentare
+
+
+> il governo è l'organo che ha il potere esecutivo
+
+*esecutivo attuare le norme e i progetti del parlaemnto 
+
+il governo è il motore della vita politica 
+
+il governo deve metterle in pratica il potere esecutivo attraverso 
+i ministri 
+
+fare politica: prendere decisioni per la comunità
+
+l'indirizzo politico è dettato dal parlamento e dal  governo
+
+
+
+
+
+
