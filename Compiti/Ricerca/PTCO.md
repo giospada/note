@@ -1,4 +1,44 @@
 
+## Slides
+
+1. 1°copertina :
+    - nome dell'impresa
+    - istituto scolastico
+    - classe
+2. 2/3/4/5:
+    - presupposti e motivazioni
+    - che hanno orientato la scelta
+    - vistion
+    - mission
+3. struttura dell'impresa:
+    - nome , logo
+    - forma giuridica
+    - capitale sociale
+4. 9/10/11/12/13:
+    - core buisness
+    - che cosa
+    - come
+    - perchè
+5. 14/15/16/17 analisi di bilancio
+
+
+
+
+### Supermercato Green
+
+#### App 
+
+- l'app sarà utilizzata per prelevare i buoni dagli imballaggi consegnati
+- o per scannerizare dei qr che indicano dove trovare un piatto
+
+
+gruppi:
+- un gruppo che pensa all'imballaggio
+- un gruppo che pensa alla grafica
+- un gruppo che pensa ai vestiti
+- un gruppo che pensa 
+
+
 
 
 Buisness:
@@ -6,7 +46,7 @@ Buisness:
 - servizio prima delle autostrade per l'affitto
 - cerare di diventare l'importatore europeo
 
-
+### Idee
 
 **Ferrari**:
 - azienda che crea oggetti per twitch e youtuber

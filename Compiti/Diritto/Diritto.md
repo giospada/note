@@ -264,7 +264,12 @@ fare politica: prendere decisioni per la comunità
 l'indirizzo politico è dettato dal parlamento e dal  governo
 
 
+Il governo si forma: dopo la nuova legislatura(votazioni del parlamento)
+(elezione politiche) e la camera e il senato votano il governo
 
+senatore di diritto ( gli ex presidenti della repubblica ) + 5 senatori a vita 
+che possono essere cambiati dal presidente della repubblica
 
+il presidente della repubblica deve fare un giro di consultazioni ogni partito fa la sua proposta di personaggi programma politico, individuazione delle possibilità di creare un governo 
 
-
+Cirsi di governo: 
