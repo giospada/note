@@ -289,7 +289,7 @@ italo svevo : sia italiano che tedesco (la mittleuropa)triestino
 legge le opere di freud 
 figura dell'inetto che si accetta
 
-primi due libbri fallimenti : una vita , senilità(avere un atteggiamento da vecchi ),
+**primi due libbri fallimenti**: una vita , senilità(avere un atteggiamento da vecchi ),
 per più di ventanni non pubblica nulla,
 dissoluione del tempo lienare(procede per macrotemi),
 
@@ -448,17 +448,21 @@ picasso le: madmuaselle d'avignon
 
 **Storia**
 
-Pirandello nasce in una famiglia borghese ( padre garibaldino che possedeva
-delle **miniere di zolfo**), affascinato dagli ideali anarchici e sovversivi
-entra in **conflitto con i padre** e i valori borghesi da lui rappresentati 
-(denaro sicurezza nel affrontare problemi) studia prima a roma (dove 
-conosce capuana) e poi in germania dove legge gli scrittori romantici.
+Pirandello nasce in una famiglia borghese a **agrigento**
+(in una villa chiamata CAOS)
+( padre garibaldino che possedeva delle **miniere di zolfo**) ,
+affascinato dagli ideali anarchici e sovversivi
+entra in **conflitto con i padre** e i valori borghesi da lui 
+rappresentati (denaro sicurezza nel affrontare problemi) 
+studia prima a roma (dove conosce capuana) 
+e poi in germania dove legge gli scrittori romantici.
 
-si sposa con **Antonietta Portulano** che dopo l'allagamento delle miniere
-che farà crollare il suo equilibrio psicologico, per sostenere 
-economicamente la famiglia incomincia a scrivere su giornali e poi 
-pubblica **il fu mattia pascal** (dove incomincia la fase umoristica),
-inoltre pubblica molte novelle sul corriere della sera
+si sposa con **Antonietta Portulano** che dopo l'allagamento 
+delle miniere che farà crollare il suo equilibrio 
+psicologico, per sostenere economicamente la famiglia 
+incomincia a scrivere su giornali e poi 
+pubblica **il fu mattia pascal** (dove incomincia la fase umoristica)
+, inoltre pubblica molte novelle sul corriere della sera
 
 passa poi al teatro con il **teatro del grottesco** cratarizzato da
 situazioni paradossali che denunciano l'assurdità della condizione
@@ -475,8 +479,12 @@ a finanziare il suo teatro e incomincia una relazione con
 **uno nessuno e centomila** finale inaspettato con una fiducia nella natura
 e dell'uomo di trovare un accordo con essa 
 
-Vince il **noblel** nel mentre si giunge a un rifiuto del fasciscmo
+Vince il **noblel** per la letteratura nel 1934 in pieno fascimo
+nel mentre si giunge a un rifiuto del fasciscmo
 che non viene mai proclamato pubblicamente, muore a roma di polmonite
+
+i personaggi di prinandello sono animali a roma pidocchi o serpenti
+in sicilia cavalli impazziti, fiere
 
 Temi:
 - **relativismo gnoseologico**:(relativizzare la gnosi nota sotto) cioè 
@@ -510,5 +518,61 @@ le novelle piccolo diventano **atti unici**
  
 Mirò : Pittore 
  
+ ### Il fu mattia pascal
 
-450/1 no videolezione , da 452 a 6 no metateatro ( pera desso)  459/60
+**Temi**:
+- tema del doppio
+- crisi d'identità del protagonista
+- la famiglia come nido o prigione
+- la critica alla civiltà della macchina
+- ilrelativismo di ogni coscenza
+ 
+ 
+ 
+ **Il doppio**:
+ - dottor jaking and mr hide
+ - il visconte dimezzato
+ - il ritratto di dorian gray
+
+
+
+
+### il fu mattia pascal
+
+1904
+
+**storia**:
+
+Bibbliotecario nel paese di Miragno dove ha trascorso una vita agiata, che dopo la morte affidano i soldi 
+a l'amministratore malagna che glie li ruba, così deve andare a lavorare
+e in casa ha la moglie e la nuora che lo disprezzano, così scappa 
+e arriva a monte carlo dove vince e così mentre sta per tornare a casa
+scropre che lo pensano morto e con la somma si sposta da un posto all'altro
+assumendo l'identità di Aiuliano Mais, ma si sente emarginato e senza un passato
+arriva a roma dove si innamora di Adriana con cui non si può sposare e neanche
+denuciare una truffa che gli fa perdere molti soldi, così incomincia a corteggiare
+una findanzata di un pittore per allontanare Adriana, e una volta che il pittore lo 
+sfida a duello ne approfitta per fingere un suicidio
+
+
+
+i temi e i motivi ricorrenti sono:
+- **l'inetto**:l'essere incapace di adattarsi alla vita normale
+- **il doppio**
+- **la famiglia come nido o come prigione**: la famigila che prima viene vista come un ambinete protetto e poi come una pena da cui non si può scappare
+- **il gioco d'azzardo e lo spiritismo**:sono simbolo di una relatività nella condizione umana
+- **La modernità,la città,il progresso**:afferma che le macchine possano aiutare a migliorare la situazione dell'uomo ma non la sua felicità
+- **relativismo filosofico**:è la costante variazione della precezione del mondo
+
+**Struttura**
+Il romanzo ha una cornice che lega l'inizio e la fine, in cui Mattia vecchio che non si riconosce più come Mattia Pascal, scrive la sua vita in una biblioteca in uno stato di non vita.
+Poi scrive  dell'infanzia e dell'adolescenza caratterizate dalla spenzierateza che si concludono con il Matrimonio con Romilda.
+Poi una seconda parte in cui Adriano viaggia per l'italia e l'Europa ma finisce ancora fallendo.
+
+
+**Caratteristiche**:
+- prima persoan anziche terza 
+- discorso indiretto libero
+- incompaginamento dell'ordine coronologico
+- discorso indiretto libero
+

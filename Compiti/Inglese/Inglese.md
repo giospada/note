@@ -142,6 +142,36 @@ during the regime of King Edward III
 
 
 
+### Verifica sul Buisness transaction
+
+parole che non ricordo
+
+|     Inglese     |           Italiano            |
+|:---------------:|:-----------------------------:|
+| quote/quotation |          preventivo           |
+|    dispatch     |          spedizione           |
+|    amendment    | correzione rettifica modifica |
+|     ammount     |           ammontare           |
+| to arrange for  |         provvedere a          |
+|    compelled    |           obbligato           |
+| conditional on  |         subordinato a         |
+|    lot/batch    |         partita merce         |
+|  discontinued   |    non è più in produzione    |
+|  to hand over   |     consegnare documenti      |
+|     regrect     |       essere spiacenti        |
+|   settlement    |           pagamento           |
+|    warehouse    |           magazzino           |
+|  pushase order  |       ordine d'acquisto       |
+|     invoice     |            fattura            |
+|                 |                               |
+
+
+
+
+
+
+
+
 
 
 
