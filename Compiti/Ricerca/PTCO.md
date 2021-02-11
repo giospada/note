@@ -23,6 +23,42 @@
 
 
 
+giro di scatole se le noleggare le scatole  al supermercato
+che le igenizza per ridarle al supermercato
+
+il supermercato paga 1 euro alla scatola e si occupa di dare il cash back
+
+- analisi di quanto il cliente risparmia
+- c'è un concetto di loialty
+
+creare i flussi e poi mettere dentro i numeri
+- primo flusso consegna cassette
+- riempite le cassatte
+- vendita
+- riportare le cassette  e cash back
+- riportare le cassette a noi e igenizzarle
+
+pensare al valore 
+
+come presentarla ai supermercati:
+- fidelizzare i clienti
+
+gestire i flussi 
+fare un modello matematico suleconsegne 
+ingegnerizzare la scatola
+
+facendo pagare la personalizzazione della casseta al conad
+margine sul brending
+
+se il supermercato che ti porta a casa la spesa e ti ritira le casettine
+
+
+- idea iniziale 
+- soluzione 
+- prodotto
+- come funziona dal punto di vista digitale
+- non fare il bialncio ma più schemi sul ricavo unitario
+- come si può evolvere 
 
 ### Supermercato Green
 

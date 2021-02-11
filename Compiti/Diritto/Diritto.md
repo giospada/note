@@ -272,4 +272,17 @@ che possono essere cambiati dal presidente della repubblica
 
 il presidente della repubblica deve fare un giro di consultazioni ogni partito fa la sua proposta di personaggi programma politico, individuazione delle possibilità di creare un governo 
 
-Cirsi di governo: 
+il girusdizione dura 5 anni ed è la durata del parlamento scade sempre tranne in caso di guerra
+
+un governo ha la prorograzio quando un altro governo si sta creando e continua ad amministrare
+
+la camerae il senato hanno un presidente e hanno dei gruppi parlamentari che corrispondono quasi al partito
+ogni gruppo ha un capogruppo, ci sono le commissioni competenti per materia (40 che hanno il compito di discutere le proposte di legge
+di fare degli emendamenti e proporre alla votazione dell'intera camera)
+
+Maggioranza assoluta al numero dei componeti 50%+1
+oppure la maggioranza semplice 50%+1 dei preseneti
+
+cause di eneleggibilità
+
+la commissione agisce o in sede referente o deliberante
