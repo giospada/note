@@ -246,7 +246,7 @@ Governo:
 2. Composizione
 3. Formazione:
     - inizio legislatura
-    - in seguito a dimissioni del  presidente per crisi di governo 
+    - IN SEGUITO A DIMISSIONI DEL  PRESIDENTE PER CRISI DI GOVERNO 
       parlamentare o extraparlamentare
 
 

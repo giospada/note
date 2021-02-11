@@ -461,8 +461,8 @@ si sposa con **Antonietta Portulano** che dopo l'allagamento
 delle miniere che farà crollare il suo equilibrio 
 psicologico, per sostenere economicamente la famiglia 
 incomincia a scrivere su giornali e poi 
-pubblica **il fu mattia pascal** (dove incomincia la fase umoristica)
-, inoltre pubblica molte novelle sul corriere della sera
+pubblica **il fu mattia pascal** (dove incomincia la fase 
+umoristica),inoltre pubblica molte novelle sul corriere della sera
 
 passa poi al teatro con il **teatro del grottesco** cratarizzato da
 situazioni paradossali che denunciano l'assurdità della condizione
@@ -500,25 +500,28 @@ il corpus delle novelle di pirandello era **Novelle per un Anno**
 **l'umorismo** :(1908) la bella imellettata saggistica<br>
 l'avvertimento del contrario (comico), e il sentimento del contrario(umorismo)
 
-**Uno nessuno e centomila**: racconta di un signore che si chiama vitangelo 
-moscarda, che un giorno la moglie li fa notare un particolare che lo farà
-ipazzire
-
-
 **poesie** (molto basse): l'uomo fuori di chiave ( "vivere come essere
  a casa d'altri" *Darzo*) 
 
 
-**Teatro:**
+**Teatro**:
+
+metaetatro tentativo di abbattere la quatra parete
+
+- la patente da iettatore:un signore che ogni volta che passa tutti 
+  temono così prende la patente da iettatore così la gente lo assume
+  per non portare sfortuna
 
 
-**maschere nude** corpus di tutte le opere teatrali di pirandello
+**maschere nude** corpus di tutte le opere teatrali di pirandello, tutti le 
+opere teatrali tra cui si trova dentro la **trilogia del metateatro**:
+ 
+
 
 le novelle piccolo diventano **atti unici**
  
 Mirò : Pittore 
  
- ### Il fu mattia pascal
 
 **Temi**:
 - tema del doppio
@@ -535,7 +538,12 @@ Mirò : Pittore
  - il ritratto di dorian gray
 
 
+**FILM**: __Kaos__ dei fratelli Taviani<br>
+seglie i personaggi più feroci e subdoli, c'è una cornice di alcuni
+contadini che legano un campanello a un corvo che andrà a visitare tutti
+le novelle
 
+**La pazzia** è la cosa più vicina alla verità
 
 ### il fu mattia pascal
 
@@ -576,3 +584,35 @@ Poi una seconda parte in cui Adriano viaggia per l'italia e l'Europa ma finisce 
 - incompaginamento dell'ordine coronologico
 - discorso indiretto libero
 
+### Uno nessuno centomila
+
+dopo che la moglie disse che il naso gli pendeva impazzisce
+
+**Uno nessuno e centomila**: racconta di un signore che si chiama vitangelo 
+moscarda, che un giorno la moglie li fa notare un particolare che lo farà
+ipazzire
+
+### Novelle
+
+> la **trilogia del metateatro** sono tutte dentro maschere nude
+
+tentativo di mettere a nudo quello che si cela dietro la maschera
+
+Personaggi sfacettati e sdoppiati in più personalità
+
+- la morte addosso(cambia il nome **l'uomo dal fiore in bocca**):
+- la signora Frola e il sor Ponza,suo genero (cambia **così è se vi pare**): l'unica che sa è la verità è la 
+  figlia che risponde "io sono chi sono"
+- **enrico quarto**: cade da cavallo vive in una villa pensando di vivere nel 
+  medioevo 
+- **l'altro figlio**(Kaos): relatività tra immagine forma e realtà
+
+**trilogia del metateatro**:
+1. **sei personaggi in cerca d'autore**
+2. **questa sera si recita a soggetto**
+3. **ciascuno a suo modo**
+
+
+
+
+Studiare pag 514/6
