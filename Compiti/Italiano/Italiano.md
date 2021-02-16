@@ -603,16 +603,20 @@ Personaggi sfacettati e sdoppiati in più personalità
 - la morte addosso(cambia il nome **l'uomo dal fiore in bocca**):
 - la signora Frola e il sor Ponza,suo genero (cambia **così è se vi pare**): l'unica che sa è la verità è la 
   figlia che risponde "io sono chi sono"
-- **enrico quarto**: cade da cavallo vive in una villa pensando di vivere nel 
-  medioevo 
+- **enrico quarto**: cade da cavallo vive in una villa pensando di vivere
+  nel medioevo 
 - **l'altro figlio**(Kaos): relatività tra immagine forma e realtà
+- **l'uomo dal fiore in bocca**
+- **mal di luna**:il marito è un lupo mannaro la moglie decide di ivitare l'amante durante la luna piena
+
+
 
 **trilogia del metateatro**:
-1. **sei personaggi in cerca d'autore**
-2. **questa sera si recita a soggetto**
-3. **ciascuno a suo modo**
+1. **sei personaggi in cerca d'autore**:mentre stanno provando il gioco delle parti arrivano sul palco sei personaggi che un autore ha partorito e ha dimenticato
+2. **questa sera si recita a soggetto**:(vuol dire improvvisare simile alla commedia dell'arte a venezia)
+4. **ciascuno a suo modo**
 
 
-
-
-Studiare pag 514/6
+26: test priandello
+10/3: tema priandello
+tesina entro il 2/3
