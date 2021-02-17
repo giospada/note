@@ -613,6 +613,22 @@ Personaggi sfacettati e sdoppiati in più personalità
 3. **ciascuno a suo modo**
 
 
+c'è un compagnia di teatro sta provando questa commedia:
+è un auto citazione
+
+un giorno dei galletti insultano la moglie il marito li insulta a duello ma uno tra questi 
+è un bravissomo spadaccino così il marito costringe a l'amante della moglie a presentarsi
+
+mentre provano arrivano sul palco sei personaggi che un autore ha creato e poi abbandonati
+e loro vogliono che si racconti il loro dramma
+- la madre: il dolore per sempre la sofferenza
+- il padre: un uomo che è abbastanza giovane di avere delle voglie ma non abbastanza per poterne trovare
+- il figlio: dentro di se è un uomo con dentro il rancore
+- la figliastra:che vuole vendetta
+- un bambino:vestito da marinaretto
+- una bambina:neonata
+
+gli attori capiscono che il teatro è finzione
 
 
 Studiare pag 514/6
