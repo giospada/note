@@ -423,3 +423,5 @@ entrate derivate: sono prelevamenti coattivi di ricchezza
 frequenza temporale:
 - entate ordinarie:si ripetono con regolarià
 - entrate straordinarie: presentano carattere di eccezionalita
+
+

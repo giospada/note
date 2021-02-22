@@ -233,8 +233,6 @@ difetto: procedimento lungo e senza limite temporale: si allungano i tempi di la
 
 
 
-
-
 ### Verifica di diritto
 
 
@@ -270,6 +268,55 @@ Il governo si forma: dopo la nuova legislatura(votazioni del parlamento)
 senatore di diritto ( gli ex presidenti della repubblica ) + 5 senatori a vita 
 che possono essere cambiati dal presidente della repubblica
 
-il presidente della repubblica deve fare un giro di consultazioni ogni partito fa la sua proposta di personaggi programma politico, individuazione delle possibilità di creare un governo 
+il presidente della repubblica deve fare un giro di consultazioni ogni partito fa la sua proposta 
+di personaggi programma politico, individuazione delle possibilità di creare un governo 
 
 Cirsi di governo: 
+
+la costituzione è il limite al potere e il fatto che sia rigida è la garanzia che il potere non possa abusarne
+
+le leggi costituzionali devono essere eletta da entrabe le camere bisogna aspettare 3 mesi 
+poi la si rivotà (doppia votazione a intervalli di non meno di 3 mesi) dalle due camere
+se la legge ha avuto soltanto la maggioranza rimane altri 3 mesi in cui è possibile un referendum
+
+legge:
+- iniziativa
+- discussione
+- provulgazione
+- pubblicazione
+
+i ministri si riferisce all'organo di governo
+i ministri: sono gli organi politici e amministrativi (è un elemento del governo)
+( rappresentano il programma politico )
+
+i ministri sono 23 alcuni di questi "hanno il portafoglio" quindi hanno dei soldi da spendere 
+i ministri senza portafolglio hanno meno autonomia e quindi devono essere approvati dal ministro 
+dell'economia
+
+
+Esame:
+- ruolo dello stato nell'economia:stato in diritto e in ecnomia:
+    - stato giuridico
+    - diritti positivi e negativi
+    - welfar state
+    - crisi del 29'
+- il valore si crea tra la domanda e l'offerta
+- unione europea
+- cenni sulle amministrazione locali
+- federalismo fiscale (reginoni che hanno il potere per chiedere i tributi)
+- stato sociale
+- pensioni e salute
+- protezione sociale:
+    - previdenza
+    - assistenza
+    - pensione
+- debito pubblico:
+    - storia del debito pubblico italiano
+- sistema tributario:
+    - tasse
+    - imposte
+    - tributi
+    - articolo 53
+- irpef
+
+
