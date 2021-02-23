@@ -30,7 +30,7 @@ usare il ':call CreateIndex()' comando per fare l'update
 - [ArchInstall.md](Computer/ArchInstall.md)
 - [CompetitiveProgramming.md](Computer/CompetitiveProgramming.md)
 - [Cripto.md](Computer/Cripto.md)
-- [CyberChallange.md](Computer/CyberChallange.md)
+- [CyberChallange.md](Computer/CyberChallange/index.md)
 - [Linux.md](Computer/Linux.md)
 - [Malware.md](Computer/Malware.md)
 - [Python.md](Computer/Python.md)

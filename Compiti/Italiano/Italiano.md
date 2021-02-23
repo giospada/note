@@ -630,5 +630,22 @@ e loro vogliono che si racconti il loro dramma
 
 gli attori capiscono che il teatro è finzione
 
+COMPAGNIA DEI GIOVANI
 
-Studiare pag 514/6
+tema della pazzia
+
+Enrico IV: (rimane davanti al castello di canossa per farsi togliere la scomunica dal papa)
+
+il moroso di matilde si veste da enrico VI e oer completare il vestito fa una cavalcata
+uno spasimante di matilde punge il cavallo di enrico che cade e batte la testa diventando pazzo
+e lui pensa di essere enrico VI vivendo con dei servi
+fanno vestire la figlia(frida) come la madre e la presentano ad enrico (per vedere se un traoma lo 
+farà diventare normale)
+enrico VI che da diversi anni non era più pazzo ma che stava bene,capisce che il suo spasimante
+gli aveva preso tutto e ammazza il suo rivale in amore con una spada
+
+
+
+519 ultime 10 righe e 520
+
+
