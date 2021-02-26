@@ -620,3 +620,43 @@ Personaggi sfacettati e sdoppiati in più personalità
 26: test priandello
 10/3: tema priandello
 tesina entro il 2/3
+
+=======
+c'è un compagnia di teatro sta provando questa commedia:
+è un auto citazione
+
+un giorno dei galletti insultano la moglie il marito li insulta a duello ma uno tra questi 
+è un bravissomo spadaccino così il marito costringe a l'amante della moglie a presentarsi
+
+mentre provano arrivano sul palco sei personaggi che un autore ha creato e poi abbandonati
+e loro vogliono che si racconti il loro dramma
+- la madre: il dolore per sempre la sofferenza
+- il padre: un uomo che è abbastanza giovane di avere delle voglie ma non abbastanza per poterne trovare
+- il figlio: dentro di se è un uomo con dentro il rancore
+- la figliastra:che vuole vendetta
+- un bambino:vestito da marinaretto
+- una bambina:neonata
+
+gli attori capiscono che il teatro è finzione
+
+COMPAGNIA DEI GIOVANI
+
+tema della pazzia
+
+Enrico IV: (rimane davanti al castello di canossa per farsi togliere la scomunica dal papa)
+
+il moroso di matilde si veste da enrico VI e oer completare il vestito fa una cavalcata
+uno spasimante di matilde punge il cavallo di enrico che cade e batte la testa diventando pazzo
+e lui pensa di essere enrico VI vivendo con dei servi
+fanno vestire la figlia(frida) come la madre e la presentano ad enrico (per vedere se un traoma lo 
+farà diventare normale)
+enrico VI che da diversi anni non era più pazzo ma che stava bene,capisce che il suo spasimante
+gli aveva preso tutto e ammazza il suo rivale in amore con una spada
+
+La giara:è un testo narrativo che poi viene reso un testo teatrale don lolò e zidima relativismo
+gnosologico 
+
+
+
+519 ultime 10 righe e 520
+

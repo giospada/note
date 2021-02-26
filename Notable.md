@@ -9,7 +9,7 @@ modified: '2020-05-27T07:03:11.162Z'
 
 # 01 - The Data Directory
 
-The data directory is where all your notes and attachments will be stored, it has the following structure:
+ciao mi chimamo lollo where all your notes and attachments will be stored, it has the following structure:
 
 ```
 /path/to/your/data_directory
