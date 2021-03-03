@@ -345,94 +345,6 @@ sono 5 concetti per il nuovo millennio:
 - Molteplicità
 
 
-### La fattoria degli animali
-
-al posto della trama metto l'analisi dei personaggi
-
-#### Vecchio Sindaco
-
-è un maiale rispettato da tutti gli altri animali poiché, essendo vissuto a lungo (dodici anni), 
-è ritenuto molto saggio. Ha un aspetto imponente ma non minaccioso. Tre giorni dopo il suo discorso
-egli muore e, come accadde a Lenin, non potrà vedere il progresso della rivoluzione. Similmente a Lenin,
-il cui corpo fu imbalsamato e conservato nella piazza rossa,il cranio del Vecchio Maggiore verrà riesumato 
-ed esposto come monumento alla ribellione.
-
-Il discorso da lui pronunciato introduce la teoria dell'Animalismo secondo la quale il lavoro di un animale 
-produce più valore di quello necessario al suo mantenimento, e il surplus viene rubato dall'uomo parassita. 
-Sintetizza la complessa filosofia in proposizioni fondamentali o massime, che possono essere facilmente 
-comprese da tutti gli animali. Egli è anche un'allegoria di Marx, come ispiratore dell'animalismo.
-
-#### Napoleon
-
-Napoleon è un maiale; non ha scrupoli morali, possiede delle qualità che lo hanno fatto emergere rispetto 
-agli altri maiali, anche prima della rivoluzione. Rispetto all'idealismo del Vecchio Maggiore e di 
-Palladineve, Napoleone è un opportunista e un despota, la cui crudele determinazione e capacità di persuadere 
-gli animali meno svegli con l'eloquenza compensa una certa mancanza di intelligenza. 
-Riprende il nome da Napoleone Bonaparte. Rappresenta Stalin.
-
-#### Palladineve
-
-È un rivoluzionario sincero che viene messo in disparte da un avversario più furbo e crudele.
-Diventa ossessionato dal mulino a vento e non si rende conto che gli altri animali non capiscono le sue idee 
-per il rinnovamento della fattoria. Napoleone, grazie all'aiuto dei suoi cani, caccia via Palladineve. 
-Si impossesserà poi dei suoi piani spacciandoli per propri e riverserà su di lui la colpa per ogni 
-evento negativoaccusandolo di tornare la notte per fare opera di sabotaggio. Esso rappresenta Trockij.
-
-#### Clarinetto
-
-Clarinetto, Squealer nella versione originale, è il propagandista di Napoleone.
-Parla per mezze verità, omissioni e vere e proprie bugie. Egli fornisce le illusioni che aiutano i lavoratori 
-a sopportare la dura esistenza e lo sfruttamento da parte dei maiali. La sua principale strategia è minacciare 
-il «ritorno di Jones», spingendoli così ad accettare tutte le tirannie di Napoleone. È da notare che, quando i
-maiali cominciano a reggersi sulle zampe posteriori come gli uomini, Clarinetto prende da parte le pecore, 
-e le induce a modificare lo slogan «quattro gambe buono, due gambe cattivo» in «quattro gambe buono, due gambe meglio». 
-
-
-#### Gondrano
-
-Gondrano, è un cavallo il cui lavoro è fondamentale per il sostentamento della fattoria. La sua filosofia si basa sulla dignità del lavoro[16]. Gondrano rappresenta il lavoratore ordinario e infaticabile: umile, onesto ed essenziale in qualsiasi sistema sociale. Il suo lavoro viene inevitabilmente sfruttato, fino a quando delle pietre per la costruzione del mulino non gli cadono addosso, debilitandolo fisicamente. Napoleone allora, con la scusa di farlo curare da un veterinario, lo conduce al macello. Perfino dopo la sua morte, gli slogan preferiti dell'instancabile cavallo, «lavorerò di più» e «Napoleone ha sempre ragione», verranno cinicamente utilizzati per controllare gli altri animali. Egli non comprende mai che gli ideali della rivoluzione si sono corrotti, e la sua esperienza mostra che cosa possa accadere quando le azioni di chi è al potere vengono accettate senza porsi domande.
-
-#### Beniamino
-
-Beniamino (Benjamin nella versione originale e in alcune traduzioni), un asino, è un cinico che dubita della sincerità di chi gli sta attorno. È anche scettico dubitando della verità di molte teorie o fatti. Impara a leggere, ma rifiuta di mettere la propria abilità al servizio degli altri animali. Solo alla fine, quando l'Animalismo è ormai naufragato, accetta di leggere agli animali l'unico comandamento rimasto. Più volte ha ripetuto la stessa frase «Gli asini hanno vita lunga. Nessuno di voi ha mai visto un asino morto». Egli rappresenta i cinici che si sono rassegnati. È anche l'animale più anziano della fattoria, e anche passando per l'animale più bisbetico della fattoria, non bisogna dimenticare la sua lealtà verso Gondrano e il suo disperato tentativo di salvarlo.
-
-#### Berta
-
-Berta (o Trifoglio), Clover nella versione originale, la cavalla, è la figura materna della fattoria, che mostra simpatia e gentilezza. Se la prende più degli altri per i soprusi subiti ad opera dei maiali, pur tuttavia rimanendo una fonte di forza e di conforto per gli animali oppressi. Come Gondrano, Berta rappresenta la gente ordinaria, che viene inconsapevolmente manipolata e sfruttata.
-
-#### Mollie
-
-Mollie è una giovane cavallina bianca che tira il calesse di Jones. È indifferente alla rivoluzione ed è molto vanitosa: lavora poco e le piace indossare dei nastrini colorati, tanto che alla fine per avere questi oggetti fuggirà dalla fattoria e andrà a vivere dall'altra parte di Willingdon. Verrà rivista dai piccioni a tirare un calesse in cambio di zollette di zucchero e carezze sul naso e da qui in poi non viene in pratica più nominata. Rappresenta l'aristocrazia russa, che viveva una vita molto agiata sotto lo zar e che abbandonò la Russia dopo la rivoluzione per mantenere tale vita.
-
-#### Mosè
-
-Mosè, Moses nella versione originale, il corvo domestico che racconta agli animali della vita eterna che li attende dopo la morte sul Monte Zuccherocandito, o Montagna di Zucchero Candito (nella versione originale Sugarcandy Mountain), una specie di paradiso terrestre per gli animali, rappresenta la Chiesa ortodossa russa, che secondo la visione bolscevica, in accordo con il potere zarista, forniva illusioni ai lavoratori per indurli a sopportare lo sfruttamento, in accordo con la visione di Marx. È considerato l'alleato del padrone. Tuttavia, Napoleone in seguito gli consente di fare ritorno alla fattoria, esattamente come Stalin concesse libertà di culto agli Ortodossi durante la guerra.
-
-#### Minimus
-
-Minimus, il maiale poeta che canta le gesta di Napoleon, rappresenta l'intellettuale asservito al potere dittatoriale, che mette la sua cultura al servizio della propaganda. Vi è chi ha accostato questo personaggio alla figura dello scrittore Maksim Gor'kij.
-
-#### I cani e le pecore
-
-I cani e le pecore vengono trattati come un gruppo, e non come individui. I primi rappresentano la polizia politica che reprime le opposizioni, i secondi le masse facilmente manipolabili, che si lasciano impressionare dagli slogan del regime.
-
-#### Le galline
-
-Nel settimo capitolo, Napoleone obbliga le galline della fattoria a consegnare le uova che hanno deposto. Esse cercano di resistere, ma Napoleone fa sospendere loro qualunque razione di cibo; dopo cinque giorni e la morte di nove galline, cedono e consegnano le uova.
-
-#### I topi e i conigli
-
-Sono gli animali selvatici presenti nella fattoria. Rappresentano i mendicanti, i ladri e i membri della società che non vivono del proprio lavoro.
-
-#### Il fattore Jones
-
-Jones è il padrone della fattoria: si ubriaca spesso e si disinteressa degli animali. Viene cacciato all'inizio della storia e muore molti anni dopo in una casa di cura per alcolisti. Rappresenta lo zar Nicola II di Russia.
-
-#### Pilkington e Frederick
-
-Pilkington e Frederick, i fattori confinanti. Pilkington è un gentiluomo la cui fattoria, Foxwood (Boscodivolpe in alcune traduzioni), è male amministrata perché egli spende tutto il suo tempo praticando sport in campagna. Frederick invece è aggressivo, efficiente e crudele nei confronti degli animali della sua fattoria, Pinchfield (Rubaterre in qualche traduzione, parodia della Germania nazista).
-
-
 
 Gita al Faro:Virgigna Woolf flusso di coscienza
 gomorra:saviano 
@@ -440,16 +352,15 @@ gomorra:saviano
 picasso le: madmuaselle d'avignon
 
 
-### Luigi pirandello
-
+## Luigi pirandello
 
 > **Giovanni Macchia**: parlando della letteratutra di priandello la 
 > stanza della tortura
 
-**Storia**
+### Storia
 
-Pirandello nasce in una famiglia borghese a **agrigento**
-(in una villa chiamata CAOS)
+Pirandello nasce in una famiglia borghese ad **agrigento**
+(in una villa chiamata **CAOS**)
 ( padre garibaldino che possedeva delle **miniere di zolfo**) ,
 affascinato dagli ideali anarchici e sovversivi
 entra in **conflitto con i padre** e i valori borghesi da lui 
@@ -476,95 +387,147 @@ al fascismo (sopratutto per vantaggi economici) così riesce
 a finanziare il suo teatro e incomincia una relazione con
 **Marta Abba**
 
-**uno nessuno e centomila** finale inaspettato con una fiducia nella natura
-e dell'uomo di trovare un accordo con essa 
-
 Vince il **noblel** per la letteratura nel 1934 in pieno fascimo
 nel mentre si giunge a un rifiuto del fasciscmo
 che non viene mai proclamato pubblicamente, muore a roma di polmonite
 
-i personaggi di prinandello sono animali a roma pidocchi o serpenti
-in sicilia cavalli impazziti, fiere
 
-Temi:
-- **relativismo gnoseologico**:(relativizzare la gnosi nota sotto) cioè 
-  relativizzare il vero che il vero non è lo stesso per tutti
+firma il **manifesto dei intellettuali fascisti**
+perchè gli diedero dei finanziamenti al Teatro dell'arte
+a roma
 
 
-gnosi:studio della realtà (in filosofia)
 
-**opere**: 
+#### Racconti
 
-il corpus delle novelle di pirandello era **Novelle per un Anno**
+**Raccolte**:
+- il corpus delle novelle di pirandello era **Novelle per un Anno**
+- **poesie** (molto basse): **fuori di chiave** ( "vivere come
+ a casa d'altri" *Darzo*) 
+
+- **maschere nude** corpus di tutte le opere teatrali di pirandello, tutti le 
+opere teatrali tra cui si trova dentro la **trilogia del metateatro**
+
+---
+
+**uno nessuno e centomila** 
+finale inaspettato con una fiducia nella natura
+e dell'uomo di trovare un accordo con essa 
 
 **l'umorismo** :(1908) la bella imellettata saggistica<br>
 l'avvertimento del contrario (comico), e il sentimento del contrario(umorismo)
 
-**poesie** (molto basse): l'uomo fuori di chiave ( "vivere come essere
- a casa d'altri" *Darzo*) 
+**il fu mattia pascal**:
+
+**la morte addosso**(cambia il nome **l'uomo dal fiore in bocca**):
 
 
-**Teatro**:
-
-metaetatro tentativo di abbattere la quatra parete
-
-- la patente da iettatore:un signore che ogni volta che passa tutti 
-  temono così prende la patente da iettatore così la gente lo assume
-  per non portare sfortuna
-
-
-**maschere nude** corpus di tutte le opere teatrali di pirandello, tutti le 
-opere teatrali tra cui si trova dentro la **trilogia del metateatro**:
+**Kaos**: cornice dei condatini sicicliani attaccano un campanello 
+ad un corvo
  
+**Teatro**
+- **la patente** :un signore che ogni volta che passa tutti 
+  temono così prende la patente da iettatore così la gente lo assume 
+  per stare lontano e non portare sfortuna
+- **Enrico IV**:enrico crede di essere l'imperatore dopo essere caduto 
+  da cavallo ed è diventato pazzo, anni dopo riprende il senno e 
+  uccide Belcredi che l'aveva fatto cadere, dopo l'omicidio però
+  è costretto a continuare a fingersi pazzo per evitare la galera
+- **il guoco delle parti**:il marito che manda l'amante a combattere 
+  per la moglie
 
-
-le novelle piccolo diventano **atti unici**
+**trilogia del metateatro**:
+1. **sei personaggi in cerca d'autore**
+2. **questa sera si recita a soggetto**: commedia dell'arte
+3. **ciascuno a suo modo**
  
-Mirò : Pittore 
- 
+**Novelle**:
 
-**Temi**:
+**la signora Frola e il sigor Ponza,suo genero** (cambia 
+**così è se vi pare** a teatro): l'unica che sa è la verità è la 
+figlia che risponde "io sono chi sono"
+  
+**l'altro figlio**(Kaos): relatività tra immagine forma e realtà
+il brigante Cola Camizzi e il figlio rocco TODO
+
+
+**mal di luna**(Kaos):un contadino si trasforma in lupo mannarro 
+durante la luna piena si trasforma in lupo TODO
+
+**La giara**(Kaos):Don lolò ha comprato una giara che però
+si è rotta chiama zidima a ripararla ma rimane incastrato dentro
+e dopo una feroce litigata con don lolò per chi avesse ragione
+don lolò rompe la giara
+
+**La cariola**:un avvocato rispettato che per evadere prende
+la sua cagnolina per le zampe anteriori e ogni giorno
+fa la cariola con lei
+
+**sole e ombra**:sigor ciunna che ruba dei tabacchi dal lavoro
+per sostenere la famiglia e poi si siucida per il senso di colpa
+
+**il treno ha fischiato**: Belluca TODO
+
+**ciaola scopre la luna**:un ragazzino che lavora in miniera ed 
+una sera dopo il lavoro il capo obbliga a rimanere per consegnare
+il giorno successivo e ciaola e giscarda cominciano a raccontarsi 
+la storia del figlio di giscarda e ciaola vede per la prima volta 
+la luna
+ 
+#### TEMI Generali
+
+- **relativismo gnoseologico**:(relativizzare la gnosi nota sotto) cioè 
+  relativizzare il vero che il vero non è lo stesso per tutti
+- i personaggi di prinandello sono animali a roma pidocchi o serpenti
+ in sicilia cavalli impazziti, fiere
+- metaetatro tentativo di abbattere la quatra parete
 - tema del doppio
 - crisi d'identità del protagonista
 - la famiglia come nido o prigione
 - la critica alla civiltà della macchina
 - ilrelativismo di ogni coscenza
+- **La pazzia** è la cosa più vicina alla verità
+- tentativo di mettere a nudo quello che si cela dietro la maschera
+- Personaggi sfacettati e sdoppiati in più personalità
+
+gnosi:studio della realtà (in filosofia)
+
+le novelle piccolo diventano **atti unici**
  
- 
- 
+
+#### collegamenti
+
  **Il doppio**:
  - dottor jaking and mr hide
  - il visconte dimezzato
  - il ritratto di dorian gray
-
 
 **FILM**: __Kaos__ dei fratelli Taviani<br>
 seglie i personaggi più feroci e subdoli, c'è una cornice di alcuni
 contadini che legano un campanello a un corvo che andrà a visitare tutti
 le novelle
 
-**La pazzia** è la cosa più vicina alla verità
+**Mirò**: Pittore 
 
 ### il fu mattia pascal
 
-1904
 
-**storia**:
+**Storia**:
 
-Bibbliotecario nel paese di Miragno dove ha trascorso una vita agiata, che dopo la morte affidano i soldi 
-a l'amministratore malagna che glie li ruba, così deve andare a lavorare
+Bibbliotecario nel paese di **Miragno** dove ha trascorso una vita agiata, che dopo la morte affidano i soldi 
+a l'amministratore **malagna** che glie li ruba, così deve andare a lavorare
 e in casa ha la moglie e la nuora che lo disprezzano, così scappa 
 e arriva a monte carlo dove vince e così mentre sta per tornare a casa
 scropre che lo pensano morto e con la somma si sposta da un posto all'altro
-assumendo l'identità di Aiuliano Mais, ma si sente emarginato e senza un passato
-arriva a roma dove si innamora di Adriana con cui non si può sposare e neanche
+assumendo **l'identità di Adriano Mais**, ma si sente emarginato e senza un passato
+arriva a roma dove si innamora di **Adriana** con cui non si può sposare e neanche
 denuciare una truffa che gli fa perdere molti soldi, così incomincia a corteggiare
 una findanzata di un pittore per allontanare Adriana, e una volta che il pittore lo 
-sfida a duello ne approfitta per fingere un suicidio
+sfida a duello ne approfitta per fingere un suicidio ritorna a Miragno dove ormai
+e vecchio e nessuno lo riconosce sua moglie si è risposata e ha una famiglia
 
 
-
-i temi e i motivi ricorrenti sono:
+**Temi**:
 - **l'inetto**:l'essere incapace di adattarsi alla vita normale
 - **il doppio**
 - **la famiglia come nido o come prigione**: la famigila che prima viene vista come un ambinete protetto e poi come una pena da cui non si può scappare
@@ -592,36 +555,9 @@ dopo che la moglie disse che il naso gli pendeva impazzisce
 moscarda, che un giorno la moglie li fa notare un particolare che lo farà
 ipazzire
 
-### Novelle
 
-> la **trilogia del metateatro** sono tutte dentro maschere nude
+### Sei personaggi in cerca d'autore
 
-tentativo di mettere a nudo quello che si cela dietro la maschera
-
-Personaggi sfacettati e sdoppiati in più personalità
-
-- la morte addosso(cambia il nome **l'uomo dal fiore in bocca**):
-- la signora Frola e il sor Ponza,suo genero (cambia **così è se vi pare**): l'unica che sa è la verità è la 
-  figlia che risponde "io sono chi sono"
-- **enrico quarto**: cade da cavallo vive in una villa pensando di vivere
-  nel medioevo 
-- **l'altro figlio**(Kaos): relatività tra immagine forma e realtà
-- **l'uomo dal fiore in bocca**
-- **mal di luna**:il marito è un lupo mannaro la moglie decide di ivitare l'amante durante la luna piena
-
-
-
-**trilogia del metateatro**:
-1. **sei personaggi in cerca d'autore**:mentre stanno provando il gioco delle parti arrivano sul palco sei personaggi che un autore ha partorito e ha dimenticato
-2. **questa sera si recita a soggetto**:(vuol dire improvvisare simile alla commedia dell'arte a venezia)
-4. **ciascuno a suo modo**
-
-
-26: test priandello
-10/3: tema priandello
-tesina entro il 2/3
-
-=======
 c'è un compagnia di teatro sta provando questa commedia:
 è un auto citazione
 
@@ -641,22 +577,36 @@ gli attori capiscono che il teatro è finzione
 
 COMPAGNIA DEI GIOVANI
 
-tema della pazzia
 
-Enrico IV: (rimane davanti al castello di canossa per farsi togliere la scomunica dal papa)
+### Enrico IV 
 
-il moroso di matilde si veste da enrico VI e oer completare il vestito fa una cavalcata
-uno spasimante di matilde punge il cavallo di enrico che cade e batte la testa diventando pazzo
-e lui pensa di essere enrico VI vivendo con dei servi
-fanno vestire la figlia(frida) come la madre e la presentano ad enrico (per vedere se un traoma lo 
-farà diventare normale)
-enrico VI che da diversi anni non era più pazzo ma che stava bene,capisce che il suo spasimante
-gli aveva preso tutto e ammazza il suo rivale in amore con una spada
+> prende una base storia dal vero Enrico IV che aveva aspettato davanti al castello di 
+matilde il papa per farsi togliere la scomunica
 
-La giara:è un testo narrativo che poi viene reso un testo teatrale don lolò e zidima relativismo
-gnosologico 
+**Trama**
+
+Enrico VI cade da cavallo per colpa di Belcredi che è innamorato
+della stessa donna Matilde, da quel momento Enrico impazzirà per
+la caduta e si crederà l'imperatore austriaco vivendo nel suo 
+castello con servitori e atteggiandosi come un re
+circa vent'anni dopo però un medico escogita un piano per fare 
+tornare la memoria ad Enrico, usano la figlia di 
+Matilde e Belcredi (che nel mentre si erano sposati)
+di nome Frida e il suo fidanzato Carlo per mettere 
+in scena la situazionione quando Enrico aveva preso il traoma.
+Quando la stanno per mettere in scena però Enrico rivela che 
+da qualche anno gli era tornata la memoria e vedendo Frida
+così simile a Matilde la vuole per recuperare gli anni che
+Belcredi gli aveva portato via, Belcredi si mette in mezzo
+e Enrico lo uccide, dopo di che Enrico sarà costretto a 
+fingere la pazzia per evitare la galera
+
+**Temi**:
+- tragedia degradata
+- vivere sempre indossando la maschera
+- frammentazione dell'identità
+- problema della verità
 
 
-
-519 ultime 10 righe e 520
-
+10/3: tema priandello
+tesina entro il 2/3
