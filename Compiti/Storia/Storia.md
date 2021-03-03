@@ -1,11 +1,3 @@
----
-tags: [Compiti]
-title: Storia
-created: '2020-04-15T09:30:46.930Z'
-modified: '2020-05-19T08:50:33.315Z'
----
-
-# Storia
 # Storia
 
 ### La Belle Époque
@@ -405,13 +397,77 @@ farenait 451:società in cui è vietato leggere di BRADBURY
 
 
 
-da rivedere 226  232 
 
 
 
-Studiare: una defnizione curiosa  di ad illusione,pag 65 le conseguenze dell'emigrazione
+### Seconda Guerr Mondiale
 
-paga 143 144( non il caso della cecoslovacchia),145 la spagnola,147(il nuovo ruolo
-delle donne),148, 150/1 (non documento)
+hitler è salito al potere con libere elezioni 
+inizia una politica imperalista
+nazionalista fa associazione con mussolini 
+prima sembrava avesse dei giri con stalin
+entra il giappone con areee di influenza diverse
+il giappone avrebbe dovuto comandare 
+l'italian la zona dell'albania e la germania la cecolovacchia
+occuperà in un batter docchio tutta la francia e restava 
+l'inghiletrra
 
-242 tutta,243 tutta, 244 tutta
+l'inghilterra fa l'apisment cioè lo lasciano fare
+hitler quando incomincia a catturare dei territori
+fino a quando non occupa la polonia
+
+tra scha, bombardamenti (in particolare bomba atomica) e resistenza ha moltissime
+vittime civili
+
+la caduta: che interpreta le ultime ore di hitler
+
+
+seconda guerra mondiale incomincia nel 1939
+
+
+imperialismo
+nazionalismo:cancro del patriottismo
+coniolanicmo:quando vengono occupati dei territori più 
+
+
+francia viene occupata dai nazisti però in una citta famosa per 
+le terme creano la repubblica di vischy comandata da un
+comandante francese chiamato Peten era una repubblica
+collaborazionista con i nazisti
+
+**sovranismo**:rileggere
+
+
+discorso di **de Gaulle** è un discorso che un generale fa alla francia
+sottolineado la drammaticità della situazione ma esaltando l'orgoglio francese
+
+
+FILM: il discorso del re, l'ora più buia
+
+italia subito si dichiara non belligenza:schierata ma non in guerra
+dopo mussolini pensando che la guerra sarebbe durata poco disse
+in privato:"di qualche migliaio di morti da gettare sul tavolo della pace"
+
+
+#### Inghilterra
+
+primo ministro prima chamberlend con la politica appeasment
+
+e poi wilson churchil che si schieara fortemente contro hitiler
+
+
+
+edoardo il fratello del re d'inghilterra
+e si innamora follemente di una donna divorziata 
+ed è indeciso tra rinunciare per wolly o il trono
+e rinuncia il trono e va al trono il padre di elisabetta
+
+
+
+
+radio londra dava le notizie agli italiani dal punto di vista degli alleati
+
+la **repubblica sociale di salò** create ad mussolini a fine guerra 
+
+
+319-321

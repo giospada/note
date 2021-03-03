@@ -451,7 +451,7 @@ figlia che risponde "io sono chi sono"
 il brigante Cola Camizzi e il figlio rocco TODO
 
 
-**maldiluna**(Kaos):un contadino si trasforma in lupo mannarro 
+**mal di luna**(Kaos):un contadino si trasforma in lupo mannarro 
 durante la luna piena si trasforma in lupo TODO
 
 **La giara**(Kaos):Don lolò ha comprato una giara che però
@@ -607,3 +607,6 @@ fingere la pazzia per evitare la galera
 - frammentazione dell'identità
 - problema della verità
 
+
+10/3: tema priandello
+tesina entro il 2/3
