@@ -276,4 +276,20 @@ direct costing vengono gestiti come costi del mese
 full costing i costi fissi vengono ripartiti suoi prodotti
 
 
+### Persone Fisiche 
+
+Irpef: progressività molto alta 
+
+### Persone Giuridiche
+
+
+IRES 24%
+
+IRAP 3,24%
+(regionale)(colplisce il reddito che va ad evasione)
+
+
+
+applico le imposte sull'utile
+
 

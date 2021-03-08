@@ -469,5 +469,15 @@ radio londra dava le notizie agli italiani dal punto di vista degli alleati
 
 la **repubblica sociale di salò** create ad mussolini a fine guerra 
 
+## Germania 
+
+**Rommel**: la volpe del deserto
+
+**operazione valchiria**:operazione per ammazzare hitler (per chiu rommel viene condannato)
+
+## Perl arbur
+
+
+**kamikaze**:vento divino
 
 319-321

@@ -144,3 +144,55 @@ Buisness:
 
 **Miriana**:
 - un'applicazione per la ricerca differenziata 
+
+
+
+
+
+
+## Presentazione 
+
+ciao sono giovanni
+io ho lavorato con il gruppo di modello buisness
+
+noi abbiamo studiato l'azienda da un punto di vista contabile 
+ipotizzando dei dati da cui abbiamo tratto conclusioni su come dovrebbe agire la nostra azinda
+
+partendo dai costi variabili abbiamo ipotizzato un costo di 30 centesimi ogni confezione prodotta 
+( che comprendono materiali e spese di energia)
+e 10 per ogni confezione igenizzata
+
+Invece i costi fissi comprendono l'immobile per mille euro al messe 200 mila euro per i macchinari
+che comprendono quelli per la produzione, igenizzazione e magazzino ammortizzati in 8
+Per il trasporto abbiamo un furgone per 25 mila euro in 5 anni
+I dipendenti sono 4 uno per l'igenizzazione che verrà sopstato nella produzione nel momento in cui si inizia
+poichè non abbiamo confezioni da igenizzare, i rimanenti sono divisi in produzione trasporto magazzino
+E i costi amministrativi ipotizzati sono il 15% dei fissi
+
+Questi ultimi dati invece sono quelli fondamentali per definire nella nostra simulazione
+quante scatole bisogna igenizzare e qunte produrre
+quindi abbiamo 70% che è la percentuale di confezioni che vengono riportate
+1,5 che è il prezzo di vendita di una scatola
+5 è il numero di volte che possiamo riciclare la stessa scatola prima di doverla buttare
+e 500 sono le confezioni che tutti i supermercati nostri clienti consumano in un giorno
+
+A seguito delle nostre analisi, come anche il grafico dimostra, abbiamo constatato che risulta più conveniente comprare le scatole per una produzione di massimo 300 pezzi mentre è più conveniente produrre internamente se si verifica una produzione  maggiore di 300 pezzi.
+
+
+Per quanto riguarda il trasporto, come riporta il grafico a fianco, risulta più conveniente farlo eseguire all’esterno per una produzione di massimo 380 scatole mentre per una produzione maggiore di 380 scatole risulta più conveniente eseguirlo internamente.
+
+
+Poi abbiamo calcolato il break-even che abbiamo attorno alle 400 scatole 
+
+
+Grazie al risultato dei grafici che rappresentano la differenza di utile al variare del tasso di riciclaggio e il numero di ricicli di una scatola, abbiamo dedotto che la strategia migliore si effettua portando i ricicli fino a 7 per scatola e poi cercare di aumentare il tasso di riciclaggio aggiungendo un bonus nel cashback.
+
+
+
+
+
+
+
+
+
+

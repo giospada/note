@@ -115,6 +115,23 @@ questi algoritmi usano sostituzione e traspsizioni più volte aumentando la comp
 
 a blocchi o stream 
 
+stream : prende un messaggio di lunghezza variabile 
+
+di solito si parte da una chiave che genera una sequenza di caratteri infinita e fa 
+semplicemente l'xor dei bit in input
+
+blocchi:cripta ogni blocco
+
+feistel: diversi round dove vengono create chiavi di valore diverso
+
+
+AES utilizza SP-network (sobstitution and permutation)
+
+
+
+CBC usa fa xor con un vettore inizzializzato e poi cripta fa l'xor con il blocco 
+precedente  
+
 
 
 
