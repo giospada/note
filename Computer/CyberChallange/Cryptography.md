@@ -132,11 +132,52 @@ AES utilizza SP-network (sobstitution and permutation)
 CBC usa fa xor con un vettore inizzializzato e poi cripta fa l'xor con il blocco 
 precedente  
 
+- OFB
+- CTR
 
 
+# Crittografia assimmetrica
 
 
+doppia chiave
+
+usano funzione matematiche facendo diventare i bit in numeri 
+e ritrasformali
 
 
+funzione trapdor f(x)=y computare f-1(y)=x è molto difficile
 
+es di f(x) il prodotto tra due numeri primi mentre f-1(x) è NP
+
+## RSA
+
+
+quello più flessibile
+
+è bastao sull'aritmetica modulo n se n è molto grande
+
+operazioni su interi
+
+1024 bit per una chiave circa 10^308
+
+- si prendono due numeri primi molto grandi( tipo 512 bit) 
+ (denominati p e q)
+- il loro prodotto è n p*q=n
+- si computa fi(n)=(p-1)*(p-1)
+- gcd(e,fi(n))=1
+- si trova un numero d che è il motilpicativo inverso di e mod fi(n)
+- chiave pubblica KU=K+=<e,n>
+- chiave privata KR= K-=<d,n> 
+
+(e è un modulo fissato) e*d mod fi(n) = 1 / e*d=1 (mod fi(n))
+
+criptare 
+c= m^e mod n
+
+
+decriptare 
+m=c^d mod n
+
+
+se m è facile da scoprire può fare dei tentativi di criptaggio
 

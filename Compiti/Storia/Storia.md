@@ -282,6 +282,8 @@ Ras: capi fascisti
 
 Mussolini costuisce sabaudia e littoria(fascio littorio) bonificando le terre
 
+mussolini 1938 fa le leggi razziali che vengono controfirmati
+da vittorio emanuele II
 
 ### Germania
 
@@ -359,8 +361,6 @@ dittatura di franco
 
 
 
-mussolini 1938 fa le leggi razziali che vengono controfirmati
-da vittorio emanuele II
 
 
 
@@ -402,82 +402,166 @@ farenait 451:società in cui è vietato leggere di BRADBURY
 
 ### Seconda Guerr Mondiale
 
-hitler è salito al potere con libere elezioni 
+**hitler** è salito al potere con **libere elezioni** 
 inizia una politica imperalista
-nazionalista fa associazione con mussolini 
-prima sembrava avesse dei giri con stalin
-entra il giappone con areee di influenza diverse
-il giappone avrebbe dovuto comandare 
-l'italian la zona dell'albania e la germania la cecolovacchia
-occuperà in un batter docchio tutta la francia e restava 
+nazionalista fa associazione con **mussolini**
+prima sembrava che complottasse stalin
+ma entra in guerra con il **giappone e Italia**
+la germania occuperà in un batter d'occhio tutta la francia e restava 
 l'inghiletrra
 
-l'inghilterra fa l'apisment cioè lo lasciano fare
+**l'inghilterra** politica dell'**apisment** cioè lo lasciano fare
 hitler quando incomincia a catturare dei territori
-fino a quando non occupa la polonia
+fino a quando non occupa la polonia 
 
-tra scha, bombardamenti (in particolare bomba atomica) e resistenza ha moltissime
-vittime civili
+tra scoha, bombardamenti (in particolare bomba atomica) e resistenza ,
+ci sono **moltissime vittime civili**
 
-la caduta: che interpreta le ultime ore di hitler
-
-
-seconda guerra mondiale incomincia nel 1939
-
-
-imperialismo
 nazionalismo:cancro del patriottismo
 coniolanicmo:quando vengono occupati dei territori più 
 
 
-francia viene occupata dai nazisti però in una citta famosa per 
-le terme creano la repubblica di vischy comandata da un
-comandante francese chiamato Peten era una repubblica
-collaborazionista con i nazisti
 
 **sovranismo**:rileggere
+
+
+### Inizion guerra 
+
+Seconda guerra mondiale incomincia nel **1939** con l'invasione della
+Polonia patto Molotov-Ribbentrov Germania e USS se
+la spartiscono, inghilterra dichiara guerra alla germania
+
+Così **l'USS** continua con l'attaccando
+**lituania estonia lettonia**(occupandole) 
+e cercò d'invadere la **fillandia**
+
+
+**1940 la Germania** attacca la la **Norvegia**
+e **Danimarca** sempre con la guerra lampo
+che era la loro unica opzione poichè non
+avevano un economia che potesse reggere 
+una guerra di logoramento
+
+la **Germania** stesso anno guerra lampo 
+attaccando la **Francia**, una parte
+dell'esercito **franco-inglese** si
+imbracò a **Dunkerque** ritornando in
+Inghilterra, La francia firmò
+l'armistizio restando occupata al
+dai nazisti al nord mentre
+al sud viene creato un governo chiamato 
+la **repubblica di vischy** comandata da un
+comandante francese chiamato **Peten**,
+il governo era collaborazionista 
 
 
 discorso di **de Gaulle** è un discorso che un generale fa alla francia
 sottolineado la drammaticità della situazione ma esaltando l'orgoglio francese
 
 
-FILM: il discorso del re, l'ora più buia
+i tedeschi cercarono di sbarcare in inghilterra con l'operazione
+**leone marino**, ma si scontrarono per due mesi la RAF e
+la luftwaffe nella **la battaglia d'ingilterra**,
+molte città inglesi distrutte dai bombardamenti
+dopo di chè hitler rinunciò alla GB passando 
+ad una guerra di logoramento
 
-italia subito si dichiara non belligenza:schierata ma non in guerra
-dopo mussolini pensando che la guerra sarebbe durata poco disse
-in privato:"di qualche migliaio di morti da gettare sul tavolo della pace"
+1941 **Germania** interviene a sostegno dell'**Italia**
+nel **Nord Africa** e **Balcani**
+
+Attacco a **URSS** 1941 la **Germania e Italia**
+con il piano Brabarossa che conquisto territori
+fino a fermarsi in autunno
+
 
 
 #### Inghilterra
 
 primo ministro prima chamberlend con la politica appeasment
-
 e poi wilson churchil che si schieara fortemente contro hitiler
 
-
-
-edoardo il fratello del re d'inghilterra
+**edoardo** il fratello del re d'inghilterra
 e si innamora follemente di una donna divorziata 
 ed è indeciso tra rinunciare per wolly o il trono
 e rinuncia il trono e va al trono il padre di elisabetta
 
 
 
-
-radio londra dava le notizie agli italiani dal punto di vista degli alleati
-
-la **repubblica sociale di salò** create ad mussolini a fine guerra 
-
 ## Germania 
 
-**Rommel**: la volpe del deserto
+
+**resistenza al nazismo** in francia guidata da **de Gualle**
+**lugogslavia** partigiani comunisti di **Tito** che riuscirono
+a cacchiare senza aiuti i tedeschi, anche una parte 
+dell'esercito operazione valchiria
+
+**Rommel**: la volpe del deserto, guidò le truppe in africa
+con successo e poi venne condannato per l'operazione valchiria
+suggerì a Hitler anche di firmare l'armistizio
 
 **operazione valchiria**:operazione per ammazzare hitler (per chiu rommel viene condannato)
 
-## Perl arbur
 
+
+### Campi di morte
+
+i capmi di morte vennero istituiti dopo gli anni trenta
+in germania vennero uccisi, oppositori politici, delinquenti,
+Ebrei e dal 42 anche zinagari omosessuali e disabili.
+
+I campi erano lungo le ferrovie per agevolare il trasporto
+e una volta ai campi venivano o sfruttati con laviri pesanti
+o giustiziati
+
+il paradosso e che la germania soffriva di mano d'opera a causa
+delle deportazioni e cercava di colmare la con gli stessi prigionieri
+che dovevano essere elimitai
+
+per la prima volta un organizzazione di uccisioni a catena;
+venivano portati dai treni, bambini,vecchi e malati ammazzati 
+con un colpo di pistola poco lontano gli altri venivano
+controllati e se erano robusti venivano destinati al lavoro;
+i restanti venivano spogliati e ammazzati nelle camere a gas
+da cui venivano portati nei forni da degli eberi che venivano
+constantemente uccisi e sostituiti per perchè non fossero testimoni
+
+
+**Aschiwtz** il più grande lager e fu distrutto per nascondere
+le prove degli orrori
+
+## Italia
+
+**italia subito si dichiara non belligenza**
+perchè l'esercito era gravemente compromesso dopo
+l'Etiopia e Spagna :schierata ma non in guerra
+dopo mussolini pensando che la guerra sarebbe durata poco disse
+in privato:"**ho bisogno di qualche migliaio di morti da gettare sul tavolo della pace**"
+
+inadeguata per la guerra, senza carburante e equipaggiamenti.
+Lo dimostrò subito nella guerra contro la Grecia e Africa
+dove solo l'aiuto della germania consentirono la ripresa 
+delle conquiste
+
+
+
+**radio londra** dava le notizie agli italiani dal punto di vista degli alleati
+
+la **repubblica sociale di salò** create ad mussolini a fine guerra 
+
+
+## Perl arbur
 
 **kamikaze**:vento divino
 
-319-321
+## Lili Marlene
+
+**Marlene** nata a berlino non accettò il nazismo
+e rifiuto le proposte di Goebbles e Hitler
+scappò negli stati uniti e fece spettacoli per
+gli alleti vestita con l'uniforme cantava 
+Lili Marlene
+
+## Film
+
+FILM: il discorso del re, l'ora più buia
+
