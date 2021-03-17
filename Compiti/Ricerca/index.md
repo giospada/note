@@ -10,3 +10,4 @@ usare il ':call CreateIndex()' comando per fare l'update
 
 - [Vietnam.md](Vietnam.md)
 - [PTCO](PTCO.md)
+- [Educazione civica](EducazioneCivica.md)

@@ -336,4 +336,19 @@ oppure la maggioranza semplice 50%+1 dei preseneti
 cause di eneleggibilità
 
 la commissione agisce o in sede referente o deliberante
->>>>>>> 75c339af5c5ba8d4ca7bd1d94bca884a432aac14
+
+
+giuridica:definire solo gil obbiettivi dell'intervento pubblico, prevedere i programmi
+
+
+enti territoriali:redigono delle scritture contabili 
+
+
+## Ventotene
+
+e santo stefano dove c'è una sola grande prigione
+
+create da augusto 
+creano enormi cisterne per l'acqua
+
+

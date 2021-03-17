@@ -425,3 +425,94 @@ frequenza temporale:
 - entrate straordinarie: presentano carattere di eccezionalita
 
 
+## Economia politica
+
+bilancio dello stato
+- cosè
+- i tipi
+- le regole
+- i documenti
+- analisi delle spese e entrate
+- articolo 81
+- principi giuridici di bilancio
+
+
+### Bilancio dello stato
+
+**definizione**
+> è un documento contabile nel quale sono elencate secondo criteri prescritti dalla legge, le entrate e le spese relative all'attività finanziaria dello stato in rifermiento a un determinato perieodo
+
+
+si parla di **legge di biliancio** poichè è proposta dal governo e approvata dal parlamento
+
+
+**Criteri** di classificazione:
+1. precisioni o fatti:
+    - **previsionae**: quando è riferito ad un perieodo che deve ancora iniziare (serve come autorizzazione e vincolo per le risorse 
+      lo stato metterà a disposizione e come le vuole reperire)
+    - **consuntivo**(o di rendiconto):registra le entrate e uscite effettivamente avveunte del perieodo desiderato (ha funzione 
+      di controllo)
+2. legislazione:
+    - **vigente**: il bilancio che viene redatto tenenco conto della legislazione in vigore
+    - **programmatico**: tiene presente delle leggi che verranno approvate in futuro
+3. durata:
+    - **annuale**: riferito all'anno solare
+    - **pluriennale** riferito a tre anni (ogni anno viene aggiornato slittando di un anno avanti)
+4. criteri contabili:
+    - **di competenza**:conidera le entrate e spese nel momento in cui si misurano
+    - **di cassa**: considera le entrate e spese nel momento in cui effettivamente si realizzano
+
+
+**legge di assestamento** è una legge che modifica alcune voci del bilanciodeve (deve essre presentata entro il 30 giunio)
+
+
+**classificazione delle spese**:(dalla legge n 196 del 2009 che si conforma ai criteri adottati dai pease dell'erurozona)
+1. missioni:oppiettivi strategici che lo stato intende raggiungere(può coninvolgere più ministeri)
+2. programmi:le azioni che da mettere in atto per raggiungere gli obbiettivi che la missione si pone
+    - non rimodulabili:oneri inderogabili(obbligatori)
+    - rimodulabili: vengono modulate in base alle esigenze delle amministrazioni
+3. capitoli: disaggregano le somme assegnate a un singolo programma
+4. articoli
+
+ognuna di queste voci è l'aggreazione di quella precedente (una missione contineie più programmi etc...)
+
+
+**classificazione delle entrate**:
+1. titoli:
+    - entrte tributari (es iva o imposte sul reddito)
+    - entrate extratributarie (es affitti del patrimonio pubblico)
+    - entrate in conto capitale (es restituzioni di prestiti erogati ad altri soggetti)
+    - entrate per accensione di prestiti (es le obbligazioni emesse)
+2. entrate ricorrenti e non ricorrenti:(ricorrenti ogni anno)
+3. tipologie:individua la natura dell'entrata (es Irap ,Ires, iva)
+4. categorie:ciascuna categoria inidua l'oggetto 
+6. capitoli
+
+
+ripartite in differenti livelli
+
+**risulatati differenzaili nel bilancio**
+- risparmio pubblico: differenza tra entrate correnti e spese correnti
+- saldo netto da finanziere:differenza tra le entrate finali e le uscite finali
+- ricorso del mercato: indica le risorse che lo stato ricaverà dai prestiti e il saldo netto da finaziare
+
+**gestione amministrativa del bilancio**
+
+> **anno finanziario** perieodo di 13 mesi
+
+> **esercizio finanziario** è l'insieme degli atti amministrativi svoloti o da svolgere
+
+fasi **gestione delle entrate**:
+- accertamento: verifica del diritto di riscuotrere una somma da parte dello stato
+- riscossione:quando il debitore estingue il debito a il soggetto incaicato
+- incasso: coicide quando la somma finisce nella Tesoria dello stato
+
+fasi **gestione delle spese**:
+- impegno: 
+
+    
+
+
+
+
+

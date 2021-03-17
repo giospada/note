@@ -154,6 +154,11 @@ es di f(x) il prodotto tra due numeri primi mentre f-1(x) è NP
 
 quello più flessibile
 
+crea una chiave pubblica e una privata 
+
+con la chiave pubblica si cripta una cosa che può sapere solo qullo
+con la chiave privata
+
 è bastao sull'aritmetica modulo n se n è molto grande
 
 operazioni su interi
@@ -176,8 +181,51 @@ c= m^e mod n
 
 
 decriptare 
-m=c^d mod n
-
+$m=c^d mod n = (m^e mod n)^d mod n= m^e*d mod n$
 
 se m è facile da scoprire può fare dei tentativi di criptaggio
+
+
+molte volte rsa si usa per encriptare un altra chiave simmetrica per criptare 
+un messaggio
+
+## Number Theory
+
+modulo proprietà:
+- commutativa
+- associativa
+- distributiva
+
+per la divisione è più particolare
+
+
+
+## Funzioni HASH
+
+sono funzioni
+
+trasformazione ad una via
+
+prende il ingresso dei dati di lunghezza qualsiasi e produce una di lunghezza normale
+
+prende in considerazione tutti i bit in ingreso
+
+e devono essere veloci da calcolare perchè l'input può essere molto grande
+
+collisione quando 
+H(x)=H(y)
+
+si può cercare di invertirla o
+
+requisiti:
+- one way (m unknow) H(m')=h
+- weak collision: H(m)=H(m')
+- collision resistence
+
+paradosso del compleanno: con 23 persone la probabilità supera il 50%
+
+
+
+
+
 

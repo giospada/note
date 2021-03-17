@@ -502,6 +502,15 @@ suggerì a Hitler anche di firmare l'armistizio
 **operazione valchiria**:operazione per ammazzare hitler (per chiu rommel viene condannato)
 
 
+**collaborazinismo** oltre al governo di Peten 
+anche in **Norvegia** con **Quisling**
+ma anche moltisimi cittadini si schierarono
+denuciando eberi e partiginai fino a fiancheggiare
+l'esercito tedesco,molti spinti da un antibolscevismo
+e altri dal collaborare con un nemico irreversilmente
+vincitore; spesso però erano giustificazioni
+per mascherare un opportunismo
+
 
 ### Campi di morte
 
@@ -549,9 +558,16 @@ delle conquiste
 la **repubblica sociale di salò** create ad mussolini a fine guerra 
 
 
+### Resistenza
+
+ha in se tre anime
+
 ## Perl arbur
 
 **kamikaze**:vento divino
+
+
+
 
 ## Lili Marlene
 
@@ -561,7 +577,30 @@ scappò negli stati uniti e fece spettacoli per
 gli alleti vestita con l'uniforme cantava 
 Lili Marlene
 
+Robert capa:Fotografo di guerra che ha fotografato lo sbarco in normandia 
+e lo sbarco in sardegna
+
 ## Film
 
 FILM: il discorso del re, l'ora più buia
+sciuscia:nome dei bambini lucida scarpe
+land of mine
+film hitler  la caduta
 
+## Domande
+
+- hai visto il film roma città aperta?
+- politica dell'appisment
+- notte dei lunghi coltelli
+- claudio pavone la resistenza italiana
+- come si divide la francia
+- 8 settembre 1943
+- partigiani
+- chi è rommel la volpe del deserto
+- come si chiama il piano per far fuori hitler
+- capi di concentramento germania
+- per l'harbur
+- i patti lateranensi
+- benedetto croce
+- sbarco in normandia
+- come entra mussolini in guerra

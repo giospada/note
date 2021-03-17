@@ -293,3 +293,17 @@ IRAP 3,24%
 applico le imposte sull'utile
 
 
+##Buisness plan
+
+Da cosa è composto il Business Plan di una azienda?
+Il Piano descrittivo:
+    - La sintesi del progetto imprenditoriale, 
+     dove viene descritto brevemente l’idea e il progetto dell’azienda.
+    - L’impresa e i suoi protagonisti: dove verranno messi i componenti del gruppo imprenditoriale e chi ricoprirà le posizioni chiave. Inoltre deve essere specificato se l’azienda è gia esistente o no. Qua verrà messa la mission e vision dell’azienda.
+    - L’analisi dell’ambiente esterno: qua verranno descritti tutti i competitor e verrà analizzato il mercato in cui si competerà, spiegando se sia saturo o no.
+    - Il prodotto/servizio offerto: dove viene descritto il bisogno da soddisfare e una descrizione dettagliata del prodotto/servizio. Inoltre vanno messi i brevetti utilizzati.
+    - Il piano di marketing: qua verranno individuate le strategie di marketing, comunicazione e pubblicitarie che l’azienda svolgerà. 
+    - L’organizzazione dell’azienda e la programmazione dell’attività: dove si avrà una descrizione sintetica del processo produttivo e della struttura organizzativa delle risorse umane (dipendenti).
+
+
+316
