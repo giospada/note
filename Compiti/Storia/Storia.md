@@ -562,9 +562,60 @@ la **repubblica sociale di salò** create ad mussolini a fine guerra
 
 ha in se tre anime
 
-## Perl arbur
+staffette le donne partigiane
+
+
+togliatti volva trasformare l'italia in una repubblica comunista
+ma capisce che in questo momento la priorità era quella di scacciare
+i nazisti
+
+## Stati Uniti
+
+Il Giappone aveva occupato moltissime isole del pacifico
+finchè nel **1942** non attaccarono **pearl harbur**
+e da li non riuscirono a reprimere l'avanzata Americana 
 
 **kamikaze**:vento divino
+
+
+Riuscirono a **combattere gli u-bot** che nel Atlantico,
+e misero le forze in Africa così gli **italo-tedeschi** (Guidati da rommel)
+vennero **battuti** nel maggio 43 nella battaglia di **El alamein**
+lasciando l'africa agli alleati
+
+### Russia
+
+nel **42 hitler attacca la russia** per conquistare il caucaso
+(poichè alla germania mancavano le materie prime) parteciparono
+anche gli italiani (mal equipaggiati)  
+l'asse vince le prime battaglie fino al contrattacco russo 
+che ferma l'asse a stalingrado dove per sette mesi
+dove l'asse si arrese nonostante le indicazioni di hitler
+
+## Sbarco in italia
+
+dopo l'africa gli alleati puntarono all'italia 
+dove vennero accolti dalla popolazioni come liberatori
+
+## caduta del fascismo
+
+43 la monarchia distitui mussolini e lo fece arrestare(gran sasso) 
+e **Pietro Badoglio** prese l'inarioco per formare il nuovo 
+governo
+
+Badoglio firmò l'armistizio con gli alleati (e con il re si trasferirono
+Bari)  
+la Germania reagì occupando con il suo esercito l'italia settentrionale
+creando la linea **Gustav**
+
+i tedeschi liberarono mussolini e crearono la repubblica sociale di **Salò**
+sottomessa alla germania
+
+nel 44 gli alleati sfondarono la line **Gustav** arrivando alla linea 
+**Gotica** (mentre l'armata rossa aveva riconquistato i teritori 
+e continuava l'avanzamento)
+
+
 
 
 
@@ -604,3 +655,7 @@ film hitler  la caduta
 - benedetto croce
 - sbarco in normandia
 - come entra mussolini in guerra
+
+## Enrico fermi
+
+scompare dopo il rientro in patria

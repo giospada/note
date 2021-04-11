@@ -610,3 +610,63 @@ fingere la pazzia per evitare la galera
 
 10/3: tema priandello
 tesina entro il 2/3
+
+
+# Le speranze dei Poeti
+
+## Leopardi 
+
+
+### Vita
+
+nasce a recanati, trascorre gran parte dell'infanzia in biblioteca
+anni che definirà **sette anni di studio matto e disperatissimo**  
+Scrive lo **Zibaldone** dove parla dell'amore e conosce **Pietro Giordani** 
+che diventa un amico che gli farà capire la limitatezza culturale di
+recanati  
+la fuga fallise e mentre la famiglia lo spige per una carriera eclesiastica
+scrive sullo zibaldone la concezione atea 
+va a roma resta deluso e torna a recanati per ripartire a milano
+dove pubblica le **Operette morali** poi si trasferisce 
+poi si trasferisce a pisa dove scrive **il risorgimento** e **a silvia** 
+torna a recanati dove scrive altri canti(**sabato del villaggio**,
+**la quiete dopo la tempesta**,**il canto notturno di un pastore errante dell'asia**)
+si trasferice a firenze con **antonio Ranieri** e si innamorea di **Fanny targioni** 
+negli ultimi anni di vita rimane a napoli dove scrive l'ultima opera **la ginestra**
+
+### Pessimismo leopardianoi
+
+1. **pessimismo storico**:la natura come madre begnigna creatrice di illusioni 
+   da cui la civiltà ci ha allontanati
+2. **pessimismo cosmico**:la natura matrigna creatrice del bisogno del piacere 
+   inappagabilie  e indifferente alle vicende umane
+4. **pessimismo combattivo**: la natura e il nemico contro cui gli uomini sono 
+   chiamati a combattere
+
+
+romanticismo: movimento che rifiutava il movimento al positivismo
+
+> il positivismo da cont che rifiutava il romanticismo ed esaltava
+> l'illuminismo
+
+**silvia**:foglia del cocchiere di leopardi 
+muore di tubercolosi rappresenta la giovinezza mai arrivata,
+contrasto fra illusione passata e disillusione del presente
+
+A silvia: canzone libera
+
+## Baudelaire
+
+
+## Giuseppe Ungheretti
+
+Prima Guerra mondiale trince
+
+## Eugenio Montale
+
+## Sandro Penna 
+
+## Edgar alla poe
+narrativa simbolista
+
+

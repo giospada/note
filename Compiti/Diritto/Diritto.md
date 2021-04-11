@@ -352,3 +352,76 @@ create da augusto
 creano enormi cisterne per l'acqua
 
 
+## Domande
+
+- rapporto governo parlamento:
+    - mozione di sfiducia/fiducia
+    - la mozione di fiducia viene fatta alla formazione di un nuovo governo a 10 giorni dal giuramento per 
+      confermare il governo 
+    - mozione di sfiduzia crisi parlamentare
+- come si chiama la durata del mandato di governo e parlamento?legislatura 
+- che ruolo ha in tutto questo il presidente della repubblica(nell'equilibrio di fiducia con il governo):
+    - in caso di crisi di governo ha il compito di creare il nuovo governo
+    - o può scogiere direttamente le camere
+- il principio di separazione dei poteri(in base a questo principio il rapporto tra i poteri doverebbe essere di totale separazione):
+    - parlamento e governo hanno lo stesso indirizzo politico
+    - questi obbiettivi possono essere di natura economica/sociale
+- gli atti che il governo deve compiere per potere attuare la sua politica al posto di attendere:
+    - decreti legge che devono essere convertiti in 60 giorni in legge ordinaria(prof: non si deve dire deve ma può) in casi di necessità e urgenza
+    - decreto legislativo che è viene fatto su delega e deve rispettare determinati vincoli del parlamento(deve contenere i principi e criteri sul quale deve essere creata la legge)(prof: il concetto è quale concetto c'è tra il parlamento e il governo,c'è il rispetto della separazione dei poteri che è garantito dal fatto che sono in delega,l'intera assemblea deve votare per la legge delaga (modalià ordinaria))
+- la nostra costituzione che è rigida che tipo di meccanismo introduce per poterla modificare (un meccanismo che conivolge il popolo):
+    - la legge costituzionale può essere cambiata solo con la procedura aggravata che è navetta a distanza di 3 tra le due camere,(la navetta è il passaggio delle approvazioni tra le due camere (che è necessario a ogni minimo cambiamento))
+    - la revisione costituzionale: non devono andare contro i principi fondamentali della costituzione (l'unico limite eslpicitato art.139 la forma repubblicana non è soggetta a revisione)
+- quali principi fondamentali ti ricordi:
+- leggi più importanti e meno importanti:
+    - le leggi costituzinali
+    - legge delega
+    - la legge di bilancio (procedura ordinaria)
+- inter legis ordinario:
+    - si parte con la presentazione di legge alle camere con gli obbiettivi e il contenuto della proposta (fatto dal governo deputati o dal popolo ) il presidente della repubblica lo porta alle commissioni che lo approvano) viene consegnata che verrà 
+- quante sono le commissioni sia alla camera e al senato:
+    - 14 alla camera e 14 al senato
+- come si chiama la commissione che deve approvare il bilancio( commissione di bilancio)
+
+
+Educazione Civica
+
+
+date chiave
+
+2 giunio 46:(popolo votazione repubblica e monarchia)referendum istituzionale 
+assemblea costituente (rappresentati politici che avrebbero dovuto creare 
+la costituzione)(la commissione dei 75 che ha elaborato il testo che venne
+poi votato nell'assemble)
+
+1 gennaio 48:votazione costituz
+
+costituzione (reggio):
+- nilde iotti
+- ferruccio uini
+- piero caramandei
+- don dossetti
+- andreotti etc..
+
+pietro caramandei: discorso sulla costituzione 
+all'univerità di milano
+
+corte costituzionale(15 membri)
+Formata da giudici (chiamati dogati)
+e membri laici(avvocati e professori universitari)
+
+hanno la funzione giudicante e pronunciano delle sentenze
+queste sentenze si pronuncia una illegittimita o meno di 
+una legge o decreto
+sono leggi definitive che valgono "erga omnes"(vale per tutti)
+
+la corte costituzionale si attiva solo se nel corso del processo il 
+giudice ritenga che la legge che deve essere applicata ha un dubbio
+di costituzionalità
+
+
+giudice dei conflitti costituzionali:(es. dibattito di conflitti di attribuzione)
+
+verificare i referendum abrogativi
+
+

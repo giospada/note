@@ -448,7 +448,7 @@ si parla di **legge di biliancio** poichè è proposta dal governo e approvata d
 
 **Criteri** di classificazione:
 1. precisioni o fatti:
-    - **previsionae**: quando è riferito ad un perieodo che deve ancora iniziare (serve come autorizzazione e vincolo per le risorse 
+    - **previsione**: quando è riferito ad un perieodo che deve ancora iniziare (serve come autorizzazione e vincolo per le risorse 
       lo stato metterà a disposizione e come le vuole reperire)
     - **consuntivo**(o di rendiconto):registra le entrate e uscite effettivamente avveunte del perieodo desiderato (ha funzione 
       di controllo)
@@ -467,7 +467,7 @@ si parla di **legge di biliancio** poichè è proposta dal governo e approvata d
 
 
 **classificazione delle spese**:(dalla legge n 196 del 2009 che si conforma ai criteri adottati dai pease dell'erurozona)
-1. missioni:oppiettivi strategici che lo stato intende raggiungere(può coninvolgere più ministeri)
+1. missioni:obbiettivi strategici che lo stato intende raggiungere(può coninvolgere più ministeri)
 2. programmi:le azioni che da mettere in atto per raggiungere gli obbiettivi che la missione si pone
     - non rimodulabili:oneri inderogabili(obbligatori)
     - rimodulabili: vengono modulate in base alle esigenze delle amministrazioni
@@ -508,11 +508,57 @@ fasi **gestione delle entrate**:
 - incasso: coicide quando la somma finisce nella Tesoria dello stato
 
 fasi **gestione delle spese**:
-- impegno: 
+- impegno:quando matura l'obbligo di pagare
+- pagamento:quando la somma esce dalla tesoria dello stato
 
-    
+**residui**:
+- attivi: entrate non ancora riscosse 
+- passivi: speese non ancora  pagate
+
+#### Tappe bilancio
+
+Fiscal compact: ha introdotto il principio costituzionale di **bilancio in pareggio**
+
+**Documento di economia e finanza**:approvato dal parlamento entro il (10 aprile)(strumento di programmazione economica)
+- Programma di stabilità dell'italia:obbiettivi per ridurre il debito pubblico
+- Analisi e le tendenze della finanza pubblica:analizza la situazione di aggregati pubblici e la loro possibile evoluzione
+- programma Naionale di Riforme:indica l'avanzamento delle riforme attuate e quelle da attuare
+
+**Nota di aggiornamento del Def**:aggiorna le previsioni economiche in base all'andamento (entro il 27 settembre)
 
 
+**Documento programmatico di bilancio** è il bilancio dell'anno seguente che verrà mandato all EU il 15 ottobre
+
+**legge di bilancio**: riporta le decisioni sul totale delle entrate e delle spese pubbliche. Contiene la MANOVRA interventi correttivi necessari a raggiungere le attività del Governo. ( Entro il 31 dicembre)
 
 
+#### Le funzioni e i principi contabili del bilancio
 
+**funzioni**
+- politica:consolida o manifesta il legame tra governo e parlamento
+- economica:influenza gli aggregati macroeconomici
+- giuridica autorzza e vincola l'azione del groverno e della Pubblica amministrazione
+
+**Principi**:
+- art. 81:
+    - principio di annualità
+    - principio di pareggio di bilancio
+- l. 196 del 2006:
+    - universalità: deve contenere tutte le operazioni d'entrata e uscita (salvo deroghe)
+    - unità delle entrate:
+    - integrità: non bisogna compensare le entrate con le uscite ma separarle
+    - specificazione: scomporre le entrate per essere votate
+    - veridicità: è l'essere preciso sopratutto sulle previsioni
+    - pubblicità: deve essere accessibile per la consultaizone pubblica
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

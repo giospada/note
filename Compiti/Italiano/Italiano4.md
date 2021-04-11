@@ -34,7 +34,7 @@ la sua ultima poesia la ginestra
 - **alla luna**:il poeta sull colle osserva la luna e parla, ricorda che era salito l'anno prima con gli occhi lacrimanti e il fatto che nulla è cambiato da allora il suo animo è pieno di sofferenza eppure ricordare che il dolore di allora lo risolleva
 - **Ginestra**:
 - **l'infinito**: nella poesia leopardi guara una siepe ed immagina cosa c'è dietro pensando ad un mondo infinito che crea un piacere
-- **a silvia**:questa è incentrata sulla morte di teresa Fattorini e rievoca l'appassionata delle dolci speranze e l'infelicità  del genere umano. le attese sono deluse quando si arriva nell'età adulta( pessimismo storico) 
+- **a silvia**:questa è incentrata sulla morte di teresa Fattorini e rievoca l'appassionata delle dolci speranze e l'infelicità  del genere umano. le attese sono deluse quando si arriva nell'età adulta( pessimismo cosmico) 
 - **la quete dopo la tempesta**:descrive il villaggio dopo una burrasca  descrive il piacere nato dalla fine dolore (descrive con **l'antigfrasi**(dire il contrario))
 - **il Sabato del villaggio**:prima descrive le attività che il villagio fà alla fine del giorno, dopo dichiara la superiotità del sabato sulla domeica **l'attesa è meglio della realizzazione**
 
