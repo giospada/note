@@ -314,3 +314,15 @@ imposta sugli immobili sui valori catastali
 ## IRAP
 
 per le prestazioni occasionali non si paga l'irap entro i 5000
+
+
+## Unità C
+
+**Canoni di leasing** è ammessa una deuzione non inferiorie alla metà del perieodo di ammortamento
+(gli immobili non inferiore a i 12 anni)
+
+**Manutenzioni e riparazioni** sono deducibili nel 5% del costo complessivo di tutti i beni materiali ammortizzati, l'eccednza è deducibile nei 5 anni successivi
+(i canoni periodici sono deducibli per l'intera)
+
+
+
