@@ -469,3 +469,33 @@ la corte costituzionale emette la sentenza di annullamento e quindi respinge la 
 `quali sono gli aerticoli che la costituzione prevede relativamente ai diritti in ambito giuristizionale`
 
 - diritto d'azione 
+
+
+
+## Dallo stao liberale a quello fascista
+
+**stato liberale**:  quando il re di sardegna (grazie ai subbugli dei sudditi) concede la prima carta costituzionale chiamata statuto albertino 
+
+**statusto albertino**: diritti di libertà
+- libertà della persona (prima bastava il sospetto che potevi essere condannato)
+- di circolazione
+- proprietà privata
+
+
+**stato elitario**: poichè il non c'è suffragio universale
+
+Crisi dello stato liberale: per colpa:
+- ruolo insignificante della politica intenzazionale
+- corruzione
+- niente prospettive
+
+etica di stato (etica insieme di valori morali di una società)
+
+
+
+**legge acerbo**:legge per favorire il partito di maggioranza
+
+**corporativismo**: "è la terza via introdotta dal fascismo italiano" per il conflitto tra dipendenti e datori di lavoro il fascismo si impone come unica via in cui lo stato fascista controlla (idea per risolvere i conflitti di classe)
+
+
+

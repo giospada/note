@@ -658,7 +658,30 @@ A silvia: canzone libera
 ## Baudelaire
 
 
+**sleen**:malinconia disagio  
+
+**albratro**: 
+
+**corrispondenze**:basta sulla sinestesia parla della poesia
+
+**i fori del mare**(verrà censurato) anticipa i temi dei poeti maledetti
+
+## Arthur Rimbaub
+
+
+**poeta maledetto**
+
+**il battello ebro**:(il battello ubriaco) che è stanco di stare nelle acquelle 
+e va in mare 
+
+**Le Vocali**:
+
+va a parigi con **Verlaine** che è già sposato con cui fa avventure
+smette di scrivere, va in africa dove si ammala e perde la gamba
+
+
 ## Giuseppe Ungheretti
+
 
 Prima Guerra mondiale trince
 

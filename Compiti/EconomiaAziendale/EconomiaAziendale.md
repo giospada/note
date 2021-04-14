@@ -306,4 +306,11 @@ Il Piano descrittivo:
     - L’organizzazione dell’azienda e la programmazione dell’attività: dove si avrà una descrizione sintetica del processo produttivo e della struttura organizzativa delle risorse umane (dipendenti).
 
 
-316
+## IMU
+
+imposta sugli immobili sui valori catastali 
+è un imposta patrimoniale che colpisce tutti gli immobili tranne quello d'abitazvone
+
+## IRAP
+
+per le prestazioni occasionali non si paga l'irap entro i 5000
