@@ -250,7 +250,7 @@ Governo:
 
 > il governo è l'organo che ha il potere esecutivo
 
-*esecutivo attuare le norme e i progetti del parlaemnto 
+*esecutivo attuare le norme e i progetti del parlaemnto*
 
 il governo è il motore della vita politica 
 
@@ -425,3 +425,47 @@ giudice dei conflitti costituzionali:(es. dibattito di conflitti di attribuzione
 verificare i referendum abrogativi
 
 
+domande:
+`gli artioli più rappresentativi per il presidente della repubblica:`  
+il presidente della repubblica superpartes e galante della costituzione italiana, 
+viene eletto art 84/5, i requisiti:
+- cittadino italiano
+- diritti civili e politici
+- almeno 50 anni  
+
+viene eletto in seduta comune del parlamento con tre relegati per ogni regione 
+dopo il 4 maggioranza  prima il 75% è in carica per 7 anni ed è rieleggibile
+
+86 art l'impedimento il suo incarico deve andare il presidente del senato
+
+`quali sono funzioni del presidente della repubblica?`
+86/7
+
+
+`democrazia diretta e rappresentativa`
+
+la nostra democrazia è rappresentativa
+referendum l'unica forma di democrazia diretta
+
+`art 75`
+
+referendum abrogativo, non può abrogare i tratti internazinali,tributarie,bilancio
+
+
+`garanzie costituzionali`
+
+rigidità della costituzione
+
+corte costituzionale è formata da 15 giudici formati dal presidente della republica 
+i giudici sono o ex magistrati o professori di dirtto e c'è un presidente che sta in carica 
+9 anni
+la sua funzione è che le leggi siano conformi alla costituzine
+
+la corte costituzionale può essere appellata da un giudice che durante una causa (civile ,amministrativa
+o penale) 
+
+la corte costituzionale emette la sentenza di annullamento e quindi respinge la richiesta
+
+`quali sono gli aerticoli che la costituzione prevede relativamente ai diritti in ambito giuristizionale`
+
+- diritto d'azione 
