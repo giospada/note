@@ -657,6 +657,26 @@ A silvia: canzone libera
 
 ## Baudelaire
 
+La poesia moderna nasce in Europa, grazie soprattutto all'esempio di **Les fleurs du mal** di Charles Baudlaire.
+Questo libro segna una rottura con il Romanticismo tradizionale, che concepiva la poesia come espressione della natura e della spontaneità.
+
+Con Baudlarie , l'attività del poeta è considerata come un prodotto della civiltà e dell'artificio. che poi si assiste all'esperienza "poeti maledetti".
+
+La nazione lirica in questo periodo era la *Francia.*
+
+il libro Le fleur du mal, con la quale da avvio alla poesia moderna. Il titolo --> il fiore è dunque l'allegoria del male; in quanto il fiore da sempre era associato alla purezza e alla bellezza, ora invece rappresenta l'idea, ovvero il male.
+
+siamo nell'area del simbolismo --> **albatro** = poeta 
+
+Baudlarie rivoluziona la poesia, tuti i poeti dopo di lui si chiamano poeti maledetti perché  vivevano ai margini. 
+
+ 
+
+PAG 183-184--> CORRISPONDENZA (basata sulla figura retorica --> sinestesia)
+
+"manifesto" del simbolismo
+
+percorre una cattedrale della natura, dove le colonne non sono colonne ma gli alberi e soltanto il poeta decodifica, capisce i messaggi degli alberi.
 
 ## Giuseppe Ungheretti
 
