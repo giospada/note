@@ -691,7 +691,7 @@ percorre una cattedrale della natura, dove le colonne non sono colonne ma gli al
 
 **poeta maledetto**
 
-**il battello ebro**:(il battello ubriaco) che è stanco di stare nelle acquelle 
+**il battello ebro**:(il battello ubriaco ) che è stanco di stare nelle acquelle 
 e va in mare 
 
 **Le Vocali**:
@@ -699,6 +699,14 @@ e va in mare
 va a parigi con **Verlaine** che è già sposato con cui fa avventure
 smette di scrivere, va in africa dove si ammala e perde la gamba
 
+## Giovanni Pascoli
+
+usa due tecniche:
+- **pre grammaticale**:(onomatopea )per simulare il linguaggio di un bambino
+- **post grammaticale**:  
+
+importaza di contenuti: "parla delle piccole cose della vita" paura d'amare
+nido famigliare 
 
 ## Giuseppe Ungheretti
 
@@ -711,5 +719,4 @@ Prima Guerra mondiale trince
 
 ## Edgar alla poe
 narrativa simbolista
-
 

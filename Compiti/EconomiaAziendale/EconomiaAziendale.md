@@ -313,16 +313,44 @@ imposta sugli immobili sui valori catastali
 
 ## IRAP
 
+**non deducibili**
+- le collaborazione occasionali 
+- interessi passivi, canoni di leasing
+- svalutazioni delle immobilizzazioni
+-svalutazioni dei crediti
+- gli accantonamenti 
+
+**deducibili**
+- il personale assunto con contratto a tempo indeterminato posso dedurmelo
+
 per le prestazioni occasionali non si paga l'irap entro i 5000
+
+## Ires
+
+sommo tutte le imposte al lordo
 
 
 ## Unità C
 
-**Canoni di leasing** è ammessa una deuzione non inferiorie alla metà del perieodo di ammortamento
-(gli immobili non inferiore a i 12 anni)
+**l'ammortamento delle immobilizazioni** 
+- superiore: si registerà una varizione in aumento e poi si registeranno delle variazioni in diminuzione una volta finite
+- minore:se sono minori l'eccedenza si perde(non può essere dichiarata come varizione in diminuzione)
+(se il bene è entrato in funzione si valuta la metà)
 
-**Manutenzioni e riparazioni** sono deducibili nel 5% del costo complessivo di tutti i beni materiali ammortizzati, l'eccednza è deducibile nei 5 anni successivi
+**Canoni di leasing** è ammessa una deuzione non inferiorie alla metà del perieodo di ammortamento
+(gli immobili non inferiore a i 12 anni) e si separa l'ammortamento civilistico e quello finanziario mettendo ogni anno la differenza tra questi due formando una varizione in aumento o in diminuzione 
+
+**Manutenzioni e riparazioni** sono deducibili nel 5% del costo complessivo di tutti i beni 
+materiali ammortizzati, l'eccednza è deducibile nei 5 anni successivi 
 (i canoni periodici sono deducibli per l'intera)
 
+**compensi amministratori** vige un criterio di cassa quindi se non gli ho pagati non 
+posso scaricarmeli a fine fiscali
 
+**fondo svalutaizone crediti**
+- il 5% dei crediti commerciali deve  essere maggiore del 5% del fondo svalutazione  
+- l'accantonamento al fondo è deducibile per il 0,5% del valore dei crediti commerciali
 
+**interessi passivi**:
+- prima si possono dedurre pari al valore degli interessi attivi
+- Calcolare il (ROL(a-b)+ammortamenti+leasing)*30% 
