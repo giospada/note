@@ -693,7 +693,7 @@ TODO:Bodlere
 
 **poeta maledetto**
 
-**il battello ebro**:(il battello ubriaco) che è stanco di stare nelle acquelle 
+**il battello ebro**:(il battello ubriaco ) che è stanco di stare nelle acquelle 
 e va in mare 
 
 **Le Vocali**:
@@ -721,6 +721,14 @@ ma a cui non sei mai arrivato
 
 **la pioggia nel pineto**
 
+## Giovanni Pascoli
+
+usa due tecniche:
+- **pre grammaticale**:(onomatopea )per simulare il linguaggio di un bambino
+- **post grammaticale**:  
+
+importaza di contenuti: "parla delle piccole cose della vita" paura d'amare
+nido famigliare 
 
 ## Giuseppe Ungheretti
 
@@ -735,5 +743,4 @@ Prima Guerra mondiale trince
 
 
 narrativa simbolista
-
 

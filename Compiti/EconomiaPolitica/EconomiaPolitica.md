@@ -551,14 +551,13 @@ Fiscal compact: ha introdotto il principio costituzionale di **bilancio in pareg
     - veridicità: è l'essere preciso sopratutto sulle previsioni
     - pubblicità: deve essere accessibile per la consultaizone pubblica
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+### Walfare state
+
+> Il Welfare State è l’insieme di interventi pubblici come protezione e sicurezza sociale a specifici soggetti che devono rientrare in dei parametri specifici, per poter ottenere il contributo
+
+**Tipi di walfare stati**:
+- Il modello bismarkiano: dove veniva data un’assicurazione e previdenza ma solamente ai lavoratori.
+- Il modello beverige: dove venivano concessi dei contributi sociali a tutti i cittadini.
+
+Bismark: è stato il primo ministro in germania
+Beverige: invece è stato un consulente e un politico "disse che lo stato deve assistere il cittadino dalla culla alla tomba"
