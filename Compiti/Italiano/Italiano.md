@@ -466,7 +466,7 @@ fa la cariola con lei
 **sole e ombra**:sigor ciunna che ruba dei tabacchi dal lavoro
 per sostenere la famiglia e poi si siucida per il senso di colpa
 
-**il treno ha fischiato**: Belluca TODO
+**il treno ha fischiato**: Belluca nota il fischio del treno per la prima volta
 
 **ciaola scopre la luna**:un ragazzino che lavora in miniera ed 
 una sera dopo il lavoro il capo obbliga a rimanere per consegnare
@@ -686,6 +686,8 @@ percorre una cattedrale della natura, dove le colonne non sono colonne ma gli al
 
 **i fori del mare**(verrà censurato) anticipa i temi dei poeti maledetti
 
+TODO:Bodlere
+
 ## Arthur Rimbaub
 
 
@@ -699,6 +701,26 @@ e va in mare
 va a parigi con **Verlaine** che è già sposato con cui fa avventure
 smette di scrivere, va in africa dove si ammala e perde la gamba
 
+TODO:completare raimbaub 
+
+## Giovanni Pascoli
+
+**Vita**
+
+la toeoria del **fanciullino** è una visione piena di stupore e ingenuità
+
+**fotosimbolismo** evocazione di un immagine tramite la riproduzione del suono
+
+
+**La mia sera**: poesia che racconta di tutto quello che avresti voluto realizzare 
+ma a cui non sei mai arrivato 
+
+**Nebbia**:come posto che ti protegge è un muro che evita di farti soffrire
+
+## D'annunzio
+
+**la pioggia nel pineto**
+
 
 ## Giuseppe Ungheretti
 
@@ -710,6 +732,8 @@ Prima Guerra mondiale trince
 ## Sandro Penna 
 
 ## Edgar alla poe
+
+
 narrativa simbolista
 
 

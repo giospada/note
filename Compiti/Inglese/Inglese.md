@@ -193,4 +193,39 @@ We look forword to do buisness togheter.
 stanza 101
 2+2=5
 
+## INterrogazione EU
+
+
+Biosnga sapere bene i trattati
+i nomi di quelli a capo delle varie istituzioni
+e le varie istituzioni
+what eu does for you
+the treaty of doublin (i politici satnno dibattendo)
+
+- when the uk entered in the EU
+- when the uk brexit
+- how the eu expands over the last year
+- why they made the ECSC
+- important europian institution 
+- Beilout finactional resecu
+
+
+
+## Verifica
+
+International trade
+
+Pag 10,11,12
+
+Why country create Trading blocs: for have the same policy
+
+they have a prefeletion treatment betwen the country in the trading blocs
+
+the multinational group implies the anations need to become part of such gruop
+
+NAFTA: was modify by trump (the new is USMC) beacouse it wasn't in favour of US
+(it was made for help messico to growth)
+
+
+
 
