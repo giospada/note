@@ -223,6 +223,8 @@ il un uomo che cerca di vivere secondo i valori che il padre gli aveva dato:
 - 
 
 - il notturno: prosa lirica che scrive con uno stile paratattico(frasi corte) (aiutato dalla figlia renata)
+d'annunzio sconfitto
+
 
 figlia renata detta la sirena
 
