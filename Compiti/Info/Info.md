@@ -137,3 +137,8 @@ sistemi disgunti:
 - è più personalizzabile
 
 
+### Reti
+
+per le lan si possono usare reti peer-to-peer 
+
+intranet e extranet 

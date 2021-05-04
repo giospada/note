@@ -33,3 +33,12 @@ un atleta discrimiato
 	- struttura produttiva: come vengono organizzati
 	- rapporti con il sistema creditizio: 
 - programma di invewstimentox	
+
+
+## Diritto
+
+ci vuole un prodotto finale
+
+
+
+

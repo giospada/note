@@ -188,7 +188,9 @@ Poi abbiamo calcolato il break-even che abbiamo attorno alle 400 scatole
 Grazie al risultato dei grafici che rappresentano la differenza di utile al variare del tasso di riciclaggio e il numero di ricicli di una scatola, abbiamo dedotto che la strategia migliore si effettua portando i ricicli fino a 7 per scatola e poi cercare di aumentare il tasso di riciclaggio aggiungendo un bonus nel cashback.
 
 
+## Psicologo 
 
+come sintitezzare  l'elaborato
 
 
 

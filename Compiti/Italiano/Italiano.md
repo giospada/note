@@ -217,6 +217,11 @@ un'intensa relazione. L'uomo, però, non riesce a dimenticare Elena e alla fine,
 bisogno di Andrea, perché il marito è stato coinvolto in uno scandalo, egli in un momento di smarrimento,
 distrutto dal fatto che Elena avesse un nuovo amante, la chiama con il nome dell'altra. Maria, sconvolta,
 scappa via senza dire una parola e lo lascia per sempre.
+
+il un uomo che cerca di vivere secondo i valori che il padre gli aveva dato:
+- vivi la tua vita come un'opera d'arte
+- 
+
 - il notturno: prosa lirica che scrive con uno stile paratattico(frasi corte) (aiutato dalla figlia renata)
 
 figlia renata detta la sirena
@@ -680,9 +685,9 @@ percorre una cattedrale della natura, dove le colonne non sono colonne ma gli al
 
 **sleen**:malinconia disagio  
 
-**albratro**: 
+**albratro**:collega il volatile che in celo è stupendo a i poeti che vengono derisi dai contemporanei 
 
-**corrispondenze**:basta sulla sinestesia parla della poesia
+**corrispondenze**:basta sulla sinestesia parla della poesia, dove fa corrispondere un bosco ad un tempio che solo il poeta riesce a percepire
 
 **i fori del mare**(verrà censurato) anticipa i temi dei poeti maledetti
 
@@ -705,7 +710,16 @@ TODO:completare raimbaub
 
 ## Giovanni Pascoli
 
+
 **Vita**
+decadentista,simbolista
+
+usa due tecniche:
+- **pre grammaticale**:(onomatopea )per simulare il linguaggio di un bambino
+- **post grammaticale**:  
+
+importaza di contenuti: "parla delle piccole cose della vita" paura d'amare
+nido famigliare 
 
 la toeoria del **fanciullino** è una visione piena di stupore e ingenuità
 
@@ -717,18 +731,19 @@ ma a cui non sei mai arrivato
 
 **Nebbia**:come posto che ti protegge è un muro che evita di farti soffrire
 
+**Temporale**:
+
+
 ## D'annunzio
+
+scrittore di teatro,novelle veriste
 
 **la pioggia nel pineto**
 
-## Giovanni Pascoli
-
-usa due tecniche:
-- **pre grammaticale**:(onomatopea )per simulare il linguaggio di un bambino
-- **post grammaticale**:  
-
-importaza di contenuti: "parla delle piccole cose della vita" paura d'amare
-nido famigliare 
+d'annunzio in versilia fa una passeggiata in un pineto con ermione 
+il rumore della pioggia sulle foglie fa una sinfonia, a cui si aggiunge
+il rmore della cicala e della rana, **panismo** è l'unione dell'uomo nella
+natura, e mentre la donna si trasforma in corteccia loro si intricono e lei piange di piacere, sinfonia di sensualità
 
 ## Giuseppe Ungheretti
 

@@ -498,4 +498,27 @@ etica di stato (etica insieme di valori morali di una società)
 **corporativismo**: "è la terza via introdotta dal fascismo italiano" per il conflitto tra dipendenti e datori di lavoro il fascismo si impone come unica via in cui lo stato fascista controlla (idea per risolvere i conflitti di classe)
 
 
+**ente locale**:sindaco e assessori che svolgno le funzioni per 
+
+**direttore generale**: è un manager con un contratto fiduciario con l'attuale presidente
+
+
+domande:
+- la repubblica è nata il 2 giungio del 46 quando venne istutito il suffragio universale e per la prima volta si sceglie tra la repubblica e la monarchia, prima c'era monarchia constituzionale lo divenne nel 1961, repubblica potere esecutivo il governo, la magistratura quello giurisdizionale e il parlamento legislativo, sopratutto si basa sulla costituzione che è la legge fondamentale dello stato che contiene le norme fondamentali dello stato e dichiarano i valori fondamentali della costituzione:
+- uguaglianza
+- libertà
+- solidarità
+- lavoro
+- libertà religiosa
+- ripudio della guerra
+- internazionalismo
+
+il presidente della repubblica ha il potere di rappresentanza, ed è super parte per garantire la costituzione e l'imparzizlità tra le parti, può indirre i referendum può scogliere le camere, per il potere esecutivo elegge il presidente del consiglio e i ministri piò revocare le pene ai carcerati 
+
+
+
+
+
+
+
 
