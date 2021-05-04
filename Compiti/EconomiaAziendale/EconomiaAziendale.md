@@ -325,9 +325,12 @@ imposta sugli immobili sui valori catastali
 
 per le prestazioni occasionali non si paga l'irap entro i 5000
 
+3,9%
+
 ## Ires
 
-sommo tutte le imposte al lordo
+somma l'utile prima delle imposte - deducibili + variazioni in aumento
+calcola il 24%
 
 
 ## Unità C

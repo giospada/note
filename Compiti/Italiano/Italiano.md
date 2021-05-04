@@ -218,6 +218,8 @@ bisogno di Andrea, perché il marito è stato coinvolto in uno scandalo, egli in
 distrutto dal fatto che Elena avesse un nuovo amante, la chiama con il nome dell'altra. Maria, sconvolta,
 scappa via senza dire una parola e lo lascia per sempre.
 - il notturno: prosa lirica che scrive con uno stile paratattico(frasi corte) (aiutato dalla figlia renata)
+d'annunzio sconfitto
+
 
 figlia renata detta la sirena
 
