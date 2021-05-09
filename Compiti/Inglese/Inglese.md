@@ -213,23 +213,28 @@ the treaty of doublin (i politici satnno dibattendo)
 
 **Treaty of Paris**:in 1951 the treaty of paris establish the "European Coal and Stell Community" the pourprose for this union is to leve the taxes on producet like steal and carbon that contry need for the recostruction
 
+
 **Treaty of Rome** in 1957 European Economic Community this treaty aim to manke easier for the stats to trade with each other
+
 
 **Maascricht Treaty** in 1992 the Maastricht Treaty
 -  to prepare the European Monetray Union and introduce elements of a poilitical union. It introduced European citizenship and lunched European cooperation  in foreign affaris, security asylum and immigration
-n
+
 
 **Treaty of Amsterdam** in 1997 to reform the EU institution in preparation for the arrival of future members
 further changes in the areas of judical cooperation, free movement of people and foreign and security policy
 
+
 **Treaty of Nice** in 2001 reform the institution so that the EU could funciton efficiently anfter reaching 25 members countries.
 provision for the distribution of seats in the european pairlament, weightting of votes in the Council of Minister for majorty voting and the future composition of the commision
+
 
 **Treaty of lisbon** in 2007 to make the Eu come democratic more efficent and better able to address global problems with one voice. It reformed the structure of the Eu and the way in witch it functioned. it clarified which powers belonged too the Eu, Eu member countries and whcch it functioned. it clarified withc powers blonged to the Eu members coutnries and which ones were shared
 more power for the Europen parlament change of voting procedures in the council
 
 
-**European Council**:is formed by all head of state of country ,commission President and European council president. The council meet 4 times a year in brussel, thougs its president call the meetin,it set the european political direction and prioriy and deal complex situation, but it has no power to pass lawsz
+**European Council**:is formed by all head of state of country ,commission President and European council president. The council meet 4 times a year in brussel, thougs its president call the meetin,it set the european political direction and prioriy and deal complex situation, but it has no power to pass laws
+
 
 **EU Parlament**: the EU parlament is elected by the people every 5 years and evry contry has bewtenn 6 and 96 Member based on the popoulation in the country and they are gruop by the politcan affilation, the EU parlaments has 3 main rooles:
 - deating the law
@@ -254,5 +259,11 @@ NAFTA: was modify by trump (the new is USMC) beacouse it wasn't in favour of US
 (it was made for help messico to growth)
 
 
+Gobalization: the union of national markets, find the same services and products, interconnection, and huge growth in trade and coultural exchange
 
+
+mass production large scale with less cost,  for consumers lower price with wider range of product
+
+
+Glocalization:use for describe product or a sercive that is developed and distributed global, but one that is also changed to accomodate the comsumer in local marcket
 
