@@ -561,3 +561,5 @@ Fiscal compact: ha introdotto il principio costituzionale di **bilancio in pareg
 
 Bismark: è stato il primo ministro in germania
 Beverige: invece è stato un consulente e un politico "disse che lo stato deve assistere il cittadino dalla culla alla tomba"
+
+
