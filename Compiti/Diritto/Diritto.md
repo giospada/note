@@ -373,6 +373,13 @@ creano enormi cisterne per l'acqua
     - la legge costituzionale può essere cambiata solo con la procedura aggravata che è navetta a distanza di 3 tra le due camere,(la navetta è il passaggio delle approvazioni tra le due camere (che è necessario a ogni minimo cambiamento))
     - la revisione costituzionale: non devono andare contro i principi fondamentali della costituzione (l'unico limite eslpicitato art.139 la forma repubblicana non è soggetta a revisione)
 - quali principi fondamentali ti ricordi:
+  - uguaglianza
+  - libertà
+  - solidarità
+  - lavoro
+  - libertà religiosa
+  - ripudio della guerra
+  - internazionalismo
 - leggi più importanti e meno importanti:
     - le leggi costituzinali
     - legge delega
@@ -434,12 +441,24 @@ viene eletto art 84/5, i requisiti:
 - almeno 50 anni  
 
 viene eletto in seduta comune del parlamento con tre relegati per ogni regione 
-dopo il 4 maggioranza  prima il 75% è in carica per 7 anni ed è rieleggibile
+eletto chi ha 2/3 nei primi tre scrutigni e per maggioranza assoluta dal 4
+è in carica per 7 anni ed è rieleggibile
 
 86 art l'impedimento il suo incarico deve andare il presidente del senato
 
 `quali sono funzioni del presidente della repubblica?`
-86/7
+87
+- rappresenta la nazione
+- garante della costituzione
+- superparte
+- garantire l'equilibro tra i poteri
+
+puo:
+- non è responsabile degli atti che firma
+- può essere per alto tradimento
+
+- può concedere la grazia o imputare pene
+- presiede il consiglio super magistratura formato da 27 membri
 
 
 `democrazia diretta e rappresentativa`
@@ -449,7 +468,7 @@ referendum l'unica forma di democrazia diretta
 
 `art 75`
 
-referendum abrogativo, non può abrogare i tratti internazinali,tributarie,bilancio
+referendum abrogativo, non può abrogare i tratti internazinali,tributarie,bilancio,elettorali
 
 
 `garanzie costituzionali`
@@ -465,6 +484,11 @@ la corte costituzionale può essere appellata da un giudice che durante una caus
 o penale) 
 
 la corte costituzionale emette la sentenza di annullamento e quindi respinge la richiesta
+
+votata
+- 1/3 repubblica
+- 1/3 parlamento
+- 1/3 suprema magistratra
 
 `quali sono gli aerticoli che la costituzione prevede relativamente ai diritti in ambito giuristizionale`
 
