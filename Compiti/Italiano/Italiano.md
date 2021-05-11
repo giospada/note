@@ -220,7 +220,7 @@ scappa via senza dire una parola e lo lascia per sempre.
 
 il un uomo che cerca di vivere secondo i valori che il padre gli aveva dato:
 - vivi la tua vita come un'opera d'arte
-- 
+- e possiedi le cose e non essere posseduto
 
 - il notturno: prosa lirica che scrive con uno stile paratattico(frasi corte) (aiutato dalla figlia renata)
 d'annunzio sconfitto
@@ -733,7 +733,9 @@ ma a cui non sei mai arrivato
 
 **Nebbia**:come posto che ti protegge è un muro che evita di farti soffrire
 
-**Temporale**:
+**Temporale**:pre grammaticale il padre e il fulomine
+
+**IL gelsomino notturno**:(dai canti di castel vecchio (i canti di leopardi)) è un poiesia che dedica al suo amico briganti che si sposa, pensando al figlio dove racconta la prima notte d'amore,vede la casa e da fuori racconta quello che vede, e c'è molto il tema dell'esclusione
 
 
 ## D'annunzio
@@ -749,8 +751,38 @@ natura, e mentre la donna si trasforma in corteccia loro si intricono e lei pian
 
 ## Giuseppe Ungheretti
 
+Ungheretti nasce in egitto, 1888 muore nel 1970 fa tante raccolte,
+in molte poesie (non quelle in trincea) ci mette la sua parte spirituale e filosofica.
+
+Va in guerra come volontario dove scriverà poesie
 
 Prima Guerra mondiale trince
+
+il **corpus** delle poesie di ungheretti sono raccolte dentro **vita di un uomo**
+
+in trincea scrive **l'allegria** , (chi vive l'esperienza della trincea è 
+come un naufrago che è felice per essere vivo)
+
+nuovo concetto di poesia **parola verso** 
+
+poetica della parola scavata nell'interiorità
+
+poesia come sillaba dell'umano
+
+figura retorica analogia, misteriosa
+
+al di là della crisi dell'uomo moderno ungheretti ha cercato la presenza autentica e consapevole dell'uomo nel mondo
+
+con l'età arriverà alla religione
+
+
+### Poesie
+
+- i fiumi:
+- fratelli:**TODO:da finire** l'uomo è presente alla sua fragilità
+- soldati:"si sta come\ d'autunno\ sugli alberi\ le foglie" **secca similitdine** 
+ la fragilità umana 
+
 
 ## Eugenio Montale
 
@@ -758,6 +790,54 @@ Prima Guerra mondiale trince
 
 ## Edgar alla poe
 
-
 narrativa simbolista
+
+## Avanguardia 
+
+sono dei movimenti che in tutta europa vogliono fare tabula rasa del passato
+il termine deriva dai militari che guardavano avanti,
+usavano un manifesto dove scrivevano i loro principi e sono multidisciplinari
+
+
+### Espressionismo
+
+### Dadaismo
+
+dadaismo racconta il no senso,"aggiungere i baffi all gioconda"
+
+### Futurismo
+
+Scoppio prima guerra mondiale, assassigno di franceso ferdinando, l'italia in base al trattato della triplice allezna non netra in guerra, così si entra in un dibattito
+interventisti:
+- governo
+- d'annunziani
+- **futuristi**
+
+neutralista:
+- gliottiani
+- cattolici
+- socialisti
+
+**Filippo tommaso Marinetti** è il fondatore di questo movimento
+
+addirittura i la scultura di boccioni viene messa nel euro
+
+Marinelli usa l'onomatopea (zang tumb tumb) per descrivere la guerra
+
+la guerra è l'unico modo per l'igene del mondo
+
+disprezzano la donna e il femminismo,vogliono distruggere il mondo moderno e creare un mondo che apprezza la velocità
+
+"è meglio una macchina della vittoria di samotracia"
+
+**il manifesto del futurismo**:ha un forte contenuto ideologico, un esaltazione della moderintà , macchina, tecnica,città industriale,folla e rivoluzioni urbane
+
+**Si si così l'aurora sul mare**:il sorgere del sole sul mare, strana tipografia e disposizione del testo
+
+
+sant'elia:architetto futurista che muore in guerra
+
+### Surrealismo
+ 
+Freud,Dalì,magritte,mirò
 

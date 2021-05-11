@@ -559,9 +559,26 @@ Fiscal compact: ha introdotto il principio costituzionale di **bilancio in pareg
 - Il modello bismarkiano: dove veniva data un’assicurazione e previdenza ma solamente ai lavoratori.
 - Il modello beverige: dove venivano concessi dei contributi sociali a tutti i cittadini.
 
-Bismark: è stato il primo ministro in germania
-Beverige: invece è stato un consulente e un politico "disse che lo stato deve assistere il cittadino dalla culla alla tomba"
+Bismark: è stato il primo ministro in germania sosteneva i lavoratori contro gli infortuni e la disoccupazione
+Beverige: invece è stato un consulente e un politico "disse che lo stato deve assistere il cittadino dalla culla alla tomba" sistema universalistico
 
 stato di diritto: è uno stato dove vengono riconoscute le libertà personali 
+
+
+
+## Obbiettivi econoimia politica
+
+- acquisire la competenza sul settore pubblico e la competenza sull economia
+- distinguere i tipi di spese pubbliche
+- politica dell'entrate
+- il bilancio dello stato
+- 
+
+Spesa pubblica l'insieme di risorse che lo stato adopera per arrivare alle sue finalità, 
+spese in conto capitale spese che vanno a sostegno degli investimenti e che quindi modificano il patrimonio dello stato,la spesa pubblica piò essere stratorinaria o ordinaria:
+- ordinaria: continua nel tempo
+- straordinaria: una volta sola che quindi di solito per un imprevisto
+
+
 
 
