@@ -517,7 +517,34 @@ il presidente della repubblica ha il potere di rappresentanza, ed è super parte
 
 
 
+## Diritto 5 competenze
+
+- comprendere ed analizzare l'orignine storica i caratteri della costituzione
+- contestualizzare i principi fondamentali della costituzine
+- sapere utilizzare gli elementi delle forme di governo
+- sapere distinguere il sistema elettorale
+- conoscere le funzioni degli organi 
+- conoscere i rapporti tra gli organi
+- distinguere i concetti di decentramento e autonomia art.5,117
+- principi generali sulla organizzazione della pa
+- conoscere le principali organizzazioni europe e internazionali
+- interpretare il significato politico dell integrazione europea
 
 
 
+**corte costituzionale**: creata da professori universiatdri e avvocati eletti dal parlamento , la corte costituzionale interviene solo quando interpellata, il giudice deve chiedere l'intervento della corte costituzionale direttamente all'interno di una situaizone, altre funzioni sono:
+- attentato alla costituzione
+- controversie tra gli organi costituzionali
 
+
+non possono essere soggette di referendum:
+- leggi tributarie
+- trattati internazionali
+- il bilancio
+
+sentenze della corte costituzionale sono definitive non possono essere inquinate
+
+garanzie contituzioanli:
+- costituzione rigida: procedimento aggravato, interlegis costituzionale nel quale una camera viene preposta 
+- principi fondamentali e la forma repubblicana
+- 1° l'italia è una repubblica fonadata sul lavoro
