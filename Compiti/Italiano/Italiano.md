@@ -222,7 +222,10 @@ bisogno di Andrea, perché il marito è stato coinvolto in uno scandalo, egli in
 distrutto dal fatto che Elena avesse un nuovo amante, la chiama con il nome dell'altra. Maria, sconvolta,
 scappa via senza dire una parola e lo lascia per sempre.
 
+è un estestista fallito perchè non si è fatto dominare dagli oggetti e dalle passioni ed alla fine rimane solo con un armadio
+
 il un uomo che cerca di vivere secondo i valori che il padre gli aveva dato 
+- vivi la tua vita come un opera d'arte
 - e possiedi le cose e non essere posseduto
 
 - il notturno: prosa lirica che scrive con uno stile paratattico(frasi corte) (aiutato dalla figlia renata)
@@ -781,7 +784,11 @@ con l'età arriverà alla religione
 
 ### Poesie
 
-- i fiumi:
+- i fiumi:  biografia di giuseppe ungheretti sdraiato nell'isozio ripercorre la sua vita attraverso quattro fiumi:
+    - Serchio:dei suo avi
+    - Nilo:il fiume della sua infanzia
+    - la Senna:il fiume della cultura
+    - Isonio:l'ultimo della guerra, dove finalmente più sdraiarsi nell'isonzio lasciando che l'acqua lo lavi
 - fratelli:**TODO:da finire** l'uomo è presente alla sua fragilità
 - soldati:"si sta come\ d'autunno\ sugli alberi\ le foglie" **secca similitdine** 
  la fragilità umana 
@@ -811,6 +818,9 @@ dadaismo racconta il no senso,"aggiungere i baffi all gioconda"
 ### Futurismo
 
 Scoppio prima guerra mondiale, assassigno di franceso ferdinando, l'italia in base al trattato della triplice allezna non netra in guerra, così si entra in un dibattito
+
+manifesto pubblicato per la prima volta sull **figarò**
+
 interventisti:
 - governo
 - d'annunziani

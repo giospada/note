@@ -582,3 +582,8 @@ spese in conto capitale spese che vanno a sostegno degli investimenti e che quin
 
 
 
+**Entrate originali**: qualcosa che arriva dall'ente pubblico dal suo patrimonio, 
+
+**Entrate derivate**: entrate tributarie sul reddito e il patrimonio, derivano dal potere d'imperio dello stato
+
+
