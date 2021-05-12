@@ -197,6 +197,10 @@ anti democratico, esaltazione del bel gesto (idee per cui si muore) contaminazio
 le donne d'annunzio sono donne fatali, abuso della parola agghindato
 si ispira a ritroso per il piacere anche se gli esordi erano veristi 
 
+
+teroria del superuomo presa da nietzeche che però è mal interpretato, non è un uomo che afferma la propria moreale contro quella comune,
+d'annunzio vede questo uomo come aggressivo ed eccezzionale un "capo" che deve gudiare le persone comuni **contrastare il grigio diluvio democratico**
+
 **opere** 
 - il piacere:Il romanzo racconta la vicenda umana di un giovane intellettuale, Andrea Sperelli. Ricco, aristocratico,
 intenditore di cose d'arte ed egli stesso poeta ed incisore A Roma
@@ -218,8 +222,7 @@ bisogno di Andrea, perché il marito è stato coinvolto in uno scandalo, egli in
 distrutto dal fatto che Elena avesse un nuovo amante, la chiama con il nome dell'altra. Maria, sconvolta,
 scappa via senza dire una parola e lo lascia per sempre.
 
-il un uomo che cerca di vivere secondo i valori che il padre gli aveva dato:
-- vivi la tua vita come un'opera d'arte
+il un uomo che cerca di vivere secondo i valori che il padre gli aveva dato 
 - e possiedi le cose e non essere posseduto
 
 - il notturno: prosa lirica che scrive con uno stile paratattico(frasi corte) (aiutato dalla figlia renata)
