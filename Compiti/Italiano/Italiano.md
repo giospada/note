@@ -598,15 +598,15 @@ matilde il papa per farsi togliere la scomunica
 
 **Trama**
 
-Enrico VI cade da cavallo per colpa di Belcredi che è innamorato
-della stessa donna Matilde, da quel momento Enrico impazzirà per
+**Enrico VI** cade da cavallo per colpa di **Belcredi** che è innamorato
+della stessa donna **Matilde**, da quel momento Enrico impazzirà per
 la caduta e si crederà l'imperatore austriaco vivendo nel suo 
 castello con servitori e atteggiandosi come un re
 circa vent'anni dopo però un medico escogita un piano per fare 
 tornare la memoria ad Enrico, usano la figlia di 
 Matilde e Belcredi (che nel mentre si erano sposati)
-di nome Frida e il suo fidanzato Carlo per mettere 
-in scena la situazionione quando Enrico aveva preso il traoma.
+di nome **Frida** e il suo fidanzato **Carlo** per **mettere 
+in scena la situazionione quando Enrico aveva preso il traoma**.
 Quando la stanno per mettere in scena però Enrico rivela che 
 da qualche anno gli era tornata la memoria e vedendo Frida
 così simile a Matilde la vuole per recuperare gli anni che
@@ -853,4 +853,23 @@ sant'elia:architetto futurista che muore in guerra
 ### Surrealismo
  
 Freud,Dalì,magritte,mirò
+
+### Montale
+
+anetta non lo ama più e lui si ricorda di una perieodo passato in casa asssieme
+è il dolore di lei che non ricorda, e il tra loro si addipana
+partono delle cose che ricordano il disorientamento
+una bussola impazzita, il calcolo dei dati non tornano
+
+correlativi oggettivi, immagini del nostro smarrire il senso
+
+
+
+### Salvatore Guasimodo
+
+dopo una **fase ermetica** ha una fase **neo realista**
+
+
+- alle fronde dei salici: 
+
 

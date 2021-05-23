@@ -188,10 +188,112 @@ We look forword to do buisness togheter.
 
 
 
-### 1984
+## Gorge orwell
 
-stanza 101
-2+2=5
+### Story
+
+He was born on 25 June 1903 in eastern India，his original name was, Eric Blair
+
+He was a rebel since the college at Eton, Eric was against the values of the English public school tradition.
+After he join the Indian Imperial Police, but he decide to leave for his anti-imperialistic attitude.
+Back in london, he started social experiments wearing second-hand clothes, and living in lodging-house. 
+
+He go to Spain initiali to report the Spanish civil war, but then he joined the POUM.
+He return in London for the WW2 and he joined BBC.
+Then he write Animal Farm and 1984 and after an year he died.
+
+
+**why he change his name?**
+
+He change his name in George Orwell because it has an Englihness and he want talk for people common sense.
+
+
+### 1984
+The story of this book takes place in an imagined future in 1984.
+The world is divided into 3 parts: Oceania, Eurasia, Eastasia. 
+
+**Who is the protagonist?**
+
+the protagonist name is Winston Smith, he work at the ministeries of truth.
+He feels that there is something strange in the society.
+In particular in this society the history is always overwritten, and he semms the only one who notice that.
+
+
+**who are the 4 ministries of the party?**
+
+the 4 ministries are:
+- love: are like a police center where they arrest, torture  everyone is against the party and they reable the people to “love” the party
+- truth: constantly change the past for make the present lie true
+- plenty: create news that always make look the party more powerful and that there is a increase in the production and economy 
+- peace: admin the warsector
+
+**who is Julia?**
+
+Juila is a charater that fall in love with Wilson, she is younger than he.
+she look like a perfect party's women but she is the opposite;
+indeed Wilson love that she corrupted and he sad "The more men you've had, the more I love you" 
+
+
+
+**who is o'braian?**
+
+O'Brien  is a party member that introduces himself as a member of the Brotherhood(the rebel), and arrested they for crime against the party in the ministries of love, where wilson and julia are tortured until thay say 2+2=5
+
+**what mean "2+2=5"?**
+
+"2+2=5" mean that the party has control over the thought of people
+
+
+### Animal Farm
+
+He wrote animal farm after going to USSR, where he was invited.
+This novel is his first big 
+
+
+
+### Domande
+
+
+
+1. **In 1984, what do these 3 slogans mean: War is Peace, Freedom is Slavery, and Ignorance is Strength?**
+
+“War Is Peace” because having a common enemy keeps the people of Oceania united. “Freedom Is Slavery” because, according to the Party, the man who is independent is doomed to fail. By the same token, “Slavery Is Freedom,” because the man subjected to the collective will is free from danger and want. “Ignorance Is Strength” because the inability of the people to recognize these contradictions cements the power of the authoritarian regime.
+
+2. **In 1984, what are the four ministries and their purposes?**
+
+the four ministries are:
+love: are like a police center where they arrest, torture  everyone is against the party and they reable the people to “love” the party
+truth: constantly change the past for make the present lie true
+plenty: create news that always make look the party more powerful and that there is a increase in the production and economy 
+peace: admin the warsector
+
+3. **What does Winston mean by, "Freedom is the freedom to say that two plus two makes four. If that is granted, all else follows" in 1984?**
+
+When Winston says that "freedom is the freedom to say that two plus two makes four" in 1984, he is asserting that truth exists independently of the Party's ideology. Crucially, this also asserts that the conditions of truth rest in part upon the external world; if Winston has the freedom to say that "two plus two makes four," he has the freedom to acknowledge existence independent of the Party's say-so. 
+
+When Winston says that "freedom is the freedom to say that two plus two makes four" in 1984, he is asserting that truth exists independently of the Party's ideology, if two plus two makes four it means that he can think with his own mind and notice the party lies.
+
+4. **What is the Two Minutes Hate in 1984, and what is its purpose in the story?**
+
+The two minutes Hate are two minutes where everyone let out their anger.
+Winston hates this two minutes because is horrified by the fact that even he couldn't control himself in these two minutes,and like the others he screams against the party enemy. 
+In these two minutes is the first time he met Julia.
+As George Orwell makes clear, hate is powerful and even today there are groups of people that make groups by hating on the web.
+
+5. **What is the role of technology in 1984?**
+
+
+Modernization in 1984 takes the form of technology, used for controlling means. By placing telescreens and clandestine microphones all across Oceania, the Party monitors its constituents 24/7. At work, in the comforts of their own home, even in the countryside or giant plazas and marketplaces, Oceanians cannot expect privacy. The Party's use of advanced surveillance technology is only one of the methods it employs to ensure and ascertain control.
+
+
+6. **how do you think the situation described in 1984 can be paralleled to our present days ?**
+
+Fortunately we aren’t like the situation described in 1984 but there are some elements that can be similar to the present. 
+For example, Today websites study our “webs habits” and they can know more about us than yourself and they choose what shows to every person (as the 2016 usa election), and governments and private individuals track the communication between peoples.
+
+7. **What are the rights that are denied in that society?**
+
+There isn't any freedom as example , people can’t marry the person with they are in love, everyone is alone and they are constantly asking themself if the people they are talking with are rebels.
 
 ## INterrogazione EU
 
@@ -243,11 +345,22 @@ more power for the Europen parlament change of voting procedures in the council
 
 Also it decide important international agreements
 
-## Verifica
+## Verifica International Trade
 
-International trade
 
 Pag 10,11,12
+
+## Mature and Emagring markets
+
+**Mature markets** are matket that reach a state of equilibrium market (lack of significant growth), balanced supply and demand
+
+**Four Asian Tigers**  despite their lack of natural resources, they were developement by producing manufacturesd goods 
+
+**BRIC** are young populaition marcket that could potentally grow rapid, there are also the **Next eleven** that are other country with hig potentally
+
+## The regualtion of interational trade  
+
+
 
 Why country create Trading blocs: for have the same policy
 
@@ -267,3 +380,23 @@ mass production large scale with less cost,  for consumers lower price with wide
 
 Glocalization:use for describe product or a sercive that is developed and distributed global, but one that is also changed to accomodate the comsumer in local marcket
 
+ 
+
+### Nuclei tematici
+
+1. Unit 11 Pag. 10-11-12 + Unit 7 PAG.156, -160-161 Degblobalasation
+2. Unit 4 Goverment & Politics 394-400 + Brexit, American election..fotocopie
+3. 1984  George Orwell Totalitarismo/Human Rights 408 + pag. 408 + fotocopie e powerpoint
+4. Nucleo Commecial correspondence pag. 274-299
+5. European Union 132-139 142/3
+6. Preparation for invalsi
+
+
+
+### Gorge orwell
+
+Eric Blair
+
+He was a rebel since the college at Eton, Eric was against the values of the English public school tradition.
+After he join the Indian Imperial Police, but he decide to leave for his anti-imperialistic attitude.
+Back in london, he started social experiments wearing second-hand clothes, and living in lodging-house. 
