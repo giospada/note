@@ -8,4 +8,5 @@ usare il ':call CreateIndex()' comando per fare l'update
 ### Files
 
 - [Diritto.md](Diritto.md)
+- [interrogazione.md](interrogazione.md)
 
