@@ -142,3 +142,33 @@ sistemi disgunti:
 per le lan si possono usare reti peer-to-peer 
 
 intranet e extranet 
+
+
+### Ultima verifica
+
+
+```php
+
+$percorso=realpath("database");
+$strconn="stringa di connessione".$percorso.";";
+$cn=new COM('ADODB.Connection');
+
+$cn->Open($strconn);
+
+
+
+$rs=$cn->execute("Select * from table",$ret);
+
+
+//ret deve essere maggiore di 0
+
+//true se è la fine 
+$rs->EOF
+//per accedere al valore del campo nome
+$rs->fields["nome"]->value
+//move to the next
+$rs->MoveNext();
+
+
+
+```
