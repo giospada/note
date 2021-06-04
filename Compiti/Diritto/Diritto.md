@@ -252,6 +252,9 @@ e rimane in carica 7 anni
 ma è responsabile in caso di  attentao alla costituzione,
 in tal caso viene accusato dal parlamento e guidicato dalla corte costituzionale
 
+in quanto non ha alcun potere ma partecipa a tutti i poteri
+
+
 **Prerogative economiche**:è riconoscuta un assegno personale
 
 poteri:

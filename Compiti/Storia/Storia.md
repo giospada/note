@@ -1,6 +1,6 @@
 # Storia
 
-### La Belle Époque
+## La Belle Époque
 
 epoca di benessere 
 nuove invenzioni  luce ,macchine 
@@ -25,7 +25,7 @@ la triplice **intesa**:
 - Gran Bretania
 - Russia
 
-### Cause Guerra
+## Cause Guerra
 
 Cause Politiche:
 - sentimento dei francesi contro i tedeschi per la guerra franco prussiana
@@ -65,7 +65,7 @@ imperi che cadono
 
 
 
-### Situazione In Italia
+## Situazione In Italia
 
 l'italia si proclamò neutrale poichè la Triplice alleanza era un patto
 di difesa
@@ -93,7 +93,7 @@ di difesa
 fu poi espulso dal partito per il suo sostegno all'intervento
 
 
-### Entrata in Guerra
+## Entrata in Guerra
 
 L'italia entrò in guerra con il **patto di Londra nel 1915** con l'intesa 
 ( nel quale promisero nuovi territori all'italia)
@@ -103,7 +103,7 @@ primi anni disastro per l'italia contro gli austriaci
 **1917** l'america entra in guerra, **Diaz** prende il posto di **Cadorna** e 
 riuscirono a bloccare gli austriaci al Piave
 
-### Nuove tecnologie
+## Nuove tecnologie
 
 Areoplani che serviano per studiare il cambo e bombardare, Radio per cominicare
 Carriarmati poco usati tranne che dagli inglesi, sottomarini usati soprattuto
@@ -112,7 +112,7 @@ dai tedeschi
 gas iprite (dalla città dovè stato utilizzato) tedeschi seguiti dagli altri
 
 
-### Russia 
+## Russia 
 1905 domenica di sangue a san pietro burgo > nicola condede le riforme
 
 
@@ -150,7 +150,7 @@ ribellati
 come mille ( il Gondrano della fattoria degli animali)
 
 
-### Fine della guerra
+## Fine della guerra
 
 **fine conflitto cadono 4 imperi**:
 - prussia
@@ -168,13 +168,14 @@ italiana provò a conquistarla senza successo lettera agli
 **Quattoridici punti di Wilson**: per definire le future relazione tra gli stati
 fenomeno delle **leghe** :socialisti bianchi
 
-### Dopo Guerra
-Calo demografico per la guerra e per la spagnola
+## Dopo Guerra
+
+Calo demografico per la guerra e per l'influenza spagnola
 
 **biennio rosso** italia 1919-1920 porteste socialiste e terrore di una rivoluzine
 e come contraccolpo si ci spota a destra votando mussolini 
 
-### Biennio rosso
+## Biennio rosso
 
 tra il 1919 e il 1920 gli **operai** con rivoluzioni ottenereono 
 aumenti salarari orari di 8 ore si **unirono in leghe** come la 
@@ -190,7 +191,7 @@ comunista internazionale
 **bolscevismo bianco**: movimento socialista cattolico: aumenti salariali, 
 parziale reddistribuzione delle terre, giornata di 8 ore
 
-### Fascismo
+## Fascismo
 
 
 > **Anna Harendt**: parla del fascismo e del nazismo come "la banalità del male"
@@ -209,8 +210,14 @@ biennio rosso e fa un escaletion con violenze e brogli
 Programma di **San sepolcro**(prende il nome dalla piazza): manifesto politico 
 programma dei fasci, mussoini si batteva per poiltiche sociali progressiste,
 emanacipazione femminile, minimi salari degli operai e giornata di otto ore
-<br>
 Il movimento si fece notare sopratutto per la violenza
+
+Dopo l'ecciddio di bologna dove durante un saluto del sindaco, alcuni socialisti suoi sostenitori avevano sparato alla folla dopo che qualcuno aveva sparato in aria, mussolino creò il **fascismo agrario** con le **squadre d'azione** appoggiate dalla borghersia per intimorire le organizzazioni contadine
+in queste adreirono:
+- ex combattenti
+- giovani anticomunisti
+- piccola borghesia
+
 
 
 **Marcia su roma**
@@ -219,14 +226,16 @@ Governo debole di Facta, Mussolini rimodella il programma
 - abbandona la critica al capitalismo
 - attacca il partito di don sturzo dandogli del bloscevista bianco
 
-Rinunì le camice nere a Napli (Vittorio Emanuele non firmò lo stato d'assedio)
-ma gli accoglie e gli diede il compito di formareil governo 1922
+Rinunì le camice nere a Napli in vista della marcia su roma
+e Vittorio Emanuele non firmò lo stato d'assedio ma gli accoglie e gli diede il compito di formareil governo 1922
 
 
-**Legge Acerbo** : legge favoriva il partito maggioritario nell'elezioni
+Mussolini al potere incomincia a fare delle riforme:
+- **Milizia Volontaria per la sicurezza Nazionale**
+- **Legge Acerbo** : legge favoriva il partito maggioritario nell'elezioni
+- **Riforma della scuola**: Giovanni Gentile
+- Legge per i ceti alti: diminuzione tasse sull'eredità
 
-
-Legge per i ceti alti: diminuzione tasse sull'eredità
 
 **Matteotti denuncia**:denuncia le minacce dei fascisti, viene assassinato.
 Mussolini si prende tutta la colpa di avere incitato i suoi seguaci
@@ -254,12 +263,12 @@ abolisce gli altri partiti oppositori o esigliati o incarcerati
 tassa sui celibi, tutti dovevano sposarsi premio per chi faceva più figli 
 **esaltazinoe della famiglia**(persone per andare in guerra) 
 
-**Giovanni Gentile** riforma della scuola straticica le superiori in base al progetto futuro
 
 Patti Lateranensi: **Don luigi Sturzo** fondatore del **partito popolare** che
 si oppone hai patti lateranensi (i patti prevedevano trattato in cui la chiesa 
 riconosceva lo stato italiano,una pensa d'indennità pagata dallo stato italiano
 a quello pontificio, dottrina cattolica era la religione di stato)
+
 assisi i frati nascosero gli ebrei nei sotteranei (molti eclesiastici hanno 
 nascosto ebrei in chiese e conventi)
 
@@ -659,3 +668,6 @@ film hitler  la caduta
 ## Enrico fermi
 
 scompare dopo il rientro in patria
+
+
+## Crisi del ventinove 29
