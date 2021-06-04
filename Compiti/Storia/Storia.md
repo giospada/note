@@ -398,8 +398,6 @@ farenait 451:società in cui è vietato leggere di BRADBURY
 
 
 
-
-
 ### Seconda Guerr Mondiale
 
 **hitler** è salito al potere con **libere elezioni** 
@@ -631,6 +629,9 @@ Lili Marlene
 Robert capa:Fotografo di guerra che ha fotografato lo sbarco in normandia 
 e lo sbarco in sardegna
 
+
+
+
 ## Film
 
 FILM: il discorso del re, l'ora più buia
@@ -659,3 +660,17 @@ film hitler  la caduta
 ## Enrico fermi
 
 scompare dopo il rientro in patria
+
+## Crisi del 29
+
+**Proebizionismo**: perieodo nel quale in america si diffonde il contrabbando di alcolici
+bolla speculativa, l'alcol caratteristica dei tedeschi e irlandesi, proebizionismo, xenofobia
+il famoso giovedì nero
+roosvelt con il New Deal, con un forte intervento dello stato per creare strutture statali
+
+
+
+### Film
+
+il grande gasby
+
