@@ -28,7 +28,7 @@ autori: Ugo tranchetti, emilio Praga , Carlo Dossi,camillo boito
 racconti fantastici
 
 **Fosca**: storia macraba tra un ufficiale e una donna brutta e malata(Fosca) nonostante l'amore illegittimo per clara 
-alla fine Giorgio si ammala dello stesso male di fosca che dopo una notte passata assieme muore
+alla fine Giorgio si ammala dello stesso male di fosca che dopo una notte passata assieme muore bb 
 
 fosca contiene elementi Romantici (l'amore),positivisti(fiducia nella scienza) e decadenti(l'amore per l'orrido)
 
@@ -432,7 +432,9 @@ l'avvertimento del contrario (comico), e il sentimento del contrario(umorismo)
 
 **il fu mattia pascal**:
 
-**la morte addosso**(cambia il nome **l'uomo dal fiore in bocca**):
+**la morte addosso**(cambia il nome **l'uomo dal fiore in bocca**):parla di un signore che è fa delle commissioni in città ma a causa del poco tempo, perde il treno e si ritorova ad aspettare il treno in un bar dove aspetterà la notte
+trova un uomo al bar con cui parla, e quest'uomo si scopre che ha un epitelioma e che ha un piede nella fossa, e vive si gode ogni raffinatezza come se fosse l'ultima
+
 
 
 **Kaos**: cornice dei condatini sicicliani attaccano un campanello 
@@ -527,9 +529,11 @@ le novelle
 
 **Storia**:
 
+
+
 Bibbliotecario nel paese di **Miragno** dove ha trascorso una vita agiata, che dopo la morte affidano i soldi 
 a l'amministratore **malagna** che glie li ruba, così deve andare a lavorare
-e in casa ha la moglie e la nuora che lo disprezzano, così scappa 
+e in casa ha la moglie **Romilada** e la nuora che lo disprezzano, così scappa 
 e arriva a monte carlo dove vince e così mentre sta per tornare a casa
 scropre che lo pensano morto e con la somma si sposta da un posto all'altro
 assumendo **l'identità di Adriano Mais**, ma si sente emarginato e senza un passato
@@ -864,6 +868,16 @@ una bussola impazzita, il calcolo dei dati non tornano
 correlativi oggettivi, immagini del nostro smarrire il senso
 
 
+### Beat generation
+
+**Urlo**(Howl) di Allen Ginsberg, verso lungo
+
+
+**on the road** di kerouack, parla di autostop, e della liberta di droghe e sessuali scritto su un rotolo da fax
+
+Guerra fredda **Mccarthyismo** contro i comunisti
+
+Ferlinghetti: imprigionato e processo per oscenità 
 
 ### Salvatore Guasimodo
 

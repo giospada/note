@@ -380,6 +380,9 @@ mass production large scale with less cost,  for consumers lower price with wide
 
 Glocalization:use for describe product or a sercive that is developed and distributed global, but one that is also changed to accomodate the comsumer in local marcket
 
+Globalization concentrate on profit of multinational
+
+Deglobalization concentrate on needs of people
  
 
 ### Nuclei tematici

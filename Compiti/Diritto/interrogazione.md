@@ -96,7 +96,6 @@ poteri:
 
 ## Governo
 
-
 > il governo è l'organo che ha il potere esecutivo
 
 *esecutivo attuare le norme e i progetti del parlaemnto*
@@ -244,7 +243,7 @@ garanzie contituzioanli:
 ## magistratura
 
 i gudici sono soggeti soltanto art.101 cioè non dipendono da nessun altro potere,
-devono solo applicare la legge con imparziliù e indipendenza garantendo la giustizia
+devono solo applicare la legge con imparzili e indipendenza garantendo la giustizia
 
 un processo può essere:
 - civile

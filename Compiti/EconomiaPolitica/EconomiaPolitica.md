@@ -51,7 +51,7 @@ e proviene da:
 
 **moltiplicatore dei depositi** il moltiplicatore dei depositi si poichè le bache sono tenute atenere solo la **riserva obbligatoria**(una percentuale sul prestato) e possono reivestire gli altri soldi che rientreranno nel sistema e ritorneranno alle banche che potranno rinvestirne un altra percentuale
 **deposito -> accreditamento -> riseva**
-&A=1/r *D& A:quantità creata dal moltiplicatore D:il deposito,r: la percentuale di riserva
+&A=1/r D& A:quantità creata dal moltiplicatore D:il deposito,r: la percentuale di riserva
 r è importante perchè determina la capacità di creare moneta
 
 **equilibrio del mercato monetario**
