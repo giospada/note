@@ -168,26 +168,14 @@ ragazzo il cui padre lo denucerà così andrà in prigione da dove tornerà dist
 
 **Richard Strous**: musiche di oscard wild
 **il ritratto di dorian Gray**
-Il romanzo è ambientato nella Londra del XIX secolo. Parla di Dorian Gray, un giovane capace di trasmettere
-sensazioni uniche a chi lo circondava. La storia ha inizio nello studio del pittore Hallward, sta eseguendo
-il ritratto. Insieme a lui c’è Lord Henry Wotton, mentore cinico e dotato di particolare eleganza. Lord Henry
-avrà un ruolo decisivo nella vita di Dorian: infatti, con i suoi discorsi estremamente articolati, cattura
-l’attenzione di questo ragazzo, rendendolo, a poco a poco, quasi l’incarnazione del suo modo di pensare.
-Infatti, Dorian, dopo un lungo discorso con Lord Wotton, comincia a guardare alla giovinezza come a
-qualcosa di veramente importante, tanto da provare invidia verso il suo ritratto, eternamente bello e
-giovane. Ciò lo porterà a stipulare una sorta di patto col demonio, grazie al quale rimarrà eternamente
-giovane e bello, mentre il quadro mostrerà i segni della decadenza fisica e morale del personaggio. Dopo
-una tormentata storia d’amore con un’attrice di teatro di nome Sybil Vane, terminata col suicidio della
-ragazza, Dorian, vedendo che la sua figura nel quadro invecchia ed assume spaventose smorfie tutte le
-volte che commette un atto feroce e ingiusto, come se fosse la trasfigurazione della sua coscienza,
-nasconde il quadro in soffitta e si dà ad una vita all'insegna del piacere, sicuro che il quadro patirà le miserie
-della sorte al posto suo. Ogni tanto, però, si reca segretamente presso la soffitta per controllare e schernire
-il suo ritratto che invecchia sempre più giorno per giorno, ma che gli crea anche tanti rimorsi e timori.
-Finché, al termine del romanzo, stanco del peso che il ritratto gli fa sentire, lacera il quadro con il coltello, lo
-stesso col quale aveva ucciso il pittore e amico Hallward, ritenendolo causa dei suoi mali in quanto creatore
-dell'opera. I suoi servi troveranno accanto al ritratto incontaminato, un irriconoscibile e precocemente
-avvizzito Dorian Gray, morto ai piedi del dipinto con un coltello conficcato nel cuore.
 
+Parla di Dorian Gray, inizia nello studio del pittore Hallward, sta eseguendo il ritratto.  
+Insieme a lui c’è Lord Henry Wotton, il suo mentore. Lord Henry avrà un ruolo decisivo nella vita di Dorian: infatti, Dorian, dopo un lungo discorso con Lord Wotton, comincia a guardare alla giovinezza come a qualcosa di veramente importante, tanto da provare invidia verso il suo ritratto, eternamente bello e giovane.  
+Ciò lo porterà a stipulare una sorta di patto col demonio, grazie al quale rimarrà eternamente giovane e bello, mentre il quadro mostrerà i segni della decadenza fisica e morale del personaggio.  
+Dopo una tormentata storia d’amore con un’attrice di teatro di nome Sybil Vane, terminata col suicidio della ragazza, Dorian, vedendo che la sua figura nel quadro invecchia e diventa la trasfigurazione delal sua coscienza, nasconde il quadro in soffitta e si dà ad una vita all'insegna del piacere. 
+Ogni tanto, però, si reca segretamente presso la soffitta per controllare e schernire il suo ritratto che invecchia sempre più giorno per giorno, ma che gli crea anche tanti rimorsi e timori.  
+Finché, al termine del romanzo, lacera il quadro con il coltello, lo stesso col quale aveva ucciso il pittore e amico Hallward, ritenendolo causa dei suoi mali in quanto creatore dell'opera.  
+I suoi servi troveranno accanto al ritratto incontaminato, un irriconoscibile e precocemente avvizzito Dorian Gray, morto ai piedi del dipinto con un coltello conficcato nel cuore.
 
 #### Gabriele D'annunzio
 
@@ -357,8 +345,6 @@ sono 5 concetti per il nuovo millennio:
 - visibilità
 - Molteplicità
 
-
-
 Gita al Faro:Virgigna Woolf flusso di coscienza
 gomorra:saviano 
 
@@ -429,8 +415,6 @@ e dell'uomo di trovare un accordo con essa
 
 **l'umorismo** :(1908) la bella imellettata saggistica<br>
 l'avvertimento del contrario (comico), e il sentimento del contrario(umorismo)
-
-**il fu mattia pascal**:
 
 **la morte addosso**(cambia il nome **l'uomo dal fiore in bocca**):parla di un signore che è fa delle commissioni in città ma a causa del poco tempo, perde il treno e si ritorova ad aspettare il treno in un bar dove aspetterà la notte
 trova un uomo al bar con cui parla, e quest'uomo si scopre che ha un epitelioma e che ha un piede nella fossa, e vive si gode ogni raffinatezza come se fosse l'ultima
@@ -529,8 +513,6 @@ le novelle
 
 **Storia**:
 
-
-
 Bibbliotecario nel paese di **Miragno** dove ha trascorso una vita agiata, che dopo la morte affidano i soldi 
 a l'amministratore **malagna** che glie li ruba, così deve andare a lavorare
 e in casa ha la moglie **Romilada** e la nuora che lo disprezzano, così scappa 
@@ -597,8 +579,7 @@ COMPAGNIA DEI GIOVANI
 
 ### Enrico IV 
 
-> prende una base storia dal vero Enrico IV che aveva aspettato davanti al castello di 
-matilde il papa per farsi togliere la scomunica
+> prende una base storia dal vero Enrico IV che aveva aspettato davanti al castello di matilde il papa per farsi togliere la scomunica
 
 **Trama**
 
@@ -710,8 +691,7 @@ TODO:Bodlere
 
 **poeta maledetto**
 
-**il battello ebro**:(il battello ubriaco ) che è stanco di stare nelle acquelle 
-e va in mare 
+**il battello ebro**:(il battello ubriaco ) che è stanco di stare nelle acquelle e va in mare
 
 **Le Vocali**:
 
