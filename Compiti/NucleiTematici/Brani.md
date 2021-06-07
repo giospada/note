@@ -26,6 +26,9 @@ fosca contiene elementi Romantici (l'amore),positivisti(fiducia nella scienza) e
 
 ## *Giovanni Verga (1840-1922)*
 
+TODO: un po' della sua vita
+
+
 "il progresso è come una macchina che stritola i deboli", applica poco le teorie scientifiche 
 
 **stile**: paragone dei personaggi agli animali
