@@ -296,38 +296,29 @@ da vittorio emanuele II
 
 ### Germania
 
-la costituzione viene scritta a Weimar,così si chima la **repubblica di Weimar**
-La lega di spartako tenta un colpo un colpo di stato che fallisce
-( Rosa litesburg)(la lega si unisce al partico socialdemocratico indipendente 
-tedesco) cercando di boicottato la formazione della costutuzione
-
-
 **trattato di versailles** fa sfigurare la germania con la conseguente
 crisi economica (per colpa delle enormi costi di riparazione che 
-dovevano pagare) l'inflazione raggiunse livelli altissimi e crebbe la destre nazionalista
+dovevano pagare) l'inflazione raggiunse livelli altissimi e crebbe la popolarità dei partiti di destra nazionalisti
 
-A causa di una mancata rata per le **riparazioni di guerra** la franci occupò
-**Ruhr**
+Inoltre la francia occupò la franci occupò **Ruhr**(regione mineraria) per una mancata rata per le **riparazioni di guerra** 
 
-**Piano Daws**: piano degli americani per offrire supporto alla germania
-che averebbe dato dei prestiti per aiutare la germania con le spese di guerra,
-che finisce nel ventinove  per la crisi
+Dopo la prima guerra,crano una costituzione scritta a Weimar, da cui prenderà nome la repubblica **repubblica di Weimar**
+
+Anche in germania ci sono movimenti socialisti rivoluzionari come la lega di spartako tenta un colpo un colpo di stato che fallisce ( Rosa litesburg)(la lega si unisce al partico socialdemocratico indipendente tedesco) cercando di boicottato la formazione della costutuzione
+
+Oltre agli estremisti di sinistra ci sono anche quelli di destra infatti,
+Hitler prova il colpo di stato (**putsch**) a monaco viene imprigionato e scrive il Main Kanf
+
+**Piano Daws**: piano creato dagli USA per offrire supporto alla germania
+con le spese di guerra, che finisce nel 29 per la crisi
 
 **Bauhaus** università liberale durante la repubblica di Wimar
 
-crisi della repubblica con nel 29 crisi economica partito nazionalsocialista 
-vince nel 1932 il partito di hitler divenne il primo partito e nel 33 
-gli venne affidato il compito di crearne uno
 
-**il Nazismo** nasce a monaco delusi da versille , destra, nazionalista, miiltarista
+**il Nazismo** nasce a monaco spinto dalla delusione di versille , destra, nazionalista, miltarista che  riesce ad incolpare gli ebrei della crisi e sale al potere con libere elezioni nel 33 dopo la crisi economica che aveva fortemente colpito anche la germania nel 29, riesce a ripartire l'economia 
 
-Hitler prova il colpo di stato (**putsch**) a monaco viene imprigionato e scrive il 
-Main Kanf, riesec ad incolpare gli ebrei della crisi e sale al potere 
-con libere elezioni, riesce a ripartire l'economia e ingasare la popolaizone
-
-
-**olocausto** non piace agli ebrei perchè implica un motivo. <br>
-ebrei stella gialla, testimoni di geova triangolo viola, triangolo rosa 
+**olocausto** parola che non piace agli ebrei perchè implica un motivo (preferiscono sho a). 
+Ebrei stella gialla, testimoni di geova triangolo viola, triangolo rosa
 omossessuali, triangolo rosso zingari
 
 Papa pio XI prima nel 33 fece un patto con lo stato tedesco poi nel 37
