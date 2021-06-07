@@ -26,7 +26,7 @@ fosca contiene elementi Romantici (l'amore),positivisti(fiducia nella scienza) e
 
 ## *Giovanni Verga (1840-1922)*
 
-TODO: un po' della sua vita
+TODO: un po' della sua vita e magari aggiungere sul verismo
 
 
 "il progresso è come una macchina che stritola i deboli", applica poco le teorie scientifiche 
@@ -74,15 +74,18 @@ film **Neo Realista** di visconti *La terra trema* (visconti a differenza di Ver
 
 ### Rosso Malpelo 
 
-**rosso malpelo**: malpelo era ripudiato da tutti a causa dei capelli tranne dal padre che muore davanti a lui in miniera, mal pelo diventa ancora più solitario finchè non arriva "il ranocchio" un ragazzo zoppo 
+**rosso malpelo**: malpelo era ripudiato da tutti, anche dalla sua famiglia a causa dei capelli tranne dal padre che muore davanti a lui in miniera, mal pelo diventa ancora più solitario finchè non arriva "il ranocchio" un ragazzo zoppo che incomincia a maltrattare per il suo bene, per prepararlo a quello che avrebbe potuto subire in futuro, che non subirà perchè morira di polmonite.
+Rosso malpelo distrutto dalla morte di ranoccio acceta l'incarico, di un lavoro pericolo dal quale non tornerà.
 
 ### la Roba
 
-**la roba**: parla di marrazò un contadino che si era arricchito e vive per accumulare le ricchezze, rinuncia ai vizi e ai rapporti personali, alla fine della sua vita si rende conto che i beni sarebbero andati in mano ad altri e quindi cerca di distruggere il più possibile di essi
+**la roba**: parla di marrazò un contadino che si era arricchito e vive per accumulare le ricchezze, rinuncia ai vizi e ai rapporti personali, alla fine della sua vita si rende conto che i beni sarebbero andati in mano ad altri e quindi impazzito girerà per i poderi a distruggere quello che gli capitava sottomano
 
 ## *Oscar Wilde(1854-1900)*
 
-Di origine irlandese si trasferisce a Londra, dove  si sposa e mette su famiglia, incomincia a frequentare anche ragazzi, e  il padre di uno di questi lo denucerà così andrà in prigione da dove tornerà distrutto
+Di origine irlandese si trasferisce a Londra, dove  si sposa e mette su famiglia, incomincia a frequentare anche ragazzi, e  il padre di uno di questi lo denucerà così andrà in prigione da dove tornerà distrutto.
+
+
 
 ### Il ritratto di Dorian Gray Ultima pagina
 
