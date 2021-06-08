@@ -216,6 +216,9 @@ scopo: maggiore ponderazione nella formazione delle leggi e “controllo” reci
 ↓
 difetto: procedimento lungo e senza limite temporale: si allungano i tempi di lavoro del Parlamento.
 
+la camerae il senato hanno un presidente e hanno dei gruppi parlamentari che corrispondono quasi al partito
+ogni gruppo ha un capogruppo, ci sono le commissioni competenti per materia (40 che hanno il compito di discutere le proposte di legge
+di fare degli emendamenti e proporre alla votazione dell'intera camera)
 
 **Parlamentari**
 
@@ -283,9 +286,6 @@ il girusdizione dura 5 anni ed è la durata del parlamento scade sempre tranne i
 
 un governo ha la prorograzio quando un altro governo si sta creando e continua ad amministrare
 
-la camerae il senato hanno un presidente e hanno dei gruppi parlamentari che corrispondono quasi al partito
-ogni gruppo ha un capogruppo, ci sono le commissioni competenti per materia (40 che hanno il compito di discutere le proposte di legge
-di fare degli emendamenti e proporre alla votazione dell'intera camera)
 
 Maggioranza assoluta al numero dei componeti 50%+1
 oppure la maggioranza semplice 50%+1 dei preseneti
