@@ -663,12 +663,36 @@ scompare dopo il rientro in patria
 
 ## Crisi del 29
 
-**Proebizionismo**: perieodo nel quale in america si diffonde il contrabbando di alcolici
-bolla speculativa, l'alcol caratteristica dei tedeschi e irlandesi, proebizionismo, xenofobia
-il famoso giovedì nero
-roosvelt con il New Deal, con un forte intervento dello stato per creare strutture statali
+Durante gli anni 20 in america si creò una crescente xenofobia, molti immigrati erano dispostti a far azioni criminose per arricchirsi inoltre gli europei portavano con loro idee rivoluzionarie e progressiste ritenute pericolose.  
+Il numero di Italiani ammessi calò drasticamente grazie a delle leggi, e queste idee sfociarono con il caso Sacco e Vanzetti,nonostante le loro prove dimostravano la loro innocenza vennero giustiziati.
+Si formarono anche gruppi come il Ku Klux Klan (è una piccola percentuale erano del sud)
+
+In questi anni ci fu la prevalenza di governi repubblicani che:
+- ridussero al minimole imposte dirette (quelle sui redditi)
+- diminuirono la spesa pubblica riducendo i programmi di assistenza
+- mantennero basso il tasso d'interesse
+- rinunciarono a qualsiasi forma di regolamentazione dell'economia
+
+**Il boom della borsa**
+negli anni venti il valore delle azioni ebbe una cresita impressionante, tra il 27 e il 29 raddoppio il valore, il fenomeno fece entrare anche i piccoli risparmiatori che agivano in modo speculativo.
+
+Incominciò una crisi di sovrapproduzione sopratutto sui dei beni durevoli ci fu una saturazione del mercato.
+
+Il valore dei titoli non rispecchiava più lo stato economico delle aziende, così il timore di un calo imminente fece vendere molti titoli.  
+Questo timore ebbe un effetto a catena finendo nel giovedì nero
+
+Molte banche chiusero e amuentò drasticamente la disoccupazione.
 
 
+Roosevelt vince le elezioni, subito cotituisce un "consorzio di cervelli", un gruppo di ricercatori per far uscire il paese dalla crisi.
+
+Venne abbandonata la scuola liberalista, con una politica per alzare il reddito pro capite
+
+Obbiettivi:
+- svalutazione del dollaro in modo da favorire l'esportazione
+- intervenire sul sitema fiscale per renderlo più equo
+- creare grandi opere pubbliche per creare lavoro e assorbire la disoccupazione
+- garantire i sussiddi ai disoccupati
 
 ### Film
 

@@ -4,9 +4,8 @@
 
 ## *Iginio Ugo Tarchetti (1839-1869)*
 
-TODO: aggiungere a fosca e ad ugo
 
-Si da il nome Ugo, come omaggio a Ugo foscolo
+Si da il nome Ugo, come omaggio a Ugo foscolo, oltre a fosca scrive molti romanzi fantastici.
 
 ### Scapigliatura
 
@@ -130,7 +129,7 @@ La poesia l'albatro crea una similitudine tra la situazione del poeta e l'albatr
 ### Le vocali ( Opere )
 
 
-TODO:
+TODO: le  vocali
 
 
 ## *Gabriele d’Annunzio (1863-1938)*
@@ -364,17 +363,63 @@ TODO:  da aggiungere e finire
 
 ## *Marcel Proust (1871-1922)*
 
+caratteri: tempo relativo("anni descritti in poche righe e attimi dilatati in pagine"), si contrappone alla impersonalità di zolà
+
+sette romanzi in cui spiega "ricerca del tempo perduto"(la rescerce in francese), ricerca del tempo salvare il passato, alla fine dei sette romanzi marcel ritrova il tempo inzuppando la madleme
+
+**memoria involontaria**(teoria secondo la quale la memoria si può evocare per mezzo di "epifanie" casuali e non cercate) 
+
+
+quel processo che ci fa riaffiorare un ricordo senza che si faccia
+niente di consapevole per suscitarlo come un odore, un sapore, un gesto, un oggetto che spesso evocano in
+noi un ricordo del passato, nel suo caso la madeleine (dolce tipico francese), nel suo romanzo “Alla ricerca
+del tempo perduto”.
+**la ricerca del tempo perduto** parigi
+
+**la madleme**: l'intingere il biscotto nel te lo riporta al passato (memoria involontaria di poust)
+
+TODO:da finire
+
 ### Alla ricerca del tempo perduto
 
 ## *Giuseppe Ungaretti (1888-1970)*
 
+Nasce ad allessandria d'egitto (il padre lavorava al canale di suez).
+Incomincia presto a frequentare ambienti anarchici atei e ribelli, si trasferisce in francia dove studia e da cui prende la sua formazione, frequentando ambienti d'avanguardia.
+Nel 1915 va in guerra come volontario e si accorge della mal organizzazione dell'esercito italiano, abbandona l'ateismo diventando cristiano e si iscrive al partito fascista. 
+Girerà per il mondo per poi tornare in italia durante la guerra per la cattedrà all'università di roma e venne eletto accademico d'italia.
+
+
+Poesia tra il Simbolismo (analogia e materialità sonora) e l'avanguardia (rottura con la tradizione metrica e regole della sintassi)
+
+(poetica della parola scavata nell'interiorità , poesia come sillaba dell'umano , figura retorica analogia, misteriosa , al di là della crisi dell'uomo moderno ungheretti ha cercato la presenza autentica e consapevole dell'uomo nel mondo )
+
+il **corpus** delle poesie di ungheretti sono raccolte dentro **vita di un uomo**
+
+in trincea scrive **l'allegria** , (chi vive l'esperienza della trincea è 
+come un naufrago che è felice per essere vivo) su un taquino segnando il luogo e la data
+
+nuovo concetto di poesia **parola verso** 
+
 ### Soldati (L’allegria )
+
+soldati:"si sta come\ d'autunno\ sugli alberi\ le foglie" **secca similitdine** la fragilità umana
 
 ### I fiumi (L’allegria )
 
+i fiumi:  biografia di giuseppe ungheretti sdraiato nell'isozio ripercorre la sua vita attraverso quattro fiumi:
+- Serchio:dei suo avi
+- Nilo:il fiume della sua infanzia
+- la Senna:il fiume della cultura
+- Isonio:l'ultimo della guerra, dove finalmente più sdraiarsi nell'isonzio lasciando che l'acqua lo lavi
+
 ### Fratelli (L’allegria )
 
+fratelli:**TODO:da finire** l'uomo è presente alla sua fragilità
+
+
 ## *Eugenio Montale (1896-1981)*
+
 
 ### La casa dei doganieri (Le occasioni )
 
@@ -383,11 +428,48 @@ TODO:  da aggiungere e finire
 
 ## *Salvatore Quasimodo (1901-1968)*
 
+dopo una **fase ermetica** ha una fase **neo realista**
+
 ### Ed è subito sera (Acque e terre)
 
 
 ## *Italo Calvino (1923-1985)*
 
+definito "lo scoiattolo della penna" da cesare pavese
+
+cerca di capire un mondo diventato incomprensibile
+
+sfida al labirinto: la vita è un labirinto e lui propone di sfidarlo ed uscirne 
+
+la produzione di italo calvino in tre blocchi:
+
+**la prima fase** è quella neorealista aggunge una componente fiabesca
+- **il sentiero dei nidi di ragno**:storia di un bambino che "gioca" a fare il partigiano
+
+**seconda fase**: la fase della crisi "trilogia dei nostri antenati"
+- **il visconte dimezzato**:un uomo con solo la parte buona o quella cattiva
+- **il barone rampante**: cosimo che non vuole mangiare le lumache e vivrà sugli alberi
+- **il cavaliere inesistente**: solo esteriorità 
+
+**terza fase** : enciclopedica scientifica combinatoria semiotica
+- **le città invisibili**
+
+raccoglie e traduce le fibe
+
+aveva intenzione di fare 5 lezioni in un inverità americane gli viene un ictus e muore trovano nei suoi cassetti queste lezini che pubblicano con il nome di lezioni americane
+
+sono 5 concetti per il nuovo millennio:
+- Leggerezza
+- Rapidità
+- esattezza
+- visibilità
+- Molteplicità
+
 ### Le città invisibili
+
+parla di Marco Polo che descrive le citta a Kublai Khan, gli descrive 55 città(nomi di donna) utopiche e ideali emblemi della
+complessità del mondo e di una letterature che non riusce più a stare dietro alla complessità di questo mondo
+
+TODO:rivedere
 
 
