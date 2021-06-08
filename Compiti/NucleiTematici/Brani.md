@@ -420,13 +420,19 @@ fratelli:**TODO:da finire** l'uomo è presente alla sua fragilità
 
 ## *Eugenio Montale (1896-1981)*
 
+TODO: da fare
 
 ### La casa dei doganieri (Le occasioni )
 
+TODO: da fare
+
 ### “Spesso il male di vivere ho incontrato”(Ossi di seppia)
 
+TODO: da fare
 
 ## *Salvatore Quasimodo (1901-1968)*
+
+TODO: da fare
 
 dopo una **fase ermetica** ha una fase **neo realista**
 
