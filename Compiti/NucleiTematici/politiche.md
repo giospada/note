@@ -201,27 +201,26 @@ dell'economia
 
 USA is afederal republic of 50 states, they have a costitution from 1787,
 the power is divided in three branches:
+
 - **President**(executive):serve for four years
     - head of state: rapresent the coutry (foreing realtions)
-    - head of the federal governament: appoint the secretary of the Treasury,Defence ,Education, Commerce,Interori,Justice
+    - head of the federal governament: appoint the secretary of the Treasury,Defence ,etc... and they must be approved by the Senate
     - head of the armed force: can sand military on mission(only Congress declare war)
-- **Congress**(legislative):
+- **Congress**(legislative): every low has to be approve by both and the president who can veto a laws (but congress can revote and approve it anyway)
     - House of Rapresentatives: elected every two year rapresents state (the number of rapresent for a state is relative to the population) (435 meber)
     - Senate: 6 years long (every 2 year election of 1/3)(100 members)
-- **Supreme Court**(judicial):interprets and defends Us constitution.
-    It make final decision in difficult legal case. It consist of 9 judges that serve for all they life, appointed by the Presidend , with senate Approval
+- **Supreme Court**(judicial):interprets and defends USA constitution. It make final decision in difficult legal case. It consist of 9 judges that serve for all they life, appointed by the Presidend , with senate Approval
 
 ### UK
 
 uk has a parlamentary democracy with a costiturional monarch. No written costitution
 
-- **Queen**:is the head of stat symbol of national unity with no control over governament
-- **Parliament**:
-    - House of Commons:650MPS can propo new low called 'bill' and approv with the major of MPS vote
-    - House of Lords: 750 mebers eleted for life (from the prime minister) of inherited their title they can only make small changes to bills
-- **Prime minister**:is elected by MPS also they vote the Chancellor of the Exchequer(finance)
-    Home secretary(police etc..),Forgiven secretary
-- **Supreme Court**:12 senior judges meetin at middlesex Hall
+- **Queen**:is the head of state and the symbol of national unity, she has no control over governament
+- **Parliament**: make laws and approve the decision of the governament
+    - House of Commons: 650MPs can propose new low called 'bill' and approve with the major of MPs vote
+    - House of Lords: 750 peers they aren't voted by the people but they are inhertied their title or are life peers (appointed by the prime minister), they can only make changes to bill but not reject them
+- **Prime minister**: is elected by MPS, it remains in power for 5 years until the next election (the parlament has to trust the government)
+- **Supreme Court**: 12 senior judges meetin at middlesex Hall
 
 
 **Election** the MPs ot House of Commons are elected(650 MPS) every 5 years:
