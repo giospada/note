@@ -1,7 +1,7 @@
 # Organizzazioni internazionali e globalizzazione
 
 ## Diritto 
-
+il manifesto di ventotene
 
 
 ## Economia Politica 
