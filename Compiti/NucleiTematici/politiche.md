@@ -55,7 +55,7 @@ iter legis ordinario:
 - promulgazione: il presidente della repubblica dichiara che la legge è perfetta
 - pubblicazione: sulla gazzetta ufficiale
 
-**costistuzionale** cambia che ha una doppia votazione a distanza di 3 mesi
+**costistuzionale** cambia che ha una doppia votazione da ciasucna camera a distanza di 3 mesi, la seconda deve essere a maggioranza assoluta.
 
 ### Presidente della Repubblica
 
@@ -90,7 +90,7 @@ poteri:
 
 **corte costituzionale**: creata da professori universiatdri e avvocati (con 20 anni d'esperienza) eletti dal parlamento , Presidente della repubblica e consiglio superiore della magistratura
 altre funzioni sono:
-
+- organo di garanzia per le possibili violazioni costituzionali
 - attentato alla costituzione
 - controversie tra gli organi costituzionali
 - gudica la legittimità cosittuzionale delle leggi (solo dopo che un gudice si è appellato alla corte, o da un organo dello stato o regioni)
@@ -102,8 +102,9 @@ non possono essere soggette di referendum:
 - leggi tributarie
 - trattati internazionali
 - legge di bilancio
+- leggi elettorali
 
-sentenze della corte costituzionale sono definitive non possono essere inquinate
+sentenze della corte costituzionale sono definitive non possono essere inpuniate
 
 garanzie contituzioanli:
 - costituzione rigida: procedimento aggravato, interlegis costituzionale nel quale una camera viene preposta 
@@ -114,7 +115,7 @@ garanzie contituzioanli:
 ### magistratura
 
 i gudici sono soggeti soltanto art.101 cioè non dipendono da nessun altro potere,
-devono solo applicare la legge con imparziliù e indipendenza garantendo la giustizia
+devono solo applicare la legge con imparziliù e indipendenza garantendo la giustizia in nome del popolo Italiano
 
 un processo può essere:
 - civile
@@ -126,7 +127,7 @@ gradi:
 - corte d'appello
 - grado di cassazione 
 
-scelata del gudice in base art25:
+scelata del gudice in base art25: (criteri oggettivi)
 - territorio
 - materia
 - valore
@@ -135,7 +136,7 @@ la costituzione garantisce:
 - diritto d'azione: tutti possono far valere i propri diritti
 - diritto alla difesa: è garantito un avvocato d'ufficio
 - giudice competente: giudice in base a materia valore e territorio
-- la responsabilità penale:
+- la responsabilità penale è personale
 - esiste il principio di presunzione di non compevolezza:fino alla sentenza definitiva
 - diritto al giusto processo:
 
@@ -143,6 +144,7 @@ garanzia d'indipendenza dei giudici:
 - nomina per concorso
 - inamovibilità:solo il consiglio superiore può traferirli o sospenderli
 - non possono iscriversi ad un partito
+- Assenza di una gerarchia
 
 
 **Consiglio superiore della magistratura**
@@ -157,7 +159,8 @@ un terzo eletti dal Parlamento in seduta comune e due terzi eletti con elezioni 
 
 > il governo è l'organo che ha il potere esecutivo
 
-*esecutivo attuare le norme e i progetti del parlaemnto*
+*esecutivo attuare le norme e i progetti del parlamento*
+svolge **attività amministrativa**: consiste nel dare esecuzioni alle leggi per soddisfare i bisogni collettivi
 
 il governo è il motore della vita politica, deve mettere in pratica il potere esecutivo attraverso i ministri
 
@@ -171,21 +174,10 @@ un governo ha la prorograzio quando un altro governo si sta creando e continua a
 
 giuridica:definire solo gil obbiettivi dell'intervento pubblico, prevedere i programmi
 
-**Il governo si forma**: dopo la nuova legislatura(votazioni del parlamento)
-(elezione politiche) e la camera e il senato votano il governo
-
-
-il presidente della repubblica deve fare un giro di consultazioni ogni partito fa la sua proposta di personaggi programma politico, individuazione delle possibilità di crearei un governo
-
-Cirsi di governo: 
-
-la costituzione è il limite al potere e il fatto che sia rigida è la garanzia che il potere non possa abusarne
-
-le leggi costituzionali devono essere eletta da entrabe le camere bisogna aspettare 3 mesi 
-poi la si rivotà (doppia votazione a intervalli di non meno di 3 mesi) dalle due camere
-se la legge ha avuto soltanto la maggioranza rimane altri 3 mesi in cui è possibile un referendum
-
-
+Il governo è formato dal Presidente del Consiglio e dai ministri che formano **il Consiglio dei ministri:**
+- il consiglio dei ministri ha il compito di determinare l'indirizzo politico.
+- Il presidente del consiglio che promuove e coordina l'attività dei ministri e dirige la politica generale del governo
+- i ministri che hanno il compito di partecipare alle riunioni e alle deliberazioni del consiglio dei ministri
 i ministri si riferisce all'organo di governo
 i ministri: sono gli organi politici e amministrativi (è un elemento del governo)
 ( rappresentano il programma politico )
@@ -193,6 +185,27 @@ i ministri: sono gli organi politici e amministrativi (è un elemento del govern
 i ministri sono 23 alcuni di questi "hanno il portafoglio" quindi hanno dei soldi da spendere 
 i ministri senza portafolglio hanno meno autonomia e quindi devono essere approvati dal ministro 
 dell'economia
+
+**Il governo si forma**: dopo la nuova legislatura(votazioni del parlamento)
+(elezione politiche) e la camera e il senato votano il governo e per la crisi del governo
+
+
+**Crisi di governo:** 
+quando il presidente del consiglio presenta le dimmisioni e il capo dello Stato accetta con riserva, in ogni caso il Governo deve rimanere in carica fino alla nomina del nuovo governo, soltanto per gli atti urgenti e di ordinaria amministrazione.
+
+il presidente della repubblica deve fare un giro di consultazioni ogni partito fa la sua proposta di personaggi programma politico, individuazione delle possibilità di crearei un governo, al termine delle consultazioni conferisce l'incarico di formare un nuoco governo a una determinata persona.
+Il presidente incaricato accetta con riserva e dopo una serie di incontri privati per concordare il programma politico e la lista dei ministri può presentarsi davanti al capo dello Stato rinuciando o accettando l'incarico.
+accetta l'incarico allora il PDR nomina il presidente del cosiglio e i ministri che entro 10 giorni dal giuramento devono presentarsi davanti al Parlamento per la richiesta di fiducia, altrimenti puà sciogliere anticipatamente le camere e indire le elezioni oppure conferire l'incarico a un'altra persona.
+
+la costituzione è il limite al potere e il fatto che sia rigida è la garanzia che il potere non possa abusarne
+
+le leggi costituzionali devono essere eletta da entrabe le camere bisogna aspettare 3 mesi 
+poi la si rivotà (doppia votazione a intervalli di non meno di 3 mesi) dalle due camere
+se la legge ha avuto soltanto la maggioranza rimane altri 3 mesi in cui è possibile un referendum
+
+Al Governo oltre alla funzione esecutiva riconosce la **funzione normativa**, cioè il potere di emanare gli atti normativi tra quali:
+- decreto legislativo, in base a una delega da parte del Parlamento
+- decreto legge, in casi di urgenza e sotto la responsabilità del Governo
 
 ## Inglese
 
