@@ -160,7 +160,7 @@ un terzo eletti dal Parlamento in seduta comune e due terzi eletti con elezioni 
 > il governo è l'organo che ha il potere esecutivo
 
 *esecutivo attuare le norme e i progetti del parlamento*
-svolge ** attività amministrativa** : consiste nel dare esecuzioni alle leggi per soddisfare i bisogni collettivi
+svolge **attività amministrativa**: consiste nel dare esecuzioni alle leggi per soddisfare i bisogni collettivi
 
 il governo è il motore della vita politica, deve mettere in pratica il potere esecutivo attraverso i ministri
 
@@ -203,7 +203,9 @@ le leggi costituzionali devono essere eletta da entrabe le camere bisogna aspett
 poi la si rivotà (doppia votazione a intervalli di non meno di 3 mesi) dalle due camere
 se la legge ha avuto soltanto la maggioranza rimane altri 3 mesi in cui è possibile un referendum
 
-
+Al Governo oltre alla funzione esecutiva riconosce la **funzione normativa**, cioè il potere di emanare gli atti normativi tra quali:
+- decreto legislativo, in base a una delega da parte del Parlamento
+- decreto legge, in casi di urgenza e sotto la responsabilità del Governo
 
 ## Inglese
 
