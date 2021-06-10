@@ -1,7 +1,6 @@
 
 # Brani per l'esame
 
-
 ## *Iginio Ugo Tarchetti (1839-1869)*
 
 
@@ -173,7 +172,7 @@ di farle sue entrambe. Elena non cede, quindi Andrea decide di dedicarsi soltant
 L'uomo, però, non riesce a dimenticare Elena e alla fine, egli in un momento di smarrimento, distrutto dal fatto che Elena avesse un nuovo amante, la chiama con il nome dell'altra. Maria, sconvolta,
 scappa via senza dire una parola e lo lascia per sempre.
 
-è un estestista fallito perchè non si è fatto dominare dagli oggetti e dalle passioni ed alla fine rimane solo con un armadio
+è un estestista fallito perché non si è fatto dominare dagli oggetti e dalle passioni ed alla fine rimane solo con un armadio
 
 il un uomo che cerca di vivere secondo i valori che il padre gli aveva dato ma fallisce
 - vivi la tua vita come un opera d'arte
@@ -349,30 +348,30 @@ nuova visione dal mondo basata sulla disarmonia e sulla contraddizione e sulla r
 
 ## *Italo Svevo (1861-1928)*
 
-italo svevo : sia italiano che tedesco (la mittleuropa)triestino
-legge le opere di freud 
-figura dell'inetto che si accetta
+italo svevo : sia italiano che tedesco (mitteleuropeo)triestino
+legge le opere di Freud,figura dell'inetto che si accetta
 
-**primi due libbri fallimenti**: una vita , senilità(avere un atteggiamento da vecchi ), per più di ventanni non pubblica nulla,
-dissoluione del tempo lienare(procede per macrotemi),
-
-**muore** in un incidente stradale
+Studia principalmente da autodidatta, sposa la cugina, i **primi due libri fallimenti**: una vita , senilità(avere un atteggiamento da vecchi ), per più di vent'anni non pubblica nulla; durante i sui numerosi viaggi di lavoro farà amicizia con lo scrittore Joyce, e si appassiona di Freud
+Scrive **la coscienza di Zeno** che farà molto successo anche all'estero grazie all'amicizia con Joyce, morirà pochi anni dopo in un incidente stradale
 
 
 ### La coscienza di Zeno
 
-è un lungo diario di un nevrotico che procede per temi (es fumo,padre) lo psicoanalista pubblica il diario promettendo di dividere i guadagni in caso di ripresa della terapia  (il dottor S)
-- prefazione: Dottor s. spiega il perchè del diario
-- Preabolo:comincia il racconto 
-- il fumo:caratteristica del nevrotico (continuamenterimanda)
-- la morte di mio padre:l'ostilità tra il padre e il figlio e il traomatico schiaffo del padre morente
-- la storia del mio matrimonio: si a tutte le figlie di Malfenti ma solola terza più bruttina accetta(augusta)
+Gioca sul termine coscienza in quanto sia *consapevolezza* che *coscienza morale*.
 
-TODO:  da aggiungere e finire
+La struttura non segue un percorso cronologico, infatti il libro è diviso per capitoli in base ai temi, e anche dentro i capitoli il tempo non è lineare *"attimi in pagine e anni in poche righe"*
+
+Il romanzo è lungo diario di un nevrotico, il cui psicoanalista pubblica il diario promettendo di dividere i guadagni in caso di ripresa della terapia  (il dottor S)
+- prefazione: Dottor s. spiega il perché del diario
+- Preambolo: Zeno riflette sulla scrittura come cura e incomincia il suo racconto
+- il fumo: che non riuscirà mai a smettere (caratteristica del nevrotico,la tendenza rimanda continuamente)
+- la morte di mio padre:l'ostilità tra il padre e il figlio e il traumatico schiaffo del padre morente
+- la storia del mio matrimonio: si propone a tutte le figlie di Malfenti ma solo l'ultima (la più bruttina) accetta(augusta)
+
 
 ## *Marcel Proust (1871-1922)*
 
-caratteri: tempo relativo("anni descritti in poche righe e attimi dilatati in pagine"), si contrappone alla impersonalità di zolà
+caratteri: tempo relativo("anni descritti in poche righe e attimi dilatati in pagine"), si contrappone alla impersonalità di Zolà
 
 sette romanzi in cui spiega "ricerca del tempo perduto"(la rescerce in francese), ricerca del tempo salvare il passato, alla fine dei sette romanzi marcel ritrova il tempo inzuppando la madleme
 
@@ -380,7 +379,7 @@ sette romanzi in cui spiega "ricerca del tempo perduto"(la rescerce in francese)
 
 
 quel processo che ci fa riaffiorare un ricordo senza che si faccia niente di consapevole per suscitarlo come un odore, un sapore, un gesto, un oggetto che spesso evocano in noi un ricordo del passato, nel suo caso la madeleine (dolce tipico francese), nel suo romanzo “Alla ricerca del tempo perduto”. 
-**la ricerca del tempo perduto** parigi
+**la ricerca del tempo perduto** Parigi
 
 **la madleme**: l'intingere il biscotto nel te lo riporta al passato (memoria involontaria di poust)
 
@@ -418,9 +417,11 @@ i fiumi:  biografia di Giuseppe Ungaretti sdraiato nell'Isonzo ripercorre la sua
 - la Senna:il fiume della cultura
 - Isonzo:l'ultimo della guerra, dove finalmente più sdraiarsi nell'Isonzo lasciando che l'acqua lo lavi
 
+C'è un forte richiamo alle *corrispondances* Simboliste *"ogni cosa rimanda ad un'altra, ogni cosa è un'altra"*
+
+
 ### Fratelli (L'allegria )
 
-fratelli:**TODO:da finire** l'uomo è presente alla sua fragilità
 
 ```text
 Si sta come 
@@ -428,6 +429,8 @@ d'autunno
 sugli alberi
 le foglie
 ```
+
+Il titolo contestualizza la poesia, infatti la poesia ad condizione umana universale, creando una similitudine tra gli foglie d'autunno e la precarietà della vita.
 
 ## *Eugenio Montale (1896-1981)*
 
@@ -443,13 +446,16 @@ Negli ultimi anni Montale verrà premiato con lauree *honoris causa*,  venne ele
 
 ### La casa dei doganieri (Le occasioni )
 
-> Come un osso di seppia gettato sulla terra, il poeta è esiliato dal mare (escluso dalla natura e felicità)
+Nella poesia Montale si immagina che lui e Anna, abbiano vissutoun momento di vita vera nella casa dei doganieri
 
 
 
 ### “Spesso il male di vivere ho incontrato”(Ossi di seppia)
 
-TODO: da finire Eugenio Montale
+
+> Come un osso di seppia gettato sulla terra, il poeta è esiliato dal mare (escluso dalla natura e felicità)
+
+Male di vivere e divina indifferenza
 
 
 ## *Salvatore Quasimodo (1901-1968)*
@@ -501,8 +507,7 @@ sono 5 concetti per il nuovo millennio:
 
 ### Le città invisibili
 
-parla di Marco Polo che descrive le città a Kublai Khan, gli descrive 55 città(nomi di donna) utopiche e ideali emblemi della
-complessità del mondo e di una letterature che non riusce più a stare dietro alla complessità di questo mondo
+Ispirato dal Milione di Marco Polo, parla di Marco Polo che descrive le città a Kublai Khan, gli descrive 55 città(nomi di donna) utopiche e ideali emblemi della complessità del mondo e di una letterature che non riusce più a stare dietro alla complessità di questo mondo
 
-TODO:rivedere
+
 
