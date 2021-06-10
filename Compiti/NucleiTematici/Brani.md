@@ -209,7 +209,7 @@ ma a cui non sei mai arrivato
 
 ## *Filippo Tommaso Marinetti (1876-1944)*
 
-**Filippo tommaso Marinetti** è il fondatore di questo movimento
+**Filippo tommaso Marinetti** è il fondatore di questo movimento e firma il manifesto degli intelletuali fascisti
 
 **Si si così l'aurora sul mare**:il sorgere del sole sul mare, strana tipografia e disposizione del testo
 
