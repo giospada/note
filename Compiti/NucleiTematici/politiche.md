@@ -219,21 +219,23 @@ the power is divided in three branches:
     - head of state: rapresent the coutry (foreing realtions)
     - head of the federal governament: appoint the secretary of the Treasury,Defence ,etc... and they must be approved by the Senate
     - head of the armed force: can sand military on mission(only Congress declare war)
+   is elected by the American people every 4 year and can serve for two 4 year terms.
+   People vote for electoral College; these elector in turn directely elect the president and Vice President.
 - **Congress**(legislative): every low has to be approve by both and the president who can veto a laws (but congress can revote and approve it anyway)
     - House of Rapresentatives: elected every two year rapresents state (the number of rapresent for a state is relative to the population) (435 meber)
     - Senate: 6 years long (every 2 year election of 1/3)(100 members)
-- **Supreme Court**(judicial):interprets and defends USA constitution. It make final decision in difficult legal case. It consist of 9 judges that serve for all they life, appointed by the Presidend , with senate Approval
+- **Supreme Court**(judicial):interprets and defends USA constitution. It make final decision in difficult legal case. It consist of 9 judges that serve for all they life, appointed by the Presidend , with senate Approval and it control if the actions by the president are costitutional.
 
 ### UK
 
 uk has a parlamentary democracy with a costiturional monarch. No written costitution
 
-- **Queen**:is the head of state and the symbol of national unity, she has no control over governament
+- **Queen**:is the head of state and the symbol of national unity, she has no control over governament, she appoints the Prime Minister
 - **Parliament**: make laws and approve the decision of the governament
     - House of Commons: 650MPs can propose new low called 'bill' and approve with the major of MPs vote
     - House of Lords: 750 peers they aren't voted by the people but they are inhertied their title or are life peers (appointed by the prime minister), they can only make changes to bill but not reject them
 - **Prime minister**: is elected by MPS, it remains in power for 5 years until the next election (the parlament has to trust the government)
-- **Supreme Court**: 12 senior judges meetin at middlesex Hall
+- **Supreme Court**: 12 senior judges meetin at middlesex Hall and it make final decisions in difficult cases.
 
 
 **Election** the MPs ot House of Commons are elected(650 MPS) every 5 years:
