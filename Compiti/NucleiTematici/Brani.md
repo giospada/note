@@ -55,22 +55,15 @@ la famiglia si chiama Toscano:
 - Luca : il più grande
 - n'toni:figlio 
 - lia:figlia 
-- mena:figlia 
+- mena:figlia
 - alessi:figlio 
 
 **Teoria dell'ostrica** come l'ostrica appena si stacca dallo scoglio si perde in alto mare
 
 **Trama**
-I Malavoglia sono una famiglia di pescatori di Acitrezza: il loro nome era Toscano. Essi vivono nella “Casa del nespolo” 
-da tante generazioni e possiedono una barca, la “Provvidenza”, a cui affidano le sorti della loro vita, ma la “Provvidenza” naufraga,
-trascinando nella rovina l'intera famiglia. Nel naufragio scompare Bastianazzo, la barca è andata distrutta e
-così non avevano i soldi nemmeno per pagare il carico di lupini che non sono riusciti a vendere a seguito dell'incidente.
-Per sanare il debito si vedono costretti a cedere la Casa del nespolo. Il padre di Bastianazzo, il vecchio Padron ‘Ntoni, 
-muore all'ospedale,  più tardi muore anche la moglie di Bastianazzo,
-Luca muore nella battaglia di Lissa, il giovane ‘Ntoni cerca di far fortuna col contrabbando, ma viene arrestato, 
-Lia prende una cattiva strada, e Mena, non essendosi potuta sposare per la cattiva fama della sorella,
-va a vivere con la famiglia dell'ultimo suo fratello, Alessi, il quale, dopo tante sventure, riuscirà a formare
-una sua famiglia e a ricomprare la “Casa del nespolo”.
+I Malavoglia sono una famiglia di pescatori di Acitrezza: il loro nome era Toscano. Essi vivono nella “Casa del nespolo” da tante generazioni e possiedono una barca, la “Provvidenza”, a cui affidano le sorti della loro vita, ma la “Provvidenza” naufraga, trascinando nella rovina l'intera famiglia. Nel naufragio scompare Bastianazzo, la barca è andata distrutta e così non avevano i soldi nemmeno per pagare il carico di lupini.  
+Per sanare il debito si vedono costretti a cedere la Casa del nespolo.  
+Il padre di Bastianazzo, il vecchio Padron ‘Ntoni, muore all'ospedale,  più tardi muore anche la moglie di Bastianazzo, Luca muore nella battaglia di Lissa, il giovane ‘Ntoni cerca di far fortuna col contrabbando, ma viene arrestato, Lia prende una cattiva strada, e Mena, non essendosi potuta sposare per la cattiva fama della sorella, va a vivere con la famiglia dell'ultimo suo fratello, Alessi, il quale, dopo tante sventure, riuscirà a formare una sua famiglia e a ricomprare la “Casa del nespolo”.
 
 
 film **Neo Realista** di visconti *La terra trema* (visconti a differenza di Verga è un esteta, ma con il tema della rivolta sociale)
@@ -447,6 +440,8 @@ Negli ultimi anni Montale verrà premiato con lauree *honoris causa*,  venne ele
 ### La casa dei doganieri (Le occasioni )
 
 Nella poesia Montale si immagina che lui e Anna, abbiano vissutoun momento di vita vera nella casa dei doganieri
+
+**Temi** disorientamento, e l'incontrollabile passare del tempo
 
 
 
