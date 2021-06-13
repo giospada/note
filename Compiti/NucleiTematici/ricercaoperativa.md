@@ -131,4 +131,19 @@ e lo sbarco in sardegna
 
 ## Economia Aziendale
 
+Il direct costing è un tipo di contabilità dei costi, che rappresenta un valido strumento a supporto della direzione aziendale nelle scelte di breve periodo, cioè in quelle scelte dirette a migliorare i risultati economici senza modificare la struttura dell’impresa. 
 
+Con il direct costing si imputano all’oggetto di calcolo solamente i costi variabili, mentre i costi fissi sono attribuiti in modo indistinto all’insieme delle produzioni attuate nel periodo considerato.
+
+La differenza fra il prezzo di vendita di una determinata produzione e il suo costo variabile costituisce il margine lordo di contribuzione, che indica la capacità di assorbire costi fissi propria di quella produzione, cioè il suo contributo alla copertura dei costi fissi e alla formazione del risultato economico. Per determinare il margine lordo di contribuzione, occorre sottrarre dall’ammontare dei ricavi di vendita quello del costo variabile del venduto che è dato dall’espressione:
+Costi variabili del periodo
++ Esistenze iniziali di prodotti finiti e in lavorazione
+- Rimanenze finali di prodotti finiti e in lavorazione
+= Costo variabile del venduto
+
+Nelle aziende multiprodotto può accadere che vi siano costi fissi specifici, relativi alle singole produzioni. In questo caso, per ogni linea di prodotto, si hanno:
+    • Un margine lordo di contribuzione, dato dalla già indicata differenza tra i ricavi di vendita di quella produzione e il relativo costo variabile del venduto
+    • Un margine semilordo di contribuzione, dato sottraendo dal margine di cui sopra i costi fissi specifici di quella produzione
+
+Conoscere i margini lordi di contribuzione consente di identificare i prodotti più redditizi e quindi può indurre il management aziendale a spingere sul mercato certe produzione piuttosto che altre.
+L’analisi del margine semilordo di contribuzione è utile per valutare le conseguenze economiche che deriverebbero dal venir meno di una data produzione.

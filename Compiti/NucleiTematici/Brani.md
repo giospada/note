@@ -18,9 +18,12 @@ Si da il nome Ugo, come omaggio a Ugo Foscolo, oltre a fosca scrive molti romanz
 
 ### Fosca
 
-**Fosca**: storia macabra tra un ufficiale e una donna brutta e malata(Fosca) nonostante l'amore illegittimo per Clara; alla fine Giorgio si ammala dello stesso male di fosca che dopo una notte passata assieme muore
+Racconta di Giorgio, un militare dell'esercito che un giorno incontra **Clara**, una giovane donna molto bella con la quale intrattiene una **tenera relazione amorosa**.  
+L'idillio dura solo due mesi, quando Giorgio, richiamato e trasferito a nuova destinazione in un piccolo villaggio. È proprio qui che il giovane fa conoscenza con **Fosca**.  
+Una donna di rara bruttezza, non tanto per i lineamenti ma per la sua eccessiva magrezza e gli effetti di varie patologie; è affetta da una **grave malattia**, ma allo stesso tempo dotata di **un'acuta sensibilità e di una raffinata cultura**.  
+Ben presto Fosca si innamora di Giorgio, bello, gentile e sensibile, diverso dagli altri militari rozzi e grossolani ed il giovane inizia a subirne l'oscuro fascino, tanto da non riuscire ad evitarla e da essere costretto ad instaurare con la donna, suo malgrado, un morboso legame sentimentale, che dopo una notta passata assieme farà morire Fosca e ammalare lui del suo stesso male.
 
-fosca contiene elementi Romantici (l'amore),positivisti(fiducia nella scienza) e decadenti(l'amore per l'orrido)
+Fosca contiene elementi **Romantici** (l'amore),**positivisti**(fiducia nella scienza) e **decadenti**(l'amore per l'orrido)
 
 ## *Giovanni Verga (1840-1922)*
 
@@ -41,6 +44,8 @@ Incomincia il Ciclo dei vinti 5 libri che avrebbero dovuto mostrare i "**vinti**
 
 
 ### I Malavoglia
+
+TODO: aggiungere prefazione
 
 i malavoglia racconta la storia della medesima famiglia dal 1864-1867 ad Acitrezza (faraglioni rocce che spuntano dall'acqua) 
 malavoglia(ossimoro perché lavoravano molto)
@@ -70,12 +75,15 @@ film **Neo Realista** di visconti *La terra trema* (visconti a differenza di Ver
 
 ### Rosso Malpelo 
 
+**artificio della regressione**
+
 **rosso malpelo**: malpelo era ripudiato da tutti, anche dalla sua famiglia a causa dei capelli tranne dal padre che muore davanti a lui in miniera, mal pelo diventa ancora più solitario finché non arriva "il ranocchio" un ragazzo zoppo che incomincia a maltrattare per il suo bene, per prepararlo a quello che avrebbe potuto subire in futuro, che non subirà perché morirà di polmonite.
-Rosso malpelo distrutto dalla morte di ranocchio accetta l'incarico, di un lavoro pericolo dal quale non tornerà.
+Rosso malpelo distrutto dalla sua situazione e sconvolto morte  di ranocchio accetta l'incarico, di un lavoro pericolo dal quale non tornerà.
 
 ### la Roba
 
-**la roba**: parla di Marrazò un contadino che si era arricchito e vive per accumulare le ricchezze, rinuncia ai vizi e ai rapporti personali, alla fine della sua vita si rende conto che i beni sarebbero andati in mano ad altri e quindi impazzito girerà per i poderi a distruggere quello che gli capitava sottomano
+**la roba**: parla di Marrazò un contadino che si era arricchito con il suro lavoro e vive per accumulare le ricchezze, rinunciando ai vizi e ai rapporti personali per avidità.  
+Alla fine della sua vita si rende conto che i beni sarebbero andati in mano ad altri e quindi impazzito girerà per i poderi a distruggere quello che gli capitava sottomano gridando "Roba mia venite con me".
 
 ## *Oscar Wilde(1854-1900)*
 
@@ -131,7 +139,7 @@ Solo il visionario poeta riesce a grazie alla sua immaginazione, e in questa poe
 
 il sonetto accosta l'udito alla vista creando delle sinestesie che sono la figura retorica più cara ai peti maledetti
 
-
+**Fono simbolismo** per cui ad una serie di suoni linguistici viene attribuito uno specifico significato semantico.
 
 ## *Gabriele d'Annunzio (1863-1938)*
 
