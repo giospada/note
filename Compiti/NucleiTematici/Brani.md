@@ -16,6 +16,8 @@ Si da il nome Ugo, come omaggio a Ugo Foscolo, oltre a fosca scrive molti romanz
 
 **stile di vita** emarginati poveri vita irregolare e zingaresca, confusione tra arte e vita abuso di droghe
 
+
+
 ### Fosca
 
 Racconta di Giorgio, un militare dell'esercito che un giorno incontra **Clara**, una giovane donna molto bella con la quale intrattiene una **tenera relazione amorosa**.  
@@ -24,6 +26,8 @@ Una donna di rara bruttezza, non tanto per i lineamenti ma per la sua eccessiva 
 Ben presto Fosca si innamora di Giorgio, bello, gentile e sensibile, diverso dagli altri militari rozzi e grossolani ed il giovane inizia a subirne l'oscuro fascino, tanto da non riuscire ad evitarla e da essere costretto ad instaurare con la donna, suo malgrado, un morboso legame sentimentale, che dopo una notta passata assieme farà morire Fosca e ammalare lui del suo stesso male.
 
 Fosca contiene elementi **Romantici** (l'amore),**positivisti**(fiducia nella scienza) e **decadenti**(l'amore per l'orrido)
+
+focu
 
 ## *Giovanni Verga (1840-1922)*
 
@@ -42,10 +46,20 @@ Incomincia il Ciclo dei vinti 5 libri che avrebbero dovuto mostrare i "**vinti**
 
 **argomenti**:parla di contadini e pescatori e poco impegno sociale
 
+l'artista non deve modificare la storia con visione
+
+
+### Prefazione Malavoglia
+
+nella prefazione verga parla del suo progetto dei vinti, che è un ciclo non riuscirà mai a finire, e vuol far vedere i vinti in qualsiasi stato sociale
+
+i vincitori di oggi sono i vinti di domani
+
+
 
 ### I Malavoglia
 
-TODO: aggiungere prefazione
+
 
 i malavoglia racconta la storia della medesima famiglia dal 1864-1867 ad Acitrezza (faraglioni rocce che spuntano dall'acqua) 
 malavoglia(ossimoro perché lavoravano molto)
@@ -71,6 +85,8 @@ Per sanare il debito si vedono costretti a cedere la Casa del nespolo.
 Il padre di Bastianazzo, il vecchio Padron ‘Ntoni, muore all'ospedale,  più tardi muore anche la moglie di Bastianazzo, Luca muore nella battaglia di Lissa, il giovane ‘Ntoni cerca di far fortuna col contrabbando, ma viene arrestato, Lia prende una cattiva strada, e Mena, non essendosi potuta sposare per la cattiva fama della sorella, va a vivere con la famiglia dell'ultimo suo fratello, Alessi, il quale, dopo tante sventure, riuscirà a formare una sua famiglia e a ricomprare la “Casa del nespolo”.
 
 
+**i proverbi** che mette fa vedere la saggezza del padron toni, saggezza popolare
+
 film **Neo Realista** di visconti *La terra trema* (visconti a differenza di Verga è un esteta, ma con il tema della rivolta sociale)
 
 ### Rosso Malpelo 
@@ -79,6 +95,8 @@ film **Neo Realista** di visconti *La terra trema* (visconti a differenza di Ver
 
 **rosso malpelo**: malpelo era ripudiato da tutti, anche dalla sua famiglia a causa dei capelli tranne dal padre che muore davanti a lui in miniera, mal pelo diventa ancora più solitario finché non arriva "il ranocchio" un ragazzo zoppo che incomincia a maltrattare per il suo bene, per prepararlo a quello che avrebbe potuto subire in futuro, che non subirà perché morirà di polmonite.
 Rosso malpelo distrutto dalla sua situazione e sconvolto morte  di ranocchio accetta l'incarico, di un lavoro pericolo dal quale non tornerà.
+
+nessuna possibilità di miglioramento
 
 ### la Roba
 
@@ -195,7 +213,7 @@ Rinucia ad ogni relazione amorosa per ricostruire il nucleo famigliare e vivrà 
 Pascoli si rifugia nel nido famigliare per la sua insicurezze e per difendersi dal mondo esterno dominato dalla violenza e dal dolore.
 
 **il fancullino** (è un saggio, che descrive un po' la poetica di pascoli) è la parte infantile che negli adulti tende essere soffocata, e che trova libera espressione nella poesia.  
-il fancullino vede tutto con stupore e spinge gli uomini alla bontà e alla solidarità con i più deboli (si ricollega molto ai suoi ideali cristiano-socialisti)
+il fancullino vede tutto con stupore e spinge gli uomini alla bontà e alla solidarità con i più deboli (si ricollega molto ai suoi ideali cristiano-socialisti), e dell'accontentarsi, poesia pura senza qualsiasi forma di persuasione, poesia a-logica
 
 Il fancullino riesce a cogliere delle verità segrete che si esprimono per mezzo di analogie e simboli (**Simbolismo**) 
 
@@ -215,6 +233,7 @@ ma a cui non sei mai arrivato
 
 **Temporale**: pre-grammaticale il padre e il fulmine
 
+onomatopea bubbolio e l'uso del colore
 
 ## *Filippo Tommaso Marinetti (1876-1944)*
 
@@ -226,6 +245,11 @@ sant'Elia:architetto futurista che muore in guerra
 
 ### Il primo manifesto del Futurismo
 
+Ha la volontà di rottura e contrpposizione, e esalta il movimento il progresso l'aggressività la forza e la guerra
+
+musei paragonati a cimiteri
+
+letteratura arida e l'accostamento delle parole deve essere immediato 
 
 **il manifesto del futurismo**:ha un forte contenuto ideologico, un esaltazione della moderintà , macchina, tecnica,città industriale,folla e rivoluzioni urbane
 Marinetti usa l'onomatopea (zang tumb tumb) per descrivere la guerra
@@ -241,7 +265,7 @@ manifesto pubblicato per la prima volta sull **figarò**
 ## *Luigi Pirandello (1867-1936)*
 
 Pirandello nasce in una famiglia borghese ad **agrigento**
-(in una villa chiamata **CAOS**) ( padre garibaldino che possedeva delle **miniere di zolfo**) , affascinato dagli ideali anarchici e sovversivi entra in **conflitto con i padre** e i valori borghesi da lui rappresentati (denaro sicurezza nel affrontare problemi) studia prima a roma (dove conosce capuana) e poi in germania dove legge gli scrittori romantici.
+(in una villa chiamata **CAOS**) ( padre garibaldino che possedeva delle **miniere di zolfo**) , affascinato dagli ideali anarchici e sovversivi entra in **conflitto con i padre** e i valori borghesi da lui rappresentati (denaro sicurezza nel affrontare problemi) studia prima a Roma (dove conosce capuana) e poi in Germania dove legge gli scrittori romantici.
 
 si sposa con **Antonietta Portulano** che dopo l'allagamento delle miniere che farà crollare il suo equilibrio psicologico, per sostenere economicamente la famiglia incomincia a scrivere su giornali e poi pubblica **il fu mattia pascal** (dove incomincia la fase umoristica),inoltre pubblica molte novelle sul corriere della sera
 
@@ -250,13 +274,17 @@ situazioni paradossali che denunciano l'assurdità della condizione umana e le c
 
 Riordina le novelle creando il progetto della raccolta **Novelle per un anno**. Pirandello aderisce al fascismo (firma il manifesto degli intellettuali fascisti) per vantaggi economici, così riesce a finanziare il suo teatro e incomincia una relazione con **Marta Abba**
 
-Vince il **noblel** per la letteratura nel 1934 in pieno fascimo nel mentre si giunge a un rifiuto del fasciscmo che non viene mai proclamato pubblicamente, muore a roma.
+Vince il **nobel** per la letteratura nel 1934 in pieno fascismo nel mentre si giunge a un rifiuto del fascismo che non viene mai proclamato pubblicamente, muore a Roma.
 
 **poesie** (molto basse): **fuori di chiave** ( "vivere come a casa d'altri" *Darzo*)
 
 
+rappresenta la crisi del l'uomo in quanto tale (universale), in una società che dovrebbe comunicare l'uomo non riesce a comunicare
+
+
 #### TEMI Generali
 
+- il rapporto tra la vita e forma, noi abbiamo questo flusso che cerchiamo di cristallizzare (maschere)
 - **relativismo gnoseologico**:(relativizzare la gnosi nota sotto) cioè 
   relativizzare il vero che il vero non è lo stesso per tutti
 - i personaggi di prinandello sono animali a roma pidocchi o serpenti
@@ -266,7 +294,6 @@ Vince il **noblel** per la letteratura nel 1934 in pieno fascimo nel mentre si g
 - crisi d'identità del protagonista
 - la famiglia come nido o prigione
 - la critica alla civiltà della macchina
-- ilrelativismo di ogni coscenza
 - **La pazzia** è la cosa più vicina alla verità
 - tentativo di mettere a nudo quello che si cela dietro la maschera
 - Personaggi sfacettati e sdoppiati in più personalità
@@ -276,6 +303,8 @@ gnosi: studio della realtà (in filosofia)
 ### la vecchia imbellettata
 
 **l'umorismo** : in questo saggio luigi priandello scandisce l'avvertimento del contrario (comico), e il sentimento del contrario (umorismo) che sono i concetti fondamentali della sua poetica.
+
+dal riso alla compassione
 
 ### Il fu Mattia Pascal
 
@@ -292,9 +321,11 @@ Bibbliotecario nel paese di **Miragno** dove ha trascorso una vita agiata, che d
 - **il gioco d'azzardo e lo spiritismo**:sono simbolo di una relatività nella condizione umana
 - **La modernità,la città,il progresso**:afferma che le macchine possano aiutare a migliorare la situazione dell'uomo ma non la sua felicità
 - **relativismo filosofico**:è la costante variazione della precezione del mondo
+ - **identità** se cerchiamo di vivere la vita al diffuori di questa identità non riusciamo a vivere (identità reale mattia pascal ,identità fittizia,identià sospesa (tra la vita e la morte))
+
 
 **Struttura**
-Il romanzo ha una cornice che lega l'inizio e la fine, in cui Mattia vecchio che non si riconosce più come Mattia Pascal, scrive la sua vita in una biblioteca in uno stato di non vita. Poi scrive  dell'infanzia e dell'adolescenza caratterizate dalla spenzierateza che si concludono con il Matrimonio con Romilda. Poi una seconda parte in cui Adriano viaggia per l'italia e l'Europa ma finisce ancora fallendo.
+Il romanzo ha una cornice che lega l'inizio e la fine, in cui Mattia vecchio che non si riconosce più come Mattia Pascal, scrive la sua vita in una biblioteca in uno stato di non vita. Poi scrive  dell'infanzia e dell'adolescenza caratterizzate dalla spensieratezza che si concludono con il Matrimonio con Romilda. Poi una seconda parte in cui Adriano viaggia per l'Italia e l'Europa ma finisce ancora fallendo.
 
 
 **Caratteristiche**:
@@ -308,6 +339,7 @@ Il romanzo ha una cornice che lega l'inizio e la fine, in cui Mattia vecchio che
 **la morte addosso**(cambia il nome **l'uomo dal fiore in bocca**):parla di un signore che è fa delle commissioni in città ma a causa del poco tempo, perde il treno e si ritrova ad aspettare il treno in un bar dove aspetterà la notte trova un uomo al bar con cui parla, e quest'uomo si scopre che ha un epitelioma e che ha un piede nella fossa, e si gode ogni raffinatezza come se fosse l'ultima, ha una moglie che lo insegue
 
 ### Enrico IV La vita
+
 > prende una base storia dal vero Enrico IV che aveva aspettato davanti al castello di Matilde il papa per farsi togliere la scomunica
 
 **Trama**
@@ -358,6 +390,9 @@ Scrive **la coscienza di Zeno** che farà molto successo anche all'estero grazie
 
 ### La coscienza di Zeno
 
+> narrazione di Zeno contiene anche delle bugie che lui si è auto 
+
+
 Gioca sul termine coscienza in quanto sia *consapevolezza* che *coscienza morale*.
 
 La struttura non segue un percorso cronologico, infatti il libro è diviso per capitoli in base ai temi, e anche dentro i capitoli il tempo non è lineare *"attimi in pagine e anni in poche righe"*
@@ -369,6 +404,8 @@ Il romanzo è lungo diario di un nevrotico, il cui psicoanalista pubblica il dia
 - la morte di mio padre:l'ostilità tra il padre e il figlio e il traumatico schiaffo del padre morente
 - la storia del mio matrimonio: si propone a tutte le figlie di Malfenti ma solo l'ultima (la più bruttina) accetta(augusta)
 
+
+con la civiltà dell'uomo ha smesso di rafforzarsi se stesso,ma l'uomo ha utilizzato la sua sapienza per creare ordigni, e tanto diventa più forte diventa più debole
 
 ## *Marcel Proust (1871-1922)*
 
@@ -406,9 +443,17 @@ come un naufrago che è felice per essere vivo) su un taquino segnando il luogo 
 
 nuovo concetto di poesia **parola verso** 
 
-### Soldati (L'allegria )
+### Fratelli
 
-soldati:"si sta come\ d'autunno\ sugli alberi\ le foglie" **secca similitudine** la fragilità umana
+vengono messi in esaltazione sentimenti come l'alleanza e fraternità, precarietà e fragelità
+ 
+nel nemico vede fratellanza per la stessa condizione
+
+nella guerra la parola fratellanza sembra stonare ed è un involontaria rivolta dell'uomo, in questa fragilità si rafforza la fratellanza 
+
+
+ermetismo solo le parole più importanti per descrivere la guerra
+
 
 ### I fiumi (L'allegria )
 
@@ -421,7 +466,7 @@ i fiumi:  biografia di Giuseppe Ungaretti sdraiato nell'Isonzo ripercorre la sua
 C'è un forte richiamo alle *corrispondances* Simboliste *"ogni cosa rimanda ad un'altra, ogni cosa è un'altra"*
 
 
-### Fratelli (L'allegria )
+### soldati (L'allegria )
 
 
 ```text
@@ -432,6 +477,7 @@ le foglie
 ```
 
 Il titolo contestualizza la poesia, infatti la poesia ad condizione umana universale, creando una similitudine tra gli foglie d'autunno e la precarietà della vita.
+
 
 ## *Eugenio Montale (1896-1981)*
 
@@ -445,11 +491,14 @@ Viene assunto dal corriere della sera per fare articoli di cultura, dove descriv
 
 Negli ultimi anni Montale verrà premiato con lauree *honoris causa*,  venne eletto senatore a vita e vinse il premo Nobel.
 
+dissonanza tra l'uomo e la natura e il sole è qualcosa di arido che ti prosciuga
+
+
 ### La casa dei doganieri (Le occasioni )
 
-Nella poesia Montale si immagina che lui e Anna, abbiano vissutoun momento di vita vera nella casa dei doganieri
+Nella poesia Montale si immagina che lui e Anna, abbiano vissuto un momento di vita vera nella casa dei doganieri, qui descrive ,
 
-**Temi** disorientamento, e l'incontrollabile passare del tempo
+**Temi** disorientamento, e l'incontrollabile passare del tempo, impossibilità del ricordo
 
 
 
@@ -458,12 +507,16 @@ Nella poesia Montale si immagina che lui e Anna, abbiano vissutoun momento di vi
 
 > Come un osso di seppia gettato sulla terra, il poeta è esiliato dal mare (escluso dalla natura e felicità)
 
-Male di vivere e divina indifferenza
+**temi**
+- male di vivere e per superarlo ci vorrebbe la divina indifferenza
 
+climax
 
 ## *Salvatore Quasimodo (1901-1968)*
 
 Si trasferisce a Milano dove lavorerà come giornalista, farà uscire *Ed è subito sera* che comprende tutta la sua produzione precedente (ermetica), molte delle sue descrizioni non hanno riferimenti, infatti preleva la tendenza all'astrazione e alla mitizzazione (come la Sicilia che diventa un luogo favoloso), dopo passerà ad una poesia più ideologica e politica(**neo realista**)
+
+**alle fronde dei salici**: com'è possibile fare poesia quando c'è l'occupazione
 
 ### Ed è subito sera (Acque e terre)
 
@@ -473,7 +526,11 @@ trafitto da un raggio di sole
 ed è subito sera.
 ```
 
-Poesia ermetica, dov'è molto importante la valorizzazione della parola, con il cuore indica i sentimenti, feriti(trafitti), a un raggio di sole alludendo alle ad un esistenza di speranze e delusioni, che finisce con una morte improvvisa.
+si crede al centro del mondo
+
+Poesia ermetica, dov'è molto importante la valorizzazione della parola, con il cuore indica i sentimenti, feriti(trafitti), a un raggio di sole alludendo alle ad un esistenza di speranze e delusioni, che finisce con una delusione improvvisa.
+
+significato metaforico delle parole
 
 
 ## *Italo Calvino (1923-1985)*
