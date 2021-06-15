@@ -384,7 +384,6 @@ Deglobalization concentrate on needs of people
 3. 1984  George Orwell Totalitarismo/Human Rights 408 + pag. 408 + fotocopie e powerpoint
 4. Nucleo Commecial correspondence pag. 274-299
 5. European Union 132-139 142/3
-6. Preparation for invalsi
 
 
 

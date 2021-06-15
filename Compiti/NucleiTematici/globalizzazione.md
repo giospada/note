@@ -1,24 +1,37 @@
 # Organizzazioni internazionali e globalizzazione
 
 ## Diritto 
-Organizzazione internazionle = un'associazione costituite da più stati, attraverso accordi e trattati, per realizzare l'interesse della collettività.
 
-La più importante è l'ONU che sostituisce la società delle Nazioni, che ha lo scopo di mantenere la pace e sicurezza internazionale, viene costituita verso la fine della II guerra mondiale durante una conferenza a San Francisco su iniziativa di 5 grandi potenze vincitrici.
-**i fini dell'ONU**:
-- mantenere la pace e sicurazza internazionale
-- promuovere il rispetto dei diritti dell'uomo e dei diritti fondamentali
-- favorire le relazioni di amicizia 
-- dare impulso alle cooperazioni internazionali
+> Organizzazioni internazionali sono associazioni costituite da più stati, attraverso accordi e trattati, per realizzare l'interesse della collettività.
+
+La più importante è **l'ONU** che sostituisce la società delle Nazioni, che ha lo scopo di mantenere la **pace**, **sicurezza internazionale**, promuovere la cooperazione internazionale e il rispetto dei diritti umani.  
+Viene costituita verso la fine della II guerra mondiale durante una conferenza a San Francisco su iniziativa di 5 grandi potenze vincitrici.
 
 E' formato da **5 organi**:
-- Assemblea generale, organo politico e deliberativo, si riunisce per l'approvazione del bilancio in sessione ordinaria, formato dai rappresentanti degli stati membri, che godono di diritto a un voto; deliberazioni approvate a maggioranza qualificata, nelle decisioni importanti da una maggioranza di 2/3
-- Consiglio di sicurezza, organo operativo formato da 15 membri: 5 membri permanenti che godono del diritto di veto  nel senso che le decisione approvate devono essere deliberate a maggioranza qualificata di almeno 9 membri, in ogni caso, il voto favorevole di tutti gli stati permanenti e 10 membri elettivi a rotazione
-- Segretario generale, è il funzionario di grado + elevato ed è eletto dall'assemblea generale per 5 anni, ha la funzione di rappresentanza delle nazioni unite, di esecuzione delle decisione dell'assembela generale e coordimento dei lavori di altri organi e la direzione dell'apparato burocratico
-- Corte internazionale di giustizia, che risolve le controversie di nautra politica tra gli Stati, formato da 15 giudici di stati diversi eletti dall'Assemblea generale
-- Consiglio economico e sociale, organo consutivo competente su questioni di carattere economico e sociale.
+- **Assemblea generale**, organo politico e deliberativo, si riunisce per l'approvazione del bilancio in sessione ordinaria, **formato dai rappresentanti degli stati membri**, che godono di diritto a un voto; deliberazioni approvate a maggioranza qualificata, nelle decisioni importanti da una maggioranza di 2/3
+- Consiglio di sicurezza, organo operativo formato da 15 membri:**5 membri permanenti che godono del diritto di veto** nel senso che le decisione approvate devono essere deliberate a maggioranza qualificata di almeno 9 membri, in ogni caso, il voto favorevole di tutti gli stati permanenti e **10 membri elettivi a rotazione**
+- **Segretario generale**: è il funzionario di grado più elevato ed è **eletto dall'assemblea generale** per 5 anni, ha la **funzione di rappresentanza delle nazioni unite**, di esecuzione delle decisione dell'assemblea generale e coordinamento dei lavori di altri organi e la direzione dell'apparato burocratico
+- **Corte internazionale di giustizia**, che risolve le controversie di natura politica tra gli Stati, formato da 15 giudici di stati diversi eletti dall'Assemblea generale
+- **Consiglio economico e sociale**, organo consultivo competente su questioni di carattere economico e sociale.
 
 ## Economia Politica 
 
+Dal punto di vista economico, la globalizzazione rappresenta la tendenza **dell'economia** ad assumere una **dimensione sovranazionale**.
+La globalizzazione presenta alcune cause:
+- **Progresso tecnologico**: che ha diminuito la distanza in senso fisico tra i mercati e ha ridotto le barriere naturali
+- **Progresso sociale**: che ha consentito il superamento delle barriere culturali
+- **Politiche di integrazione**: che hanno eliminato e ridotto le barriere politiche al commercio internazionale
+- **Politiche di liberalizzazione**: che hanno favorito la concorrenza delle imprese e hanno soppresso le barriere economiche all'ingresso in alcuni mercati
+La globalizzazione ha prodotto un aumento dei seguenti fenomeni:
+- Integrazione dei sistemi economici nazionali
+- Interdipendenza dei mercati internazionali 
+- Movimenti transnazionali dei fattori produttivi e dei flussi di informazione
+
+Il processo di internazionalizzazione delle imprese può incontrare alcune barriere, che ostacolano l'ingresso in un mercato estero e possono essere formali o informali.
+- **Ostacoli formali**: sono ostacoli legali e si distinguono in:
+	- **Barriere tariffarie**: quando consistono in dazi doganali
+	- **Barriere non tariffarie**: quando consistono in altre misure protettive dirette a limitare le importazioni
+- **Ostacoli informali**: sono ostacoli che comprendono situazioni diverse come; le differenze normative, distanza in senso fisico tra i mercati, contesto sociale e culturale...
 
 
 ## Inglese
