@@ -9,6 +9,7 @@ usare il ':call CreateIndex()' comando per fare l'update
 
 - [Notable.md](Notable.md)
 - [README.md](README.md)
+- [AnalisiMatematica](AnalisiMatematica.md)
 
 
 ### Compiti
