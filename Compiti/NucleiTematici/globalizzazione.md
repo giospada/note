@@ -1,3 +1,4 @@
+
 # Organizzazioni internazionali e globalizzazione
 
 ## Diritto 
@@ -8,8 +9,8 @@ La più importante è **l'ONU** che sostituisce la società delle Nazioni, che h
 Viene costituita verso la fine della II guerra mondiale durante una conferenza a San Francisco su iniziativa di 5 grandi potenze vincitrici.
 
 E' formato da **5 organi**:
-- **Assemblea generale**, organo politico e deliberativo, si riunisce per l'approvazione del bilancio in sessione ordinaria, **formato dai rappresentanti degli stati membri**, che godono di diritto a un voto; deliberazioni approvate a maggioranza qualificata, nelle decisioni importanti da una maggioranza di 2/3
-- Consiglio di sicurezza, organo operativo formato da 15 membri:**5 membri permanenti che godono del diritto di veto** nel senso che le decisione approvate devono essere deliberate a maggioranza qualificata di almeno 9 membri, in ogni caso, il voto favorevole di tutti gli stati permanenti e **10 membri elettivi a rotazione**
+- **Assemblea generale**, organo politico e deliberativo, si riunisce per **l'approvazione del bilancio in sessione ordinaria o chiamata su richiesta dell consiglio di sicurezza**, **formato dai rappresentanti degli stati membri**, che godono di diritto a un voto; deliberazioni approvate a maggioranza qualificata, nelle decisioni importanti da una maggioranza di 2/3
+- Consiglio di sicurezza, organo operativo formato da 15 membri:**5 membri permanenti** che godono del **diritto di veto** e **10 membri elettivi a rotazione**, ha l'incarico di realizzare proveddimenti conreti per mantenere la pace e sicurezza
 - **Segretario generale**: è il funzionario di grado più elevato ed è **eletto dall'assemblea generale** per 5 anni, ha la **funzione di rappresentanza delle nazioni unite**, di esecuzione delle decisione dell'assemblea generale e coordinamento dei lavori di altri organi e la direzione dell'apparato burocratico
 - **Corte internazionale di giustizia**, che risolve le controversie di natura politica tra gli Stati, formato da 15 giudici di stati diversi eletti dall'Assemblea generale
 - **Consiglio economico e sociale**, organo consultivo competente su questioni di carattere economico e sociale.

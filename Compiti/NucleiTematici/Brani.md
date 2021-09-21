@@ -6,6 +6,9 @@
 
 Si da il nome Ugo, come omaggio a Ugo Foscolo, oltre a fosca scrive molti romanzi fantastici.
 
+
+tarchetti si immagina il teschio e lo scheletro mentre bacia una donna
+
 ### Scapigliatura
 
 **ideali** poeti ribelli che rifiutano il Manzonismo, spirito cristiano e sono delusi dalla piega che ha preso l'unità d'Italia, contro gli ideali borghesi
@@ -16,6 +19,9 @@ Si da il nome Ugo, come omaggio a Ugo Foscolo, oltre a fosca scrive molti romanz
 
 **stile di vita** emarginati poveri vita irregolare e zingaresca, confusione tra arte e vita abuso di droghe
 
+accusano manzoni per non aver portato il romanticismo decadentista
+
+come le correnti bohem capivano la loro situazione sociale e ne facevano un vanto 
 
 
 ### Fosca
@@ -23,47 +29,43 @@ Si da il nome Ugo, come omaggio a Ugo Foscolo, oltre a fosca scrive molti romanz
 Racconta di Giorgio, un militare dell'esercito che un giorno incontra **Clara**, una giovane donna molto bella con la quale intrattiene una **tenera relazione amorosa**.  
 L'idillio dura solo due mesi, quando Giorgio, richiamato e trasferito a nuova destinazione in un piccolo villaggio. È proprio qui che il giovane fa conoscenza con **Fosca**.  
 Una donna di rara bruttezza, non tanto per i lineamenti ma per la sua eccessiva magrezza e gli effetti di varie patologie; è affetta da una **grave malattia**, ma allo stesso tempo dotata di **un'acuta sensibilità e di una raffinata cultura**.  
-Ben presto Fosca si innamora di Giorgio, bello, gentile e sensibile, diverso dagli altri militari rozzi e grossolani ed il giovane inizia a subirne l'oscuro fascino, tanto da non riuscire ad evitarla e da essere costretto ad instaurare con la donna, suo malgrado, un morboso legame sentimentale, che dopo una notta passata assieme farà morire Fosca e ammalare lui del suo stesso male.
+Ben presto Fosca si innamora di Giorgio, bello, gentile e sensibile, diverso dagli altri militari rozzi e grossolani ed il giovane inizia a subirne l'oscuro fascino, tanto da non riuscire ad evitarla e da essere costretto ad instaurare con la donna, suo malgrado, un morboso legame sentimentale, che dopo una notte passata assieme farà morire Fosca e ammalare lui del suo stesso male.  
 
-Fosca contiene elementi **Romantici** (l'amore),**positivisti**(fiducia nella scienza) e **decadenti**(l'amore per l'orrido)
+Fosca contiene elementi **Romantici** (l'amore),**positivisti**(fiducia nella scienza) e **decadenti**(l'amore per l'orrido)  
+Tra l'attrazione e la repulsione.
 
-focu
+
 
 ## *Giovanni Verga (1840-1922)*
 
 **Storia**
 Nasce in Sicilia, dove viene affascinato da Garibaldi che lo influenzerà con i valori d'unità nazionale.  
 Si lega subito alla corrente romantica fino a quando non va a Milano, dove frequenta gruppi d'avanguardia come gli scapigliati, dove si allontanerà dal romanticismo scrivendo un libro sul conflitto tra arte e denaro.  
-*Rosso Malpelo* è il suo primo libro verista (una corrente che derivava dal Naturalismo francese), con un attenzione verso le classi popolari e la tecnica **dell'impersonalità** (il narratore non dà giudizi)
-Incomincia il Ciclo dei vinti 5 libri che avrebbero dovuto mostrare i "**vinti**" (che per verga sono le **vittime del progresso**) ma ne terminerà due solo Mastro-*Don Gesualdo* e i *Malavoglia*
+*Rosso Malpelo* è la sua prima novella verista (una corrente che derivava dal Naturalismo francese), con un attenzione verso le classi popolari e la tecnica **dell'impersonalità** (il narratore non dà giudizi), a differenza dei Naturalisti non crederà però nel progresso e nella lotta di classe.    
+Incomincia il Ciclo dei vinti 5 libri che avrebbero dovuto mostrare i "**vinti**" (che per verga sono le **vittime del progresso**) ma ne terminerà due solo *Mastro-Don Gesualdo* e i *Malavoglia*
 
 
-"il progresso è come una macchina che stritola i deboli", applica poco le teorie scientifiche 
+"il progresso è come una macchina che stritola i deboli", applica poco le teorie scientifiche a differenza dei naturalisti
 
 **stile**: paragone dei personaggi agli animali
 
 **tecniche**: discorso indiretto libero, privo di segnali  distacco tra autore e narratore, artificio della regressione, applica la dottrina dell'impersonalità ma mantiene la consapevolezza che la lettura è arte e non scienza
 
-**argomenti**:parla di contadini e pescatori e poco impegno sociale
+**argomenti**: parla di contadini e pescatori e poco impegno sociale
 
 l'artista non deve modificare la storia con visione
 
 
 ### Prefazione Malavoglia
 
-nella prefazione verga parla del suo progetto dei vinti, che è un ciclo non riuscirà mai a finire, e vuol far vedere i vinti in qualsiasi stato sociale
-
-i vincitori di oggi sono i vinti di domani
-
+nella prefazione verga parla del suo progetto dei vinti, che è un ciclo non riuscirà mai a finire, e vuol far vedere i vinti in qualsiasi stato sociale  
+i vincitori di oggi sono i vinti di domani.
 
 
 ### I Malavoglia
 
-
-
-i malavoglia racconta la storia della medesima famiglia dal 1864-1867 ad Acitrezza (faraglioni rocce che spuntano dall'acqua) 
+i malavoglia racconta la storia della medesima famiglia dal 1864-1867 ad Acitrezza   
 malavoglia(ossimoro perché lavoravano molto)
-
 
 **albero Genealogico**
 
@@ -100,7 +102,7 @@ nessuna possibilità di miglioramento
 
 ### la Roba
 
-**la roba**: parla di Marrazò un contadino che si era arricchito con il suro lavoro e vive per accumulare le ricchezze, rinunciando ai vizi e ai rapporti personali per avidità.  
+**la roba**: parla di Marrazò un contadino che si era arricchito con il suo lavoro e vive per accumulare le ricchezze, rinunciando ai vizi e ai rapporti personali per avidità.  
 Alla fine della sua vita si rende conto che i beni sarebbero andati in mano ad altri e quindi impazzito girerà per i poderi a distruggere quello che gli capitava sottomano gridando "Roba mia venite con me".
 
 ## *Oscar Wilde(1854-1900)*
@@ -157,7 +159,7 @@ Solo il visionario poeta riesce a grazie alla sua immaginazione, e in questa poe
 
 il sonetto accosta l'udito alla vista creando delle sinestesie che sono la figura retorica più cara ai peti maledetti
 
-**Fono simbolismo** per cui ad una serie di suoni linguistici viene attribuito uno specifico significato semantico.
+**Fonosimbolismo** per cui ad una serie di suoni linguistici viene attribuito uno specifico significato semantico.
 
 ## *Gabriele d'Annunzio (1863-1938)*
 
@@ -171,12 +173,12 @@ Incomincia con racconti veristi dove narra la superiorità del popolo abruzzese,
 **Storia**  
 
 Incomincia a scrivere per giornali articoli di cultura e di vita mondana, anche la sua vita privata diventa mondana, con i continui tradimenti e amori tempestivi. 
-Accumula debiti per le sue abitutdini di vivere sopra le possibilita e di circondarsi di cose belle e preziose.  
-In continuo movimento con continue nuove amanti, finisce in francia per scappare dai creditori.  
-nel 1915 torna in patria per schierandosi con gli interventisti, si arruola come volontario, e farà diversi missioni con motosiluranti e aereoplani; in una di queste azioni si ferisce all'occhio destro e scrive il notturno (scritto grazie all'adorata figia denominata la sirenetta).  
+Accumula debiti per le sue abitudini di vivere sopra le possibilità e di circondarsi di cose belle e preziose.  
+In continuo movimento con continue nuove amanti, finisce in Francia per scappare dai creditori.  
+nel 1915 torna in patria per schierandosi con gli interventisti, si arruola come volontario, e farà diversi missioni con motosiluranti e aeroplani; in una di queste azioni si ferisce all'occhio destro e scrive il notturno (scritto grazie all'adorata figlia denominata la sirenetta).  
 Dopo la guerra occuperà Fiume, per poi essere costretto a lasciarla, si rifugerà nel vittoriale dove passerà gli ultimi anni della sua vita circondato da opere kitsch.
 
-era un esempio per molti fascisti, mussolini lo considerava un rivale e d'annunzio non approvava l'alleanza con hitler.
+era un esempio per molti fascisti, ma Mussolini lo considerava un rivale e d'annunzio non approvava l'alleanza con Hitler.
 
 
 ### Il Piacere 
@@ -191,36 +193,37 @@ di farle sue entrambe. Elena non cede, quindi Andrea decide di dedicarsi soltant
 L'uomo, però, non riesce a dimenticare Elena e alla fine, egli in un momento di smarrimento, distrutto dal fatto che Elena avesse un nuovo amante, la chiama con il nome dell'altra. Maria, sconvolta,
 scappa via senza dire una parola e lo lascia per sempre.
 
-è un estestista fallito perché non si è fatto dominare dagli oggetti e dalle passioni ed alla fine rimane solo con un armadio
+è un esteta fallito perché non si è fatto dominare dagli oggetti e dalle passioni ed alla fine rimane solo con un armadio
 
 il un uomo che cerca di vivere secondo i valori che il padre gli aveva dato ma fallisce
 - vivi la tua vita come un opera d'arte
 - e possiedi le cose e non essere posseduto
 
 
-### La pioggia nel pineto ( Alcyone )
+### La pioggia nel Pineto ( Alcyone )
 
-D'Annunzio in versilia fa una passeggiata in un pineto con ermione (il nome di una ninfa) il rumore della pioggia sulle foglie fa una sinfonia, a cui si aggiunge il rumore della cicala e della rana (**panismo** è l'unione dell'uomo nella natura), e mentre la donna si trasforma in corteccia loro si intricono e lei piange di piacere, sinfonia di sensualità
+D'Annunzio in Versilia fa una passeggiata in un pineto con Ermione (il nome di una ninfa) il rumore della pioggia sulle foglie fa una sinfonia, a cui si aggiunge il rumore della cicala e della rana (**panismo** è l'unione dell'uomo nella natura), e mentre la donna si trasforma in corteccia loro si intricano e lei piange di piacere, sinfonia di sensualità.  
+Molto importante è la musicalità del componimento, versi molto brevi con rime.
 
 
 ## *Giovanni Pascoli (1855-1912)*
 
-Fin da piccolo traomatizzato dalla morte del padre fucilato mentre tornava a casa, la famiglia cade in difficoltà economica, in pochi anni perde anche e due fratelli, viene cacciato dall'università per una protesta, continuerà a protestare con i moviemnti socialisti fino a quando non viene messo in prigione.
-Da qui si allontanerà dalla politica attiva (resterà socialista ma abbondoerà le idee rivoluzionarie) .
+Fin da piccolo traumatizzato dalla morte del padre fucilato mentre tornava a casa, la famiglia cade in difficoltà economica, in pochi anni perde anche e due fratelli, viene cacciato dall'università per una protesta, continuerà a protestare con i movimenti socialisti fino a quando non viene messo in prigione.
+Da qui si allontanerà dalla politica attiva (resterà socialista ma abbonderà le idee rivoluzionarie) .
 
-Rinucia ad ogni relazione amorosa per ricostruire il nucleo famigliare e vivrà come un tradimento il matrimonio di una sorella.
+Rinuncia ad ogni relazione amorosa per ricostruire il nucleo famigliare e vivrà come un tradimento il matrimonio di una sorella.
 
 Pascoli si rifugia nel nido famigliare per la sua insicurezze e per difendersi dal mondo esterno dominato dalla violenza e dal dolore.
 
-**il fancullino** (è un saggio, che descrive un po' la poetica di pascoli) è la parte infantile che negli adulti tende essere soffocata, e che trova libera espressione nella poesia.  
-il fancullino vede tutto con stupore e spinge gli uomini alla bontà e alla solidarità con i più deboli (si ricollega molto ai suoi ideali cristiano-socialisti), e dell'accontentarsi, poesia pura senza qualsiasi forma di persuasione, poesia a-logica
+**il fanciullino** (è un saggio, che descrive un po' la poetica di pascoli) è la parte infantile che negli adulti tende essere soffocata, e che trova libera espressione nella poesia.  
+il fanciullino vede tutto con stupore e spinge gli uomini alla bontà e alla solidarietà con i più deboli (si ricollega molto ai suoi ideali cristiano-socialisti), e dell'accontentarsi, poesia pura senza qualsiasi forma di persuasione, poesia a-logica
 
-Il fancullino riesce a cogliere delle verità segrete che si esprimono per mezzo di analogie e simboli (**Simbolismo**) 
+Il fanciullino riesce a cogliere delle verità segrete che si esprimono per mezzo di analogie e simboli (**Simbolismo**) 
 
 - **pre grammaticale**:(onomatopea )per simulare il linguaggio di un bambino
 - **post grammaticale**:  
 
-**fotosimbolismo** evocazione di un immagine tramite la riproduzione del suono
+**fonosimbolismo** evocazione di un immagine tramite la riproduzione del suono
 
 **La mia sera**: poesia che racconta di tutto quello che avresti voluto realizzare 
 ma a cui non sei mai arrivato 
@@ -251,25 +254,25 @@ musei paragonati a cimiteri
 
 letteratura arida e l'accostamento delle parole deve essere immediato 
 
-**il manifesto del futurismo**:ha un forte contenuto ideologico, un esaltazione della moderintà , macchina, tecnica,città industriale,folla e rivoluzioni urbane
-Marinetti usa l'onomatopea (zang tumb tumb) per descrivere la guerra
+**il manifesto del futurismo**:ha un forte contenuto ideologico, un esaltazione della modernità , macchina, tecnica, città industriale,folla e rivoluzioni urbane
+Marinetti fa uso l'onomatopea (come nel componimento *zang tumb tumb*) per descrivere la guerra
 
-la guerra è l'unico modo per l'igene del mondo
+la guerra è l'unico modo per l'igiene del mondo
 
 disprezzano la donna e il femminismo,vogliono distruggere il mondo moderno e creare un mondo che apprezza la velocità
 
 "è meglio una macchina della vittoria di samotracia"
 
-manifesto pubblicato per la prima volta sull **figarò**
+manifesto pubblicato per la prima volta sull **le figarò**
 
 ## *Luigi Pirandello (1867-1936)*
 
-Pirandello nasce in una famiglia borghese ad **agrigento**
+Pirandello nasce in una famiglia borghese ad **Agrigento**
 (in una villa chiamata **CAOS**) ( padre garibaldino che possedeva delle **miniere di zolfo**) , affascinato dagli ideali anarchici e sovversivi entra in **conflitto con i padre** e i valori borghesi da lui rappresentati (denaro sicurezza nel affrontare problemi) studia prima a Roma (dove conosce capuana) e poi in Germania dove legge gli scrittori romantici.
 
 si sposa con **Antonietta Portulano** che dopo l'allagamento delle miniere che farà crollare il suo equilibrio psicologico, per sostenere economicamente la famiglia incomincia a scrivere su giornali e poi pubblica **il fu mattia pascal** (dove incomincia la fase umoristica),inoltre pubblica molte novelle sul corriere della sera
 
-passa poi al teatro con il **teatro del grottesco** cratarizzato da
+passa poi al teatro con il **teatro del grottesco** caratterizzato da
 situazioni paradossali che denunciano l'assurdità della condizione umana e le contraddizioni della società ( successo anche all'estero in particolare "sei personaggi in cerca di autore" apprezzatissimo in america e inghilterra)
 
 Riordina le novelle creando il progetto della raccolta **Novelle per un anno**. Pirandello aderisce al fascismo (firma il manifesto degli intellettuali fascisti) per vantaggi economici, così riesce a finanziare il suo teatro e incomincia una relazione con **Marta Abba**
@@ -287,22 +290,22 @@ rappresenta la crisi del l'uomo in quanto tale (universale), in una società che
 - il rapporto tra la vita e forma, noi abbiamo questo flusso che cerchiamo di cristallizzare (maschere)
 - **relativismo gnoseologico**:(relativizzare la gnosi nota sotto) cioè 
   relativizzare il vero che il vero non è lo stesso per tutti
-- i personaggi di prinandello sono animali a roma pidocchi o serpenti
- in sicilia cavalli impazziti, fiere
-- metaetatro tentativo di abbattere la quatra parete
+- i personaggi di Pirandello sono animali a Roma pidocchi o serpenti
+ in Sicilia cavalli impazziti, fiere
+- meta-teatro tentativo di abbattere la quarta parete
 - tema del doppio
 - crisi d'identità del protagonista
 - la famiglia come nido o prigione
 - la critica alla civiltà della macchina
 - **La pazzia** è la cosa più vicina alla verità
 - tentativo di mettere a nudo quello che si cela dietro la maschera
-- Personaggi sfacettati e sdoppiati in più personalità
+- Personaggi sfaccettati e sdoppiati in più personalità
 
 gnosi: studio della realtà (in filosofia)
 
 ### la vecchia imbellettata
 
-**l'umorismo** : in questo saggio luigi priandello scandisce l'avvertimento del contrario (comico), e il sentimento del contrario (umorismo) che sono i concetti fondamentali della sua poetica.
+**l'umorismo** : in questo saggio luigi Pirandello scandisce l'avvertimento del contrario (comico), e il sentimento del contrario (umorismo) che sono i concetti fondamentali della sua poetica.
 
 dal riso alla compassione
 
@@ -311,17 +314,17 @@ dal riso alla compassione
 
 **Storia**:
 
-Bibbliotecario nel paese di **Miragno** dove ha trascorso una vita agiata, che dopo la morte affidano i soldi a l'amministratore **malagna** che glie li ruba, così deve andare a lavorare e in casa ha la moglie **Romilada** e la nuora che lo disprezzano, così scappa e arriva a monte carlo dove vince e così mentre sta per tornare a casa scropre che lo pensano morto e con la somma si sposta da un posto all'altro assumendo **l'identità di Adriano Mais**, ma si sente emarginato e senza un passato arriva a roma dove si innamora di **Adriana** con cui non si può sposare e neanche denuciare una truffa che gli fa perdere molti soldi, così incomincia a corteggiare una findanzata di un pittore per allontanare Adriana, e una volta che il pittore lo sfida a duello ne approfitta per fingere un suicidio ritorna a Miragno dove ormai e vecchio e nessuno lo riconosce sua moglie si è risposata e ha una famiglia
+Bibliotecario nel paese di **Miragno** dove ha trascorso una vita agiata, che dopo la morte affidano i soldi a l'amministratore **malagna** che glie li ruba, così deve andare a lavorare e in casa ha la moglie **Romilada** e la nuora che lo disprezzano, così scappa e arriva a monte Carlo dove vince e così mentre sta per tornare a casa scoprire che lo pensano morto e con la somma si sposta da un posto all'altro assumendo **l'identità di Adriano Mais**, ma si sente emarginato e senza un passato arriva a Roma dove si innamora di **Adriana** con cui non si può sposare e neanche denunciare una truffa che gli fa perdere molti soldi, così incomincia a corteggiare una fidanzata di un pittore per allontanare Adriana, e una volta che il pittore lo sfida a duello ne approfitta per fingere un suicidio ritorna a Miragno dove ormai e vecchio e nessuno lo riconosce sua moglie si è risposata e ha una famiglia
 
 
 **Temi**:
 - **l'inetto**:l'essere incapace di adattarsi alla vita normale
 - **il doppio**
-- **la famiglia come nido o come prigione**: la famigila che prima viene vista come un ambinete protetto e poi come una pena da cui non si può scappare
+- **la famiglia come nido o come prigione**: la famiglia che prima viene vista come un ambiente protetto e poi come una pena da cui non si può scappare
 - **il gioco d'azzardo e lo spiritismo**:sono simbolo di una relatività nella condizione umana
 - **La modernità,la città,il progresso**:afferma che le macchine possano aiutare a migliorare la situazione dell'uomo ma non la sua felicità
-- **relativismo filosofico**:è la costante variazione della precezione del mondo
- - **identità** se cerchiamo di vivere la vita al diffuori di questa identità non riusciamo a vivere (identità reale mattia pascal ,identità fittizia,identià sospesa (tra la vita e la morte))
+- **relativismo filosofico**:è la costante variazione della percezione del mondo
+- **identità** se cerchiamo di vivere la vita al di fuori di questa identità non riusciamo a vivere (identità reale mattia pascal ,identità fittizia,identità sospesa (tra la vita e la morte))
 
 
 **Struttura**
@@ -336,7 +339,7 @@ Il romanzo ha una cornice che lega l'inizio e la fine, in cui Mattia vecchio che
 
 ### L'uomo dal fiore in bocca
 
-**la morte addosso**(cambia il nome **l'uomo dal fiore in bocca**):parla di un signore che è fa delle commissioni in città ma a causa del poco tempo, perde il treno e si ritrova ad aspettare il treno in un bar dove aspetterà la notte trova un uomo al bar con cui parla, e quest'uomo si scopre che ha un epitelioma e che ha un piede nella fossa, e si gode ogni raffinatezza come se fosse l'ultima, ha una moglie che lo insegue
+**la morte addosso** (cambia il nome **l'uomo dal fiore in bocca**): parla di un signore che è fa delle commissioni in città ma a causa del poco tempo, perde il treno e si ritrova ad aspettare il treno in un bar dove aspetterà la notte trova un uomo al bar con cui parla, e quest'uomo si scopre che ha un epitelioma e che ha un piede nella fossa, e si gode ogni raffinatezza come se fosse l'ultima, ha una moglie che lo insegue
 
 ### Enrico IV La vita
 
@@ -344,21 +347,8 @@ Il romanzo ha una cornice che lega l'inizio e la fine, in cui Mattia vecchio che
 
 **Trama**
 
-**Enrico VI** cade da cavallo per colpa di **Belcredi** che è innamorato
-della stessa donna **Matilde**, da quel momento Enrico impazzirà per
-la caduta e si crederà l'imperatore austriaco vivendo nel suo 
-castello con servitori e atteggiandosi come un re
-circa vent'anni dopo però un medico escogita un piano per fare 
-tornare la memoria ad Enrico, usano la figlia di 
-Matilde e Belcredi (che nel mentre si erano sposati)
-di nome **Frida** e il suo fidanzato **Carlo** per **mettere 
-in scena la situazione quando Enrico aveva preso il trauma**.
-Quando la stanno per mettere in scena però Enrico rivela che 
-da qualche anno gli era tornata la memoria e vedendo Frida
-così simile a Matilde la vuole per recuperare gli anni che
-Belcredi gli aveva portato via, Belcredi si mette in mezzo
-e Enrico lo uccide, dopo di che Enrico sarà costretto a 
-fingere la pazzia per evitare la galera
+**Enrico VI** cade da cavallo per colpa di **Belcredi** che è innamorato della stessa donna **Matilde**, da quel momento Enrico impazzirà per la caduta e si crederà l'imperatore austriaco vivendo nel suo castello con servitori e atteggiandosi come un re circa vent'anni dopo però un medico escogita un piano per fare tornare la memoria ad Enrico, usano la figlia di Matilde e Belcredi (che nel mentre si erano sposati) di nome **Frida** e il suo fidanzato **Carlo** per **mettere in scena la situazione quando Enrico aveva preso il trauma**.  
+Quando la stanno per mettere in scena però Enrico rivela che da qualche anno gli era tornata la memoria e vedendo Frida così simile a Matilde la vuole per recuperare gli anni che Belcredi gli aveva portato via, Belcredi si mette in mezzo e Enrico lo uccide, dopo di che Enrico sarà costretto a fingere la pazzia per evitare la galera
 
 **Temi**:
 - tragedia degradata
@@ -370,10 +360,10 @@ fingere la pazzia per evitare la galera
 
 c'è un compagnia di teatro sta provando *il giuoco delle parti*(è un auto citazione a una novella da lui creata) e mentre provano, arrivano sul palco sei personaggi che un autore ha creato e poi abbandonati, questi sei personaggi chiedono che venga rappresentato il loro dramma
 
-Provano a spiegarla ma il punto di vista di ciascuno è inconciliabile con quello degli altri, così il capo comico chiede di metterla in scena
+Provano a spiegarla ma il **punto di vista di ciascuno è inconciliabile con quello degli altri**, così il capo comico chiede di metterla in scena
 Il padre ha spinto la moglie ad andarsene, che è scappata con un amante che dopo aver fatto dei figli con lei è morto.  
 Per esigenze economiche la figliastra si prostituisce e un giorno il padre appare tra i clienti e non riconoscendo la figliastra sta per avere un rapporto che è fermato solo dalla madre, la tragedia continua con la figlia piccola che annega nella vasca e suo fratello che si spara con una pistola.
-i personaggi tentano inutilmente di dare un significato allegorico, e alla fine anche il capocomico e gli attori rinunciano a dare un significato alla vicenda.
+i personaggi tentano inutilmente di dare un significato allegorico, e alla fine anche il capocomico e gli attori **rinunciano a dare un significato alla vicenda**.
 
 gli attori capiscono che il teatro è finzione
 
@@ -416,7 +406,7 @@ sette romanzi in cui spiega "ricerca del tempo perduto"(la rescerce in francese)
 **memoria involontaria**(teoria secondo la quale la memoria si può evocare per mezzo di "epifanie" casuali e non cercate) 
 
 
-quel processo che ci fa riaffiorare un ricordo senza che si faccia niente di consapevole per suscitarlo come un odore, un sapore, un gesto, un oggetto che spesso evocano in noi un ricordo del passato, nel suo caso la madeleine (dolce tipico francese), nel suo romanzo “Alla ricerca del tempo perduto”. 
+quel processo che ci fa riaffiorare un ricordo senza che si faccia niente di consapevole per suscitarlo come un odore, un sapore, un gesto, un oggetto che spesso evocano in noi un ricordo del passato, nel suo caso la madeleine (dolce tipico francese), nel suo romanzo "Alla ricerca del tempo perduto".  
 **la ricerca del tempo perduto** Parigi
 
 **la madleme**: l'intingere il biscotto nel te lo riporta al passato (memoria involontaria di poust)
@@ -426,10 +416,10 @@ quel processo che ci fa riaffiorare un ricordo senza che si faccia niente di con
 
 ## *Giuseppe Ungaretti (1888-1970)*
 
-Nasce ad allessandria d'egitto (il padre lavorava al canale di suez).
-Incomincia presto a frequentare ambienti **anarchici atei e ribelli**, si trasferisce in francia dove studia e da cui prende la sua formazione, frequentando ambienti d'avanguardia.
+Nasce ad Alessandria d'Egitto (il padre lavorava al canale di Suez).
+Incomincia presto a frequentare ambienti **anarchici atei e ribelli**, si trasferisce in Francia dove studia e da cui prende la sua formazione, frequentando ambienti d'avanguardia.  
 Nel 1915 va **in guerra come volontario** e si accorge della mal organizzazione dell'esercito italiano, **abbandona l'ateismo diventando cristiano e si iscrive al partito fascista**. 
-Girerà per il mondo per poi tornare in italia durante la guerra per la cattedrà all'università di Roma e venne eletto accademico d'italia.
+Girerà per il mondo per poi tornare in Italia durante la guerra per la cattedra all'università di Roma e venne eletto accademico d'Italia.
 
 
 Poesia tra il Simbolismo (analogia e materialità sonora) e l'avanguardia (rottura con la tradizione metrica e regole della sintassi)
@@ -439,14 +429,14 @@ Poesia tra il Simbolismo (analogia e materialità sonora) e l'avanguardia (rottu
 il **corpus** delle poesie di Ungaretti sono raccolte dentro **vita di un uomo**
 
 in trincea scrive **l'allegria** , (chi vive l'esperienza della trincea è 
-come un naufrago che è felice per essere vivo) su un taquino segnando il luogo e la data
+come un naufrago che è felice per essere vivo) su un taccuino segnando il luogo e la data
 
 nuovo concetto di poesia **parola verso** 
 
 ### Fratelli
 
-vengono messi in esaltazione sentimenti come l'alleanza e fraternità, precarietà e fragelità
- 
+vengono messi in esaltazione sentimenti come l'alleanza e fraternità, precarietà e fragilità
+
 nel nemico vede fratellanza per la stessa condizione
 
 nella guerra la parola fratellanza sembra stonare ed è un involontaria rivolta dell'uomo, in questa fragilità si rafforza la fratellanza 
@@ -535,7 +525,6 @@ significato metaforico delle parole
 
 ## *Italo Calvino (1923-1985)*
 
-definito "lo scoiattolo della penna" da cesare pavese
 
 cerca di capire un mondo diventato incomprensibile
 

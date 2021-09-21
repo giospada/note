@@ -3,7 +3,10 @@
 ## Diritto
 
 L'unione europea è un'organizzazione di stati che deriva dal progresso ampliamento della **comunità economica europea**, costituita verso la metà del 900.  
-Dal punto di vista giuridico, la caratteristica principale della UE è costituita dal fatto che si tratta di una:
+Infatti la prima ad essere creata fu la **CECA** (1951) comunità europea per il carbone e l'acciaio, che serviva per **ricostruire l'Europa** dopo la seconda guerra mondiale.
+Poi venne costituita la **CEE**(1957) comunità economica europea che **unifica le dogane** e crea un integrazione economica tra gli stati membri.  
+Inoltre nel 1990 ci fu la **convenzione di Shengen** per la libera circolazione delle persone.   
+Dal punto di vista giuridico, la caratteristica principale della UE è costituita dal fatto che si tratta di una: 
 - **Organizzazione sovranazionale**: in quanto gli atti comunitari sono efficaci immediatamente all'interno dei singoli Stati membri 
 - **Organizzazione aperta**: nel senso che è prevista espressamente la possibilità di adesione successiva da parte di altri paesi
 
@@ -11,7 +14,7 @@ Essa **è nata** il 1 novembre 1993 **a seguito dell'entrata in vigore del tratt
 Il Trattato di **Maastricht** non ha solo dato vita all'attuale Unione europea, ma ha anche istituito la **cittadinanza europea**, cioè il riconoscimento ai cittadini di qualunque Stato d'Europa del diritto a essere protetti dallo Stato europeo in cui si trovano.
 
 Le principali istituzioni dell'UE sono:
-- **Parlamento europeo**: ha funzioni in materia **legislativa e di bilancio, anche di indirizzo e controllo politico**
+- **Parlamento europeo**: ha funzioni in materia **legislativa e di bilancio, anche di indirizzo e controllo politico** sono eletti direttamente dai cittadini
 - **Consiglio europeo**: ha una **funzione di impulso e di indirizzo** politico dell'unione; è **formato da suo presidente, dai capi di stato degli stati membri** e dal presidente della commissione europea.
 - **Consiglio dei ministri**: ha importanti **funzioni in materia legislativa e deliberativa**;è formato da **un ministro per ogni stato membro** e da un presidente, che viene attribuito a rotazione a uno stato membro ogni 6 mesi
 - **Commissione europea**: è l'organo con funzioni esecutive e di iniziativa legislativa ed è formata da un **commissario per ciascuno Stato membro**. (prepara proposte di atti normativi, provvede all'esecuzione del bilancio…)

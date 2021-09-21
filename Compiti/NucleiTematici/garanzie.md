@@ -26,9 +26,8 @@ Le leggi costituzionali comprendono le:
 - **Leggi di revisione costituzionale**: modificano le norme contenute nella costituzione
 - **Leggi di integrazione costituzionale**: introducono nuove norme al di fuori della costituzione
 
-Per l'approvazione di tali leggi è necessario un procedimento particolare, detto aggravato, perché più lungo e complesso rispetto a quello delle leggi ordinarie.
-
-Entro tre mesi dalla pubblicazione della legge può essere richiesto un referendum costituzionale sulla legge da: 1/5 dei componenti di una camera; 500.000 elettori; 5 consigli regionali. Il referendum è un istituto di democrazia diretta con il quale il popolo viene chiamato a esprimere direttamente la propria volontà, il **referendum sospensivo** (perché sospende la promulgazione e l'entrata in vigore della legge), costituisce una garanzia per la minoranza politica. (guardare art. 138)
+Per l'approvazione di tali leggi è necessario un procedimento particolare, detto aggravato, perché più lungo e complesso rispetto a quello delle leggi ordinarie; Infatti deve deve essere votata una prima volta dalle due camere con la maggioranza assoluta, e dopo tre mesi deve essere rivotata con la maggioranza di 2/3, se non riesce ad avere solo la maggioranza assoluta viene pubblicata sulla gazzetta ufficale e può essere chiesto un referendum sonspensivo.  
+Il referendum è un istituto di democrazia diretta con il quale il popolo viene chiamato a esprimere direttamente la propria volontà, il **referendum sospensivo** (perché sospende la promulgazione e l'entrata in vigore della legge), costituisce una garanzia per la minoranza politica. (guardare art. 138)
 
 
 La possibilità di modificare le disposizioni costituzionali, con la procedura particolare prevista dalla stessa costituzione, è soggetta ad alcuni limiti.
