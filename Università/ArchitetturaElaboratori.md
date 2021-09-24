@@ -56,9 +56,8 @@ sono macchine multi-livello, e si utilizzano le astrazioni, e ogni volta vengono
 - esame scritto (27 punti) dove si avranno punti bonus per i progetti (max. 6) e per li interventi
 
 
-## Lezione 1 (21/09/2021)
 
-### Storia degli Elaboratori
+## Storia degli Elaboratori
 
 > non sono per l'esame
 
@@ -82,7 +81,7 @@ il computing non è solo nel computer ma in molti altri oggetti
 >**MFLOPS**: miliardi di operazioni a virgola mobile
 
 
-### Organizzazione degli Elaboratori
+## Organizzazione degli Elaboratori
 
 ![](img/VonNeumann.png)
 > "bus oriented": un bus è un insieme di connessioni elettriche per collegare i vari componenti
@@ -95,7 +94,7 @@ La cpu e la memoria utilizzano i **bus dati** e il **bus indirizzi** per scambia
 
 ![](img/bus.png)
 
-### CPU
+## CPU
 
 ![](img/cpuschema.png)
 
@@ -110,14 +109,14 @@ la memoria centrale è più lenta del processore, e come primo accorgimento si u
 
 **Registri Speciali**(non "general propose" di uso generale):
 - Program Counter:indica la prossima istruzione
-- Instruction Register: contiene l'istruzione che stiamo eseguendo
+- Instruction Register: contiene l'istruzione che stiamo eseguendo (prende tutta l'istruzione per esempio prende tutto `add ax,bx`)
 - Memory registers:si usano per interagire con la memoria
     - Memory address Register: su questo si mette l'indirizzo da leggere o scrivere  
     - Memory data Register: qui si scrive li dato da scrivere o si legge il dato appena letto
 - Program Status Word: indica informazioni sull'andamento dell'ultima istruzione eseguita (c'è stata un'overflow, l'ultima operazione è risultata zero)
 
 **Esempio pratico dell'esecuzione di un istruzione**  
-1. il contenuto di Program counter viene messo su Memoriy addre Register e viene letta l'istruzione
+1. il contenuto di Program counter viene messo su Memoriy address Register e viene letta l'istruzione
 2. la memoria copia il contenuto della cella all'indirizzo del Memory address register su il Memory Data Register
 3. il contenuto di Memory Data Register viene copiato su Instruction Register
 4. l'istruzione passa all'ALU
@@ -132,7 +131,7 @@ il ciclo di esecuzione può essere schematizzato anche come **FDE**:
 2. **Decode** identificazione del tipo di operazione da eseguire (punto 3) 
 3. **Execute** effettuazione delle operazioni corrispondenti all'istruzione (punti 4-5-6)
 
-#### Unita di controllo
+### Unita di controllo
 
 > l'unita di controllo gestisce la memoria e l'alu, e interpreta le istruzioni
 
@@ -140,8 +139,67 @@ i tipi di set di istruzioni possono essere:
 - CISC: Complex Instruction Set Computer, e quindi utilizzare microprogrammazione e un processore più complesso
 - RISC: Reduced Instruction Set Computer, istruzioni più semplici possono essere eseguite più velocemente e potendo evitare la microprogrammazione
 
- 
+di solito in una cpu CISC c'è un collegamento diretto tra il MDR e l'alu senza passare dai registri, mentre nei RISC non c'è il collegamento diretto
 
-nel calcolatore c'è un segnale che si chiama clock, che è un segnale regolare che da il tempo ad eseguire le istruzioni (un operazione può utilizzare anche più cicli di clock) 
+nel calcolatore c'è un segnale che si chiama clock, che è un segnale regolare che da il tempo ad eseguire le istruzioni (un operazione può utilizzare anche più cicli di clock)
+
+Metodi per velocizzare la cpu:
+- **pipelining**:Un modo per migliorare le prestazioni di un processore è eseguire contemporaneamente più cicli FDE, usando per ognuno di essi parti diversi della CPU
+- **Multicore**:In alcuni casi, all’interno della medesima CPU si replicano unità di controllo e ALU per esecuzioni di attività in parallelo
+- **Parallelismo**:com molte cpu che lavorano in coordinamento
+    - SIMD i processori eseguino la stessa istruzione su dati diversi, possiamo utilizzare il SIMD (così utilizza più alu ma con con una sola control unit, si torova spesso nelle GPU) (cambia il numero di alu e di registri)
+    - MIMD: sono più precessori che condividono la stessa memoria senza eseguire necessariamente la stessa istruzione
+- **multicomputer**: molti processi non condividono una memoria e che comunicano scambiandosi messaggi, così moltissime cpu possono cooperare
+
+ <details>
+<summary>
+pipelining
+</summary>
+
+è l'implementazione di una catena di montaggio dentro la cpu
+
+viene divisa l'esecuzione di un operazione in più step così mentre si sta eseguendo un operazione allo stato 2 nello stadio 1 si può incominciare un altra operazione
+
+essendo che suddividiamo l'operazioni in vari passi, possiamo diminuire il ciclo di clock per ogni di questi stage
+
+![](img/pipelining.png)
+
+</details>
+
+
+## Le Memorie
+
+in ordine di velocità:
+![](img/velocitàmemorie.png)
+
+
+- **Volatile**: l’informazione rimane memorizzata fino a che il calcolatore è alimentato
+- **Persistente**: l’informazione rimane memorizzata anche quando il calcolatore non è alimentato (spento)
+- **On-line**: i dati sono sempre accessibili
+- **Off-line**: il supporto deve essere montato per poter accedere ai dati
+
+
+> le memorie si organizzano in celle (ogni cella contiene un bit)
+
+- byte o uno o zero
+- bit 8 bit
+- word è uguale al blocco con il quale il calcolatore lavora (quanti bit ha la cpu), per memorizzare le word in un byte si può memorizzare in big endian o end endian
+
+![](img/littlebigendian.png)
+
+### Memoria cache
+
+> la cache è una memoria volatile poco capiente ma molto veloce
+
+se la cpu accedesse la ram in maniera casuale al cache non servirebbe, molti programmi utilizzano pezzi di memoria vicini
+
+quantificare l'impatto della cache:
+- c sia il tempo di accesso alla cache
+- m sia il tempo di accesso alla memoria centrale
+- h sia l'hit-radio, la frazione di riferimenti che può essere soddisfatta dalla cache (una frazione che ci indica quante volte la cache riesce a non far accedere alla memoria)
+
+tempo medio d'accesso=c+(1-h)m
+
+
 
 
