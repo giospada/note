@@ -76,5 +76,37 @@ questi linguaggi ad alto livello hanno bisogno di:
 - un algoritmo è una serie di istruzioni che risolve un certo problema, scritta in una forma logica qualsiasi
 - un programma è un algoritmo espresso in un linguaggio di programmazione
 
+Problem Solving e implemantazione
+
+domande del problem solving:
+- quale è l'input?
+- cosa contiene l'output?
+- come sono organizzati l'input e l'output?
+
+implementazione:
+- tradurre l'algoritmo
+- compilare
+- eseguire il codice
+- rivelare errori nel nell'algoritmo
+
+
+#### Diagrammi di flusso
+
+tipi di nodi:
+- nodo comando: un rettangolo 
+- nodo condizione: un rombo con scritta una condizione
+- nodi speciali: di fine e di inizio
+
+esempio visualizzabile con mermaid:
+```mermaid
+graph TD
+B[nodo speciale di inizio: input m ]
+B --> C{nodo condizione: <br>il resto della  divisione <br>di m per due è 0 }
+C -->|falsa| D[blocco di fine:ouptut dispari]
+C -->|vera| E[blocco di fine: output pari]
+```
+
+
+
 
 
