@@ -1,9 +1,70 @@
-# Architettura degli Elaboratori
+---
+title: Architettura degli Elaboratori
+date: Settembre 2021
+author: Giovanni Spadaccini
+---
 
-> 20/09/2021
+- [1. Introduzione](#1-introduzione)
+  - [1.1. Libri](#11-libri)
+  - [1.2. Esame](#12-esame)
+- [2. Livelli](#2-livelli)
+  - [2.1. Livello 0](#21-livello-0)
+    - [2.1.1. Porte logiche](#211-porte-logiche)
+  - [2.2. Livello 1](#22-livello-1)
+  - [2.3. Livello 2](#23-livello-2)
+  - [2.4. Livello 3-4](#24-livello-3-4)
+  - [2.5. Linguaggi 5](#25-linguaggi-5)
+- [3. Elaboratori](#3-elaboratori)
+  - [3.1. Storia degli Elaboratori](#31-storia-degli-elaboratori)
+- [4. Organizzazione degli Elaboratori](#4-organizzazione-degli-elaboratori)
+  - [4.1. CPU](#41-cpu)
+    - [4.1.1. Unita di controllo](#411-unita-di-controllo)
+  - [4.2. ALU](#42-alu)
+  - [4.3. Ottimizzazioni](#43-ottimizzazioni)
+  - [4.4. Le Memorie](#44-le-memorie)
+    - [4.4.1. Memoria cache](#441-memoria-cache)
+
+# 1. Introduzione
+
+docente
+:  Ivan Lanese  
+
+[materiale](https://virtuale.unibo.it/course/view.php?id=30691)
+
+## 1.1. Libri
+
+- Architettura dei calcolatori. Un approccio strutturale
+
+[DA SCARICARE](http://www.nand2tetris.org)
+
+## 1.2. Esame
+
+- esame scritto (27 punti) dove si avranno punti bonus per i progetti (max. 6) e per li interventi
 
 
-## Porte logiche 
+
+# 2. Livelli
+
+Nell'informatica si usano i principi di astrazione e implementazione, per diminuire la complessità, l'astrazione grazie a delle interfaccia accede alle implementazione (che utilizzando l'astrazione non bisogna più sapere com'è costruita)
+
+> astrazione: Si presenta la soluzione ad un problema concentrandosi solo su alcuni aspetti “rilevanti” (ad esempio, come ottenere la soluzione componendo soluzioni di problemi più semplici)
+
+> Implementazione: Si realizza la soluzione aggiungendo gli aspetti astratti nella prima fase (ad esempio, si mostra come si possono risolvere i problemi più semplici)
+
+questa implementazione e astrazione è utilizzata per creare macchine multilivello
+
+nella tipica struttura a livelli, ogni livello superiore esegue il codice su una macchina virtuale inferiore eseguendo:
+- un interprete che viene eseguito eseguito su una macchina inferiore
+- una traduzione nel linguaggio di una macchina inferiore
+
+![](img/livellimacchinevirtuali.png)
+
+Tipico elaboratore a 6 livelli 
+![](img/elaboratore6livelli.png)
+
+## 2.1. Livello 0
+
+### 2.1.1. Porte logiche 
 
 hanno tutti due input
 
@@ -13,51 +74,47 @@ un circuito si scrive anche con una tabella di verità
 
 (si costruirà tutto partendo dalla porta NAND, e utilizzando solo questo circuito)
 
-### NAND
-
-> si usa la NAND perché si possono realizzare tutte le funzioni logiche booleane
-
-
-`NAND` = and binario
-
-# Circuiti combinatori
+> NAND: 
+> il circuito NAND ha la tabella di verità come un and negato
+> (si usa la NAND perché si possono realizzare tutte le porte logiche)
 
 
-sono circuiti che con lo stesso set di input input  producono lo stesso output
+> Circuiti combinatori :
+>  Sono circuiti che con lo stesso set di input input  producono lo stesso output
 
-## Circuiti Sequenziali
-
-Circuiti che cambiano l'output in base agli input ricevuti in passato
-
-## Microarchitetture
-
-governa il flusso dei dati fra i vari componenti del livello logico digitale
-
-## Istruzioni macchina
-
-insieme di istruzioni eseguibili dalla microarchietettura
+> Circuiti Sequenziali :
+> Circuiti che cambiano l'output in base agli input ricevuti in passato
 
 
+## 2.2. Livello 1
 
-## Elaboratori
+>Microarchitettura :
+> governa il flusso dei dati fra i vari componenti del livello logico digitale
+
+## 2.3. Livello 2
+
+> Istruzioni macchina :
+> insieme di istruzioni eseguibili dalla microarchietettura
+
+## 2.4. Livello 3-4 
+
+> sistema operativo:
+> fornisce la gestione di risorse ed esecuzione dei processi
+
+> linguaggio assembly:
+> permette di programmare i livelli sottostanti
+
+## 2.5. Linguaggi 5
+
+> Linguaggi di programmazione ad alto livello:
+> linguaggi che vengono compilati o interpretati, in linguaggio assembly
+
+# 3. Elaboratori
 
 sono macchine multi-livello, e si utilizzano le astrazioni, e ogni volta vengono eseguiti o tradotti in nella astrazione sottostante 
 
 
-## Libri
-
-- Architettura dei calcolatori. Un approccio strutturale
-
-[DA SCARICARE](http://www.nand2tetris.org)
-
-
-## Esame
-
-- esame scritto (27 punti) dove si avranno punti bonus per i progetti (max. 6) e per li interventi
-
-
-
-## Storia degli Elaboratori
+## 3.1. Storia degli Elaboratori
 
 > non sono per l'esame
 
@@ -81,7 +138,7 @@ il computing non è solo nel computer ma in molti altri oggetti
 >**MFLOPS**: miliardi di operazioni a virgola mobile
 
 
-## Organizzazione degli Elaboratori
+# 4. Organizzazione degli Elaboratori
 
 ![](img/VonNeumann.png)
 > "bus oriented": un bus è un insieme di connessioni elettriche per collegare i vari componenti
@@ -94,7 +151,7 @@ La cpu e la memoria utilizzano i **bus dati** e il **bus indirizzi** per scambia
 
 ![](img/bus.png)
 
-## CPU
+## 4.1. CPU
 
 ![](img/cpuschema.png)
 
@@ -105,7 +162,8 @@ La cpu e la memoria utilizzano i **bus dati** e il **bus indirizzi** per scambia
 - alu: esegue le operazioni
 - registri: che sono delle celle di memoria per i dati necessari al funzionamento
 
-la memoria centrale è più lenta del processore, e come primo accorgimento si utilizzano i registri per tenere i dati più utilizzati
+> [NOTA]
+> la memoria centrale è più lenta del processore, e come primo accorgimento si utilizzano i registri per tenere i dati più utilizzati
 
 **Registri Speciali**(non "general propose" di uso generale):
 - Program Counter:indica la prossima istruzione
@@ -124,6 +182,7 @@ la memoria centrale è più lenta del processore, e come primo accorgimento si u
 6. termina l'esecuzione e il risultato va sul registro di destinazione (aggiorna il Program Status Word), e se bisogna scrivere la memoria scrive in memoria il valore calcolato si sposta sulla memoria utilizzando sempre il MDR e il MAR
 7. si torna al punto 1 dopo avere aggiornato il valore di Program Counter
 
+>[NOTA]
 > il program counter viene incrementato in modo diverso dal tipo di architettura, alcuni sistemi hanno una dimensione fissa dell'istruzione e a quel punto incrementa di una costante, in altri casi quanto si hanno diversa lunghezza nelle istruzioni un circuito nel processore sa di quanto incrementare in base all'istruzione eseguita
 
 il ciclo di esecuzione può essere schematizzato anche come **FDE**:
@@ -131,7 +190,7 @@ il ciclo di esecuzione può essere schematizzato anche come **FDE**:
 2. **Decode** identificazione del tipo di operazione da eseguire (punto 3) 
 3. **Execute** effettuazione delle operazioni corrispondenti all'istruzione (punti 4-5-6)
 
-### Unita di controllo
+### 4.1.1. Unita di controllo
 
 > l'unita di controllo gestisce la memoria e l'alu, e interpreta le istruzioni
 
@@ -141,7 +200,18 @@ i tipi di set di istruzioni possono essere:
 
 di solito in una cpu CISC c'è un collegamento diretto tra il MDR e l'alu senza passare dai registri, mentre nei RISC non c'è il collegamento diretto
 
-nel calcolatore c'è un segnale che si chiama clock, che è un segnale regolare che da il tempo ad eseguire le istruzioni (un operazione può utilizzare anche più cicli di clock)
+
+## 4.2. ALU
+
+> alu esegue le operazioni
+
+> Data Path: è la parte della CPU comprendete ALU, is uoi input e i suoi output
+
+nel calcolatore c'è un segnale che si chiama clock, che è un segnale regolare che da il tempo ad  al data path (un operazione può utilizzare anche più cicli di clock)
+
+
+
+## 4.3. Ottimizzazioni
 
 Metodi per velocizzare la cpu:
 - **pipelining**:Un modo per migliorare le prestazioni di un processore è eseguire contemporaneamente più cicli FDE, usando per ognuno di essi parti diversi della CPU
@@ -167,7 +237,7 @@ essendo che suddividiamo l'operazioni in vari passi, possiamo diminuire il ciclo
 </details>
 
 
-## Le Memorie
+## 4.4. Le Memorie
 
 in ordine di velocità:
 ![](img/velocitàmemorie.png)
@@ -187,18 +257,24 @@ in ordine di velocità:
 
 ![](img/littlebigendian.png)
 
-### Memoria cache
+### 4.4.1. Memoria cache
 
 > la cache è una memoria volatile poco capiente ma molto veloce
 
-se la cpu accedesse la ram in maniera casuale al cache non servirebbe, molti programmi utilizzano pezzi di memoria vicini
+se la cpu accedesse la ram in indirizzi casuale al cache non servirebbe, molti programmi però utilizzano pezzi di memoria vicini e in questi casi la cache velocizza le operazioni.
+
+**tempo medio d'accesso** = $c+(1-h)m$ 
+
+<details>
+    <summary>
+    spiegazione    
+    </summary>
 
 quantificare l'impatto della cache:
 - c sia il tempo di accesso alla cache
 - m sia il tempo di accesso alla memoria centrale
 - h sia l'hit-radio, la frazione di riferimenti che può essere soddisfatta dalla cache (una frazione che ci indica quante volte la cache riesce a non far accedere alla memoria)
-
-tempo medio d'accesso=c+(1-h)m
+</details>
 
 
 
