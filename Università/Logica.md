@@ -120,11 +120,12 @@ questo operazione di esistenza fa crea un paradosso perché mi posso chiedere se
 
 $X =\{ Y| Y \notin  Y\}$
 
-se x è un insieme che contiene insiemi che non contengono se stessi
+se x è un insieme che contiene tutti gli insiemi che non contengono se stessi
 
 $X \in X \text{ sse } X \notin X$
 
-se x contiene se stesso sse x non contiene se stesso
+- con  non può contenere se stesso per definizione, quindi $X \notin  X$
+- 
 
 </details>
 
@@ -150,6 +151,8 @@ pertanto:
 - Oppure f non è totale (diverge, cioè non mi da nessun output in un tempo finito)
 
 Quindi le funzioni dei linguaggi di programmazione non sono funzioni matematiche
+
+
 
 
 <details>
