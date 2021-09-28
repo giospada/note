@@ -1,16 +1,33 @@
+---
+title: Analisi Matematica
+date: Settembre 2021
+author: Giovanni Spadaccini
+---
+- [1. Introduzione](#1-introduzione)
+  - [1.1. Requisiti](#11-requisiti)
+  - [1.2. Modulo 1](#12-modulo-1)
+  - [1.3. Modulo 2](#13-modulo-2)
+  - [1.4. Esame](#14-esame)
+    - [1.4.1. Sessioni](#141-sessioni)
+- [2. Insiemi numerici, e le loro proprietà](#2-insiemi-numerici-e-le-loro-proprietà)
+  - [2.1. Notazioni](#21-notazioni)
+- [3. Insiemistica](#3-insiemistica)
+- [4. Logica](#4-logica)
+  - [4.1. Funzioni](#41-funzioni)
+    - [4.1.1. Cardinalità](#411-cardinalità)
+    - [4.1.2. Sommatorie](#412-sommatorie)
+    - [4.1.3. Calcolo Combinatorio](#413-calcolo-combinatorio)
 
-# Analisi Matematica
+# 1. Introduzione
 
-> 20/09/2021
+Insegnante: Marco Maghetti
 
 `marco.maghetti@unibi.it`
 
-[Materiale](https://virtuale.unibo.it)
+[Materiale](https://virtuale.unibo.it/course/view.php?id=28828)
 
-attività di tutoraggio:una volta a settimana, e all'inizio verranno ripetuti i requisiti 
-di Analisi Matematica
 
-## Requisiti
+## 1.1. Requisiti
 
 - algebra elementare
 - equazioni algebriche
@@ -21,7 +38,7 @@ di Analisi Matematica
 - elementi di geometria analitica
 
 
-## Modulo 1
+## 1.2. Modulo 1
 
 - Insiemi numerici, e le loro proprietà
 - Funzioni elementari (esponenziali,logaritmi,trigonometria)
@@ -32,24 +49,21 @@ di Analisi Matematica
 - grafico di una funzione
 - formula ti Taylor per le funzioni regolare
 
-## Modulo 2
+## 1.3. Modulo 2
 
-## Esame
+## 1.4. Esame
 
 1. prova scritta (che serve per entrare all'orale) esercizi + alcune domande di teoria
-2. prova orale
+2. prova orale (deve essere passata nella stessa sessione ma anche in appelli differenti)
 
-### Sessioni
+### 1.4.1. Sessioni
 
-ci sono quattro sessioni ed ogni sessione ha un gruppo d'appelli (esistono sessioni estive, autunnali e invernali)
+ci sono quattro sessioni ed ogni sessione ha un gruppo d'appelli (esistono sessioni estive, autunnali e invernali).
 
-il primo analisi ci sarà in giugno 2022
-
-la prova orale deve essere passata nella stessa sessione ma anche in diversi appelli
+il primo analisi ci sarà in giugno 2022.
 
 
-
-## Insiemi numerici
+# 2. Insiemi numerici, e le loro proprietà
 
 
 **numeri naturiali** : $N =\{1,2,3,4...\}$   
@@ -60,7 +74,7 @@ la prova orale deve essere passata nella stessa sessione ma anche in diversi app
 
 **numeri reali** :  $R$
 
-## Notazioni
+## 2.1. Notazioni
 
 |symbolo                  | spiegazione                                                   |
 |--------                 |-------------                                                  |
@@ -86,7 +100,7 @@ la prova orale deve essere passata nella stessa sessione ma anche in diversi app
 
 TODO:finire di aggiungere le notazioni viste
 
-## Insiemistica 
+# 3. Insiemistica 
 
 > un insieme è definito dai suoi elementi, e non dal loro ordine 
 
@@ -106,9 +120,9 @@ A,B sono insiemi
 $A$ x $B$ = $\{ (a,b) | a \in A \vee b \in B\}$  
 $A$ x $B \neq B$ x $A$
 
-</detailS>
+</details>
 
-## Logica
+# 4. Logica
 
 > p = proposizione (è un affermazione che può essere o vera o falsa)
 
@@ -131,26 +145,22 @@ $\bar{p} = \exists a \in A : \text{a non è pari}$
 </detailS>
 
 
-$ p \rightarrow q$= "p implica q" (p si chiama ipotesi e q si chiama tesi)
+$p \rightarrow q$ = "p implica q" (p si chiama ipotesi e q si chiama tesi)
 
 <details>
     <summary>
         tabella di verità e equivalenza
     </summary>
 
-| p | q |$\bar{p}$ |$\bar{q}$ |$p \rightarrow q$| $\bar{q} \rightarrow \bar{p}$ |
-|---|---|----------|---------|------------------|-------------------------------|
-| V | V |    F     |    F    |        V         |              V                |
-| V | F |    F     |    V    |        F         |              F                |
-| F | V |    V     |    F    |        V         |              V                |
-| F | F |    V     |    V    |        V         |              V                |
 
 </details>
 
 
-$p \leftrightarrow q$= "p implica q" o si legge "p se e solo se q"
+$p \leftrightarrow q$ = "p implica q" 
 
 significa che $(p \rightarrow q) \wedge( q \rightarrow q)$
+
+"è sufficiente p affinché q"
 
 <details>
     <summary>
@@ -166,7 +176,7 @@ significa che $(p \rightarrow q) \wedge( q \rightarrow q)$
 </details>
 
 
-### Funzioni
+## 4.1. Funzioni
 
 $f: A \rightarrow B$ $x \overrightarrow{f} f(x)$:
 - A è il dominio di $f$ 
@@ -186,7 +196,7 @@ $f: A \rightarrow B \\ f': A'\rightarrow B' \\ \begin{cases} A=A' \\ B=B' \\ f=f
 </details>
 
 > prioprietà iniettiva (1-1): tutti gli elementi del codominio sono associati a un elemento del codominio diverso
- $f: A \rightarrow B$ se $\forall a,a' \in A : a\neq a' \rightarrow f(a) \neq f(a')$
+ $f: A \rightarrow B$ se $\forall a \in A,\forall a' \in A : a\neq a' \rightarrow f(a) \neq f(a')$
 
 > l'inniettività dipenda dal dominio
 
@@ -218,6 +228,7 @@ ma la si può far diventare mettendo come codominio R+
 
 $f(n)=n^3$ è (su)
 </details>
+
 > l'immagine di una funzione sono tutti gli elementi di b che sono associati con a
 
 $\text{Img} f = \{ b \in B | \exists a \in A : f(a)=b \}$  
@@ -233,7 +244,7 @@ $f^{-1}: A \rightarrow B$ e vuol dire che:
 
 $f$ è ivertibile $\leftrightarrow f$ è biunivoca 
 
-### Cardinalità
+### 4.1.1. Cardinalità
 
 perchè vengono estesi i numeri razionali a quelli reali
 
@@ -254,7 +265,7 @@ TODO: esercizio
 
 $f(n)= \begin{cases} n/2 \text{se n è pari} \\ -\frac{n+1}{2} \text{se n è pari} \end{cases}$
 
-> un insieme è numberabile se esiste una funzione $f : N \rightarrow A $ è biunivoca 
+> un insieme è numberabile se esiste una funzione $f : N \rightarrow A$ è biunivoca 
 
 > lemma: è un piccolo teorema
 
@@ -268,7 +279,7 @@ si può provare che l'insieme dei numeri razionali è numerabile?
 $Q = \{ \frac{n}{m} | n \in N, m \in Z \backslash \{0\}, MCD(n,|m|)=1\}$
 
 
-### Sommatorie 
+### 4.1.2. Sommatorie 
 
-### Calcolo Combinatorio
+### 4.1.3. Calcolo Combinatorio
 
