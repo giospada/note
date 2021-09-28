@@ -23,6 +23,13 @@ author: Giovanni Spadaccini
   - [4.3. Ottimizzazioni](#43-ottimizzazioni)
   - [4.4. Le Memorie](#44-le-memorie)
     - [4.4.1. Memoria cache](#441-memoria-cache)
+    - [4.4.2. Hard Disck](#442-hard-disck)
+    - [4.4.3. Memorie a Stato Solido](#443-memorie-a-stato-solido)
+    - [Velocizzare le Memorie](#velocizzare-le-memorie)
+    - [Dischi Ottici](#dischi-ottici)
+    - [Oltre le memorie](#oltre-le-memorie)
+- [Porte Logiche e Circuiti Combinatori](#porte-logiche-e-circuiti-combinatori)
+  - [funzioni booleane e tabelle di verità](#funzioni-booleane-e-tabelle-di-verità)
 
 # 1. Introduzione
 
@@ -151,6 +158,12 @@ La cpu e la memoria utilizzano i **bus dati** e il **bus indirizzi** per scambia
 
 ![](img/bus.png)
 
+i dispositivi si collegano al bus tramite controller, alcuni controller accedono direttamentente alla memoria, e al termine della scrittura/lettura invia un segnale alla cpu
+
+il bus collega anche le periferiche, l'accesso al bus condivisio viene gestito da un "albitro" del bus
+
+i nuovi dispositivi, possono trasferire i dati dalla memoria ad un altro dispositivo senza passare dalla cpu (che da l'ordine solo da che indirizzo a quale copiare)
+
 ## 4.1. CPU
 
 ![](img/cpuschema.png)
@@ -240,7 +253,7 @@ essendo che suddividiamo l'operazioni in vari passi, possiamo diminuire il ciclo
 ## 4.4. Le Memorie
 
 in ordine di velocità:
-![](img/velocitàmemorie.png)
+![](img/velocitamemorie.png)
 
 
 - **Volatile**: l’informazione rimane memorizzata fino a che il calcolatore è alimentato
@@ -267,7 +280,8 @@ se la cpu accedesse la ram in indirizzi casuale al cache non servirebbe, molti p
 
 <details>
     <summary>
-    spiegazione    
+
+**spiegazione**    
     </summary>
 
 quantificare l'impatto della cache:
@@ -276,6 +290,73 @@ quantificare l'impatto della cache:
 - h sia l'hit-radio, la frazione di riferimenti che può essere soddisfatta dalla cache (una frazione che ci indica quante volte la cache riesce a non far accedere alla memoria)
 </details>
 
+### 4.4.2. Hard Disck
+
+> hard disk (HD): è un dispositivo elettro-meccanico per la conservazione di informazioni sotto forma magnetica
+
+![](img/harddisk.png)
+
+- **Testina**: magnetizza e legge lo stato di magnetizzazione della superficie del disco
+- **Traccia**: sequenza circolare di bit
+- **Settore**: porzione di traccia che contiene una quantità prefissata di bit (uguale per tutti i settori)
+
+### 4.4.3. Memorie a Stato Solido
+
+> si tratta di dispositivi completamente elettronici senza parte in movimento
+
+
+### Velocizzare le Memorie
+
+> RAID: tecnica che utilizza più dischi in parallelo per aumentare le prestazioni e diminuire il data lost
+
+###  Dischi Ottici
+
+> Dischi Ottici: dischi in cui un laser legge e scrive le informazioni
+
+vengono scritti e letti tramite fori (pit) e con delle zone piane (lend)
+
+
+### Oltre le memorie
+
+ci sono i dispositivi di input e output (stampanti, tastiera, schermo,mouse, schede di rete, etc..)
+
+**monitor**: deve essere molto veloce e ha una gran quantità di dati, ogni pixel richiede 32bit (in uno schermo normale 1920x1080 66
+ milioni di bit)
+
+Negli anni si sono sviluppati processori solo per la gestione dello schermo (GPU) 
+
+
+# Porte Logiche e Circuiti Combinatori
+
+> Porte Logiche:hanno 1/2 ingressi (che possono essere scambiati) e un uscita
+
+![](img/portelogiche.png)
+
+Ogni Porta Logica e circuito combinatorio può essere descritto tramite la tabella di verità
+
+![](img/proprietadibool.png)
+
+
+> es  
+> passare da $A+\bar{A}=1$ a $A\bar{A}=0$ utilizzando de morgan law
+
+
+## funzioni booleane e tabelle di verità
+
+> es  
+> fare la tabella di verità su $A+ \overline{ (A+C) } B$
+
+<details>
+    <summary>
+    soluzione    
+    </summary>
+
+$A+ \overline{ (B+C) } B$  
+$A+\bar{B}\bar{C}B$  
+$A+0$
+
+
+</details>
 
 
 
