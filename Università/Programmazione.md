@@ -101,12 +101,38 @@ esempio visualizzabile con mermaid:
 ```mermaid
 graph TD
 B[nodo speciale di inizio: input m ]
-B --> C{nodo condizione: <br>il resto della  divisione <br>di m per due è 0 }
-C -->|falsa| D[blocco di fine:ouptut dispari]
-C -->|vera| E[blocco di fine: output pari]
+B --> C{nodo condizione: <br>il resto  della  divisione <br>di m per  due è 0 }
+C --> |falsa| D[blocco di fine:ouptut dispari]
+C --> |vera| E[blocco di fine: output pari]
 ```
 
+# C++
+
+## Reference
+
+i reference sono dei pointer immutabili, a differenza dei pointer non bisogna fare il dereferencing perchè il compilatore li tratta come se fossero l'oggetto stesso
+
+> A reference can be thought of as a constant pointer (not to be confused with a pointer to a constant value!) with automatic indirection, ie the compiler will apply the * operator for you.
 
 
 
+## Array
+
+gli array statici possono essere passati solo per reference ma a differenza dei reference normali si scrive come `[]`
+
+```c++
+
+//l'array a non è una copia dell'array ar ma è lo stesso array passato per reference
+void passarray(int a[]){
+  return;
+}
+int main(){
+  int ar[5]={0};
+  passarray(ar);
+}
+```
+
+## Array Multidimensionali
+
+gli array multidimensionali quando sono passati ad una funzione dev'essere esplicitato il numero dell'ultime dimensioni perché il compilatore deve sapere dove incomincia il nuovo array
 
