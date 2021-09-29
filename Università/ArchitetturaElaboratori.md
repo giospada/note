@@ -25,11 +25,12 @@ author: Giovanni Spadaccini
     - [4.4.1. Memoria cache](#441-memoria-cache)
     - [4.4.2. Hard Disck](#442-hard-disck)
     - [4.4.3. Memorie a Stato Solido](#443-memorie-a-stato-solido)
-    - [Velocizzare le Memorie](#velocizzare-le-memorie)
-    - [Dischi Ottici](#dischi-ottici)
-    - [Oltre le memorie](#oltre-le-memorie)
-- [Porte Logiche e Circuiti Combinatori](#porte-logiche-e-circuiti-combinatori)
-  - [funzioni booleane e tabelle di verità](#funzioni-booleane-e-tabelle-di-verità)
+    - [4.4.4. Velocizzare le Memorie](#444-velocizzare-le-memorie)
+    - [4.4.5. Dischi Ottici](#445-dischi-ottici)
+    - [4.4.6. Oltre le memorie](#446-oltre-le-memorie)
+- [5. Porte Logiche e Circuiti Combinatori](#5-porte-logiche-e-circuiti-combinatori)
+  - [5.1. funzioni booleane e tabelle di verità](#51-funzioni-booleane-e-tabelle-di-verità)
+- [6. Nand tetris](#6-nand-tetris)
 
 # 1. Introduzione
 
@@ -305,18 +306,18 @@ quantificare l'impatto della cache:
 > si tratta di dispositivi completamente elettronici senza parte in movimento
 
 
-### Velocizzare le Memorie
+### 4.4.4. Velocizzare le Memorie
 
 > RAID: tecnica che utilizza più dischi in parallelo per aumentare le prestazioni e diminuire il data lost
 
-###  Dischi Ottici
+###  4.4.5. Dischi Ottici
 
 > Dischi Ottici: dischi in cui un laser legge e scrive le informazioni
 
 vengono scritti e letti tramite fori (pit) e con delle zone piane (lend)
 
 
-### Oltre le memorie
+### 4.4.6. Oltre le memorie
 
 ci sono i dispositivi di input e output (stampanti, tastiera, schermo,mouse, schede di rete, etc..)
 
@@ -326,7 +327,7 @@ ci sono i dispositivi di input e output (stampanti, tastiera, schermo,mouse, sch
 Negli anni si sono sviluppati processori solo per la gestione dello schermo (GPU) 
 
 
-# Porte Logiche e Circuiti Combinatori
+# 5. Porte Logiche e Circuiti Combinatori
 
 > Porte Logiche:hanno 1/2 ingressi (che possono essere scambiati) e un uscita
 
@@ -341,7 +342,7 @@ Ogni Porta Logica e circuito combinatorio può essere descritto tramite la tabel
 > passare da $A+\bar{A}=1$ a $A\bar{A}=0$ utilizzando de morgan law
 
 
-## funzioni booleane e tabelle di verità
+## 5.1. funzioni booleane e tabelle di verità
 
 > es  
 > fare la tabella di verità su $A+ \overline{ (A+C) } B$
@@ -355,8 +356,24 @@ $A+ \overline{ (B+C) } B$
 $A+\bar{B}\bar{C}B$  
 $A+0$
 
-
 </details>
 
+
+> Un mintermine su n variabili è l’AND fra n letterali corrispondenti alle n variabili
+
+> Ogni combinazione delle variabili di una funzione booleana ha un corrispondente mintermine (vero per quella specifica combinazione) ogni tabella di verità ha $2^n \text{mintermini}$ dove n è il numero di letterali
+
+> la forma canonica è l'OR dei mintermini per cui la funzione è vera
+
+TODO: da riscrivere 
+
+![](img/essempioformacanonica.png)
+
+> Multiplexer: ha 3 input, il terzo input decide quale dei due input far passare
+
+![](img/multiplexer.png)
+
+
+# 6. Nand tetris
 
 
