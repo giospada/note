@@ -1,7 +1,10 @@
 {
     "cSpell.language": "en,it",
-    "editor.fontSize": 14,
-    "editor.rulers": [],
+    "editor.rulers": {},
     "editor.renderLineHighlight": "line",
-    "workbench.colorCustomizations": {}
+    "workbench.colorCustomizations": {
+        "editor.lineHighlightBorder": "#fff"
+    },
+    "markdown.styles": [".vscode/style.css"]
+    
 }
