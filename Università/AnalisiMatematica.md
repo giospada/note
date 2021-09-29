@@ -13,10 +13,10 @@ author: Giovanni Spadaccini
   - [2.1. Notazioni](#21-notazioni)
 - [3. Insiemistica](#3-insiemistica)
 - [4. Logica](#4-logica)
-  - [4.1. Funzioni](#41-funzioni)
-    - [4.1.1. Cardinalità](#411-cardinalità)
-    - [4.1.2. Sommatorie](#412-sommatorie)
-    - [4.1.3. Calcolo Combinatorio](#413-calcolo-combinatorio)
+- [5. Funzioni](#5-funzioni)
+  - [5.1. Cardinalità](#51-cardinalità)
+  - [5.2. Numberailità](#52-numberailità)
+- [6. Calcolo Combinatorio](#6-calcolo-combinatorio)
 
 # 1. Introduzione
 
@@ -97,6 +97,8 @@ il primo analisi ci sarà in giugno 2022.
 |$\vee$                   |O logioco (or)                                                 |
 |$\rightarrow$            |è il simbolo di implicazione logica                            |
 |$\bar{p}$                |è la negazione della preposizione p                            |
+|$\displaystyle \sum_{i=0}^n a_i= a_0 + a_1 + a_2+ ... +a_n$| sommatoria |
+
 
 TODO:finire di aggiungere le notazioni viste
 
@@ -176,7 +178,7 @@ significa che $(p \rightarrow q) \wedge( q \rightarrow q)$
 </details>
 
 
-## 4.1. Funzioni
+# 5. Funzioni
 
 $f: A \rightarrow B$ $x \overrightarrow{f} f(x)$:
 - A è il dominio di $f$ 
@@ -244,7 +246,7 @@ $f^{-1}: A \rightarrow B$ e vuol dire che:
 
 $f$ è ivertibile $\leftrightarrow f$ è biunivoca 
 
-### 4.1.1. Cardinalità
+## 5.1. Cardinalità
 
 perchè vengono estesi i numeri razionali a quelli reali
 
@@ -265,6 +267,8 @@ TODO: esercizio
 
 $f(n)= \begin{cases} n/2 \text{se n è pari} \\ -\frac{n+1}{2} \text{se n è pari} \end{cases}$
 
+## 5.2. Numberailità 
+
 > un insieme è numberabile se esiste una funzione $f : N \rightarrow A$ è biunivoca 
 
 > lemma: è un piccolo teorema
@@ -279,7 +283,8 @@ si può provare che l'insieme dei numeri razionali è numerabile?
 $Q = \{ \frac{n}{m} | n \in N, m \in Z \backslash \{0\}, MCD(n,|m|)=1\}$
 
 
-### 4.1.2. Sommatorie 
+# 6. Calcolo Combinatorio
 
-### 4.1.3. Calcolo Combinatorio
+> fattoriale di un numero
+$n!= 1*2*3*4*5*...*(n-1)*n, n\in N$
 
