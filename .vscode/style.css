@@ -45,7 +45,9 @@ blockquote {
     font-style: italic;
 }
 
-
+tr:nth-child(even){
+    background-color: #6273a40c;
+}
 
 .emoji {
     height: 1.4em;
@@ -104,4 +106,13 @@ h6{
 }
 h6::before{
     content: "###### ";
+}
+
+img{
+    padding:  1em 0 1em 0;
+    display: block;
+    max-width: 50vw;
+    max-height:50vh;
+    margin-left: auto;
+    margin-right: auto;
 }

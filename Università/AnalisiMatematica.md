@@ -17,6 +17,10 @@ author: Giovanni Spadaccini
   - [5.1. Cardinalità](#51-cardinalità)
   - [5.2. Numberailità](#52-numberailità)
 - [6. Calcolo Combinatorio](#6-calcolo-combinatorio)
+  - [6.1. Coefficente Binomiale](#61-coefficente-binomiale)
+  - [Il binomio di Newton](#il-binomio-di-newton)
+- [Teorema di pitagora](#teorema-di-pitagora)
+- [L'insieme dei numeri razionali](#linsieme-dei-numeri-razionali)
 
 # 1. Introduzione
 
@@ -76,27 +80,27 @@ il primo analisi ci sarà in giugno 2022.
 
 ## 2.1. Notazioni
 
-|symbolo                  | spiegazione                                                   |
-|--------                 |-------------                                                  |
-|$\in$                    |Indica che un elemento appartiene ad un insieme                |
-|$\notin$                 |non appartiene                                                 |
-|$\forall$                |per tutti gli elementi di un insieme                           |
-|$:$ oppure \|            |tale che                                                       |
-|$\exists$                |Esiste almeno un elemento                                      |
-|$\nexists$               |Non esiste neanche un elemento                                 |
-|$\exists!$               |Esiste un solo elemento                                        |
-|$\subseteq$              |$A \subseteq B$ indica che A è un sottoinsieme o uguale a B    |
-|$\nsubseteq$             |$A \nsubseteq B$ c'è almeno un elemento in A che non è in B    |
-|$\cup$                   |unione tra due iniemi                                          |
-|$\cap$                   |crea un insieme con gli elementi comuni dei due insiemi        |
-|$\emptyset$              |insieme vuoto (è un subset di tutti gli insiemi)               |
-|$\backslash$             |differenza tra insiemi (non è commutativa}                     |
-|$\upsilon$               |inisme universo è un insieme definito per fare il complementare|
-|$C(A)$                   |diffrerenza tra un insieme universo e l'insieme A              |
-|$\wedge$                 |E logioco (and)                                                |
-|$\vee$                   |O logioco (or)                                                 |
-|$\rightarrow$            |è il simbolo di implicazione logica                            |
-|$\bar{p}$                |è la negazione della preposizione p                            |
+|symbolo       | spiegazione                                                   |
+|--------      |-------------                                                  |
+|$\in$         |Indica che un elemento appartiene ad un insieme                |
+|$\notin$      |non appartiene                                                 |
+|$\forall$     |per tutti gli elementi di un insieme                           |
+|$:$ oppure \| |tale che                                                       |
+|$\exists$     |Esiste almeno un elemento                                      |
+|$\nexists$    |Non esiste neanche un elemento                                 |
+|$\exists!$    |Esiste un solo elemento                                        |
+|$\subseteq$   |$A \subseteq B$ indica che A è un sottoinsieme o uguale a B    |
+|$\nsubseteq$  |$A \nsubseteq B$ c'è almeno un elemento in A che non è in B    |
+|$\cup$        |unione tra due iniemi                                          |
+|$\cap$        |crea un insieme con gli elementi comuni dei due insiemi        |
+|$\emptyset$   |insieme vuoto (è un subset di tutti gli insiemi)               |
+|$\backslash$  |differenza tra insiemi (non è commutativa}                     |
+|$\upsilon$    |inisme universo è un insieme definito per fare il complementare|
+|$C(A)$        |diffrerenza tra un insieme universo e l'insieme A              |
+|$\wedge$      |E logioco (and)                                                |
+|$\vee$        |O logioco (or)                                                 |
+|$\rightarrow$ |è il simbolo di implicazione logica                            |
+|$\bar{p}$     |è la negazione della preposizione p                            |
 |$\displaystyle \sum_{i=0}^n a_i= a_0 + a_1 + a_2+ ... +a_n$| sommatoria |
 
 
@@ -274,8 +278,8 @@ $f(n)= \begin{cases} n/2 \text{se n è pari} \\ -\frac{n+1}{2} \text{se n è par
 > lemma: è un piccolo teorema
 
 > (Lemma) A è numerabile se è solo se 
-$f_1 : A \rightarrow N$ è surrettiva  
-$f_2 : N \rightarrow A$ è surrettiva
+$f_1 : A \rightarrow \mathbb{N}$ è surrettiva  
+$f_2 : \mathbb{N}\frac{n!}{k!(n - k)!} = \binom{n}{k} = {}^{n}C_{k} = C_{n}^k \rightarrow A$ è surrettiva
 
 
 si può provare che l'insieme dei numeri razionali è numerabile?
@@ -286,5 +290,62 @@ $Q = \{ \frac{n}{m} | n \in N, m \in Z \backslash \{0\}, MCD(n,|m|)=1\}$
 # 6. Calcolo Combinatorio
 
 > fattoriale di un numero
-$n!= 1*2*3*4*5*...*(n-1)*n, n\in N$
 
+> permutazioni: contano l'ordine degli elementi
+
+> combinazioni: contano il numero di set diversi
+
+$n!= 1*2*3*4*5*...*(n-1)*n, n\in \mathbb{N}$ , $0!=1$
+
+il fattoriale si usa per contare le permutazioni di una lista di elementi diversi.
+
+## 6.1. Coefficente Binomiale
+
+$n \in \mathbb{N}, m \in \mathbb{N}$
+
+
+$\frac{n!}{k!(n - m)!} = \binom{n}{m} = {}^{n}C_{m} = C_{n}^m$
+
+siamo $n,m \in \mathbb{N}: m<=n$, il binomiale riponde quanti sottoinsiemi partendo di m elementi posso formare partendo da un insieme di n(non contano gli ordini,combinazioni).
+
+**Proprietà**:
+
+    
+1.  $\binom{n}{k}=\binom{n}{n-k}$
+2.  $\binom{n+1}{k}=\binom{n}{k-1}+\binom{n}{k}$
+
+<details>
+    <summary>
+    Prova coefficiente binomiale
+    </summary>
+
+![](img/dimbinomialep1.png)
+![](img/dimbinomialep2.png)
+</details>
+
+TODO: spiegare il perchè di entrambe le proprietà
+
+## Il binomio di Newton
+
+Come si calcola il binomio $(a+b)^n=?$
+
+TODO: spiegare con parole tue come si calcola il coefficente di ogni binomio
+
+**Formula del binomio di newton**
+
+$(a+b)^n=\displaystyle \sum^{n}_{k=0} \binom{n}{k} a^{n-k}*b^k$
+
+# Teorema di pitagora
+
+dipende dall'assioma che dice che gli angoli del triangolo rettangolo misurano 180°
+
+![](img/teoremadipiagora.png)
+
+# L'insieme dei numeri razionali
+
+Domanda: esistono tanti numeri razinali quanti punti sulla retta, c'p una funzione biunivoca tra Q e i punti di una retta?
+
+
+$\sqrt{2} \in \mathbb{Q}$
+
+Dimostrazione per assurdo: TODO: da completare

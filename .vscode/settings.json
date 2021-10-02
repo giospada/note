@@ -5,6 +5,9 @@
     "workbench.colorCustomizations": {
         "editor.lineHighlightBorder": "#fff"
     },
-    "markdown.styles": [".vscode/style.css"]
+    "markdown.styles": [
+        ".vscode/style.css"
+    ],
+    "editor.fontSize": 14
     
 }

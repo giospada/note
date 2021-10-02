@@ -9,11 +9,23 @@
 - [4. Teoria degli Insiemi](#4-teoria-degli-insiemi)
   - [4.1. Teoria naive](#41-teoria-naive)
   - [4.2. Teoria assiomatiche degli insiemi](#42-teoria-assiomatiche-degli-insiemi)
-    - [4.2.1. Assiomi](#421-assiomi)
-    - [4.2.2. Definizione di intersezione binaria](#422-definizione-di-intersezione-binaria)
-    - [4.2.3. Teorema](#423-teorema)
-  - [4.3. Itersezione n-aria](#43-itersezione-n-aria)
-    - [4.3.1. Definizione di intersezione](#431-definizione-di-intersezione)
+    - [4.2.1. Assioma di estensionalità](#421-assioma-di-estensionalità)
+    - [4.2.2. Definizione di essere sottoinsieme](#422-definizione-di-essere-sottoinsieme)
+    - [4.2.3. Assioma di separazione](#423-assioma-di-separazione)
+    - [4.2.4. Assioma dell’insieme vuoto](#424-assioma-dellinsieme-vuoto)
+    - [4.2.5. Definizione dell’insieme vuoto](#425-definizione-dellinsieme-vuoto)
+    - [4.2.6. Definizione di intersezione binaria](#426-definizione-di-intersezione-binaria)
+    - [4.2.7. Definizione di intersezione](#427-definizione-di-intersezione)
+    - [4.2.8. Assiome dell'unione binaria](#428-assiome-dellunione-binaria)
+    - [4.2.9. Assioma dell'unione](#429-assioma-dellunione)
+- [5. Dimostrazioni](#5-dimostrazioni)
+  - [Regola della eliminazione dimostrazione](#regola-della-eliminazione-dimostrazione)
+  - [Regola dell'assurdo](#regola-dellassurdo)
+  - [Congiunzione](#congiunzione)
+  - [Disgunzioen](#disgunzioen)
+  - [Risultati intermedi](#risultati-intermedi)
+  - [esiste](#esiste)
+- [Dimostrazioni matematiche](#dimostrazioni-matematiche)
 
 
 
@@ -44,6 +56,7 @@ la logica non parla di verità (più ragionamenti corretti)
 
 > postulato(o assioma):sono delle ipotesi che diamo per vere
 
+> assioma: è un ipotesi che diamo per vera da quel momento in avanti
 
 <details>
     <summary>
@@ -140,7 +153,7 @@ Essendo che tutto è un insieme si può utilizzare il simbolo di appartenenza tr
 
 > se x è un insieme che contiene tutti gli insiemi che non contengono se stessi  
 > $X =\{ Y| Y \notin  Y\}$  
-> $X \in X \text{ sse } X \notin X$
+>> $X \in X \text{ sse } X \notin X$
 
 per ovviare al paradosso:
 - non è possibile formare liberamnete un insieme per una proprietà 
@@ -199,49 +212,113 @@ In una teoria assiomatica degli insiemi:
 - Noi seguiamo la teoria Zermelo-Fraenkel è la meno controversa, ed è sufficiente per sviluppare la maggior parte della matematica
 - Zermelo Fraenkel non è mai stata dimostrata essere consistente (e non si è dimostrato che è dimostrabile che una teoria possa essere costistente)
 
-### 4.2.1. Assiomi
-
-**Assioma di estensionalità**  
+### 4.2.1. Assioma di estensionalità
 
 > Due insiemi sono uguali sse hanno gli stessi elementi.  
 
-$\forall X ,\forall Y ,(X = Y \Leftrightarrow ∀Z \text{ }(Z \in X \Leftrightarrow  Z\in Y ))$
+$\forall X ,\forall Y ,(X = Y \Leftrightarrow \forall Z \text{ }(Z \in X \Leftrightarrow  Z\in Y ))$
 
-> **Definizione di essere sottoinsieme**
+per ogni insieme X e Y, X e Y sono uguali se e solo se per ogni Z appartiene a X e se e solo se Z appartiene a Y
 
- X è sottoinsieme di Y se Y possiede tutti gli elementi di X
+### 4.2.2. Definizione di essere sottoinsieme
+
+> X è sottoinsieme di Y se Y possiede tutti gli elementi di X
 
 $X \subseteq Y =^{def}= \forall Z, (X \in X \Rightarrow Z \in Y)$
 
-**Assioma di separazione**
+
+definisco che X è sottoinsieme di Y quando per ogni Z , Z appartiene a X implica che Z appartiene a Y
+
+
+### 4.2.3. Assioma di separazione
 
 > Dato un insieme, possiamo formare il sottoinsieme dei suoi elementi che soddisfano una proprietà
 
 $\forall X ,\exist Y ,\forall Z ,(Z \in Y \Leftrightarrow Z \in X \wedge P (Z ))$
 
-TODO: non ho ben capito la parte di implicazione
+per ogni X esiste un Y, tutti gli insiemi in Z sono elementi di Y se sono appartenenti a X e hanno la proprietà
 
-**Assioma dell’insieme vuoto**
+Abuso di notazione: $X =\{Y \in U| Y \notin Y\}$
 
-> L’insieme X viene indicato come ∅
+> Attenzione: per descrivere Y c'è un abuso di notazione $\{Z \in X |P(Z)\}$ (Z è un elemento)
+
+### 4.2.4. Assioma dell’insieme vuoto
+
+> L’insieme X viene indicato come $\emptyset$
 
 $\exists X ,\forall Z ,Z \notin X$
 
-**Definizione dell’insieme vuoto**
+### 4.2.5. Definizione dell’insieme vuoto
 
 > L’assioma è ridondante. Sia Y un qualunque altro insieme di cui un assoma asserisce l’esistenza (vedi p.e. assioma dell’infinito)
 
-### 4.2.2. Definizione di intersezione binaria
+$\emptyset \coloneqq \{X \in Y |false\}$
 
-### 4.2.3. Teorema
+### 4.2.6. Definizione di intersezione binaria
 
-Dimostraizone per l'assioma di separazione
 
-## 4.3. Itersezione n-aria
+$A \cap B \coloneqq \forall Z\{Z\in A |Z\in B\}$
 
-grazie all'intersezione binaria posso intersecare un numero infinito di insiemi
+**teorema**
 
-### 4.3.1. Definizione di intersezione
+$X \in A \cap B \Leftrightarrow X \in A \wedge X \in B$
 
-> Dato un insieme di insiemi, esiste l’insieme che ne è l’intersezione
+### 4.2.7. Definizione di intersezione
+
+metto tutti gli insiemi da intersecare in F.
+
+$\bigcap F \coloneqq \{ X \in A | \forall Y (Y \in F \Rightarrow X \in Y) \}, A \in F$
+
+### 4.2.8. Assiome dell'unione binaria
+
+$\forall A,\forall B,\exists X ,\forall Z ,(Z \in X \Leftrightarrow Z \in A ∨Z \in B)$
+
+### 4.2.9. Assioma dell'unione 
+
+$\forall F, \exists X, \forall Z (Z\in X \Leftrightarrow \exists Y (Y \in F \wedge Z \in Y))$
+
+
+# 5. Dimostrazioni
+
+> regole di introduzione: servono per introdurre una dimostrazione
+
+> regole di eliminazione: la utilizziamo quando noi sappiamo già qualcosa, rispondono se so questo allora cos'altro so?
+
+utilizziamo:
+- la conclusione: usi la regole dell'introduzione
+- con l'eliminazine: le usi sulle ipotesi per cercarne nuove
+
+## Regola della eliminazione dimostrazione
+
+Da un ipotesi o un risltato intermetdio $p \Leftarrow Q$ di nome H, se volete concludere Q potete dire
+
+## Regola dell'assurdo
+
+Se attraverso le altre ipotesi rendono P falso, $P \Leftarrow assurdo$
+
+## Congiunzione
+
+per dimostrare $P \wedge Q$: P e Q , si dimostrano sia P che Q
+
+per eliminazione, può essere usato sia P che Q. in alternativa incece di concludere o assumere $P \wedge Q$ si può direttamente concludere o assumere P (H_1) e Q (H_2).
+
+## Disgunzioen
+
+per dimostrare $P \vee Q" basta dimostrareP oppure Q dichiarandolo: "dimostro P" oppure "dimostro Q"
+
+## Risultati intermedi
+
+## esiste
+
+
+
+# Dimostrazioni matematiche
+
+> Una **dimostrazione matematica** è un processo di deduzione che, partendo da premesse assunte come valide (ipotesi) o da proposizioni dimostrate in virtù di queste premesse, determina la necessaria validità di una nuova proposizione in virtù della (sola) coerenza formale del ragionamento.
+
+> **Enunciato**: E’ una proposizione di cui ha senso dire che sia vera o falsa, ossia una frase con un valore di verità determinato (Vero o Falso).
+
+> **Teorema**: E’ una proposizione con la quale si vuole affermare che un enunciato sia vero. Solitamente si presenta nella forma A,B,C,D… -> T, dove A,B,C,D sono le ipotesi e T la tesi.
+
+
 

@@ -253,7 +253,7 @@ essendo che suddividiamo l'operazioni in vari passi, possiamo diminuire il ciclo
 
 ## 4.4. Le Memorie
 
-in ordine di velocità:
+in ordine di velocità:  
 ![](img/velocitamemorie.png)
 
 
@@ -280,10 +280,7 @@ se la cpu accedesse la ram in indirizzi casuale al cache non servirebbe, molti p
 **tempo medio d'accesso** = $c+(1-h)m$ 
 
 <details>
-    <summary>
-
-**spiegazione**    
-    </summary>
+    <summary> spiegazione </summary>
 
 quantificare l'impatto della cache:
 - c sia il tempo di accesso alla cache
