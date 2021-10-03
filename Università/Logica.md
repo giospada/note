@@ -19,12 +19,17 @@
     - [4.2.8. Assiome dell'unione binaria](#428-assiome-dellunione-binaria)
     - [4.2.9. Assioma dell'unione](#429-assioma-dellunione)
 - [5. Dimostrazioni](#5-dimostrazioni)
+  - [Per Ogni $\forall$](#per-ogni-forall)
+  - [Implicazione $\Rightarrow$](#implicazione-rightarrow)
+  - [Coimplica $\Leftrightarrow$](#coimplica-leftrightarrow)
+  - [Espansione Definizioni](#espansione-definizioni)
   - [Regola della eliminazione dimostrazione](#regola-della-eliminazione-dimostrazione)
   - [Regola dell'assurdo](#regola-dellassurdo)
   - [Congiunzione](#congiunzione)
   - [Disgunzioen](#disgunzioen)
   - [Risultati intermedi](#risultati-intermedi)
   - [esiste](#esiste)
+  - [Abbreviazioni](#abbreviazioni)
 - [Dimostrazioni matematiche](#dimostrazioni-matematiche)
 
 
@@ -54,9 +59,6 @@ la logica non parla di verità (più ragionamenti corretti)
 > Paradosso : conclusione contraria all'intuizione che deriva da premesse accettabili per mezzo di un ragionamento accettato (è accettabile)
 
 
-> postulato(o assioma):sono delle ipotesi che diamo per vere
-
-> assioma: è un ipotesi che diamo per vera da quel momento in avanti
 
 <details>
     <summary>
@@ -153,7 +155,7 @@ Essendo che tutto è un insieme si può utilizzare il simbolo di appartenenza tr
 
 > se x è un insieme che contiene tutti gli insiemi che non contengono se stessi  
 > $X =\{ Y| Y \notin  Y\}$  
->> $X \in X \text{ sse } X \notin X$
+> $X \in X \text{ sse } X \notin X$
 
 per ovviare al paradosso:
 - non è possibile formare liberamnete un insieme per una proprietà 
@@ -284,17 +286,55 @@ $\forall F, \exists X, \forall Z (Z\in X \Leftrightarrow \exists Y (Y \in F \wed
 
 > regole di eliminazione: la utilizziamo quando noi sappiamo già qualcosa, rispondono se so questo allora cos'altro so?
 
+> postulato(o assioma):sono delle ipotesi che diamo per vere
+
+> assioma: è un ipotesi che diamo per vera da quel momento in avanti
+
+> enunciato di un teorema e ci  o che vogliamo dimostrare. Si compone di un insieme di ipotesi e di una conclusione
+
+
 utilizziamo:
 - la conclusione: usi la regole dell'introduzione
 - con l'eliminazine: le usi sulle ipotesi per cercarne nuove
 
+## Per Ogni $\forall$
+
+**introduzione**:Per dimostrare $\forall x P(x)$ (per ogni x vale P(x))
+
+> “sia x (un insieme) fissato; . . .”   
+> (i “. . .” sono una prova di P(x))
+
+**eliminazione**:Per ogni ipotesi o risultato intermedio $\forall x P(x)$ potete concludere che P valga ciò che volete
+
+## Implicazione $\Rightarrow$
+
+**introduzione**: Per dimostrare $P \Rightarrow Q$
+
+> “Assumo P (H). . . .”
+> (“H”) e il nome dell’ipotesi; `
+> i “. . .” sono una prova di Q)
+
+**eliminazione**: Da un’ipotesi o un risultato intermedio $P \Rightarrow Q$ e da un’ipotesi o un risultato intermedio P potete concludere che Q vale.
+
+
+## Coimplica $\Leftrightarrow$
+
+**introduzione**: Per dimostrare $P \Leftrightarrow Q$ allora devo dimostrare $P \Rightarrow Q$ e $Q \Rightarrow Q$
+
+**eliminazione**:L'ipotesi $P \Leftrightarrow Q$ può essere usata sia come ipotesi $P \Rightarrow Q$ che come $Q \Rightarrow P$
+
+## Espansione Definizioni
+
+> **P ovvero Q**: serve per espandere P ottenendo la frase Q
+
+
 ## Regola della eliminazione dimostrazione
 
-Da un ipotesi o un risltato intermetdio $p \Leftarrow Q$ di nome H, se volete concludere Q potete dire
+Da un ipotesi o un risltato intermetdio $p \Rightarrow Q$ di nome H, se volete concludere Q potete dire
 
 ## Regola dell'assurdo
 
-Se attraverso le altre ipotesi rendono P falso, $P \Leftarrow assurdo$
+Se attraverso le altre ipotesi rendono P falso, $P \Rightarrow assurdo$
 
 ## Congiunzione
 
@@ -310,13 +350,22 @@ per dimostrare $P \vee Q" basta dimostrareP oppure Q dichiarandolo: "dimostro P"
 
 ## esiste
 
+## Abbreviazioni
+
+- **per ogni tale che**:
+> “sia x tale che P(x). . . .”
+> abbrevia
+> “sia x (un insieme) fissato; assumo P(x); . . . ”
+> per dimostrare $∀x P(x) \Rightarrow Q(x)$
+
+- **Da $H_1, . . . , H_n$**:
+- **Quindi**:
+
 
 
 # Dimostrazioni matematiche
 
-> Una **dimostrazione matematica** è un processo di deduzione che, partendo da premesse assunte come valide (ipotesi) o da proposizioni dimostrate in virtù di queste premesse, determina la necessaria validità di una nuova proposizione in virtù della (sola) coerenza formale del ragionamento.
 
-> **Enunciato**: E’ una proposizione di cui ha senso dire che sia vera o falsa, ossia una frase con un valore di verità determinato (Vero o Falso).
 
 > **Teorema**: E’ una proposizione con la quale si vuole affermare che un enunciato sia vero. Solitamente si presenta nella forma A,B,C,D… -> T, dove A,B,C,D sono le ipotesi e T la tesi.
 
