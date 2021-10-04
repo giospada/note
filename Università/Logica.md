@@ -282,9 +282,10 @@ $\forall F, \exists X, \forall Z (Z\in X \Leftrightarrow \exists Y (Y \in F \wed
 
 # 5. Dimostrazioni
 
-> regole di introduzione: servono per introdurre una dimostrazione
 
-> regole di eliminazione: la utilizziamo quando noi sappiamo già qualcosa, rispondono se so questo allora cos'altro so?
+> regole di introduzione: sono quelle da utilizzare se voglio lavorare sulla conclusione, servono per introdurre una dimostrazione
+
+> regole di eliminazione: servono per lavorare sull'ipotesi, la utilizziamo quando noi sappiamo già qualcosa
 
 > postulato(o assioma):sono delle ipotesi che diamo per vere
 
@@ -293,9 +294,9 @@ $\forall F, \exists X, \forall Z (Z\in X \Leftrightarrow \exists Y (Y \in F \wed
 > enunciato di un teorema e ci  o che vogliamo dimostrare. Si compone di un insieme di ipotesi e di una conclusione
 
 
-utilizziamo:
-- la conclusione: usi la regole dell'introduzione
-- con l'eliminazine: le usi sulle ipotesi per cercarne nuove
+ogni passaggio va a lavorare su:
+- le ipotesi
+- la conclusione: che è quello che vogliamo andare a dimostrare in un determinato momento
 
 ## Per Ogni $\forall$
 
@@ -314,7 +315,11 @@ utilizziamo:
 > (“H”) e il nome dell’ipotesi; `
 > i “. . .” sono una prova di Q)
 
+
 **eliminazione**: Da un’ipotesi o un risultato intermedio $P \Rightarrow Q$ e da un’ipotesi o un risultato intermedio P potete concludere che Q vale.
+
+
+**eliminazione** (variante): Da un’ipotesi o un risultato intermedio $P \Rightarrow Q$ di nome H , se volete concludere Q, potete procedere dicendo "per H , per dimostrare Q mi posso ridurre a dimostrare P" 
 
 
 ## Coimplica $\Leftrightarrow$
