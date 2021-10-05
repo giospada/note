@@ -19,18 +19,18 @@
     - [4.2.8. Assiome dell'unione binaria](#428-assiome-dellunione-binaria)
     - [4.2.9. Assioma dell'unione](#429-assioma-dellunione)
 - [5. Dimostrazioni](#5-dimostrazioni)
-  - [Per Ogni $\forall$](#per-ogni-forall)
-  - [Implicazione $\Rightarrow$](#implicazione-rightarrow)
-  - [Coimplica $\Leftrightarrow$](#coimplica-leftrightarrow)
-  - [Espansione Definizioni](#espansione-definizioni)
-  - [Regola della eliminazione dimostrazione](#regola-della-eliminazione-dimostrazione)
-  - [Regola dell'assurdo](#regola-dellassurdo)
-  - [Congiunzione](#congiunzione)
-  - [Disgunzioen](#disgunzioen)
-  - [Risultati intermedi](#risultati-intermedi)
-  - [esiste](#esiste)
-  - [Abbreviazioni](#abbreviazioni)
-- [Dimostrazioni matematiche](#dimostrazioni-matematiche)
+  - [5.1. Per Ogni $\forall$](#51-per-ogni-forall)
+  - [5.2. Implicazione $\Rightarrow$](#52-implicazione-rightarrow)
+  - [5.3. Coimplica $\Leftrightarrow$](#53-coimplica-leftrightarrow)
+  - [5.4. Espansione Definizioni](#54-espansione-definizioni)
+  - [5.5. Regola della eliminazione dimostrazione](#55-regola-della-eliminazione-dimostrazione)
+  - [5.6. Regola dell'assurdo](#56-regola-dellassurdo)
+  - [5.7. Congiunzione](#57-congiunzione)
+  - [5.8. Disginuzione](#58-disginuzione)
+  - [5.9. Risultati intermedi](#59-risultati-intermedi)
+  - [5.10. esiste](#510-esiste)
+  - [5.11. Abbreviazioni](#511-abbreviazioni)
+- [6. Dimostrazioni matematiche](#6-dimostrazioni-matematiche)
 
 
 
@@ -277,7 +277,8 @@ $\forall A,\forall B,\exists X ,\forall Z ,(Z \in X \Leftrightarrow Z \in A ∨Z
 
 ### 4.2.9. Assioma dell'unione 
 
-$\forall F, \exists X, \forall Z (Z\in X \Leftrightarrow \exists Y (Y \in F \wedge Z \in Y))$
+$\forall F \exists X \forall Z (Z\in X \Leftrightarrow \exists Y (Y \in F \wedge Z \in Y))$
+
 
 
 # 5. Dimostrazioni
@@ -298,7 +299,7 @@ ogni passaggio va a lavorare su:
 - le ipotesi
 - la conclusione: che è quello che vogliamo andare a dimostrare in un determinato momento
 
-## Per Ogni $\forall$
+## 5.1. Per Ogni $\forall$
 
 **introduzione**:Per dimostrare $\forall x P(x)$ (per ogni x vale P(x))
 
@@ -307,7 +308,7 @@ ogni passaggio va a lavorare su:
 
 **eliminazione**:Per ogni ipotesi o risultato intermedio $\forall x P(x)$ potete concludere che P valga ciò che volete
 
-## Implicazione $\Rightarrow$
+## 5.2. Implicazione $\Rightarrow$
 
 **introduzione**: Per dimostrare $P \Rightarrow Q$
 
@@ -322,40 +323,50 @@ ogni passaggio va a lavorare su:
 **eliminazione** (variante): Da un’ipotesi o un risultato intermedio $P \Rightarrow Q$ di nome H , se volete concludere Q, potete procedere dicendo "per H , per dimostrare Q mi posso ridurre a dimostrare P" 
 
 
-## Coimplica $\Leftrightarrow$
+## 5.3. Coimplica $\Leftrightarrow$
 
 **introduzione**: Per dimostrare $P \Leftrightarrow Q$ allora devo dimostrare $P \Rightarrow Q$ e $Q \Rightarrow Q$
 
 **eliminazione**:L'ipotesi $P \Leftrightarrow Q$ può essere usata sia come ipotesi $P \Rightarrow Q$ che come $Q \Rightarrow P$
 
-## Espansione Definizioni
+## 5.4. Espansione Definizioni
 
 > **P ovvero Q**: serve per espandere P ottenendo la frase Q
 
 
-## Regola della eliminazione dimostrazione
+## 5.5. Regola della eliminazione dimostrazione
 
 Da un ipotesi o un risltato intermetdio $p \Rightarrow Q$ di nome H, se volete concludere Q potete dire
 
-## Regola dell'assurdo
+## 5.6. Regola dell'assurdo
 
 Se attraverso le altre ipotesi rendono P falso, $P \Rightarrow assurdo$
 
-## Congiunzione
+## 5.7. Congiunzione
 
-per dimostrare $P \wedge Q$: P e Q , si dimostrano sia P che Q
+**introduzione**: per dimostrare $P \wedge Q$: P e Q , si dimostrano sia P che Q
 
-per eliminazione, può essere usato sia P che Q. in alternativa incece di concludere o assumere $P \wedge Q$ si può direttamente concludere o assumere P (H_1) e Q (H_2).
+**eliminazione**:per eliminazione, può essere usato sia P che Q. in alternativa invece di concludere o assumere $P \wedge Q$ si può direttamente concludere o assumere $P (H_1)$ e $Q (H_2)$.
 
-## Disgunzioen
+## 5.8. Disginuzione
 
-per dimostrare $P \vee Q" basta dimostrareP oppure Q dichiarandolo: "dimostro P" oppure "dimostro Q"
+**introduzione**: per dimostrare $P \vee Q$ basta dimostrare P oppure Q dichiarandolo   
+> "dimostro P" oppure "dimostro Q"
 
-## Risultati intermedi
+**eliminazione**:Data un’ipotesi o un risultato intermedio $P \vee Q$, si può proseguire nella dimostrazione per casi, una volta assumendo
+che P valga e una volta che Q valga:
+> “procedo per casi:  
+> caso in cui valga P (H ): . . .  
+> caso in cui valga Q (H ): . . . ”   
 
-## esiste
 
-## Abbreviazioni
+## 5.9. Risultati intermedi
+
+Potete anche utilizzare una **regola di introduzione** per dimostrare un **nuovo risultato intermedio**, diverso dalla conclusione corrente, a cui date un nome per utilizzarlo in seguito, a patto che abbiate già a disposizione le **premesse** della regola
+
+## 5.10. esiste
+
+## 5.11. Abbreviazioni
 
 - **per ogni tale che**:
 > “sia x tale che P(x). . . .”
@@ -368,7 +379,7 @@ per dimostrare $P \vee Q" basta dimostrareP oppure Q dichiarandolo: "dimostro P"
 
 
 
-# Dimostrazioni matematiche
+# 6. Dimostrazioni matematiche
 
 
 

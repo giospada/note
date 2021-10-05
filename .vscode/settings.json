@@ -8,6 +8,9 @@
     "markdown.styles": [
         ".vscode/style.css"
     ],
-    "editor.fontSize": 14
+    "editor.fontSize": 14,
+    "cSpell.words": [
+        "Disginuzione"
+    ]
     
 }
