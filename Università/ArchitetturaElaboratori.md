@@ -30,7 +30,12 @@ author: Giovanni Spadaccini
     - [4.4.6. Oltre le memorie](#446-oltre-le-memorie)
 - [5. Porte Logiche e Circuiti Combinatori](#5-porte-logiche-e-circuiti-combinatori)
   - [5.1. funzioni booleane e tabelle di verità](#51-funzioni-booleane-e-tabelle-di-verità)
-- [6. Nand tetris](#6-nand-tetris)
+  - [Mappe di Karnaugh](#mappe-di-karnaugh)
+- [Rappresentazione dell'informazione](#rappresentazione-dellinformazione)
+  - [Numeri](#numeri)
+    - [Modulo e segno](#modulo-e-segno)
+    - [Complemento a 1](#complemento-a-1)
+    - [Complemnto a 2](#complemnto-a-2)
 
 # 1. Introduzione
 
@@ -370,7 +375,74 @@ TODO: da riscrivere
 
 ![](img/multiplexer.png)
 
+## Mappe di Karnaugh
 
-# 6. Nand tetris
+> sono un modo per rappresentre le funzioni booleane, e restituisce una funzione che è unguale o più piccola di quella canonica
+
+**mappa per due variabili**
+
+| B\A | 0 | 1 |
+|-----|---|---|
+| 0   |   |   |
+| 1   |   |   |
+
+**mappa per tre variabili** (notare quando ci sono più variabili ordiniamo i numeri con il gray code)
+
+| B\AC |00| 01 | 11 | 10 |
+|-----|---|---|---|---|
+| 0   |   |   |   |   |
+| 1   |   |   |   |   |
+
+**mappa con quattro variabili**
+
+| DB\AC |00| 01 | 11 | 10 |
+|-----|---|---|---|---|
+| 00 |   |   |   |   |
+| 01 |   |   |   |   |
+| 11 |   |   |   |   |
+| 10 |   |   |   |   |
+
+
+possiamo racchiudere gli uno nella tabella in rettangoli con base e altezza che sono potenze di 2.
+
+**Copertura minimale**:è una delle forme più piccole
+- raggruppamenti che non sono contenuti in potenziali raggruppamenti più grandi
+- raggruppamenti che contengono almeno una cella che non appare anche in altri raggruppamenti della copertura
+
+
+TODO :finire di aggiungere roba
+
+# Rappresentazione dell'informazione
+
+
+## Numeri
+
+- numeri interi
+- floating point
+- caratteri tramite le codifiche ASCII e UNICODE
+
+### Modulo e segno
+
+Moduloe segno si una l'ultimo bit come segno
+
+> es
+> usando 8 bit: 00000110=6, 10000110=-6
+
+### Complemento a 1
+
+Complemento a 1: il bit più a sx indica il segno, ma se il numero è negativo il modulo viene complementato
+
+>Es
+> usando 8 bit: 00000110=6, 11111001=-6
+
+### Complemnto a 2
+
+Complemento a 2: come per il complemento a 1, ma se il numero è negativo dopo il complemento si aggiunge 1
+
+> Esempio
+>  usando 8 bit: 00000110=6, 11111010=-6
+
+con questo metodo è più facile fare le addizzioni perchè riusciamo a farle con lo stesso metodo
+
 
 
