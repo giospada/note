@@ -18,7 +18,15 @@
     - [4.2.7. Definizione di intersezione](#427-definizione-di-intersezione)
     - [4.2.8. Assiome dell'unione binaria](#428-assiome-dellunione-binaria)
     - [4.2.9. Assioma dell'unione](#429-assioma-dellunione)
+    - [4.2.10 Assioma del singoletto](#4210-assioma-del-singoletto)
+    - [Assioma dell’infinito](#assioma-dellinfinito)
+    - [Teorema esistenza di $\N$](#teorema-esistenza-di-n)
+    - [Assioma dell'insieme potenza](#assioma-dellinsieme-potenza)
+    - [Assioma di regolarita (non da studiare)](#assioma-di-regolarita-non-da-studiare)
+    - [Assioma di rimpiazzamento](#assioma-di-rimpiazzamento)
+  - [Costruzioni dei Numeri Naturali](#costruzioni-dei-numeri-naturali)
 - [5. Dimostrazioni](#5-dimostrazioni)
+<<<<<<< HEAD
   - [5.1. Per Ogni $\forall$](#51-per-ogni-forall)
   - [5.2. Implicazione $\Rightarrow$](#52-implicazione-rightarrow)
   - [5.3. Coimplica $\Leftrightarrow$](#53-coimplica-leftrightarrow)
@@ -31,6 +39,21 @@
   - [5.10. esiste](#510-esiste)
   - [5.11. Abbreviazioni](#511-abbreviazioni)
 - [6. Dimostrazioni matematiche](#6-dimostrazioni-matematiche)
+=======
+  - [Per Ogni $\forall$](#per-ogni-forall)
+  - [Implicazione $\Rightarrow$](#implicazione-rightarrow)
+  - [Coimplica $\Leftrightarrow$](#coimplica-leftrightarrow)
+  - [Espansione Definizioni](#espansione-definizioni)
+  - [Regola della eliminazione dimostrazione](#regola-della-eliminazione-dimostrazione)
+  - [Regola dell'assurdo](#regola-dellassurdo)
+  - [Congiunzione](#congiunzione)
+  - [Disgunzioen](#disgunzioen)
+  - [Risultati intermedi](#risultati-intermedi)
+  - [esiste](#esiste)
+  - [Abbreviazioni](#abbreviazioni)
+- [Coppie ordinate](#coppie-ordinate)
+- [Dimostrazioni matematiche](#dimostrazioni-matematiche)
+>>>>>>> 76741084d08057edd139fc787b2b3e2bb6b02965
 
 
 
@@ -281,6 +304,74 @@ $\forall F \exists X \forall Z (Z\in X \Leftrightarrow \exists Y (Y \in F \wedge
 
 
 
+### 4.2.10 Assioma del singoletto
+
+$\forall X, \exists Y \forall Z (Z \in Y \Rightleftarrow Z = X)$
+
+l'insieme Y viene indicato come {X}
+
+> grazie a questo insieme possiamo creare un infinità di insiemi  
+> es
+> possiamo creare infiniti insiemi partendo da $\emptyset$ divente $\{\emptyset\}$  e combinato con l'unione si possono unire questi insiemi 
+
+**(Abuso di) notazione**
+Con la notazione $\{A_1, . . . , A_n}$ indicheremo l’insieme $\{A_1\} . . .  \{A_n\}$ che esiste in virtu degli assiomi del singoletto è dell’unione.
+
+TODO: finire al notazione matematica
+
+### Assioma dell’infinito
+Esiste un insieme che contiene almeno tutti (gli encoding de)i numeri naturali.
+
+$\exists Y( \emptyset \in Y \wedge \forall N (N \in Y \Rightarrow N \cup \{N\} \in Y))$
+
+Indichiamo temporaneamente con N tale insieme 
+
+
+
+### Teorema esistenza di $\N$
+
+combinaimo altri assiomi con quello dell'infinito si arriva a dimostrare l'esistenza dell'insmieme N  che contiene tutti e soli i numeri naturali.
+
+### Assioma dell'insieme potenza
+
+Esiste l'insieme dei sottoinsiemi di un inseme dato.
+
+$\forall \exists Y, \forall Z ( Z \in Y \Rightleftarrow Z \subseteq X$
+
+per ogni insieme X esiste un Y tale per cui, ogni Z elemento di Y se e solo se Z è un sottoinsieme di X
+
+abuso di notazioni:$2^x$ oppure $P(x)$
+
+> es  
+> $2^{\{1,2\}}= \{\emptyset, \{1\},\{2\},\{1,2\}\}$
+
+### Assioma di regolarita (non da studiare) 
+
+Ogni insieme non vuoto ha un elemento dal quale e disgiunto (senza elementi in comune ).Fra le conseguenze: nessun insieme contiene (ricorsivamente) se stesso e ha quindi senso cercare di misurare la taglia (chiamata cardinalita) di un insieme.
+
+$A=\{\emptyset , \{ \emptyset\}\}$
+
+$\emptyset \in A$ 
+$\emptyset \cup A = \emptyset$ 
+
+a e l'insime vouto soon disgiunti
+
+### Assioma di rimpiazzamento
+
+Intuitivamente: l’immagine di un insieme rispetto a una formula che descrive una funzione e ancora un insieme. Intuitivamente: se A e un insieme, quindi  e abbastanza piccolo, e a ogni elemento ne associo un altro, in una relazione molti-a-uno, quello che ottengo come immagine e ancora piccolo.
+
+
+
+## Costruzioni dei Numeri Naturali
+
+Assumo di avere i numeri reali con la mia meta matematica e li codifico con i miei insiemi
+
+$[0] \coloneqq \emptyset$  
+$[n+1] \coloneqq [n] \cup \{[n]\}$
+
+> esempi
+> 
+
 # 5. Dimostrazioni
 
 
@@ -377,6 +468,14 @@ Potete anche utilizzare una **regola di introduzione** per dimostrare un **nuovo
 - **Da $H_1, . . . , H_n$**:
 - **Quindi**:
 
+
+# Coppie ordinate
+
+> negli insiemi l'ordine non conta e nemmeno la numerosità degli elementi
+
+**coppie ordinate**: Una coppia ordinata, invece, e formata da due componenti di cui uno e identificato come primo e l’altro come secondo. Due  coppie sono uguali sse lo sono rispettivamente il primo e il secondo elemento
+
+**Una coppia non èl'insieme dei suoi elementi e non deve essere pensata come contenete i suoi elementi**
 
 
 # 6. Dimostrazioni matematiche
