@@ -8,10 +8,12 @@
     "markdown.styles": [
         ".vscode/style.css"
     ],
-    "editor.fontSize": 14,
     "cSpell.words": [
         "Disginuzione",
+        "mintermine",
+        "mintermini",
         "singoletto"
-    ]
+    ],
+    "editor.fontSize": 14,
     
 }

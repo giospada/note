@@ -4,32 +4,34 @@ date: Settembre 2021
 author: Giovanni Spadaccini
 ---
 
-- [1. Introduzione](#1-introduzione)
-  - [1.1. Libri](#11-libri)
-  - [1.2. Esame](#12-esame)
-- [2. Livelli](#2-livelli)
-  - [2.1. Livello 0](#21-livello-0)
-    - [2.1.1. Porte logiche](#211-porte-logiche)
-  - [2.2. Livello 1](#22-livello-1)
-  - [2.3. Livello 2](#23-livello-2)
-  - [2.4. Livello 3-4](#24-livello-3-4)
-  - [2.5. Linguaggi 5](#25-linguaggi-5)
-- [3. Elaboratori](#3-elaboratori)
-  - [3.1. Storia degli Elaboratori](#31-storia-degli-elaboratori)
-- [4. Organizzazione degli Elaboratori](#4-organizzazione-degli-elaboratori)
-  - [4.1. CPU](#41-cpu)
-    - [4.1.1. Unita di controllo](#411-unita-di-controllo)
-  - [4.2. ALU](#42-alu)
-  - [4.3. Ottimizzazioni](#43-ottimizzazioni)
-  - [4.4. Le Memorie](#44-le-memorie)
-    - [4.4.1. Memoria cache](#441-memoria-cache)
-    - [4.4.2. Hard Disck](#442-hard-disck)
-    - [4.4.3. Memorie a Stato Solido](#443-memorie-a-stato-solido)
-    - [4.4.4. Velocizzare le Memorie](#444-velocizzare-le-memorie)
-    - [4.4.5. Dischi Ottici](#445-dischi-ottici)
-    - [4.4.6. Oltre le memorie](#446-oltre-le-memorie)
-- [5. Porte Logiche e Circuiti Combinatori](#5-porte-logiche-e-circuiti-combinatori)
-  - [5.1. funzioni booleane e tabelle di verità](#51-funzioni-booleane-e-tabelle-di-verità)
+- [Introduzione](#introduzione)
+  - [Libri](#libri)
+  - [Esame](#esame)
+- [Livelli](#livelli)
+  - [Livello 0](#livello-0)
+    - [Porte logiche](#porte-logiche)
+  - [Livello 1](#livello-1)
+  - [Livello 2](#livello-2)
+  - [Livello 3-4](#livello-3-4)
+  - [Linguaggi 5](#linguaggi-5)
+- [Elaboratori](#elaboratori)
+  - [Storia degli Elaboratori](#storia-degli-elaboratori)
+- [Organizzazione degli Elaboratori](#organizzazione-degli-elaboratori)
+  - [CPU](#cpu)
+    - [Unita di controllo](#unita-di-controllo)
+  - [ALU e clock](#alu-e-clock)
+  - [Ottimizzazioni](#ottimizzazioni)
+      - [approfondimento pipelining](#approfondimento-pipelining)
+  - [Le Memorie](#le-memorie)
+    - [Memoria cache](#memoria-cache)
+    - [Hard Disck](#hard-disck)
+    - [Memorie a Stato Solido](#memorie-a-stato-solido)
+    - [Velocizzare le Memorie](#velocizzare-le-memorie)
+    - [Dischi Ottici](#dischi-ottici)
+    - [Oltre le memorie](#oltre-le-memorie)
+- [Porte Logiche e Circuiti Combinatori](#porte-logiche-e-circuiti-combinatori)
+  - [Funzioni booleane e tabelle di verità](#funzioni-booleane-e-tabelle-di-verità)
+  - [Implementare Funzioni Booleane](#implementare-funzioni-booleane)
   - [Mappe di Karnaugh](#mappe-di-karnaugh)
 - [Rappresentazione dell'informazione](#rappresentazione-dellinformazione)
   - [Numeri](#numeri)
@@ -37,26 +39,26 @@ author: Giovanni Spadaccini
     - [Complemento a 1](#complemento-a-1)
     - [Complemnto a 2](#complemnto-a-2)
 
-# 1. Introduzione
+# Introduzione
 
 docente
 :  Ivan Lanese  
 
 [materiale](https://virtuale.unibo.it/course/view.php?id=30691)
 
-## 1.1. Libri
+## Libri
 
 - Architettura dei calcolatori. Un approccio strutturale
 
 [DA SCARICARE](http://www.nand2tetris.org)
 
-## 1.2. Esame
+## Esame
 
 - esame scritto (27 punti) dove si avranno punti bonus per i progetti (max. 6) e per li interventi
 
 
 
-# 2. Livelli
+# Livelli
 
 Nell'informatica si usano i principi di astrazione e implementazione, per diminuire la complessità, l'astrazione grazie a delle interfaccia accede alle implementazione (che utilizzando l'astrazione non bisogna più sapere com'è costruita)
 
@@ -75,9 +77,9 @@ nella tipica struttura a livelli, ogni livello superiore esegue il codice su una
 Tipico elaboratore a 6 livelli 
 ![](img/elaboratore6livelli.png)
 
-## 2.1. Livello 0
+## Livello 0
 
-### 2.1.1. Porte logiche 
+### Porte logiche 
 
 hanno tutti due input
 
@@ -87,47 +89,49 @@ un circuito si scrive anche con una tabella di verità
 
 (si costruirà tutto partendo dalla porta NAND, e utilizzando solo questo circuito)
 
-> NAND: 
+> NAND:   
 > il circuito NAND ha la tabella di verità come un and negato
 > (si usa la NAND perché si possono realizzare tutte le porte logiche)
 
 
-> Circuiti combinatori :
+> Circuiti combinatori :  
 >  Sono circuiti che con lo stesso set di input input  producono lo stesso output
 
-> Circuiti Sequenziali :
+> Circuiti Sequenziali :  
 > Circuiti che cambiano l'output in base agli input ricevuti in passato
 
 
-## 2.2. Livello 1
+## Livello 1
 
->Microarchitettura :
-> governa il flusso dei dati fra i vari componenti del livello logico digitale
+>Microarchitettura :  
+> governa il flusso dei dati fra i vari componenti del livello logico digitale (può essere hardware o software)
 
-## 2.3. Livello 2
+## Livello 2
 
-> Istruzioni macchina :
+> Istruzioni macchina :  
 > insieme di istruzioni eseguibili dalla microarchietettura
 
-## 2.4. Livello 3-4 
+## Livello 3-4 
 
-> sistema operativo:
+Livelli ibridi perchè non sono rigidamente separati
+
+> sistema operativo:  
 > fornisce la gestione di risorse ed esecuzione dei processi
 
-> linguaggio assembly:
+> linguaggio assembly:  
 > permette di programmare i livelli sottostanti
 
-## 2.5. Linguaggi 5
+## Linguaggi 5
 
-> Linguaggi di programmazione ad alto livello:
+> Linguaggi di programmazione ad alto livello:  
 > linguaggi che vengono compilati o interpretati, in linguaggio assembly
 
-# 3. Elaboratori
+# Elaboratori
 
 sono macchine multi-livello, e si utilizzano le astrazioni, e ogni volta vengono eseguiti o tradotti in nella astrazione sottostante 
 
 
-## 3.1. Storia degli Elaboratori
+## Storia degli Elaboratori
 
 > non sono per l'esame
 
@@ -151,7 +155,7 @@ il computing non è solo nel computer ma in molti altri oggetti
 >**MFLOPS**: miliardi di operazioni a virgola mobile
 
 
-# 4. Organizzazione degli Elaboratori
+# Organizzazione degli Elaboratori
 
 ![](img/VonNeumann.png)
 > "bus oriented": un bus è un insieme di connessioni elettriche per collegare i vari componenti
@@ -170,7 +174,7 @@ il bus collega anche le periferiche, l'accesso al bus condivisio viene gestito d
 
 i nuovi dispositivi, possono trasferire i dati dalla memoria ad un altro dispositivo senza passare dalla cpu (che da l'ordine solo da che indirizzo a quale copiare)
 
-## 4.1. CPU
+## CPU
 
 ![](img/cpuschema.png)
 
@@ -209,28 +213,30 @@ il ciclo di esecuzione può essere schematizzato anche come **FDE**:
 2. **Decode** identificazione del tipo di operazione da eseguire (punto 3) 
 3. **Execute** effettuazione delle operazioni corrispondenti all'istruzione (punti 4-5-6)
 
-### 4.1.1. Unita di controllo
+### Unita di controllo
 
 > l'unita di controllo gestisce la memoria e l'alu, e interpreta le istruzioni
 
 i tipi di set di istruzioni possono essere:
-- CISC: Complex Instruction Set Computer, e quindi utilizzare microprogrammazione e un processore più complesso
-- RISC: Reduced Instruction Set Computer, istruzioni più semplici possono essere eseguite più velocemente e potendo evitare la microprogrammazione
+- **CISC**: Complex Instruction Set Computer, e quindi utilizzare microprogrammazione e un processore più complesso
+- **RISC**: Reduced Instruction Set Computer, istruzioni più semplici possono essere eseguite più velocemente e potendo evitare la microprogrammazione
 
 di solito in una cpu CISC c'è un collegamento diretto tra il MDR e l'alu senza passare dai registri, mentre nei RISC non c'è il collegamento diretto
 
 
-## 4.2. ALU
+## ALU e clock
 
 > alu esegue le operazioni
 
-> Data Path: è la parte della CPU comprendete ALU, is uoi input e i suoi output
+> **Data Path**: intendiamo la parte della CPU comprende ALU, i suoi input ed i suoi output(registri)
 
-nel calcolatore c'è un segnale che si chiama clock, che è un segnale regolare che da il tempo ad  al data path (un operazione può utilizzare anche più cicli di clock)
+nel calcolatore c'è un segnale che si chiama **clock**; è un segnale regolare che **determina il tempo di Data Pah** (un operazione può utilizzare anche più cicli di clock)
 
+**Velocità CPU**:
+- il ciclo del clock (stessa durata ciclo di data pah) può essere calcolato $\frac{1}{F}$ (dove F è la frequenza)
+- durata di un istruzione può essere calcolata n*durata ciclo di path (n varia da istruzione a istruzione)
 
-
-## 4.3. Ottimizzazioni
+## Ottimizzazioni
 
 Metodi per velocizzare la cpu:
 - **pipelining**:Un modo per migliorare le prestazioni di un processore è eseguire contemporaneamente più cicli FDE, usando per ognuno di essi parti diversi della CPU
@@ -240,10 +246,7 @@ Metodi per velocizzare la cpu:
     - MIMD: sono più precessori che condividono la stessa memoria senza eseguire necessariamente la stessa istruzione
 - **multicomputer**: molti processi non condividono una memoria e che comunicano scambiandosi messaggi, così moltissime cpu possono cooperare
 
- <details>
-<summary>
-pipelining
-</summary>
+#### approfondimento pipelining
 
 è l'implementazione di una catena di montaggio dentro la cpu
 
@@ -253,10 +256,8 @@ essendo che suddividiamo l'operazioni in vari passi, possiamo diminuire il ciclo
 
 ![](img/pipelining.png)
 
-</details>
 
-
-## 4.4. Le Memorie
+## Le Memorie
 
 in ordine di velocità:  
 ![](img/velocitamemorie.png)
@@ -270,13 +271,14 @@ in ordine di velocità:
 
 > le memorie si organizzano in celle (ogni cella contiene un bit)
 
-- byte o uno o zero
-- bit 8 bit
-- word è uguale al blocco con il quale il calcolatore lavora (quanti bit ha la cpu), per memorizzare le word in un byte si può memorizzare in big endian o end endian
+![](img/bytes.png)
+
+**word** è uguale al blocco con il quale il calcolatore lavora (quanti bit ha la cpu), per memorizzare le word in un byte si può memorizzare in big endian o end endian
 
 ![](img/littlebigendian.png)
 
-### 4.4.1. Memoria cache
+
+### Memoria cache
 
 > la cache è una memoria volatile poco capiente ma molto veloce
 
@@ -284,16 +286,13 @@ se la cpu accedesse la ram in indirizzi casuale al cache non servirebbe, molti p
 
 **tempo medio d'accesso** = $c+(1-h)m$ 
 
-<details>
-    <summary> spiegazione </summary>
-
+**spiegazione**  
 quantificare l'impatto della cache:
 - c sia il tempo di accesso alla cache
 - m sia il tempo di accesso alla memoria centrale
 - h sia l'hit-radio, la frazione di riferimenti che può essere soddisfatta dalla cache (una frazione che ci indica quante volte la cache riesce a non far accedere alla memoria)
-</details>
 
-### 4.4.2. Hard Disck
+### Hard Disck
 
 > hard disk (HD): è un dispositivo elettro-meccanico per la conservazione di informazioni sotto forma magnetica
 
@@ -303,33 +302,33 @@ quantificare l'impatto della cache:
 - **Traccia**: sequenza circolare di bit
 - **Settore**: porzione di traccia che contiene una quantità prefissata di bit (uguale per tutti i settori)
 
-### 4.4.3. Memorie a Stato Solido
+### Memorie a Stato Solido
 
-> si tratta di dispositivi completamente elettronici senza parte in movimento
+> si tratta di dispositivi completamente elettronici senza parte in movimento (consumano meno energia e maggiore resistenza agli urti rispetto agli hard disck )
 
-
-### 4.4.4. Velocizzare le Memorie
+### Velocizzare le Memorie
 
 > RAID: tecnica che utilizza più dischi in parallelo per aumentare le prestazioni e diminuire il data lost
 
-###  4.4.5. Dischi Ottici
+Più veloce perché si leggono più dati contemporaneamente, più affidabile se si replicano i dati e si aggiungono bit di controllo per verificare/correggere errori
+
+###  Dischi Ottici
 
 > Dischi Ottici: dischi in cui un laser legge e scrive le informazioni
 
 vengono scritti e letti tramite fori (pit) e con delle zone piane (lend)
 
 
-### 4.4.6. Oltre le memorie
+### Oltre le memorie
 
 ci sono i dispositivi di input e output (stampanti, tastiera, schermo,mouse, schede di rete, etc..)
 
-**monitor**: deve essere molto veloce e ha una gran quantità di dati, ogni pixel richiede 32bit (in uno schermo normale 1920x1080 66
- milioni di bit)
+**monitor**: deve essere molto veloce e ha una gran quantità di dati, ogni pixel richiede 32bit (in uno schermo normale 1920x1080 66 milioni di bit)
 
 Negli anni si sono sviluppati processori solo per la gestione dello schermo (GPU) 
 
 
-# 5. Porte Logiche e Circuiti Combinatori
+# Porte Logiche e Circuiti Combinatori
 
 > Porte Logiche:hanno 1/2 ingressi (che possono essere scambiati) e un uscita
 
@@ -340,40 +339,47 @@ Ogni Porta Logica e circuito combinatorio può essere descritto tramite la tabel
 ![](img/proprietadibool.png)
 
 
-> es  
-> passare da $A+\bar{A}=1$ a $A\bar{A}=0$ utilizzando de morgan law
+**es**  
+passare da $A+\bar{A}=1$ a $A\bar{A}=0$ utilizzando de morgan law
 
 
-## 5.1. funzioni booleane e tabelle di verità
+## Funzioni booleane e tabelle di verità
 
-> es  
-> fare la tabella di verità su $A+ \overline{ (A+C) } B$
+> Un **mintermine** su n variabili è l’AND fra n letterali corrispondenti alle n variabili
 
-<details>
-    <summary>
-    soluzione    
-    </summary>
+Ogni combinazione delle variabili di una funzione booleana ha un corrispondente mintermine (vero per quella specifica combinazione) ogni tabella di verità ha $2^n \text{mintermini}$ dove n è il numero di letterali.
+
+![](img/mintermini.png)
+
+
+> la **forma canonica** è una funzione booleana, che si ricava concatenando con l'or i mintermini per cui la funzione è verificata
+
+Per esempio la forma canonica della funzione definita nell'immagine sopra è : $\bar{A}B\bar{C}+AB\bar{C}+ABC$
+
+## Implementare Funzioni Booleane
+
+Creaiamo dei circuiti che rappresentano fisicamente le nostre funzioni booleane.
+Per creare tutte le nostre funzioni booleane possiamo partire dalla porta NAND, infatti con questa porta si riescono ad implementare tutte le porte logiche (AND,OR e NOT). Inoltre la porta NAND è molto facile da implementare fisicamente.
+
+![](img/orandnot.jpg)
+
+**Xor**:è vero solo se i due input sono diversi
+
+![](img/xor.png)
+
+**Multiplexer**: ha 3 input, il terzo input decide quale dei due input far passare
+
+![](img/multiplexer.png)
+
+
+
+**es**  
+fare la tabella di verità su $A+ \overline{ (A+C) } B$
 
 $A+ \overline{ (B+C) } B$  
 $A+\bar{B}\bar{C}B$  
 $A+0$
 
-</details>
-
-
-> Un mintermine su n variabili è l’AND fra n letterali corrispondenti alle n variabili
-
-> Ogni combinazione delle variabili di una funzione booleana ha un corrispondente mintermine (vero per quella specifica combinazione) ogni tabella di verità ha $2^n \text{mintermini}$ dove n è il numero di letterali
-
-> la forma canonica è l'OR dei mintermini per cui la funzione è vera
-
-TODO: da riscrivere 
-
-![](img/essempioformacanonica.png)
-
-> Multiplexer: ha 3 input, il terzo input decide quale dei due input far passare
-
-![](img/multiplexer.png)
 
 ## Mappe di Karnaugh
 
@@ -409,17 +415,17 @@ possiamo racchiudere gli uno nella tabella in rettangoli con base e altezza che 
 - raggruppamenti che non sono contenuti in potenziali raggruppamenti più grandi
 - raggruppamenti che contengono almeno una cella che non appare anche in altri raggruppamenti della copertura
 
+L’espressione booleana corrispondente ad una copertura minimale risulta essere un’espressione del tipo somma di prodotti di letterali (in altri termini OR fra AND di letterali) con un numero minimale di addendi.
 
-TODO :finire di aggiungere roba
 
 # Rappresentazione dell'informazione
 
+I calcolatori elaborano molti tipi di informazione come testi, immagini ,suoni ,numeri etc.. Nonostatne ciò le memorie dati possono contenere solo valori binari.
 
 ## Numeri
 
-- numeri interi
-- floating point
-- caratteri tramite le codifiche ASCII e UNICODE
+Partiamo dai numeri naturali positivi che vengono rappresentati semplicemente in base 2.  
+
 
 ### Modulo e segno
 
@@ -443,6 +449,5 @@ Complemento a 2: come per il complemento a 1, ma se il numero è negativo dopo i
 >  usando 8 bit: 00000110=6, 11111010=-6
 
 con questo metodo è più facile fare le addizzioni perchè riusciamo a farle con lo stesso metodo
-
 
 
