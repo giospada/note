@@ -1,3 +1,7 @@
+---
+header-includes: |
+            \usepackage{mathtools}
+---
 
 - [1. Docente](#1-docente)
 - [2. Logica](#2-logica)
@@ -20,13 +24,12 @@
     - [4.2.9. Assioma dell'unione](#429-assioma-dellunione)
     - [4.2.10 Assioma del singoletto](#4210-assioma-del-singoletto)
     - [Assioma dell’infinito](#assioma-dellinfinito)
-    - [Teorema esistenza di $\N$](#teorema-esistenza-di-n)
+    - [Teorema esistenza di $N$](#teorema-esistenza-di-n)
     - [Assioma dell'insieme potenza](#assioma-dellinsieme-potenza)
     - [Assioma di regolarita (non da studiare)](#assioma-di-regolarita-non-da-studiare)
     - [Assioma di rimpiazzamento](#assioma-di-rimpiazzamento)
   - [Costruzioni dei Numeri Naturali](#costruzioni-dei-numeri-naturali)
 - [5. Dimostrazioni](#5-dimostrazioni)
-<<<<<<< HEAD
   - [5.1. Per Ogni $\forall$](#51-per-ogni-forall)
   - [5.2. Implicazione $\Rightarrow$](#52-implicazione-rightarrow)
   - [5.3. Coimplica $\Leftrightarrow$](#53-coimplica-leftrightarrow)
@@ -38,22 +41,8 @@
   - [5.9. Risultati intermedi](#59-risultati-intermedi)
   - [5.10. esiste](#510-esiste)
   - [5.11. Abbreviazioni](#511-abbreviazioni)
-- [6. Dimostrazioni matematiche](#6-dimostrazioni-matematiche)
-=======
-  - [Per Ogni $\forall$](#per-ogni-forall)
-  - [Implicazione $\Rightarrow$](#implicazione-rightarrow)
-  - [Coimplica $\Leftrightarrow$](#coimplica-leftrightarrow)
-  - [Espansione Definizioni](#espansione-definizioni)
-  - [Regola della eliminazione dimostrazione](#regola-della-eliminazione-dimostrazione)
-  - [Regola dell'assurdo](#regola-dellassurdo)
-  - [Congiunzione](#congiunzione)
-  - [Disgunzioen](#disgunzioen)
-  - [Risultati intermedi](#risultati-intermedi)
-  - [esiste](#esiste)
-  - [Abbreviazioni](#abbreviazioni)
 - [Coppie ordinate](#coppie-ordinate)
-- [Dimostrazioni matematiche](#dimostrazioni-matematiche)
->>>>>>> 76741084d08057edd139fc787b2b3e2bb6b02965
+- [6. Dimostrazioni matematiche](#6-dimostrazioni-matematiche)
 
 
 
@@ -259,7 +248,7 @@ definisco che X è sottoinsieme di Y quando per ogni Z , Z appartiene a X implic
 
 > Dato un insieme, possiamo formare il sottoinsieme dei suoi elementi che soddisfano una proprietà
 
-$\forall X ,\exist Y ,\forall Z ,(Z \in Y \Leftrightarrow Z \in X \wedge P (Z ))$
+$\forall X ,\exists Y ,\forall Z ,(Z \in Y \Leftrightarrow Z \in X \wedge P (Z ))$
 
 per ogni X esiste un Y, tutti gli insiemi in Z sono elementi di Y se sono appartenenti a X e hanno la proprietà
 
@@ -292,11 +281,11 @@ $X \in A \cap B \Leftrightarrow X \in A \wedge X \in B$
 
 metto tutti gli insiemi da intersecare in F.
 
-$\bigcap F \coloneqq \{ X \in A | \forall Y (Y \in F \Rightarrow X \in Y) \}, A \in F$
+$\bigcap F \coloneqq \{ X \in A | \forall Y (Y \in F \Rightarrow X/Right \in Y) \}, A \in F$
 
 ### 4.2.8. Assiome dell'unione binaria
 
-$\forall A,\forall B,\exists X ,\forall Z ,(Z \in X \Leftrightarrow Z \in A ∨Z \in B)$
+$\forall A,\forall B,\exists X ,\forall Z ,(Z \in X \Leftrightarrow Z \in A \vee Z \in B)$
 
 ### 4.2.9. Assioma dell'unione 
 
@@ -306,7 +295,7 @@ $\forall F \exists X \forall Z (Z\in X \Leftrightarrow \exists Y (Y \in F \wedge
 
 ### 4.2.10 Assioma del singoletto
 
-$\forall X, \exists Y \forall Z (Z \in Y \Rightleftarrow Z = X)$
+$\forall X, \exists Y \forall Z (Z \in Y \Leftrightarrow Z = X)$
 
 l'insieme Y viene indicato come {X}
 
@@ -315,7 +304,7 @@ l'insieme Y viene indicato come {X}
 > possiamo creare infiniti insiemi partendo da $\emptyset$ divente $\{\emptyset\}$  e combinato con l'unione si possono unire questi insiemi 
 
 **(Abuso di) notazione**
-Con la notazione $\{A_1, . . . , A_n}$ indicheremo l’insieme $\{A_1\} . . .  \{A_n\}$ che esiste in virtu degli assiomi del singoletto è dell’unione.
+Con la notazione $\{A_1, . . . , A_n>}$ indicheremo l’insieme $\{A_1\} . . .  \{A_n\}$ che esiste in virtu degli assiomi del singoletto è dell’unione.
 
 TODO: finire al notazione matematica
 
@@ -328,7 +317,7 @@ Indichiamo temporaneamente con N tale insieme
 
 
 
-### Teorema esistenza di $\N$
+### Teorema esistenza di $N$
 
 combinaimo altri assiomi con quello dell'infinito si arriva a dimostrare l'esistenza dell'insmieme N  che contiene tutti e soli i numeri naturali.
 
