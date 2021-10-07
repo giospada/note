@@ -361,7 +361,7 @@ Per esempio la forma canonica della funzione definita nell'immagine sopra è : $
 Creaiamo dei circuiti che rappresentano fisicamente le nostre funzioni booleane.
 Per creare tutte le nostre funzioni booleane possiamo partire dalla porta NAND, infatti con questa porta si riescono ad implementare tutte le porte logiche (AND,OR e NOT). Inoltre la porta NAND è molto facile da implementare fisicamente.
 
-![](img/orandnot.jpg)
+![](img/orandnot.png)
 
 **Xor**:è vero solo se i due input sono diversi
 
