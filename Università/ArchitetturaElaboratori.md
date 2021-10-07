@@ -4,40 +4,6 @@ date: Settembre 2021
 author: Giovanni Spadaccini
 ---
 
-- [Introduzione](#introduzione)
-  - [Libri](#libri)
-  - [Esame](#esame)
-- [Livelli](#livelli)
-  - [Livello 0](#livello-0)
-    - [Porte logiche](#porte-logiche)
-  - [Livello 1](#livello-1)
-  - [Livello 2](#livello-2)
-  - [Livello 3-4](#livello-3-4)
-  - [Linguaggi 5](#linguaggi-5)
-- [Elaboratori](#elaboratori)
-  - [Storia degli Elaboratori](#storia-degli-elaboratori)
-- [Organizzazione degli Elaboratori](#organizzazione-degli-elaboratori)
-  - [CPU](#cpu)
-    - [Unita di controllo](#unita-di-controllo)
-  - [ALU e clock](#alu-e-clock)
-  - [Ottimizzazioni](#ottimizzazioni)
-      - [approfondimento pipelining](#approfondimento-pipelining)
-  - [Le Memorie](#le-memorie)
-    - [Memoria cache](#memoria-cache)
-    - [Hard Disck](#hard-disck)
-    - [Memorie a Stato Solido](#memorie-a-stato-solido)
-    - [Velocizzare le Memorie](#velocizzare-le-memorie)
-    - [Dischi Ottici](#dischi-ottici)
-    - [Oltre le memorie](#oltre-le-memorie)
-- [Porte Logiche e Circuiti Combinatori](#porte-logiche-e-circuiti-combinatori)
-  - [Funzioni booleane e tabelle di verità](#funzioni-booleane-e-tabelle-di-verità)
-  - [Implementare Funzioni Booleane](#implementare-funzioni-booleane)
-  - [Mappe di Karnaugh](#mappe-di-karnaugh)
-- [Rappresentazione dell'informazione](#rappresentazione-dellinformazione)
-  - [Numeri](#numeri)
-    - [Modulo e segno](#modulo-e-segno)
-    - [Complemento a 1](#complemento-a-1)
-    - [Complemnto a 2](#complemnto-a-2)
 
 # Introduzione
 
@@ -387,21 +353,21 @@ $A+0$
 
 **mappa per due variabili**
 
-| B\A | 0 | 1 |
+| B \ A | 0 | 1 |
 |-----|---|---|
 | 0   |   |   |
 | 1   |   |   |
 
 **mappa per tre variabili** (notare quando ci sono più variabili ordiniamo i numeri con il gray code)
 
-| B\AC |00| 01 | 11 | 10 |
+| B \ AC |00| 01 | 11 | 10 |
 |-----|---|---|---|---|
 | 0   |   |   |   |   |
 | 1   |   |   |   |   |
 
 **mappa con quattro variabili**
 
-| DB\AC |00| 01 | 11 | 10 |
+| DB \ AC |00| 01 | 11 | 10 |
 |-----|---|---|---|---|
 | 00 |   |   |   |   |
 | 01 |   |   |   |   |

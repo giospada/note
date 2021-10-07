@@ -3,24 +3,6 @@ title: Analisi Matematica
 date: Settembre 2021
 author: Giovanni Spadaccini
 ---
-- [1. Introduzione](#1-introduzione)
-  - [1.1. Requisiti](#11-requisiti)
-  - [1.2. Modulo 1](#12-modulo-1)
-  - [1.3. Modulo 2](#13-modulo-2)
-  - [1.4. Esame](#14-esame)
-    - [1.4.1. Sessioni](#141-sessioni)
-- [2. Insiemi numerici, e le loro proprietà](#2-insiemi-numerici-e-le-loro-proprietà)
-  - [2.1. Notazioni](#21-notazioni)
-- [3. Insiemistica](#3-insiemistica)
-- [4. Logica](#4-logica)
-- [5. Funzioni](#5-funzioni)
-  - [5.1. Cardinalità](#51-cardinalità)
-  - [5.2. Numberailità](#52-numberailità)
-- [6. Calcolo Combinatorio](#6-calcolo-combinatorio)
-  - [6.1. Coefficente Binomiale](#61-coefficente-binomiale)
-  - [Il binomio di Newton](#il-binomio-di-newton)
-- [Teorema di pitagora](#teorema-di-pitagora)
-- [L'insieme dei numeri razionali](#linsieme-dei-numeri-razionali)
 
 # 1. Introduzione
 
@@ -349,3 +331,71 @@ Domanda: esistono tanti numeri razinali quanti punti sulla retta, c'p una funzio
 $\sqrt{2} \in \mathbb{Q}$
 
 Dimostrazione per assurdo: TODO: da completare
+
+TODO: agiungere la dimostrazione 
+
+Siano $\sqrt{\frac{p}{q}} \in \mathbb{Q}$
+
+## Intervalli di $\mathbb{R}$
+
+
+**Intervalli**:  
+$[a,b]=\{x \in \mathbb{R} | a \leq n\leq b\}$  
+$]a,b[=\{x \in \mathbb{R} | a \le n\le b\}$  
+$[a, \infty [=\{x \in \mathbb{R} | a \le n\}$  
+
+
+**Insieme Limitato superiormente**   
+$M \in \mathbb{R}$ si dice maggiorante di A se:
+$\forall a \in A$:  $M \leq a$
+
+> se A ammette un maggiorante si dice superiormente limitata
+
+**Insieme Limitato inferiormente**   
+$\mathbb{m} \in \mathbb{R}$ si dice minorante di A se:
+$\forall a \in A$: a \leq $\mathbb{m}  $
+
+> se A ammette un minorante A si dice inferiormente limitato
+
+**Assieme Limitato**  
+> se A ammette sia un minorante che un maggiorante è limitato
+
+**minimo di un insieme**:  
+$\forall a \in A : b \leq A$ (b è i minimo )
+
+**massimo di un insieme**:  
+$\forall a \in A : a \leq b$ (b è il massimo)
+
+![](img/minimax.png)
+
+Per esmpio $]3,4]$ ha un massimo ma non un minimo
+
+
+> se un a il minimo è il più grande dei minoranti
+
+> se un a il massimo è il più grande dei maggioranti
+
+
+> se A è superiormente limitato ha il minimo dei maggioranti $\sup A$, se B non è superiormente limitato  $\sup B= +\infty$
+
+> se A è inferiormente limitato ha il massimo dei minorandi $\inf A$, se B non è inferiormente limitato  $\inf B= +\infty$
+
+
+Q a differenza di R non ha sempre la proprietà di avere un massimando e un minorando es. $\{q \in \mathbb{Q}| q \le \sqrt{2}\}$
+
+
+## l'insime $\mathbb{R}$
+
+N, Z e Q hanno la stessa cardinalità mentre R ha una cardinalità maggiore $|\mathbb{N}|<|\mathbb{R}|$.
+
+> R non è numerabile
+
+# Varole Assoluto
+
+$a \in R$  
+$|a| \coloneqq max\{a,-a\}$
+
+
+
+
+
