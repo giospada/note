@@ -415,14 +415,128 @@ Potete anche utilizzare una **regola di introduzione** per dimostrare un **nuovo
 - **Da $H_1, . . . , H_n$**:
 - **Quindi**:
 
+# Relazioni, Funzioni ...
 
-# Coppie ordinate
+## Coppie ordinate
 
 > negli insiemi l'ordine non conta e nemmeno la numerosità degli elementi
 
 **coppie ordinate**: Una coppia ordinata, invece, e formata da due componenti di cui uno e identificato come primo e l’altro come secondo. Due  coppie sono uguali sse lo sono rispettivamente il primo e il secondo elemento
 
-**Una coppia non èl'insieme dei suoi elementi e non deve essere pensata come contenete i suoi elementi**
+**Una coppia non è l'insieme dei suoi elementi e non deve essere pensata come contenete i suoi elementi**
+Una coppia ordinata $\langle 1,2 \rangle$ si può rappresentare come un insieme scrivendo $\{X,\{X,Y\}\}$
+
+### teorema di caratterizzazione delle coppie
+
+
+$\langle X,Y \rangle = \langle X^1 Y^1 \rangle \Leftrightarrow X= X^1 \wedge Y=Y^1$
+
+**crollario**:$\langle X, Y\rangle \neq \langle Y, X \rangle \text{a meno che} X=Y$
+
+## Teorema del prodotto cartesiano tra gli insiemi
+
+a partire da due insiemi A e B possiamo creare il **prodotto cartesiano** che viene indicato con l'abuso di notazione AxB.
+
+$\forall A \forall B, \exists C,\forall Z,(Z\in C \Leftrightarrow \exists a,\exists b, ( a \in A \wedge b \in B \wedge Z=\langle a,b \rangle))$
+
+**es**: $\{a,b\} \times \{1,2\}= \{\langle a,1\rangle,\langle a,2\rangle,\langle b,1 \rangle,\langle b,2\rangle\}$
+
+## Relazione 
+
+Una **relazione** fra A e B è un qualunque sottoinsieme di  $A * B$.
+
+**Elementi in relazione**  
+Sia $\mathit{R}$ una relazione. Scriviamo $a\mathit{R}b \text{sse} \langle a,b\rangle \in \mathit{R}$
+
+### Teorema: relazioni verso insiemi vuoiti
+
+Se $\mathit{R} \subset A * \emptyset$ oppure $\mathit{R} \subset  \emptyset * A$ allora $mathit{R}$
+
+Dimostrazione: non posso formare coppie prendo uno dei due elementi dall'insieme vuoti, perché tale insieme è vuoto.
+
+TODO:aggiungere l'esempio
+
+## Dimostrazione Di Funzioni
+
+Una **funzione di dominio** A e codominio B e una qualunque relazione $f \subset A * B$ tale che: $\forall X,(X \in A \Leftarrow \exists! Y , X f Y)$
+
+per ogni elemento del dominio c'è un **unico** elemento del codominio
+
+**Abuso di notazione**  
+Sia f una funzione. Scriviamo  $y=f(x)$ per dire $xfy$,ovvero $\langle x,y \rangle \in f$
+
+### Teorema esistenza dello spazio di funzioni come insieme
+
+$\forall A, \forall B,\existsC,\forall f,(f \in C \Rightleftarrow f \text{ è una funzione di dominio  A e codominio B})$
+
+Abuso di notazione $B^{A}$ (spazionio delle funzioni da A a B)
+
+**es**
+TODO: esempio scritto dal prof nella registrazione della lezione alle 10:17
+
+**Spazio di funzioni verso insiemi vuoti**
+
+$B^{\emptyset}=\emptyset$  
+$\emptyset^A=\emptyset se A\neq \emptyset$
+
+## Abbreviazioni 
+
+TODO: da copirare dalla slide 9
+
+## Priorprietà delle relazioni
+
+Sia $\mathit{R} \subset A * A $.La relazione $\mathit{R}$ gode della proprietà
+- riflessiva se $\forall X \in A,X\mathit{R}X$
+- simmetrica se $\forall X,Y \in A,(X\mathit{R}Y \Leftarrow Y\mathit{R}X)$
+- transitiva se $\forall X,Y,Z \in A,(X\mathit{R}Y \wedge Y\mathit{R}Z \Leftarrow X\mathit{R}Z)$
+
+**es**:
+- = : gode di tutte le proprietà
+
+TODO: aggiungere gli es
+
+
+### Relazioni di ordinamento strette
+
+Una relazione $\mathit{R} \subset A * A$ è di ordine stretto sse $\mathit{R}$ è trenaisitva e non riflessiva
+
+### Relazioni di ordinamento lasche
+
+TODO: aggoiungere
+
+
+### Relazioni di equivalenza $\equiv$
+
+Una relazione $\mathit{R} \subset A * A$ è equivalente sse $\mathit{R}$ è riflessiva, transitiva e simmetrica
+
+
+l'**equivalenza è diversa dall'uguaglianza** perché nell'uguaglianza viene usata per confrontare oggetti meno di dettagli non ritenuti rilevanti per quello che si deve fare
+
+### Classi di equivalenza
+
+TODO: add
+
+### Insieme quoziente
+
+sia $\equiv \subseteq A*A$ una relazione di equivalensa.L'**insieme quoziente** di A ripetto a $\equiv$ è definito come:
+$A_{/\equiv}\coloneqq \{[x]_{\equiv} | x \in A\}$
+
+
+## iniettiva surrettiva biettività
+
+$f \in B^{A}$
+
+- indiettiva 
+- surretti
+- biettiva
+
+TODO: to complete
+
+
+
+## Cardinatlità
+
+al posto di definire la cardinalità definiamo una relazione di equivalenza
 
 
 # Dimostrazioni matematiche
