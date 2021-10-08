@@ -3,14 +3,54 @@ header-includes: |
             \usepackage{mathtools}
 ---
 
+- [1. Docente](#1-docente)
+- [2. Logica](#2-logica)
+- [3. Paradossi](#3-paradossi)
+  - [3.1. Linguaggio naturale](#31-linguaggio-naturale)
+  - [3.2. Linguaggio matematico](#32-linguaggio-matematico)
+    - [3.2.1. Paradosso di Russell](#321-paradosso-di-russell)
+  - [3.3. I paradossi in informatica](#33-i-paradossi-in-informatica)
+- [4. Teoria degli Insiemi](#4-teoria-degli-insiemi)
+  - [4.1. Teoria naive](#41-teoria-naive)
+  - [4.2. Teoria assiomatiche degli insiemi](#42-teoria-assiomatiche-degli-insiemi)
+    - [4.2.1. Assioma di estensionalità](#421-assioma-di-estensionalità)
+    - [4.2.2. Definizione di essere sottoinsieme](#422-definizione-di-essere-sottoinsieme)
+    - [4.2.3. Assioma di separazione](#423-assioma-di-separazione)
+    - [4.2.4. Assioma dell’insieme vuoto](#424-assioma-dellinsieme-vuoto)
+    - [4.2.5. Definizione dell’insieme vuoto](#425-definizione-dellinsieme-vuoto)
+    - [4.2.6. Definizione di intersezione binaria](#426-definizione-di-intersezione-binaria)
+    - [4.2.7. Definizione di intersezione](#427-definizione-di-intersezione)
+    - [4.2.8. Assiome dell'unione binaria](#428-assiome-dellunione-binaria)
+    - [4.2.9. Assioma dell'unione](#429-assioma-dellunione)
+    - [4.2.10. 4.2.10 Assioma del singoletto](#4210-4210-assioma-del-singoletto)
+    - [4.2.11. Assioma dell’infinito](#4211-assioma-dellinfinito)
+    - [4.2.12. Teorema esistenza di $N$](#4212-teorema-esistenza-di-n)
+    - [4.2.13. Assioma dell'insieme potenza](#4213-assioma-dellinsieme-potenza)
+    - [4.2.14. Assioma di regolarita (non da studiare)](#4214-assioma-di-regolarita-non-da-studiare)
+    - [4.2.15. Assioma di rimpiazzamento](#4215-assioma-di-rimpiazzamento)
+  - [4.3. Costruzioni dei Numeri Naturali](#43-costruzioni-dei-numeri-naturali)
+- [5. Dimostrazioni](#5-dimostrazioni)
+  - [5.1. Per Ogni $\forall$](#51-per-ogni-forall)
+  - [5.2. Implicazione $\Rightarrow$](#52-implicazione-rightarrow)
+  - [5.3. Coimplica $\Leftrightarrow$](#53-coimplica-leftrightarrow)
+  - [5.4. Espansione Definizioni](#54-espansione-definizioni)
+  - [5.5. Regola della eliminazione dimostrazione](#55-regola-della-eliminazione-dimostrazione)
+  - [5.6. Regola dell'assurdo](#56-regola-dellassurdo)
+  - [5.7. Congiunzione](#57-congiunzione)
+  - [5.8. Disginuzione](#58-disginuzione)
+  - [5.9. Risultati intermedi](#59-risultati-intermedi)
+  - [5.10. esiste](#510-esiste)
+  - [5.11. Abbreviazioni](#511-abbreviazioni)
+- [6. Coppie ordinate](#6-coppie-ordinate)
+- [7. Dimostrazioni matematiche](#7-dimostrazioni-matematiche)
 
-# Docente
+# 1. Docente
 
 Claudio Sacerdoti Coen
 
 ![foto del professore con la giaguaro](img/proftigre.png)
 
-# Logica
+# 2. Logica
 
 viene studiata da più discipline (fisica, matematica,informatica)
 
@@ -22,7 +62,7 @@ Domande chiave:
 la logica non parla di verità (più ragionamenti corretti)
 
 
-# Paradossi
+# 3. Paradossi
 
 > Antinomia: è una conclusione inaccettabile,che deriva da premesse accettabili per mezzo di un ragionamento accettabile 
 
@@ -44,7 +84,7 @@ $x=0$
 </details>
 
 
-## Linguaggio naturale
+## 3.1. Linguaggio naturale
 
 Il linguaggio naturale è alla base della comunicazione e del ragionamento umano, e per questo deve essere espressivo e viene esteso e specializzato (per comunicare )
 
@@ -109,14 +149,14 @@ i paradossi dei linguaggi naturali esistono perchè:
 
 per evitare i paradossi bisogna impedire l'uso meta-linguistico del linguaggio naturale (**per questo si abbandona il linguaggio naturale per uno artificiale**)
 
-## Linguaggio matematico
+## 3.2. Linguaggio matematico
 
 è che rientrino i paradossi
 
 nel 1900 la matematica viene ristrutturata dalle basi, per farlo ricostruiscono tutta la matematica partendo con la teoria degli insiemi.  
 la teoria degli insiemi parte dal presupposto che tutto è un insieme
 
-### Paradosso di Russell
+### 3.2.1. Paradosso di Russell
 
 Russel è il primo a trovare un paradosso alla base della teoria degli insiemi.  
 Essendo che tutto è un insieme si può utilizzare il simbolo di appartenenza tra oggetti.
@@ -134,7 +174,7 @@ per ovviare al paradosso:
 
 [More](#teoria-assiomatiche-degli-insiemi)
 
-## I paradossi in informatica
+## 3.3. I paradossi in informatica
 
 nella programmazione ogni linguaggio può eseguire delle funzioni che possono prendere in input e dare in output altre funzioni
 
@@ -151,7 +191,7 @@ pertanto:
 **Quindi le funzioni dei linguaggi di programmazione non sono funzioni matematiche**
 
 
-# Teoria degli Insiemi
+# 4. Teoria degli Insiemi
 
 punti informali:
 - **tutto è un insieme**: gli insiemi contengono insiemi
@@ -160,7 +200,7 @@ punti informali:
 - permette di **introdurre e comprendere concetti come gli infiniti**
 - si perdono gli aspetti computazionali (le funzioni definite come insiemi non si calcolano, le rappresentazioni di dati sono inefficienti ) 
 
-## Teoria naive
+## 4.1. Teoria naive
 
 > Attenzione:è inconsistente in quando si può avere il paradosso di Russell
 
@@ -175,7 +215,7 @@ Per questo serve una teoria che rimuova l'**assioma di comprensione**(per ogni p
 > Attenzione: quando si usano insiemi rappresentanti altri insiemi, non si possono utilizzare i diagrammi di venn
 
 
-## Teoria assiomatiche degli insiemi 
+## 4.2. Teoria assiomatiche degli insiemi 
 
 In una teoria assiomatica degli insiemi:
 - i concetti di **insieme, appartenenza e uguaglianza** non vengono definiti (gli insiemi sono **enti primitivi**)
@@ -184,7 +224,7 @@ In una teoria assiomatica degli insiemi:
 - Noi seguiamo la teoria Zermelo-Fraenkel è la meno controversa, ed è sufficiente per sviluppare la maggior parte della matematica
 - Zermelo Fraenkel non è mai stata dimostrata essere consistente (e non si è dimostrato che è dimostrabile che una teoria possa essere costistente)
 
-### Assioma di estensionalità
+### 4.2.1. Assioma di estensionalità
 
 > Due insiemi sono uguali sse hanno gli stessi elementi.  
 
@@ -192,7 +232,7 @@ $\forall X ,\forall Y ,(X = Y \Leftrightarrow \forall Z \text{ }(Z \in X \Leftri
 
 per ogni insieme X e Y, X e Y sono uguali se e solo se per ogni Z appartiene a X e se e solo se Z appartiene a Y
 
-### Definizione di essere sottoinsieme
+### 4.2.2. Definizione di essere sottoinsieme
 
 > X è sottoinsieme di Y se Y possiede tutti gli elementi di X
 
@@ -202,7 +242,7 @@ $X \subseteq Y =^{def}= \forall Z, (X \in X \Rightarrow Z \in Y)$
 definisco che X è sottoinsieme di Y quando per ogni Z , Z appartiene a X implica che Z appartiene a Y
 
 
-### Assioma di separazione
+### 4.2.3. Assioma di separazione
 
 > Dato un insieme, possiamo formare il sottoinsieme dei suoi elementi che soddisfano una proprietà
 
@@ -214,19 +254,19 @@ Abuso di notazione: $X =\{Y \in U| Y \notin Y\}$
 
 > Attenzione: per descrivere Y c'è un abuso di notazione $\{Z \in X |P(Z)\}$ (Z è un elemento)
 
-### Assioma dell’insieme vuoto
+### 4.2.4. Assioma dell’insieme vuoto
 
 > L’insieme X viene indicato come $\emptyset$
 
 $\exists X ,\forall Z ,Z \notin X$
 
-### Definizione dell’insieme vuoto
+### 4.2.5. Definizione dell’insieme vuoto
 
 > L’assioma è ridondante. Sia Y un qualunque altro insieme di cui un assoma asserisce l’esistenza (vedi p.e. assioma dell’infinito)
 
 $\emptyset \coloneqq \{X \in Y |false\}$
 
-### Definizione di intersezione binaria
+### 4.2.6. Definizione di intersezione binaria
 
 
 $A \cap B \coloneqq \forall Z\{Z\in A |Z\in B\}$
@@ -235,38 +275,35 @@ $A \cap B \coloneqq \forall Z\{Z\in A |Z\in B\}$
 
 $X \in A \cap B \Leftrightarrow X \in A \wedge X \in B$
 
-### Definizione di intersezione
+### 4.2.7. Definizione di intersezione
 
 metto tutti gli insiemi da intersecare in F.
 
 $\bigcap F \coloneqq \{ X \in A | \forall Y (Y \in F \Rightarrow X/Right \in Y) \}, A \in F$
 
-### Assiome dell'unione binaria
+### 4.2.8. Assiome dell'unione binaria
 
 $\forall A,\forall B,\exists X ,\forall Z ,(Z \in X \Leftrightarrow Z \in A \vee Z \in B)$
 
-### Assioma dell'unione 
+### 4.2.9. Assioma dell'unione 
 
 $\forall F \exists X \forall Z (Z\in X \Leftrightarrow \exists Y (Y \in F \wedge Z \in Y))$
 
-
-
-### 4.2.10 Assioma del singoletto
+### 4.2.10. 4.2.10 Assioma del singoletto
 
 $\forall X, \exists Y \forall Z (Z \in Y \Leftrightarrow Z = X)$
 
 l'insieme Y viene indicato come {X}
 
-> grazie a questo insieme possiamo creare un infinità di insiemi  
-> es
+> grazie a questo insieme possiamo creare un infinità di insiemi,
 > possiamo creare infiniti insiemi partendo da $\emptyset$ divente $\{\emptyset\}$  e combinato con l'unione si possono unire questi insiemi 
 
 **(Abuso di) notazione**
-Con la notazione $\{A_1, . . . , A_n\}$ indicheremo l’insieme $\{A_1\} . . .  \{A_n\}$ che esiste in virtu degli assiomi del singoletto è dell’unione.
+Con la notazione $\{A_1, . . . , A_n\}$ indicheremo l’insieme $\{A_1\} \cup . . . \cup \{A_n\}$ che esiste in virtu degli assiomi del singoletto è dell’unione.
 
-TODO: finire al notazione matematica
+$X \in \{A_1,...,A_n\}$ sse $X=A_1$ oppure ... oppure $X=A_n$ .
 
-### Assioma dell’infinito
+### 4.2.11. Assioma dell’infinito
 Esiste un insieme che contiene almeno tutti (gli encoding de)i numeri naturali.
 
 $\exists Y( \emptyset \in Y \wedge \forall N (N \in Y \Rightarrow N \cup \{N\} \in Y))$
@@ -275,11 +312,11 @@ Indichiamo temporaneamente con N tale insieme
 
 
 
-### Teorema esistenza di $N$
+### 4.2.12. Teorema esistenza di $N$
 
 combinaimo altri assiomi con quello dell'infinito si arriva a dimostrare l'esistenza dell'insmieme N  che contiene tutti e soli i numeri naturali.
 
-### Assioma dell'insieme potenza
+### 4.2.13. Assioma dell'insieme potenza
 
 Esiste l'insieme dei sottoinsiemi di un inseme dato.
 
@@ -292,7 +329,7 @@ abuso di notazioni:$2^x$ oppure $P(x)$
 > es  
 > $2^{\{1,2\}}= \{\emptyset, \{1\},\{2\},\{1,2\}\}$
 
-### Assioma di regolarita (non da studiare) 
+### 4.2.14. Assioma di regolarita (non da studiare) 
 
 Ogni insieme non vuoto ha un elemento dal quale e disgiunto (senza elementi in comune ).Fra le conseguenze: nessun insieme contiene (ricorsivamente) se stesso e ha quindi senso cercare di misurare la taglia (chiamata cardinalita) di un insieme.
 
@@ -303,13 +340,13 @@ $\emptyset \cup A = \emptyset$
 
 a e l'insime vouto soon disgiunti
 
-### Assioma di rimpiazzamento
+### 4.2.15. Assioma di rimpiazzamento
 
 Intuitivamente: l’immagine di un insieme rispetto a una formula che descrive una funzione e ancora un insieme. Intuitivamente: se A e un insieme, quindi  e abbastanza piccolo, e a ogni elemento ne associo un altro, in una relazione molti-a-uno, quello che ottengo come immagine e ancora piccolo.
 
 
 
-## Costruzioni dei Numeri Naturali
+## 4.3. Costruzioni dei Numeri Naturali
 
 Assumo di avere i numeri reali con la mia meta matematica e li codifico con i miei insiemi
 
@@ -319,7 +356,7 @@ $[n+1] \coloneqq [n] \cup \{[n]\}$
 > esempi
 > 
 
-# Dimostrazioni
+# 5. Dimostrazioni
 
 
 > regole di introduzione: sono quelle da utilizzare se voglio lavorare sulla conclusione, servono per introdurre una dimostrazione
@@ -337,7 +374,7 @@ ogni passaggio va a lavorare su:
 - le ipotesi
 - la conclusione: che è quello che vogliamo andare a dimostrare in un determinato momento
 
-## Per Ogni $\forall$
+## 5.1. Per Ogni $\forall$
 
 **introduzione**:Per dimostrare $\forall x P(x)$ (per ogni x vale P(x))
 
@@ -346,7 +383,7 @@ ogni passaggio va a lavorare su:
 
 **eliminazione**:Per ogni ipotesi o risultato intermedio $\forall x P(x)$ potete concludere che P valga ciò che volete
 
-## Implicazione $\Rightarrow$
+## 5.2. Implicazione $\Rightarrow$
 
 **introduzione**: Per dimostrare $P \Rightarrow Q$
 
@@ -361,32 +398,32 @@ ogni passaggio va a lavorare su:
 **eliminazione** (variante): Da un’ipotesi o un risultato intermedio $P \Rightarrow Q$ di nome H , se volete concludere Q, potete procedere dicendo "per H , per dimostrare Q mi posso ridurre a dimostrare P" 
 
 
-## Coimplica $\Leftrightarrow$
+## 5.3. Coimplica $\Leftrightarrow$
 
 **introduzione**: Per dimostrare $P \Leftrightarrow Q$ allora devo dimostrare $P \Rightarrow Q$ e $Q \Rightarrow Q$
 
 **eliminazione**:L'ipotesi $P \Leftrightarrow Q$ può essere usata sia come ipotesi $P \Rightarrow Q$ che come $Q \Rightarrow P$
 
-## Espansione Definizioni
+## 5.4. Espansione Definizioni
 
 > **P ovvero Q**: serve per espandere P ottenendo la frase Q
 
 
-## Regola della eliminazione dimostrazione
+## 5.5. Regola della eliminazione dimostrazione
 
 Da un ipotesi o un risltato intermetdio $p \Rightarrow Q$ di nome H, se volete concludere Q potete dire
 
-## Regola dell'assurdo
+## 5.6. Regola dell'assurdo
 
 Se attraverso le altre ipotesi rendono P falso, $P \Rightarrow assurdo$
 
-## Congiunzione
+## 5.7. Congiunzione
 
 **introduzione**: per dimostrare $P \wedge Q$: P e Q , si dimostrano sia P che Q
 
 **eliminazione**:per eliminazione, può essere usato sia P che Q. in alternativa invece di concludere o assumere $P \wedge Q$ si può direttamente concludere o assumere $P (H_1)$ e $Q (H_2)$.
 
-## Disginuzione
+## 5.8. Disginuzione
 
 **introduzione**: per dimostrare $P \vee Q$ basta dimostrare P oppure Q dichiarandolo   
 > "dimostro P" oppure "dimostro Q"
@@ -398,13 +435,13 @@ che P valga e una volta che Q valga:
 > caso in cui valga Q (H ): . . . ”   
 
 
-## Risultati intermedi
+## 5.9. Risultati intermedi
 
 Potete anche utilizzare una **regola di introduzione** per dimostrare un **nuovo risultato intermedio**, diverso dalla conclusione corrente, a cui date un nome per utilizzarlo in seguito, a patto che abbiate già a disposizione le **premesse** della regola
 
-## esiste
+## 5.10. esiste
 
-## Abbreviazioni
+## 5.11. Abbreviazioni
 
 - **per ogni tale che**:
 > “sia x tale che P(x). . . .”
@@ -416,7 +453,7 @@ Potete anche utilizzare una **regola di introduzione** per dimostrare un **nuovo
 - **Quindi**:
 
 
-# Coppie ordinate
+# 6. Coppie ordinate
 
 > negli insiemi l'ordine non conta e nemmeno la numerosità degli elementi
 
@@ -425,7 +462,7 @@ Potete anche utilizzare una **regola di introduzione** per dimostrare un **nuovo
 **Una coppia non èl'insieme dei suoi elementi e non deve essere pensata come contenete i suoi elementi**
 
 
-# Dimostrazioni matematiche
+# 7. Dimostrazioni matematiche
 
 
 
