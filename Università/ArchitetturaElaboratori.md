@@ -416,4 +416,5 @@ Complemento a 2: come per il complemento a 1, ma se il numero è negativo dopo i
 
 con questo metodo è più facile fare le addizzioni perchè riusciamo a farle con lo stesso metodo
 
+con il complemento a 2 possiamo avere un range da $[2^{k-1}...2^{k-1}-1]$ dove k è il numero di bit
 
