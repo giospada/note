@@ -42,7 +42,7 @@ header-includes: |
   - [5.10. esiste](#510-esiste)
   - [5.11. Abbreviazioni](#511-abbreviazioni)
 - [Relazioni, Funzioni ...](#relazioni-funzioni-)
-- [6. Coppie ordinate](#6-coppie-ordinate)
+  - [Coppie ordinate](#coppie-ordinate)
     - [teorema di caratterizzazione delle coppie](#teorema-di-caratterizzazione-delle-coppie)
   - [Teorema del prodotto cartesiano tra gli insiemi](#teorema-del-prodotto-cartesiano-tra-gli-insiemi)
   - [Relazione](#relazione)
@@ -366,11 +366,14 @@ Intuitivamente: l’immagine di un insieme rispetto a una formula che descrive u
 
 Assumo di avere i numeri reali con la mia meta matematica e li codifico con i miei insiemi
 
-$[0] \coloneqq \emptyset$  
-$[n+1] \coloneqq [n] \cup \{[n]\}$
+$\llbracket 0 \rrbracket \coloneqq \emptyset$  
+$\llbracket n+1 \rrbracket \coloneqq \llbracket n \rrbracket \cup \{\llbracket n \rrbracket \}$
 
 > esempi
-> 
+> $\llbracket 0 \rrbracket =\emptyset$
+> $\llbracket 1 \rrbracket =\{\emptyset\}$
+> $\llbracket 2 \rrbracket =\{\emptyset,\{\emptyset\}\}$
+> $\llbracket 3 \rrbracket =\{\emptyset,\{\emptyset\}\,\{\emptyset,\{\emptyset\}\}\}$
 
 # 5. Dimostrazioni
 
@@ -470,7 +473,7 @@ Potete anche utilizzare una **regola di introduzione** per dimostrare un **nuovo
 
 # Relazioni, Funzioni ...
 
-# 6. Coppie ordinate
+## Coppie ordinate
 
 > negli insiemi l'ordine non conta e nemmeno la numerosità degli elementi
 
@@ -496,22 +499,30 @@ $\forall A \forall B, \exists C,\forall Z,(Z\in C \Leftrightarrow \exists a,\exi
 
 ## Relazione 
 
-Una **relazione** fra A e B è un qualunque sottoinsieme di  $A * B$.
+Una **relazione** fra A e B è un qualunque sottoinsieme di  $A \times B$.
 
 **Elementi in relazione**  
-Sia $\mathit{R}$ una relazione. Scriviamo $a\mathit{R}b \text{sse} \langle a,b\rangle \in \mathit{R}$
+Sia $\mathit{R}$ una relazione. Scriviamo $a\mathit{R}b \text{ sse  } \langle a,b\rangle \in \mathit{R}$
 
 ### Teorema: relazioni verso insiemi vuoiti
 
-Se $\mathit{R} \subset A * \emptyset$ oppure $\mathit{R} \subset  \emptyset * A$ allora $mathit{R}$
+Se $\mathit{R} \subset A \times \emptyset$ oppure $\mathit{R} \subset  \emptyset \times  A$ allora $\mathit{R}$
 
 Dimostrazione: non posso formare coppie prendo uno dei due elementi dall'insieme vuoti, perché tale insieme è vuoto.
 
-TODO:aggiungere l'esempio
+<details>
+  <summary>
+  esempio 
+  </summary>
+
+la relazione $\le$ sull'insieme numerico $\{0,1,2\}$ è definita come segue:  
+$\le \coloneqq \{\langle 0,0 \rangle ,\langle 0,1 \rangle ,\langle 0,2 \rangle ,\langle 1,1 \rangle ,\langle 1,2 \rangle,\langle 2,2 \rangle  \}$ e $0\le 2$ è una notazione per $\langle 0,2\rangle \in \le$
+
+</details>
 
 ## Dimostrazione Di Funzioni
 
-Una **funzione di dominio** A e codominio B e una qualunque relazione $f \subset A * B$ tale che: $\forall X,(X \in A \Leftarrow \exists! Y , X f Y)$
+Una **funzione di dominio** A e codominio B e una qualunque relazione $f \subset A \times B$ tale che: $\forall X,(X \in A \Leftarrow \exists! Y , X f Y)$
 
 per ogni elemento del dominio c'è un **unico** elemento del codominio
 
@@ -520,12 +531,18 @@ Sia f una funzione. Scriviamo  $y=f(x)$ per dire $xfy$,ovvero $\langle x,y \rang
 
 ### Teorema esistenza dello spazio di funzioni come insieme
 
-$\forall A, \forall B,\existsC,\forall f,(f \in C \Rightleftarrow f \text{ è una funzione di dominio  A e codominio B})$
+$\forall A, \forall B,\exists C,\forall f,(f \in C \Leftrightarrow f \text{ è una funzione di dominio  A e codominio B})$
 
 Abuso di notazione $B^{A}$ (spazionio delle funzioni da A a B)
 
-**es**
-TODO: esempio scritto dal prof nella registrazione della lezione alle 10:17
+<details>
+  <summary>
+  es  
+  </summary>
+
+$\{1,2\}^{\{a,b\}} = \{\{\langle a,1\rangle,\langle b,1\rangle \},\{\langle a,1\rangle,\langle b,2\rangle \},\{\langle a,2\rangle,\langle b,1\rangle \},\{\langle a,2\rangle,\langle b,2\rangle \}$
+
+</details>
 
 **Spazio di funzioni verso insiemi vuoti**
 
@@ -534,11 +551,15 @@ $\emptyset^A=\emptyset se A\neq \emptyset$
 
 ## Abbreviazioni 
 
-TODO: da copirare dalla slide 9
+
+1. $\forall X \in A,P(X)$ indica  $\forall X (X \in A \Rightarrow P(X))$
+1. $\exists X \in A,P(X)$ indica  $\exists X (X \in A \wedge P(X))$
+1. $\forall X,Y \in A,P(X,Y)$ indica  $\forall X in A ,\forall Y \in A,P(X,Y)$
+1. $\exists X,Y \in A,P(X,Y)$ indica $\exists X \in A , \exists Y \in A,P(X,Y)$
 
 ## Priorprietà delle relazioni
 
-Sia $\mathit{R} \subset A * A $.La relazione $\mathit{R}$ gode della proprietà
+Sia $\mathit{R} \subset A \times A $.La relazione $\mathit{R}$ gode della proprietà
 - riflessiva se $\forall X \in A,X\mathit{R}X$
 - simmetrica se $\forall X,Y \in A,(X\mathit{R}Y \Leftarrow Y\mathit{R}X)$
 - transitiva se $\forall X,Y,Z \in A,(X\mathit{R}Y \wedge Y\mathit{R}Z \Leftarrow X\mathit{R}Z)$
@@ -555,12 +576,11 @@ Una relazione $\mathit{R} \subset A * A$ è di ordine stretto sse $\mathit{R}$ �
 
 ### Relazioni di ordinamento lasche
 
-TODO: aggoiungere
-
+Una relazione $\mathit{R} \subset A \times A$ è di ordine lasco sse $\mathit{R}$ è trenaisitva e  riflessiva
 
 ### Relazioni di equivalenza $\equiv$
 
-Una relazione $\mathit{R} \subset A * A$ è equivalente sse $\mathit{R}$ è riflessiva, transitiva e simmetrica
+Una relazione $\mathit{R} \subset A \times A$ è equivalente sse $\mathit{R}$ è riflessiva, transitiva e simmetrica
 
 
 l'**equivalenza è diversa dall'uguaglianza** perché nell'uguaglianza viene usata per confrontare oggetti meno di dettagli non ritenuti rilevanti per quello che si deve fare

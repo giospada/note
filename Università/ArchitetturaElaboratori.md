@@ -4,27 +4,63 @@ date: Settembre 2021
 author: Giovanni Spadaccini
 ---
 
+- [1. Introduzione](#1-introduzione)
+  - [1.1. Libri](#11-libri)
+  - [1.2. Esame](#12-esame)
+- [2. Livelli](#2-livelli)
+  - [2.1. Livello 0](#21-livello-0)
+    - [2.1.1. Porte logiche](#211-porte-logiche)
+  - [2.2. Livello 1](#22-livello-1)
+  - [2.3. Livello 2](#23-livello-2)
+  - [2.4. Livello 3-4](#24-livello-3-4)
+  - [2.5. Linguaggi 5](#25-linguaggi-5)
+- [3. Elaboratori](#3-elaboratori)
+  - [3.1. Storia degli Elaboratori](#31-storia-degli-elaboratori)
+- [4. Organizzazione degli Elaboratori](#4-organizzazione-degli-elaboratori)
+  - [4.1. CPU](#41-cpu)
+    - [4.1.1. Unita di controllo](#411-unita-di-controllo)
+  - [4.2. ALU e clock](#42-alu-e-clock)
+  - [4.3. Ottimizzazioni](#43-ottimizzazioni)
+      - [4.3.0.1. approfondimento pipelining](#4301-approfondimento-pipelining)
+  - [4.4. Le Memorie](#44-le-memorie)
+    - [4.4.1. Memoria cache](#441-memoria-cache)
+    - [4.4.2. Hard Disck](#442-hard-disck)
+    - [4.4.3. Memorie a Stato Solido](#443-memorie-a-stato-solido)
+    - [4.4.4. Velocizzare le Memorie](#444-velocizzare-le-memorie)
+    - [4.4.5. Dischi Ottici](#445-dischi-ottici)
+    - [4.4.6. Oltre le memorie](#446-oltre-le-memorie)
+- [5. Porte Logiche e Circuiti Combinatori](#5-porte-logiche-e-circuiti-combinatori)
+  - [5.1. Funzioni booleane e tabelle di verità](#51-funzioni-booleane-e-tabelle-di-verità)
+  - [5.2. Implementare Funzioni Booleane](#52-implementare-funzioni-booleane)
+  - [5.3. Mappe di Karnaugh](#53-mappe-di-karnaugh)
+- [6. Rappresentazione dell'informazione](#6-rappresentazione-dellinformazione)
+  - [6.1. Numeri](#61-numeri)
+    - [6.1.1. Modulo e segno](#611-modulo-e-segno)
+    - [6.1.2. Complemento a 1](#612-complemento-a-1)
+    - [6.1.3. Complemnto a 2](#613-complemnto-a-2)
+    - [6.1.4. Codifica in eccesso](#614-codifica-in-eccesso)
 
-# Introduzione
+
+# 1. Introduzione
 
 docente
 :  Ivan Lanese  
 
 [materiale](https://virtuale.unibo.it/course/view.php?id=30691)
 
-## Libri
+## 1.1. Libri
 
 - Architettura dei calcolatori. Un approccio strutturale
 
 [DA SCARICARE](http://www.nand2tetris.org)
 
-## Esame
+## 1.2. Esame
 
 - esame scritto (27 punti) dove si avranno punti bonus per i progetti (max. 6) e per li interventi
 
 
 
-# Livelli
+# 2. Livelli
 
 Nell'informatica si usano i principi di astrazione e implementazione, per diminuire la complessità, l'astrazione grazie a delle interfaccia accede alle implementazione (che utilizzando l'astrazione non bisogna più sapere com'è costruita)
 
@@ -43,9 +79,9 @@ nella tipica struttura a livelli, ogni livello superiore esegue il codice su una
 Tipico elaboratore a 6 livelli 
 ![](img/elaboratore6livelli.png)
 
-## Livello 0
+## 2.1. Livello 0
 
-### Porte logiche 
+### 2.1.1. Porte logiche 
 
 hanno tutti due input
 
@@ -67,17 +103,17 @@ un circuito si scrive anche con una tabella di verità
 > Circuiti che cambiano l'output in base agli input ricevuti in passato
 
 
-## Livello 1
+## 2.2. Livello 1
 
 >Microarchitettura :  
 > governa il flusso dei dati fra i vari componenti del livello logico digitale (può essere hardware o software)
 
-## Livello 2
+## 2.3. Livello 2
 
 > Istruzioni macchina :  
 > insieme di istruzioni eseguibili dalla microarchietettura
 
-## Livello 3-4 
+## 2.4. Livello 3-4 
 
 Livelli ibridi perchè non sono rigidamente separati
 
@@ -87,17 +123,17 @@ Livelli ibridi perchè non sono rigidamente separati
 > linguaggio assembly:  
 > permette di programmare i livelli sottostanti
 
-## Linguaggi 5
+## 2.5. Linguaggi 5
 
 > Linguaggi di programmazione ad alto livello:  
 > linguaggi che vengono compilati o interpretati, in linguaggio assembly
 
-# Elaboratori
+# 3. Elaboratori
 
 sono macchine multi-livello, e si utilizzano le astrazioni, e ogni volta vengono eseguiti o tradotti in nella astrazione sottostante 
 
 
-## Storia degli Elaboratori
+## 3.1. Storia degli Elaboratori
 
 > non sono per l'esame
 
@@ -121,7 +157,7 @@ il computing non è solo nel computer ma in molti altri oggetti
 >**MFLOPS**: miliardi di operazioni a virgola mobile
 
 
-# Organizzazione degli Elaboratori
+# 4. Organizzazione degli Elaboratori
 
 ![](img/VonNeumann.png)
 > "bus oriented": un bus è un insieme di connessioni elettriche per collegare i vari componenti
@@ -140,7 +176,7 @@ il bus collega anche le periferiche, l'accesso al bus condivisio viene gestito d
 
 i nuovi dispositivi, possono trasferire i dati dalla memoria ad un altro dispositivo senza passare dalla cpu (che da l'ordine solo da che indirizzo a quale copiare)
 
-## CPU
+## 4.1. CPU
 
 ![](img/cpuschema.png)
 
@@ -179,7 +215,7 @@ il ciclo di esecuzione può essere schematizzato anche come **FDE**:
 2. **Decode** identificazione del tipo di operazione da eseguire (punto 3) 
 3. **Execute** effettuazione delle operazioni corrispondenti all'istruzione (punti 4-5-6)
 
-### Unita di controllo
+### 4.1.1. Unita di controllo
 
 > l'unita di controllo gestisce la memoria e l'alu, e interpreta le istruzioni
 
@@ -190,7 +226,7 @@ i tipi di set di istruzioni possono essere:
 di solito in una cpu CISC c'è un collegamento diretto tra il MDR e l'alu senza passare dai registri, mentre nei RISC non c'è il collegamento diretto
 
 
-## ALU e clock
+## 4.2. ALU e clock
 
 > alu esegue le operazioni
 
@@ -202,7 +238,7 @@ nel calcolatore c'è un segnale che si chiama **clock**; è un segnale regolare 
 - il ciclo del clock (stessa durata ciclo di data pah) può essere calcolato $\frac{1}{F}$ (dove F è la frequenza)
 - durata di un istruzione può essere calcolata n*durata ciclo di path (n varia da istruzione a istruzione)
 
-## Ottimizzazioni
+## 4.3. Ottimizzazioni
 
 Metodi per velocizzare la cpu:
 - **pipelining**:Un modo per migliorare le prestazioni di un processore è eseguire contemporaneamente più cicli FDE, usando per ognuno di essi parti diversi della CPU
@@ -212,7 +248,7 @@ Metodi per velocizzare la cpu:
     - MIMD: sono più precessori che condividono la stessa memoria senza eseguire necessariamente la stessa istruzione
 - **multicomputer**: molti processi non condividono una memoria e che comunicano scambiandosi messaggi, così moltissime cpu possono cooperare
 
-#### approfondimento pipelining
+#### 4.3.0.1. approfondimento pipelining
 
 è l'implementazione di una catena di montaggio dentro la cpu
 
@@ -223,7 +259,7 @@ essendo che suddividiamo l'operazioni in vari passi, possiamo diminuire il ciclo
 ![](img/pipelining.png)
 
 
-## Le Memorie
+## 4.4. Le Memorie
 
 in ordine di velocità:  
 ![](img/velocitamemorie.png)
@@ -244,7 +280,7 @@ in ordine di velocità:
 ![](img/littlebigendian.png)
 
 
-### Memoria cache
+### 4.4.1. Memoria cache
 
 > la cache è una memoria volatile poco capiente ma molto veloce
 
@@ -258,7 +294,7 @@ quantificare l'impatto della cache:
 - m sia il tempo di accesso alla memoria centrale
 - h sia l'hit-radio, la frazione di riferimenti che può essere soddisfatta dalla cache (una frazione che ci indica quante volte la cache riesce a non far accedere alla memoria)
 
-### Hard Disck
+### 4.4.2. Hard Disck
 
 > hard disk (HD): è un dispositivo elettro-meccanico per la conservazione di informazioni sotto forma magnetica
 
@@ -268,24 +304,24 @@ quantificare l'impatto della cache:
 - **Traccia**: sequenza circolare di bit
 - **Settore**: porzione di traccia che contiene una quantità prefissata di bit (uguale per tutti i settori)
 
-### Memorie a Stato Solido
+### 4.4.3. Memorie a Stato Solido
 
 > si tratta di dispositivi completamente elettronici senza parte in movimento (consumano meno energia e maggiore resistenza agli urti rispetto agli hard disck )
 
-### Velocizzare le Memorie
+### 4.4.4. Velocizzare le Memorie
 
 > RAID: tecnica che utilizza più dischi in parallelo per aumentare le prestazioni e diminuire il data lost
 
 Più veloce perché si leggono più dati contemporaneamente, più affidabile se si replicano i dati e si aggiungono bit di controllo per verificare/correggere errori
 
-###  Dischi Ottici
+###  4.4.5. Dischi Ottici
 
 > Dischi Ottici: dischi in cui un laser legge e scrive le informazioni
 
 vengono scritti e letti tramite fori (pit) e con delle zone piane (lend)
 
 
-### Oltre le memorie
+### 4.4.6. Oltre le memorie
 
 ci sono i dispositivi di input e output (stampanti, tastiera, schermo,mouse, schede di rete, etc..)
 
@@ -294,7 +330,7 @@ ci sono i dispositivi di input e output (stampanti, tastiera, schermo,mouse, sch
 Negli anni si sono sviluppati processori solo per la gestione dello schermo (GPU) 
 
 
-# Porte Logiche e Circuiti Combinatori
+# 5. Porte Logiche e Circuiti Combinatori
 
 > Porte Logiche:hanno 1/2 ingressi (che possono essere scambiati) e un uscita
 
@@ -309,7 +345,7 @@ Ogni Porta Logica e circuito combinatorio può essere descritto tramite la tabel
 passare da $A+\bar{A}=1$ a $A\bar{A}=0$ utilizzando de morgan law
 
 
-## Funzioni booleane e tabelle di verità
+## 5.1. Funzioni booleane e tabelle di verità
 
 > Un **mintermine** su n variabili è l’AND fra n letterali corrispondenti alle n variabili
 
@@ -322,7 +358,7 @@ Ogni combinazione delle variabili di una funzione booleana ha un corrispondente 
 
 Per esempio la forma canonica della funzione definita nell'immagine sopra è : $\bar{A}B\bar{C}+AB\bar{C}+ABC$
 
-## Implementare Funzioni Booleane
+## 5.2. Implementare Funzioni Booleane
 
 Creaiamo dei circuiti che rappresentano fisicamente le nostre funzioni booleane.
 Per creare tutte le nostre funzioni booleane possiamo partire dalla porta NAND, infatti con questa porta si riescono ad implementare tutte le porte logiche (AND,OR e NOT). Inoltre la porta NAND è molto facile da implementare fisicamente.
@@ -347,7 +383,7 @@ $A+\bar{B}\bar{C}B$
 $A+0$
 
 
-## Mappe di Karnaugh
+## 5.3. Mappe di Karnaugh
 
 > sono un modo per rappresentre le funzioni booleane, e restituisce una funzione che è unguale o più piccola di quella canonica
 
@@ -384,37 +420,56 @@ possiamo racchiudere gli uno nella tabella in rettangoli con base e altezza che 
 L’espressione booleana corrispondente ad una copertura minimale risulta essere un’espressione del tipo somma di prodotti di letterali (in altri termini OR fra AND di letterali) con un numero minimale di addendi.
 
 
-# Rappresentazione dell'informazione
+# 6. Rappresentazione dell'informazione
 
 I calcolatori elaborano molti tipi di informazione come testi, immagini ,suoni ,numeri etc.. Nonostatne ciò le memorie dati possono contenere solo valori binari.
 
-## Numeri
+## 6.1. Numeri
 
 Partiamo dai numeri naturali positivi che vengono rappresentati semplicemente in base 2.  
 
 
-### Modulo e segno
+### 6.1.1. Modulo e segno
 
 Moduloe segno si una l'ultimo bit come segno
 
 > es
 > usando 8 bit: 00000110=6, 10000110=-6
 
-### Complemento a 1
+### 6.1.2. Complemento a 1
 
 Complemento a 1: il bit più a sx indica il segno, ma se il numero è negativo il modulo viene complementato
 
 >Es
 > usando 8 bit: 00000110=6, 11111001=-6
 
-### Complemnto a 2
+### 6.1.3. Complemnto a 2
 
 Complemento a 2: come per il complemento a 1, ma se il numero è negativo dopo il complemento si aggiunge 1
 
-> Esempio
->  usando 8 bit: 00000110=6, 11111010=-6
+<details>
+    <summary>
+Esempio
+    </summary>
+usando 8 bit: 00000110=6, 11111010=-6
+</details>
 
 con questo metodo è più facile fare le addizzioni perchè riusciamo a farle con lo stesso metodo
 
 con il complemento a 2 possiamo avere un range da $[2^{k-1}...2^{k-1}-1]$ dove k è il numero di bit
+
+### 6.1.4. Codifica in eccesso
+
+> La decodifica si ottiene applicando la decodifica 
+standard e poi sottraendo $2^{k-1}$  al numero ottenuto
+
+<details>
+    <summary>
+    esempio
+    </summary>
+
+00...00 rappresenta $-2^{k-1}$  
+10...00 rappresenta $0$   
+11...11 rappresenta $2^{k-1}$  
+</details>
 
