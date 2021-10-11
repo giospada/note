@@ -39,6 +39,7 @@ author: Giovanni Spadaccini
     - [6.1.2. Complemento a 1](#612-complemento-a-1)
     - [6.1.3. Complemnto a 2](#613-complemnto-a-2)
     - [6.1.4. Codifica in eccesso](#614-codifica-in-eccesso)
+    - [Numeri con la virgola](#numeri-con-la-virgola)
 
 
 # 1. Introduzione
@@ -472,4 +473,50 @@ standard e poi sottraendo $2^{k-1}$  al numero ottenuto
 10...00 rappresenta $0$   
 11...11 rappresenta $2^{k-1}$  
 </details>
+
+### Numeri con la virgola
+
+la rappresentazione dei numeri con la virgola si usano due numeri:
+- f che è la mantissa
+- e che è l'esponente
+
+$n=f \times 10^{e}$
+
+<details>
+  <summary>
+  esempio codifica
+  </summary>
+
+se la mantissa è tra 0,001 e 0,999
+e l'esponente è tra 0 e 99
+
+riesco a rappresentare i numeri
+
+![](img/overflowunder.png)
+
+</details>
+
+**notazione concreta**:
+- utilizziamo la base 2
+- come mantissa utilizziamo un numero minore di 1
+- inoltre normalizziamo la mantissa (la cifra più significativa (dopo la virgola) non può essere uguale a zero)
+
+<details>
+  <summary>
+esempio concreto
+  </summary>
+
+vogliamo rappresentare il numero 432:
+la mantissa sarà 432=110110000b questo numero va normalizzato quindi dobbiamo shiftarlo, quindi gli diamo un esponente di: $2^9$
+
+</details>
+
+**standard binary32**:
+- 1 bit di segno 
+- 8 bit di esponente
+- 23 bit di mantissa
+
+
+
+
 

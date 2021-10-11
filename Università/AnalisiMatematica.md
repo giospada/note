@@ -30,9 +30,17 @@ author: Giovanni Spadaccini
   - [teorema di Euclide (Numeri primi)](#teorema-di-euclide-numeri-primi)
 - [8. L'insieme dei numeri reali](#8-linsieme-dei-numeri-reali)
   - [8.1. Intervalli di $\mathbb{R}$](#81-intervalli-di-mathbbr)
+    - [Intervalli](#intervalli)
+    - [Ineismi Limitati](#ineismi-limitati)
+    - [Minimo Massimo di un insieme](#minimo-massimo-di-un-insieme)
   - [8.2. l'insime $\mathbb{R}$](#82-linsime-mathbbr)
+  - [Esistenza e uniticità della radice](#esistenza-e-uniticità-della-radice)
+    - [Teorema di esistenza di $\sqrt{}$](#teorema-di-esistenza-di-sqrt)
 - [9. Varole Assoluto](#9-varole-assoluto)
   - [Prioprità](#prioprità)
+- [Successioni Numeriche](#successioni-numeriche)
+  - [Limiti delle successioni](#limiti-delle-successioni)
+  - [Limiti](#limiti)
 
 
 # 1. Introduzione
@@ -452,12 +460,13 @@ TODO: aggiugere dimostrazione per un numero $\sqrt{n}$ \in $\mathbb{Q}$
 ## 8.1. Intervalli di $\mathbb{R}$
 
 
-**Intervalli**:  
+### Intervalli
 $[a,b]=\{x \in \mathbb{R} | a \leq n\leq b\}$  
 $]a,b[=\{x \in \mathbb{R} | a \le n\le b\}$  
 $[a, \infty [=\{x \in \mathbb{R} | a \le n\}$  
 
 
+### Ineismi Limitati
 **Insieme Limitato superiormente**   
 $M \in \mathbb{R}$ si dice maggiorante di A se:
 $\forall a \in A$:  $M \leq a$
@@ -470,9 +479,10 @@ $\forall a \in A$: a \leq $\mathbb{m}  $
 
 > se A ammette un minorante A si dice inferiormente limitato
 
-**Assieme Limitato**  
+**Insieme Limitato**  
 > se A ammette sia un minorante che un maggiorante è limitato
 
+### Minimo Massimo di un insieme
 **minimo di un insieme**:  
 $\forall a \in A : b \leq A$ (b è i minimo )
 
@@ -484,14 +494,14 @@ $\forall a \in A : a \leq b$ (b è il massimo)
 Per esmpio $]3,4]$ ha un massimo ma non un minimo
 
 
-> se un a il minimo è il più grande dei minoranti
+se un a il minimo è il più grande dei minoranti
 
-> se un a il massimo è il più grande dei maggioranti
+se un a il massimo è il più grande dei maggioranti
 
 
-> se A è superiormente limitato ha il minimo dei maggioranti $\sup A$, se B non è superiormente limitato  $\sup B= +\infty$
+se A è superiormente limitato ha il minimo dei maggioranti $\sup A$, se B non è superiormente limitato  $\sup B= +\infty$
 
-> se A è inferiormente limitato ha il massimo dei minorandi $\inf A$, se B non è inferiormente limitato  $\inf B= +\infty$
+se A è inferiormente limitato ha il massimo dei minorandi $\inf A$, se B non è inferiormente limitato  $\inf B= +\infty$
 
 
 Q a differenza di R non ha sempre la proprietà di avere un massimando e un minorando es. $\{q \in \mathbb{Q}| q \le \sqrt{2}\}$
@@ -516,6 +526,30 @@ $r_j=\begin{cases}5 & \text{se } b_{jj}\neq 5 \\ 6 & \text{se } b_{jj}=5\end{cas
 
 ![](img/NtoRnot.png)
 
+## Esistenza e uniticità della radice
+
+$\forall a \in \mathbb{R_{+}}, \forall n \in \mathbb{N} /\ \{0\} : \exists! b \in \mathbb{R_{+}} : b^n=a$
+
+
+**Abuso di notazione**:b si dice radice artimetica n-esima di a e si scrive $\sqrt{a}^{n}\coloneqq b$.
+
+Oss: la radice **aritmetica è un numero $\ge 0$** quindi $\sqrt{4}=2$
+
+TODO: ricopiare il lemma pag 5
+
+**Lemma**:
+
+$\forall n,y \in \mathbb{R}: x,y \ge 0$
+si ha:
+1. $x^2 \le y^2 \Leftrightarrow x \le  y$
+2. $x^2 \ge y^2 \Leftrightarrow x \ge y$
+3. $x^2 = y^2 \Leftrightarrow x = y$
+
+TODO: mandcano le ultime
+
+### Teorema di esistenza di $\sqrt{}$
+
+cosiderando l'insieme $A = \{c \in \mathbb{R} | c \ge 0 , c^2 \le a\}$
 
 
 # 9. Varole Assoluto
@@ -534,4 +568,35 @@ $|a| \coloneqq max\{a,-a\}$
 7. $|a| \ge b \Leftrightarrow a \le -b \vee a \ge b$
 
 
+# Successioni Numeriche 
 
+successioni di numeri reali è una funzione, perchè essendo una successione devono essere numerati
+
+allora creaiamo $f: \mathbb{N} \rightarrow R$   
+
+$f(0)=a_0$ primo elemento  
+$f(1)=a_1$ secondo elmento  
+$f(2)=a_2$ terzo elemento  
+
+$\mathbb{N} /\ \{0\} = \mathbb{N^*}$
+
+Esempi:
+
+$a_n = \frac{n}{n+1}, n \in \mathbb{N}$  
+$a_n = \frac{(-1)^2}{n+1}, n \in \mathbb{N^*}$  
+
+
+## Limiti delle successioni
+
+Anche le successioni posono essere limitate superiormente o inferiormente o entrabmbi.
+
+es:
+TODO:aggiungere
+
+$a_n =\frac{n}{n+1} \rightarrow 1$
+
+## Limiti
+
+$(a_n)_m , L \in \mathbb{R} \text{  si dice che } \lim_{n \rightarrow \inf} = L$ se $\forall e >0, $
+
+TODO: da completare
