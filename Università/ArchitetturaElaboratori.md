@@ -39,7 +39,7 @@ author: Giovanni Spadaccini
     - [6.1.2. Complemento a 1](#612-complemento-a-1)
     - [6.1.3. Complemnto a 2](#613-complemnto-a-2)
     - [6.1.4. Codifica in eccesso](#614-codifica-in-eccesso)
-    - [Numeri con la virgola](#numeri-con-la-virgola)
+    - [6.1.5. Numeri con la virgola](#615-numeri-con-la-virgola)
 
 
 # 1. Introduzione
@@ -474,7 +474,7 @@ standard e poi sottraendo $2^{k-1}$  al numero ottenuto
 11...11 rappresenta $2^{k-1}$  
 </details>
 
-### Numeri con la virgola
+### 6.1.5. Numeri con la virgola
 
 la rappresentazione dei numeri con la virgola si usano due numeri:
 - f che è la mantissa
@@ -516,7 +516,41 @@ la mantissa sarà 432=110110000b questo numero va normalizzato quindi dobbiamo s
 - 8 bit di esponente
 - 23 bit di mantissa
 
+<details>
+  <summary>
+Si converta il numero 0.3 in notazione floating point in base 2 normalizzata (usando il complemento a 2 su 8 bit sia per la mantissa che per l'esponente).
+  </summary>
+
+  TODO: da finire
 
 
+la mantissa si legge moltiplicando il primo partendo da sinistra $2^-1$ fino a $2^-n$ nell'ultimo dove n sono il numero di bit, e per calcolare il numero in decimale va tutto moltiplicato per $2^{\text{esponente}}$
+
+segno : 0 
+mantissa: 10011001b
+esponente: 1111111b
+
+</details>
 
 
+## UNICODE
+
+## Codici corretti
+
+Indipendentemente dal tipo di dati memorizzato occasionalmente le memorie sono soggette ad errori sia durante le operazioni di lettura che di scrittura.
+
+analogamente nella trasmissione dei dati.
+
+se una parola consiste di m bit se aggiungono r bit controllo ottenendo una parola a n=m+r bit
+
+un codice è un meccanismo atto a determinare gli r bit di controllo relativi ad ogni parola di m bit.
+
+### Distanza di Hamming
+
+la distanza di hamming è la differenza di bit tra due stringhe di bit.(distanza perchè ha le proprietà matematiche della distanza)
+
+**es**:
+distanza tra 101110 e 110101 è 4
+
+Per rilevare d  bit errati è necessario un codice con 
+distanza di Hamming maggiore o uguale a d+1

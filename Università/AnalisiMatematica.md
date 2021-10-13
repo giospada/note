@@ -18,7 +18,7 @@ author: Giovanni Spadaccini
     - [5.0.1. Iniettività](#501-iniettività)
     - [5.0.2. Surettività](#502-surettività)
     - [5.0.3. Biunivoca](#503-biunivoca)
-    - [Inisme immagine](#inisme-immagine)
+    - [5.0.4. Inisme immagine](#504-inisme-immagine)
   - [5.1. Cardinalità](#51-cardinalità)
   - [5.2. Numberailità](#52-numberailità)
 - [6. Calcolo Combinatorio](#6-calcolo-combinatorio)
@@ -26,21 +26,21 @@ author: Giovanni Spadaccini
   - [6.2. Coefficente Binomiale (combinazioni)](#62-coefficente-binomiale-combinazioni)
   - [6.3. Il binomio di Newton](#63-il-binomio-di-newton)
 - [7. Esempi di Dimostrazioni](#7-esempi-di-dimostrazioni)
-  - [Teorema di pitagora](#teorema-di-pitagora)
-  - [teorema di Euclide (Numeri primi)](#teorema-di-euclide-numeri-primi)
+  - [7.1. Teorema di pitagora](#71-teorema-di-pitagora)
+  - [7.2. teorema di Euclide (Numeri primi)](#72-teorema-di-euclide-numeri-primi)
 - [8. L'insieme dei numeri reali](#8-linsieme-dei-numeri-reali)
-  - [8.1. Intervalli di $\mathbb{R}$](#81-intervalli-di-mathbbr)
-    - [Intervalli](#intervalli)
-    - [Ineismi Limitati](#ineismi-limitati)
-    - [Minimo Massimo di un insieme](#minimo-massimo-di-un-insieme)
-  - [8.2. l'insime $\mathbb{R}$](#82-linsime-mathbbr)
-  - [Esistenza e uniticità della radice](#esistenza-e-uniticità-della-radice)
-    - [Teorema di esistenza di $\sqrt{}$](#teorema-di-esistenza-di-sqrt)
+  - [8.1. Teorema radice di n](#81-teorema-radice-di-n)
+  - [8.2. Intervalli di $\mathbb{R}$](#82-intervalli-di-mathbbr)
+    - [8.2.1. Ineismi Limitati](#821-ineismi-limitati)
+    - [8.2.2. Minimo Massimo di un insieme](#822-minimo-massimo-di-un-insieme)
+  - [8.3. l'insime $\mathbb{R}$](#83-linsime-mathbbr)
+  - [8.4. Esistenza e uniticità della radice](#84-esistenza-e-uniticità-della-radice)
+    - [8.4.1. Teorema di esistenza di $\sqrt{}$](#841-teorema-di-esistenza-di-sqrt)
 - [9. Varole Assoluto](#9-varole-assoluto)
-  - [Prioprità](#prioprità)
-- [Successioni Numeriche](#successioni-numeriche)
-  - [Limiti delle successioni](#limiti-delle-successioni)
-  - [Limiti](#limiti)
+  - [9.1. Prioprità](#91-prioprità)
+- [10. Successioni Numeriche](#10-successioni-numeriche)
+  - [10.1. Limiti delle successioni](#101-limiti-delle-successioni)
+  - [10.2. Limiti](#102-limiti)
 
 
 # 1. Introduzione
@@ -276,7 +276,7 @@ $f^{-1}: A \rightarrow B$ e vuol dire che:
 
 $f$ è ivertibile $\leftrightarrow f$ è biunivoca 
 
-### Inisme immagine
+### 5.0.4. Inisme immagine
 > l'immagine di una funzione sono tutti gli elementi di b che sono associati con a
 
 $\text{Img} f = \{ b \in B | \exists a \in A : f(a)=b \}$  
@@ -383,7 +383,7 @@ se ci si pensa noi stiamo selezionando combinazioni k elementi partendo da un in
 
 Come si calcola il binomio $(a+b)^n=?$
 
-TODO: spiegare con parole tue come si calcola il coefficente di ogni binomio
+
 
 **Formula del binomio di newton**
 
@@ -391,7 +391,7 @@ $(a+b)^n=\displaystyle \sum^{n}_{k=0} \binom{n}{k} a^{n-k}*b^k$
 
 # 7. Esempi di Dimostrazioni
 
-## Teorema di pitagora
+## 7.1. Teorema di pitagora
 
 dipende dall'assioma che dice che gli angoli del triangolo rettangolo misurano 180°
 
@@ -408,7 +408,7 @@ $a^2+b^2+2ab-c^2=2ab$
 $a^2+b^2-c^2=0$
 $a^2+b^2=c^2$
 
-## teorema di Euclide (Numeri primi)
+## 7.2. teorema di Euclide (Numeri primi)
 
 Quanti sono i nueri primi?
 
@@ -432,8 +432,9 @@ essendo che $m$ non è divisibile per nessuno primo, $m$ è primo.
 
 i numeri razionali sono quanti sono i punti della retta? quindi possiamo trovare una funzione biunivoca tra i $\mathbb{Q}$ e i punti sulla retta?.
 
-Prendiamo il punto $\sqrt{2}$ che è sulla retta, è rappresentabile con i numeri razionali
+Prendiamo il punto $\sqrt{2}$ che è sulla retta, non è rappresentabile con i numeri razionali
 
+$\mathbb{R}$ possiede la proprità di continuità (che manca a $\mathbb{Q}$)
 
 **Dimostrazione per assurdo**: 
 
@@ -454,19 +455,39 @@ $n^2 = 2(m_1)^2$
 $n^2$ è pari ma  $MCD(m,n)=1$ quindi è impossibile
 
 
+## 8.1. Teorema radice di n
 
-TODO: aggiugere dimostrazione per un numero $\sqrt{n}$ \in $\mathbb{Q}$
+> Sia $n \in \mathbb{N}$: $n$ non è un quadrato perfetto allora $\sqrt{n} \notin \mathbb{Q}$
 
-## 8.1. Intervalli di $\mathbb{R}$
+**dimostrazione**
+
+Lemma: $m,n,l \in \mathbb{N}$  tali che $MCD(l,m)=1$ allora se $l | m \times n \Rightarrow l | n$
 
 
-### Intervalli
+supponiamo che $\sqrt{n} \in \mathbb{Q} \Rightarrow \exists p,q \in N: \sqrt{n}=\frac{p}{q}$ dove $MCD(p,q)=1$
+
+$n=\frac{p^2}{q^2}$  
+$nq^2=p^2$  
+
+essendo che p e q sono primi tra loro allora $p^2 divide q^2n$ e quindi dall'lemma $p^2 divide n$  
+
+quindi $\exists v \in \mathbb{N}: n = p^2v$
+
+allora riscriviamo $q^2p^2v=p^2$ allora $q^2v=1$
+
+Essendo $q^2 , v \in \mathbb{N}$ allora $v=1$
+
+allora $n=p^2$ n è un quadrato perfetto
+
+## 8.2. Intervalli di $\mathbb{R}$
+
 $[a,b]=\{x \in \mathbb{R} | a \leq n\leq b\}$  
 $]a,b[=\{x \in \mathbb{R} | a \le n\le b\}$  
 $[a, \infty [=\{x \in \mathbb{R} | a \le n\}$  
 
 
-### Ineismi Limitati
+### 8.2.1. Ineismi Limitati
+
 **Insieme Limitato superiormente**   
 $M \in \mathbb{R}$ si dice maggiorante di A se:
 $\forall a \in A$:  $M \leq a$
@@ -482,7 +503,8 @@ $\forall a \in A$: a \leq $\mathbb{m}  $
 **Insieme Limitato**  
 > se A ammette sia un minorante che un maggiorante è limitato
 
-### Minimo Massimo di un insieme
+### 8.2.2. Minimo Massimo di un insieme
+
 **minimo di un insieme**:  
 $\forall a \in A : b \leq A$ (b è i minimo )
 
@@ -494,9 +516,10 @@ $\forall a \in A : a \leq b$ (b è il massimo)
 Per esmpio $]3,4]$ ha un massimo ma non un minimo
 
 
-se un a il minimo è il più grande dei minoranti
+se un A il minimo è il più grande dei minoranti
 
-se un a il massimo è il più grande dei maggioranti
+se un A il massimo è il più grande dei maggioranti
+
 
 
 se A è superiormente limitato ha il minimo dei maggioranti $\sup A$, se B non è superiormente limitato  $\sup B= +\infty$
@@ -507,7 +530,7 @@ se A è inferiormente limitato ha il massimo dei minorandi $\inf A$, se B non è
 Q a differenza di R non ha sempre la proprietà di avere un massimando e un minorando es. $\{q \in \mathbb{Q}| q \le \sqrt{2}\}$
 
 
-## 8.2. l'insime $\mathbb{R}$
+## 8.3. l'insime $\mathbb{R}$
 
 N, Z e Q hanno la stessa cardinalità mentre R ha una cardinalità maggiore $|\mathbb{N}|<|\mathbb{R}|$.
 
@@ -526,12 +549,12 @@ $r_j=\begin{cases}5 & \text{se } b_{jj}\neq 5 \\ 6 & \text{se } b_{jj}=5\end{cas
 
 ![](img/NtoRnot.png)
 
-## Esistenza e uniticità della radice
+## 8.4. Esistenza e uniticità della radice
 
 $\forall a \in \mathbb{R_{+}}, \forall n \in \mathbb{N} /\ \{0\} : \exists! b \in \mathbb{R_{+}} : b^n=a$
 
 
-**Abuso di notazione**:b si dice radice artimetica n-esima di a e si scrive $\sqrt{a}^{n}\coloneqq b$.
+**Abuso di notazione**:b si dice radice artimetica n-esima di a e si scrive $\sqrt[n]{a}\coloneqq b$.
 
 Oss: la radice **aritmetica è un numero $\ge 0$** quindi $\sqrt{4}=2$
 
@@ -544,10 +567,12 @@ si ha:
 1. $x^2 \le y^2 \Leftrightarrow x \le  y$
 2. $x^2 \ge y^2 \Leftrightarrow x \ge y$
 3. $x^2 = y^2 \Leftrightarrow x = y$
+4. $x^2 < y \Leftrightarrow \exists \varepsilon > 0: (x+\varepsilon)^2 < y$
+5. $x^2 > y \Leftrightarrow \exists \varepsilon > 0: (x+\varepsilon)^2 > y$
 
-TODO: mandcano le ultime
+le prime tre non valgono solo con x e y alla seconda ma quando condividono qualsiasi stesso esponente.
 
-### Teorema di esistenza di $\sqrt{}$
+### 8.4.1. Teorema di esistenza di $\sqrt{}$
 
 cosiderando l'insieme $A = \{c \in \mathbb{R} | c \ge 0 , c^2 \le a\}$
 
@@ -557,7 +582,7 @@ cosiderando l'insieme $A = \{c \in \mathbb{R} | c \ge 0 , c^2 \le a\}$
 $a \in R$  
 $|a| \coloneqq max\{a,-a\}$
 
-## Prioprità
+## 9.1. Prioprità
 
 1. $|a| \ge 0$
 2. $|-a|=|a|$ 
@@ -568,7 +593,7 @@ $|a| \coloneqq max\{a,-a\}$
 7. $|a| \ge b \Leftrightarrow a \le -b \vee a \ge b$
 
 
-# Successioni Numeriche 
+# 10. Successioni Numeriche 
 
 successioni di numeri reali è una funzione, perchè essendo una successione devono essere numerati
 
@@ -586,17 +611,28 @@ $a_n = \frac{n}{n+1}, n \in \mathbb{N}$
 $a_n = \frac{(-1)^2}{n+1}, n \in \mathbb{N^*}$  
 
 
-## Limiti delle successioni
+## 10.1. Limiti delle successioni
 
-Anche le successioni posono essere limitate superiormente o inferiormente o entrabmbi.
+Anche le **successioni posono essere limitate** superiormente o inferiormente o entrabmbi.
 
-es:
-TODO:aggiungere
+<details>
+  <summary>
+  es
+  </summary>
+
+1. $a_n=\frac{1}{n}, n \in \mathbb{N}$  
+è limitata  
+2. $n \in \mathbb{N} \\ a_n=n^2$   
+questa successione è inferiormente limitata ma non superiormente
+3. $a_n=(-1)^n*n$  
+non è ne inferiormente ne superiormente limitata
+</details>
+
 
 $a_n =\frac{n}{n+1} \rightarrow 1$
 
-## Limiti
+## 10.2. Limiti
 
-$(a_n)_m , L \in \mathbb{R} \text{  si dice che } \lim_{n \rightarrow \inf} = L$ se $\forall e >0, $
+$(a_n)_n , L \in \mathbb{R} \text{  si dice che } \displaystyle \lim_{n \rightarrow +\infty} = L \text{ se } \\ \forall \varepsilon >0, \exists \bar{n}=\bar{n}(\varepsilon) \in \mathbb{N}: \forall n \ge \bar{n} : \\ |a_n -L | < \varepsilon (L - \varepsilon < a_n < L + \varepsilon) \\ (a_n)_n \text{ si dice convergente}$
 
 TODO: da completare

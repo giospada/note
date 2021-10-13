@@ -22,7 +22,7 @@ header-includes: |
     - [4.2.7. Definizione di intersezione](#427-definizione-di-intersezione)
     - [4.2.8. Assiome dell'unione binaria](#428-assiome-dellunione-binaria)
     - [4.2.9. Assioma dell'unione](#429-assioma-dellunione)
-    - [4.2.10. 4.2.10 Assioma del singoletto](#4210-4210-assioma-del-singoletto)
+    - [4.2.10. Assioma del singoletto](#4210-assioma-del-singoletto)
     - [4.2.11. Assioma dell’infinito](#4211-assioma-dellinfinito)
     - [4.2.12. Teorema esistenza di $N$](#4212-teorema-esistenza-di-n)
     - [4.2.13. Assioma dell'insieme potenza](#4213-assioma-dellinsieme-potenza)
@@ -305,7 +305,7 @@ $\forall A,\forall B,\exists X ,\forall Z ,(Z \in X \Leftrightarrow Z \in A \vee
 
 $\forall F \exists X \forall Z (Z\in X \Leftrightarrow \exists Y (Y \in F \wedge Z \in Y))$
 
-### 4.2.10. 4.2.10 Assioma del singoletto
+### 4.2.10. Assioma del singoletto
 
 $\forall X, \exists Y \forall Z (Z \in Y \Leftrightarrow Z = X)$
 
