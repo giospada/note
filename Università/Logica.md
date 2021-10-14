@@ -56,8 +56,13 @@ header-includes: |
     - [Relazioni di equivalenza $\equiv$](#relazioni-di-equivalenza-equiv)
     - [Classi di equivalenza](#classi-di-equivalenza)
     - [Insieme quoziente](#insieme-quoziente)
+    - [Costruzione di Z](#costruzione-di-z)
+    - [Costruzione dei razionali](#costruzione-dei-razionali)
   - [iniettiva surrettiva biettività](#iniettiva-surrettiva-biettività)
   - [Cardinatlità](#cardinatlità)
+    - [Teorema: esistenza dei numeri cardinali come insiemi](#teorema-esistenza-dei-numeri-cardinali-come-insiemi)
+- [Insiemi infiniti](#insiemi-infiniti)
+  - [$\le$ su numeri cardinali](#le-su-numeri-cardinali)
 - [7. Dimostrazioni matematiche](#7-dimostrazioni-matematiche)
 
 # 1. Docente
@@ -595,6 +600,18 @@ sia $\equiv \subseteq A*A$ una relazione di equivalensa.L'**insieme quoziente** 
 $A_{/\equiv}\coloneqq \{[x]_{\equiv} | x \in A\}$
 
 
+### Costruzione di Z
+
+### Costruzione dei razionali
+
+Q=$\mathbb{Z}\times \mathbb{Z}^0$ dove $\mathbb{Z}^0=\mathbb{Z}\/{0}$
+
+Costruisco una relazione di equivalenza tra le coppie in Z come: $\langle a_1,b_1\rangle \equiv \langle a_2,b_2 \rangle \coloneq a_1\times b_2 =b_1 \times a_2$
+
+$\mathbb{Q}\coloneqq $Q_{\/\equiv} = \{...,[\langle 2,3\rangle],...,[\langle 4,2\rangle],...\}$
+
+la classe di equivalenza $[\langle 2,3\rangle]={\langle 2,3\rangle,\langle 4,6\rangle,...}$
+
 ## iniettiva surrettiva biettività
 
 $f \in B^{A}$
@@ -609,7 +626,52 @@ TODO: to complete
 
 ## Cardinatlità
 
-al posto di definire la cardinalità definiamo una relazione di equivalenza
+Avere la stessa cardinalità
+Due insiemi A, B hanno la stessa cardinalità sse esiste una
+biiezione fra A e B.
+Avere la stessa cardinalita è una “relazione di equivalenza”, ma `
+sulla classe di tutti gli insiemi.
+
+### Teorema: esistenza dei numeri cardinali come insiemi
+
+Si possono costruire i numeri cardinali senza utilizzare le classi di equivalenza, ma lavorando solo con gli insiemi. quindi ogni numero cardinale viene ottenuto come un insime.
+
+# Insiemi infiniti
+
+Un insieme si dice **finito** quando **non è infinito**.
+
+<details>
+  <summary>
+osservazione del finito  
+  </summary>
+
+intuitivamente sappiamo che un insieme con 3 elementi e finito. `
+Immaginate un albergo con 3 stanze singole tutte occupate.
+Arriva un nuovo cliente. Puo l’albergatore con una qualche
+manovra accomodare tutti i clienti nell’hotel rispettando il fatto
+che una singola puo essere occupata da un solo cliente?
+</details>
+
+<details>
+  <summary>
+Infinito con l  Metafora dell'albego di Hilbert
+  </summary>
+
+Intuitivamente sappiamo che l’insieme dei numeri naturali e infinito. `
+Immaginate un albergo con una stanza singola per ogni numero
+naturale, tutte occupate. Arriva un nuovo cliente. Puo l’albergatore `
+con una qualche manovra accomodare tutti i clienti nell’hotel
+rispettando il fatto che una singola puo essere occupata da un solo `
+cliente?
+</details>
+
+Un insieme A si dice **infinito** quando è in biderezione con un suo sottoinsieme proprio $B$ i.e $B \subsetneq \text{ e } |A|=|B|$
+
+TODO: add birezione
+
+## $\le$ su numeri cardinali
+
+TODO: aggiungere
 
 
 # 7. Dimostrazioni matematiche
