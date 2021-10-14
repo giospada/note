@@ -62,6 +62,7 @@ header-includes: |
   - [Cardinatlità](#cardinatlità)
     - [Teorema: esistenza dei numeri cardinali come insiemi](#teorema-esistenza-dei-numeri-cardinali-come-insiemi)
 - [Insiemi infiniti](#insiemi-infiniti)
+  - [$\le$ su numeri cardinali](#le-su-numeri-cardinali)
 - [7. Dimostrazioni matematiche](#7-dimostrazioni-matematiche)
 
 # 1. Docente
@@ -646,10 +647,31 @@ osservazione del finito
 
 intuitivamente sappiamo che un insieme con 3 elementi e finito. `
 Immaginate un albergo con 3 stanze singole tutte occupate.
-Arriva un nuovo cliente. Puo l’albergatore con una qualche `
+Arriva un nuovo cliente. Puo l’albergatore con una qualche
 manovra accomodare tutti i clienti nell’hotel rispettando il fatto
 che una singola puo essere occupata da un solo cliente?
 </details>
+
+<details>
+  <summary>
+Infinito con l  Metafora dell'albego di Hilbert
+  </summary>
+
+Intuitivamente sappiamo che l’insieme dei numeri naturali e infinito. `
+Immaginate un albergo con una stanza singola per ogni numero
+naturale, tutte occupate. Arriva un nuovo cliente. Puo l’albergatore `
+con una qualche manovra accomodare tutti i clienti nell’hotel
+rispettando il fatto che una singola puo essere occupata da un solo `
+cliente?
+</details>
+
+Un insieme A si dice **infinito** quando è in biderezione con un suo sottoinsieme proprio $B$ i.e $B \subsetneq \text{ e } |A|=|B|$
+
+TODO: add birezione
+
+## $\le$ su numeri cardinali
+
+TODO: aggiungere
 
 
 # 7. Dimostrazioni matematiche
