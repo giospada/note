@@ -517,6 +517,50 @@ la mantissa sarà 432=110110000b questo numero va normalizzato quindi dobbiamo s
 - 23 bit di mantissa
 
 
+<details>
+  <summary>
+esempio concreto
+  </summary>
+
+esempio con 10 bit di mantissa e 8 di esponente e uno di segno:
+
+trasformiamo il numero 2,3
+
+come prima cosa trasformiamo la parte decimale
+
+il due possiamo scrivero come 8, dove la prima cifra indica $2^1,2^0$
+
+
+passando alla parte decimale c'è un trick che possiamo utilizzare 
+
+0,3*2=0,6
+0,6*2=1,2
+0,2*2=0,4
+0,4*2=0,8
+0,8*2=1,6
+0,6*2=1,2
+
+cifra         : 1 0 0 1 0 0 1 1
+potenza di due: 1 0-1-2-3-4-5-6
+
+ruindi possiamo scrivere il tutto come 
+
+0 :bit del segno
+10010011:mantissa
+00000010:espoente
+
+</details>
+
+# Cricuiti Sequenziali
+
+Nei circuiti logici combinatori l’output in un certo istante dipende solamente dagli input nel medesimo istante, mentre nei circuiti sequenziali il cui output dipende da input precedenti.
+
+
+![immagine](img/lachSR.png)
+
+
+
+
 
 
 

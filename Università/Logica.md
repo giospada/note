@@ -32,7 +32,7 @@ header-includes: |
 - [5. Dimostrazioni](#5-dimostrazioni)
   - [5.1. Per Ogni $\forall$](#51-per-ogni-forall)
   - [5.2. Implicazione $\Rightarrow$](#52-implicazione-rightarrow)
-  - [5.3. Coimplica $\Leftrightarrow$](#53-coimplica-leftrightarrow)
+  - [5.3. Coimplica $\iff$](#53-coimplica-leftrightarrow)
   - [5.4. Espansione Definizioni](#54-espansione-definizioni)
   - [5.5. Regola della eliminazione dimostrazione](#55-regola-della-eliminazione-dimostrazione)
   - [5.6. Regola dell'assurdo](#56-regola-dellassurdo)
@@ -249,7 +249,7 @@ In una teoria assiomatica degli insiemi:
 
 > Due insiemi sono uguali sse hanno gli stessi elementi.  
 
-$\forall X ,\forall Y ,(X = Y \Leftrightarrow \forall Z \text{ }(Z \in X \Leftrightarrow  Z\in Y ))$
+$\forall X ,\forall Y ,(X = Y \iff \forall Z \text{ }(Z \in X \iff  Z\in Y ))$
 
 per ogni insieme X e Y, X e Y sono uguali se e solo se per ogni Z appartiene a X e se e solo se Z appartiene a Y
 
@@ -267,7 +267,7 @@ definisco che X è sottoinsieme di Y quando per ogni Z , Z appartiene a X implic
 
 > Dato un insieme, possiamo formare il sottoinsieme dei suoi elementi che soddisfano una proprietà
 
-$\forall X ,\exists Y ,\forall Z ,(Z \in Y \Leftrightarrow Z \in X \wedge P (Z ))$
+$\forall X ,\exists Y ,\forall Z ,(Z \in Y \iff Z \in X \wedge P (Z ))$
 
 per ogni X esiste un Y, tutti gli insiemi in Z sono elementi di Y se sono appartenenti a X e hanno la proprietà
 
@@ -294,7 +294,7 @@ $A \cap B \coloneqq \forall Z\{Z\in A |Z\in B\}$
 
 **teorema**
 
-$X \in A \cap B \Leftrightarrow X \in A \wedge X \in B$
+$X \in A \cap B \iff X \in A \wedge X \in B$
 
 ### 4.2.7. Definizione di intersezione
 
@@ -304,15 +304,15 @@ $\bigcap F \coloneqq \{ X \in A | \forall Y (Y \in F \Rightarrow X/Right \in Y) 
 
 ### 4.2.8. Assiome dell'unione binaria
 
-$\forall A,\forall B,\exists X ,\forall Z ,(Z \in X \Leftrightarrow Z \in A \vee Z \in B)$
+$\forall A,\forall B,\exists X ,\forall Z ,(Z \in X \iff Z \in A \vee Z \in B)$
 
 ### 4.2.9. Assioma dell'unione 
 
-$\forall F \exists X \forall Z (Z\in X \Leftrightarrow \exists Y (Y \in F \wedge Z \in Y))$
+$\forall F \exists X \forall Z (Z\in X \iff \exists Y (Y \in F \wedge Z \in Y))$
 
 ### 4.2.10. 4.2.10 Assioma del singoletto
 
-$\forall X, \exists Y \forall Z (Z \in Y \Leftrightarrow Z = X)$
+$\forall X, \exists Y \forall Z (Z \in Y \iff Z = X)$
 
 l'insieme Y viene indicato come {X}
 
@@ -341,7 +341,7 @@ combinaimo altri assiomi con quello dell'infinito si arriva a dimostrare l'esist
 
 Esiste l'insieme dei sottoinsiemi di un inseme dato.
 
-$\forall \exists Y, \forall Z ( Z \in Y \Leftrightarrow Z \subseteq X$
+$\forall \exists Y, \forall Z ( Z \in Y \iff Z \subseteq X$
 
 per ogni insieme X esiste un Y tale per cui, ogni Z elemento di Y se e solo se Z è un sottoinsieme di X
 
@@ -422,11 +422,11 @@ ogni passaggio va a lavorare su:
 **eliminazione** (variante): Da un’ipotesi o un risultato intermedio $P \Rightarrow Q$ di nome H , se volete concludere Q, potete procedere dicendo "per H , per dimostrare Q mi posso ridurre a dimostrare P" 
 
 
-## 5.3. Coimplica $\Leftrightarrow$
+## 5.3. Coimplica $\iff$
 
-**introduzione**: Per dimostrare $P \Leftrightarrow Q$ allora devo dimostrare $P \Rightarrow Q$ e $Q \Rightarrow Q$
+**introduzione**: Per dimostrare $P \iff Q$ allora devo dimostrare $P \Rightarrow Q$ e $Q \Rightarrow Q$
 
-**eliminazione**:L'ipotesi $P \Leftrightarrow Q$ può essere usata sia come ipotesi $P \Rightarrow Q$ che come $Q \Rightarrow P$
+**eliminazione**:L'ipotesi $P \iff Q$ può essere usata sia come ipotesi $P \Rightarrow Q$ che come $Q \Rightarrow P$
 
 ## 5.4. Espansione Definizioni
 
@@ -490,7 +490,7 @@ Una coppia ordinata $\langle 1,2 \rangle$ si può rappresentare come un insieme 
 ### teorema di caratterizzazione delle coppie
 
 
-$\langle X,Y \rangle = \langle X^1 Y^1 \rangle \Leftrightarrow X= X^1 \wedge Y=Y^1$
+$\langle X,Y \rangle = \langle X^1 Y^1 \rangle \iff X= X^1 \wedge Y=Y^1$
 
 **crollario**:$\langle X, Y\rangle \neq \langle Y, X \rangle \text{a meno che} X=Y$
 
@@ -498,7 +498,7 @@ $\langle X,Y \rangle = \langle X^1 Y^1 \rangle \Leftrightarrow X= X^1 \wedge Y=Y
 
 a partire da due insiemi A e B possiamo creare il **prodotto cartesiano** che viene indicato con l'abuso di notazione AxB.
 
-$\forall A \forall B, \exists C,\forall Z,(Z\in C \Leftrightarrow \exists a,\exists b, ( a \in A \wedge b \in B \wedge Z=\langle a,b \rangle))$
+$\forall A \forall B, \exists C,\forall Z,(Z\in C \iff \exists a,\exists b, ( a \in A \wedge b \in B \wedge Z=\langle a,b \rangle))$
 
 **es**: $\{a,b\} \times \{1,2\}= \{\langle a,1\rangle,\langle a,2\rangle,\langle b,1 \rangle,\langle b,2\rangle\}$
 
@@ -536,7 +536,7 @@ Sia f una funzione. Scriviamo  $y=f(x)$ per dire $xfy$,ovvero $\langle x,y \rang
 
 ### Teorema esistenza dello spazio di funzioni come insieme
 
-$\forall A, \forall B,\exists C,\forall f,(f \in C \Leftrightarrow f \text{ è una funzione di dominio  A e codominio B})$
+$\forall A, \forall B,\exists C,\forall f,(f \in C \iff f \text{ è una funzione di dominio  A e codominio B})$
 
 Abuso di notazione $B^{A}$ (spazionio delle funzioni da A a B)
 
@@ -672,6 +672,16 @@ TODO: add birezione
 ## $\le$ su numeri cardinali
 
 TODO: aggiungere
+
+## Teorema di Cantor
+
+**Enunciato**: sia T un insieme non vuoto. Allora $|T|<|2^T|$
+
+### Funzioni Caratteristiche
+
+La funzione che associa a ogni $C \in 2^A$ la funzione $x_C \in \mathbb{B}^A$ è una biezione. TODO:completare
+
+
 
 
 # 7. Dimostrazioni matematiche
