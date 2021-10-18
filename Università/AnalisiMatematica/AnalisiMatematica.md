@@ -333,7 +333,7 @@ si può provare che l'insieme dei numeri razionali è numerabile
 
 come prima cosa si crea una tabella che contiene tutti i numeri razionali, a quel punto si collega ogni numero naturale a un numero razionale
 
-![](img/qnumerabile.png)
+![](../img/qnumerabile.png)
 
 </details>
 
@@ -378,8 +378,8 @@ il **binomiale** si usa per contare **quanti sottoinsiemi partendo di m elementi
 se ci si pensa noi stiamo selezionando combinazioni k elementi partendo da un insieme di n, facendo così creaiamo un altro inieme di n-k elementi complementare per cui ha le stesse combinazioni
 2. dimostrazione seconda proprietà:
 
-![](img/dimbinomialep1.png)
-![](img/dimbinomialep2.png)
+![](../img/dimbinomialep1.png)
+![](../img/dimbinomialep2.png)
 </details>
 
 
@@ -399,7 +399,7 @@ $(a+b)^n=\displaystyle \sum^{n}_{k=0} \binom{n}{k} a^{n-k}*b^k$
 
 dipende dall'assioma che dice che gli angoli del triangolo rettangolo misurano 180°
 
-![](img/teoremadipiagora.png)
+![](../img/teoremadipiagora.png)
 
 
 $Area(ABCD)=(a+b)^2$  
@@ -493,7 +493,7 @@ $\forall a \in A : b \leq A$ (b è i minimo )
 **massimo di un insieme**:  
 $\forall a \in A : a \leq b$ (b è il massimo)
 
-![](img/minimax.png)
+![](../img/minimax.png)
 
 Per esmpio $]3,4]$ ha un massimo ma non un minimo
 
@@ -520,7 +520,7 @@ N, Z e Q hanno la stessa cardinalità mentre R ha una cardinalità maggiore $|\m
 Supponiamo che esista una funzione:$f:\mathbb{N} \Rightarrow [0,1[$ 
 definiamo la funzione come:
 
-![](img/NtoR.png)
+![](../img/NtoR.png)
 
 allora possiamo crere un numero reale $a \in [0,1[$ tale che $f(n)\neq a \forall n \in \mathbb{N}$
 
@@ -528,7 +528,7 @@ costruiamo a usando un procedimento diagolnale
 
 $r_j=\begin{cases}5 & \text{se } b_{jj}\neq 5 \\ 6 & \text{se } b_{jj}=5\end{cases}$
 
-![](img/NtoRnot.png)
+![](../img/NtoRnot.png)
 
 ## Esistenza e uniticità della radice
 
