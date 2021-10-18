@@ -74,6 +74,8 @@ Da un ipotesi o un risltato intermetdio $p \Rightarrow Q$ di nome H, se volete c
 
 ## 1.6. Regola dell'assurdo
 
+[dimostrazione per assurdo](https://www.mathone.it/dimostrazione-per-assurdo/)
+
 Se attraverso le altre ipotesi rendono P falso, $P \Rightarrow assurdo$
 
 ## 1.7. Congiunzione
@@ -99,6 +101,19 @@ che P valga e una volta che Q valga:
 Potete anche utilizzare una **regola di introduzione** per dimostrare un **nuovo risultato intermedio**, diverso dalla conclusione corrente, a cui date un nome per utilizzarlo in seguito, a patto che abbiate già a disposizione le **premesse** della regola
 
 ## 1.10. esiste
+
+
+**introduzione**:
+Per dimostrare $\exists x.P(x)$ (esiste un x per cui vale P(x)):
+> “scelgo E e dimostro P(E) ; . . .”  
+(i “. . .” è una prova di P(E))
+E puo essere un’ ` espressione qualsiasi (es. B $\cap$ C).
+
+**eliminazione**:
+Da un’ipotesi o un risultato intermedio $\exists x.P(x)$ potete
+procedere nella prova dicendo
+> “sia x t.c. P(x) (H)”
+x deve essere una variabile non in uso in nessuna ipotesi o nella conclusione
 
 ## 1.11. Abbreviazioni
 
