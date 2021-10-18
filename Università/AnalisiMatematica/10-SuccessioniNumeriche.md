@@ -20,10 +20,22 @@ $a_n = \frac{(-1)^2}{n+1}, n \in \mathbb{N^*}$
 
 ## Limiti delle successioni
 
-Anche le successioni posono essere limitate superiormente o inferiormente o entrabmbi.
 
-es:
-TODO:aggiungere
+Anche le **successioni posono essere limitate** superiormente o inferiormente o entrabmbi.
+
+<details>
+  <summary>
+  es
+  </summary>
+
+1. $a_n=\frac{1}{n}, n \in \mathbb{N}$  
+è limitata  
+2. $n \in \mathbb{N} \\ a_n=n^2$   
+questa successione è inferiormente limitata ma non superiormente
+3. $a_n=(-1)^n*n$  
+non è ne inferiormente ne superiormente limitata
+</details>
+
 
 $a_n =\frac{n}{n+1} \rightarrow 1$
 
@@ -31,7 +43,7 @@ $a_n =\frac{n}{n+1} \rightarrow 1$
 
 ### Limiti finiti
 
-$(a_n)_m , L \in \mathbb{R} \text{  si dice che } \lim_{n \rightarrow \inf} = L$ se $\forall e >0, $
+$(a_n)_n , L \in \mathbb{R} \text{  si dice che } \displaystyle \lim_{n \rightarrow +\infty} = L \text{ se } \\ \forall \varepsilon >0, \exists \bar{n}=\bar{n}(\varepsilon) \in \mathbb{N}: \forall n \ge \bar{n} : \\ |a_n -L | < \varepsilon (L - \varepsilon < a_n < L + \varepsilon) \\ (a_n)_n \text{ si dice convergente}$
 
 in questo  caso la funzione si dice **convergente**
 TODO: da completare

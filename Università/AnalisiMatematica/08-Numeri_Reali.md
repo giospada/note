@@ -3,8 +3,9 @@
 
 i numeri razionali sono quanti sono i punti della retta? quindi possiamo trovare una funzione biunivoca tra i $\mathbb{Q}$ e i punti sulla retta?.
 
-Prendiamo il punto $\sqrt{2}$ che è sulla retta, è rappresentabile con i numeri razionali
+Prendiamo il punto $\sqrt{2}$ che è sulla retta, non è rappresentabile con i numeri razionali
 
+$\mathbb{R}$ possiede la proprità di continuità (che manca a $\mathbb{Q}$)
 
 **Dimostrazione per assurdo**: 
 
@@ -26,7 +27,31 @@ $n^2$ è pari ma  $MCD(m,n)=1$ quindi è impossibile
 
 
 
-TODO: aggiugere dimostrazione per un numero $\sqrt{n}$ \in $\mathbb{Q}$
+## 8.1. Teorema radice di n
+
+> Sia $n \in \mathbb{N}$: $n$ non è un quadrato perfetto allora $\sqrt{n} \notin \mathbb{Q}$
+
+**dimostrazione**
+
+Lemma: $m,n,l \in \mathbb{N}$  tali che $MCD(l,m)=1$ allora se $l | m \times n \Rightarrow l | n$
+
+
+supponiamo che $\sqrt{n} \in \mathbb{Q} \Rightarrow \exists p,q \in N: \sqrt{n}=\frac{p}{q}$ dove $MCD(p,q)=1$
+
+$n=\frac{p^2}{q^2}$  
+$nq^2=p^2$  
+
+essendo che p e q sono primi tra loro allora $p^2 divide q^2n$ e quindi dall'lemma $p^2 divide n$  
+
+quindi $\exists v \in \mathbb{N}: n = p^2v$
+
+allora riscriviamo $q^2p^2v=p^2$ allora $q^2v=1$
+
+Essendo $q^2 , v \in \mathbb{N}$ allora $v=1$
+
+allora $n=p^2$ n è un quadrato perfetto
+
+
 
 ## Intervalli di $\mathbb{R}$
 
@@ -115,8 +140,10 @@ si ha:
 1. $x^2 \le y^2 \Leftrightarrow x \le  y$
 2. $x^2 \ge y^2 \Leftrightarrow x \ge y$
 3. $x^2 = y^2 \Leftrightarrow x = y$
+4. $x^2 < y \Leftrightarrow \exists \varepsilon > 0: (x+\varepsilon)^2 < y$
+5. $x^2 > y \Leftrightarrow \exists \varepsilon > 0: (x+\varepsilon)^2 > y$
 
-TODO: mandcano le ultime
+le prime tre non valgono solo con x e y alla seconda ma quando condividono qualsiasi stesso esponente.
 
 ### Teorema di esistenza di $\sqrt{}$
 
