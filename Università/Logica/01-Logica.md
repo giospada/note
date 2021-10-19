@@ -4,13 +4,13 @@ header-includes: |
 ---
 
 
-# 1. Docente
+# Docente
 
 Claudio Sacerdoti Coen
 
 ![foto del professore con la giaguaro](../img/proftigre.png)
 
-# 2. Logica
+# Logica
 
 viene studiata da più discipline (fisica, matematica,informatica)
 

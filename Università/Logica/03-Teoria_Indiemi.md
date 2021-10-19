@@ -35,7 +35,7 @@ In una teoria assiomatica degli insiemi:
 
 > Due insiemi sono uguali sse hanno gli stessi elementi.  
 
-$\forall X ,\forall Y ,(X = Y \Leftrightarrow \forall Z \text{ }(Z \in X \Leftrightarrow  Z\in Y ))$
+$\forall X ,\forall Y ,(X = Y \iff \forall Z \text{ }(Z \in X \iff  Z\in Y ))$
 
 per ogni insieme X e Y, X e Y sono uguali se e solo se per ogni Z appartiene a X e se e solo se Z appartiene a Y
 
@@ -43,7 +43,7 @@ per ogni insieme X e Y, X e Y sono uguali se e solo se per ogni Z appartiene a X
 
 > X è sottoinsieme di Y se Y possiede tutti gli elementi di X
 
-$X \subseteq Y =^{def}= \forall Z, (X \in X \Rightarrow Z \in Y)$
+$X \subseteq Y =^{def}= \forall Z, (X \in X \implies Z \in Y)$
 
 
 definisco che X è sottoinsieme di Y quando per ogni Z , Z appartiene a X implica che Z appartiene a Y
@@ -53,7 +53,7 @@ definisco che X è sottoinsieme di Y quando per ogni Z , Z appartiene a X implic
 
 > Dato un insieme, possiamo formare il sottoinsieme dei suoi elementi che soddisfano una proprietà
 
-$\forall X ,\exists Y ,\forall Z ,(Z \in Y \Leftrightarrow Z \in X \wedge P (Z ))$
+$\forall X ,\exists Y ,\forall Z ,(Z \in Y \iff Z \in X \wedge P (Z ))$
 
 per ogni X esiste un Y, tutti gli insiemi in Z sono elementi di Y se sono appartenenti a X e hanno la proprietà
 
@@ -71,34 +71,34 @@ $\exists X ,\forall Z ,Z \notin X$
 
 > L’assioma è ridondante. Sia Y un qualunque altro insieme di cui un assoma asserisce l’esistenza (vedi p.e. assioma dell’infinito)
 
-$\emptyset \coloneqq \{X \in Y |false\}$
+$\emptyset {:=} \{X \in Y |false\}$
 
 ### 1.2.6. Definizione di intersezione binaria
 
 
-$A \cap B \coloneqq \forall Z\{Z\in A |Z\in B\}$
+$A \cap B {:=} \forall Z\{Z\in A |Z\in B\}$
 
 **teorema**
 
-$X \in A \cap B \Leftrightarrow X \in A \wedge X \in B$
+$X \in A \cap B \iff X \in A \wedge X \in B$
 
 ### 1.2.7. Definizione di intersezione
 
 metto tutti gli insiemi da intersecare in F.
 
-$\bigcap F \coloneqq \{ X \in A | \forall Y (Y \in F \Rightarrow X/Right \in Y) \}, A \in F$
+$\bigcap F {:=} \{ X \in A | \forall Y (Y \in F \implies X/Right \in Y) \}, A \in F$
 
 ### 1.2.8. Assiome dell'unione binaria
 
-$\forall A,\forall B,\exists X ,\forall Z ,(Z \in X \Leftrightarrow Z \in A \vee Z \in B)$
+$\forall A,\forall B,\exists X ,\forall Z ,(Z \in X \iff Z \in A \vee Z \in B)$
 
 ### 1.2.9. Assioma dell'unione 
 
-$\forall F \exists X \forall Z (Z\in X \Leftrightarrow \exists Y (Y \in F \wedge Z \in Y))$
+$\forall F \exists X \forall Z (Z\in X \iff \exists Y (Y \in F \wedge Z \in Y))$
 
 ### 1.2.10. 4.2.10 Assioma del singoletto
 
-$\forall X, \exists Y \forall Z (Z \in Y \Leftrightarrow Z = X)$
+$\forall X, \exists Y \forall Z (Z \in Y \iff Z = X)$
 
 l'insieme Y viene indicato come {X}
 
@@ -113,7 +113,7 @@ $X \in \{A_1,...,A_n\}$ sse $X=A_1$ oppure ... oppure $X=A_n$ .
 ### 1.2.11. Assioma dell’infinito
 Esiste un insieme che contiene almeno tutti (gli encoding de)i numeri naturali.
 
-$\exists Y( \emptyset \in Y \wedge \forall N (N \in Y \Rightarrow N \cup \{N\} \in Y))$
+$\exists Y( \emptyset \in Y \wedge \forall N (N \in Y \implies N \cup \{N\} \in Y))$
 
 Indichiamo temporaneamente con N tale insieme 
 
@@ -127,7 +127,7 @@ combinaimo altri assiomi con quello dell'infinito si arriva a dimostrare l'esist
 
 Esiste l'insieme dei sottoinsiemi di un inseme dato.
 
-$\forall \exists Y, \forall Z ( Z \in Y \Leftrightarrow Z \subseteq X$
+$\forall \exists Y, \forall Z ( Z \in Y \iff Z \subseteq X$
 
 per ogni insieme X esiste un Y tale per cui, ogni Z elemento di Y se e solo se Z è un sottoinsieme di X
 
@@ -157,8 +157,8 @@ Intuitivamente: l’immagine di un insieme rispetto a una formula che descrive u
 
 Assumo di avere i numeri reali con la mia meta matematica e li codifico con i miei insiemi
 
-$\llbracket 0 \rrbracket \coloneqq \emptyset$  
-$\llbracket n+1 \rrbracket \coloneqq \llbracket n \rrbracket \cup \{\llbracket n \rrbracket \}$
+$\llbracket 0 \rrbracket {:=} \emptyset$  
+$\llbracket n+1 \rrbracket {:=} \llbracket n \rrbracket \cup \{\llbracket n \rrbracket \}$
 
 > esempi
 > $\llbracket 0 \rrbracket =\emptyset$

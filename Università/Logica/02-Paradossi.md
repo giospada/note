@@ -1,8 +1,3 @@
-- [1. Paradossi](#1-paradossi)
-  - [1.1. Linguaggio naturale](#11-linguaggio-naturale)
-  - [1.2. Linguaggio matematico](#12-linguaggio-matematico)
-    - [1.2.1. Paradosso di Russell](#121-paradosso-di-russell)
-  - [1.3. I paradossi in informatica](#13-i-paradossi-in-informatica)
 
 
 # 1. Paradossi

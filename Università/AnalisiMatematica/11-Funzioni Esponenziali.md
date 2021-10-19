@@ -19,7 +19,7 @@ non coincidono
 
 **Notazione**
 
-$\exp_a(x)\coloneqq a^n$
+$\exp_a(x){:=} a^n$
 
 se si sceglie come base di a della funzione esponenziale il numero $e$
 
@@ -38,7 +38,7 @@ $\forall y \in \mathbb{R}: y>0 \exist! x \in \mathbb{R}:$
 
 $a^x=y$
 
-$\log_a y \coloneqq x$ (si legge logaritmo di y in base a)
+$\log_a y {:=} x$ (si legge logaritmo di y in base a)
 
 $\log : \mathbb{R}^{*}_{+} \rightarrow \mathbb{R}$
 
@@ -103,7 +103,7 @@ la funzione $\cos$ è pari ($\cos(\alpha)=\cos(-\alpha)$)
 
 ![](../img/tangente.png)
 
-$\tan \alpha \coloneqq y_T$ (si legge tangente di  $\alpha$)
+$\tan \alpha {:=} y_T$ (si legge tangente di  $\alpha$)
 
 si come conseguenza della definizione si ha che :$\frac{\sin \alpha}{\cos \alpha}$
 

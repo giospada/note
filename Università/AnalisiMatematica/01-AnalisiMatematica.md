@@ -1,6 +1,4 @@
 ---
-
-
 title: Analisi Matematica
 date: Settembre 2021
 author: Giovanni Spadaccini

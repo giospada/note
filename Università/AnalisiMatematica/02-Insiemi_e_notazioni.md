@@ -32,7 +32,7 @@ $Q = \{ \frac{n}{m} | n \in N, m \in Z \backslash \{0\}, MCD(n,|m|)=1\}$
 |$C(A)$        |diffrerenza tra un insieme universo e l'insieme A              |
 |$\wedge$      |E logioco (and)                                                |
 |$\vee$        |O logioco (or)                                                 |
-|$\Rightarrow$ |è il simbolo di implicazione logica                            |
+|$\implies$ |è il simbolo di implicazione logica                            |
 |$\bar{p}$     |è la negazione della preposizione p                            |
 |$\displaystyle \sum_{i=0}^n a_i= a_0 + a_1 + a_2+ ... +a_n$| sommatoria |
 
