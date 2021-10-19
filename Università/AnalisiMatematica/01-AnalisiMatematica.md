@@ -1,12 +1,14 @@
 ---
+
+
 title: Analisi Matematica
 date: Settembre 2021
 author: Giovanni Spadaccini
 ---
 
-
-
 # Introduzione
+
+[TOC]
 
 Insegnante: Marco Maghetti
 
@@ -49,7 +51,6 @@ Insegnante: Marco Maghetti
 ci sono quattro sessioni ed ogni sessione ha un gruppo d'appelli (esistono sessioni estive, autunnali e invernali).
 
 il primo analisi ci sarà in giugno 2022.
-
 
 
 

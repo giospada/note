@@ -1,23 +1,3 @@
-- [1. Teoria degli Insiemi](#1-teoria-degli-insiemi)
-  - [1.1. Teoria naive](#11-teoria-naive)
-  - [1.2. Teoria assiomatiche degli insiemi](#12-teoria-assiomatiche-degli-insiemi)
-    - [1.2.1. Assioma di estensionalità](#121-assioma-di-estensionalità)
-    - [1.2.2. Definizione di essere sottoinsieme](#122-definizione-di-essere-sottoinsieme)
-    - [1.2.3. Assioma di separazione](#123-assioma-di-separazione)
-    - [1.2.4. Assioma dell’insieme vuoto](#124-assioma-dellinsieme-vuoto)
-    - [1.2.5. Definizione dell’insieme vuoto](#125-definizione-dellinsieme-vuoto)
-    - [1.2.6. Definizione di intersezione binaria](#126-definizione-di-intersezione-binaria)
-    - [1.2.7. Definizione di intersezione](#127-definizione-di-intersezione)
-    - [1.2.8. Assiome dell'unione binaria](#128-assiome-dellunione-binaria)
-    - [1.2.9. Assioma dell'unione](#129-assioma-dellunione)
-    - [1.2.10. 4.2.10 Assioma del singoletto](#1210-4210-assioma-del-singoletto)
-    - [1.2.11. Assioma dell’infinito](#1211-assioma-dellinfinito)
-    - [1.2.12. Teorema esistenza di $N$](#1212-teorema-esistenza-di-n)
-    - [1.2.13. Assioma dell'insieme potenza](#1213-assioma-dellinsieme-potenza)
-    - [1.2.14. Assioma di regolarita (non da studiare)](#1214-assioma-di-regolarita-non-da-studiare)
-    - [1.2.15. Assioma di rimpiazzamento](#1215-assioma-di-rimpiazzamento)
-  - [1.3. Costruzioni dei Numeri Naturali](#13-costruzioni-dei-numeri-naturali)
-
 # 1. Teoria degli Insiemi
 
 punti informali:
@@ -34,7 +14,7 @@ punti informali:
 - posso formare insiemi in **qualunque modo**
 - gli insiemi **non devono essere omogenei**
 - operazione base $\in$
-- le **ripetizioni e l'ordine non contano** $\{1,2\} \text{\space\space è lo stesso insieme }  \{2,2,1,1\}$
+- le **ripetizioni e l'ordine non contano** $\{1,2\} \text{  è lo stesso insieme }  \{2,2,1,1\}$
 
 Come abbiamo visto il [paradosso di Russell](#paradosso-di-russell) crea un inconsistenza logica nella teoria naif.  
 Per questo serve una teoria che rimuova l'**assioma di comprensione**(per ogni proprietà P si può creare un insieme $\{x | P(x)\}$), e che controlli l'uso meta-linguistico
@@ -154,7 +134,7 @@ per ogni insieme X esiste un Y tale per cui, ogni Z elemento di Y se e solo se Z
 abuso di notazioni:$2^x$ oppure $P(x)$
 
 > es  
-> $2^{\{1,2\}}= \{\emptyset, \{1\},\{2\},\{1,2\}\}$
+> $2^{\{1,2\}}= \{\emptyset, \{1\},\{2\},\{1,2\}\}$  
 
 ### 1.2.14. Assioma di regolarita (non da studiare) 
 

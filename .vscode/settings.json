@@ -16,5 +16,6 @@
         "singoletto"
     ],
     "editor.fontSize": 20,
+    "glassit.alpha": 255,
     
 }

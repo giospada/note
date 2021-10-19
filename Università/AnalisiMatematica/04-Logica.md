@@ -19,7 +19,7 @@ es.
 p = ogni elemento di A è un numero pari  
 $\forall a \in A : \text{a è pari}$   
 $\bar{p} = \exists a \in A : \text{a non è pari}$ 
-</detailS>
+</details>
 
 
 $p \Rightarrow q$ = "p implica q" (p si chiama ipotesi e q si chiama tesi)
