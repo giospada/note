@@ -99,7 +99,7 @@ $f(n)= \begin{cases} n/2 & \text{se n è pari} \\ -\frac{n+1}{2} & \text{se n è
 </details>
 
 
-## Numberailità 
+## Numberailità
 
 > un insieme è numberabile se esiste una funzione $f : N \rightarrow A$ è biunivoca 
 

@@ -1,0 +1,105 @@
+{
+    "attachment_folder": "vx_attachments",
+    "config_mgr": "vx.vnotex",
+    "created_time": "2021-10-19T13:54:37Z",
+    "description": "",
+    "extra_configs": {
+    },
+    "history": [
+        {
+            "last_accessed_time": "2021-10-19T14:01:33Z",
+            "line_number": 18,
+            "path": "Università/index.md"
+        },
+        {
+            "last_accessed_time": "2021-10-19T14:01:52Z",
+            "line_number": 100,
+            "path": "Università/Programmazione/Programmazione.md"
+        },
+        {
+            "last_accessed_time": "2021-10-19T14:03:43Z",
+            "line_number": 37,
+            "path": "Università/ArchitetturaElaboratori/00-ArchitetturaElaboratori.md"
+        },
+        {
+            "last_accessed_time": "2021-10-19T14:03:43Z",
+            "line_number": -1,
+            "path": "Università/ArchitetturaElaboratori/01-Livelli.md"
+        },
+        {
+            "last_accessed_time": "2021-10-19T14:03:44Z",
+            "line_number": -1,
+            "path": "Università/ArchitetturaElaboratori/02-Elaboratori.md"
+        },
+        {
+            "last_accessed_time": "2021-10-19T14:03:44Z",
+            "line_number": 0,
+            "path": "Università/AnalisiMatematica/04-Logica.md"
+        },
+        {
+            "last_accessed_time": "2021-10-19T14:38:13Z",
+            "line_number": -1,
+            "path": "Università/AnalisiMatematica/05-Funzioni.md"
+        },
+        {
+            "last_accessed_time": "2021-10-19T14:38:13Z",
+            "line_number": -1,
+            "path": "Università/AnalisiMatematica/06-CalcoloCombinatoria.md"
+        },
+        {
+            "last_accessed_time": "2021-10-19T14:38:13Z",
+            "line_number": -1,
+            "path": "Università/AnalisiMatematica/08-Numeri_Reali.md"
+        },
+        {
+            "last_accessed_time": "2021-10-19T14:38:13Z",
+            "line_number": 0,
+            "path": "Università/AnalisiMatematica/09-ValoreAssoluto.md"
+        },
+        {
+            "last_accessed_time": "2021-10-19T14:38:14Z",
+            "line_number": -1,
+            "path": "Università/Logica/Teoria_Indiemi.md"
+        },
+        {
+            "last_accessed_time": "2021-10-19T14:38:14Z",
+            "line_number": -1,
+            "path": "Università/Logica/RelazioniFunzioni.md"
+        },
+        {
+            "last_accessed_time": "2021-10-19T14:38:14Z",
+            "line_number": -1,
+            "path": "Università/Logica/Paradossi.md"
+        },
+        {
+            "last_accessed_time": "2021-10-19T14:38:14Z",
+            "line_number": -1,
+            "path": "Università/Logica/Dimostrazioni.md"
+        },
+        {
+            "last_accessed_time": "2021-10-19T14:38:15Z",
+            "line_number": 0,
+            "path": "Università/Logica/Logica.md"
+        },
+        {
+            "last_accessed_time": "2021-10-19T14:39:57Z",
+            "line_number": -1,
+            "path": "Università/AnalisiMatematica/02-Insiemi_e_notazioni.md"
+        },
+        {
+            "last_accessed_time": "2021-10-19T14:39:58Z",
+            "line_number": -1,
+            "path": "Università/AnalisiMatematica/01-AnalisiMatematica.md"
+        },
+        {
+            "last_accessed_time": "2021-10-19T15:09:18Z",
+            "line_number": -1,
+            "path": "Università/AnalisiMatematica/07-EsDimostrazioni.md"
+        }
+    ],
+    "image_folder": "vx_images",
+    "name": "notes",
+    "next_node_id": "2",
+    "version": "1",
+    "version_controller": "dummy.vnotex"
+}

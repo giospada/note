@@ -25,7 +25,6 @@ il **binomiale** si usa per contare **quanti sottoinsiemi partendo di m elementi
 
 **Proprietà**:
 
-    
 1.  $\binom{n}{k}=\binom{n}{n-k}$
 2.  $\binom{n+1}{k}=\binom{n}{k-1}+\binom{n}{k}$
 

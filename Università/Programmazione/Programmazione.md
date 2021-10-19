@@ -98,6 +98,7 @@ tipi di nodi:
 - nodi speciali: di fine e di inizio
 
 esempio visualizzabile con mermaid:
+
 ```mermaid
 graph TD
 B[nodo speciale di inizio: input m ]

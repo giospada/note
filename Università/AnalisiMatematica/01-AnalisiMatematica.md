@@ -8,7 +8,6 @@ author: Giovanni Spadaccini
 
 # Introduzione
 
-[TOC]
 
 Insegnante: Marco Maghetti
 
