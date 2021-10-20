@@ -1,5 +1,5 @@
 
-# 4. Organizzazione degli Elaboratori
+# Organizzazione degli Elaboratori
 
 ![](../img/VonNeumann.png)
 > "bus oriented": un bus è un insieme di connessioni elettriche per collegare i vari componenti
@@ -57,7 +57,7 @@ il ciclo di esecuzione può essere schematizzato anche come **FDE**:
 2. **Decode** identificazione del tipo di operazione da eseguire (punto 3) 
 3. **Execute** effettuazione delle operazioni corrispondenti all'istruzione (punti 4-5-6)
 
-### 4.1.1. Unita di controllo
+### Unita di controllo
 
 > l'unita di controllo gestisce la memoria e l'alu, e interpreta le istruzioni
 
@@ -90,7 +90,7 @@ Metodi per velocizzare la cpu:
     - MIMD: sono più precessori che condividono la stessa memoria senza eseguire necessariamente la stessa istruzione
 - **multicomputer**: molti processi non condividono una memoria e che comunicano scambiandosi messaggi, così moltissime cpu possono cooperare
 
-#### 4.3.0.1. approfondimento pipelining
+### approfondimento pipelining
 
 è l'implementazione di una catena di montaggio dentro la cpu
 

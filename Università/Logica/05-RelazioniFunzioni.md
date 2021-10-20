@@ -50,7 +50,7 @@ $\le {:=} \{\langle 0,0 \rangle ,\langle 0,1 \rangle ,\langle 0,2 \rangle ,\lang
 
 ## 3.4. Dimostrazione Di Funzioni
 
-Una **funzione di dominio** A e codominio B e una qualunque relazione $f \subset A \times B$ tale che: $\forall X,(X \in A \Leftarrow \exists! Y , X f Y)$
+Una **funzione di dominio** A e codominio B e una qualunque relazione $f \subset A \times B$ tale che: $\forall X,(X \in A \implies \exists! Y , X f Y)$
 
 per ogni elemento del dominio c'è un **unico** elemento del codominio
 
@@ -77,7 +77,15 @@ $\{1,2\}^{\{a,b\}} = \{\{\langle a,1\rangle,\langle b,1\rangle \},\{\langle a,1\
 $B^{\emptyset}=\emptyset$  
 $\emptyset^A=\emptyset se A\neq \emptyset$
 
-## 3.5. Abbreviazioni 
+## 3.5. iniettiva surrettiva biettività
+
+$f \in B^{A}$
+
+- iniettiva:quando $\forall x,y \in A (f(x)=f(y)\implies x=y)$
+- surrettiva:quando $\forall y\in B\exists x \in A ,f(x)=y$
+- biettiva: quando è sia iniettiva che surrettiva
+
+## 3.5. Abbreviazioni
 
 
 1. $\forall X \in A,P(X)$ indica  $\forall X (X \in A \implies P(X))$
@@ -85,7 +93,7 @@ $\emptyset^A=\emptyset se A\neq \emptyset$
 1. $\forall X,Y \in A,P(X,Y)$ indica  $\forall X in A ,\forall Y \in A,P(X,Y)$
 1. $\exists X,Y \in A,P(X,Y)$ indica $\exists X \in A , \exists Y \in A,P(X,Y)$
 
-## 3.6. Priorprietà delle relazioni
+## 3.6. Proprietà delle relazioni
 
 Sia $\mathit{R} \subset A \times A $.La relazione $\mathit{R}$ gode della proprietà
 - riflessiva se $\forall X \in A,X\mathit{R}X$
@@ -135,15 +143,7 @@ $\mathbb{Q}{:=} $Q_{\/\equiv} = \{...,[\langle 2,3\rangle],...,[\langle 4,2\rang
 
 la classe di equivalenza $[\langle 2,3\rangle]={\langle 2,3\rangle,\langle 4,6\rangle,...}$
 
-## 3.7. iniettiva surrettiva biettività
 
-$f \in B^{A}$
-
-- indiettiva 
-- surretti
-- biettiva
-
-TODO: to complete
 
 
 

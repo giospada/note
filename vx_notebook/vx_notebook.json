@@ -17,16 +17,6 @@
             "path": "Università/Programmazione/Programmazione.md"
         },
         {
-            "last_accessed_time": "2021-10-19T14:03:43Z",
-            "line_number": 37,
-            "path": "Università/ArchitetturaElaboratori/00-ArchitetturaElaboratori.md"
-        },
-        {
-            "last_accessed_time": "2021-10-19T14:03:43Z",
-            "line_number": -1,
-            "path": "Università/ArchitetturaElaboratori/01-Livelli.md"
-        },
-        {
             "last_accessed_time": "2021-10-19T14:03:44Z",
             "line_number": -1,
             "path": "Università/ArchitetturaElaboratori/02-Elaboratori.md"
@@ -102,24 +92,54 @@
             "path": "Università/Logica/05-RelazioniFunzioni.md"
         },
         {
-            "last_accessed_time": "2021-10-19T16:10:45Z",
-            "line_number": -1,
-            "path": "Università/Logica/04-Dimostrazioni.md"
-        },
-        {
             "last_accessed_time": "2021-10-19T16:10:54Z",
             "line_number": -1,
             "path": "Università/Logica/01-Logica.md"
         },
         {
-            "last_accessed_time": "2021-10-19T16:11:25Z",
-            "line_number": 89,
+            "last_accessed_time": "2021-10-19T16:22:52Z",
+            "line_number": -1,
+            "path": "Università/Logica/04-Dimostrazioni.md"
+        },
+        {
+            "last_accessed_time": "2021-10-19T16:22:53Z",
+            "line_number": 87,
             "path": "Università/Logica/02-Paradossi.md"
         },
         {
-            "last_accessed_time": "2021-10-19T16:11:25Z",
-            "line_number": 78,
+            "last_accessed_time": "2021-10-19T16:22:58Z",
+            "line_number": -1,
             "path": "Università/Logica/03-Teoria_Indiemi.md"
+        },
+        {
+            "last_accessed_time": "2021-10-19T21:09:40Z",
+            "line_number": -1,
+            "path": "Università/ArchitetturaElaboratori/05-Microarhitettura.md"
+        },
+        {
+            "last_accessed_time": "2021-10-19T21:09:57Z",
+            "line_number": -1,
+            "path": "Università/ArchitetturaElaboratori/Rappresentazionedell'informazione.md"
+        },
+        {
+            "last_accessed_time": "2021-10-20T07:20:00Z",
+            "line_number": 8,
+            "path": "Università/ArchitetturaElaboratori/00-ArchitetturaElaboratori.md"
+        },
+        {
+            "last_accessed_time": "2021-10-20T07:20:00Z",
+            "line_number": 66,
+            "path": "Università/ArchitetturaElaboratori/01-Livelli.md"
+        },
+        {
+            "last_accessed_time": "2021-10-20T07:20:01Z",
+            "line_number": -1,
+            "path": "Università/ArchitetturaElaboratori/04-CircuitiSequenziali.md"
+        },
+        {
+            "last_accessed_time": "2021-10-20T07:20:01Z",
+            "line_number": 45,
+            "path": "Università/ArchitetturaElaboratori/03-Circuiti.md"
         }
     ],
     "image_folder": "vx_images",

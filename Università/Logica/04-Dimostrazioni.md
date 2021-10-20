@@ -57,9 +57,6 @@ ogni passaggio va a lavorare su:
 > **P ovvero Q**: serve per espandere P ottenendo la frase Q
 
 
-## Regola della eliminazione dimostrazione
-
-Da un ipotesi o un risltato intermetdio $p \implies Q$ di nome H, se volete concludere Q potete dire
 
 ## Regola dell'assurdo
 
@@ -89,7 +86,7 @@ che P valga e una volta che Q valga:
 
 Potete anche utilizzare una **regola di introduzione** per dimostrare un **nuovo risultato intermedio**, diverso dalla conclusione corrente, a cui date un nome per utilizzarlo in seguito, a patto che abbiate già a disposizione le **premesse** della regola
 
-## esiste
+## Esiste
 
 
 **introduzione**:

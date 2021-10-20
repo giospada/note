@@ -33,6 +33,3 @@ docente
 
 - esame scritto (27 punti) dove si avranno punti bonus per i progetti (max. 6) e per li interventi
 
-
-
-
