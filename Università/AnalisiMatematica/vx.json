@@ -1,0 +1,100 @@
+{
+    "created_time": "2021-10-19T17:23:43Z",
+    "files": [
+        {
+            "attachment_folder": "",
+            "created_time": "2021-10-19T17:23:43Z",
+            "id": "0",
+            "modified_time": "2021-10-19T17:24:04Z",
+            "name": "01-AnalisiMatematica.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2021-10-19T17:23:43Z",
+            "id": "0",
+            "modified_time": "2021-10-19T17:23:43Z",
+            "name": "02-Insiemi_e_notazioni.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2021-10-19T17:23:43Z",
+            "id": "0",
+            "modified_time": "2021-10-19T17:23:43Z",
+            "name": "04-Logica.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2021-10-19T17:23:43Z",
+            "id": "0",
+            "modified_time": "2021-10-19T17:23:43Z",
+            "name": "05-Funzioni.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2021-10-19T17:23:43Z",
+            "id": "0",
+            "modified_time": "2021-10-19T17:23:43Z",
+            "name": "06-CalcoloCombinatoria.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2021-10-19T17:23:43Z",
+            "id": "0",
+            "modified_time": "2021-10-19T17:23:43Z",
+            "name": "07-EsDimostrazioni.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2021-10-19T17:23:43Z",
+            "id": "0",
+            "modified_time": "2021-10-19T17:23:43Z",
+            "name": "08-Numeri_Reali.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2021-10-19T17:23:43Z",
+            "id": "0",
+            "modified_time": "2021-10-19T17:23:43Z",
+            "name": "09-ValoreAssoluto.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2021-10-19T17:23:43Z",
+            "id": "0",
+            "modified_time": "2021-10-19T17:23:43Z",
+            "name": "10-SuccessioniNumeriche.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2021-10-19T17:23:43Z",
+            "id": "0",
+            "modified_time": "2021-10-19T18:47:21Z",
+            "name": "11-Funzioni Esponenziali.md",
+            "tags": [
+            ]
+        }
+    ],
+    "folders": [
+    ],
+    "id": "0",
+    "modified_time": "2021-10-19T17:23:43Z",
+    "version": "1"
+}

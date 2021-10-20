@@ -1,0 +1,61 @@
+{
+    "created_time": "2021-10-19T17:23:43Z",
+    "files": [
+        {
+            "attachment_folder": "",
+            "created_time": "2021-10-19T17:23:43Z",
+            "id": "0",
+            "modified_time": "2021-10-19T17:23:43Z",
+            "name": "index.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2021-10-19T17:23:43Z",
+            "id": "0",
+            "modified_time": "2021-10-19T17:23:43Z",
+            "name": "Notable.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2021-10-19T17:23:43Z",
+            "id": "0",
+            "modified_time": "2021-10-19T17:23:43Z",
+            "name": "Precorso.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2021-10-19T17:23:43Z",
+            "id": "0",
+            "modified_time": "2021-10-19T17:23:43Z",
+            "name": "README.md",
+            "tags": [
+            ]
+        }
+    ],
+    "folders": [
+        {
+            "name": "vx_recycle_bin"
+        },
+        {
+            "name": "assets"
+        },
+        {
+            "name": "Compiti"
+        },
+        {
+            "name": "Computer"
+        },
+        {
+            "name": "Università"
+        }
+    ],
+    "id": "1",
+    "modified_time": "2021-10-19T17:23:43Z",
+    "version": "1"
+}
