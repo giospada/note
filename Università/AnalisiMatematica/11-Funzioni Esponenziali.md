@@ -137,7 +137,7 @@ TODO: da aggiungere
 
 
 $\cos(\alpha-\beta)=\cos \alpha \times \cos \beta +\sin \alpha \times \sin \beta$
-
+ 
 $\cos(\alpha+\beta)=\cos \alpha \times \cos \beta -\sin \alpha \times \sin \beta$
 
 
