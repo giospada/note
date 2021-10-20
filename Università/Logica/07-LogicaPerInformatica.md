@@ -91,6 +91,16 @@ TODO:finisci slide 18/19
 **es**
 </summary>
 
+**es**
+
+- $\{\langle\text{,",",}\rangle\}$ costruttori di coppie
+- $\{::\}$ costruttore che separa la testa e la coda
+- $\{[]\}$ rappresenta la lista vuota
+- $\perp$ errore 
+
+TODO: compleatre
+</details>
+
 
 ## **Turing-completezza**:
 Se non ci restringessimo alla ricorsione strutturale (vedi dopo), qualunque programma esprimibile in un qualunque linguaggio di programmazione sarebbe esprimibile in questo pseudo-codice!
