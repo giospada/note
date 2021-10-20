@@ -12,36 +12,57 @@ ci serve per definire il linguaggio artificiale
 
 ## Backus-Naur Form (BNF)
 
-BNF è una notazione per descrivere le grammatiche; non tutti i linguaggi sono descrivibili tramite BNF (TODO: aggiungere nota).
+**BNF** è una notazione per descrivere le **grammatiche**; non tutti i linguaggi sono descrivibili tramite BNF .
 
 Una BNF è una quadrupla (T,NT,X,P):
-- T: è un alfabeto ovvero un insieme non vuoto di simboli detti temrinali
-- NT è un insieme non vuoto di simboli detti non terminali distinti da quelli di T
+- T: è un alfabeto ovvero un insieme non vuoto di simboli detti **temrinali**
+- NT è un insieme non vuoto di simboli detti **non terminali** distinti da quelli di T
 - $X \in NT$ è il simobolo terminale non iniziale
 - P è un insieme di coppie formate da:
     - un simbolo non terminale
     - un insieme di stringe di simboli terminali e non terminali (es (X,{$w_1,...w_2$}) si rappresenta $X ::= w_1|....|w_n$ (che si legge X è $w_1$ oppure ... $w_n$
 
-: Esempio: ({0, 1}, {X, Y}, X, {X ::= 0 | 0Y, Y ::= 1X})
 
+<details>
+<summary>
+Esempio:
+</summary>
+ ({0, 1}, {X, Y}, X, {X ::= 0 | 0Y, Y ::= 1X})
+</details>
 
 Di solito di una BNF si indicano solamente le produzioni P:
-- i simboli non terminali sono allora tutti quelli con cui iniziano le produzioni
-- i simboli terminali sono tutti i simboli delle produzioni esclusi i non terminali
-- il simbolo iniziale è il simbolo con cui inizia la prima produzione
+- i **simboli non terminali** sono allora tutti quelli con cui iniziano le produzioni
+- i **simboli terminali **sono tutti i simboli delle produzioni esclusi i non terminali
+- il **simbolo iniziale **è il simbolo con cui inizia la prima produzione
 
-La stringa w di soli terminali appartiene al linguaggio sse
-ottengo w a partire da X rimpiazzando ripetutamente ciascun
-non terminale con una delle stringhe alternative a lui associate
+<details>
+<summary>
+esempio
+</summary>
+
+({0,1},{X ,Y },X ,{X ::= 0 |0Y , Y ::= 1X }):  
+X ::= 0 |0Y  
+Y ::= 1X  
+Non terminali: {X ,Y }; Simbolo iniziale: X ; Terminali: {0,1}.
+</details>
+
+**Un BNF si definisce:** La stringa $\omega$ di soli terminali appartiene al linguaggio sse
+ottengo $\omega$ a partire da **X rimpiazzando ripetutamente ciascun
+non terminale** con una delle stringhe alternative a lui associate
 in una produzione.
 
 
-Una grammatica è ambigua se si mostra che due modi diversi che una parola w appartiene al linguaggio.
+Una **grammatica è ambigua** se si mostra che due modi diversi che una parola w appartiene al linguaggio.
 
+<details>
+<summary>
 Esempio: 
+</summary>
+
 $F ::= x | y| F+F | F\times F$
 
 $x + y\times x$ la posso ottenere in due modi diversi 
+</details>
 
 ### Precedenze
 
@@ -87,12 +108,27 @@ TODO:finisci slide 18/19
 <details>
 
 <summary>
-
-**es**
+es
 </summary>
 
+</details>
 
-## **Turing-completezza**:
+
+
+## Turing-completezza
+
 Se non ci restringessimo alla ricorsione strutturale (vedi dopo), qualunque programma esprimibile in un qualunque linguaggio di programmazione sarebbe esprimibile in questo pseudo-codice!
 
+
+## Ricorsione Strutturale
+
+Le **BNF** imprimono alle stringhe una **struttura ricorsiva**; In una struttura ricorsiva, un elemento o è atomico, o è composto a partire da parti più piccole con la stessa struttura; quindi:
+- nei casi **atomici** il problema è semplice e si risove direttamente
+- nei casi **composti**, si risolve prima il problema sulle componeti, ottenute le risposte si sintetizza larisposte, si sintetizza la risposta per il caso composto senza osservare più componenti $\implies$ uniformità della soluzione
+
+
+Una funzione $f(\omega)$ dove $\omega$ è una stringa (formula) è definita per
+ricorsione strutturale sse:
+1. $f$ considera tutte le possibili produzioni che definiscono $\omega$ una e una volta sola
+2. per ogni produzione f si richiama ricorsivamente solamente sulle sottoformule immediate di $\omega$
 

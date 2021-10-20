@@ -4,11 +4,15 @@
 
 ## Funzione Esponenziale
 
-$a \in \mathbb{R} , a<0 , a \neq 1$
-
+definizione di esponenziale:  
+$a \in \mathbb{R} , a<0 , a \neq 1$  
 $y=a^x$
-
 **oss**: $a>0$
+
+<details>
+<summary>
+esempio
+</summary>
 
 $a=-2$
 
@@ -16,25 +20,25 @@ $(a)^3=-8$
 $(a)^{\frac{6}{2}}\sqrt{-2^6}=\sqrt{64}=8$
 
 non coincidono 
+</details>
 
-**Notazione**
+
+**Notazione**:
 
 $\exp_a(x){:=} a^n$
 
-se si sceglie come base di a della funzione esponenziale il numero $e$
-
-$e^x$
-
-l'esponenziale a base naturale (nome per indicare la $e$)
+(se si sceglie come base di a della funzione esponenziale il numero $e$, $e^x$ l'esponenziale a base naturale (nome per indicare la $e$))
 
 $\exp : \mathbb{R} \rightarrow \mathbb{R}^{*}$
 
-TODO: aggiungere grafici
+
+![esponenziale](vx_images/5303331546703.png =181x)
+![esponenzie](vx_images/3346331093181.png =182x)
 
 ## Funzione Logaritmica
 
 $a \in \mathbb{R} , a<0 , a \neq 1$  
-$\forall y \in \mathbb{R}: y>0 \exist! x \in \mathbb{R}:$
+$\forall y \in \mathbb{R}: y>0 \exists! x \in \mathbb{R}:$
 
 $a^x=y$
 
@@ -50,19 +54,19 @@ $\log : \mathbb{R}^{*}_{+} \rightarrow \mathbb{R}$
 
 $\log_2 16=4$  
 $\log_2 1=0$
-
-
 </details>
 
 TODO: dimostrare che la funzine è inversa
 
+![logaritmo](vx_images/4993496907525.png =300x)
 
+![](vx_images/3945607777711.png =200x)
 ## Funzioni gognometriche
 
 **circonferenza gognometrica**: circonferenza di raggio uno con il centro sugli assi $x^2+y^2=1$ (lunghezza $2\pi$)
 
 TODO: add immagini
-
+![](vx_images/2133540871851.png =138x)
 
 ### Radianti
 
@@ -84,7 +88,6 @@ $\cos \alpha =x_p$
 
 **Oss**: possiamo scrivere $\sin^2 \alpha +\cos^2\alpha=1$
 
-![](../img/essempioformacanonica.png)
 
 
 $\sin \alpha =\sin \alpha \times 2\pi n$ dove $n \in \mathbb{N}$
