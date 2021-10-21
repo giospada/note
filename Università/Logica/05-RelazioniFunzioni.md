@@ -13,7 +13,7 @@ Una coppia ordinata $\langle 1,2 \rangle$ si può rappresentare come un insieme 
 ### 3.1.1. teorema di caratterizzazione delle coppie
 
 
-$\langle X,Y \rangle = \langle X^1 Y^1 \rangle \Leftrightarrow X= X^1 \wedge Y=Y^1$
+$\langle X,Y \rangle = \langle X^1 Y^1 \rangle \iff X= X^1 \wedge Y=Y^1$
 
 **crollario**:$\langle X, Y\rangle \neq \langle Y, X \rangle \text{a meno che} X=Y$
 
@@ -21,7 +21,7 @@ $\langle X,Y \rangle = \langle X^1 Y^1 \rangle \Leftrightarrow X= X^1 \wedge Y=Y
 
 a partire da due insiemi A e B possiamo creare il **prodotto cartesiano** che viene indicato con l'abuso di notazione AxB.
 
-$\forall A \forall B, \exists C,\forall Z,(Z\in C \Leftrightarrow \exists a,\exists b, ( a \in A \wedge b \in B \wedge Z=\langle a,b \rangle))$
+$\forall A \forall B, \exists C,\forall Z,(Z\in C \iff \exists a,\exists b, ( a \in A \wedge b \in B \wedge Z=\langle a,b \rangle))$
 
 **es**: $\{a,b\} \times \{1,2\}= \{\langle a,1\rangle,\langle a,2\rangle,\langle b,1 \rangle,\langle b,2\rangle\}$
 
@@ -44,13 +44,13 @@ Dimostrazione: non posso formare coppie prendo uno dei due elementi dall'insieme
   </summary>
 
 la relazione $\le$ sull'insieme numerico $\{0,1,2\}$ è definita come segue:  
-$\le \coloneqq \{\langle 0,0 \rangle ,\langle 0,1 \rangle ,\langle 0,2 \rangle ,\langle 1,1 \rangle ,\langle 1,2 \rangle,\langle 2,2 \rangle  \}$ e $0\le 2$ è una notazione per $\langle 0,2\rangle \in \le$
+$\le {:=} \{\langle 0,0 \rangle ,\langle 0,1 \rangle ,\langle 0,2 \rangle ,\langle 1,1 \rangle ,\langle 1,2 \rangle,\langle 2,2 \rangle  \}$ e $0\le 2$ è una notazione per $\langle 0,2\rangle \in \le$
 
 </details>
 
 ## 3.4. Dimostrazione Di Funzioni
 
-Una **funzione di dominio** A e codominio B e una qualunque relazione $f \subset A \times B$ tale che: $\forall X,(X \in A \Leftarrow \exists! Y , X f Y)$
+Una **funzione di dominio** A e codominio B e una qualunque relazione $f \subset A \times B$ tale che: $\forall X,(X \in A \implies \exists! Y , X f Y)$
 
 per ogni elemento del dominio c'è un **unico** elemento del codominio
 
@@ -59,7 +59,7 @@ Sia f una funzione. Scriviamo  $y=f(x)$ per dire $xfy$,ovvero $\langle x,y \rang
 
 ### 3.4.1. Teorema esistenza dello spazio di funzioni come insieme
 
-$\forall A, \forall B,\exists C,\forall f,(f \in C \Leftrightarrow f \text{ è una funzione di dominio  A e codominio B})$
+$\forall A, \forall B,\exists C,\forall f,(f \in C \iff f \text{ è una funzione di dominio  A e codominio B})$
 
 Abuso di notazione $B^{A}$ (spazionio delle funzioni da A a B)
 
@@ -77,15 +77,23 @@ $\{1,2\}^{\{a,b\}} = \{\{\langle a,1\rangle,\langle b,1\rangle \},\{\langle a,1\
 $B^{\emptyset}=\emptyset$  
 $\emptyset^A=\emptyset se A\neq \emptyset$
 
-## 3.5. Abbreviazioni 
+## 3.5. iniettiva surrettiva biettività
+
+$f \in B^{A}$
+
+- iniettiva:quando $\forall x,y \in A (f(x)=f(y)\implies x=y)$
+- surrettiva:quando $\forall y\in B\exists x \in A ,f(x)=y$
+- biettiva: quando è sia iniettiva che surrettiva
+
+## 3.5. Abbreviazioni
 
 
-1. $\forall X \in A,P(X)$ indica  $\forall X (X \in A \Rightarrow P(X))$
+1. $\forall X \in A,P(X)$ indica  $\forall X (X \in A \implies P(X))$
 1. $\exists X \in A,P(X)$ indica  $\exists X (X \in A \wedge P(X))$
 1. $\forall X,Y \in A,P(X,Y)$ indica  $\forall X in A ,\forall Y \in A,P(X,Y)$
 1. $\exists X,Y \in A,P(X,Y)$ indica $\exists X \in A , \exists Y \in A,P(X,Y)$
 
-## 3.6. Priorprietà delle relazioni
+## 3.6. Proprietà delle relazioni
 
 Sia $\mathit{R} \subset A \times A $.La relazione $\mathit{R}$ gode della proprietà
 - riflessiva se $\forall X \in A,X\mathit{R}X$
@@ -120,7 +128,7 @@ TODO: add
 ### 3.6.5. Insieme quoziente
 
 sia $\equiv \subseteq A*A$ una relazione di equivalensa.L'**insieme quoziente** di A ripetto a $\equiv$ è definito come:
-$A_{/\equiv}\coloneqq \{[x]_{\equiv} | x \in A\}$
+$A_{/\equiv}{:=} \{[x]_{\equiv} | x \in A\}$
 
 
 ### 3.6.6. Costruzione di Z
@@ -131,19 +139,11 @@ Q=$\mathbb{Z}\times \mathbb{Z}^0$ dove $\mathbb{Z}^0=\mathbb{Z}\/{0}$
 
 Costruisco una relazione di equivalenza tra le coppie in Z come: $\langle a_1,b_1\rangle \equiv \langle a_2,b_2 \rangle \coloneq a_1\times b_2 =b_1 \times a_2$
 
-$\mathbb{Q}\coloneqq $Q_{\/\equiv} = \{...,[\langle 2,3\rangle],...,[\langle 4,2\rangle],...\}$
+$\mathbb{Q}{:=} $Q_{\/\equiv} = \{...,[\langle 2,3\rangle],...,[\langle 4,2\rangle],...\}$
 
 la classe di equivalenza $[\langle 2,3\rangle]={\langle 2,3\rangle,\langle 4,6\rangle,...}$
 
-## 3.7. iniettiva surrettiva biettività
 
-$f \in B^{A}$
-
-- indiettiva 
-- surretti
-- biettiva
-
-TODO: to complete
 
 
 

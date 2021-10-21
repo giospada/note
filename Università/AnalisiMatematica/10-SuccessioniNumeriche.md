@@ -1,7 +1,7 @@
 
 
 # Successioni Numeriche 
-
+  
 successioni di numeri reali è una funzione, perchè essendo una successione devono essere numerati
 
 allora creaiamo $f: \mathbb{N} \rightarrow R$   

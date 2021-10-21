@@ -22,13 +22,13 @@ $\bar{p} = \exists a \in A : \text{a non è pari}$
 </details>
 
 
-$p \Rightarrow q$ = "p implica q" (p si chiama ipotesi e q si chiama tesi)
+$p \implies q$ = "p implica q" (p si chiama ipotesi e q si chiama tesi)
 
 <details>
     <summary>
         tabella di verità e equivalenza
     </summary>
-| p | q |$p \Rightarrow q$| 
+| p | q |$p \implies q$| 
 |---|---|---------------------|
 | V | V |           V         |
 | V | F |           F         |
@@ -38,9 +38,9 @@ $p \Rightarrow q$ = "p implica q" (p si chiama ipotesi e q si chiama tesi)
 </details>
 
 
-$p \Leftrightarrow q$ = "p implica q" 
+$p \iff q$ = "p implica q" 
 
-significa che $(p \Rightarrow q) \wedge( q \Rightarrow q)$
+significa che $(p \implies q) \wedge( q \implies q)$
 
 "è sufficiente p affinché q"
 
@@ -48,7 +48,7 @@ significa che $(p \Rightarrow q) \wedge( q \Rightarrow q)$
     <summary>
         tabella di verità
     </summary>
-| p | q |$p \Leftrightarrow q$| 
+| p | q |$p \iff q$| 
 |---|---|---------------------|
 | V | V |           V         |
 | V | F |           F         |

@@ -3,7 +3,7 @@
 # Varole Assoluto
 
 $a \in R$  
-$|a| \coloneqq max\{a,-a\}$
+$|a| {:=} max\{a,-a\}$
 
 ## Prioprità
 
@@ -12,5 +12,5 @@ $|a| \coloneqq max\{a,-a\}$
 3. $-|a|\le a \le |a|$
 4. $|a+b|\le |a|+|b|$
 5. $||a|-|b||\le |a-b|$
-6. $|a| \le b \Leftrightarrow -b \le a \le b$
-7. $|a| \ge b \Leftrightarrow a \le -b \vee a \ge b$
+6. $|a| \le b \iff -b \le a \le b$
+7. $|a| \ge b \iff a \le -b \vee a \ge b$

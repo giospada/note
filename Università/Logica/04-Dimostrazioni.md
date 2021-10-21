@@ -31,41 +31,38 @@ ogni passaggio va a lavorare su:
 
 **eliminazione**:Per ogni ipotesi o risultato intermedio $\forall x P(x)$ potete concludere che P valga ciò che volete
 
-## Implicazione $\Rightarrow$
+## Implicazione $\implies$
 
-**introduzione**: Per dimostrare $P \Rightarrow Q$
+**introduzione**: Per dimostrare $P \implies Q$
 
 > “Assumo P (H). . . .”
 > (“H”) e il nome dell’ipotesi; `
 > i “. . .” sono una prova di Q)
 
 
-**eliminazione**: Da un’ipotesi o un risultato intermedio $P \Rightarrow Q$ e da un’ipotesi o un risultato intermedio P potete concludere che Q vale.
+**eliminazione**: Da un’ipotesi o un risultato intermedio $P \implies Q$ e da un’ipotesi o un risultato intermedio P potete concludere che Q vale.
 
 
-**eliminazione** (variante): Da un’ipotesi o un risultato intermedio $P \Rightarrow Q$ di nome H , se volete concludere Q, potete procedere dicendo "per H , per dimostrare Q mi posso ridurre a dimostrare P" 
+**eliminazione** (variante): Da un’ipotesi o un risultato intermedio $P \implies Q$ di nome H , se volete concludere Q, potete procedere dicendo "per H , per dimostrare Q mi posso ridurre a dimostrare P" 
 
 
-## Coimplica $\Leftrightarrow$
+## Coimplica $\iff$
 
-**introduzione**: Per dimostrare $P \Leftrightarrow Q$ allora devo dimostrare $P \Rightarrow Q$ e $Q \Rightarrow Q$
+**introduzione**: Per dimostrare $P \iff Q$ allora devo dimostrare $P \implies Q$ e $Q \implies Q$
 
-**eliminazione**:L'ipotesi $P \Leftrightarrow Q$ può essere usata sia come ipotesi $P \Rightarrow Q$ che come $Q \Rightarrow P$
+**eliminazione**:L'ipotesi $P \iff Q$ può essere usata sia come ipotesi $P \implies Q$ che come $Q \implies P$
 
 ## Espansione Definizioni
 
 > **P ovvero Q**: serve per espandere P ottenendo la frase Q
 
 
-## Regola della eliminazione dimostrazione
-
-Da un ipotesi o un risltato intermetdio $p \Rightarrow Q$ di nome H, se volete concludere Q potete dire
 
 ## Regola dell'assurdo
 
 [dimostrazione per assurdo](https://www.mathone.it/dimostrazione-per-assurdo/)
 
-Se attraverso le altre ipotesi rendono P falso, $P \Rightarrow assurdo$
+Se attraverso le altre ipotesi rendono P falso, $P \implies assurdo$
 
 ## Congiunzione
 
@@ -89,7 +86,7 @@ che P valga e una volta che Q valga:
 
 Potete anche utilizzare una **regola di introduzione** per dimostrare un **nuovo risultato intermedio**, diverso dalla conclusione corrente, a cui date un nome per utilizzarlo in seguito, a patto che abbiate già a disposizione le **premesse** della regola
 
-## esiste
+## Esiste
 
 
 **introduzione**:
@@ -110,7 +107,7 @@ x deve essere una variabile non in uso in nessuna ipotesi o nella conclusione
 > “sia x tale che P(x). . . .”
 > abbrevia
 > “sia x (un insieme) fissato; assumo P(x); . . . ”
-> per dimostrare $∀x P(x) \Rightarrow Q(x)$
+> per dimostrare $∀x P(x) \implies Q(x)$
 
 - **Da $H_1, . . . , H_n$**:
 - **Quindi**:

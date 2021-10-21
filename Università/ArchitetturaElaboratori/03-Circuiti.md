@@ -1,5 +1,5 @@
 
-# 5. Porte Logiche e Circuiti Combinatori
+# Porte Logiche e Circuiti Combinatori
 
 > Porte Logiche:hanno 1/2 ingressi (che possono essere scambiati) e un uscita
 
@@ -32,7 +32,7 @@ Per esempio la forma canonica della funzione definita nell'immagine sopra è : $
 Creaiamo dei circuiti che rappresentano fisicamente le nostre funzioni booleane.
 Per creare tutte le nostre funzioni booleane possiamo partire dalla porta NAND, infatti con questa porta si riescono ad implementare tutte le porte logiche (AND,OR e NOT). Inoltre la porta NAND è molto facile da implementare fisicamente.
 
-![](../img/orandnot.png)
+![](../img/orandnot.png =400x)
 
 **Xor**:è vero solo se i due input sono diversi
 
@@ -58,26 +58,26 @@ $A+0$
 
 **mappa per due variabili**
 
-| B \ A | 0 | 1 |
-|-----|---|---|
-| 0   |   |   |
-| 1   |   |   |
+| B \ A |  0  |  1  |
+| ----- | --- | --- |
+| 0     |     |     |
+| 1     |     |     |
 
 **mappa per tre variabili** (notare quando ci sono più variabili ordiniamo i numeri con il gray code)
 
-| B \ AC |00| 01 | 11 | 10 |
-|-----|---|---|---|---|
-| 0   |   |   |   |   |
-| 1   |   |   |   |   |
+| B \ AC | 00  | 01  | 11  | 10  |
+| ------ | --- | --- | --- | --- |
+| 0      |     |     |     |     |
+| 1      |     |     |     |     |
 
 **mappa con quattro variabili**
 
-| DB \ AC |00| 01 | 11 | 10 |
-|-----|---|---|---|---|
-| 00 |   |   |   |   |
-| 01 |   |   |   |   |
-| 11 |   |   |   |   |
-| 10 |   |   |   |   |
+| DB \ AC | 00  | 01  | 11  | 10  |
+| ------- | --- | --- | --- | --- |
+| 00      |     |     |     |     |
+| 01      |     |     |     |     |
+| 11      |     |     |     |     |
+| 10      |     |     |     |     |
 
 
 possiamo racchiudere gli uno nella tabella in rettangoli con base e altezza che sono potenze di 2.

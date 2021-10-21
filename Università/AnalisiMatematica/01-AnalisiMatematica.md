@@ -1,6 +1,4 @@
 ---
-
-
 title: Analisi Matematica
 date: Settembre 2021
 author: Giovanni Spadaccini
@@ -37,6 +35,10 @@ Insegnante: Marco Maghetti
 - funzioni derivabili
 - grafico di una funzione
 - formula ti Taylor per le funzioni regolare
+
+### Parziale
+
+22 dicembre 9:30/10:00
 
 ## Modulo 2
 

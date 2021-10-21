@@ -33,10 +33,10 @@ $n^2$ è pari ma  $MCD(m,n)=1$ quindi è impossibile
 
 **dimostrazione**
 
-Lemma: $m,n,l \in \mathbb{N}$  tali che $MCD(l,m)=1$ allora se $l | m \times n \Rightarrow l | n$
+Lemma: $m,n,l \in \mathbb{N}$  tali che $MCD(l,m)=1$ allora se $l | m \times n \implies l | n$
 
 
-supponiamo che $\sqrt{n} \in \mathbb{Q} \Rightarrow \exists p,q \in N: \sqrt{n}=\frac{p}{q}$ dove $MCD(p,q)=1$
+supponiamo che $\sqrt{n} \in \mathbb{Q} \implies \exists p,q \in N: \sqrt{n}=\frac{p}{q}$ dove $MCD(p,q)=1$
 
 $n=\frac{p^2}{q^2}$  
 $nq^2=p^2$  
@@ -109,7 +109,7 @@ N, Z e Q hanno la stessa cardinalità mentre R ha una cardinalità maggiore $|\m
 
 **Dimostrazione per Assurdo**
 
-Supponiamo che esista una funzione:$f:\mathbb{N} \Rightarrow [0,1[$ 
+Supponiamo che esista una funzione:$f:\mathbb{N} \implies [0,1[$ 
 definiamo la funzione come:
 
 ![](../img/NtoR.png)
@@ -127,7 +127,7 @@ $r_j=\begin{cases}5 & \text{se } b_{jj}\neq 5 \\ 6 & \text{se } b_{jj}=5\end{cas
 $\forall a \in \mathbb{R_{+}}, \forall n \in \mathbb{N} /\ \{0\} : \exists! b \in \mathbb{R_{+}} : b^n=a$
 
 
-**Abuso di notazione**:b si dice radice artimetica n-esima di a e si scrive $\sqrt{a}^{n}\coloneqq b$.
+**Abuso di notazione**:b si dice radice artimetica n-esima di a e si scrive $\sqrt{a}^{n}{:=} b$.
 
 Oss: la radice **aritmetica è un numero $\ge 0$** quindi $\sqrt{4}=2$
 
@@ -137,11 +137,11 @@ TODO: ricopiare il lemma pag 5
 
 $\forall n,y \in \mathbb{R}: x,y \ge 0$
 si ha:
-1. $x^2 \le y^2 \Leftrightarrow x \le  y$
-2. $x^2 \ge y^2 \Leftrightarrow x \ge y$
-3. $x^2 = y^2 \Leftrightarrow x = y$
-4. $x^2 < y \Leftrightarrow \exists \varepsilon > 0: (x+\varepsilon)^2 < y$
-5. $x^2 > y \Leftrightarrow \exists \varepsilon > 0: (x+\varepsilon)^2 > y$
+1. $x^2 \le y^2 \iff x \le  y$
+2. $x^2 \ge y^2 \iff x \ge y$
+3. $x^2 = y^2 \iff x = y$
+4. $x^2 < y \iff \exists \varepsilon > 0: (x+\varepsilon)^2 < y$
+5. $x^2 > y \iff \exists \varepsilon > 0: (x+\varepsilon)^2 > y$
 
 le prime tre non valgono solo con x e y alla seconda ma quando condividono qualsiasi stesso esponente.
 
