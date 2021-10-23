@@ -3,18 +3,35 @@
 
 > Porte Logiche:hanno 1/2 ingressi (che possono essere scambiati) e un uscita
 
+
+
+> Circuiti combinatori :  
+>  Sono circuiti che con lo stesso set di input input  producono lo stesso output
+
+> Circuiti Sequenziali :  
+> Circuiti che cambiano l'output in base agli input ricevuti in passato
+
 ![](../img/portelogiche.png)
 
-Ogni Porta Logica e circuito combinatorio può essere descritto tramite la tabella di verità
+La porta logica più inportante che utilizziermo è l'**NAND**, perchè da questa porta riusciremo a costriuire tutte le porte logiche.
+
 
 ![](../img/proprietadibool.png)
 
 
-**es**  
+<details>
+<summary>
+es algebra di bool
+</summary>
+
 passare da $A+\bar{A}=1$ a $A\bar{A}=0$ utilizzando de morgan law
+</details>
 
 
-## 5.1. Funzioni booleane e tabelle di verità
+## Funzioni booleane e tabelle di verità
+
+Un circuito non si può descrivere anche con una tabella di verità  
+>`tabella di verità` mappa tutti gli input con i risultato l'output (ha $2^n$ mintermini/righe)
 
 > Un **mintermine** su n variabili è l’AND fra n letterali corrispondenti alle n variabili
 
@@ -45,7 +62,7 @@ Per creare tutte le nostre funzioni booleane possiamo partire dalla porta NAND, 
 
 
 **es**  
-fare la tabella di verità su $A+ \overline{ (A+C) } B$
+fare la tabella di verità su $A+ \overline{ (B+C) } B$
 
 $A+ \overline{ (B+C) } B$  
 $A+\bar{B}\bar{C}B$  

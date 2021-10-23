@@ -1,7 +1,7 @@
 
 # Funzioni
 
-$f: A \rightarrow B$ $x \overrightarrow{f} f(x)$:
+$f: A \rightarrow B$    $x \xrightarrow{\space f\space} f(x)$:
 - A è il dominio di $f$ 
 - B è il codominio di $f$
 - $f$ è la legge di associazione
@@ -13,7 +13,7 @@ $\forall x \in A, \exists! b \in B : f(x) = b$
 due funzioni sono uguali se e solo se il dominio il codominio e la legge di associazione sono uguali:
 <details>
 
-$f: A \rightarrow B \\ f': A'\rightarrow B' \\ \begin{cases} A=A' \\ B=B' \\ f=f'\end{cases}$
+$\displaylines{f: A \rightarrow B \\ f': A'\rightarrow B' \\ \begin{cases} A=A' \\ B=B' \\ f=f'\end{cases}}$
 </details>
 
 
@@ -81,22 +81,18 @@ perchè vengono estesi i numeri razionali a quelli reali
 due insiemi sono **equipotenti** solo se i due insiemi **hanno la stessa cardinaltà**.  
 Si può dimostrare  due insiemi sono equipotenti se c'è una **corrispondenza biunivoca** (molto utile con gli insiemi infiniti).
 
-$N$ e $Z$ sono inifiniti
-$N \subsetneqq Z$
+$\mathbb{N}$ e $\mathbb{Z}$ sono inifiniti
+$\mathbb{N} \subsetneqq \mathbb{Z}$
 
-$N$ e $Z$ sono equipotenti
+$\mathbb{N}$ e $\mathbb{Z}$ sono equipotenti
 
 
-<details>
-    <summary>
-    dimostrazione che  N e Z sono equipotenti
-    </summary>
+### dimostrazione che  N e Z sono equipotenti
 
 per dimostrare che $\mathbb{N}$ e $\mathbb{Z}$ sono equipotenti creaiamo una funzione biunivoca tra i due 
 
 $f(n)= \begin{cases} n/2 & \text{se n è pari} \\ -\frac{n+1}{2} & \text{se n è pari} \end{cases}$
 
-</details>
 
 
 ## Numberailità

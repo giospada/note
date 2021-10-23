@@ -26,22 +26,7 @@ Tipico elaboratore a 6 livelli
 > porte logiche:  
 > circuiti hanno tutti due input
 
-un circuito si scrive anche con una tabella di verità
 
->`tabella di verità` mappa tutti gli input con i risultato l'output (ha $2^n$ righe)
-
-(si costruirà tutto partendo dalla porta NAND, e utilizzando solo questo circuito)
-
-> NAND:   
-> il circuito NAND ha la tabella di verità come un and negato
-> (si usa la NAND perché si possono realizzare tutte le porte logiche)
-
-
-> Circuiti combinatori :  
->  Sono circuiti che con lo stesso set di input input  producono lo stesso output
-
-> Circuiti Sequenziali :  
-> Circuiti che cambiano l'output in base agli input ricevuti in passato
 
 
 ## Livello 1
