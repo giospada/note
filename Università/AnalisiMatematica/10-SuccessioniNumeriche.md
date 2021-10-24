@@ -39,26 +39,42 @@ non è ne inferiormente ne superiormente limitata
 
 $a_n =\frac{n}{n+1} \rightarrow 1$
 
-## Limiti 
 
 ### Limiti finiti
 
-$(a_n)_n , L \in \mathbb{R} \text{  si dice che } \displaystyle \lim_{n \rightarrow +\infty} = L \text{ se } \\ \forall \varepsilon >0, \exists \bar{n}=\bar{n}(\varepsilon) \in \mathbb{N}: \forall n \ge \bar{n} : \\ |a_n -L | < \varepsilon (L - \varepsilon < a_n < L + \varepsilon) \\ (a_n)_n \text{ si dice convergente}$
+$\displaylines{(a_n)_n , L \in \mathbb{R} \text{  si dice che } \displaystyle \lim_{n \rightarrow +\infty} = L \text{ se } \\ \forall \varepsilon >0, \exists \bar{n}=\bar{n} \in \mathbb{N}: \forall n \ge \bar{n} : \\ |a_n -L | < \varepsilon \\ (L - \varepsilon < a_n < L + \varepsilon) \\ (a_n)_n \text{ si dice convergente}}$
 
-in questo  caso la funzione si dice **convergente**
-TODO: da completare
+
+<details>
+<summary>
+Esercizio Limite finito 
+
+
+</summary>
+
+fissando un $\varepsilon >0$  arbitrario, posso trovare un $\bar{n}$ in modo che :
+$\displaylines{\forall n \le \bar{n} \\ |\frac{n-1}{n}-1| < \varepsilon}$ ?
+
+
+
+![](vx_images/4562411229295.png)
+![](vx_images/48494786818.png)
+</details>
+
 
 
 
 ### Limiti infiniti
 
-Si dice che $\displaystyle \lim_{n \rightarrow \infty} a_n=+\infty$ se $\forall k > 0,\exists \bar{n}=\bar{n}(k) \in \mathbb{N} : \forall n \ge \bar{n} : a_n \ge k$
+Si dice che $\displaystyle \lim_{n \rightarrow \infty} a_n=+\infty$ se:  
+$\displaylines{\forall k > 0,\exists \bar{n}=\bar{n}(k) \in \mathbb{N} : \\ \forall n \ge \bar{n} : a_n \ge k}$  
 
-Si dice che $\displaystyle \lim_{n \rightarrow \infty} a_n=-\infty$ se $\forall k > 0,\exists \bar{n}=\bar{n}(k) \in \mathbb{N} : \forall n \ge \bar{n} : a_n \le -k$
+Si dice che $\displaystyle \lim_{n \rightarrow \infty} a_n=-\infty$ se :  
+$\displaylines{\forall k > 0,\exists \bar{n}=\bar{n}(k) \in \mathbb{N} : \\ \forall n \ge \bar{n} : a_n \le -k}$
 
 in questi casi la successione si dice **divergente**
 
-TODO: aggiungere esempi
+
 
 **Oss**: ci sono successioni che non hanno limitie
 
@@ -74,36 +90,61 @@ $a_n= (-1)^n\times n$
 oscilla e quindi non ha limite
 </details>
 
+## Algebra dei limiti
+
 **Teorema** (Algebra dei limiti)
 
-$(a_n)_m$,$(b_n)_m$ successioni  
+siano $(a_n)_m$,$(b_n)_m$ successioni  tali che, $a_n \rightarrow l_1$ ,$b_n \rightarrow l_1$ dove $l_1,l_2 \in \mathbb{R} \cup \{\infty \} \cup \{\infty\}$
 
-$a_n \rightarrow l_1$ ,$b_n \rightarrow l_1$
-dove $l_1,l_2 \in \mathbb{R} \cup \{\infty \} \cup \{\infty\}$
+### Somma 
 
-allora:
+$$a_n+b_n \rightarrow \begin{cases}
+l_1+l_2 &\text{se } l_1,l_2 \in \mathbb{R} \\
+\infty &\text{se } l_1=+\infty,l_2 \in \mathbb{R}\cup\{+\infty\} \\
+-\infty &\text{se } l_1=-\infty,l_2 \in \mathbb{R}\cup\{-\infty\} \\
+ \end{cases}$$
 
-$a_n+b_n \rightarrow \begin{cases} l_1+l_2 se l_1,l_2 \in \mathbb{R} \\ +\infty se l_1 =  \end{cases}$
+Forme Indeterminate $+\infty-\infty$
 
-TODO:copiare la somma delle serie e idotto 7-8
+### Moltiplicazione
 
-$0 +(\pm \infinity)$ indefinito
-$0 \times(pm \infty)$ indefinito
-$\fract{(\pm \infty)}{\pm \infty}$ indefinito
+$$a_n \times b_n \rightarrow \begin{cases}
+l_1\times l_2 &\text{se } l_1,l_2 \in \mathbb{R} \\
++\infty &\text{se } l_1=+\infty,l_2 \in (\mathbb{R}^+\cup\{+\infty\})\backslash \{0\} \\
++\infty &\text{se } l_1=-\infty,l_2 \in (\mathbb{R}^-\cup\{-\infty\})\backslash \{0\} \\
+-\infty &\text{se } l_1=+\infty,l_2 \in (\mathbb{R}^-\cup\{-\infty\})\backslash \{0\} \\
+-\infty &\text{se } l_1=-\infty,l_2 \in (\mathbb{R}^+\cup\{+\infty\})\backslash \{0\} \\
+ \end{cases}$$
 
-### Le successioni Monotone
+Forme Indeterminate $0\times (\pm \infty)$
 
-(a_n)_n si dice crescente $\gorall n \in \mathbb{N}$: $a_n \le a_{n+1}$
+### Divisione
 
-(b_n)_n si dice crescente $\gorall n \in \mathbb{N}$: $b_n \ge b_{n+1}$
+
+$$\frac{a_n}{b_n} \rightarrow \begin{cases}
+l_1\times l_2 &\text{se } l_1,l_2 \in \mathbb{R} \\
++\infty &\text{se } l_1=+\infty,l_2 \in l_2>0 \\
++\infty &\text{se } l_1=-\infty,l_2 \in l_2<0 \\
+-\infty &\text{se } l_1=-\infty,l_2 \in l_2>0 \\
+-\infty &\text{se } l_1=+\infty,l_2 \in l_2<0 \\
+ \end{cases}$$
+
+
+Forma Ineterminata:$\frac{\pm \infty}{\pm \infty}$ 
+
+## Le successioni Monotone
+
+$(a_n)_n$ si dice crescente $\forall n \in \mathbb{N}$: $a_n < a_{n+1}$ si scrive $(a_n \nearrow)$
+
+$(b_n)_n$ si dice crescente $\forall n \in \mathbb{N}$: $b_n > b_{n+1}$ si scrive $(a_n\searrow)$
 
 Una successione crescente o descrescente viene chiamata **monotona**
 
 
-Una proprietà importante delle successioni monotone è che esse hanno sempre limite, ossia sono sempre convergenti o descrescenti.
+Una **proprietà** importante delle **successioni monotone** è che esse hanno sempre limite, ossia sono **sempre convergenti o divergenti**.
 
 **Teorema**:
-se $(a_n)_n$ è crescente, allora $\displaystyle \lim_{n \righarrow +\infty a_n = sup \{a_n | n \in \mathbb{N}\}$
+se $(a_n)_n$ è crescente, allora $\displaystyle \lim_{n \rightarrow +\infty} a_n = sup \{a_n | n \in \mathbb{N}\}$
 
 se $(a_n)_n$ è descrescente, allora $\displaystyle \lim_{n \rightarrow + \infty} a_n = inf \{a_n | n \in \mathbb{N}\}$
 **Dim**:

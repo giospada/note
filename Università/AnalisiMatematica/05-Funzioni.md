@@ -1,7 +1,8 @@
 
 # Funzioni
 
-$f: A \rightarrow B$    $x \xrightarrow{\space f\space} f(x)$:
+$f: A \rightarrow B$
+$x \xrightarrow{\space f\space} f(x)$:
 - A è il dominio di $f$ 
 - B è il codominio di $f$
 - $f$ è la legge di associazione
