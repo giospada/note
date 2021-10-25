@@ -184,4 +184,5 @@ Quindi $\forall x \in ]-\frac{\pi}{2},\frac{\pi}{2}[ \\ \arccos(\cos x)=x$ e
 quindi $\forall y \in \mathbb{R} \\ \cos(\arccos y)=y$
 
 
+TODO: grafici
 
