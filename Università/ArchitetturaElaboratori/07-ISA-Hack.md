@@ -93,4 +93,76 @@ D=D&M
 M=!D
 ```
 
+> Mettere il valore 1 in tutte le celle di memoria con indirizzo compreso tra RAM[0] e RAM[1] assumendo RAM[1] > RAM[0] > 1
+
+```asm
+//essendo che RAM[1]>RAM[0] possiamo scrivere già il primo valore in RAM[0] e possiamo occupare come vogliamo RAM[0] e RAM[1]
+(while)
+@0
+A=M
+M=1
+@0
+MD=M+1
+@1
+D=M-D
+@while
+D;JGE
+```
+
+> RAM[2] = RAM[1] * (2^RAM[0])  
+
+```asm
+//; questo designe supporta RAM[0]=0
+//; come prima cosa si scrive RAM[1] in RAM[2]{
+@1
+D=M
+@2
+M=D
+//; }
+(top)
+//; decrementa RAM[0] e se è minore di zero va alla fine {
+@0
+MD=M-1
+@end
+D;JLE
+//; }
+//; allora se non è RAM[0] minore di zero fa RAM[2]+=RAM[2] e riparte dal check e decremtnto{
+@2
+D=M
+M=D+M
+@top
+D;JMP
+//;}
+(end)
+```
+> RAM[2] = RAM[1] / RAM[0], RAM[3] = RAM[1] mod RAM[0] 
+
+```asm
+//;mettiamo RAM[1] in RAM[3] e settiamo RAM[2]=0
+@2
+M=0
+@1
+D=M
+@3
+M=D
+//; checkiamo che RAM[3] sia maggiore di RAM[0] e se è minore andiamo a end
+(top)
+@end
+@3
+D=M
+@0
+D=D-M
+@end
+D;JLT
+// se RAM[3] è maggiore di RAM decrementeiamo RAM[3] di RAM[0] e aggingiamo uno a RAM[2]
+@3
+M=D
+@2
+M=M+1
+@top
+D;JMP
+(end)
+
+```
+
 </details>

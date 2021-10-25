@@ -12,31 +12,6 @@
             "path": "Università/index.md"
         },
         {
-            "last_accessed_time": "2021-10-19T14:01:52Z",
-            "line_number": 100,
-            "path": "Università/Programmazione/Programmazione.md"
-        },
-        {
-            "last_accessed_time": "2021-10-19T14:03:44Z",
-            "line_number": -1,
-            "path": "Università/ArchitetturaElaboratori/02-Elaboratori.md"
-        },
-        {
-            "last_accessed_time": "2021-10-19T14:38:13Z",
-            "line_number": -1,
-            "path": "Università/AnalisiMatematica/05-Funzioni.md"
-        },
-        {
-            "last_accessed_time": "2021-10-19T14:38:13Z",
-            "line_number": -1,
-            "path": "Università/AnalisiMatematica/06-CalcoloCombinatoria.md"
-        },
-        {
-            "last_accessed_time": "2021-10-19T14:38:13Z",
-            "line_number": -1,
-            "path": "Università/AnalisiMatematica/08-Numeri_Reali.md"
-        },
-        {
             "last_accessed_time": "2021-10-19T14:38:13Z",
             "line_number": 0,
             "path": "Università/AnalisiMatematica/09-ValoreAssoluto.md"
@@ -62,9 +37,9 @@
             "path": "Università/AnalisiMatematica/02-Insiemi_e_notazioni.md"
         },
         {
-            "last_accessed_time": "2021-10-19T15:09:18Z",
-            "line_number": -1,
-            "path": "Università/AnalisiMatematica/07-EsDimostrazioni.md"
+            "last_accessed_time": "2021-10-19T15:49:53Z",
+            "line_number": 6,
+            "path": "Università/AnalisiMatematica/01-AnalisiMatematica.md"
         },
         {
             "last_accessed_time": "2021-10-19T16:08:54Z",
@@ -102,11 +77,6 @@
             "path": "Università/Logica/04-Dimostrazioni.md"
         },
         {
-            "last_accessed_time": "2021-10-20T14:11:53Z",
-            "line_number": 54,
-            "path": "Università/Logica/05-RelazioniFunzioni.md"
-        },
-        {
             "last_accessed_time": "2021-10-20T14:13:43Z",
             "line_number": 75,
             "path": "Università/Logica/03-Teoria_Indiemi.md"
@@ -127,7 +97,6 @@
             "path": "Università/LogicaInformatica.md"
         },
         {
-<<<<<<< HEAD
             "last_accessed_time": "2021-10-23T14:49:08Z",
             "line_number": 6,
             "path": "Università/AnalisiMatematica/06-CalcoloCombinatoria.md"
@@ -151,56 +120,77 @@
             "last_accessed_time": "2021-10-23T14:49:08Z",
             "line_number": -1,
             "path": "Università/AnalisiMatematica/04-Logica.md"
-=======
-            "last_accessed_time": "2021-10-20T16:12:40Z",
-            "line_number": 56,
-            "path": "Università/ArchitetturaElaboratori/04-CircuitiSequenziali.md"
->>>>>>> cf3a8d189a2842f9f426d8b65ee2f67742d2519c
         },
         {
-            "last_accessed_time": "2021-10-20T16:12:40Z",
-            "line_number": 66,
-            "path": "Università/ArchitetturaElaboratori/01-Livelli.md"
+            "last_accessed_time": "2021-10-23T14:49:08Z",
+            "line_number": 122,
+            "path": "Università/AnalisiMatematica/08-Numeri_Reali.md"
         },
         {
-            "last_accessed_time": "2021-10-20T16:12:41Z",
-            "line_number": 45,
+            "last_accessed_time": "2021-10-23T14:49:08Z",
+            "line_number": 64,
             "path": "Università/ArchitetturaElaboratori/03-Circuiti.md"
         },
         {
-            "last_accessed_time": "2021-10-20T16:12:41Z",
-            "line_number": -1,
+            "last_accessed_time": "2021-10-23T14:49:08Z",
+            "line_number": 41,
+            "path": "Università/ArchitetturaElaboratori/04-CircuitiSequenziali.md"
+        },
+        {
+            "last_accessed_time": "2021-10-23T14:49:08Z",
+            "line_number": 178,
             "path": "Università/ArchitetturaElaboratori/05-Rappresentazionedell'informazione.md"
         },
         {
-            "last_accessed_time": "2021-10-20T16:12:41Z",
-            "line_number": 2,
-            "path": "Università/ArchitetturaElaboratori/06-Microarhitettura.md"
-        },
-        {
-            "last_accessed_time": "2021-10-20T16:12:42Z",
-            "line_number": 8,
+            "last_accessed_time": "2021-10-24T14:17:05Z",
+            "line_number": -1,
             "path": "Università/ArchitetturaElaboratori/00-ArchitetturaElaboratori.md"
         },
         {
-            "last_accessed_time": "2021-10-21T12:24:35Z",
-            "line_number": -1,
-            "path": "Università/Logica/07-LogicaPerInformatica.md"
+            "last_accessed_time": "2021-10-24T15:27:26Z",
+            "line_number": 5,
+            "path": "Università/AnalisiMatematica/05-Funzioni.md"
         },
         {
-            "last_accessed_time": "2021-10-21T12:24:38Z",
-            "line_number": -1,
-            "path": "Università/AnalisiMatematica/04-Logica.md"
+            "last_accessed_time": "2021-10-24T16:47:13Z",
+            "line_number": 63,
+            "path": "Università/ArchitetturaElaboratori/02-Elaboratori.md"
         },
         {
-            "last_accessed_time": "2021-10-21T12:46:36Z",
-            "line_number": 40,
-            "path": "Università/AnalisiMatematica/01-AnalisiMatematica.md"
+            "last_accessed_time": "2021-10-24T22:48:53Z",
+            "line_number": 101,
+            "path": "Università/Programmazione/Programmazione.md"
         },
-            "last_accessed_time": "2021-10-25T11:15:11Z",
-            "line_number": 120,
+        {
+            "last_accessed_time": "2021-10-24T22:48:54Z",
+            "line_number": -1,
             "path": "Università/AnalisiMatematica/12-LimitiFunzioni.md"
         },
+        {
+            "last_accessed_time": "2021-10-24T22:48:54Z",
+            "line_number": -1,
+            "path": "Università/AnalisiMatematica/11-Funzioni Esponenziali.md"
+        },
+        {
+            "last_accessed_time": "2021-10-24T22:48:55Z",
+            "line_number": 132,
+            "path": "Università/AnalisiMatematica/10-SuccessioniNumeriche.md"
+        },
+        {
+            "last_accessed_time": "2021-10-25T20:04:39Z",
+            "line_number": 125,
+            "path": "Università/ArchitetturaElaboratori/06-Microarhitettura.md"
+        },
+        {
+            "last_accessed_time": "2021-10-25T21:15:38Z",
+            "line_number": 164,
+            "path": "Università/ArchitetturaElaboratori/07-ISA-Hack.md"
+        },
+        {
+            "last_accessed_time": "2021-10-25T21:27:31Z",
+            "line_number": 48,
+            "path": "Università/ArchitetturaElaboratori/01-Livelli.md"
+        }
     ],
     "image_folder": "vx_images",
     "name": "notes",

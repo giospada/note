@@ -12,7 +12,7 @@ La cpu e la memoria utilizzano i **bus dati** e il **bus indirizzi** per scambia
 
 ![](../img/bus.png)
 
-i dispositivi si collegano al bus tramite controller, alcuni controller accedono direttamentente alla memoria, e al termine della scrittura/lettura invia un segnale alla cpu
+i dispositivi si **collegano al bus tramite controller**, alcuni controller accedono direttamentente alla memoria, e al termine della scrittura/lettura invia un segnale alla cpu
 
 il bus collega anche le periferiche, l'accesso al bus condivisio viene gestito da un "albitro" del bus
 
