@@ -63,3 +63,34 @@ D = M // D = RAM[17]
 **comp** = 0 , 1 , -1 , D , A , !D , !A , -D , -A , D+1 , A+1 , D-1, A-1 , D+A , D-A , A-D , D&A , D|A , M , !M , -M ,M+1, M-1 , D+M , D-M , M-D , D&M , D|M
 **dest** = M , D , MD , A , AM , AD , AMD, o nullo (in questo caso viene omesso)
 **jump** = JGT , JEQ , JGE , JLT , JNE , JLE , JMP, o nullo (omesso)
+
+
+<details>
+<summary>
+Esercizi
+</summary>
+
+
+
+> memoria[2]=memoria[1]-memoria[0]-2
+```asm
+@1
+D=M
+@0
+D=D-M
+@2
+M=D-A
+```
+
+> memoria[2]=memoria[1]-memoria[0]-2
+
+```asm
+@1
+D=M
+@0
+D=D&M
+@
+M=!D
+```
+
+</details>
