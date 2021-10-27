@@ -162,6 +162,43 @@ D;JMP
 
 ```
 
+```cpp
+//Scrive 50 nel counter
+@50
+D=A
+@counter
+M=D
+// prende il secondo byte dello schermo e lo scrive in addresss
+@SCREEN
+D=A+1
+@address
+M=D
+(WHILE)
+//il numero serve per attivare solo il 12 bit così facendo scriveremo solo sulla 20° colonna
+@4096
+D=A
+// scriviamo il numero in address
+@address
+A=M
+M=D
+// incrementiamo l'address
+@address
+D=M
+@32
+D=D+A
+@address
+M=D
+// guardiamo se il conuter è ancora maggiore di zero
+@counter
+MD=M-1
+@END
+D;JLE
+
+@WHILE
+0;JMP
+(END)
+```
+
 ## Simboli nel linguaggio HACK
 
 ### Etichette
