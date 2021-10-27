@@ -151,7 +151,7 @@ se $(a_n)_n$ è descrescente, allora $\displaystyle \lim_{n \rightarrow + \infty
 
 si tratta di provare che:
 
-$\displaystyle \lim_{n \righarrow +\infty a_n = sup \{a_n | n \in \mathbb{N}\}$
+$\displaystyle \lim_{n \to +\infty} a_n = sup \{a_n | n \in \mathbb{N}\}$
 
 TODO: da completare
 
@@ -164,7 +164,7 @@ cioè $\exists r \in \mathbb{R}: a_n \rightarrow n $
 $(a_n)_n)$ è crescente e inf limitata **allora**: $(a_n)_n$ è covergente, 
 cioè $\exists r \in \mathbb{R}: a_n \rightarrow n $
 
- ### Il numero e di nepero
+### Il numero e di nepero
  
 $a_n = (1+\frac{1}{n}^n), n \in \mathbb{N}^{*}$
 

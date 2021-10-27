@@ -9,7 +9,7 @@ $x_0 \in \mathbb{R}$, $r \in \mathbb{R}: r>0$
 
 si dice **interno (sferico)** di centro $x_0$ e raggio r:
 
-$I_r(x_0) = \{x\in \mathbb{R} | |x-x_1|<r\}$
+$I_r(x_0) = \{x\in \mathbb{R} : |x-x_1|<r\}$
 
 $I_r=]x_0-r,x_0+r[$
 
@@ -17,9 +17,13 @@ $I_r=]x_0-r,x_0+r[$
 > Punto di accumulazione  di un insieme
 
 $A\subset \mathbb{R}$  
-$\bar{x}\in\mathbb{R}$ si dice **punto di accomulazione** di a se:  
-$\forall r >0 : \exists x \in A: x \neq \bar{x}$  
-$\text{ t.c. } a \in A \wedge I_p(\bar{x})$
+$\bar{x}\in\mathbb{R}$ si dice **punto di accumulazione** di a se:  
+
+$x_0\in\mathbb{R}\ \mbox{è di accumulazione per }E\subseteq\mathbb{R}\\ \\ \mbox{ se }\forall\varepsilon>0\ \exists y\in E,\ y\neq x_0\mbox{ t.c. }y\in B(x_0,\varepsilon)$
+
+$a \cap (I_r(\bar{x})\backslash \{\bar{x}\})\neq \emptyset$
+
+![](vx_images/1189241576710.png =254x)
 
 $D(A)=\{\bar{x}\in \mathbb{R}| \bar{x}\text{è di accomulazione per A}\}$
 
@@ -29,37 +33,19 @@ $D(A)=\{\bar{x}\in \mathbb{R}| \bar{x}\text{è di accomulazione per A}\}$
 <summary>
 esempio
 </summary>
-
-se $A = ] 1,6]$  
-allora  $D(A)=[1,6]$
+![](vx_images/2412763123188.png =539x)
 </details>
 
 
 
 **proposizione**:
 
-$A \subset \mathbb{R}$, $\bar{x} \in \mathbb{R}$  
-$\bar{x}$ è di accomulazione per A se e solo se:
-1.
-TODO:completare pag 21
+$A \subset \mathbb{R}$, $\bar{x} \in \mathbb{R}$, $\bar{x}$ è di accumulazione per A _se e solo se_: $\exists (a_n)_n \subseteq A \mbox{ t.c.:}$
+
+1. $a_n \neq \bar{x} \forall n$
+1. $a_n \xrightarrow{n\to \infty} \bar{x}$
 
 ### Limite
-
-Prima di introdurre la notazione di limite 
-$\displaystyle \lim_{x\rightarrow \infty} f(n)=l$
-
-
-<details>
-<summary>
-
-esempio
-</summary>
-
-
-$f: D(f)\rightarrow \mathbb{R}$  
-$f(x)=\frac{x^3-4x}{x-2}$
-
-</details>
 
 ## Limiti Notevoli
 
