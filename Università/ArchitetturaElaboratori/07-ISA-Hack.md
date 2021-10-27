@@ -65,10 +65,7 @@ D = M // D = RAM[17]
 **jump** = JGT , JEQ , JGE , JLT , JNE , JLE , JMP, o nullo (omesso)
 
 
-<details>
-<summary>
-Esercizi
-</summary>
+## Esercizi
 
 
 
@@ -165,4 +162,13 @@ D;JMP
 
 ```
 
-</details>
+## Simboli nel linguaggio HACK
+
+### Etichette
+
+
+- **Etichette**: Usate per fare riferimento ad indirizzi della ROM; Dichiarate tramite direttiva `(XXX)` che definisce il simbolo XXX che farà riferimento all’indirizzo di ROM dell’istruzione successiva alla dichiarazione
+- **variabili**: Usate per far riferimento ad indirizzi in memoria RAM. Ci sono due tipi di variabili:
+    - pre-definite: ad esempio `SCREEN` e `KBD` che fanno riferimento agli indirizzi RAM 16384 e 24576 (indicano rispettivamente l’inizio della memoria per gestire lo schermo e la locazione dove viene inserito il tasto premuto )
+    - definite dall’utente: ogni simbolo non predefinito xxx che appare in un programma Hack senza essere dichiarato usando(xxx)viene trattato come una variabile, e gli viene assegnato in automatico un valore (a partire dal valore 16, da 0 a 15 sono usati dalle variabili predefinite R0..R15)
+    
