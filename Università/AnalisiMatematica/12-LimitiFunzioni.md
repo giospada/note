@@ -130,3 +130,93 @@ dimostrazione
 ![](vx_images/4461069811662.png)
 
 </details>
+
+
+
+## Esercizi sui limiti
+
+
+$\displaystyle \lim_{x \rightarrow -1} \frac{3x+2}{2x^2+4x+2}$
+
+<details>
+<summary>
+Soluzione
+</summary>
+![](vx_images/1800508746822.png)
+</details>
+
+
+$\displaystyle \lim_{x \rightarrow \infty} \frac{x^2+x-2}{x^2+3x}$
+
+<details>
+<summary>
+soluzione
+</summary>
+
+
+![](vx_images/1957820535914.png)
+
+</details>
+
+
+## Gerarchia degli infiniti
+
+tutte queste funzioni tendono ad infinito, ma non tutte tendono con la stessa forza:
+
+1. $log_a x$ con $(a>1)$
+2. $\sqrt[n]{x}$ 
+3. $\displaystyle \sum^n_{j=0} a_j x^j$ con $a_n>0$
+4. $a^x \mbox{ con } (a> 1)$
+5. $x^x$
+
+per esempio:
+
+$$\displaylines{f(x) \to +\infty \\ 
+g(x) \to \infty \\ }$$
+$$\displaylines{
+ \displaystyle \lim \frac{f(x)}{g(x)}} = \begin{cases}
+ 0 & \mbox{se g(x) cresce più velocemente} \\
+ +\infty & \mbox{se f(x) cresce più velocemente} \\
+ \end{cases}
+ 
+$$
+
+
+
+###  Funzioni continue
+
+> punto isolado di un insime
+> $A \subset \mathbb{R}, x_0 \in A$ se $x_0$ si deice punto isolato di A se $x_0 \notin D(A)$ ( $x_0$ non è un punto di accomulazione)
+
+
+> funzione continua in $x_0$
+> $f:A \to \mathbb{R}$
+> $x_0 \in A$
+
+$f$ si dice **continua in $x_0$** se:
+1. $x_0 \notin D(A)$ cioè $x_0$ è un punto isolato di A
+2. $x_0 \in D(A) \implies \displaystyle \lim_{x \rightarrow \infty} f(x)=f(x_0)$
+
+
+##### Algerba tra le funzioni continue
+
+date f e g due cunzioni continue allora:
+
+1. $f \pm g$ è continua in $x_0$
+2. $\displaylines{c \in \mathbb{R} & cf(x)}$ è continua in $x_0$
+3. $f \times g$ è continua in $x_0$
+3. $\frac{f}{g}$ è continua in $x_0$ ( se$ $g(x_0)\neq 0$)
+4. $|f|$ è continua in $x_0$ 
+
+### Esempio importante
+
+per esempio
+
+$f(x)=\begin{cases}x^2 & \text{se} & x\neq 0\\ 2 & \text{se } & x=0\end{cases}$
+
+## Composto
+
+$g \circ  f= g(f(x))$ 
+
+f è continua in $x_0$, e g è continua in $f(x_0)$ allora: 
+$g \circ f: x \to g(f(x))$ è continua in $x_0$
