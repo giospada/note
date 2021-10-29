@@ -89,6 +89,12 @@ D=D&M
 @
 M=!D
 ```
+<details>
+<summary>
+Altri es
+</summary>
+
+
 
 > Mettere il valore 1 in tutte le celle di memoria con indirizzo compreso tra RAM[0] e RAM[1] assumendo RAM[1] > RAM[0] > 1
 
@@ -175,7 +181,7 @@ D=A+1
 M=D
 (WHILE)
 //il numero serve per attivare solo il 12 bit così facendo scriveremo solo sulla 20° colonna
-@4096
+@8
 D=A
 // scriviamo il numero in address
 @address
@@ -198,6 +204,69 @@ D;JLE
 0;JMP
 (END)
 ```
+
+```asm
+
+//mettiamo il numero di volte in una variabile
+@50
+D=A
+@counter
+M=D
+//indirizzo in cui scrivere
+@SCREEN
+D=A
+@index
+M=D
+//cosa scrivere
+@1
+D=A
+@towrite
+M=D
+// fin qui abbiamo inizializzato le variabili
+
+(STARTLOOP)
+
+// facciamo il check se uscire dal loop e e no decrementiamo il contatore
+@counter
+D=M
+@END
+D;JLE
+@counter
+M=M-1
+//scriviamo a video
+@towrite
+D=M
+@index
+A=M
+M=D
+//moltiplichiamo per due e se il valore è diverso da vero andiamo alla prossima riga
+@towrite
+D=M
+M=D+M
+D=M
+@NEXTLINE
+D;JNE
+//risulato della divisione è minore di 1 allora lo incrementiamo
+
+@1
+D=A
+@towrite
+M=D
+@index
+M=M+1
+(NEXTLINE)
+
+//nuova riga
+@32
+D=A
+@index
+M=M+D
+@STARTLOOP
+0;JMP 
+(END)
+
+```
+</details>
 
 ## Simboli nel linguaggio HACK
 

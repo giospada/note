@@ -141,3 +141,8 @@ ricorsione strutturale sse:
 1. $f$ considera tutte le possibili produzioni che definiscono $\omega$ una e una volta sola
 2. per ogni produzione f si richiama ricorsivamente solamente sulle sottoformule immediate di $\omega$
 
+## Induzione Strutturale
+
+Sia P una proprietà che vogliamo dimostrare valere su tutte le stringhe $\omega$ di linguaggio generato da una BFN. La dimostraizone può essere data in questo modo:
+1. Una sotto-dimostrazione per ogni produzione che genra $\omega$
+2. In ogni sotto-dimostrazione possiamo assumere che P già valga su tutte le sotto-formule immediate di $\omega$
