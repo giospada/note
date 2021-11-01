@@ -22,7 +22,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - uses: docker://pandoc/latex:2.9
+      - uses: r-lib/actions/setup-pandoc@v1
       - name: copy
         env:
           SRC_FOLDER_PATH: 'Università'
