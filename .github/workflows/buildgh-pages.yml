@@ -22,6 +22,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - uses: docker://pandoc/latex:2.9
       - name: copy
         env:
           SRC_FOLDER_PATH: 'Università'
@@ -36,3 +37,5 @@ jobs:
           git add -A
           git diff-index --quiet HEAD ||  git commit -am "deploy files"  # commit to the repository (ignore if no modification)
           git push origin $TARGET_BRANCH # push to remote branch
+          cd Università/Logica
+          pandoc -s *.md -o L.html --toc --top-level-division=chapter -N --css=style.css
