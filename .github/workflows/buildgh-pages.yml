@@ -27,7 +27,7 @@ jobs:
           SRC_FOLDER_PATH: 'Università'
           TARGET_BRANCH: 'gh-pages'
         run: |
-          files=$(find $SRC_FOLDER_PATH -type f) # get the file list
+          files=$(find $SRC_FOLDER_PATH -type f| sed 's/$/"/' |sed 's/^/"/') # get the file list
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git fetch                         # fetch branches
