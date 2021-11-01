@@ -2,20 +2,25 @@
 
 # Successioni Numeriche 
   
-successioni di numeri reali è una funzione, perchè essendo una successione devono essere numerati
 
-allora creaiamo $f: \mathbb{N} \rightarrow R$   
+> **Una Successione di Numeri**: è una funzione 
+> $\displaylines{f: \mathbb{N} \to \mathbb{R} \\ n \to f(n) = a_n}$ 
+> $f(0)=a_0$ primo elemento  
+> $f(1)=a_1$ secondo elmento  
+> $f(2)=a_2$ terzo elemento  
+> ...
+> $(a_n)_{n \in \mathbb{N}}, (a_n)_n$
 
-$f(0)=a_0$ primo elemento  
-$f(1)=a_1$ secondo elmento  
-$f(2)=a_2$ terzo elemento  
+Non tutte le succeessioni hanno lo zero nel dominio: $\mathbb{N} /\ \{0\} = \mathbb{N^*}$
 
-$\mathbb{N} /\ \{0\} = \mathbb{N^*}$
-
+<details>
+<summary>
 Esempi:
+</summary>
 
 $a_n = \frac{n}{n+1}, n \in \mathbb{N}$  
 $a_n = \frac{(-1)^2}{n+1}, n \in \mathbb{N^*}$  
+</details>
 
 
 ## Limiti delle successioni
@@ -29,7 +34,7 @@ Anche le **successioni posono essere limitate** superiormente o inferiormente o 
   </summary>
 
 1. $a_n=\frac{1}{n}, n \in \mathbb{N}$  
-è limitata  
+è limitata sia sup che inf $0<a_n<1$
 2. $n \in \mathbb{N} \\ a_n=n^2$   
 questa successione è inferiormente limitata ma non superiormente
 3. $a_n=(-1)^n*n$  
@@ -37,12 +42,13 @@ non è ne inferiormente ne superiormente limitata
 </details>
 
 
-$a_n =\frac{n}{n+1} \rightarrow 1$
+$a_n =\frac{n}{n+1} \to 1$
 
 
 ### Limiti finiti
 
-$\displaylines{(a_n)_n , L \in \mathbb{R} \text{  si dice che } \displaystyle \lim_{n \rightarrow +\infty} = L \text{ se } \\ \forall \varepsilon >0, \exists \bar{n}=\bar{n} \in \mathbb{N}: \forall n \ge \bar{n} : \\ |a_n -L | < \varepsilon \\ (L - \varepsilon < a_n < L + \varepsilon) \\ (a_n)_n \text{ si dice convergente}}$
+$\displaylines{(a_n)_n , L \in \mathbb{R} \mbox{,  si dice che  ,} \displaystyle \lim_{n \rightarrow +\infty} a_n = L \mbox{,  se } \\ \forall \varepsilon >0, \exists \bar{n}=\bar{n}(\varepsilon) \in \mathbb{N}: \forall n \ge \bar{n} : \\ |a_n -L | < \varepsilon \\ (L - \varepsilon < a_n < L + \varepsilon) \\ (a_n)_n \text{ si dice convergente}}$
+
 
 
 <details>
@@ -153,16 +159,23 @@ si tratta di provare che:
 
 $\displaystyle \lim_{n \to +\infty} a_n = sup \{a_n | n \in \mathbb{N}\}$
 
-TODO: da completare
 
+<details>
+<summary>
+dimostrazione
+</summary>
+
+[pagina 23 ](https://virtuale.unibo.it/pluginfile.php/1025622/mod_resource/content/4/14%20Ottobre%202021%20ridotta.pdf)
+
+</details>
 
 **Crollario**:
 
-$(a_n)_n)$ è crescente e sup limitata **allora**: $(a_n)_n$ è covergente, 
-cioè $\exists r \in \mathbb{R}: a_n \rightarrow n $
+$(a_n)_n$ è crescente e sup limitata **allora**: $(a_n)_n$ è covergente, 
+cioè $\exists r \in \mathbb{R}: a_n \to n$
 
-$(a_n)_n)$ è crescente e inf limitata **allora**: $(a_n)_n$ è covergente, 
-cioè $\exists r \in \mathbb{R}: a_n \rightarrow n $
+$(a_n)_n$ è crescente e inf limitata **allora**: $(a_n)_n$ è covergente, 
+cioè $\exists r \in \mathbb{R}: a_n \to n$
 
 ### Il numero e di nepero
  
