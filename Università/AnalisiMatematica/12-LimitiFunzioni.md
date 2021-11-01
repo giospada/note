@@ -2,30 +2,19 @@
 # Limiti Funzioni
 
 
-> Intorno sferico di un punto $x_0 \in \mathbb{R}$ di raggio r
+## Intorno Serico e Punto di accomulazione
+> Intorno sferico di un punto $x_0 \in \mathbb{R}$, e raggio $r \in \mathbb{R}: r>0$ 
+> $I_r(x_0) = \{x\in \mathbb{R} : |x-x_1|<r\}$
+> $I_r=]x_0-r,x_0+r[$
 
 
-$x_0 \in \mathbb{R}$, $r \in \mathbb{R}: r>0$
-
-si dice **interno (sferico)** di centro $x_0$ e raggio r:
-
-$I_r(x_0) = \{x\in \mathbb{R} : |x-x_1|<r\}$
-
-$I_r=]x_0-r,x_0+r[$
-
-
-> Punto di accumulazione  di un insieme
-
-$A\subset \mathbb{R}$  
-$\bar{x}\in\mathbb{R}$ si dice **punto di accumulazione** di a se:  
-
-$x_0\in\mathbb{R}\ \mbox{è di accumulazione per }E\subseteq\mathbb{R}\\ \\ \mbox{ se }\forall\varepsilon>0\ \exists y\in E,\ y\neq x_0\mbox{ t.c. }y\in B(x_0,\varepsilon)$
-
-$a \cap (I_r(\bar{x})\backslash \{\bar{x}\})\neq \emptyset$
+> $\bar{x}$ è **Punto di accumulazione** di un insieme A, $A\subset \mathbb{R}$, $\bar{x}\in\mathbb{R}$ se:  
+> 
+> $\displaylines{\forall r > 0 : \\ a \cap (I_r(\bar{x})\backslash \{\bar{x}\})\neq \emptyset}$
 
 ![](vx_images/1189241576710.png =254x)
 
-$D(A)=\{\bar{x}\in \mathbb{R}| \bar{x}\text{è di accomulazione per A}\}$
+$D(A)=\{\bar{x}\in \mathbb{R}| \bar{x} \mbox{ è di accomulazione per A}\}$
 
 **Idea**:$\bar{x}$ si dice punto di accumulazione di A se ci si può avvicinare arbitrariamente a $\bar{x}$, rimanendo in A!
 
@@ -33,6 +22,7 @@ $D(A)=\{\bar{x}\in \mathbb{R}| \bar{x}\text{è di accomulazione per A}\}$
 <summary>
 esempio
 </summary>
+
 ![](vx_images/2412763123188.png =539x)
 </details>
 
@@ -42,35 +32,26 @@ esempio
 
 $A \subset \mathbb{R}$, $\bar{x} \in \mathbb{R}$, $\bar{x}$ è di accumulazione per A _se e solo se_: $\exists (a_n)_n \subseteq A \mbox{ t.c.:}$
 
-1. $a_n \neq \bar{x} \forall n$
+1. $\forall n \mbox{ , } a_n \neq \bar{x}$
 1. $a_n \xrightarrow{n\to \infty} \bar{x}$
 
-### Limite
 
-## Limiti Notevoli
-
-
-### Sin
-
-$\displaystyle \lim_{x \rightarrow 0} \frac{\sin x}{x}=1$
-
-TODO:dimostrazione
-
-### Cos 
-
-$\displaystyle \lim_{x \rightarrow 0} \frac{1-\cos^2 x}{x^2}=\frac{1}{2}$
-
-TODO:dimostrazione
-
-
-### Esponenziale
-$\displaystyle \lim_{x \rightarrow 0} \frac{a^x-1}{x}=\ln a$ con 
 
 ## Definizione di limite finito
 
 
 $f: A \rightarrow \mathbb{R}, x_0 \in D(A)$
-si dice che $\displaystyle \lim_{x \rightarrow x_0}  f(x)=+\infty(-\infty)$se:  $\displaylines{\forall M \in \mathbb{R} \exists \delta = \delta(x_o,M)>0 \\ \forall x \in A : 0 < |x-x_0| < \delta \\ \implies f(x)> M}$
+si dice che $\displaystyle \lim_{x \to x_0}  f(x)=L$se:
+$\displaylines{\forall \varepsilon \in \mathbb{R}\mbox{ , }  \exists \delta = \delta(x_o,\varepsilon)>0: \forall x \in A  : \\ 0 < |x-x_0| < \delta  \implies |f(x)-L|> \varepsilon}$
+
+
+<details>
+<summary>
+Visualizzazione del limite
+</summary>
+
+![](vx_images/5320002239302.png)
+</details>
 
 
 ## Limite Finito da Destra e Sinistra
@@ -105,31 +86,24 @@ l \iff |f(x) - l| < \epsilon \\
 
 $\displaylines{\forall \varepsilon, \exists \delta) \delta(\varepsilon) > 0 : \forall x \in A : x < - \delta \\ \implies \begin{cases} |f(n)-l| < \varepsilon \\ f(n) > \varepsilon \\ f(n)< - \varepsilon  \end{cases}}$
 
-### Area Del Cerchio
+## Limiti Notevoli
 
 
- Sia C un cerchio di raggio $r$, $S_n£ èpoligono regolare instritto di n lati instritto nel cerchio:
- 
- ![](vx_images/1575947139296.png)
- 
-si calcola l'area di questo poligono con il numero di lati che tende ad infinito.
+### Sin
+
+$\displaystyle \lim_{x \rightarrow 0} \frac{\sin x}{x}=1$
+
+TODO:dimostrazione
+
+### Cos
+
+$\displaystyle \lim_{x \rightarrow 0} \frac{1-\cos^2 x}{x^2}=\frac{1}{2}$
+
+TODO:dimostrazione
 
 
-$A(C)=\displaystyle \lim_{x \rightarrow \infty} A(S_n)$
-
-
-
-![](vx_images/999333696819.png)
-<details>
-<summary>
-dimostrazione
-</summary>
-
-
-![](vx_images/5423044485911.png)
-![](vx_images/4461069811662.png)
-
-</details>
+### Esponenziale
+$\displaystyle \lim_{x \rightarrow 0} \frac{a^x-1}{x}=\ln a$ con 
 
 
 
@@ -155,6 +129,32 @@ soluzione
 
 
 ![](vx_images/1957820535914.png)
+
+</details>
+
+### Area Del Cerchio
+
+
+ Sia C un cerchio di raggio $r$, $S_n£ èpoligono regolare instritto di n lati instritto nel cerchio:
+ 
+ ![](vx_images/1575947139296.png)
+ 
+si calcola l'area di questo poligono con il numero di lati che tende ad infinito.
+
+
+$A(C)=\displaystyle \lim_{x \rightarrow \infty} A(S_n)$
+
+
+
+![](vx_images/999333696819.png)
+<details>
+<summary>
+dimostrazione
+</summary>
+
+
+![](vx_images/5423044485911.png)
+![](vx_images/4461069811662.png)
 
 </details>
 
@@ -220,3 +220,4 @@ $g \circ  f= g(f(x))$
 
 f è continua in $x_0$, e g è continua in $f(x_0)$ allora: 
 $g \circ f: x \to g(f(x))$ è continua in $x_0$
+

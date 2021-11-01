@@ -17,5 +17,9 @@
     ],
     "editor.fontSize": 20,
     "glassit.alpha": 255,
-    
+    "files.exclude": {
+        "**/vx.json": true,
+        "*/vx.json": true,
+        "vx.json": true
+    }
 }

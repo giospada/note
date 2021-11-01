@@ -62,45 +62,60 @@ $]a,b[=\{x \in \mathbb{R} | a \le n\le b\}$
 $[a, \infty [=\{x \in \mathbb{R} | a \le n\}$  
 
 
-### Ineismi Limitati
-**Insieme Limitato superiormente**   
-$M \in \mathbb{R}$ si dice maggiorante di A se:
-$\forall a \in A$:  $M \leq a$
+### Maggioranti e Minoranti
 
+> **Insieme Limitato superiormente**   
+> $M \in \mathbb{R}$ si dice maggiorante di A se:
+> $\forall a \in A$:  $a \leq M$
 > se A ammette un maggiorante si dice superiormente limitata
 
-**Insieme Limitato inferiormente**   
-$\mathbb{m} \in \mathbb{R}$ si dice minorante di A se:
-$\forall a \in A$: a \leq $\mathbb{m}  $
+L'insieme dei Maggioranti $M_g(A)=\{x\in R|\forall a \in A, x \geq a\}$
 
+> **Insieme Limitato inferiormente**   
+> $\mathbb{m} \in \mathbb{R}$ si dice minorante di A se:
+> $\forall a \in A$: $\mathbb{m} \leq a$
 > se A ammette un minorante A si dice inferiormente limitato
 
-**Insieme Limitato**  
+L'insieme dei Minoranti $M_n(A)=\{x\in R|\forall a \in A, x \leq a\}$
+
+> **Insieme Limitato**  
 > se A ammette sia un minorante che un maggiorante è limitato
 
-### Minimo Massimo di un insieme
-**minimo di un insieme**:  
+### Minimo e Massimo di un insieme
+
+> **minimo di un insieme**:  
 $\forall a \in A : b \leq A$ (b è i minimo )
+> se b è il minimo di A è il più grande dei minoranti
 
-**massimo di un insieme**:  
-$\forall a \in A : a \leq b$ (b è il massimo)
-
-![](../img/minimax.png)
-
-Per esmpio $]3,4]$ ha un massimo ma non un minimo
+> **massimo di un insieme**:  
+> $\forall a \in A : a \leq b$ (b è il massimo)
+> se un b è il massimo di A, è il più grande dei maggioranti
 
 
-se un a il minimo è il più grande dei minoranti
 
-se un a il massimo è il più grande dei maggioranti
+### Sup e Inf di un insieme
 
+> se A è superiormente limitato ha il minimo dei maggioranti $\sup A$ ($\sup A$ si chiama estremo superiore di A ), se B non è superiormente limitato  $\sup B= +\infty$
 
-se A è superiormente limitato ha il minimo dei maggioranti $\sup A$, se B non è superiormente limitato  $\sup B= +\infty$
-
-se A è inferiormente limitato ha il massimo dei minorandi $\inf A$, se B non è inferiormente limitato  $\inf B= +\infty$
+> se A è inferiormente limitato ha il massimo dei minorandi $\inf A$ ($\inf A$ si chiama estremo inferiore  di A)
+, se B non è inferiormente limitato  $\inf B= +\infty$ 
 
 
 Q a differenza di R non ha sempre la proprietà di avere un massimando e un minorando es. $\{q \in \mathbb{Q}| q \le \sqrt{2}\}$
+
+
+### Esempi
+
+![](../img/minimax.png)
+
+L'intervallo $A = ]3,4]$ :
+- Ha come insieme dei massimandi $M_g(A)=\{x \in \mathbb{R}| x \geq 4\}$
+- Ha come insieme dei massimandi $M_g(A)=\{x \in \mathbb{R}| x \geq 3\}$
+- Ha un massimo 4:$\max A = 5$
+- Non ha un minimo: $\nexists \min A$
+- $\sup A= 4$
+- $\inf A= 3$
+
 
 
 ## l'insime $\mathbb{R}$

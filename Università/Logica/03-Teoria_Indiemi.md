@@ -1,4 +1,4 @@
-# 1. Teoria degli Insiemi
+# Teoria degli Insiemi
 
 punti informali:
 - **tutto è un insieme**: gli insiemi contengono insiemi
@@ -7,7 +7,7 @@ punti informali:
 - permette di **introdurre e comprendere concetti come gli infiniti**
 - si perdono gli aspetti computazionali (le funzioni definite come insiemi non si calcolano, le rappresentazioni di dati sono inefficienti ) 
 
-## 1.1. Teoria naive
+## Teoria naive
 
 > Attenzione:è inconsistente in quando si può avere il paradosso di Russell
 
@@ -22,7 +22,7 @@ Per questo serve una teoria che rimuova l'**assioma di comprensione**(per ogni p
 > Attenzione: quando si usano insiemi rappresentanti altri insiemi, non si possono utilizzare i diagrammi di venn
 
 
-## 1.2. Teoria assiomatiche degli insiemi 
+## Teoria assiomatiche degli insiemi 
 
 In una teoria assiomatica degli insiemi:
 - i concetti di **insieme, appartenenza e uguaglianza** non vengono definiti (gli insiemi sono **enti primitivi**)
@@ -31,7 +31,7 @@ In una teoria assiomatica degli insiemi:
 - Noi seguiamo la teoria Zermelo-Fraenkel è la meno controversa, ed è sufficiente per sviluppare la maggior parte della matematica
 - Zermelo Fraenkel non è mai stata dimostrata essere consistente (e non si è dimostrato che è dimostrabile che una teoria possa essere costistente)
 
-### 1.2.1. Assioma di estensionalità
+### Assioma di estensionalità
 
 > Due insiemi sono uguali sse hanno gli stessi elementi.  
 
@@ -39,7 +39,7 @@ $\forall X ,\forall Y ,(X = Y \iff \forall Z \text{ }(Z \in X \iff  Z\in Y ))$
 
 per ogni insieme X e Y, X e Y sono uguali se e solo se per ogni Z appartiene a X e se e solo se Z appartiene a Y
 
-### 1.2.2. Definizione di essere sottoinsieme
+### Definizione di essere sottoinsieme
 
 > X è sottoinsieme di Y se Y possiede tutti gli elementi di X
 
@@ -49,7 +49,7 @@ $X \subseteq Y =^{def}= \forall Z, (X \in X \implies Z \in Y)$
 definisco che X è sottoinsieme di Y quando per ogni Z , Z appartiene a X implica che Z appartiene a Y
 
 
-### 1.2.3. Assioma di separazione
+### Assioma di separazione
 
 > Dato un insieme, possiamo formare il sottoinsieme dei suoi elementi che soddisfano una proprietà
 
@@ -61,19 +61,19 @@ Abuso di notazione: $X =\{Y \in U| Y \notin Y\}$
 
 > Attenzione: per descrivere Y c'è un abuso di notazione $\{Z \in X |P(Z)\}$ (Z è un elemento)
 
-### 1.2.4. Assioma dell’insieme vuoto
+### Assioma dell’insieme vuoto
 
 > L’insieme X viene indicato come $\emptyset$
 
 $\exists X ,\forall Z ,Z \notin X$
 
-### 1.2.5. Definizione dell’insieme vuoto
+### Definizione dell’insieme vuoto
 
 > L’assioma è ridondante. Sia Y un qualunque altro insieme di cui un assoma asserisce l’esistenza (vedi p.e. assioma dell’infinito)
 
 $\emptyset {:=} \{X \in Y |false\}$
 
-### 1.2.6. Definizione di intersezione binaria
+### Definizione di intersezione binaria
 
 
 $A \cap B {:=} \forall Z\{Z\in A |Z\in B\}$
@@ -82,21 +82,21 @@ $A \cap B {:=} \forall Z\{Z\in A |Z\in B\}$
 
 $X \in A \cap B \iff X \in A \wedge X \in B$
 
-### 1.2.7. Definizione di intersezione
+### Definizione di intersezione
 
 metto tutti gli insiemi da intersecare in F.
 
 $\bigcap F {:=} \{ X \in A | \forall Y (Y \in F \implies X/Right \in Y) \}, A \in F$
 
-### 1.2.8. Assiome dell'unione binaria
+### Assiome dell'unione binaria
 
 $\forall A,\forall B,\exists X ,\forall Z ,(Z \in X \iff Z \in A \vee Z \in B)$
 
-### 1.2.9. Assioma dell'unione 
+### Assioma dell'unione 
 
 $\forall F \exists X \forall Z (Z\in X \iff \exists Y (Y \in F \wedge Z \in Y))$
 
-### 1.2.10. 4.2.10 Assioma del singoletto
+### 4.2.10 Assioma del singoletto
 
 $\forall X, \exists Y \forall Z (Z \in Y \iff Z = X)$
 
@@ -110,7 +110,7 @@ Con la notazione $\{A_1, . . . , A_n\}$ indicheremo l’insieme $\{A_1\} \cup . 
 
 $X \in \{A_1,...,A_n\}$ sse $X=A_1$ oppure ... oppure $X=A_n$ .
 
-### 1.2.11. Assioma dell’infinito
+### Assioma dell’infinito
 Esiste un insieme che contiene almeno tutti (gli encoding de)i numeri naturali.
 
 $\exists Y( \emptyset \in Y \wedge \forall N (N \in Y \implies N \cup \{N\} \in Y))$
@@ -119,11 +119,11 @@ Indichiamo temporaneamente con N tale insieme
 
 
 
-### 1.2.12. Teorema esistenza di $N$
+### Teorema esistenza di $N$
 
 combinaimo altri assiomi con quello dell'infinito si arriva a dimostrare l'esistenza dell'insmieme N  che contiene tutti e soli i numeri naturali.
 
-### 1.2.13. Assioma dell'insieme potenza
+### Assioma dell'insieme potenza
 
 Esiste l'insieme dei sottoinsiemi di un inseme dato.
 
@@ -136,7 +136,7 @@ abuso di notazioni:$2^x$ oppure $P(x)$
 > es  
 > $2^{\{1,2\}}= \{\emptyset, \{1\},\{2\},\{1,2\}\}$  
 
-### 1.2.14. Assioma di regolarita (non da studiare) 
+### Assioma di regolarita (non da studiare) 
 
 Ogni insieme non vuoto ha un elemento dal quale e disgiunto (senza elementi in comune ).Fra le conseguenze: nessun insieme contiene (ricorsivamente) se stesso e ha quindi senso cercare di misurare la taglia (chiamata cardinalita) di un insieme.
 
@@ -147,13 +147,13 @@ $\emptyset \cup A = \emptyset$
 
 a e l'insime vouto soon disgiunti
 
-### 1.2.15. Assioma di rimpiazzamento
+### Assioma di rimpiazzamento
 
 Intuitivamente: l’immagine di un insieme rispetto a una formula che descrive una funzione e ancora un insieme. Intuitivamente: se A e un insieme, quindi  e abbastanza piccolo, e a ogni elemento ne associo un altro, in una relazione molti-a-uno, quello che ottengo come immagine e ancora piccolo.
 
 
 
-## 1.3. Costruzioni dei Numeri Naturali
+## Costruzioni dei Numeri Naturali
 
 Assumo di avere i numeri reali con la mia meta matematica e li codifico con i miei insiemi
 

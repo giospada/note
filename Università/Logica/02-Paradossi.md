@@ -1,6 +1,6 @@
 
 
-# 1. Paradossi
+# Paradossi
 
 > Antinomia: è una conclusione inaccettabile,che deriva da premesse accettabili per mezzo di un ragionamento accettabile 
 
@@ -22,7 +22,7 @@ $x=0$
 </details>
 
 
-## 1.1. Linguaggio naturale
+## Linguaggio naturale
 
 Il linguaggio naturale è alla base della comunicazione e del ragionamento umano, e per questo deve essere espressivo e viene esteso e specializzato (per comunicare )
 
@@ -87,14 +87,14 @@ i paradossi dei linguaggi naturali esistono perchè:
 
 per evitare i paradossi bisogna impedire l'uso meta-linguistico del linguaggio naturale (**per questo si abbandona il linguaggio naturale per uno artificiale**)
 
-## 1.2. Linguaggio matematico
+## Linguaggio matematico
 
 è che rientrino i paradossi
 
 nel 1900 la matematica viene ristrutturata dalle basi, per farlo ricostruiscono tutta la matematica partendo con la teoria degli insiemi.  
 la teoria degli insiemi parte dal presupposto che tutto è un insieme
 
-### 1.2.1. Paradosso di Russell
+### Paradosso di Russell
 
 Russel è il primo a trovare un paradosso alla base della teoria degli insiemi.  
 Essendo che tutto è un insieme si può utilizzare il simbolo di appartenenza tra oggetti.
@@ -112,7 +112,7 @@ per ovviare al paradosso:
 
 [More](#teoria-assiomatiche-degli-insiemi)
 
-## 1.3. I paradossi in informatica
+## I paradossi in informatica
 
 nella programmazione ogni linguaggio può eseguire delle funzioni che possono prendere in input e dare in output altre funzioni
 
