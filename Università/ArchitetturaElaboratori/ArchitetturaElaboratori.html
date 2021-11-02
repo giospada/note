@@ -123,8 +123,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li><a href="#porte-logiche-e-circuiti-combinatori"><span class="toc-section-number">4</span> Porte Logiche e Circuiti Combinatori</a><ul>
 <li><a href="#funzioni-booleane-e-tabelle-di-verità"><span class="toc-section-number">4.1</span> Funzioni booleane e tabelle di verità</a></li>
-<li><a href="#implementare-funzioni-booleane"><span class="toc-section-number">4.2</span> 5.2. Implementare Funzioni Booleane</a></li>
-<li><a href="#mappe-di-karnaugh"><span class="toc-section-number">4.3</span> 5.3. Mappe di Karnaugh</a></li>
+<li><a href="#implementare-funzioni-booleane"><span class="toc-section-number">4.2</span> Implementare Funzioni Booleane</a></li>
+<li><a href="#mappe-di-karnaugh"><span class="toc-section-number">4.3</span> Mappe di Karnaugh</a></li>
 </ul></li>
 <li><a href="#circuiti-sequenziali"><span class="toc-section-number">5</span> Circuiti sequenziali</a><ul>
 <li><a href="#latch-sr"><span class="toc-section-number">5.1</span> Latch SR</a></li>
@@ -134,13 +134,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="#bit"><span class="toc-section-number">5.5</span> Bit</a></li>
 <li><a href="#memoria"><span class="toc-section-number">5.6</span> Memoria</a></li>
 </ul></li>
-<li><a href="#rappresentazione-dellinformazione"><span class="toc-section-number">6</span> 6. Rappresentazione dell’informazione</a><ul>
-<li><a href="#numeri"><span class="toc-section-number">6.1</span> 6.1. Numeri</a><ul>
-<li><a href="#modulo-e-segno"><span class="toc-section-number">6.1.1</span> 6.1.1. Modulo e segno</a></li>
-<li><a href="#complemento-a-1"><span class="toc-section-number">6.1.2</span> 6.1.2. Complemento a 1</a></li>
-<li><a href="#complemnto-a-2"><span class="toc-section-number">6.1.3</span> 6.1.3. Complemnto a 2</a></li>
-<li><a href="#codifica-in-eccesso"><span class="toc-section-number">6.1.4</span> 6.1.4. Codifica in eccesso</a></li>
-<li><a href="#numeri-con-la-virgola"><span class="toc-section-number">6.1.5</span> 6.1.5. Numeri con la virgola</a></li>
+<li><a href="#rappresentazione-dellinformazione"><span class="toc-section-number">6</span> Rappresentazione dell’informazione</a><ul>
+<li><a href="#numeri"><span class="toc-section-number">6.1</span> Numeri</a><ul>
+<li><a href="#modulo-e-segno"><span class="toc-section-number">6.1.1</span> Modulo e segno</a></li>
+<li><a href="#complemento-a-1"><span class="toc-section-number">6.1.2</span> Complemento a 1</a></li>
+<li><a href="#complemnto-a-2"><span class="toc-section-number">6.1.3</span> Complemnto a 2</a></li>
+<li><a href="#codifica-in-eccesso"><span class="toc-section-number">6.1.4</span> Codifica in eccesso</a></li>
+<li><a href="#numeri-con-la-virgola"><span class="toc-section-number">6.1.5</span> Numeri con la virgola</a></li>
 </ul></li>
 <li><a href="#stringhe"><span class="toc-section-number">6.2</span> Stringhe</a><ul>
 <li><a href="#ascii"><span class="toc-section-number">6.2.1</span> ASCII</a></li>
@@ -173,6 +173,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="#codifica-a-instruction"><span class="toc-section-number">8.3</span> Codifica A-instruction</a></li>
 <li><a href="#codifica-c-instruction"><span class="toc-section-number">8.4</span> Codifica C-Instruction</a></li>
 <li><a href="#livello-istruction-set-architeture"><span class="toc-section-number">8.5</span> Livello Istruction Set Architeture</a></li>
+<li><a href="#trap-e-interrupt"><span class="toc-section-number">8.6</span> Trap e Interrupt</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -410,7 +411,7 @@ passare da <span class="math inline">\(A+\bar{A}=1\)</span> a <span class="math 
 <p>la <strong>forma canonica</strong> è una funzione booleana, che si ricava concatenando con l’or i mintermini per cui la funzione è verificata</p>
 </blockquote>
 <p>Per esempio la forma canonica della funzione definita nell’immagine sopra è : <span class="math inline">\(\bar{A}B\bar{C}+AB\bar{C}+ABC\)</span></p>
-<h2 id="implementare-funzioni-booleane"><span class="header-section-number">4.2</span> 5.2. Implementare Funzioni Booleane</h2>
+<h2 id="implementare-funzioni-booleane"><span class="header-section-number">4.2</span> Implementare Funzioni Booleane</h2>
 <p>Creaiamo dei circuiti che rappresentano fisicamente le nostre funzioni booleane. Per creare tutte le nostre funzioni booleane possiamo partire dalla porta NAND, infatti con questa porta si riescono ad implementare tutte le porte logiche (AND,OR e NOT). Inoltre la porta NAND è molto facile da implementare fisicamente.</p>
 <p><img src="../img/orandnot.png%20=400x" /></p>
 <p><strong>Xor</strong>:è vero solo se i due input sono diversi</p>
@@ -422,7 +423,7 @@ fare la tabella di verità su <span class="math inline">\(A+ \overline{ (B+C) } 
 <p><span class="math inline">\(A+ \overline{ (B+C) } B\)</span><br />
 <span class="math inline">\(A+\bar{B}\bar{C}B\)</span><br />
 <span class="math inline">\(A+0\)</span></p>
-<h2 id="mappe-di-karnaugh"><span class="header-section-number">4.3</span> 5.3. Mappe di Karnaugh</h2>
+<h2 id="mappe-di-karnaugh"><span class="header-section-number">4.3</span> Mappe di Karnaugh</h2>
 <blockquote>
 <p>sono un modo per rappresentre le funzioni booleane, e restituisce una funzione che è unguale o più piccola di quella canonica</p>
 </blockquote>
@@ -519,7 +520,8 @@ fare la tabella di verità su <span class="math inline">\(A+ \overline{ (B+C) } 
 </tbody>
 </table>
 <p>possiamo racchiudere gli uno nella tabella in rettangoli con base e altezza che sono potenze di 2.</p>
-<p><strong>Copertura minimale</strong>:è una delle forme più piccole - raggruppamenti che non sono contenuti in potenziali raggruppamenti più grandi - raggruppamenti che contengono almeno una cella che non appare anche in altri raggruppamenti della copertura</p>
+<p><strong>Copertura minimale</strong>:è una delle forme più piccole<br />
+- raggruppamenti che non sono contenuti in potenziali raggruppamenti più grandi - raggruppamenti che contengono almeno una cella che non appare anche in altri raggruppamenti della copertura</p>
 <p>L’espressione booleana corrispondente ad una copertura minimale risulta essere un’espressione del tipo somma di prodotti di letterali (in altri termini OR fra AND di letterali) con un numero minimale di addendi.</p>
 <h1 id="circuiti-sequenziali"><span class="header-section-number">5</span> Circuiti sequenziali</h1>
 <p>I <strong>circuiti sequenziali</strong> sono circuiti il cui risultato cambia in base agli input presi in passato</p>
@@ -527,7 +529,8 @@ fare la tabella di verità su <span class="math inline">\(A+ \overline{ (B+C) } 
 <figure>
 <img src="vx_images/2893428209291.png%20=403x" alt="" /><figcaption>LatchSR</figcaption>
 </figure>
-<p><strong>creiamo la tabella di verità</strong> - Se S=1, R=0 allora Q=1, <span class="math inline">\(\bar{Q}\)</span>=0 - Se S=0, R=1 allora Q=0, <span class="math inline">\(\bar{Q}\)</span>=1 - Se S=1, R=1 allora Q=0, <span class="math inline">\(\bar{Q}\)</span>=0 - Se S=0, R=0 allora … non si sa!</p>
+<p><strong>creiamo la tabella di verità</strong><br />
+- Se S=1, R=0 allora Q=1, <span class="math inline">\(\bar{Q}\)</span>=0 - Se S=0, R=1 allora Q=0, <span class="math inline">\(\bar{Q}\)</span>=1 - Se S=1, R=1 allora Q=0, <span class="math inline">\(\bar{Q}\)</span>=0 - Se S=0, R=0 allora … non si sa!</p>
 <p>Essendo che nel caso S=0,R=0 gli output rimangono invariati. Ma se il circuito come primo input ha S=0,S=0 allora non si sa se Q è 0 o 1.</p>
 <h2 id="latch-sr-temporizzato"><span class="header-section-number">5.2</span> Latch SR temporizzato</h2>
 <figure>
@@ -597,26 +600,26 @@ else out(t)=out(t-1)</code></pre>
 <p>Una memoria con n locazioni da w-bit, può essere realizzata con n “w-bit register” controllati da uno specifico circuito, che indica da quale di questi registri deve essere letto.</p>
 <p>(utilizzeremo un demultiplexer per il load e un multiplexer per l’out)</p>
 <p>TODO: aggiungere immagine</p>
-<h1 id="rappresentazione-dellinformazione"><span class="header-section-number">6</span> 6. Rappresentazione dell’informazione</h1>
+<h1 id="rappresentazione-dellinformazione"><span class="header-section-number">6</span> Rappresentazione dell’informazione</h1>
 <p>I calcolatori elaborano molti tipi di informazione come testi, immagini ,suoni ,numeri etc.. Nonostante ciò le memorie dati possono contenere solo valori binari.</p>
-<h2 id="numeri"><span class="header-section-number">6.1</span> 6.1. Numeri</h2>
+<h2 id="numeri"><span class="header-section-number">6.1</span> Numeri</h2>
 <p>Partiamo dai numeri naturali positivi che vengono rappresentati semplicemente in base 2.</p>
 <details>
 <p><summary> esercizio </summary></p>
 <p>Si consideri il numero decimale 35 (senza segno). Lo si converta in binario, poi dal binario in esadecimale, e dall’esadecimale di nuovo in decimale.</p>
 35=100011b=23hex
 </details>
-<h3 id="modulo-e-segno"><span class="header-section-number">6.1.1</span> 6.1.1. Modulo e segno</h3>
+<h3 id="modulo-e-segno"><span class="header-section-number">6.1.1</span> Modulo e segno</h3>
 <p>Modulo e segno si una l’ultimo bit come segno</p>
 <blockquote>
 <p>es usando 8 bit: 00000110=6, 10000110=-6</p>
 </blockquote>
-<h3 id="complemento-a-1"><span class="header-section-number">6.1.2</span> 6.1.2. Complemento a 1</h3>
+<h3 id="complemento-a-1"><span class="header-section-number">6.1.2</span> Complemento a 1</h3>
 <p>Complemento a 1: il bit più a sx indica il segno, ma se il numero è negativo il modulo viene complementato</p>
 <blockquote>
 <p>Es usando 8 bit: 00000110=6, 11111001=-6</p>
 </blockquote>
-<h3 id="complemnto-a-2"><span class="header-section-number">6.1.3</span> 6.1.3. Complemnto a 2</h3>
+<h3 id="complemnto-a-2"><span class="header-section-number">6.1.3</span> Complemnto a 2</h3>
 <p>Complemento a 2: come per il complemento a 1, ma se il numero è negativo dopo il complemento si aggiunge 1</p>
 <blockquote>
 <p>Esempio<br />
@@ -624,7 +627,7 @@ usando 8 bit: 00000110=6, 11111010=-6</p>
 </blockquote>
 <p>con questo metodo è più facile fare le addizioni perchè riusciamo a farle con lo stesso metodo</p>
 <p>con il complemento a 2 possiamo avere un range da <span class="math inline">\([2^{k-1}...2^{k-1}-1]\)</span> dove k è il numero di bit</p>
-<h3 id="codifica-in-eccesso"><span class="header-section-number">6.1.4</span> 6.1.4. Codifica in eccesso</h3>
+<h3 id="codifica-in-eccesso"><span class="header-section-number">6.1.4</span> Codifica in eccesso</h3>
 <p>La decodifica si ottiene applicando la decodifica standard e poi sottraendo <span class="math inline">\(2^{k-1}\)</span> al numero ottenuto</p>
 <blockquote>
 <p>Es<br />
@@ -647,7 +650,7 @@ Lo si converta in binario (su 8 bit) con le codifiche:</p>
 <li><p>ad eccesso 128 : 01110011</p></li>
 </ul>
 </details>
-<h3 id="numeri-con-la-virgola"><span class="header-section-number">6.1.5</span> 6.1.5. Numeri con la virgola</h3>
+<h3 id="numeri-con-la-virgola"><span class="header-section-number">6.1.5</span> Numeri con la virgola</h3>
 <p>la rappresentazione dei numeri con la virgola si usano due numeri: - f che è la mantissa - e che è l’esponente</p>
 <p><span class="math inline">\(n=f \times 10^{e}\)</span></p>
 <details>
@@ -680,11 +683,13 @@ la mantissa sarà 432=110110000b questo numero va normalizzato quindi dobbiamo s
 <h3 id="utf-8"><span class="header-section-number">6.2.3</span> UTF-8</h3>
 <p>Essendo che la codifica <strong>unicode è all’esaurimento</strong> dei possibili codici, e <strong>usa 16 bit</strong> anche per i caratteri asci; Si è sviluppata la <strong>UTF</strong> che può dinamicamente occupare <strong>da 1 a 4 byte</strong> a seconda dell’informazione; <strong>rimane compatibile con ASCII</strong>, infatti se il primo bit è a zero significa che il carattere è un carattere ascii e che occuperà i prossimi 7 bit.</p>
 <h2 id="codici-corretti"><span class="header-section-number">6.3</span> Codici corretti</h2>
-<p>Memorie e trasmissioni di dati sono soggette ad errori, così si creano dei codici di controllo: - m bit: della parola - r bit: di controllo, scelti in un meccanismo - n bit: m+r “parola codice”</p>
+<p>Memorie e trasmissioni di dati sono soggette ad errori, così si creano dei codici di controllo:<br />
+- m bit: della parola - r bit: di controllo, scelti in un meccanismo - n bit: m+r “parola codice”</p>
 <blockquote>
 <p><strong>la distanza di hamming</strong> è la differenza di bit tra due stringhe di bit. (es: distanza tra 101110 e 110101 è 4)</p>
 </blockquote>
-<p><strong>Regola generale:</strong> - Per rilevare d bit errati è necessario un codice con distanza di Hamming maggiore o uguale a d+1 - Per correggere d bit errati è necessario un codice con distanza di Hamming maggiore o uguale a 2d+1</p>
+<p><strong>Regola generale:</strong><br />
+- Per rilevare d bit errati è necessario un codice con distanza di Hamming maggiore o uguale a d+1 - Per correggere d bit errati è necessario un codice con distanza di Hamming maggiore o uguale a 2d+1</p>
 <h3 id="bit-di-parità"><span class="header-section-number">6.3.1</span> Bit di parità</h3>
 <p>Il codice è composto da un solo bit di controllo (r=1), se la parola ha i bit “1” di numero pari allora il bit di parità è a 1.(distanza Hamming 2)</p>
 <p>Il codice rileva se c’è un singolo bit errato.</p>
@@ -712,22 +717,27 @@ Questo questo codice ha una distanza di hamming di 5 quindi è possibile corregg
 </ul>
 <p>Il decode setta i c bit che vengono utilizzati come control bit per tutti gli altri componenti</p>
 <h2 id="sram-e-dram"><span class="header-section-number">6.4</span> SRAM e DRAM</h2>
-<p>Le <strong>SRAM</strong> (Static RAM) sono realizzate tramite flip-flop come le memorie viste in precedenza - Veloci (ordine del nanosecondo) - Usate principalmente per le cache</p>
+<p>Le <strong>SRAM</strong> (Static RAM) sono realizzate tramite flip-flop come le memorie viste in precedenza<br />
+- Veloci (ordine del nanosecondo) - Usate principalmente per le cache</p>
 <p>Le <strong>DRAM</strong> (Dynamic RAM) o SDRAM (Synchronous DRAM), usate per le memorie centrali, hanno un solo transistor ed un condensatore che mantiene (tramite carica elettrica) un singolo bit</p>
 <p>-Visto che il condensatore perde la propria carica, deve essere ricaricato per evitare di perdere la propria informazione - Si rendono necessarie periodiche fasi di “refresh” (ad intervalli dell’ordine del millisecondo) - A causa del refresh sono più lente (ordine della decina di nanosecondi) - Richiedendo un solo transistor costano meno e possono essere maggiormente miniaturizzate</p>
 <h3 id="cache"><span class="header-section-number">6.4.1</span> Cache</h3>
 <p>La <strong>cache memorizza gli ultimi dati utilizzati dalla cpu</strong>, e se la cpu deve accedere dati che ha richiesto da poco la cache restituisce i dati molto velocemente evitando di andarli a riprendere dalla memoria .</p>
 <p>I linguaggi di programmazione sono fatti per utilizzare la cache,ma non la si può controllare.</p>
-<p>Modello Cache di studio: - Una prima piccola cache (livello 1: L1) è direttamente nel chip della CPU separata fra istruzioni e dati (dimensioni fra 16-64 KB) - Una seconda cache (livello 2: L2) nel medesimo “involucro” della CPU “unificata” fra dati e istruzioni (fra 512 KB ed 1 MB) - Una terza cache (livello 3: L3) esterna alla CPU (alcuni MB)</p>
+<p>Modello Cache di studio:<br />
+- Una prima piccola cache (livello 1: L1) è direttamente nel chip della CPU separata fra istruzioni e dati (dimensioni fra 16-64 KB) - Una seconda cache (livello 2: L2) nel medesimo “involucro” della CPU “unificata” fra dati e istruzioni (fra 512 KB ed 1 MB) - Una terza cache (livello 3: L3) esterna alla CPU (alcuni MB)</p>
 <p>La cache è suddivisa in n righe ognuna che contiene m byte.<br />
 Si procede suddividendo la memoria in blocchi da m byte e il blocco i andrà nella riga <code>i mod n</code>, la cache tiene traccia anche di quale specifico blocco contiene la linea.</p>
 <p><strong>esempio</strong></p>
 <p><img src="../img/cache.png" /></p>
-<p>Immaginiamo ora una cache con n=2048 linee di dimensione m=32 byte: - <strong>Valid</strong>: indica se la linea di cache contiene un blocco, (all’inizio tutti i valid sono a false e data e tag hanno valori randomizzi) - <strong>Data</strong>: contiene i 32 byte del blocco - <strong>Tag</strong>: indica esattamente quale blocco è contenuto</p>
-<p>quindi se abbiamo un indirizzi da 32 bit: - primi <strong>5</strong>: (meno significativi) indicano quale byte dei 32 byte stiamo cercando - i successivi <strong>11</strong>: indicano quale linea della cache (<span class="math inline">\(2^11\)</span>=2048) - i rimanenti <strong>16</strong>: quale tra gli indirizzi che utilizzano quel blocco</p>
+<p>Immaginiamo ora una cache con n=2048 linee di dimensione m=32 byte:<br />
+- <strong>Valid</strong>: indica se la linea di cache contiene un blocco, (all’inizio tutti i valid sono a false e data e tag hanno valori randomizzi) - <strong>Data</strong>: contiene i 32 byte del blocco - <strong>Tag</strong>: indica esattamente quale blocco è contenuto</p>
+<p>quindi se abbiamo un indirizzi da 32 bit:<br />
+- primi <strong>5</strong>: (meno significativi) indicano quale byte dei 32 byte stiamo cercando - i successivi <strong>11</strong>: indicano quale linea della cache (<span class="math inline">\(2^11\)</span>=2048) - i rimanenti <strong>16</strong>: quale tra gli indirizzi che utilizzano quel blocco</p>
 <details>
 <p><summary> Esercizio </summary></p>
-<p><strong>indirizzo:</strong> - primi 4 bit per l’indirizzo dentro data - 3 bit per capire la cache - 2 bit per il tag</p>
+<p><strong>indirizzo:</strong><br />
+- primi 4 bit per l’indirizzo dentro data - 3 bit per capire la cache - 2 bit per il tag</p>
 <p>locazioni e indirizzi 0:0-15,128-143.. 1:16-31.. 2:32-47.. 3:48-63.. 4:64-79.. 5:80-95.. 6:96-111.. 7:112-127..</p>
 <p><strong>esercizio</strong></p>
 <p>locazione 12, non è nella cache 00 000 1100</p>
@@ -872,7 +882,8 @@ Si procede suddividendo la memoria in blocchi da m byte e il blocco i andrà nel
 <h3 id="paginazione"><span class="header-section-number">6.4.2</span> Paginazione</h3>
 <p>TODO:</p>
 <h3 id="pre-fetch-istruzioni"><span class="header-section-number">6.4.3</span> Pre-fetch istruzioni</h3>
-<p>Nell’architettura del nostro calcolatore Hack, consideriamo due distinti ingressi per la CPU: - “instruction”: carica l’istruzione da eseguire da una specifica memoria programma - inM: carica i dati necessari da una distinta memoria dati</p>
+<p>Nell’architettura del nostro calcolatore Hack, consideriamo due distinti ingressi per la CPU:<br />
+- “instruction”: carica l’istruzione da eseguire da una specifica memoria programma - inM: carica i dati necessari da una distinta memoria dati</p>
 <blockquote>
 <p>Nelle architetture usuali (Von Neumann) dati e programmi risiedono nella stessa memoria</p>
 </blockquote>
@@ -1122,10 +1133,22 @@ Si procede suddividendo la memoria in blocchi da m byte e il blocco i andrà nel
 <blockquote>
 <p>ISA è l’interfaccia tra l’hardware e il software, i compilatori traucono i programmi in instruzioni livello ISA</p>
 </blockquote>
-<p>In generale le istruzioni sono divise in: - <strong>codice operativo</strong>: parte che indica il tipo di istruzione da eseguire - <strong>indirizzi</strong>: indicano gli operatori da utilizzare</p>
+<p>In generale le istruzioni sono divise in:<br />
+- <strong>codice operativo</strong>: parte che indica il tipo di istruzione da eseguire - <strong>indirizzi</strong>: indicano gli operatori da utilizzare</p>
 <p><img src="vx_images/2558021179300.png" /></p>
-<p>Gli indirizzamento: - Indirizzamento immediato: L’istruzione include già l’operando da usare (vedi A-instruction del linguaggio Hack) - Indirizzamento diretto: L’istruzione contiene l’indirizzo completo in memoria della cella in cui reperire l’operando - Indirizzamento a registro: L’operando viene prelevato da un registro - Indirizzamento a registro indiretto: L’operando viene prelevato dalla memoria, all’indirizzo puntato da un registro (vedi l’accesso in memoria del linguaggio Hack, con “indirizzamento a registro indiretto” tramite registro A)</p>
+<p>Gli indirizzamento:<br />
+- Indirizzamento immediato: L’istruzione include già l’operando da usare (vedi A-instruction del linguaggio Hack) - Indirizzamento diretto: L’istruzione contiene l’indirizzo completo in memoria della cella in cui reperire l’operando - Indirizzamento a registro: L’operando viene prelevato da un registro - Indirizzamento a registro indiretto: L’operando viene prelevato dalla memoria, all’indirizzo puntato da un registro (vedi l’accesso in memoria del linguaggio Hack, con “indirizzamento a registro indiretto” tramite registro A)</p>
+<p>TODO: <a href="https://virtuale.unibo.it/pluginfile.php/913786/mod_resource/content/10/10-Livello_ISA.pdf">add pag 7</a></p>
 <p>Indirizzamoento a stack: i processori hanno delle istruzioni per gestire lo stack, come push, pop + dei registri dedicati BSP ..</p>
 <p>Tipiche istruzioni: - operandi di trasfermiento dati: È trasferiscono dati da memoria a registri e viceversa e da registri a registri - operazioni aritmetico-logiche: Operazioni su interi e floating-point - operazioni unairie: (prendono un solo operatore) per esempio le instruzioni shift o inc - salti: condizionati e non - alcuni compilatori hanno</p>
+<p>TODO: add record d’attivazione, invocazione di procedura</p>
+<p><img src="vx_images/160408189373.png" /></p>
+<h2 id="trap-e-interrupt"><span class="header-section-number">8.6</span> Trap e Interrupt</h2>
+<blockquote>
+<p>Trap è una procedura automatica, viene eseguita quando si verificano situazioni come Opcode non definito o accesso ad area di memoria non consentita, dopo di che il controllo è trasferita ad una procedura detta “gestore di trap”</p>
+</blockquote>
+<blockquote>
+<p>Interrupt interropono il programma e traseriscono il controllo ad un gestore deputato,sono “asincroni” cioè vengono scetenati da dispositivi indipendenti dal programma in esecutzione</p>
+</blockquote>
 </body>
 </html>

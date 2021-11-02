@@ -200,7 +200,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </details>
 <h2 id="linguaggio-naturale"><span class="header-section-number">3.1</span> Linguaggio naturale</h2>
 <p>Il linguaggio naturale è alla base della comunicazione e del ragionamento umano, e per questo deve essere espressivo e viene esteso e specializzato (per comunicare )</p>
-<p>Non possiamo utilizzarlo per procedure di calcolo e dimostrazioni perché: - è ambiguo - Fortemente dipende del contesto</p>
+<p>Non possiamo utilizzarlo per procedure di calcolo e dimostrazioni perché:<br />
+- è ambiguo - Fortemente dipende del contesto</p>
 <details>
 <p><summary> es </summary></p>
 <p>“la vecchia porta la sbarra” può essere interpretata in più volte</p>
@@ -225,7 +226,8 @@ Aggettivo eterologico = aggettivo che non si applica a se stesso (p.e. monosilla
 <p>“Eterologico e eterologico”<br />
 eterologico e eterologico sse non si applica a se stesso <code>**eterologico e eterologico sse eterologico non</code> e eterologico**</p>
 </details>
-<p>i paradossi dei linguaggi naturali esistono perchè: - l’uso meta-linguistico del linguaggio natruale - l’auto-applicazione di un concetto meta-linguistico a se stesso - l’uso della negazione per concludere qualcosa e la sua negazione</p>
+<p>i paradossi dei linguaggi naturali esistono perchè:<br />
+- l’uso meta-linguistico del linguaggio natruale - l’auto-applicazione di un concetto meta-linguistico a se stesso - l’uso della negazione per concludere qualcosa e la sua negazione</p>
 <p>per evitare i paradossi bisogna impedire l’uso meta-linguistico del linguaggio naturale (<strong>per questo si abbandona il linguaggio naturale per uno artificiale</strong>)</p>
 <h2 id="linguaggio-matematico"><span class="header-section-number">3.2</span> Linguaggio matematico</h2>
 <p>è che rientrino i paradossi</p>
@@ -240,17 +242,20 @@ Essendo che tutto è un insieme si può utilizzare il simbolo di appartenenza tr
 <span class="math inline">\(X =\{ Y| Y \notin Y\}\)</span><br />
 <span class="math inline">\(X \in X \text{ sse } X \notin X\)</span></p>
 </blockquote>
-<p>per ovviare al paradosso: - non è possibile formare liberamnete un insieme per una proprietà - ma è possibile selezionare elementi da un insieme esistente - la collezione di tutti gli insiemi non è un insieme</p>
+<p>per ovviare al paradosso:<br />
+- non è possibile formare liberamnete un insieme per una proprietà - ma è possibile selezionare elementi da un insieme esistente - la collezione di tutti gli insiemi non è un insieme</p>
 <p><a href="#teoria-assiomatiche-degli-insiemi">More</a></p>
 <h2 id="i-paradossi-in-informatica"><span class="header-section-number">3.3</span> I paradossi in informatica</h2>
 <p>nella programmazione ogni linguaggio può eseguire delle funzioni che possono prendere in input e dare in output altre funzioni</p>
 <p>supponiamo che le funzioni scrivibili in un linguaggio di prograzione dato un input, restituiscano un output in tempo finito</p>
 <p>Sia <code>f(g) = not (g(g))</code></p>
 <p>allora <code>f(f)= not (f(f))</code></p>
-<p>pertanto: - O f non è scrivibile in P è altamente inespressivo - Oppure f non è totale (diverge, cioè non mi da nessun output in un tempo finito)</p>
+<p>pertanto:<br />
+- O f non è scrivibile in P è altamente inespressivo - Oppure f non è totale (diverge, cioè non mi da nessun output in un tempo finito)</p>
 <p><strong>Quindi le funzioni dei linguaggi di programmazione non sono funzioni matematiche</strong></p>
 <h1 id="teoria-degli-insiemi"><span class="header-section-number">4</span> Teoria degli Insiemi</h1>
-<p>punti informali: - <strong>tutto è un insieme</strong>: gli insiemi contengono insiemi - <strong>è il linguaggio macchina</strong> della matematica moderna, (tutto viene implementato come insiemi, es. numeri, figure geometriche) - <strong>è estremamente efficace nel farlo</strong>: si riesce a descrivere ogni cosa, ma è difficilmente rappresentabili - permette di <strong>introdurre e comprendere concetti come gli infiniti</strong> - si perdono gli aspetti computazionali (le funzioni definite come insiemi non si calcolano, le rappresentazioni di dati sono inefficienti )</p>
+<p>punti informali:<br />
+- <strong>tutto è un insieme</strong>: gli insiemi contengono insiemi - <strong>è il linguaggio macchina</strong> della matematica moderna, (tutto viene implementato come insiemi, es. numeri, figure geometriche) - <strong>è estremamente efficace nel farlo</strong>: si riesce a descrivere ogni cosa, ma è difficilmente rappresentabili - permette di <strong>introdurre e comprendere concetti come gli infiniti</strong> - si perdono gli aspetti computazionali (le funzioni definite come insiemi non si calcolano, le rappresentazioni di dati sono inefficienti )</p>
 <h2 id="teoria-naive"><span class="header-section-number">4.1</span> Teoria naive</h2>
 <blockquote>
 <p>Attenzione:è inconsistente in quando si può avere il paradosso di Russell</p>
@@ -267,7 +272,8 @@ Per questo serve una teoria che rimuova l’<strong>assioma di comprensione</str
 <p>Attenzione: quando si usano insiemi rappresentanti altri insiemi, non si possono utilizzare i diagrammi di venn</p>
 </blockquote>
 <h2 id="teoria-assiomatiche-degli-insiemi"><span class="header-section-number">4.2</span> Teoria assiomatiche degli insiemi</h2>
-<p>In una teoria assiomatica degli insiemi: - i concetti di <strong>insieme, appartenenza e uguaglianza</strong> non vengono definiti (gli insiemi sono <strong>enti primitivi</strong>) - usiamo assiomi per asserire l’esistenza di alcuni insiemi a partire da altri - ci sono numerose teorie insiemistiche che differiscono riguardo agli assiomi - Noi seguiamo la teoria Zermelo-Fraenkel è la meno controversa, ed è sufficiente per sviluppare la maggior parte della matematica - Zermelo Fraenkel non è mai stata dimostrata essere consistente (e non si è dimostrato che è dimostrabile che una teoria possa essere costistente)</p>
+<p>In una teoria assiomatica degli insiemi:<br />
+- i concetti di <strong>insieme, appartenenza e uguaglianza</strong> non vengono definiti (gli insiemi sono <strong>enti primitivi</strong>) - usiamo assiomi per asserire l’esistenza di alcuni insiemi a partire da altri - ci sono numerose teorie insiemistiche che differiscono riguardo agli assiomi - Noi seguiamo la teoria Zermelo-Fraenkel è la meno controversa, ed è sufficiente per sviluppare la maggior parte della matematica - Zermelo Fraenkel non è mai stata dimostrata essere consistente (e non si è dimostrato che è dimostrabile che una teoria possa essere costistente)</p>
 <h3 id="assioma-di-estensionalità"><span class="header-section-number">4.2.1</span> Assioma di estensionalità</h3>
 <blockquote>
 <p>Due insiemi sono uguali sse hanno gli stessi elementi.</p>
