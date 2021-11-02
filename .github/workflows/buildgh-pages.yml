@@ -37,4 +37,4 @@ jobs:
           git diff-index --quiet HEAD ||  git commit -am "deploy files"  # commit to the repository (ignore if no modification)
           git push origin $TARGET_BRANCH # push to remote branch
           cd Università
-          for i in $(find ./ -maxdepth 1 -type d  ! -name . ! -name img ); do cd $i;echo "try to build $i" ;pandoc --from markdown_mmd --to html5 -s  *.md -o $i.html --toc --top-level-division=chapter -N;rm *.md ;cd .. ;done #
+          for i in $(find ./ -maxdepth 1 -type d  ! -name . ! -name img ); do cd $i;echo "try to build $i" ;pandoc --from markdown_mmd --to html5 -s  *.md -o $i.html  --metadata pagetitle="$i"  --toc --top-level-division=chapter -N;rm *.md ;cd .. ;done #
