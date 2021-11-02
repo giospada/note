@@ -36,5 +36,5 @@ jobs:
           git add -A
           git diff-index --quiet HEAD ||  git commit -am "deploy files"  # commit to the repository (ignore if no modification)
           git push origin $TARGET_BRANCH # push to remote branch
-          for i in $(find ./ -maxdepth 1 -type d  ! -name . ! -name img ); do cd $i;pandoc -s *.md -o $i.html --toc --top-level-division=chapter -N ;cd .. ;done
+          for i in $(find ./ -maxdepth 1 -type d  ! -name . ! -name img ); do cd $i;pandoc -s $(ls *.md) -o $i.html --toc --top-level-division=chapter -N ;cd .. ;done
 
