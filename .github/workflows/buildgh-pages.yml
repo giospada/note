@@ -22,18 +22,25 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - uses: r-lib/actions/setup-pandoc@v1
       - name: copy
         env:
           SRC_FOLDER_PATH: 'Università'
           TARGET_BRANCH: 'gh-pages'
         run: |
-          files=$(find $SRC_FOLDER_PATH -type f) # get the file list
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git fetch                         # fetch branches
           git checkout $TARGET_BRANCH       # checkout to your branch
-          rm -R * 
-          git checkout ${GITHUB_REF##*/} -- $files # copy files from the source branch
+          git checkout ${GITHUB_REF##*/} -- $SRC_FOLDER_PATH # copy files from the source branch
+          cd Università
+          for i in $(find ./ -maxdepth 1 -type d  ! -name . ! -name img ); do cd $i;echo "try to build $i" ;pandoc --from markdown_mmd --to html5 -s  *.md -o $i.html  --metadata pagetitle="$i"  --toc --top-level-division=chapter -N --css=../img/style.css ;rm *.md ;cd .. ;done #
+          cd ..
+          echo "#Index "> index.md
+          for i in $(find ./ -maxdepth 1 -type d  ! -name . ! -name img );do echo "($i)[Università/$i/$i.html]">>index.md;done
+          pandoc --from markdown_mmd --to html5 -s  index.md -o index.html  --metadata pagetitle="Index"  --css=Università/img/style.css 
+          rm index.md
           git add -A
           git diff-index --quiet HEAD ||  git commit -am "deploy files"  # commit to the repository (ignore if no modification)
           git push origin $TARGET_BRANCH # push to remote branch
+          
