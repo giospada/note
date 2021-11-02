@@ -37,9 +37,9 @@ Creiamo un numero $m {:=} p_1\times p_2 \times ... \times p_n +1$, essendo che m
 
 Se $m$ fosse divisibile per $p_1$ allora $\exists m_1 \in \mathbb{N}: m_1 \times p_1=m=p_1\times p_2 \times ... \times p_n +1$    
 $m_1\times p_1 -( p_1\times p_2 \times ... \times p_n )=1$  
-$ p_1 (m_1 - p_2 \times ... \times p_n )=1$  
-$ p_1 (m_1 - p_1\times p_2 \times ... \times p_n )=1$  
-quindi: $ p_1 =1$  
+$p_1 (m_1 - p_2 \times ... \times p_n )=1$  
+$p_1 (m_1 - p_1\times p_2 \times ... \times p_n )=1$  
+quindi: $p_1 =1$  
 
 essendo che $m$ non è divisibile per nessuno primo, $m$ è primo.
 

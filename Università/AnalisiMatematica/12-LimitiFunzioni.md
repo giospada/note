@@ -12,7 +12,7 @@
 > 
 > $\displaylines{\forall r > 0 : \\ a \cap (I_r(\bar{x})\backslash \{\bar{x}\})\neq \emptyset}$
 
-![](vx_images/1189241576710.png =254x)
+![](vx_images/1189241576710.png)
 
 $D(A)=\{\bar{x}\in \mathbb{R}| \bar{x} \mbox{ è di accomulazione per A}\}$
 
@@ -23,7 +23,7 @@ $D(A)=\{\bar{x}\in \mathbb{R}| \bar{x} \mbox{ è di accomulazione per A}\}$
 esempio
 </summary>
 
-![](vx_images/2412763123188.png =539x)
+![](vx_images/2412763123188.png)
 </details>
 
 
@@ -103,6 +103,7 @@ TODO:dimostrazione
 
 
 ### Esponenziale
+
 $\displaystyle \lim_{x \rightarrow 0} \frac{a^x-1}{x}=\ln a$ con 
 
 

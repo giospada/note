@@ -16,11 +16,13 @@
 }
 
 body {
-    margin: 0 auto;
+    margin: 20px ;
     font-family: "Fira Code",Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     line-height: 1.5;
     background-color:var(--dracula-background);
     color:var(--dracula-foreground);
+    max-width:1400px;
+    
 }
 
 summary {
@@ -28,10 +30,6 @@ summary {
     color:#ffb86c;
 }
 
-pre {
-    background-color: #f8f8f8;
-    border: none;
-}
 
 strong{
     color:#ffb86c;

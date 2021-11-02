@@ -32,8 +32,8 @@ $\exp_a(x){:=} a^n$
 $\exp : \mathbb{R} \rightarrow \mathbb{R}^{*}$
 
 
-![esponenziale](vx_images/5303331546703.png =181x)
-![esponenzie](vx_images/3346331093181.png =182x)
+![esponenziale](vx_images/5303331546703.png )
+![esponenzie](vx_images/3346331093181.png )
 
 ## Funzione Logaritmica
 
@@ -60,15 +60,16 @@ $3^{log_3 4}=4$
 
 TODO: dimostrare che la funzine è inversa
 
-![logaritmo](vx_images/4993496907525.png =300x)
+![logaritmo](vx_images/4993496907525.png )
 
-![](vx_images/3945607777711.png =200x)
+![](vx_images/3945607777711.png )
+
 ## Funzioni gognometriche
 
 **circonferenza gognometrica**: circonferenza di raggio uno con il centro sugli assi $x^2+y^2=1$ (lunghezza $2\pi$)
 
 TODO: add immagini
-![](vx_images/2133540871851.png =438x)
+![](vx_images/2133540871851.png)
 
 ### Radianti
 
@@ -83,7 +84,7 @@ $\alpha°:360=\alpha_r:2\pi \\ \alpha_r=\frac{\alpha° \times \pi}{360}$
 sia $P(x_p,y_p)$ un punto sulla circonferenza goniometrica
 
 
-![](../img/circonferenza_trigonometrica.png =320x)
+![](../img/circonferenza_trigonometrica.png )
 
 $\sin \alpha =y_p$  
 $\cos \alpha =x_p$  
@@ -120,9 +121,9 @@ la tangente non è definita per:
 ## Angoli speciali
 
 $\alpha= \frac{\pi}{4}$ è un angolo speciale perchè crea un triangono isocele.
-![](vx_images/5116113239298.png =320x)
+![](vx_images/5116113239298.png)
 
-così sappiamo che OA e PA sono uguali e ci basta risolvere $PO=\sqrt{OA^2+PA^2}\to PO^2=2PA^2 \to 1=2PA^2 \to PA=\frac{1}{\sqrt{2}}$
+così sappiamo che OA e PA sono uguali e ci basta risolvere $PO=\sqrt{OA^2+PA^2} \to PO^2=2PA^2 \to 1=2PA^2 \to PA= \frac{1}{ \sqrt{2}}$
 
 quindi per quest'angolo ha:
 $\sin \frac{\pi}{4}=\cos \frac{\pi}{4}=\frac{\sqrt{2}}{2}$
@@ -141,9 +142,9 @@ $\tan \frac{\pi}{6}=\frac{\sqrt{3}}{3}$
 
 ## Grafici 
 
-![](../img/grafsen.png =320x)
-![](../img/grafcos.png =320x)
-![](../img/graftan.png =320x)
+![](../img/grafsen.png)
+![](../img/grafcos.png )
+![](../img/graftan.png )
 
 ## Formule di Addizione e Sottrazione
 
@@ -180,7 +181,7 @@ La funzione inversa andrà $\arcsin : [-1,1] \rightarrow [-\frac{\pi}{2},\frac{\
 Quindi $\forall x \in [-\frac{\pi}{2},\frac{\pi}{2}] \\ \arcsin(\sin x)=x$ e 
 quindi $\forall y \in [-1,1] \\ \sin(\arcsin y)=y$
 
-![](vx_images/686515595913.png =400x)
+![](vx_images/686515595913.png )
 
 ### Arccos
 
@@ -191,7 +192,7 @@ Quindi $\forall x \in [-\frac{\pi}{2},\frac{\pi}{2}] \\ \arccos(\cos x)=x$ e
 quindi $\forall y \in [0,\pi] \\ \cos(\arccos y)=y$
 
 
-![](vx_images/4969738921664.png =300x)
+![](vx_images/4969738921664.png)
 
 ### Arctan
 
@@ -203,4 +204,4 @@ Quindi $\forall x \in ]-\frac{\pi}{2},\frac{\pi}{2}[ \\ \arccos(\cos x)=x$ e
 quindi $\forall y \in \mathbb{R} \\ \cos(\arccos y)=y$
 
 
-![](vx_images/2312203870068.png =578x) 
+![](vx_images/2312203870068.png ) 
