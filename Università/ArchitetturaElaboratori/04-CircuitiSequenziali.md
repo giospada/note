@@ -6,7 +6,7 @@ I **circuiti sequenziali** sono circuiti il cui risultato cambia in base agli in
 
 ![LatchSR](vx_images/2893428209291.png =403x)
 
-**creiamo la tabella di verità**
+**creiamo la tabella di verità**  
 - Se S=1, R=0 allora Q=1, $\bar{Q}$=0
 - Se S=0, R=1 allora Q=0, $\bar{Q}$=1
 - Se S=1, R=1 allora Q=0, $\bar{Q}$=0

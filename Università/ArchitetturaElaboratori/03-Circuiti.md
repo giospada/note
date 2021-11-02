@@ -44,7 +44,7 @@ Ogni combinazione delle variabili di una funzione booleana ha un corrispondente 
 
 Per esempio la forma canonica della funzione definita nell'immagine sopra è : $\bar{A}B\bar{C}+AB\bar{C}+ABC$
 
-## 5.2. Implementare Funzioni Booleane
+## Implementare Funzioni Booleane
 
 Creaiamo dei circuiti che rappresentano fisicamente le nostre funzioni booleane.
 Per creare tutte le nostre funzioni booleane possiamo partire dalla porta NAND, infatti con questa porta si riescono ad implementare tutte le porte logiche (AND,OR e NOT). Inoltre la porta NAND è molto facile da implementare fisicamente.
@@ -69,7 +69,7 @@ $A+\bar{B}\bar{C}B$
 $A+0$
 
 
-## 5.3. Mappe di Karnaugh
+## Mappe di Karnaugh
 
 > sono un modo per rappresentre le funzioni booleane, e restituisce una funzione che è unguale o più piccola di quella canonica
 
@@ -99,7 +99,7 @@ $A+0$
 
 possiamo racchiudere gli uno nella tabella in rettangoli con base e altezza che sono potenze di 2.
 
-**Copertura minimale**:è una delle forme più piccole
+**Copertura minimale**:è una delle forme più piccole  
 - raggruppamenti che non sono contenuti in potenziali raggruppamenti più grandi
 - raggruppamenti che contengono almeno una cella che non appare anche in altri raggruppamenti della copertura
 

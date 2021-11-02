@@ -24,7 +24,7 @@ Il decode setta i c bit che vengono utilizzati come control bit per tutti gli al
 
 ## SRAM e DRAM
 
-Le **SRAM** (Static RAM) sono realizzate tramite flip-flop come le memorie viste in precedenza
+Le **SRAM** (Static RAM) sono realizzate tramite flip-flop come le memorie viste in precedenza  
 - Veloci (ordine del nanosecondo)
 - Usate principalmente per le cache
 
@@ -41,7 +41,7 @@ La **cache memorizza gli ultimi dati utilizzati dalla cpu**, e se la cpu deve ac
 
 I linguaggi di programmazione sono fatti per utilizzare la cache,ma non la si può controllare.
 
-Modello Cache di studio:
+Modello Cache di studio:  
 - Una prima piccola cache (livello 1: L1) è direttamente nel chip della CPU separata fra istruzioni e dati (dimensioni fra 16-64 KB)
 - Una seconda cache (livello 2: L2) nel medesimo “involucro” della CPU “unificata” fra dati e istruzioni (fra 512 KB ed 1 MB)
 - Una terza cache (livello 3: L3) esterna alla CPU (alcuni MB)
@@ -54,12 +54,12 @@ Si procede suddividendo la memoria in blocchi da m byte e il blocco i andrà nel
 
 ![](../img/cache.png)
 
-Immaginiamo ora una cache con n=2048 linee di dimensione m=32 byte:
+Immaginiamo ora una cache con n=2048 linee di dimensione m=32 byte:  
 - **Valid**: indica se la linea di cache contiene un blocco, (all'inizio tutti i valid sono a false e data e tag hanno valori randomizzi)
 - **Data**: contiene i 32 byte del blocco
 - **Tag**: indica esattamente quale blocco è contenuto
 
-quindi se abbiamo un indirizzi da 32 bit:
+quindi se abbiamo un indirizzi da 32 bit:  
 - primi **5**: (meno significativi) indicano quale byte dei 32 byte stiamo cercando
 - i successivi **11**: indicano quale linea della cache ($2^11$=2048)
 - i rimanenti **16**: quale tra gli indirizzi che utilizzano quel blocco
@@ -69,7 +69,7 @@ quindi se abbiamo un indirizzi da 32 bit:
   Esercizio
   </summary>   
 
-**indirizzo:**
+**indirizzo:**  
 - primi 4 bit per l'indirizzo dentro data
 - 3 bit per capire la cache
 - 2 bit per il tag
@@ -138,7 +138,7 @@ TODO:
 ### Pre-fetch istruzioni
 
 
-Nell’architettura del nostro calcolatore Hack,  consideriamo due distinti ingressi per la CPU:
+Nell’architettura del nostro calcolatore Hack,  consideriamo due distinti ingressi per la CPU:  
 - “instruction”: carica l’istruzione da eseguire da una specifica memoria programma
 - inM: carica i dati necessari da una distinta memoria dati
 

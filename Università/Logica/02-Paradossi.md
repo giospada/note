@@ -26,7 +26,7 @@ $x=0$
 
 Il linguaggio naturale è alla base della comunicazione e del ragionamento umano, e per questo deve essere espressivo e viene esteso e specializzato (per comunicare )
 
-Non possiamo utilizzarlo per procedure di calcolo e dimostrazioni perché:
+Non possiamo utilizzarlo per procedure di calcolo e dimostrazioni perché:  
 - è ambiguo
 - Fortemente dipende del contesto
 
@@ -80,7 +80,7 @@ eterologico e eterologico sse non si applica a se stesso `
 
 </details>
 
-i paradossi dei linguaggi naturali esistono perchè:
+i paradossi dei linguaggi naturali esistono perchè:  
 - l'uso meta-linguistico del linguaggio natruale
 - l'auto-applicazione di un concetto meta-linguistico a se stesso
 - l'uso della negazione per concludere qualcosa e la sua negazione
@@ -105,7 +105,7 @@ Essendo che tutto è un insieme si può utilizzare il simbolo di appartenenza tr
 > $X =\{ Y| Y \notin  Y\}$  
 > $X \in X \text{ sse } X \notin X$
 
-per ovviare al paradosso:
+per ovviare al paradosso:  
 - non è possibile formare liberamnete un insieme per una proprietà 
 - ma è possibile selezionare elementi da un insieme esistente 
 - la collezione di tutti gli insiemi non è un insieme
@@ -122,7 +122,7 @@ Sia `f(g) = not (g(g))`
 
 allora `f(f)= not (f(f))`
 
-pertanto:
+pertanto:  
 - O f non è scrivibile in P è altamente inespressivo
 - Oppure f non è totale (diverge, cioè non mi da nessun output in un tempo finito)
 

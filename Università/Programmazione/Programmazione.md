@@ -78,12 +78,12 @@ questi linguaggi ad alto livello hanno bisogno di:
 
 Problem Solving e implemantazione
 
-domande del problem solving:
+domande del problem solving:  
 - quale è l'input?
 - cosa contiene l'output?
 - come sono organizzati l'input e l'output?
 
-implementazione:
+implementazione:  
 - tradurre l'algoritmo
 - compilare
 - eseguire il codice
@@ -92,7 +92,7 @@ implementazione:
 
 #### Diagrammi di flusso
 
-tipi di nodi:
+tipi di nodi:  
 - nodo comando: un rettangolo 
 - nodo condizione: un rombo con scritta una condizione
 - nodi speciali: di fine e di inizio

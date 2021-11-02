@@ -7,7 +7,7 @@
 definizione di esponenziale:  
 $a \in \mathbb{R} , a<0 , a \neq 1$  
 $y=a^x$
-**oss**: $a>0$
+**oss**:è specificato $a>0$ poichè senza non si ha la funzione inversa
 
 <details>
 <summary>
@@ -32,8 +32,8 @@ $\exp_a(x){:=} a^n$
 $\exp : \mathbb{R} \rightarrow \mathbb{R}^{*}$
 
 
-![esponenziale](vx_images/5303331546703.png )
-![esponenzie](vx_images/3346331093181.png )
+![esponenziale](vx_images/5303331546703.png)
+![esponenzie](vx_images/3346331093181.png)
 
 ## Funzione Logaritmica
 
@@ -60,9 +60,9 @@ $3^{log_3 4}=4$
 
 TODO: dimostrare che la funzine è inversa
 
-![logaritmo](vx_images/4993496907525.png )
+![](vx_images/4993496907525.png)
 
-![](vx_images/3945607777711.png )
+![](vx_images/3945607777711.png)
 
 ## Funzioni gognometriche
 
@@ -76,7 +76,7 @@ TODO: add immagini
 $\alpha°$: angolo in gradi (non da informazioni sulla lunghezza dell'angolo)  
 $\alpha_r$: angolo in gradi
 
-$\alpha°:360=\alpha_r:2\pi \\ \alpha_r=\frac{\alpha° \times \pi}{360}$  
+$\alpha°:360=\alpha_r:2\pi \mbox{ , quindi , } \alpha_r=\frac{\alpha° \times \pi}{360}$  
 
 ### Seno e Coseno
 

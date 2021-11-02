@@ -1,6 +1,6 @@
 # Teoria degli Insiemi
 
-punti informali:
+punti informali:  
 - **tutto è un insieme**: gli insiemi contengono insiemi
 - **è il linguaggio macchina** della matematica moderna, (tutto viene implementato come insiemi, es. numeri, figure geometriche)
 - **è estremamente efficace nel farlo**: si riesce a descrivere ogni cosa, ma è difficilmente rappresentabili 
@@ -24,7 +24,7 @@ Per questo serve una teoria che rimuova l'**assioma di comprensione**(per ogni p
 
 ## Teoria assiomatiche degli insiemi 
 
-In una teoria assiomatica degli insiemi:
+In una teoria assiomatica degli insiemi:  
 - i concetti di **insieme, appartenenza e uguaglianza** non vengono definiti (gli insiemi sono **enti primitivi**)
 - usiamo assiomi per asserire l'esistenza di alcuni insiemi a partire da altri
 - ci sono numerose teorie insiemistiche che differiscono riguardo agli assiomi
