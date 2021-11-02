@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Giovanni Spadaccini" />
   <title>./ArchitetturaElaboratori</title>
   <style>
       code{white-space: pre-wrap;}
@@ -77,11 +78,17 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../img/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
 </head>
 <body>
+<header id="title-block-header">
+<h1 class="title">Architettura degli Elaboratori</h1>
+<p class="author">Giovanni Spadaccini</p>
+<p class="date">Settembre 2021</p>
+</header>
 <nav id="TOC" role="doc-toc">
 <ul>
 <li><a href="#introduzione"><span class="toc-section-number">1</span> 1. Introduzione</a><ul>
@@ -125,10 +132,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="#latch-d-temporizzato"><span class="toc-section-number">5.3</span> Latch D temporizzato</a></li>
 <li><a href="#implementazione-di-dff"><span class="toc-section-number">5.4</span> Implementazione di DFF</a></li>
 <li><a href="#bit"><span class="toc-section-number">5.5</span> Bit</a></li>
-<li><a href="#program-counter"><span class="toc-section-number">5.6</span> Program counter</a></li>
-<li><a href="#memoria"><span class="toc-section-number">5.7</span> Memoria</a></li>
+<li><a href="#memoria"><span class="toc-section-number">5.6</span> Memoria</a></li>
 </ul></li>
-<li><a href="#rappresentazione-dellinformazione"><span class="toc-section-number">6</span> 6. Rappresentazione dell'informazione</a><ul>
+<li><a href="#rappresentazione-dellinformazione"><span class="toc-section-number">6</span> 6. Rappresentazione dell’informazione</a><ul>
 <li><a href="#numeri"><span class="toc-section-number">6.1</span> 6.1. Numeri</a><ul>
 <li><a href="#modulo-e-segno"><span class="toc-section-number">6.1.1</span> 6.1.1. Modulo e segno</a></li>
 <li><a href="#complemento-a-1"><span class="toc-section-number">6.1.2</span> 6.1.2. Complemento a 1</a></li>
@@ -143,44 +149,40 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li><a href="#codici-corretti"><span class="toc-section-number">6.3</span> Codici corretti</a><ul>
 <li><a href="#bit-di-parità"><span class="toc-section-number">6.3.1</span> Bit di parità</a></li>
-<li><a href="#codice-desempio"><span class="toc-section-number">6.3.2</span> Codice d'esempio</a></li>
+<li><a href="#codice-desempio"><span class="toc-section-number">6.3.2</span> Codice d’esempio</a></li>
+</ul></li>
+<li><a href="#sram-e-dram"><span class="toc-section-number">6.4</span> SRAM e DRAM</a><ul>
+<li><a href="#cache"><span class="toc-section-number">6.4.1</span> Cache</a></li>
+<li><a href="#paginazione"><span class="toc-section-number">6.4.2</span> Paginazione</a></li>
+<li><a href="#pre-fetch-istruzioni"><span class="toc-section-number">6.4.3</span> Pre-fetch istruzioni</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#microarchitettura"><span class="toc-section-number">7</span> Microarchitettura</a><ul>
-<li><a href="#sram-e-dram"><span class="toc-section-number">7.1</span> SRAM e DRAM</a><ul>
-<li><a href="#cache"><span class="toc-section-number">7.1.1</span> Cache</a></li>
-<li><a href="#paginazione"><span class="toc-section-number">7.1.2</span> Paginazione</a></li>
-<li><a href="#pre-fetch-istruzioni"><span class="toc-section-number">7.1.3</span> Pre-fetch istruzioni</a></li>
+<li><a href="#isa-del-processore-hack"><span class="toc-section-number">7</span> ISA del processore Hack</a><ul>
+<li><a href="#istruzioni"><span class="toc-section-number">7.1</span> Istruzioni</a><ul>
+<li><a href="#sintassi-a-instruction"><span class="toc-section-number">7.1.1</span> Sintassi A-Instruction</a></li>
+<li><a href="#sintassi-c-instruction"><span class="toc-section-number">7.1.2</span> Sintassi C-Instruction</a></li>
+</ul></li>
+<li><a href="#esercizi"><span class="toc-section-number">7.2</span> Esercizi</a></li>
+<li><a href="#simboli-nel-linguaggio-hack"><span class="toc-section-number">7.3</span> Simboli nel linguaggio HACK</a><ul>
+<li><a href="#etichette"><span class="toc-section-number">7.3.1</span> Etichette</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#isa-del-processore-hack"><span class="toc-section-number">8</span> ISA del processore Hack</a><ul>
-<li><a href="#istruzioni"><span class="toc-section-number">8.1</span> Istruzioni</a><ul>
-<li><a href="#sintassi-a-instruction"><span class="toc-section-number">8.1.1</span> Sintassi A-Instruction</a></li>
-<li><a href="#sintassi-c-instruction"><span class="toc-section-number">8.1.2</span> Sintassi C-Instruction</a></li>
-</ul></li>
-<li><a href="#esercizi"><span class="toc-section-number">8.2</span> Esercizi</a></li>
-<li><a href="#simboli-nel-linguaggio-hack"><span class="toc-section-number">8.3</span> Simboli nel linguaggio HACK</a><ul>
-<li><a href="#etichette"><span class="toc-section-number">8.3.1</span> Etichette</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#realizzazione-del-computer-hack"><span class="toc-section-number">9</span> Realizzazione del Computer Hack</a><ul>
-<li><a href="#tastiera"><span class="toc-section-number">9.1</span> Tastiera</a></li>
-<li><a href="#schermo"><span class="toc-section-number">9.2</span> Schermo</a></li>
-<li><a href="#codifica-a-instruction"><span class="toc-section-number">9.3</span> Codifica A-instruction</a></li>
-<li><a href="#codifica-c-instruction"><span class="toc-section-number">9.4</span> Codifica C-Instruction</a></li>
-<li><a href="#livello-istruction-set-architeture"><span class="toc-section-number">9.5</span> Livello Istruction Set Architeture</a></li>
+<li><a href="#realizzazione-del-computer-hack"><span class="toc-section-number">8</span> Realizzazione del Computer Hack</a><ul>
+<li><a href="#tastiera"><span class="toc-section-number">8.1</span> Tastiera</a></li>
+<li><a href="#schermo"><span class="toc-section-number">8.2</span> Schermo</a></li>
+<li><a href="#codifica-a-instruction"><span class="toc-section-number">8.3</span> Codifica A-instruction</a></li>
+<li><a href="#codifica-c-instruction"><span class="toc-section-number">8.4</span> Codifica C-Instruction</a></li>
+<li><a href="#livello-istruction-set-architeture"><span class="toc-section-number">8.5</span> Livello Istruction Set Architeture</a></li>
 </ul></li>
 </ul>
 </nav>
-<hr />
-<p>title: Architettura degli Elaboratori date: Settembre 2021 author: Giovanni Spadaccini ---</p>
 <ul>
 <li><a href="#1-introduzione">1. Introduzione</a>
 <ul>
 <li><a href="#11-libri">1.1. Libri</a></li>
 <li><a href="#12-esame">1.2. Esame</a></li>
 </ul></li>
-<li><a href="#6-rappresentazione-dellinformazione">6. Rappresentazione dell'informazione</a>
+<li><a href="#6-rappresentazione-dellinformazione">6. Rappresentazione dell’informazione</a>
 <ul>
 <li><a href="#61-numeri">6.1. Numeri</a>
 <ul>
@@ -210,7 +212,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <p>[TOC]</p>
 <h1 id="livelli"><span class="header-section-number">2</span> Livelli</h1>
-<p>Nell'informatica si usano i principi di astrazione e implementazione, per diminuire la complessità, l'astrazione grazie a delle interfaccia accede alle implementazione (che utilizzando l'astrazione non bisogna più sapere com'è costruita)</p>
+<p>Nell’informatica si usano i principi di astrazione e implementazione, per diminuire la complessità, l’astrazione grazie a delle interfaccia accede alle implementazione (che utilizzando l’astrazione non bisogna più sapere com’è costruita)</p>
 <blockquote>
 <p>astrazione: Si presenta la soluzione ad un problema concentrandosi solo su alcuni aspetti “rilevanti” (ad esempio, come ottenere la soluzione componendo soluzioni di problemi più semplici)</p>
 </blockquote>
@@ -255,21 +257,21 @@ linguaggi che vengono compilati o interpretati, in linguaggio assembly</p>
 <p>sono macchine multi-livello, e si utilizzano le astrazioni, e ogni volta vengono eseguiti o tradotti in nella astrazione sottostante</p>
 <h2 id="storia-degli-elaboratori"><span class="header-section-number">2.7</span> Storia degli Elaboratori</h2>
 <blockquote>
-<p>non sono per l'esame</p>
+<p>non sono per l’esame</p>
 </blockquote>
-<ol>
+<ol type="1">
 <li>Pascalina: prima macchina del 1600 che faceva da calcolatrice</li>
 <li>Analytical Engine: riusciva a fare somme con 50 cifre e una memoria di 1000 parole, ed è considerato il primo computer però non è stato mai costruito</li>
 <li>colossus:si passa alle valvole al posto dei relè, ed è il primo computer funzionante</li>
 <li>EINAC: misto tra relè e valvole, usato per scopi militari, si programmava cambiando i cavi e le schede perforate come input</li>
 <li>IAS: progetto di un calcolatore, con la struttura che ancora viene utilizzata (formata da una memoria, una unità di controllo, unita aritmetico logica e un input e output)</li>
-<li>PDP-1: c'è il passaggio ai transistor, primo calcolatore ad avere un riscontro sul mercato, per la prima volta con un display</li>
+<li>PDP-1: c’è il passaggio ai transistor, primo calcolatore ad avere un riscontro sul mercato, per la prima volta con un display</li>
 <li>CDC 6600: è il primo calcolatore che poteva eseguire istruzioni in parallelo</li>
 <li>IBM 360: multi programmazione (in memoria poteva avere più di un programma), diventa ancora più economico e si poteva comprare con diverse potenze</li>
 <li>VLSI: è un cip con milioni di transistor (i precessori dei giorni nostri)</li>
 <li>IBM 5150: primo personal computer che raggiungerà una veloce diffusione</li>
 <li>Osborne1 il primo computer portatile</li>
-<li>macintosh: primo con l'interfaccia grafica (senza lo schermo totalmente testuale)</li>
+<li>macintosh: primo con l’interfaccia grafica (senza lo schermo totalmente testuale)</li>
 </ol>
 <p>il computing non è solo nel computer ma in molti altri oggetti</p>
 <blockquote>
@@ -279,17 +281,14 @@ linguaggi che vengono compilati o interpretati, in linguaggio assembly</p>
 <p><strong>MFLOPS</strong>: miliardi di operazioni a virgola mobile</p>
 </blockquote>
 <h1 id="organizzazione-degli-elaboratori"><span class="header-section-number">3</span> Organizzazione degli Elaboratori</h1>
-<p><img src="../img/VonNeumann.png" /></p>
-<blockquote>
-<p>"bus oriented": un bus è un insieme di connessioni elettriche per collegare i vari componenti</p>
-</blockquote>
+<p><img src="../img/VonNeumann.png" /> &gt; “bus oriented”: un bus è un insieme di connessioni elettriche per collegare i vari componenti</p>
 <p>IL bus a differenza dello schema di van Neumann, non ha una connessione punto a punto ma tutti i componenti sono collegati al bus</p>
 <p>Una altra novità è che con von Neumann la memoria non solo per i dati ma anche per i programmi</p>
 <p>La cpu e la memoria utilizzano i <strong>bus dati</strong> e il <strong>bus indirizzi</strong> per scambiarsi le informazioni</p>
 <p><img src="../img/bus.png" /></p>
 <p>i dispositivi si <strong>collegano al bus tramite controller</strong>, alcuni controller accedono direttamentente alla memoria, e al termine della scrittura/lettura invia un segnale alla cpu</p>
-<p>il bus collega anche le periferiche, l'accesso al bus condivisio viene gestito da un "albitro" del bus</p>
-<p>i nuovi dispositivi, possono trasferire i dati dalla memoria ad un altro dispositivo senza passare dalla cpu (che da l'ordine solo da che indirizzo a quale copiare)</p>
+<p>il bus collega anche le periferiche, l’accesso al bus condivisio viene gestito da un “albitro” del bus</p>
+<p>i nuovi dispositivi, possono trasferire i dati dalla memoria ad un altro dispositivo senza passare dalla cpu (che da l’ordine solo da che indirizzo a quale copiare)</p>
 <h2 id="cpu"><span class="header-section-number">3.1</span> 4.1. CPU</h2>
 <p><img src="../img/cpuschema.png" /></p>
 <blockquote>
@@ -299,20 +298,20 @@ linguaggi che vengono compilati o interpretati, in linguaggio assembly</p>
 <blockquote>
 <p>[NOTA] la memoria centrale è più lenta del processore, e come primo accorgimento si utilizzano i registri per tenere i dati più utilizzati</p>
 </blockquote>
-<p><strong>Registri Speciali</strong>(non "general propose" di uso generale): - Program Counter:indica la prossima istruzione - Instruction Register: contiene l'istruzione che stiamo eseguendo (prende tutta l'istruzione per esempio prende tutto <code>add ax,bx</code>) - Memory registers:si usano per interagire con la memoria - Memory address Register: su questo si mette l'indirizzo da leggere o scrivere<br />
-- Memory data Register: qui si scrive li dato da scrivere o si legge il dato appena letto - Program Status Word: indica informazioni sull'andamento dell'ultima istruzione eseguita (c'è stata un'overflow, l'ultima operazione è risultata zero)</p>
-<p><strong>Esempio pratico dell'esecuzione di un istruzione</strong><br />
-1. il contenuto di Program counter viene messo su Memoriy address Register e viene letta l'istruzione 2. la memoria copia il contenuto della cella all'indirizzo del Memory address register su il Memory Data Register 3. il contenuto di Memory Data Register viene copiato su Instruction Register 4. l'istruzione passa all'ALU 5. se ci sono operatori da prelevare in memoria si collegano a i registri (utilizzando sempre il Memory Address Register e il Memory Data Register) 6. termina l'esecuzione e il risultato va sul registro di destinazione (aggiorna il Program Status Word), e se bisogna scrivere la memoria scrive in memoria il valore calcolato si sposta sulla memoria utilizzando sempre il MDR e il MAR 7. si torna al punto 1 dopo avere aggiornato il valore di Program Counter</p>
+<p><strong>Registri Speciali</strong>(non “general propose” di uso generale): - Program Counter:indica la prossima istruzione - Instruction Register: contiene l’istruzione che stiamo eseguendo (prende tutta l’istruzione per esempio prende tutto <code>add ax,bx</code>) - Memory registers:si usano per interagire con la memoria - Memory address Register: su questo si mette l’indirizzo da leggere o scrivere<br />
+- Memory data Register: qui si scrive li dato da scrivere o si legge il dato appena letto - Program Status Word: indica informazioni sull’andamento dell’ultima istruzione eseguita (c’è stata un’overflow, l’ultima operazione è risultata zero)</p>
+<p><strong>Esempio pratico dell’esecuzione di un istruzione</strong><br />
+1. il contenuto di Program counter viene messo su Memoriy address Register e viene letta l’istruzione 2. la memoria copia il contenuto della cella all’indirizzo del Memory address register su il Memory Data Register 3. il contenuto di Memory Data Register viene copiato su Instruction Register 4. l’istruzione passa all’ALU 5. se ci sono operatori da prelevare in memoria si collegano a i registri (utilizzando sempre il Memory Address Register e il Memory Data Register) 6. termina l’esecuzione e il risultato va sul registro di destinazione (aggiorna il Program Status Word), e se bisogna scrivere la memoria scrive in memoria il valore calcolato si sposta sulla memoria utilizzando sempre il MDR e il MAR 7. si torna al punto 1 dopo avere aggiornato il valore di Program Counter</p>
 <blockquote>
-<p>[NOTA] il program counter viene incrementato in modo diverso dal tipo di architettura, alcuni sistemi hanno una dimensione fissa dell'istruzione e a quel punto incrementa di una costante, in altri casi quanto si hanno diversa lunghezza nelle istruzioni un circuito nel processore sa di quanto incrementare in base all'istruzione eseguita</p>
+<p>[NOTA] il program counter viene incrementato in modo diverso dal tipo di architettura, alcuni sistemi hanno una dimensione fissa dell’istruzione e a quel punto incrementa di una costante, in altri casi quanto si hanno diversa lunghezza nelle istruzioni un circuito nel processore sa di quanto incrementare in base all’istruzione eseguita</p>
 </blockquote>
-<p>il ciclo di esecuzione può essere schematizzato anche come <strong>FDE</strong>: 1. <strong>Fetch</strong> caricamento della memoria di un'istruzione (punti 1-2 dell'esempio) 2. <strong>Decode</strong> identificazione del tipo di operazione da eseguire (punto 3) 3. <strong>Execute</strong> effettuazione delle operazioni corrispondenti all'istruzione (punti 4-5-6)</p>
+<p>il ciclo di esecuzione può essere schematizzato anche come <strong>FDE</strong>: 1. <strong>Fetch</strong> caricamento della memoria di un’istruzione (punti 1-2 dell’esempio) 2. <strong>Decode</strong> identificazione del tipo di operazione da eseguire (punto 3) 3. <strong>Execute</strong> effettuazione delle operazioni corrispondenti all’istruzione (punti 4-5-6)</p>
 <h3 id="unita-di-controllo"><span class="header-section-number">3.1.1</span> Unita di controllo</h3>
 <blockquote>
-<p>l'unita di controllo gestisce la memoria e l'alu, e interpreta le istruzioni</p>
+<p>l’unita di controllo gestisce la memoria e l’alu, e interpreta le istruzioni</p>
 </blockquote>
 <p>i tipi di set di istruzioni possono essere: - <strong>CISC</strong>: Complex Instruction Set Computer, e quindi utilizzare microprogrammazione e un processore più complesso - <strong>RISC</strong>: Reduced Instruction Set Computer, istruzioni più semplici possono essere eseguite più velocemente e potendo evitare la microprogrammazione</p>
-<p>di solito in una cpu CISC c'è un collegamento diretto tra il MDR e l'alu senza passare dai registri, mentre nei RISC non c'è il collegamento diretto</p>
+<p>di solito in una cpu CISC c’è un collegamento diretto tra il MDR e l’alu senza passare dai registri, mentre nei RISC non c’è il collegamento diretto</p>
 <h2 id="alu-e-clock"><span class="header-section-number">3.2</span> 4.2. ALU e clock</h2>
 <blockquote>
 <p>alu esegue le operazioni</p>
@@ -320,14 +319,14 @@ linguaggi che vengono compilati o interpretati, in linguaggio assembly</p>
 <blockquote>
 <p><strong>Data Path</strong>: intendiamo la parte della CPU comprende ALU, i suoi input ed i suoi output(registri)</p>
 </blockquote>
-<p>nel calcolatore c'è un segnale che si chiama <strong>clock</strong>; è un segnale regolare che <strong>determina il tempo di Data Pah</strong> (un operazione può utilizzare anche più cicli di clock)</p>
-<p><strong>Velocità CPU</strong>: - il ciclo del clock (stessa durata ciclo di data pah) può essere calcolato <span class="math inline">$\frac{1}{F}$</span> (dove F è la frequenza) - durata di un istruzione può essere calcolata n*durata ciclo di path (n varia da istruzione a istruzione)</p>
+<p>nel calcolatore c’è un segnale che si chiama <strong>clock</strong>; è un segnale regolare che <strong>determina il tempo di Data Pah</strong> (un operazione può utilizzare anche più cicli di clock)</p>
+<p><strong>Velocità CPU</strong>: - il ciclo del clock (stessa durata ciclo di data pah) può essere calcolato <span class="math inline">\(\frac{1}{F}\)</span> (dove F è la frequenza) - durata di un istruzione può essere calcolata n*durata ciclo di path (n varia da istruzione a istruzione)</p>
 <h2 id="ottimizzazioni"><span class="header-section-number">3.3</span> 4.3. Ottimizzazioni</h2>
 <p>Metodi per velocizzare la cpu: - <strong>pipelining</strong>:Un modo per migliorare le prestazioni di un processore è eseguire contemporaneamente più cicli FDE, usando per ognuno di essi parti diversi della CPU - <strong>Multicore</strong>:In alcuni casi, all’interno della medesima CPU si replicano unità di controllo e ALU per esecuzioni di attività in parallelo - <strong>Parallelismo</strong>:com molte cpu che lavorano in coordinamento - SIMD i processori eseguino la stessa istruzione su dati diversi, possiamo utilizzare il SIMD (così utilizza più alu ma con con una sola control unit, si torova spesso nelle GPU) (cambia il numero di alu e di registri) - MIMD: sono più precessori che condividono la stessa memoria senza eseguire necessariamente la stessa istruzione - <strong>multicomputer</strong>: molti processi non condividono una memoria e che comunicano scambiandosi messaggi, così moltissime cpu possono cooperare</p>
 <h3 id="approfondimento-pipelining"><span class="header-section-number">3.3.1</span> approfondimento pipelining</h3>
-<p>è l'implementazione di una catena di montaggio dentro la cpu</p>
-<p>viene divisa l'esecuzione di un operazione in più step così mentre si sta eseguendo un operazione allo stato 2 nello stadio 1 si può incominciare un altra operazione</p>
-<p>essendo che suddividiamo l'operazioni in vari passi, possiamo diminuire il ciclo di clock per ogni di questi stage</p>
+<p>è l’implementazione di una catena di montaggio dentro la cpu</p>
+<p>viene divisa l’esecuzione di un operazione in più step così mentre si sta eseguendo un operazione allo stato 2 nello stadio 1 si può incominciare un altra operazione</p>
+<p>essendo che suddividiamo l’operazioni in vari passi, possiamo diminuire il ciclo di clock per ogni di questi stage</p>
 <p><img src="../img/pipelining.png" /></p>
 <h2 id="le-memorie"><span class="header-section-number">3.4</span> 4.4. Le Memorie</h2>
 <p>in ordine di velocità:<br />
@@ -349,9 +348,9 @@ linguaggi che vengono compilati o interpretati, in linguaggio assembly</p>
 <p>la cache è una memoria volatile poco capiente ma molto veloce</p>
 </blockquote>
 <p>se la cpu accedesse la ram in indirizzi casuale al cache non servirebbe, molti programmi però utilizzano pezzi di memoria vicini e in questi casi la cache velocizza le operazioni.</p>
-<p><strong>tempo medio d'accesso</strong> = <span class="math inline"><em>c</em> + (1 − <em>h</em>)<em>m</em></span></p>
+<p><strong>tempo medio d’accesso</strong> = <span class="math inline">\(c+(1-h)m\)</span></p>
 <p><strong>spiegazione</strong><br />
-quantificare l'impatto della cache: - c sia il tempo di accesso alla cache - m sia il tempo di accesso alla memoria centrale - h sia l'hit-radio, la frazione di riferimenti che può essere soddisfatta dalla cache (una frazione che ci indica quante volte la cache riesce a non far accedere alla memoria)</p>
+quantificare l’impatto della cache: - c sia il tempo di accesso alla cache - m sia il tempo di accesso alla memoria centrale - h sia l’hit-radio, la frazione di riferimenti che può essere soddisfatta dalla cache (una frazione che ci indica quante volte la cache riesce a non far accedere alla memoria)</p>
 <h3 id="hard-disck"><span class="header-section-number">3.4.2</span> 4.4.2. Hard Disck</h3>
 <blockquote>
 <p>hard disk (HD): è un dispositivo elettro-meccanico per la conservazione di informazioni sotto forma magnetica</p>
@@ -390,32 +389,27 @@ Sono circuiti che con lo stesso set di input input producono lo stesso output</p
 </blockquote>
 <blockquote>
 <p>Circuiti Sequenziali :<br />
-Circuiti che cambiano l'output in base agli input ricevuti in passato</p>
+Circuiti che cambiano l’output in base agli input ricevuti in passato</p>
 </blockquote>
 <p><img src="../img/portelogiche.png" /></p>
-<p>La porta logica più inportante che utilizziermo è l'<strong>NAND</strong>, perchè da questa porta riusciremo a costriuire tutte le porte logiche.</p>
+<p>La porta logica più inportante che utilizziermo è l’<strong>NAND</strong>, perchè da questa porta riusciremo a costriuire tutte le porte logiche.</p>
 <p><img src="../img/proprietadibool.png" /></p>
 <details>
-<summary>
-es algebra di bool
-</summary>
-
-passare da $A+\bar{A}=1$ a $A\bar{A}=0$ utilizzando de morgan law
+<p><summary> es algebra di bool </summary></p>
+passare da <span class="math inline">\(A+\bar{A}=1\)</span> a <span class="math inline">\(A\bar{A}=0\)</span> utilizzando de morgan law
 </details>
 <h2 id="funzioni-booleane-e-tabelle-di-verità"><span class="header-section-number">4.1</span> Funzioni booleane e tabelle di verità</h2>
-<p>Un circuito non si può descrivere anche con una tabella di verità</p>
-<blockquote>
-<p><code>tabella di verità</code> mappa tutti gli input con i risultato l'output (ha <span class="math inline">2<sup><em>n</em></sup></span> mintermini/righe)</p>
-</blockquote>
+<p>Un circuito non si può descrivere anche con una tabella di verità<br />
+&gt;<code>tabella di verità</code> mappa tutti gli input con i risultato l’output (ha <span class="math inline">\(2^n\)</span> mintermini/righe)</p>
 <blockquote>
 <p>Un <strong>mintermine</strong> su n variabili è l’AND fra n letterali corrispondenti alle n variabili</p>
 </blockquote>
-<p>Ogni combinazione delle variabili di una funzione booleana ha un corrispondente mintermine (vero per quella specifica combinazione) ogni tabella di verità ha <span class="math inline">2<sup><em>n</em></sup>mintermini</span> dove n è il numero di letterali.</p>
+<p>Ogni combinazione delle variabili di una funzione booleana ha un corrispondente mintermine (vero per quella specifica combinazione) ogni tabella di verità ha <span class="math inline">\(2^n \text{mintermini}\)</span> dove n è il numero di letterali.</p>
 <p><img src="../img/mintermini.png" /></p>
 <blockquote>
-<p>la <strong>forma canonica</strong> è una funzione booleana, che si ricava concatenando con l'or i mintermini per cui la funzione è verificata</p>
+<p>la <strong>forma canonica</strong> è una funzione booleana, che si ricava concatenando con l’or i mintermini per cui la funzione è verificata</p>
 </blockquote>
-<p>Per esempio la forma canonica della funzione definita nell'immagine sopra è : <span class="math inline"><em>Ā</em><em>B</em><em>C̄</em> + <em>A</em><em>B</em><em>C̄</em> + <em>A</em><em>B</em><em>C</em></span></p>
+<p>Per esempio la forma canonica della funzione definita nell’immagine sopra è : <span class="math inline">\(\bar{A}B\bar{C}+AB\bar{C}+ABC\)</span></p>
 <h2 id="implementare-funzioni-booleane"><span class="header-section-number">4.2</span> 5.2. Implementare Funzioni Booleane</h2>
 <p>Creaiamo dei circuiti che rappresentano fisicamente le nostre funzioni booleane. Per creare tutte le nostre funzioni booleane possiamo partire dalla porta NAND, infatti con questa porta si riescono ad implementare tutte le porte logiche (AND,OR e NOT). Inoltre la porta NAND è molto facile da implementare fisicamente.</p>
 <p><img src="../img/orandnot.png%20=400x" /></p>
@@ -424,10 +418,10 @@ passare da $A+\bar{A}=1$ a $A\bar{A}=0$ utilizzando de morgan law
 <p><strong>Multiplexer</strong>: ha 3 input, il terzo input decide quale dei due input far passare</p>
 <p><img src="../img/multiplexer.png" /></p>
 <p><strong>es</strong><br />
-fare la tabella di verità su <span class="math inline">$A+ \overline{ (B+C) } B$</span></p>
-<p><span class="math inline">$A+ \overline{ (B+C) } B$</span><br />
-<span class="math inline"><em>A</em> + <em>B̄</em><em>C̄</em><em>B</em></span><br />
-<span class="math inline"><em>A</em> + 0</span></p>
+fare la tabella di verità su <span class="math inline">\(A+ \overline{ (B+C) } B\)</span></p>
+<p><span class="math inline">\(A+ \overline{ (B+C) } B\)</span><br />
+<span class="math inline">\(A+\bar{B}\bar{C}B\)</span><br />
+<span class="math inline">\(A+0\)</span></p>
 <h2 id="mappe-di-karnaugh"><span class="header-section-number">4.3</span> 5.3. Mappe di Karnaugh</h2>
 <blockquote>
 <p>sono un modo per rappresentre le funzioni booleane, e restituisce una funzione che è unguale o più piccola di quella canonica</p>
@@ -533,7 +527,7 @@ fare la tabella di verità su <span class="math inline">$A+ \overline{ (B+C) } B
 <figure>
 <img src="vx_images/2893428209291.png%20=403x" alt="" /><figcaption>LatchSR</figcaption>
 </figure>
-<p><strong>creiamo la tabella di verità</strong> - Se S=1, R=0 allora Q=1, <span class="math inline"><em>Q̄</em></span>=0 - Se S=0, R=1 allora Q=0, <span class="math inline"><em>Q̄</em></span>=1 - Se S=1, R=1 allora Q=0, <span class="math inline"><em>Q̄</em></span>=0 - Se S=0, R=0 allora ... non si sa!</p>
+<p><strong>creiamo la tabella di verità</strong> - Se S=1, R=0 allora Q=1, <span class="math inline">\(\bar{Q}\)</span>=0 - Se S=0, R=1 allora Q=0, <span class="math inline">\(\bar{Q}\)</span>=1 - Se S=1, R=1 allora Q=0, <span class="math inline">\(\bar{Q}\)</span>=0 - Se S=0, R=0 allora … non si sa!</p>
 <p>Essendo che nel caso S=0,R=0 gli output rimangono invariati. Ma se il circuito come primo input ha S=0,S=0 allora non si sa se Q è 0 o 1.</p>
 <h2 id="latch-sr-temporizzato"><span class="header-section-number">5.2</span> Latch SR temporizzato</h2>
 <figure>
@@ -588,38 +582,32 @@ fare la tabella di verità su <span class="math inline">$A+ \overline{ (B+C) } B
 </tbody>
 </table>
 <blockquote>
-<p>molte volte per realizzare un circuito sequenziale viene utilizzato un circuito combinatorio, che va in un flip-flop per poi tornare nell'input del circuito combinatorio</p>
+<p>molte volte per realizzare un circuito sequenziale viene utilizzato un circuito combinatorio, che va in un flip-flop per poi tornare nell’input del circuito combinatorio</p>
 </blockquote>
 <h2 id="bit"><span class="header-section-number">5.5</span> Bit</h2>
 <figure>
 <img src="vx_images/1466736840061.png%20=510x" alt="" /><figcaption>Bit</figcaption>
 </figure>
-<p>TODO: da finire</p>
-<h2 id="program-counter"><span class="header-section-number">5.6</span> Program counter</h2>
+<p>TODO: da finire ## Program counter</p>
 <pre><code>if reset(t-1) then out(t)=0
 else if load(t-1) then out(t)=in(t-1)
 else if inc(t-1) then out(t)=out(t-1)+1
 else out(t)=out(t-1)</code></pre>
-<h2 id="memoria"><span class="header-section-number">5.7</span> Memoria</h2>
+<h2 id="memoria"><span class="header-section-number">5.6</span> Memoria</h2>
 <p>Una memoria con n locazioni da w-bit, può essere realizzata con n “w-bit register” controllati da uno specifico circuito, che indica da quale di questi registri deve essere letto.</p>
-<p>(utilizzeremo un demultiplexer per il load e un multiplexer per l'out)</p>
+<p>(utilizzeremo un demultiplexer per il load e un multiplexer per l’out)</p>
 <p>TODO: aggiungere immagine</p>
-<h1 id="rappresentazione-dellinformazione"><span class="header-section-number">6</span> 6. Rappresentazione dell'informazione</h1>
+<h1 id="rappresentazione-dellinformazione"><span class="header-section-number">6</span> 6. Rappresentazione dell’informazione</h1>
 <p>I calcolatori elaborano molti tipi di informazione come testi, immagini ,suoni ,numeri etc.. Nonostante ciò le memorie dati possono contenere solo valori binari.</p>
 <h2 id="numeri"><span class="header-section-number">6.1</span> 6.1. Numeri</h2>
 <p>Partiamo dai numeri naturali positivi che vengono rappresentati semplicemente in base 2.</p>
 <details>
-<summary>
-esercizio
-</summary>
-
-Si consideri il numero decimale 35 (senza segno).
-Lo si converta in binario, poi dal binario in esadecimale, e dall'esadecimale di nuovo in decimale.
-
+<p><summary> esercizio </summary></p>
+<p>Si consideri il numero decimale 35 (senza segno). Lo si converta in binario, poi dal binario in esadecimale, e dall’esadecimale di nuovo in decimale.</p>
 35=100011b=23hex
 </details>
 <h3 id="modulo-e-segno"><span class="header-section-number">6.1.1</span> 6.1.1. Modulo e segno</h3>
-<p>Modulo e segno si una l'ultimo bit come segno</p>
+<p>Modulo e segno si una l’ultimo bit come segno</p>
 <blockquote>
 <p>es usando 8 bit: 00000110=6, 10000110=-6</p>
 </blockquote>
@@ -635,75 +623,51 @@ Lo si converta in binario, poi dal binario in esadecimale, e dall'esadecimale di
 usando 8 bit: 00000110=6, 11111010=-6</p>
 </blockquote>
 <p>con questo metodo è più facile fare le addizioni perchè riusciamo a farle con lo stesso metodo</p>
-<p>con il complemento a 2 possiamo avere un range da <span class="math inline">[2<sup><em>k</em> − 1</sup>...2<sup><em>k</em> − 1</sup> − 1]</span> dove k è il numero di bit</p>
+<p>con il complemento a 2 possiamo avere un range da <span class="math inline">\([2^{k-1}...2^{k-1}-1]\)</span> dove k è il numero di bit</p>
 <h3 id="codifica-in-eccesso"><span class="header-section-number">6.1.4</span> 6.1.4. Codifica in eccesso</h3>
-<p>La decodifica si ottiene applicando la decodifica standard e poi sottraendo <span class="math inline">2<sup><em>k</em> − 1</sup></span> al numero ottenuto</p>
+<p>La decodifica si ottiene applicando la decodifica standard e poi sottraendo <span class="math inline">\(2^{k-1}\)</span> al numero ottenuto</p>
 <blockquote>
 <p>Es<br />
-00...00 rappresenta <span class="math inline"> − 2<sup><em>k</em> − 1</sup></span><br />
-10...00 rappresenta <span class="math inline">0</span><br />
-11...11 rappresenta <span class="math inline">2<sup><em>k</em> − 1</sup> − 1</span></p>
+00…00 rappresenta <span class="math inline">\(-2^{k-1}\)</span><br />
+10…00 rappresenta <span class="math inline">\(0\)</span><br />
+11…11 rappresenta <span class="math inline">\(2^{k-1}-1\)</span></p>
 </blockquote>
 <details>
-<summary>
-Esercizio
-</summary>
-
-Si consideri il numero decimale -13.  
-Lo si converta in binario (su 8 bit) con le codifiche:
-  
-- modulo e segno
-- complemento a 1
-- complemento a 2
-- eccesso 128
-
-
-- modulo e segno : 10001101
-- complemento a 1: 11110010
-- complemento a 2: 11110011
-- ad eccesso 128 : 01110011
+<p><summary> Esercizio </summary></p>
+<p>Si consideri il numero decimale -13.<br />
+Lo si converta in binario (su 8 bit) con le codifiche:</p>
+<ul>
+<li><p>modulo e segno</p></li>
+<li><p>complemento a 1</p></li>
+<li><p>complemento a 2</p></li>
+<li><p>eccesso 128</p></li>
+<li><p>modulo e segno : 10001101</p></li>
+<li><p>complemento a 1: 11110010</p></li>
+<li><p>complemento a 2: 11110011</p></li>
+<li><p>ad eccesso 128 : 01110011</p></li>
+</ul>
 </details>
 <h3 id="numeri-con-la-virgola"><span class="header-section-number">6.1.5</span> 6.1.5. Numeri con la virgola</h3>
-<p>la rappresentazione dei numeri con la virgola si usano due numeri: - f che è la mantissa - e che è l'esponente</p>
-<p><span class="math inline"><em>n</em> = <em>f</em> × 10<sup><em>e</em></sup></span></p>
+<p>la rappresentazione dei numeri con la virgola si usano due numeri: - f che è la mantissa - e che è l’esponente</p>
+<p><span class="math inline">\(n=f \times 10^{e}\)</span></p>
 <details>
-  <summary>
-  esempio codifica
-  </summary>
-
-se la mantissa è tra 0,001 e 0,999
-e l'esponente è tra 0 e 99
-
-riesco a rappresentare i numeri
-
-![](../img/overflowunder.png)
-
+<p><summary> esempio codifica </summary></p>
+<p>se la mantissa è tra 0,001 e 0,999 e l’esponente è tra 0 e 99</p>
+<p>riesco a rappresentare i numeri</p>
+<p><img src="../img/overflowunder.png" /></p>
 </details>
 <p><strong>notazione concreta</strong>: - utilizziamo la base 2 - come mantissa utilizziamo un numero minore di 1 - inoltre normalizziamo la mantissa (la cifra più significativa (dopo la virgola) non può essere uguale a zero)</p>
 <details>
-  <summary>
-esempio concreto
-  </summary>
-
-vogliamo rappresentare il numero 432:  
-la mantissa sarà 432=110110000b questo numero va normalizzato quindi dobbiamo shiftarlo, quindi gli diamo un esponente di: $2^9$
-
+<p><summary> esempio concreto </summary></p>
+<p>vogliamo rappresentare il numero 432:<br />
+la mantissa sarà 432=110110000b questo numero va normalizzato quindi dobbiamo shiftarlo, quindi gli diamo un esponente di: <span class="math inline">\(2^9\)</span></p>
 </details>
 <p><strong>standard binary32</strong>: - 1 bit di segno - 8 bit di esponente - 23 bit di mantissa</p>
 <details>
-  <summary>
-Si converta il numero 0.3 in notazione floating point in base 2 normalizzata (usando il complemento a 2 su 8 bit sia per la mantissa che per l'esponente).
-  </summary>
-
-  TODO: da finire
-
-
-la mantissa si legge moltiplicando il primo partendo da sinistra $2^-1$ fino a $2^-n$ nell'ultimo dove n sono il numero di bit, e per calcolare il numero in decimale va tutto moltiplicato per $2^{\text{esponente}}$
-
-segno : 0 
-mantissa: 10011001b
-esponente: 1111111b
-
+<p><summary> Si converta il numero 0.3 in notazione floating point in base 2 normalizzata (usando il complemento a 2 su 8 bit sia per la mantissa che per l’esponente). </summary></p>
+<p>TODO: da finire</p>
+<p>la mantissa si legge moltiplicando il primo partendo da sinistra <span class="math inline">\(2^-1\)</span> fino a <span class="math inline">\(2^-n\)</span> nell’ultimo dove n sono il numero di bit, e per calcolare il numero in decimale va tutto moltiplicato per <span class="math inline">\(2^{\text{esponente}}\)</span></p>
+<p>segno : 0 mantissa: 10011001b esponente: 1111111b</p>
 </details>
 <h2 id="stringhe"><span class="header-section-number">6.2</span> Stringhe</h2>
 <h3 id="ascii"><span class="header-section-number">6.2.1</span> ASCII</h3>
@@ -714,25 +678,24 @@ esponente: 1111111b
 <h3 id="unicode"><span class="header-section-number">6.2.2</span> Unicode</h3>
 <p><strong>Estende</strong> la codifica <strong>ASCII</strong> aggiungendoci <strong>altri alfabeti</strong>, aumenta la lunghezza a <strong>16 bit</strong> e rimane compatibile con la codifica ASCII (mettendo i primi 9 bit a 0).</p>
 <h3 id="utf-8"><span class="header-section-number">6.2.3</span> UTF-8</h3>
-<p>Essendo che la codifica <strong>unicode è all'esaurimento</strong> dei possibili codici, e <strong>usa 16 bit</strong> anche per i caratteri asci; Si è sviluppata la <strong>UTF</strong> che può dinamicamente occupare <strong>da 1 a 4 byte</strong> a seconda dell'informazione; <strong>rimane compatibile con ASCII</strong>, infatti se il primo bit è a zero significa che il carattere è un carattere ascii e che occuperà i prossimi 7 bit.</p>
+<p>Essendo che la codifica <strong>unicode è all’esaurimento</strong> dei possibili codici, e <strong>usa 16 bit</strong> anche per i caratteri asci; Si è sviluppata la <strong>UTF</strong> che può dinamicamente occupare <strong>da 1 a 4 byte</strong> a seconda dell’informazione; <strong>rimane compatibile con ASCII</strong>, infatti se il primo bit è a zero significa che il carattere è un carattere ascii e che occuperà i prossimi 7 bit.</p>
 <h2 id="codici-corretti"><span class="header-section-number">6.3</span> Codici corretti</h2>
-<p>Memorie e trasmissioni di dati sono soggette ad errori, così si creano dei codici di controllo: - m bit: della parola - r bit: di controllo, scelti in un meccanismo - n bit: m+r "parola codice"</p>
+<p>Memorie e trasmissioni di dati sono soggette ad errori, così si creano dei codici di controllo: - m bit: della parola - r bit: di controllo, scelti in un meccanismo - n bit: m+r “parola codice”</p>
 <blockquote>
 <p><strong>la distanza di hamming</strong> è la differenza di bit tra due stringhe di bit. (es: distanza tra 101110 e 110101 è 4)</p>
 </blockquote>
 <p><strong>Regola generale:</strong> - Per rilevare d bit errati è necessario un codice con distanza di Hamming maggiore o uguale a d+1 - Per correggere d bit errati è necessario un codice con distanza di Hamming maggiore o uguale a 2d+1</p>
 <h3 id="bit-di-parità"><span class="header-section-number">6.3.1</span> Bit di parità</h3>
-<p>Il codice è composto da un solo bit di controllo (r=1), se la parola ha i bit "1" di numero pari allora il bit di parità è a 1.(distanza Hamming 2)</p>
-<p>Il codice rileva se c'è un singolo bit errato.</p>
-<h3 id="codice-desempio"><span class="header-section-number">6.3.2</span> Codice d'esempio</h3>
+<p>Il codice è composto da un solo bit di controllo (r=1), se la parola ha i bit “1” di numero pari allora il bit di parità è a 1.(distanza Hamming 2)</p>
+<p>Il codice rileva se c’è un singolo bit errato.</p>
+<h3 id="codice-desempio"><span class="header-section-number">6.3.2</span> Codice d’esempio</h3>
 <p>Inventiamo un nuovo codice di 4 parole:0000000000-0000011111-0000011111-1111111111<br />
 Questo questo codice ha una distanza di hamming di 5 quindi è possibile correggere fino a due errori.</p>
-<p>TODO: finire</p>
-<h1 id="microarchitettura"><span class="header-section-number">7</span> Microarchitettura</h1>
+<p>TODO: finire # Microarchitettura</p>
 <p><img src="../img/microarchitettura.png" /></p>
 <ul>
-<li><p>instruction:prende l'istruzione</p></li>
-<li><p>reset:fa il reset del program counter e fa ricomiciare il programma dall'inizio</p></li>
+<li><p>instruction:prende l’istruzione</p></li>
+<li><p>reset:fa il reset del program counter e fa ricomiciare il programma dall’inizio</p></li>
 <li><p>outM:è un bus che va in memoria</p></li>
 <li><p>Un <strong>registro D</strong> che contiene uno dei due operandi della ALU, e che può memorizzare un precedente output</p></li>
 <li><p>Un <strong>registro A</strong> che può contenere un dato che fa parte delle istruzioni o un precedente output</p></li>
@@ -748,11 +711,11 @@ Questo questo codice ha una distanza di hamming di 5 quindi è possibile corregg
 </ul></li>
 </ul>
 <p>Il decode setta i c bit che vengono utilizzati come control bit per tutti gli altri componenti</p>
-<h2 id="sram-e-dram"><span class="header-section-number">7.1</span> SRAM e DRAM</h2>
+<h2 id="sram-e-dram"><span class="header-section-number">6.4</span> SRAM e DRAM</h2>
 <p>Le <strong>SRAM</strong> (Static RAM) sono realizzate tramite flip-flop come le memorie viste in precedenza - Veloci (ordine del nanosecondo) - Usate principalmente per le cache</p>
 <p>Le <strong>DRAM</strong> (Dynamic RAM) o SDRAM (Synchronous DRAM), usate per le memorie centrali, hanno un solo transistor ed un condensatore che mantiene (tramite carica elettrica) un singolo bit</p>
 <p>-Visto che il condensatore perde la propria carica, deve essere ricaricato per evitare di perdere la propria informazione - Si rendono necessarie periodiche fasi di “refresh” (ad intervalli dell’ordine del millisecondo) - A causa del refresh sono più lente (ordine della decina di nanosecondi) - Richiedendo un solo transistor costano meno e possono essere maggiormente miniaturizzate</p>
-<h3 id="cache"><span class="header-section-number">7.1.1</span> Cache</h3>
+<h3 id="cache"><span class="header-section-number">6.4.1</span> Cache</h3>
 <p>La <strong>cache memorizza gli ultimi dati utilizzati dalla cpu</strong>, e se la cpu deve accedere dati che ha richiesto da poco la cache restituisce i dati molto velocemente evitando di andarli a riprendere dalla memoria .</p>
 <p>I linguaggi di programmazione sono fatti per utilizzare la cache,ma non la si può controllare.</p>
 <p>Modello Cache di studio: - Una prima piccola cache (livello 1: L1) è direttamente nel chip della CPU separata fra istruzioni e dati (dimensioni fra 16-64 KB) - Una seconda cache (livello 2: L2) nel medesimo “involucro” della CPU “unificata” fra dati e istruzioni (fra 512 KB ed 1 MB) - Una terza cache (livello 3: L3) esterna alla CPU (alcuni MB)</p>
@@ -760,84 +723,162 @@ Questo questo codice ha una distanza di hamming di 5 quindi è possibile corregg
 Si procede suddividendo la memoria in blocchi da m byte e il blocco i andrà nella riga <code>i mod n</code>, la cache tiene traccia anche di quale specifico blocco contiene la linea.</p>
 <p><strong>esempio</strong></p>
 <p><img src="../img/cache.png" /></p>
-<p>Immaginiamo ora una cache con n=2048 linee di dimensione m=32 byte: - <strong>Valid</strong>: indica se la linea di cache contiene un blocco, (all'inizio tutti i valid sono a false e data e tag hanno valori randomizzi) - <strong>Data</strong>: contiene i 32 byte del blocco - <strong>Tag</strong>: indica esattamente quale blocco è contenuto</p>
-<p>quindi se abbiamo un indirizzi da 32 bit: - primi <strong>5</strong>: (meno significativi) indicano quale byte dei 32 byte stiamo cercando - i successivi <strong>11</strong>: indicano quale linea della cache (<span class="math inline">2<sup>11</sup></span>=2048) - i rimanenti <strong>16</strong>: quale tra gli indirizzi che utilizzano quel blocco</p>
+<p>Immaginiamo ora una cache con n=2048 linee di dimensione m=32 byte: - <strong>Valid</strong>: indica se la linea di cache contiene un blocco, (all’inizio tutti i valid sono a false e data e tag hanno valori randomizzi) - <strong>Data</strong>: contiene i 32 byte del blocco - <strong>Tag</strong>: indica esattamente quale blocco è contenuto</p>
+<p>quindi se abbiamo un indirizzi da 32 bit: - primi <strong>5</strong>: (meno significativi) indicano quale byte dei 32 byte stiamo cercando - i successivi <strong>11</strong>: indicano quale linea della cache (<span class="math inline">\(2^11\)</span>=2048) - i rimanenti <strong>16</strong>: quale tra gli indirizzi che utilizzano quel blocco</p>
 <details>
-  <summary>
-  Esercizio
-  </summary>   
-
-**indirizzo:**
-- primi 4 bit per l'indirizzo dentro data
-- 3 bit per capire la cache
-- 2 bit per il tag
-
-locazioni e indirizzi
-0:0-15,128-143.. 
-1:16-31.. 
-2:32-47.. 
-3:48-63.. 
-4:64-79.. 
-5:80-95.. 
-6:96-111.. 
-7:112-127.. 
-
-**esercizio**
-
-locazione 12, non è nella cache 00 000 1100
-
-| index  | valid | tag      | data     |
-| ------ | ----- | ----     | ----     |
-| 0      | 1     | 00       | val 0-15 |
-
-locazione 14 è presente nella cache, 00 000 1110
-
-| index  | valid | tag      | data     |
-| ------ | ----- | ----     | ----     |
-| 0      | 1     | 00       | val 0-15 |
-
-locazione 22 non è presente nella cache  00 001 0110  
-
-| index  | valid | tag      | data      |
-| ------ | ----- | ----     | ----      |
-| 0      | 1     | 00       | val 0-15  |
-| 1      | 1     | 00       | val 16-32 |
-
-locazione 130 non è presente è presente nella  cache, 01 000 0010
-
-| index  | valid | tag      | data        |
-| ------ | ----- | ----     | ----        |
-| 0      | 1     | 01       | val 127-143 |
-| 1      | 1     | 00       | val 16-32   |
-
-locazione 24  è presente nella cache  00 001 1000  
-
-| index  | valid | tag      | data        |
-| ------ | ----- | ----     | ----        |
-| 0      | 1     | 00000001 | val 127-143 |
-| 1      | 1     | 00000000 | val 16-32   |
-
-
-
-locazione 13, non è nella cache 00 000 1101
-
-| index  | valid | tag      | data      |
-| ------ | ----- | ----     | ----      |
-| 0      | 1     | 00       | val 0-15  |
-| 1      | 1     | 00000000 | val 16-32 |
-
-
+<p><summary> Esercizio </summary></p>
+<p><strong>indirizzo:</strong> - primi 4 bit per l’indirizzo dentro data - 3 bit per capire la cache - 2 bit per il tag</p>
+<p>locazioni e indirizzi 0:0-15,128-143.. 1:16-31.. 2:32-47.. 3:48-63.. 4:64-79.. 5:80-95.. 6:96-111.. 7:112-127..</p>
+<p><strong>esercizio</strong></p>
+<p>locazione 12, non è nella cache 00 000 1100</p>
+<table>
+<thead>
+<tr class="header">
+<th>index</th>
+<th>valid</th>
+<th>tag</th>
+<th>data</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>1</td>
+<td>00</td>
+<td>val 0-15</td>
+</tr>
+</tbody>
+</table>
+<p>locazione 14 è presente nella cache, 00 000 1110</p>
+<table>
+<thead>
+<tr class="header">
+<th>index</th>
+<th>valid</th>
+<th>tag</th>
+<th>data</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>1</td>
+<td>00</td>
+<td>val 0-15</td>
+</tr>
+</tbody>
+</table>
+<p>locazione 22 non è presente nella cache 00 001 0110</p>
+<table>
+<thead>
+<tr class="header">
+<th>index</th>
+<th>valid</th>
+<th>tag</th>
+<th>data</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>1</td>
+<td>00</td>
+<td>val 0-15</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>1</td>
+<td>00</td>
+<td>val 16-32</td>
+</tr>
+</tbody>
+</table>
+<p>locazione 130 non è presente è presente nella cache, 01 000 0010</p>
+<table>
+<thead>
+<tr class="header">
+<th>index</th>
+<th>valid</th>
+<th>tag</th>
+<th>data</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>1</td>
+<td>01</td>
+<td>val 127-143</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>1</td>
+<td>00</td>
+<td>val 16-32</td>
+</tr>
+</tbody>
+</table>
+<p>locazione 24 è presente nella cache 00 001 1000</p>
+<table>
+<thead>
+<tr class="header">
+<th>index</th>
+<th>valid</th>
+<th>tag</th>
+<th>data</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>1</td>
+<td>00000001</td>
+<td>val 127-143</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>1</td>
+<td>00000000</td>
+<td>val 16-32</td>
+</tr>
+</tbody>
+</table>
+<p>locazione 13, non è nella cache 00 000 1101</p>
+<table>
+<thead>
+<tr class="header">
+<th>index</th>
+<th>valid</th>
+<th>tag</th>
+<th>data</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>1</td>
+<td>00</td>
+<td>val 0-15</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>1</td>
+<td>00000000</td>
+<td>val 16-32</td>
+</tr>
+</tbody>
+</table>
 </details>
-<h3 id="paginazione"><span class="header-section-number">7.1.2</span> Paginazione</h3>
+<h3 id="paginazione"><span class="header-section-number">6.4.2</span> Paginazione</h3>
 <p>TODO:</p>
-<h3 id="pre-fetch-istruzioni"><span class="header-section-number">7.1.3</span> Pre-fetch istruzioni</h3>
+<h3 id="pre-fetch-istruzioni"><span class="header-section-number">6.4.3</span> Pre-fetch istruzioni</h3>
 <p>Nell’architettura del nostro calcolatore Hack, consideriamo due distinti ingressi per la CPU: - “instruction”: carica l’istruzione da eseguire da una specifica memoria programma - inM: carica i dati necessari da una distinta memoria dati</p>
 <blockquote>
 <p>Nelle architetture usuali (Von Neumann) dati e programmi risiedono nella stessa memoria</p>
 </blockquote>
-<h1 id="isa-del-processore-hack"><span class="header-section-number">8</span> ISA del processore Hack</h1>
+<h1 id="isa-del-processore-hack"><span class="header-section-number">7</span> ISA del processore Hack</h1>
 <blockquote>
-<p><strong>Instruction Set Architeture</strong>:(rappresenta l'interfaccia fra l'hardware e il software) sono la serie di istruzioni che il processore esegue</p>
+<p><strong>Instruction Set Architeture</strong>:(rappresenta l’interfaccia fra l’hardware e il software) sono la serie di istruzioni che il processore esegue</p>
 </blockquote>
 <ul>
 <li>Memoria dati: RAM – una sequenza di registri a 16 bit che contiene dati</li>
@@ -847,248 +888,218 @@ locazione 13, non è nella cache 00 000 1101
 <li><strong>PC</strong>: contiene l’indirizzo della prossima istruzione da eseguire (ROM[PC]). Inizialmente PC vale 0 (i programmi da eseguire inizieranno quindi da ROM[0])</li>
 </ul>
 <p><strong>Tipi di Istruzioni</strong>:</p>
-<h2 id="istruzioni"><span class="header-section-number">8.1</span> Istruzioni</h2>
+<h2 id="istruzioni"><span class="header-section-number">7.1</span> Istruzioni</h2>
 <ul>
-<li><strong>A-instructions:</strong> istruzioni che si limitano a caricare un valore all'interno del registro A</li>
+<li><strong>A-instructions:</strong> istruzioni che si limitano a caricare un valore all’interno del registro A</li>
 <li><strong>C-instructions:</strong> istruzini che eseguono una computazione prelevando i due operandi A,D,M oppure le costanti 0,1 o -1, e memorizzano il risultato in A,D,M</li>
 </ul>
 <details>
-<summary>
-esempio di C instruction
-</summary>
-
-- Le computazioni che si possono eseguire sono: 0 , 1 , -1 , D , A , !D , !A , -D , -A , D+1 , A+1 , D-1 , A-1 , D+A , D-A , A-D , D&A , D|A , M , !M , -M , M+1 , M-1 , D+M , D-M , M-D , D&M , D|M
-- D e A sono i registri interni, M coincide con RAM[A] 
+<p><summary> esempio di C instruction </summary></p>
+<ul>
+<li>Le computazioni che si possono eseguire sono: 0 , 1 , -1 , D , A , !D , !A , -D , -A , D+1 , A+1 , D-1 , A-1 , D+A , D-A , A-D , D&amp;A , D|A , M , !M , -M , M+1 , M-1 , D+M , D-M , M-D , D&amp;M , D|M</li>
+<li>D e A sono i registri interni, M coincide con RAM[A]</li>
+</ul>
 </details>
-<h3 id="sintassi-a-instruction"><span class="header-section-number">8.1.1</span> Sintassi A-Instruction</h3>
+<h3 id="sintassi-a-instruction"><span class="header-section-number">7.1.1</span> Sintassi A-Instruction</h3>
 <p><strong>A-instruction</strong>: <code>@valore //A &lt;- valore</code></p>
 <details>
-<summary>
-esempi
-</summary>
-
-Caricare una costante ( D = value)
-```asm
-@17 // A = 17
-D = A // D = 17
-```
-
-Caricare un valore da RAM ( D = RAM[A])
-```asm
-@17 // A = 17
-D = M // D = RAM[17]
-```
-
-
- Selezionare una locazione ROM ( PC = A )
-```asm
-@17   // A = 17
-0;JMP // mette 17 in PC, la prossima
-       // istruzione sara’ ROM[17]
-```
+<p><summary> esempi </summary></p>
+<p>Caricare una costante ( D = value)</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode asm"><code class="sourceCode fasm"><span id="cb2-1"><a href="#cb2-1"></a>@<span class="dv">17</span> // A = <span class="dv">17</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>D = A // D = <span class="dv">17</span></span></code></pre></div>
+<p>Caricare un valore da RAM ( D = RAM[A])</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode asm"><code class="sourceCode fasm"><span id="cb3-1"><a href="#cb3-1"></a>@<span class="dv">17</span> // A = <span class="dv">17</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>D = M // D = RAM[<span class="dv">17</span>]</span></code></pre></div>
+<p>Selezionare una locazione ROM ( PC = A )</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode asm"><code class="sourceCode fasm"><span id="cb4-1"><a href="#cb4-1"></a>@<span class="dv">17</span>   // A = <span class="dv">17</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="dv">0</span><span class="co">;JMP // mette 17 in PC, la prossima</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a>       // istruzione sara’ ROM[<span class="dv">17</span>]</span></code></pre></div>
 </details>
-<h3 id="sintassi-c-instruction"><span class="header-section-number">8.1.2</span> Sintassi C-Instruction</h3>
+<h3 id="sintassi-c-instruction"><span class="header-section-number">7.1.2</span> Sintassi C-Instruction</h3>
 <p><strong>C-Instruction</strong>: <code>dist= comp;jump</code> (<code>dist =</code> e <code>jump</code> sono opzionali)</p>
 <p><strong>comp</strong> = 0 , 1 , -1 , D , A , !D , !A , -D , -A , D+1 , A+1 , D-1, A-1 , D+A , D-A , A-D , D&amp;A , D|A , M , !M , -M ,M+1, M-1 , D+M , D-M , M-D , D&amp;M , D|M <strong>dest</strong> = M , D , MD , A , AM , AD , AMD, o nullo (in questo caso viene omesso) <strong>jump</strong> = JGT , JEQ , JGE , JLT , JNE , JLE , JMP, o nullo (omesso)</p>
-<h2 id="esercizi"><span class="header-section-number">8.2</span> Esercizi</h2>
+<h2 id="esercizi"><span class="header-section-number">7.2</span> Esercizi</h2>
 <blockquote>
 <p>memoria[2]=memoria[1]-memoria[0]-2</p>
 </blockquote>
-<div class="sourceCode" id="cb2"><pre class="sourceCode asm"><code class="sourceCode fasm"><span id="cb2-1"><a href="#cb2-1"></a>@<span class="dv">1</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a>D=M</span>
-<span id="cb2-3"><a href="#cb2-3"></a>@<span class="dv">0</span></span>
-<span id="cb2-4"><a href="#cb2-4"></a>D=D-M</span>
-<span id="cb2-5"><a href="#cb2-5"></a>@<span class="dv">2</span></span>
-<span id="cb2-6"><a href="#cb2-6"></a>M=D-A</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode asm"><code class="sourceCode fasm"><span id="cb5-1"><a href="#cb5-1"></a>@<span class="dv">1</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a>D=M</span>
+<span id="cb5-3"><a href="#cb5-3"></a>@<span class="dv">0</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a>D=D-M</span>
+<span id="cb5-5"><a href="#cb5-5"></a>@<span class="dv">2</span></span>
+<span id="cb5-6"><a href="#cb5-6"></a>M=D-A</span></code></pre></div>
 <blockquote>
 <p>memoria[2]=memoria[1]-memoria[0]-2</p>
 </blockquote>
-<div class="sourceCode" id="cb3"><pre class="sourceCode asm"><code class="sourceCode fasm"><span id="cb3-1"><a href="#cb3-1"></a>@<span class="dv">1</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a>D=M</span>
-<span id="cb3-3"><a href="#cb3-3"></a>@<span class="dv">0</span></span>
-<span id="cb3-4"><a href="#cb3-4"></a>D=D&amp;M</span>
-<span id="cb3-5"><a href="#cb3-5"></a>@</span>
-<span id="cb3-6"><a href="#cb3-6"></a>M=!D</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode asm"><code class="sourceCode fasm"><span id="cb6-1"><a href="#cb6-1"></a>@<span class="dv">1</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>D=M</span>
+<span id="cb6-3"><a href="#cb6-3"></a>@<span class="dv">0</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a>D=D&amp;M</span>
+<span id="cb6-5"><a href="#cb6-5"></a>@</span>
+<span id="cb6-6"><a href="#cb6-6"></a>M=!D</span></code></pre></div>
 <details>
-<summary>
-Altri es
-</summary>
-
-
-
-> Mettere il valore 1 in tutte le celle di memoria con indirizzo compreso tra RAM[0] e RAM[1] assumendo RAM[1] > RAM[0] > 1
-
-```asm
-//essendo che RAM[1]>RAM[0] possiamo scrivere già il primo valore in RAM[0] e possiamo occupare come vogliamo RAM[0] e RAM[1]
-(while)
-@0
-A=M
-M=1
-@0
-MD=M+1
-@1
-D=M-D
-@while
-D;JGE
-```
-
-> RAM[2] = RAM[1] * (2^RAM[0])  
-
-```asm
-//; questo designe supporta RAM[0]=0
-//; come prima cosa si scrive RAM[1] in RAM[2]{
-@1
-D=M
-@2
-M=D
-//; }
-(top)
-//; decrementa RAM[0] e se è minore di zero va alla fine {
-@0
-MD=M-1
-@end
-D;JLE
-//; }
-//; allora se non è RAM[0] minore di zero fa RAM[2]+=RAM[2] e riparte dal check e decremtnto{
-@2
-D=M
-M=D+M
-@top
-D;JMP
-//;}
-(end)
-```
-> RAM[2] = RAM[1] / RAM[0], RAM[3] = RAM[1] mod RAM[0] 
-
-```asm
-//;mettiamo RAM[1] in RAM[3] e settiamo RAM[2]=0
-@2
-M=0
-@1
-D=M
-@3
-M=D
-//; checkiamo che RAM[3] sia maggiore di RAM[0] e se è minore andiamo a end
-(top)
-@end
-@3
-D=M
-@0
-D=D-M
-@end
-D;JLT
-// se RAM[3] è maggiore di RAM decrementeiamo RAM[3] di RAM[0] e aggingiamo uno a RAM[2]
-@3
-M=D
-@2
-M=M+1
-@top
-D;JMP
-(end)
-
-```
-
-```cpp
-//Scrive 50 nel counter
-@50
-D=A
-@counter
-M=D
-// prende il secondo byte dello schermo e lo scrive in addresss
-@SCREEN
-D=A+1
-@address
-M=D
-(WHILE)
-//il numero serve per attivare solo il 12 bit così facendo scriveremo solo sulla 20° colonna
-@8
-D=A
-// scriviamo il numero in address
-@address
-A=M
-M=D
-// incrementiamo l'address
-@address
-D=M
-@32
-D=D+A
-@address
-M=D
-// guardiamo se il conuter è ancora maggiore di zero
-@counter
-MD=M-1
-@END
-D;JLE
-
-@WHILE
-0;JMP
-(END)
-```
-
-```asm
-
-//mettiamo il numero di volte in una variabile
-@50
-D=A
-@counter
-M=D
-//indirizzo in cui scrivere
-@SCREEN
-D=A
-@index
-M=D
-//cosa scrivere
-@1
-D=A
-@towrite
-M=D
-// fin qui abbiamo inizializzato le variabili
-
-(STARTLOOP)
-
-// facciamo il check se uscire dal loop e e no decrementiamo il contatore
-@counter
-D=M
-@END
-D;JLE
-@counter
-M=M-1
-//scriviamo a video
-@towrite
-D=M
-@index
-A=M
-M=D
-//moltiplichiamo per due e se il valore è diverso da vero andiamo alla prossima riga
-@towrite
-D=M
-M=D+M
-D=M
-@NEXTLINE
-D;JNE
-//risulato della divisione è minore di 1 allora lo incrementiamo
-
-@1
-D=A
-@towrite
-M=D
-@index
-M=M+1
-(NEXTLINE)
-
-//nuova riga
-@32
-D=A
-@index
-M=M+D
-@STARTLOOP
-0;JMP 
-(END)
-
-```
+<p><summary> Altri es </summary></p>
+<blockquote>
+<p>Mettere il valore 1 in tutte le celle di memoria con indirizzo compreso tra RAM[0] e RAM[1] assumendo RAM[1] &gt; RAM[0] &gt; 1</p>
+</blockquote>
+<div class="sourceCode" id="cb7"><pre class="sourceCode asm"><code class="sourceCode fasm"><span id="cb7-1"><a href="#cb7-1"></a>//essendo che RAM[<span class="dv">1</span>]&gt;RAM[<span class="dv">0</span>] possiamo scrivere già il primo valore <span class="bu">in</span> RAM[<span class="dv">0</span>] e possiamo occupare come vogliamo RAM[<span class="dv">0</span>] e RAM[<span class="dv">1</span>]</span>
+<span id="cb7-2"><a href="#cb7-2"></a>(<span class="pp">while</span>)</span>
+<span id="cb7-3"><a href="#cb7-3"></a>@<span class="dv">0</span></span>
+<span id="cb7-4"><a href="#cb7-4"></a>A=M</span>
+<span id="cb7-5"><a href="#cb7-5"></a>M=<span class="dv">1</span></span>
+<span id="cb7-6"><a href="#cb7-6"></a>@<span class="dv">0</span></span>
+<span id="cb7-7"><a href="#cb7-7"></a>MD=M+<span class="dv">1</span></span>
+<span id="cb7-8"><a href="#cb7-8"></a>@<span class="dv">1</span></span>
+<span id="cb7-9"><a href="#cb7-9"></a>D=M-D</span>
+<span id="cb7-10"><a href="#cb7-10"></a>@while</span>
+<span id="cb7-11"><a href="#cb7-11"></a>D<span class="co">;JGE</span></span></code></pre></div>
+<blockquote>
+<p>RAM[2] = RAM[1] * (2^RAM[0])</p>
+</blockquote>
+<div class="sourceCode" id="cb8"><pre class="sourceCode asm"><code class="sourceCode fasm"><span id="cb8-1"><a href="#cb8-1"></a>//<span class="co">; questo designe supporta RAM[0]=0</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a>//<span class="co">; come prima cosa si scrive RAM[1] in RAM[2]{</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a>@<span class="dv">1</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a>D=M</span>
+<span id="cb8-5"><a href="#cb8-5"></a>@<span class="dv">2</span></span>
+<span id="cb8-6"><a href="#cb8-6"></a>M=D</span>
+<span id="cb8-7"><a href="#cb8-7"></a>//<span class="co">; }</span></span>
+<span id="cb8-8"><a href="#cb8-8"></a>(top)</span>
+<span id="cb8-9"><a href="#cb8-9"></a>//<span class="co">; decrementa RAM[0] e se è minore di zero va alla fine {</span></span>
+<span id="cb8-10"><a href="#cb8-10"></a>@<span class="dv">0</span></span>
+<span id="cb8-11"><a href="#cb8-11"></a>MD=M<span class="dv">-1</span></span>
+<span id="cb8-12"><a href="#cb8-12"></a>@end</span>
+<span id="cb8-13"><a href="#cb8-13"></a>D<span class="co">;JLE</span></span>
+<span id="cb8-14"><a href="#cb8-14"></a>//<span class="co">; }</span></span>
+<span id="cb8-15"><a href="#cb8-15"></a>//<span class="co">; allora se non è RAM[0] minore di zero fa RAM[2]+=RAM[2] e riparte dal check e decremtnto{</span></span>
+<span id="cb8-16"><a href="#cb8-16"></a>@<span class="dv">2</span></span>
+<span id="cb8-17"><a href="#cb8-17"></a>D=M</span>
+<span id="cb8-18"><a href="#cb8-18"></a>M=D+M</span>
+<span id="cb8-19"><a href="#cb8-19"></a>@top</span>
+<span id="cb8-20"><a href="#cb8-20"></a>D<span class="co">;JMP</span></span>
+<span id="cb8-21"><a href="#cb8-21"></a>//<span class="co">;}</span></span>
+<span id="cb8-22"><a href="#cb8-22"></a>(<span class="pp">end</span>)</span></code></pre></div>
+<blockquote>
+<p>RAM[2] = RAM[1] / RAM[0], RAM[3] = RAM[1] mod RAM[0]</p>
+</blockquote>
+<div class="sourceCode" id="cb9"><pre class="sourceCode asm"><code class="sourceCode fasm"><span id="cb9-1"><a href="#cb9-1"></a>//<span class="co">;mettiamo RAM[1] in RAM[3] e settiamo RAM[2]=0</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a>@<span class="dv">2</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a>M=<span class="dv">0</span></span>
+<span id="cb9-4"><a href="#cb9-4"></a>@<span class="dv">1</span></span>
+<span id="cb9-5"><a href="#cb9-5"></a>D=M</span>
+<span id="cb9-6"><a href="#cb9-6"></a>@<span class="dv">3</span></span>
+<span id="cb9-7"><a href="#cb9-7"></a>M=D</span>
+<span id="cb9-8"><a href="#cb9-8"></a>//<span class="co">; checkiamo che RAM[3] sia maggiore di RAM[0] e se è minore andiamo a end</span></span>
+<span id="cb9-9"><a href="#cb9-9"></a>(top)</span>
+<span id="cb9-10"><a href="#cb9-10"></a>@end</span>
+<span id="cb9-11"><a href="#cb9-11"></a>@<span class="dv">3</span></span>
+<span id="cb9-12"><a href="#cb9-12"></a>D=M</span>
+<span id="cb9-13"><a href="#cb9-13"></a>@<span class="dv">0</span></span>
+<span id="cb9-14"><a href="#cb9-14"></a>D=D-M</span>
+<span id="cb9-15"><a href="#cb9-15"></a>@end</span>
+<span id="cb9-16"><a href="#cb9-16"></a>D<span class="co">;JLT</span></span>
+<span id="cb9-17"><a href="#cb9-17"></a>// se RAM[<span class="dv">3</span>] è maggiore <span class="kw">di</span> RAM decrementeiamo RAM[<span class="dv">3</span>] <span class="kw">di</span> RAM[<span class="dv">0</span>] e aggingiamo uno a RAM[<span class="dv">2</span>]</span>
+<span id="cb9-18"><a href="#cb9-18"></a>@<span class="dv">3</span></span>
+<span id="cb9-19"><a href="#cb9-19"></a>M=D</span>
+<span id="cb9-20"><a href="#cb9-20"></a>@<span class="dv">2</span></span>
+<span id="cb9-21"><a href="#cb9-21"></a>M=M+<span class="dv">1</span></span>
+<span id="cb9-22"><a href="#cb9-22"></a>@top</span>
+<span id="cb9-23"><a href="#cb9-23"></a>D<span class="co">;JMP</span></span>
+<span id="cb9-24"><a href="#cb9-24"></a>(<span class="pp">end</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb10-1"><a href="#cb10-1"></a><span class="co">//Scrive 50 nel counter</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a><span class="er">@</span><span class="dv">50</span></span>
+<span id="cb10-3"><a href="#cb10-3"></a>D=A</span>
+<span id="cb10-4"><a href="#cb10-4"></a><span class="er">@</span>counter</span>
+<span id="cb10-5"><a href="#cb10-5"></a>M=D</span>
+<span id="cb10-6"><a href="#cb10-6"></a><span class="co">// prende il secondo byte dello schermo e lo scrive in addresss</span></span>
+<span id="cb10-7"><a href="#cb10-7"></a><span class="er">@</span>SCREEN</span>
+<span id="cb10-8"><a href="#cb10-8"></a>D=A+<span class="dv">1</span></span>
+<span id="cb10-9"><a href="#cb10-9"></a><span class="er">@</span>address</span>
+<span id="cb10-10"><a href="#cb10-10"></a>M=D</span>
+<span id="cb10-11"><a href="#cb10-11"></a>(WHILE)</span>
+<span id="cb10-12"><a href="#cb10-12"></a><span class="co">//il numero serve per attivare solo il 12 bit così facendo scriveremo solo sulla 20° colonna</span></span>
+<span id="cb10-13"><a href="#cb10-13"></a><span class="er">@</span><span class="dv">8</span></span>
+<span id="cb10-14"><a href="#cb10-14"></a>D=A</span>
+<span id="cb10-15"><a href="#cb10-15"></a><span class="co">// scriviamo il numero in address</span></span>
+<span id="cb10-16"><a href="#cb10-16"></a><span class="er">@</span>address</span>
+<span id="cb10-17"><a href="#cb10-17"></a>A=M</span>
+<span id="cb10-18"><a href="#cb10-18"></a>M=D</span>
+<span id="cb10-19"><a href="#cb10-19"></a><span class="co">// incrementiamo l&#39;address</span></span>
+<span id="cb10-20"><a href="#cb10-20"></a><span class="er">@</span>address</span>
+<span id="cb10-21"><a href="#cb10-21"></a>D=M</span>
+<span id="cb10-22"><a href="#cb10-22"></a><span class="er">@</span><span class="dv">32</span></span>
+<span id="cb10-23"><a href="#cb10-23"></a>D=D+A</span>
+<span id="cb10-24"><a href="#cb10-24"></a><span class="er">@</span>address</span>
+<span id="cb10-25"><a href="#cb10-25"></a>M=D</span>
+<span id="cb10-26"><a href="#cb10-26"></a><span class="co">// guardiamo se il conuter è ancora maggiore di zero</span></span>
+<span id="cb10-27"><a href="#cb10-27"></a><span class="er">@</span>counter</span>
+<span id="cb10-28"><a href="#cb10-28"></a>MD=M-<span class="dv">1</span></span>
+<span id="cb10-29"><a href="#cb10-29"></a><span class="er">@</span>END</span>
+<span id="cb10-30"><a href="#cb10-30"></a>D;JLE</span>
+<span id="cb10-31"><a href="#cb10-31"></a></span>
+<span id="cb10-32"><a href="#cb10-32"></a><span class="er">@</span>WHILE</span>
+<span id="cb10-33"><a href="#cb10-33"></a><span class="dv">0</span>;JMP</span>
+<span id="cb10-34"><a href="#cb10-34"></a>(END)</span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode asm"><code class="sourceCode fasm"><span id="cb11-1"><a href="#cb11-1"></a></span>
+<span id="cb11-2"><a href="#cb11-2"></a>//mettiamo il numero <span class="kw">di</span> volte <span class="bu">in</span> una variabile</span>
+<span id="cb11-3"><a href="#cb11-3"></a>@<span class="dv">50</span></span>
+<span id="cb11-4"><a href="#cb11-4"></a>D=A</span>
+<span id="cb11-5"><a href="#cb11-5"></a>@counter</span>
+<span id="cb11-6"><a href="#cb11-6"></a>M=D</span>
+<span id="cb11-7"><a href="#cb11-7"></a>//indirizzo <span class="bu">in</span> cui scrivere</span>
+<span id="cb11-8"><a href="#cb11-8"></a>@SCREEN</span>
+<span id="cb11-9"><a href="#cb11-9"></a>D=A</span>
+<span id="cb11-10"><a href="#cb11-10"></a>@index</span>
+<span id="cb11-11"><a href="#cb11-11"></a>M=D</span>
+<span id="cb11-12"><a href="#cb11-12"></a>//cosa scrivere</span>
+<span id="cb11-13"><a href="#cb11-13"></a>@<span class="dv">1</span></span>
+<span id="cb11-14"><a href="#cb11-14"></a>D=A</span>
+<span id="cb11-15"><a href="#cb11-15"></a>@towrite</span>
+<span id="cb11-16"><a href="#cb11-16"></a>M=D</span>
+<span id="cb11-17"><a href="#cb11-17"></a>// fin qui abbiamo inizializzato le variabili</span>
+<span id="cb11-18"><a href="#cb11-18"></a></span>
+<span id="cb11-19"><a href="#cb11-19"></a>(STARTLOOP)</span>
+<span id="cb11-20"><a href="#cb11-20"></a></span>
+<span id="cb11-21"><a href="#cb11-21"></a>// facciamo il check se uscire dal <span class="bu">loop</span> e e no decrementiamo il contatore</span>
+<span id="cb11-22"><a href="#cb11-22"></a>@counter</span>
+<span id="cb11-23"><a href="#cb11-23"></a>D=M</span>
+<span id="cb11-24"><a href="#cb11-24"></a>@END</span>
+<span id="cb11-25"><a href="#cb11-25"></a>D<span class="co">;JLE</span></span>
+<span id="cb11-26"><a href="#cb11-26"></a>@counter</span>
+<span id="cb11-27"><a href="#cb11-27"></a>M=M<span class="dv">-1</span></span>
+<span id="cb11-28"><a href="#cb11-28"></a>//scriviamo a video</span>
+<span id="cb11-29"><a href="#cb11-29"></a>@towrite</span>
+<span id="cb11-30"><a href="#cb11-30"></a>D=M</span>
+<span id="cb11-31"><a href="#cb11-31"></a>@index</span>
+<span id="cb11-32"><a href="#cb11-32"></a>A=M</span>
+<span id="cb11-33"><a href="#cb11-33"></a>M=D</span>
+<span id="cb11-34"><a href="#cb11-34"></a>//moltiplichiamo per due e se il valore è diverso da vero andiamo alla prossima riga</span>
+<span id="cb11-35"><a href="#cb11-35"></a>@towrite</span>
+<span id="cb11-36"><a href="#cb11-36"></a>D=M</span>
+<span id="cb11-37"><a href="#cb11-37"></a>M=D+M</span>
+<span id="cb11-38"><a href="#cb11-38"></a>D=M</span>
+<span id="cb11-39"><a href="#cb11-39"></a>@NEXTLINE</span>
+<span id="cb11-40"><a href="#cb11-40"></a>D<span class="co">;JNE</span></span>
+<span id="cb11-41"><a href="#cb11-41"></a>//risulato della divisione è minore <span class="kw">di</span> <span class="dv">1</span> allora lo incrementiamo</span>
+<span id="cb11-42"><a href="#cb11-42"></a></span>
+<span id="cb11-43"><a href="#cb11-43"></a>@<span class="dv">1</span></span>
+<span id="cb11-44"><a href="#cb11-44"></a>D=A</span>
+<span id="cb11-45"><a href="#cb11-45"></a>@towrite</span>
+<span id="cb11-46"><a href="#cb11-46"></a>M=D</span>
+<span id="cb11-47"><a href="#cb11-47"></a>@index</span>
+<span id="cb11-48"><a href="#cb11-48"></a>M=M+<span class="dv">1</span></span>
+<span id="cb11-49"><a href="#cb11-49"></a>(NEXTLINE)</span>
+<span id="cb11-50"><a href="#cb11-50"></a></span>
+<span id="cb11-51"><a href="#cb11-51"></a>//nuova riga</span>
+<span id="cb11-52"><a href="#cb11-52"></a>@<span class="dv">32</span></span>
+<span id="cb11-53"><a href="#cb11-53"></a>D=A</span>
+<span id="cb11-54"><a href="#cb11-54"></a>@index</span>
+<span id="cb11-55"><a href="#cb11-55"></a>M=M+D</span>
+<span id="cb11-56"><a href="#cb11-56"></a>@STARTLOOP</span>
+<span id="cb11-57"><a href="#cb11-57"></a><span class="dv">0</span><span class="co">;JMP </span></span>
+<span id="cb11-58"><a href="#cb11-58"></a>(<span class="pp">END</span>)</span></code></pre></div>
 </details>
-<h2 id="simboli-nel-linguaggio-hack"><span class="header-section-number">8.3</span> Simboli nel linguaggio HACK</h2>
-<h3 id="etichette"><span class="header-section-number">8.3.1</span> Etichette</h3>
+<h2 id="simboli-nel-linguaggio-hack"><span class="header-section-number">7.3</span> Simboli nel linguaggio HACK</h2>
+<h3 id="etichette"><span class="header-section-number">7.3.1</span> Etichette</h3>
 <ul>
 <li><strong>Etichette</strong>: Usate per fare riferimento ad indirizzi della ROM; Dichiarate tramite direttiva <code>(XXX)</code> che definisce il simbolo XXX che farà riferimento all’indirizzo di ROM dell’istruzione successiva alla dichiarazione</li>
 <li><strong>variabili</strong>: Usate per far riferimento ad indirizzi in memoria RAM. Ci sono due tipi di variabili:
@@ -1097,19 +1108,19 @@ M=M+D
 <li>definite dall’utente: ogni simbolo non predefinito xxx che appare in un programma Hack senza essere dichiarato usando(xxx)viene trattato come una variabile, e gli viene assegnato in automatico un valore (a partire dal valore 16, da 0 a 15 sono usati dalle variabili predefinite R0..R15)</li>
 </ul></li>
 </ul>
-<h1 id="realizzazione-del-computer-hack"><span class="header-section-number">9</span> Realizzazione del Computer Hack</h1>
-<h2 id="tastiera"><span class="header-section-number">9.1</span> Tastiera</h2>
+<h1 id="realizzazione-del-computer-hack"><span class="header-section-number">8</span> Realizzazione del Computer Hack</h1>
+<h2 id="tastiera"><span class="header-section-number">8.1</span> Tastiera</h2>
 <p>Tastiera è una memoria ROM in solo lettura</p>
-<h2 id="schermo"><span class="header-section-number">9.2</span> Schermo</h2>
+<h2 id="schermo"><span class="header-section-number">8.2</span> Schermo</h2>
 <p>Lo Schermo è come una memoria ram, tutto quello che vieine scritto su questa memoria appare nella schermo del simulatore.</p>
 <p>Lo schermo è diviso in colonne e righe</p>
-<h2 id="codifica-a-instruction"><span class="header-section-number">9.3</span> Codifica A-instruction</h2>
+<h2 id="codifica-a-instruction"><span class="header-section-number">8.3</span> Codifica A-instruction</h2>
 <p><img src="vx_images/2106204199297.png" /></p>
-<h2 id="codifica-c-instruction"><span class="header-section-number">9.4</span> Codifica C-Instruction</h2>
+<h2 id="codifica-c-instruction"><span class="header-section-number">8.4</span> Codifica C-Instruction</h2>
 <p><img src="vx_images/5357587756820.png" /></p>
-<h2 id="livello-istruction-set-architeture"><span class="header-section-number">9.5</span> Livello Istruction Set Architeture</h2>
+<h2 id="livello-istruction-set-architeture"><span class="header-section-number">8.5</span> Livello Istruction Set Architeture</h2>
 <blockquote>
-<p>ISA è l'interfaccia tra l'hardware e il software, i compilatori traucono i programmi in instruzioni livello ISA</p>
+<p>ISA è l’interfaccia tra l’hardware e il software, i compilatori traucono i programmi in instruzioni livello ISA</p>
 </blockquote>
 <p>In generale le istruzioni sono divise in: - <strong>codice operativo</strong>: parte che indica il tipo di istruzione da eseguire - <strong>indirizzi</strong>: indicano gli operatori da utilizzare</p>
 <p><img src="vx_images/2558021179300.png" /></p>
