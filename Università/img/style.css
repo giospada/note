@@ -19,9 +19,8 @@ body {
     margin: 0 auto;
     font-family: "Fira Code",Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     line-height: 1.5;
-    background-color: var(--dracula-background);
+    background-color:var(--dracula-background);
     color:var(--dracula-foreground);
-    padding:5vw;
 }
 
 summary {
@@ -38,7 +37,7 @@ strong{
     color:#ffb86c;
 }
 blockquote {
-    padding: 0.25em 1em;
+    padding: 1 1em;
     color: #f1fa8c;
     border-left: 0.25em solid #ffffff;
     background: #768ac713 ;
