@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>./Logica</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style>
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#docente"><span class="toc-section-number">1</span> Docente</a></li>
+<li><a href="#logica"><span class="toc-section-number">2</span> Logica</a></li>
+<li><a href="#paradossi"><span class="toc-section-number">3</span> Paradossi</a><ul>
+<li><a href="#linguaggio-naturale"><span class="toc-section-number">3.1</span> Linguaggio naturale</a></li>
+<li><a href="#linguaggio-matematico"><span class="toc-section-number">3.2</span> Linguaggio matematico</a><ul>
+<li><a href="#paradosso-di-russell"><span class="toc-section-number">3.2.1</span> Paradosso di Russell</a></li>
+</ul></li>
+<li><a href="#i-paradossi-in-informatica"><span class="toc-section-number">3.3</span> I paradossi in informatica</a></li>
+</ul></li>
+<li><a href="#teoria-degli-insiemi"><span class="toc-section-number">4</span> Teoria degli Insiemi</a><ul>
+<li><a href="#teoria-naive"><span class="toc-section-number">4.1</span> Teoria naive</a></li>
+<li><a href="#teoria-assiomatiche-degli-insiemi"><span class="toc-section-number">4.2</span> Teoria assiomatiche degli insiemi</a><ul>
+<li><a href="#assioma-di-estensionalità"><span class="toc-section-number">4.2.1</span> Assioma di estensionalità</a></li>
+<li><a href="#definizione-di-essere-sottoinsieme"><span class="toc-section-number">4.2.2</span> Definizione di essere sottoinsieme</a></li>
+<li><a href="#assioma-di-separazione"><span class="toc-section-number">4.2.3</span> Assioma di separazione</a></li>
+<li><a href="#assioma-dellinsieme-vuoto"><span class="toc-section-number">4.2.4</span> Assioma dell’insieme vuoto</a></li>
+<li><a href="#definizione-dellinsieme-vuoto"><span class="toc-section-number">4.2.5</span> Definizione dell’insieme vuoto</a></li>
+<li><a href="#definizione-di-intersezione-binaria"><span class="toc-section-number">4.2.6</span> Definizione di intersezione binaria</a></li>
+<li><a href="#definizione-di-intersezione"><span class="toc-section-number">4.2.7</span> Definizione di intersezione</a></li>
+<li><a href="#assiome-dellunione-binaria"><span class="toc-section-number">4.2.8</span> Assiome dell'unione binaria</a></li>
+<li><a href="#assioma-dellunione"><span class="toc-section-number">4.2.9</span> Assioma dell'unione</a></li>
+<li><a href="#assioma-del-singoletto"><span class="toc-section-number">4.2.10</span> 4.2.10 Assioma del singoletto</a></li>
+<li><a href="#assioma-dellinfinito"><span class="toc-section-number">4.2.11</span> Assioma dell’infinito</a></li>
+<li><a href="#teorema-esistenza-di-n"><span class="toc-section-number">4.2.12</span> Teorema esistenza di <span class="math inline"><em>N</em></span></a></li>
+<li><a href="#assioma-dellinsieme-potenza"><span class="toc-section-number">4.2.13</span> Assioma dell'insieme potenza</a></li>
+<li><a href="#assioma-di-regolarita-non-da-studiare"><span class="toc-section-number">4.2.14</span> Assioma di regolarita (non da studiare)</a></li>
+<li><a href="#assioma-di-rimpiazzamento"><span class="toc-section-number">4.2.15</span> Assioma di rimpiazzamento</a></li>
+</ul></li>
+<li><a href="#costruzioni-dei-numeri-naturali"><span class="toc-section-number">4.3</span> Costruzioni dei Numeri Naturali</a></li>
+</ul></li>
+<li><a href="#dimostrazioni"><span class="toc-section-number">5</span> Dimostrazioni</a><ul>
+<li><a href="#per-ogni-forall"><span class="toc-section-number">5.1</span> Per Ogni <span class="math inline">∀</span></a></li>
+<li><a href="#implicazione-implies"><span class="toc-section-number">5.2</span> Implicazione <span class="math inline">⟹</span></a></li>
+<li><a href="#coimplica-iff"><span class="toc-section-number">5.3</span> Coimplica <span class="math inline">⇔</span></a></li>
+<li><a href="#espansione-definizioni"><span class="toc-section-number">5.4</span> Espansione Definizioni</a></li>
+<li><a href="#regola-dellassurdo"><span class="toc-section-number">5.5</span> Regola dell'assurdo</a></li>
+<li><a href="#congiunzione"><span class="toc-section-number">5.6</span> Congiunzione</a></li>
+<li><a href="#disginuzione"><span class="toc-section-number">5.7</span> Disginuzione</a></li>
+<li><a href="#risultati-intermedi"><span class="toc-section-number">5.8</span> Risultati intermedi</a></li>
+<li><a href="#esiste"><span class="toc-section-number">5.9</span> Esiste</a></li>
+<li><a href="#abbreviazioni"><span class="toc-section-number">5.10</span> Abbreviazioni</a></li>
+</ul></li>
+<li><a href="#relazioni-funzioni-..."><span class="toc-section-number">6</span> Relazioni, Funzioni ...</a><ul>
+<li><a href="#coppie-ordinate"><span class="toc-section-number">6.1</span> Coppie ordinate</a><ul>
+<li><a href="#teorema-di-caratterizzazione-delle-coppie"><span class="toc-section-number">6.1.1</span> teorema di caratterizzazione delle coppie</a></li>
+</ul></li>
+<li><a href="#teorema-del-prodotto-cartesiano-tra-gli-insiemi"><span class="toc-section-number">6.2</span> Teorema del prodotto cartesiano tra gli insiemi</a></li>
+<li><a href="#relazione"><span class="toc-section-number">6.3</span> Relazione</a><ul>
+<li><a href="#teorema-relazioni-verso-insiemi-vuoiti"><span class="toc-section-number">6.3.1</span> Teorema: relazioni verso insiemi vuoiti</a></li>
+</ul></li>
+<li><a href="#dimostrazione-di-funzioni"><span class="toc-section-number">6.4</span> Dimostrazione Di Funzioni</a><ul>
+<li><a href="#teorema-esistenza-dello-spazio-di-funzioni-come-insieme"><span class="toc-section-number">6.4.1</span> Teorema esistenza dello spazio di funzioni come insieme</a></li>
+</ul></li>
+<li><a href="#iniettiva-surrettiva-biettività"><span class="toc-section-number">6.5</span> iniettiva surrettiva biettività</a></li>
+<li><a href="#abbreviazioni-1"><span class="toc-section-number">6.6</span> Abbreviazioni</a></li>
+<li><a href="#proprietà-delle-relazioni"><span class="toc-section-number">6.7</span> Proprietà delle relazioni</a><ul>
+<li><a href="#relazioni-di-ordinamento-strette"><span class="toc-section-number">6.7.1</span> Relazioni di ordinamento strette</a></li>
+<li><a href="#relazioni-di-ordinamento-lasche"><span class="toc-section-number">6.7.2</span> Relazioni di ordinamento lasche</a></li>
+<li><a href="#relazioni-di-equivalenza-equiv"><span class="toc-section-number">6.7.3</span> Relazioni di equivalenza <span class="math inline">≡</span></a></li>
+<li><a href="#classi-di-equivalenza"><span class="toc-section-number">6.7.4</span> Classi di equivalenza</a></li>
+<li><a href="#insieme-quoziente"><span class="toc-section-number">6.7.5</span> Insieme quoziente</a></li>
+<li><a href="#costruzione-di-z"><span class="toc-section-number">6.7.6</span> Costruzione di Z</a></li>
+<li><a href="#costruzione-dei-razionali"><span class="toc-section-number">6.7.7</span> Costruzione dei razionali</a></li>
+</ul></li>
+<li><a href="#cardinatlità"><span class="toc-section-number">6.8</span> Cardinatlità</a><ul>
+<li><a href="#teorema-esistenza-dei-numeri-cardinali-come-insiemi"><span class="toc-section-number">6.8.1</span> Teorema: esistenza dei numeri cardinali come insiemi</a></li>
+</ul></li>
+<li><a href="#insiemi-infiniti"><span class="toc-section-number">6.9</span> Insiemi infiniti</a><ul>
+<li><a href="#le-su-numeri-cardinali"><span class="toc-section-number">6.9.1</span> <span class="math inline">≤</span> su numeri cardinali</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#sintassi"><span class="toc-section-number">7</span> Sintassi</a><ul>
+<li><a href="#definizione"><span class="toc-section-number">7.1</span> Definizione</a></li>
+<li><a href="#backus-naur-form-bnf"><span class="toc-section-number">7.2</span> Backus-Naur Form (BNF)</a><ul>
+<li><a href="#precedenze"><span class="toc-section-number">7.2.1</span> Precedenze</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#pseudo-linguaggio-funzinale-puro-non-tipato"><span class="toc-section-number">8</span> Pseudo linguaggio funzinale puro non tipato</a><ul>
+<li><a href="#turing-completezza"><span class="toc-section-number">8.1</span> Turing-completezza</a></li>
+<li><a href="#ricorsione-strutturale"><span class="toc-section-number">8.2</span> Ricorsione Strutturale</a></li>
+<li><a href="#induzione-strutturale"><span class="toc-section-number">8.3</span> Induzione Strutturale</a></li>
+</ul></li>
+<li><a href="#logica-1"><span class="toc-section-number">9</span> 08 Logica</a><ul>
+<li><a href="#funzioni-matematiche-e-informatiche"><span class="toc-section-number">9.1</span> Funzioni Matematiche e Informatiche</a><ul>
+<li><a href="#dimostrazione-che-è-uguale-a"><span class="toc-section-number">9.1.1</span> Dimostrazione che +' è uguale a '+</a></li>
+<li><a href="#altre-prove"><span class="toc-section-number">9.1.2</span> Altre prove</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<hr />
+<p>header-includes: | \usepackage{mathtools} ---</p>
+<h1 id="docente"><span class="header-section-number">1</span> Docente</h1>
+<p>Claudio Sacerdoti Coen</p>
+<figure>
+<img src="../img/proftigre.png" alt="" /><figcaption>foto del professore con la giaguaro</figcaption>
+</figure>
+<h1 id="logica"><span class="header-section-number">2</span> Logica</h1>
+<p>viene studiata da più discipline (fisica, matematica,informatica)</p>
+<p>Domande chiave: - cos'è la correttezza di un ragionamento?(e scriverlo in modo algoritmico) - quali ragionamenti sono corretti? - ci sono fatti non deducibili tramite un ragionamento?</p>
+<p>la logica non parla di verità (più ragionamenti corretti)</p>
+<h1 id="paradossi"><span class="header-section-number">3</span> Paradossi</h1>
+<blockquote>
+<p>Antinomia: è una conclusione inaccettabile,che deriva da premesse accettabili per mezzo di un ragionamento accettabile</p>
+</blockquote>
+<blockquote>
+<p>Paradosso : conclusione contraria all'intuizione che deriva da premesse accettabili per mezzo di un ragionamento accettato (è accettabile)</p>
+</blockquote>
+<details>
+    <summary>
+    es falso paradosso
+    </summary>
+
+$x=1$  
+$x^2=x$   
+$x^2-1=x-1$  
+$(x-1)(x+1)=x-1$  
+$x+1=1$  
+$x=0$  
+</details>
+<h2 id="linguaggio-naturale"><span class="header-section-number">3.1</span> Linguaggio naturale</h2>
+<p>Il linguaggio naturale è alla base della comunicazione e del ragionamento umano, e per questo deve essere espressivo e viene esteso e specializzato (per comunicare )</p>
+<p>Non possiamo utilizzarlo per procedure di calcolo e dimostrazioni perché: - è ambiguo - Fortemente dipende del contesto</p>
+<details>
+    <summary>
+    es
+    </summary>
+
+"la vecchia porta la sbarra" può essere interpretata in più volte
+
+"lucia ha perso la testa..." è fortemente dipendente dal contesto
+
+il linguaggio naturale non è adatto per le procedure di calcolo perché può avere più interpretazioni
+
+```
+if la vecciha porta la sbarra then
+    amputa(gamba,dx)
+else
+    amputa(gamba,dx)
+```
+
+</details>
+<details>
+    <summary>
+    es.1
+    </summary>
+
+
+"io mento"  
+
+io mento se e solamente se cio che dico non ` e vero `  
+
+io mento se e solamente se “io mento” non e vero `  
+
+**io mento se e solamente se io non mento**
+
+</details>
+<details>
+    <summary>
+    es.2
+    </summary>
+
+Aggettivo autologico = aggettivo che si applica a se stesso (p.e. polisillabico)  
+Aggettivo eterologico = aggettivo che non si applica a se stesso (p.e. monosillabico)  
+
+“Eterologico e eterologico”  
+eterologico e eterologico sse non si applica a se stesso `
+**eterologico e eterologico sse eterologico non ` e eterologico**
+
+</details>
+<p>i paradossi dei linguaggi naturali esistono perchè: - l'uso meta-linguistico del linguaggio natruale - l'auto-applicazione di un concetto meta-linguistico a se stesso - l'uso della negazione per concludere qualcosa e la sua negazione</p>
+<p>per evitare i paradossi bisogna impedire l'uso meta-linguistico del linguaggio naturale (<strong>per questo si abbandona il linguaggio naturale per uno artificiale</strong>)</p>
+<h2 id="linguaggio-matematico"><span class="header-section-number">3.2</span> Linguaggio matematico</h2>
+<p>è che rientrino i paradossi</p>
+<p>nel 1900 la matematica viene ristrutturata dalle basi, per farlo ricostruiscono tutta la matematica partendo con la teoria degli insiemi.<br />
+la teoria degli insiemi parte dal presupposto che tutto è un insieme</p>
+<h3 id="paradosso-di-russell"><span class="header-section-number">3.2.1</span> Paradosso di Russell</h3>
+<p>Russel è il primo a trovare un paradosso alla base della teoria degli insiemi.<br />
+Essendo che tutto è un insieme si può utilizzare il simbolo di appartenenza tra oggetti.</p>
+<p><strong>Paradosso</strong></p>
+<blockquote>
+<p>se x è un insieme che contiene tutti gli insiemi che non contengono se stessi<br />
+<span class="math inline"><em>X</em> = {<em>Y</em>|<em>Y</em> ∉ <em>Y</em>}</span><br />
+<span class="math inline"><em>X</em> ∈ <em>X</em> sse <em>X</em> ∉ <em>X</em></span></p>
+</blockquote>
+<p>per ovviare al paradosso: - non è possibile formare liberamnete un insieme per una proprietà - ma è possibile selezionare elementi da un insieme esistente - la collezione di tutti gli insiemi non è un insieme</p>
+<p><a href="#teoria-assiomatiche-degli-insiemi">More</a></p>
+<h2 id="i-paradossi-in-informatica"><span class="header-section-number">3.3</span> I paradossi in informatica</h2>
+<p>nella programmazione ogni linguaggio può eseguire delle funzioni che possono prendere in input e dare in output altre funzioni</p>
+<p>supponiamo che le funzioni scrivibili in un linguaggio di prograzione dato un input, restituiscano un output in tempo finito</p>
+<p>Sia <code>f(g) = not (g(g))</code></p>
+<p>allora <code>f(f)= not (f(f))</code></p>
+<p>pertanto: - O f non è scrivibile in P è altamente inespressivo - Oppure f non è totale (diverge, cioè non mi da nessun output in un tempo finito)</p>
+<p><strong>Quindi le funzioni dei linguaggi di programmazione non sono funzioni matematiche</strong></p>
+<h1 id="teoria-degli-insiemi"><span class="header-section-number">4</span> Teoria degli Insiemi</h1>
+<p>punti informali: - <strong>tutto è un insieme</strong>: gli insiemi contengono insiemi - <strong>è il linguaggio macchina</strong> della matematica moderna, (tutto viene implementato come insiemi, es. numeri, figure geometriche) - <strong>è estremamente efficace nel farlo</strong>: si riesce a descrivere ogni cosa, ma è difficilmente rappresentabili - permette di <strong>introdurre e comprendere concetti come gli infiniti</strong> - si perdono gli aspetti computazionali (le funzioni definite come insiemi non si calcolano, le rappresentazioni di dati sono inefficienti )</p>
+<h2 id="teoria-naive"><span class="header-section-number">4.1</span> Teoria naive</h2>
+<blockquote>
+<p>Attenzione:è inconsistente in quando si può avere il paradosso di Russell</p>
+</blockquote>
+<ul>
+<li>posso formare insiemi in <strong>qualunque modo</strong></li>
+<li>gli insiemi <strong>non devono essere omogenei</strong></li>
+<li>operazione base <span class="math inline">∈</span></li>
+<li>le <strong>ripetizioni e l'ordine non contano</strong> <span class="math inline">{1, 2} è lo stesso insieme {2, 2, 1, 1}</span></li>
+</ul>
+<p>Come abbiamo visto il <a href="#paradosso-di-russell">paradosso di Russell</a> crea un inconsistenza logica nella teoria naif.<br />
+Per questo serve una teoria che rimuova l'<strong>assioma di comprensione</strong>(per ogni proprietà P si può creare un insieme <span class="math inline">{<em>x</em>|<em>P</em>(<em>x</em>)}</span>), e che controlli l'uso meta-linguistico</p>
+<blockquote>
+<p>Attenzione: quando si usano insiemi rappresentanti altri insiemi, non si possono utilizzare i diagrammi di venn</p>
+</blockquote>
+<h2 id="teoria-assiomatiche-degli-insiemi"><span class="header-section-number">4.2</span> Teoria assiomatiche degli insiemi</h2>
+<p>In una teoria assiomatica degli insiemi: - i concetti di <strong>insieme, appartenenza e uguaglianza</strong> non vengono definiti (gli insiemi sono <strong>enti primitivi</strong>) - usiamo assiomi per asserire l'esistenza di alcuni insiemi a partire da altri - ci sono numerose teorie insiemistiche che differiscono riguardo agli assiomi - Noi seguiamo la teoria Zermelo-Fraenkel è la meno controversa, ed è sufficiente per sviluppare la maggior parte della matematica - Zermelo Fraenkel non è mai stata dimostrata essere consistente (e non si è dimostrato che è dimostrabile che una teoria possa essere costistente)</p>
+<h3 id="assioma-di-estensionalità"><span class="header-section-number">4.2.1</span> Assioma di estensionalità</h3>
+<blockquote>
+<p>Due insiemi sono uguali sse hanno gli stessi elementi.</p>
+</blockquote>
+<p><span class="math inline">∀<em>X</em>, ∀<em>Y</em>, (<em>X</em> = <em>Y</em> ⇔ ∀<em>Z</em> (<em>Z</em> ∈ <em>X</em> ⇔ <em>Z</em> ∈ <em>Y</em>))</span></p>
+<p>per ogni insieme X e Y, X e Y sono uguali se e solo se per ogni Z appartiene a X e se e solo se Z appartiene a Y</p>
+<h3 id="definizione-di-essere-sottoinsieme"><span class="header-section-number">4.2.2</span> Definizione di essere sottoinsieme</h3>
+<blockquote>
+<p>X è sottoinsieme di Y se Y possiede tutti gli elementi di X</p>
+</blockquote>
+<p><span class="math inline"><em>X</em> ⊆ <em>Y</em>=<sup><em>d</em><em>e</em><em>f</em></sup> = ∀<em>Z</em>, (<em>X</em> ∈ <em>X</em> ⟹ <em>Z</em> ∈ <em>Y</em>)</span></p>
+<p>definisco che X è sottoinsieme di Y quando per ogni Z , Z appartiene a X implica che Z appartiene a Y</p>
+<h3 id="assioma-di-separazione"><span class="header-section-number">4.2.3</span> Assioma di separazione</h3>
+<blockquote>
+<p>Dato un insieme, possiamo formare il sottoinsieme dei suoi elementi che soddisfano una proprietà</p>
+</blockquote>
+<p><span class="math inline">∀<em>X</em>, ∃<em>Y</em>, ∀<em>Z</em>, (<em>Z</em> ∈ <em>Y</em> ⇔ <em>Z</em> ∈ <em>X</em> ∧ <em>P</em>(<em>Z</em>))</span></p>
+<p>per ogni X esiste un Y, tutti gli insiemi in Z sono elementi di Y se sono appartenenti a X e hanno la proprietà</p>
+<p>Abuso di notazione: <span class="math inline"><em>X</em> = {<em>Y</em> ∈ <em>U</em>|<em>Y</em> ∉ <em>Y</em>}</span></p>
+<blockquote>
+<p>Attenzione: per descrivere Y c'è un abuso di notazione <span class="math inline">{<em>Z</em> ∈ <em>X</em>|<em>P</em>(<em>Z</em>)}</span> (Z è un elemento)</p>
+</blockquote>
+<h3 id="assioma-dellinsieme-vuoto"><span class="header-section-number">4.2.4</span> Assioma dell’insieme vuoto</h3>
+<blockquote>
+<p>L’insieme X viene indicato come <span class="math inline">∅</span></p>
+</blockquote>
+<p><span class="math inline">∃<em>X</em>, ∀<em>Z</em>, <em>Z</em> ∉ <em>X</em></span></p>
+<h3 id="definizione-dellinsieme-vuoto"><span class="header-section-number">4.2.5</span> Definizione dell’insieme vuoto</h3>
+<blockquote>
+<p>L’assioma è ridondante. Sia Y un qualunque altro insieme di cui un assoma asserisce l’esistenza (vedi p.e. assioma dell’infinito)</p>
+</blockquote>
+<p><span class="math inline">∅ := {<em>X</em> ∈ <em>Y</em>|<em>f</em><em>a</em><em>l</em><em>s</em><em>e</em>}</span></p>
+<h3 id="definizione-di-intersezione-binaria"><span class="header-section-number">4.2.6</span> Definizione di intersezione binaria</h3>
+<p><span class="math inline"><em>A</em> ∩ <em>B</em> := ∀<em>Z</em>{<em>Z</em> ∈ <em>A</em>|<em>Z</em> ∈ <em>B</em>}</span></p>
+<p><strong>teorema</strong></p>
+<p><span class="math inline"><em>X</em> ∈ <em>A</em> ∩ <em>B</em> ⇔ <em>X</em> ∈ <em>A</em> ∧ <em>X</em> ∈ <em>B</em></span></p>
+<h3 id="definizione-di-intersezione"><span class="header-section-number">4.2.7</span> Definizione di intersezione</h3>
+<p>metto tutti gli insiemi da intersecare in F.</p>
+<p><span class="math inline">⋂<em>F</em> := {<em>X</em> ∈ <em>A</em>|∀<em>Y</em>(<em>Y</em> ∈ <em>F</em> ⟹ <em>X</em>/<em>R</em><em>i</em><em>g</em><em>h</em><em>t</em> ∈ <em>Y</em>)}, <em>A</em> ∈ <em>F</em></span></p>
+<h3 id="assiome-dellunione-binaria"><span class="header-section-number">4.2.8</span> Assiome dell'unione binaria</h3>
+<p><span class="math inline">∀<em>A</em>, ∀<em>B</em>, ∃<em>X</em>, ∀<em>Z</em>, (<em>Z</em> ∈ <em>X</em> ⇔ <em>Z</em> ∈ <em>A</em> ∨ <em>Z</em> ∈ <em>B</em>)</span></p>
+<h3 id="assioma-dellunione"><span class="header-section-number">4.2.9</span> Assioma dell'unione</h3>
+<p><span class="math inline">∀<em>F</em>∃<em>X</em>∀<em>Z</em>(<em>Z</em> ∈ <em>X</em> ⇔ ∃<em>Y</em>(<em>Y</em> ∈ <em>F</em> ∧ <em>Z</em> ∈ <em>Y</em>))</span></p>
+<h3 id="assioma-del-singoletto"><span class="header-section-number">4.2.10</span> 4.2.10 Assioma del singoletto</h3>
+<p><span class="math inline">∀<em>X</em>, ∃<em>Y</em>∀<em>Z</em>(<em>Z</em> ∈ <em>Y</em> ⇔ <em>Z</em> = <em>X</em>)</span></p>
+<p>l'insieme Y viene indicato come {X}</p>
+<blockquote>
+<p>grazie a questo insieme possiamo creare un infinità di insiemi, possiamo creare infiniti insiemi partendo da <span class="math inline">∅</span> divente <span class="math inline">{∅}</span> e combinato con l'unione si possono unire questi insiemi</p>
+</blockquote>
+<p><strong>(Abuso di) notazione</strong> Con la notazione <span class="math inline">{<em>A</em><sub>1</sub>, ..., <em>A</em><sub><em>n</em></sub>}</span> indicheremo l’insieme <span class="math inline">{<em>A</em><sub>1</sub>} ∪ ... ∪ {<em>A</em><sub><em>n</em></sub>}</span> che esiste in virtu degli assiomi del singoletto è dell’unione.</p>
+<p><span class="math inline"><em>X</em> ∈ {<em>A</em><sub>1</sub>, ..., <em>A</em><sub><em>n</em></sub>}</span> sse <span class="math inline"><em>X</em> = <em>A</em><sub>1</sub></span> oppure ... oppure <span class="math inline"><em>X</em> = <em>A</em><sub><em>n</em></sub></span> .</p>
+<h3 id="assioma-dellinfinito"><span class="header-section-number">4.2.11</span> Assioma dell’infinito</h3>
+<p>Esiste un insieme che contiene almeno tutti (gli encoding de)i numeri naturali.</p>
+<p><span class="math inline">∃<em>Y</em>(∅ ∈ <em>Y</em> ∧ ∀<em>N</em>(<em>N</em> ∈ <em>Y</em> ⟹ <em>N</em> ∪ {<em>N</em>} ∈ <em>Y</em>))</span></p>
+<p>Indichiamo temporaneamente con N tale insieme</p>
+<h3 id="teorema-esistenza-di-n"><span class="header-section-number">4.2.12</span> Teorema esistenza di <span class="math inline"><em>N</em></span></h3>
+<p>combinaimo altri assiomi con quello dell'infinito si arriva a dimostrare l'esistenza dell'insmieme N che contiene tutti e soli i numeri naturali.</p>
+<h3 id="assioma-dellinsieme-potenza"><span class="header-section-number">4.2.13</span> Assioma dell'insieme potenza</h3>
+<p>Esiste l'insieme dei sottoinsiemi di un inseme dato.</p>
+<p><span class="math inline">∀∃<em>Y</em>, ∀<em>Z</em>(<em>Z</em> ∈ <em>Y</em> ⇔ <em>Z</em> ⊆ <em>X</em></span></p>
+<p>per ogni insieme X esiste un Y tale per cui, ogni Z elemento di Y se e solo se Z è un sottoinsieme di X</p>
+<p>abuso di notazioni:<span class="math inline">2<sup><em>x</em></sup></span> oppure <span class="math inline"><em>P</em>(<em>x</em>)</span></p>
+<blockquote>
+<p>es<br />
+<span class="math inline">2<sup>{1, 2}</sup> = {∅, {1}, {2}, {1, 2}}</span></p>
+</blockquote>
+<h3 id="assioma-di-regolarita-non-da-studiare"><span class="header-section-number">4.2.14</span> Assioma di regolarita (non da studiare)</h3>
+<p>Ogni insieme non vuoto ha un elemento dal quale e disgiunto (senza elementi in comune ).Fra le conseguenze: nessun insieme contiene (ricorsivamente) se stesso e ha quindi senso cercare di misurare la taglia (chiamata cardinalita) di un insieme.</p>
+<p><span class="math inline"><em>A</em> = {∅, {∅}}</span></p>
+<p><span class="math inline">∅ ∈ <em>A</em></span> <span class="math inline">∅ ∪ <em>A</em> = ∅</span></p>
+<p>a e l'insime vouto soon disgiunti</p>
+<h3 id="assioma-di-rimpiazzamento"><span class="header-section-number">4.2.15</span> Assioma di rimpiazzamento</h3>
+<p>Intuitivamente: l’immagine di un insieme rispetto a una formula che descrive una funzione e ancora un insieme. Intuitivamente: se A e un insieme, quindi e abbastanza piccolo, e a ogni elemento ne associo un altro, in una relazione molti-a-uno, quello che ottengo come immagine e ancora piccolo.</p>
+<h2 id="costruzioni-dei-numeri-naturali"><span class="header-section-number">4.3</span> Costruzioni dei Numeri Naturali</h2>
+<p>Assumo di avere i numeri reali con la mia meta matematica e li codifico con i miei insiemi</p>
+<p><span class="math inline">⟦0⟧ := ∅</span><br />
+<span class="math inline">⟦<em>n</em> + 1⟧ := ⟦<em>n</em>⟧ ∪ {⟦<em>n</em>⟧}</span></p>
+<blockquote>
+<p>esempi <span class="math inline">⟦0⟧ = ∅</span> <span class="math inline">⟦1⟧ = {∅}</span> <span class="math inline">⟦2⟧ = {∅, {∅}}</span> <span class="math inline">⟦3⟧ = {∅, {∅} {∅, {∅}}}</span></p>
+</blockquote>
+<h1 id="dimostrazioni"><span class="header-section-number">5</span> Dimostrazioni</h1>
+<blockquote>
+<p><strong>Teorema</strong>: E’ una proposizione con la quale si vuole affermare che un enunciato sia vero. Solitamente si presenta nella forma A,B,C,D… -&gt; T, dove A,B,C,D sono le ipotesi e T la tesi.</p>
+</blockquote>
+<blockquote>
+<p>regole di introduzione: sono quelle da utilizzare se voglio lavorare sulla conclusione, servono per introdurre una dimostrazione</p>
+</blockquote>
+<blockquote>
+<p>regole di eliminazione: servono per lavorare sull'ipotesi, la utilizziamo quando noi sappiamo già qualcosa</p>
+</blockquote>
+<blockquote>
+<p>postulato(o assioma):sono delle ipotesi che diamo per vere</p>
+</blockquote>
+<blockquote>
+<p>assioma: è un ipotesi che diamo per vera da quel momento in avanti</p>
+</blockquote>
+<blockquote>
+<p>enunciato di un teorema e ci o che vogliamo dimostrare. Si compone di un insieme di ipotesi e di una conclusione</p>
+</blockquote>
+<p>ogni passaggio va a lavorare su: - le ipotesi - la conclusione: che è quello che vogliamo andare a dimostrare in un determinato momento</p>
+<h2 id="per-ogni-forall"><span class="header-section-number">5.1</span> Per Ogni <span class="math inline">∀</span></h2>
+<p><strong>introduzione</strong>:Per dimostrare <span class="math inline">∀<em>x</em><em>P</em>(<em>x</em>)</span> (per ogni x vale P(x))</p>
+<blockquote>
+<p>“sia x (un insieme) fissato; . . .”<br />
+(i “. . .” sono una prova di P(x))</p>
+</blockquote>
+<p><strong>eliminazione</strong>:Per ogni ipotesi o risultato intermedio <span class="math inline">∀<em>x</em><em>P</em>(<em>x</em>)</span> potete concludere che P valga ciò che volete</p>
+<h2 id="implicazione-implies"><span class="header-section-number">5.2</span> Implicazione <span class="math inline">⟹</span></h2>
+<p><strong>introduzione</strong>: Per dimostrare <span class="math inline"><em>P</em> ⟹ <em>Q</em></span></p>
+<blockquote>
+<p>“Assumo P (H). . . .” (“H”) e il nome dell’ipotesi; ` i “. . .” sono una prova di Q)</p>
+</blockquote>
+<p><strong>eliminazione</strong>: Da un’ipotesi o un risultato intermedio <span class="math inline"><em>P</em> ⟹ <em>Q</em></span> e da un’ipotesi o un risultato intermedio P potete concludere che Q vale.</p>
+<p><strong>eliminazione</strong> (variante): Da un’ipotesi o un risultato intermedio <span class="math inline"><em>P</em> ⟹ <em>Q</em></span> di nome H , se volete concludere Q, potete procedere dicendo "per H , per dimostrare Q mi posso ridurre a dimostrare P"</p>
+<h2 id="coimplica-iff"><span class="header-section-number">5.3</span> Coimplica <span class="math inline">⇔</span></h2>
+<p><strong>introduzione</strong>: Per dimostrare <span class="math inline"><em>P</em> ⇔ <em>Q</em></span> allora devo dimostrare <span class="math inline"><em>P</em> ⟹ <em>Q</em></span> e <span class="math inline"><em>Q</em> ⟹ <em>Q</em></span></p>
+<p><strong>eliminazione</strong>:L'ipotesi <span class="math inline"><em>P</em> ⇔ <em>Q</em></span> può essere usata sia come ipotesi <span class="math inline"><em>P</em> ⟹ <em>Q</em></span> che come <span class="math inline"><em>Q</em> ⟹ <em>P</em></span></p>
+<h2 id="espansione-definizioni"><span class="header-section-number">5.4</span> Espansione Definizioni</h2>
+<blockquote>
+<p><strong>P ovvero Q</strong>: serve per espandere P ottenendo la frase Q</p>
+</blockquote>
+<h2 id="regola-dellassurdo"><span class="header-section-number">5.5</span> Regola dell'assurdo</h2>
+<p><a href="https://www.mathone.it/dimostrazione-per-assurdo/">dimostrazione per assurdo</a></p>
+<p>Se attraverso le altre ipotesi rendono P falso, <span class="math inline"><em>P</em> ⟹ <em>a</em><em>s</em><em>s</em><em>u</em><em>r</em><em>d</em><em>o</em></span></p>
+<h2 id="congiunzione"><span class="header-section-number">5.6</span> Congiunzione</h2>
+<p><strong>introduzione</strong>: per dimostrare <span class="math inline"><em>P</em> ∧ <em>Q</em></span>: P e Q , si dimostrano sia P che Q</p>
+<p><strong>eliminazione</strong>:per eliminazione, può essere usato sia P che Q. in alternativa invece di concludere o assumere <span class="math inline"><em>P</em> ∧ <em>Q</em></span> si può direttamente concludere o assumere <span class="math inline"><em>P</em>(<em>H</em><sub>1</sub>)</span> e <span class="math inline"><em>Q</em>(<em>H</em><sub>2</sub>)</span>.</p>
+<h2 id="disginuzione"><span class="header-section-number">5.7</span> Disginuzione</h2>
+<p><strong>introduzione</strong>: per dimostrare <span class="math inline"><em>P</em> ∨ <em>Q</em></span> basta dimostrare P oppure Q dichiarandolo</p>
+<blockquote>
+<p>"dimostro P" oppure "dimostro Q"</p>
+</blockquote>
+<p><strong>eliminazione</strong>:Data un’ipotesi o un risultato intermedio <span class="math inline"><em>P</em> ∨ <em>Q</em></span>, si può proseguire nella dimostrazione per casi, una volta assumendo che P valga e una volta che Q valga:</p>
+<blockquote>
+<p>“procedo per casi:<br />
+caso in cui valga P (H ): . . .<br />
+caso in cui valga Q (H ): . . . ”</p>
+</blockquote>
+<h2 id="risultati-intermedi"><span class="header-section-number">5.8</span> Risultati intermedi</h2>
+<p>Potete anche utilizzare una <strong>regola di introduzione</strong> per dimostrare un <strong>nuovo risultato intermedio</strong>, diverso dalla conclusione corrente, a cui date un nome per utilizzarlo in seguito, a patto che abbiate già a disposizione le <strong>premesse</strong> della regola</p>
+<h2 id="esiste"><span class="header-section-number">5.9</span> Esiste</h2>
+<p><strong>introduzione</strong>: Per dimostrare <span class="math inline">∃<em>x</em>.<em>P</em>(<em>x</em>)</span> (esiste un x per cui vale P(x)):</p>
+<blockquote>
+<p>“scelgo E e dimostro P(E) ; . . .”<br />
+(i “. . .” è una prova di P(E)) E puo essere un’ ` espressione qualsiasi (es. B <span class="math inline">∩</span> C).</p>
+</blockquote>
+<p><strong>eliminazione</strong>: Da un’ipotesi o un risultato intermedio <span class="math inline">∃<em>x</em>.<em>P</em>(<em>x</em>)</span> potete procedere nella prova dicendo</p>
+<blockquote>
+<p>“sia x t.c. P(x) (H)” x deve essere una variabile non in uso in nessuna ipotesi o nella conclusione</p>
+</blockquote>
+<h2 id="abbreviazioni"><span class="header-section-number">5.10</span> Abbreviazioni</h2>
+<ul>
+<li><p><strong>per ogni tale che</strong>:</p>
+<blockquote>
+<p>“sia x tale che P(x). . . .” abbrevia “sia x (un insieme) fissato; assumo P(x); . . . ” per dimostrare <span class="math inline">∀<em>x</em><em>P</em>(<em>x</em>) ⟹ <em>Q</em>(<em>x</em>)</span></p>
+</blockquote></li>
+<li><p><strong>Da <span class="math inline"><em>H</em><sub>1</sub>, ..., <em>H</em><sub><em>n</em></sub></span></strong>:</p></li>
+<li><p><strong>Quindi</strong>:</p></li>
+</ul>
+<h1 id="relazioni-funzioni-..."><span class="header-section-number">6</span> Relazioni, Funzioni ...</h1>
+<h2 id="coppie-ordinate"><span class="header-section-number">6.1</span> Coppie ordinate</h2>
+<blockquote>
+<p>negli insiemi l'ordine non conta e nemmeno la numerosità degli elementi</p>
+</blockquote>
+<p><strong>coppie ordinate</strong>: Una coppia ordinata, invece, e formata da due componenti di cui uno e identificato come primo e l’altro come secondo. Due coppie sono uguali sse lo sono rispettivamente il primo e il secondo elemento</p>
+<p><strong>Una coppia non è l'insieme dei suoi elementi e non deve essere pensata come contenete i suoi elementi</strong> Una coppia ordinata <span class="math inline">⟨1, 2⟩</span> si può rappresentare come un insieme scrivendo <span class="math inline">{<em>X</em>, {<em>X</em>, <em>Y</em>}}</span></p>
+<h3 id="teorema-di-caratterizzazione-delle-coppie"><span class="header-section-number">6.1.1</span> teorema di caratterizzazione delle coppie</h3>
+<p><span class="math inline">⟨<em>X</em>, <em>Y</em>⟩ = ⟨<em>X</em><sup>1</sup><em>Y</em><sup>1</sup>⟩ ⇔ <em>X</em> = <em>X</em><sup>1</sup> ∧ <em>Y</em> = <em>Y</em><sup>1</sup></span></p>
+<p><strong>crollario</strong>:<span class="math inline">⟨<em>X</em>, <em>Y</em>⟩ ≠ ⟨<em>Y</em>, <em>X</em>⟩a meno che<em>X</em> = <em>Y</em></span></p>
+<h2 id="teorema-del-prodotto-cartesiano-tra-gli-insiemi"><span class="header-section-number">6.2</span> Teorema del prodotto cartesiano tra gli insiemi</h2>
+<p>a partire da due insiemi A e B possiamo creare il <strong>prodotto cartesiano</strong> che viene indicato con l'abuso di notazione AxB.</p>
+<p><span class="math inline">∀<em>A</em>∀<em>B</em>, ∃<em>C</em>, ∀<em>Z</em>, (<em>Z</em> ∈ <em>C</em> ⇔ ∃<em>a</em>, ∃<em>b</em>, (<em>a</em> ∈ <em>A</em> ∧ <em>b</em> ∈ <em>B</em> ∧ <em>Z</em> = ⟨<em>a</em>, <em>b</em>⟩))</span></p>
+<p><strong>es</strong>: <span class="math inline">{<em>a</em>, <em>b</em>} × {1, 2} = {⟨<em>a</em>, 1⟩, ⟨<em>a</em>, 2⟩, ⟨<em>b</em>, 1⟩, ⟨<em>b</em>, 2⟩}</span></p>
+<h2 id="relazione"><span class="header-section-number">6.3</span> Relazione</h2>
+<p>Una <strong>relazione</strong> fra A e B è un qualunque sottoinsieme di <span class="math inline"><em>A</em> × <em>B</em></span>.</p>
+<p><strong>Elementi in relazione</strong><br />
+Sia <span class="math inline"><em>R</em></span> una relazione. Scriviamo <span class="math inline"><em>a</em><em>R</em><em>b</em> sse ⟨<em>a</em>, <em>b</em>⟩ ∈ <em>R</em></span></p>
+<h3 id="teorema-relazioni-verso-insiemi-vuoiti"><span class="header-section-number">6.3.1</span> Teorema: relazioni verso insiemi vuoiti</h3>
+<p>Se <span class="math inline"><em>R</em> ⊂ <em>A</em> × ∅</span> oppure <span class="math inline"><em>R</em> ⊂ ∅ × <em>A</em></span> allora <span class="math inline"><em>R</em></span></p>
+<p>Dimostrazione: non posso formare coppie prendo uno dei due elementi dall'insieme vuoti, perché tale insieme è vuoto.</p>
+<details>
+  <summary>
+  esempio 
+  </summary>
+
+la relazione $\le$ sull'insieme numerico $\{0,1,2\}$ è definita come segue:  
+$\le {:=} \{\langle 0,0 \rangle ,\langle 0,1 \rangle ,\langle 0,2 \rangle ,\langle 1,1 \rangle ,\langle 1,2 \rangle,\langle 2,2 \rangle  \}$ e $0\le 2$ è una notazione per $\langle 0,2\rangle \in \le$
+
+</details>
+<h2 id="dimostrazione-di-funzioni"><span class="header-section-number">6.4</span> Dimostrazione Di Funzioni</h2>
+<p>Una <strong>funzione di dominio</strong> A e codominio B e una qualunque relazione <span class="math inline"><em>f</em> ⊂ <em>A</em> × <em>B</em></span> tale che: <span class="math inline">∀<em>X</em>, (<em>X</em> ∈ <em>A</em> ⟹ ∃!<em>Y</em>, <em>X</em><em>f</em><em>Y</em>)</span></p>
+<p>per ogni elemento del dominio c'è un <strong>unico</strong> elemento del codominio</p>
+<p><strong>Abuso di notazione</strong><br />
+Sia f una funzione. Scriviamo <span class="math inline"><em>y</em> = <em>f</em>(<em>x</em>)</span> per dire <span class="math inline"><em>x</em><em>f</em><em>y</em></span>,ovvero <span class="math inline">⟨<em>x</em>, <em>y</em>⟩ ∈ <em>f</em></span></p>
+<h3 id="teorema-esistenza-dello-spazio-di-funzioni-come-insieme"><span class="header-section-number">6.4.1</span> Teorema esistenza dello spazio di funzioni come insieme</h3>
+<p><span class="math inline">∀<em>A</em>, ∀<em>B</em>, ∃<em>C</em>, ∀<em>f</em>, (<em>f</em> ∈ <em>C</em> ⇔ <em>f</em> è una funzione di dominio A e codominio B)</span></p>
+<p>Abuso di notazione <span class="math inline"><em>B</em><sup><em>A</em></sup></span> (spazionio delle funzioni da A a B)</p>
+<details>
+  <summary>
+  es  
+  </summary>
+
+$\{1,2\}^{\{a,b\}} = \{\{\langle a,1\rangle,\langle b,1\rangle \},\{\langle a,1\rangle,\langle b,2\rangle \},\{\langle a,2\rangle,\langle b,1\rangle \},\{\langle a,2\rangle,\langle b,2\rangle \}$
+
+</details>
+<p><strong>Spazio di funzioni verso insiemi vuoti</strong></p>
+<p><span class="math inline"><em>B</em><sup>∅</sup> = ∅</span><br />
+<span class="math inline">∅<sup><em>A</em></sup> = ∅<em>s</em><em>e</em><em>A</em> ≠ ∅</span></p>
+<h2 id="iniettiva-surrettiva-biettività"><span class="header-section-number">6.5</span> iniettiva surrettiva biettività</h2>
+<p><span class="math inline"><em>f</em> ∈ <em>B</em><sup><em>A</em></sup></span></p>
+<ul>
+<li>iniettiva:quando <span class="math inline">∀<em>x</em>, <em>y</em> ∈ <em>A</em>(<em>f</em>(<em>x</em>) = <em>f</em>(<em>y</em>) ⟹ <em>x</em> = <em>y</em>)</span></li>
+<li>surrettiva:quando <span class="math inline">∀<em>y</em> ∈ <em>B</em>∃<em>x</em> ∈ <em>A</em>, <em>f</em>(<em>x</em>) = <em>y</em></span></li>
+<li>biettiva: quando è sia iniettiva che surrettiva</li>
+</ul>
+<h2 id="abbreviazioni-1"><span class="header-section-number">6.6</span> Abbreviazioni</h2>
+<ol>
+<li><span class="math inline">∀<em>X</em> ∈ <em>A</em>, <em>P</em>(<em>X</em>)</span> indica <span class="math inline">∀<em>X</em>(<em>X</em> ∈ <em>A</em> ⟹ <em>P</em>(<em>X</em>))</span></li>
+<li><span class="math inline">∃<em>X</em> ∈ <em>A</em>, <em>P</em>(<em>X</em>)</span> indica <span class="math inline">∃<em>X</em>(<em>X</em> ∈ <em>A</em> ∧ <em>P</em>(<em>X</em>))</span></li>
+<li><span class="math inline">∀<em>X</em>, <em>Y</em> ∈ <em>A</em>, <em>P</em>(<em>X</em>, <em>Y</em>)</span> indica <span class="math inline">∀<em>X</em><em>i</em><em>n</em><em>A</em>, ∀<em>Y</em> ∈ <em>A</em>, <em>P</em>(<em>X</em>, <em>Y</em>)</span></li>
+<li><span class="math inline">∃<em>X</em>, <em>Y</em> ∈ <em>A</em>, <em>P</em>(<em>X</em>, <em>Y</em>)</span> indica <span class="math inline">∃<em>X</em> ∈ <em>A</em>, ∃<em>Y</em> ∈ <em>A</em>, <em>P</em>(<em>X</em>, <em>Y</em>)</span></li>
+</ol>
+<h2 id="proprietà-delle-relazioni"><span class="header-section-number">6.7</span> Proprietà delle relazioni</h2>
+<p>Sia $\mathit{R} \subset A \times A $.La relazione <span class="math inline"><em>R</em></span> gode della proprietà - riflessiva se <span class="math inline">∀<em>X</em> ∈ <em>A</em>, <em>X</em><em>R</em><em>X</em></span> - simmetrica se <span class="math inline">∀<em>X</em>, <em>Y</em> ∈ <em>A</em>, (<em>X</em><em>R</em><em>Y</em> ⇐ <em>Y</em><em>R</em><em>X</em>)</span> - transitiva se <span class="math inline">∀<em>X</em>, <em>Y</em>, <em>Z</em> ∈ <em>A</em>, (<em>X</em><em>R</em><em>Y</em> ∧ <em>Y</em><em>R</em><em>Z</em> ⇐ <em>X</em><em>R</em><em>Z</em>)</span></p>
+<p><strong>es</strong>: - = : gode di tutte le proprietà</p>
+<p>TODO: aggiungere gli es</p>
+<h3 id="relazioni-di-ordinamento-strette"><span class="header-section-number">6.7.1</span> Relazioni di ordinamento strette</h3>
+<p>Una relazione <span class="math inline"><em>R</em> ⊂ <em>A</em> * <em>A</em></span> è di ordine stretto sse <span class="math inline"><em>R</em></span> è trenaisitva e non riflessiva</p>
+<h3 id="relazioni-di-ordinamento-lasche"><span class="header-section-number">6.7.2</span> Relazioni di ordinamento lasche</h3>
+<p>Una relazione <span class="math inline"><em>R</em> ⊂ <em>A</em> × <em>A</em></span> è di ordine lasco sse <span class="math inline"><em>R</em></span> è trenaisitva e riflessiva</p>
+<h3 id="relazioni-di-equivalenza-equiv"><span class="header-section-number">6.7.3</span> Relazioni di equivalenza <span class="math inline">≡</span></h3>
+<p>Una relazione <span class="math inline"><em>R</em> ⊂ <em>A</em> × <em>A</em></span> è equivalente sse <span class="math inline"><em>R</em></span> è riflessiva, transitiva e simmetrica</p>
+<p>l'<strong>equivalenza è diversa dall'uguaglianza</strong> perché nell'uguaglianza viene usata per confrontare oggetti meno di dettagli non ritenuti rilevanti per quello che si deve fare</p>
+<h3 id="classi-di-equivalenza"><span class="header-section-number">6.7.4</span> Classi di equivalenza</h3>
+<p>TODO: add</p>
+<h3 id="insieme-quoziente"><span class="header-section-number">6.7.5</span> Insieme quoziente</h3>
+<p>sia <span class="math inline"> ≡  ⊆ <em>A</em> * <em>A</em></span> una relazione di equivalensa.L'<strong>insieme quoziente</strong> di A ripetto a <span class="math inline">≡</span> è definito come: <span class="math inline"><em>A</em><sub>/≡</sub> := {[<em>x</em>]<sub>≡</sub>|<em>x</em> ∈ <em>A</em>}</span></p>
+<h3 id="costruzione-di-z"><span class="header-section-number">6.7.6</span> Costruzione di Z</h3>
+<h3 id="costruzione-dei-razionali"><span class="header-section-number">6.7.7</span> Costruzione dei razionali</h3>
+<p>Q=<span class="math inline">ℤ × ℤ<sup>0</sup></span> dove <span class="math inline">$\mathbb{Z}^0=\mathbb{Z}\/{0}$</span></p>
+<p>Costruisco una relazione di equivalenza tra le coppie in Z come: <span class="math inline">⟨<em>a</em><sub>1</sub>, <em>b</em><sub>1</sub>⟩ ≡ ⟨<em>a</em><sub>2</sub>, <em>b</em><sub>2</sub>⟩ ≔ <em>a</em><sub>1</sub> × <em>b</em><sub>2</sub> = <em>b</em><sub>1</sub> × <em>a</em><sub>2</sub></span></p>
+<p>$\mathbb{Q}{:=} <span class="math inline">$Q_{\/\equiv} = \{...,[\langle 2,3\rangle],...,[\langle 4,2\rangle],...\}$</span></p>
+<p>la classe di equivalenza <span class="math inline">[⟨2, 3⟩] = ⟨2, 3⟩, ⟨4, 6⟩, ...</span></p>
+<h2 id="cardinatlità"><span class="header-section-number">6.8</span> Cardinatlità</h2>
+<p>Avere la stessa cardinalità Due insiemi A, B hanno la stessa cardinalità sse esiste una biiezione fra A e B. Avere la stessa cardinalita è una “relazione di equivalenza”, ma ` sulla classe di tutti gli insiemi.</p>
+<h3 id="teorema-esistenza-dei-numeri-cardinali-come-insiemi"><span class="header-section-number">6.8.1</span> Teorema: esistenza dei numeri cardinali come insiemi</h3>
+<p>Si possono costruire i numeri cardinali senza utilizzare le classi di equivalenza, ma lavorando solo con gli insiemi. quindi ogni numero cardinale viene ottenuto come un insime.</p>
+<h2 id="insiemi-infiniti"><span class="header-section-number">6.9</span> Insiemi infiniti</h2>
+<p>Un insieme si dice <strong>finito</strong> quando <strong>non è infinito</strong>.</p>
+<details>
+  <summary>
+osservazione del finito  
+  </summary>
+
+intuitivamente sappiamo che un insieme con 3 elementi e finito. `
+Immaginate un albergo con 3 stanze singole tutte occupate.
+Arriva un nuovo cliente. Puo l’albergatore con una qualche
+manovra accomodare tutti i clienti nell’hotel rispettando il fatto
+che una singola puo essere occupata da un solo cliente?
+</details>
+<details>
+  <summary>
+Infinito con l  Metafora dell'albego di Hilbert
+  </summary>
+
+Intuitivamente sappiamo che l’insieme dei numeri naturali e infinito. `
+Immaginate un albergo con una stanza singola per ogni numero
+naturale, tutte occupate. Arriva un nuovo cliente. Puo l’albergatore `
+con una qualche manovra accomodare tutti i clienti nell’hotel
+rispettando il fatto che una singola puo essere occupata da un solo `
+cliente?
+</details>
+<p>Un insieme A si dice <strong>infinito</strong> quando è in biderezione con un suo sottoinsieme proprio <span class="math inline"><em>B</em></span> i.e <span class="math inline"><em>B</em> ⊊  e |<em>A</em>| = |<em>B</em>|</span></p>
+<p>TODO: add birezione</p>
+<h3 id="le-su-numeri-cardinali"><span class="header-section-number">6.9.1</span> <span class="math inline">≤</span> su numeri cardinali</h3>
+<p>TODO: aggiungere</p>
+<h1 id="sintassi"><span class="header-section-number">7</span> Sintassi</h1>
+<p>ci serve per definire il linguaggio artificiale</p>
+<h2 id="definizione"><span class="header-section-number">7.1</span> Definizione</h2>
+<ul>
+<li><strong>sintassi</strong>: è la descrizione dell'insieme di tutte le connotazioni alle quali associamo una denotazione</li>
+<li><strong>alfabeto</strong>: è un insieme non vuoto di simbolo</li>
+<li><strong>stringa</strong> su un alfabeto è una qualunque sequenza finita anche vuota, di simboli dell'alfabeto</li>
+<li><strong>linguaggio</strong> su un alfabeto è un insieme di stringhe su un alfabeto</li>
+<li><strong>grammatica</strong> è un qualunque formalismo (inieme di regole) che definisce un linguaggio</li>
+</ul>
+<h2 id="backus-naur-form-bnf"><span class="header-section-number">7.2</span> Backus-Naur Form (BNF)</h2>
+<p><strong>BNF</strong> è una notazione per descrivere le <strong>grammatiche</strong>; non tutti i linguaggi sono descrivibili tramite BNF .</p>
+<p>Una BNF è una quadrupla (T,NT,X,P): - T: è un alfabeto ovvero un insieme non vuoto di simboli detti <strong>temrinali</strong> - NT è un insieme non vuoto di simboli detti <strong>non terminali</strong> distinti da quelli di T - <span class="math inline"><em>X</em> ∈ <em>N</em><em>T</em></span> è il simobolo terminale non iniziale - P è un insieme di coppie formate da: - un simbolo non terminale - un insieme di stringe di simboli terminali e non terminali (es (X,{<span class="math inline"><em>w</em><sub>1</sub>, ...<em>w</em><sub>2</sub></span>}) si rappresenta <span class="math inline"><em>X</em> :  := <em>w</em><sub>1</sub>|....|<em>w</em><sub><em>n</em></sub></span> (che si legge X è <span class="math inline"><em>w</em><sub>1</sub></span> oppure ... <span class="math inline"><em>w</em><sub><em>n</em></sub></span></p>
+<details>
+<summary>
+Esempio:
+</summary>
+ ({0, 1}, {X, Y}, X, {X ::= 0 | 0Y, Y ::= 1X})
+</details>
+<p>Di solito di una BNF si indicano solamente le produzioni P: - i <strong>simboli non terminali</strong> sono allora tutti quelli con cui iniziano le produzioni - i <strong>simboli terminali </strong>sono tutti i simboli delle produzioni esclusi i non terminali - il <strong>simbolo iniziale </strong>è il simbolo con cui inizia la prima produzione</p>
+<details>
+<summary>
+esempio
+</summary>
+
+({0,1},{X ,Y },X ,{X ::= 0 |0Y , Y ::= 1X }):  
+X ::= 0 |0Y  
+Y ::= 1X  
+Non terminali: {X ,Y }; Simbolo iniziale: X ; Terminali: {0,1}.
+</details>
+<p><strong>Un BNF si definisce:</strong> La stringa <span class="math inline"><em>ω</em></span> di soli terminali appartiene al linguaggio sse ottengo <span class="math inline"><em>ω</em></span> a partire da <strong>X rimpiazzando ripetutamente ciascun non terminale</strong> con una delle stringhe alternative a lui associate in una produzione.</p>
+<p>Una <strong>grammatica è ambigua</strong> se si mostra che due modi diversi che una parola w appartiene al linguaggio.</p>
+<details>
+<summary>
+Esempio: 
+</summary>
+
+$F ::= x | y| F+F | F\times F$
+
+$x + y\times x$ la posso ottenere in due modi diversi 
+</details>
+<h3 id="precedenze"><span class="header-section-number">7.2.1</span> Precedenze</h3>
+<p>per non rendere le nostre grammatiche non ambigue, usiamo delle estenzioni nell BNF: 1. fissiamo un ordinae di precedenza fra operatori distinti: <span class="math inline"> ×  &gt; +</span> significa che <span class="math inline"><em>x</em> + <em>y</em> × <em>x</em></span> si legge <span class="math inline"><em>x</em> + (<em>y</em> × <em>x</em>)</span> e non <span class="math inline">(<em>x</em> + <em>y</em>) × <em>x</em></span> 2. fissiamo un' associatività perogni perazione 3. introduciamo l'uso delle parentesi</p>
+<p>Consideriamo una BNF non ambigua.</p>
+<p>Una stringa appartiene al linguaggio della BNF se è generata in modo unico.</p>
+<p>Ovvero a ogni stringa del linguaggio resta naturale associa una struttura ricordiva.</p>
+<p>L’AST ha un nodo per ogni espansione di simbolo. La radice corrisponde al simbolo iniziale e le foglie alle espansioni fatte con solo simboli terminali. I nodi figli di un nodo corrispondono ai non terminali contenuti nell’espansione del nodo padre</p>
+<h1 id="pseudo-linguaggio-funzinale-puro-non-tipato"><span class="header-section-number">8</span> Pseudo linguaggio funzinale puro non tipato</h1>
+<p>Sintassi della definizini di <strong>funzini unarie</strong>: <span class="math inline"><em>f</em>(<em>w</em><sub>1</sub>) = ....<em>c</em><em>o</em><em>r</em><em>p</em><em>o</em><sub>1</sub>...</span><br />
+<span class="math inline">...</span><br />
+<span class="math inline"><em>f</em>(<em>w</em><sub><em>n</em></sub>) = ....<em>c</em><em>o</em><em>r</em><em>p</em><em>o</em><sub><em>n</em></sub>...</span></p>
+<ul>
+<li><span class="math inline"><em>f</em></span> è il nome della funzione che stiamo definiendo</li>
+<li><span class="math inline"><em>w</em><sub><em>i</em></sub></span> è una stringa sull’alfabeto formato da simboli terminali (costanti, costruttori) e da parametri formali (variabili)</li>
+<li><span class="math inline"><em>c</em><em>o</em><em>r</em><em>p</em><em>o</em><sub><em>i</em></sub></span> e un’espressione in pseudo-codice che puo utilizzare
+<ul>
+<li>parametri formali dell’i-esimo caso e tutte le costanti</li>
+<li>espressioni if-then-else (sintassi C: . . .? . . . : . . .)</li>
+<li>chiamate di funzione della forma g(w) dove g e la funzione da chiamare e w e una stringa sull’alfabeto formato da simboli terminali e parametri formali di f</li>
+</ul></li>
+</ul>
+<p>La funzione g(w) può essere: - tutte quelle ovviamente implementabili e non interessanti ai fini dell’esercizio (operatori +, =,...) - tutte quelle definite precedentemente nell’esercizio - la f puo invocare la stessa f (chiamata ricorsiva); in tal caso la f si dice funzione ricorsiva</p>
+<p>Sia <span class="math inline"><em>p</em></span> una strina di terminali e <span class="math inline"><em>ω</em></span> una stringa di terminali e non terminali (variabili).</p>
+<p>TODO:finisci slide 18/19</p>
+<details>
+
+<summary>
+es
+</summary>
+
+**es**
+
+- $\{\langle\text{,",",}\rangle\}$ costruttori di coppie
+- $\{::\}$ costruttore che separa la testa e la coda
+- $\{[]\}$ rappresenta la lista vuota
+- $\perp$ errore 
+
+TODO: compleatre
+</details>
+<h2 id="turing-completezza"><span class="header-section-number">8.1</span> Turing-completezza</h2>
+<p>Se non ci restringessimo alla ricorsione strutturale (vedi dopo), qualunque programma esprimibile in un qualunque linguaggio di programmazione sarebbe esprimibile in questo pseudo-codice!</p>
+<h2 id="ricorsione-strutturale"><span class="header-section-number">8.2</span> Ricorsione Strutturale</h2>
+<p>Le <strong>BNF</strong> imprimono alle stringhe una <strong>struttura ricorsiva</strong>; In una struttura ricorsiva, un elemento o è atomico, o è composto a partire da parti più piccole con la stessa struttura; quindi: - nei casi <strong>atomici</strong> il problema è semplice e si risove direttamente - nei casi <strong>composti</strong>, si risolve prima il problema sulle componeti, ottenute le risposte si sintetizza larisposte, si sintetizza la risposta per il caso composto senza osservare più componenti <span class="math inline">⟹</span> uniformità della soluzione</p>
+<p>Una funzione <span class="math inline"><em>f</em>(<em>ω</em>)</span> dove <span class="math inline"><em>ω</em></span> è una stringa (formula) è definita per ricorsione strutturale sse: 1. <span class="math inline"><em>f</em></span> considera tutte le possibili produzioni che definiscono <span class="math inline"><em>ω</em></span> una e una volta sola 2. per ogni produzione f si richiama ricorsivamente solamente sulle sottoformule immediate di <span class="math inline"><em>ω</em></span></p>
+<h2 id="induzione-strutturale"><span class="header-section-number">8.3</span> Induzione Strutturale</h2>
+<p>Sia P una proprietà che vogliamo dimostrare valere su tutte le stringhe <span class="math inline"><em>ω</em></span> di linguaggio generato da una BFN. La dimostraizone può essere data in questo modo: 1. Una sotto-dimostrazione per ogni produzione che genra <span class="math inline"><em>ω</em></span> 2. In ogni sotto-dimostrazione possiamo assumere che P già valga su tutte le sotto-formule immediate di <span class="math inline"><em>ω</em></span></p>
+<h1 id="logica-1"><span class="header-section-number">9</span> 08 Logica</h1>
+<h2 id="funzioni-matematiche-e-informatiche"><span class="header-section-number">9.1</span> Funzioni Matematiche e Informatiche</h2>
+<p><strong>Matematica</strong>: l'operazine <span class="math inline">+</span> è una funzione, qundi un sottonsineme del prodotto cartesiano.(es <span class="math inline"> +  = {⟨⟨0, 0⟩ 0⟩, ⟨⟨3, 7⟩, 10⟩...}</span>)</p>
+<p><strong>Informatica</strong> viene definita come una procedura di calcolo, partendo dai i numeri in base uno <code>N = O | S R</code>, possiamo definiral in 4 modi.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="dt">O</span> <span class="ot">`+ m =m </span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="ot">S n `</span><span class="op">+</span> m <span class="ot">=</span><span class="dt">S</span> (n <span class="ot">`+ m)</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="ot">-- possiamo scriverla con la ricorsione sul secondo membro</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="ot">n +&#39; O =n</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="ot">n +&#39; S n  =S (n +&#39; m)</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="ot">-- un altro modo  è tenere un accomulatore</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="ot">O ``+ m=m</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="ot">S n ``+ m = n ``+ S m</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="ot">-- l&#39;opposto dell&#39;ultima</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="ot">n +`` O = n</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="ot">n +`` S n = S n ``+ m</span></span></code></pre></div>
+<p>Essendo che in matematica tutte le funzioni di somma sono uguali, ci chiediamo se anche queste lo siano. Lo risultato è lo stesso ma calcola in modo diverso quindi non sono la stessa funzione.</p>
+<p>Per esmpio</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">-- 1000 + 2 -&gt; 1002</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="co">-- utilizzando la prima funzione abbiamo</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="co">-- 1000 `+ 2 -&gt; S(999`+2)-&gt; S(S(998`+2)) -&gt; .... -&gt; S(S( .... `+ 2)) -&gt;1002</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a></span>
+<span id="cb2-6"><a href="#cb2-6"></a><span class="co">-- utilizzando la seconda invece</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a></span>
+<span id="cb2-8"><a href="#cb2-8"></a><span class="co">-- 1000 +` 2 -&gt; S(1000+&#39;1)-&gt; S(S(998+`0)) -&gt;1002</span></span></code></pre></div>
+<p>queste funzioni differiescono su quale input calcolano e ne deriva che hanno un tempo d'esecuzione diverso.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb3-1"><a href="#cb3-1"></a><span class="co">-- utilizzando la terza</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="co">-- 1000 ``+ 2 -&gt; 999 ``+ S 2 -&gt; 998 ``+ S (S 2) -&gt; ... -&gt; 0 ``+ 1002 -&gt; 1002</span></span></code></pre></div>
+<blockquote>
+<p>Lo <strong>Stack</strong> è quello dove vengono allocate le variabili locali e le chiamate di funzione, mentre la <strong>Heap</strong> alloca tutti i dati di lunghezza dinamnica.</p>
+</blockquote>
+<p>la prima funzione utilizza le cella dello stack mentre la seconda della heap.</p>
+<p><strong>Queste funzioni sono uguali, e sono uguali a quella matematica?</strong></p>
+<p>Per definzione bisogna avere il dominio e il codominio uguale con la stessa legge d'associzione.</p>
+<h3 id="dimostrazione-che-è-uguale-a"><span class="header-section-number">9.1.1</span> Dimostrazione che +' è uguale a '+</h3>
+<blockquote>
+<p>lemma1 : m = O +' m</p>
+</blockquote>
+<p>procedo su induzione strutturale su m per dimostrare m = O +' m</p>
+<p><strong>caso O:</strong> devo dimostare che O = O +' O ovvero O= O ovvio</p>
+<p><strong>caso S x:</strong> per ipotesi induttiva <span class="math inline">∀<em>x</em></span> x = O +' x (H) devo dimostrare che <span class="math inline">∀<em>x</em></span> S x = O +' S x ovvero <span class="math inline">∀<em>x</em></span> S x = S (O +' x ) ovvio per H</p>
+<blockquote>
+<p>lemma2 : S (x +' m) = S x +' m</p>
+</blockquote>
+<p>procedendo su induzione strutturale su m per dimostrare S( x +' m )= S x +'m</p>
+<p><strong>caso O:</strong> debbo dimostrare <span class="math inline">∀<em>x</em></span> S(x +' O)= S x +' O ovvero <span class="math inline">∀<em>x</em></span> S (x )= Sx ovvio</p>
+<p><strong>Caso S y:</strong> per induzione abbiamo che <span class="math inline">∀<em>x</em></span> S (x +' y ) = S x +' y (H) dobbiamo dimostrare <span class="math inline">∀<em>x</em></span> S (x +' (S y))= S x +' S y ovvero <span class="math inline">∀<em>x</em></span> S (S (x +' y))= S x +' S y ovvero <span class="math inline">∀<em>x</em></span> S( S (x +' y))= S(S x +' y) sias x un numero naturale ovvio per H</p>
+<blockquote>
+<p>Dim1: n '+ m = n +' m</p>
+</blockquote>
+<p>Procediamo per ricorsione strutturale su n per dimostrare <span class="math inline">∀</span> m. n '+m = n +' m</p>
+<p><strong>Caso 0:</strong> dimostro <span class="math inline">∀<em>m</em>.</span> O '+m= O +` m ovvero <span class="math inline">∀</span> m= 0 +' m ovvio per lemma1</p>
+<p><strong>Caso S x:</strong> per induzione strutturale <span class="math inline">∀</span> m x '+ m = x +' m (H) devo dimostrarem <span class="math inline">∀</span> m S x '+ m = S x +' m ovvero <span class="math inline">∀</span>m S (x '+ m)= S x +' m siam m un numero per ipotesi H possiamo riscrivere S ( x +' m) = S x +' m ovvio per lemma2</p>
+<h3 id="altre-prove"><span class="header-section-number">9.1.2</span> Altre prove</h3>
+<p><code>nth  n l</code> ( restutiusce l'n-esimo elemento di l se l è sufficentemente lunga)</p>
+<p>la definisco per ricorsione strutturale su n: - tutte le prduzioni di n una e una sola volta - le chiamate ricorsive solamente su sottoformule immedite dell'input n</p>
+<p><code>head []=6699 --possiamo far restituire qualsiasi cosa</code> <code>head (n:l)=n</code></p>
+<p><code>tail []=6699 -- possiamo fare restituire qualsiasi cosa</code> <code>tail (n:l)=l</code></p>
+<p><code>nth O l = head l</code> <code>nth (S n) l = nth n (tail l)</code></p>
+<p><code>nth 0 [] = 6699</code> <code>nth (S n) [] =  6699</code> <code>nth 0 (n:l) = n</code> <code>nth (S n) (n:l) = nth n l</code></p>
+<blockquote>
+<p>therorema: (<span class="math inline">∀</span> n. n &lt; |l1| <span class="math inline">⟹</span> nth n l1 = nth n ( l1@ l2)) <span class="math inline">∨</span> (<span class="math inline">∀</span>n. n &lt; |l2" <span class="math inline">⟹</span> nth n l2 = nth (|l1|+n) (l1@l2) )</p>
+</blockquote>
+<p>case []: <span class="math inline">∀</span>l2. (<span class="math inline">∀</span> n. n &lt; |[]| <span class="math inline">⟹</span> nth n [] = nth n ( []@ l2)) <span class="math inline">∨</span> (<span class="math inline">∀</span>n. n &lt; |l2" <span class="math inline">⟹</span> nth n l2 = nth (|[]|+n) ([]@l2) ) ovvero<br />
+<span class="math inline">∀</span>l2. (<span class="math inline">∀</span> n. n &lt; 0 <span class="math inline">⟹</span> nth n [] = nth n ( []@ l2)) <span class="math inline">∨</span> (<span class="math inline">∀</span>n. n &lt; |l2" <span class="math inline">⟹</span> nth n l2 = nth (n) (l2) ) dimostro <span class="math inline">∀</span> n &lt; 0 <span class="math inline">⟹</span> ... sia n un numero t.c n &lt; 0 assurdo. dimostr <span class="math inline">∀</span>n . n &lt; |l2| <span class="math inline">⟹</span> nth n l2 = nth n l2 ovvio</p>
+<p>caso x:l : <span class="math inline">∀</span> (<span class="math inline">∀</span> n. n &lt; |l1| <span class="math inline">⟹</span> nth n l1 = nth n ( l1@ l2)) <span class="math inline">∨</span> (<span class="math inline">∀</span>n. n &lt; |l2" <span class="math inline">⟹</span> nth n l2 = nth (|l1|+n) (l1@l2) )</p>
+</body>
+</html>
