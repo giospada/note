@@ -97,18 +97,19 @@
 </ul></li>
 <li><a href="#funzioni-esponenziali-e-trigonometriche"><span class="toc-section-number">10</span> Funzioni Esponenziali e Trigonometriche</a><ul>
 <li><a href="#funzione-esponenziale"><span class="toc-section-number">10.1</span> Funzione Esponenziale</a></li>
-<li><a href="#funzione-logaritmica"><span class="toc-section-number">10.2</span> Funzione Logaritmica</a><ul>
-<li><a href="#radianti"><span class="toc-section-number">10.2.1</span> Radianti</a></li>
-<li><a href="#seno-e-coseno"><span class="toc-section-number">10.2.2</span> Seno e Coseno</a></li>
+<li><a href="#funzione-logaritmica"><span class="toc-section-number">10.2</span> Funzione Logaritmica</a></li>
+<li><a href="#funzioni-gognometriche"><span class="toc-section-number">10.3</span> Funzioni gognometriche</a><ul>
+<li><a href="#radianti"><span class="toc-section-number">10.3.1</span> Radianti</a></li>
+<li><a href="#seno-e-coseno"><span class="toc-section-number">10.3.2</span> Seno e Coseno</a></li>
 </ul></li>
-<li><a href="#funzione-tangente"><span class="toc-section-number">10.3</span> Funzione Tangente</a></li>
-<li><a href="#angoli-speciali"><span class="toc-section-number">10.4</span> Angoli speciali</a></li>
-<li><a href="#grafici"><span class="toc-section-number">10.5</span> Grafici</a></li>
-<li><a href="#formule-di-addizione-e-sottrazione"><span class="toc-section-number">10.6</span> Formule di Addizione e Sottrazione</a></li>
-<li><a href="#funzioni-gognometriche-inverse"><span class="toc-section-number">10.7</span> Funzioni Gognometriche Inverse</a><ul>
-<li><a href="#arcsin"><span class="toc-section-number">10.7.1</span> Arcsin</a></li>
-<li><a href="#arccos"><span class="toc-section-number">10.7.2</span> Arccos</a></li>
-<li><a href="#arctan"><span class="toc-section-number">10.7.3</span> Arctan</a></li>
+<li><a href="#funzione-tangente"><span class="toc-section-number">10.4</span> Funzione Tangente</a></li>
+<li><a href="#angoli-speciali"><span class="toc-section-number">10.5</span> Angoli speciali</a></li>
+<li><a href="#grafici"><span class="toc-section-number">10.6</span> Grafici</a></li>
+<li><a href="#formule-di-addizione-e-sottrazione"><span class="toc-section-number">10.7</span> Formule di Addizione e Sottrazione</a></li>
+<li><a href="#funzioni-gognometriche-inverse"><span class="toc-section-number">10.8</span> Funzioni Gognometriche Inverse</a><ul>
+<li><a href="#arcsin"><span class="toc-section-number">10.8.1</span> Arcsin</a></li>
+<li><a href="#arccos"><span class="toc-section-number">10.8.2</span> Arccos</a></li>
+<li><a href="#arctan"><span class="toc-section-number">10.8.3</span> Arctan</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#limiti-funzioni"><span class="toc-section-number">11</span> Limiti Funzioni</a><ul>
@@ -513,9 +514,9 @@ se ci si pensa noi stiamo selezionando combinazioni k elementi partendo da un in
 <p>Creiamo un numero <span class="math inline">\(m {:=} p_1\times p_2 \times ... \times p_n +1\)</span>, essendo che m è più grande di tutti i numeri primi in particolare più grande di <span class="math inline">\(p_n\)</span> non dovrebbe essere un numero primo, quindi può essere diviso da un numero primo.</p>
 <p>Se <span class="math inline">\(m\)</span> fosse divisibile per <span class="math inline">\(p_1\)</span> allora <span class="math inline">\(\exists m_1 \in \mathbb{N}: m_1 \times p_1=m=p_1\times p_2 \times ... \times p_n +1\)</span><br />
 <span class="math inline">\(m_1\times p_1 -( p_1\times p_2 \times ... \times p_n )=1\)</span><br />
-$ p_1 (m_1 - p_2 … p_n )=1$<br />
-$ p_1 (m_1 - p_1p_2 … p_n )=1$<br />
-quindi: $ p_1 =1$</p>
+<span class="math inline">\(p_1 (m_1 - p_2 \times ... \times p_n )=1\)</span><br />
+<span class="math inline">\(p_1 (m_1 - p_1\times p_2 \times ... \times p_n )=1\)</span><br />
+quindi: <span class="math inline">\(p_1 =1\)</span></p>
 <p>essendo che <span class="math inline">\(m\)</span> non è divisibile per nessuno primo, <span class="math inline">\(m\)</span> è primo.</p>
 <h1 id="linsieme-dei-numeri-reali"><span class="header-section-number">7</span> L’insieme dei numeri reali</h1>
 <p>i numeri razionali sono quanti sono i punti della retta? quindi possiamo trovare una funzione biunivoca tra i <span class="math inline">\(\mathbb{Q}\)</span> e i punti sulla retta?.</p>
@@ -729,7 +730,7 @@ non coincidono
 <p><span class="math inline">\(\exp_a(x){:=} a^n\)</span></p>
 <p>(se si sceglie come base di a della funzione esponenziale il numero <span class="math inline">\(e\)</span>, <span class="math inline">\(e^x\)</span> l’esponenziale a base naturale (nome per indicare la <span class="math inline">\(e\)</span>))</p>
 <p><span class="math inline">\(\exp : \mathbb{R} \rightarrow \mathbb{R}^{*}\)</span></p>
-<p><img src="vx_images/5303331546703.png%20=181x" alt="esponenziale" /> <img src="vx_images/3346331093181.png%20=182x" alt="esponenzie" /></p>
+<p><img src="vx_images/5303331546703.png" alt="esponenziale" /> <img src="vx_images/3346331093181.png" alt="esponenzie" /></p>
 <h2 id="funzione-logaritmica"><span class="header-section-number">10.2</span> Funzione Logaritmica</h2>
 <p><span class="math inline">\(a \in \mathbb{R} , a&lt;0 , a \neq 1\)</span><br />
 <span class="math inline">\(\forall y \in \mathbb{R}: y&gt;0 \exists! x \in \mathbb{R}:\)</span></p>
@@ -743,18 +744,19 @@ non coincidono
 </details>
 <p>TODO: dimostrare che la funzine è inversa</p>
 <figure>
-<img src="vx_images/4993496907525.png%20=300x" alt="" /><figcaption>logaritmo</figcaption>
+<img src="vx_images/4993496907525.png" alt="" /><figcaption>logaritmo</figcaption>
 </figure>
-<p><img src="vx_images/3945607777711.png%20=200x" /> ## Funzioni gognometriche</p>
+<p><img src="vx_images/3945607777711.png" /></p>
+<h2 id="funzioni-gognometriche"><span class="header-section-number">10.3</span> Funzioni gognometriche</h2>
 <p><strong>circonferenza gognometrica</strong>: circonferenza di raggio uno con il centro sugli assi <span class="math inline">\(x^2+y^2=1\)</span> (lunghezza <span class="math inline">\(2\pi\)</span>)</p>
-<p>TODO: add immagini <img src="vx_images/2133540871851.png%20=438x" /></p>
-<h3 id="radianti"><span class="header-section-number">10.2.1</span> Radianti</h3>
+<p>TODO: add immagini <img src="vx_images/2133540871851.png" /></p>
+<h3 id="radianti"><span class="header-section-number">10.3.1</span> Radianti</h3>
 <p><span class="math inline">\(\alpha°\)</span>: angolo in gradi (non da informazioni sulla lunghezza dell’angolo)<br />
 <span class="math inline">\(\alpha_r\)</span>: angolo in gradi</p>
 <p><span class="math inline">\(\alpha°:360=\alpha_r:2\pi \\ \alpha_r=\frac{\alpha° \times \pi}{360}\)</span></p>
-<h3 id="seno-e-coseno"><span class="header-section-number">10.2.2</span> Seno e Coseno</h3>
+<h3 id="seno-e-coseno"><span class="header-section-number">10.3.2</span> Seno e Coseno</h3>
 <p>sia <span class="math inline">\(P(x_p,y_p)\)</span> un punto sulla circonferenza goniometrica</p>
-<p><img src="../img/circonferenza_trigonometrica.png%20=320x" /></p>
+<p><img src="../img/circonferenza_trigonometrica.png" /></p>
 <p><span class="math inline">\(\sin \alpha =y_p\)</span><br />
 <span class="math inline">\(\cos \alpha =x_p\)</span></p>
 <p><strong>Oss</strong>: possiamo scrivere <span class="math inline">\(\sin^2 \alpha +\cos^2\alpha=1\)</span></p>
@@ -764,21 +766,21 @@ non coincidono
 <p><strong>Oss</strong>:<br />
 la funzione <span class="math inline">\(\sin\)</span> è dispari (<span class="math inline">\(-\sin(\alpha)=\sin(-\alpha)\)</span>)</p>
 <p>la funzione <span class="math inline">\(\cos\)</span> è pari (<span class="math inline">\(\cos(\alpha)=\cos(-\alpha)\)</span>)</p>
-<h2 id="funzione-tangente"><span class="header-section-number">10.3</span> Funzione Tangente</h2>
+<h2 id="funzione-tangente"><span class="header-section-number">10.4</span> Funzione Tangente</h2>
 <p><img src="../img/tangente.png" /></p>
 <p><span class="math inline">\(\tan \alpha {:=} y_T\)</span> (si legge tangente di <span class="math inline">\(\alpha\)</span>)</p>
 <p>si come conseguenza della definizione si ha che :<span class="math inline">\(\frac{\sin \alpha}{\cos \alpha}\)</span></p>
 <p>la tangente non è definita per: - <span class="math inline">\(\alpha = \frac{\pi}{2},\frac{3\pi}{2}..\)</span> - <span class="math inline">\(\alpha = -\frac{\pi}{2},-\frac{3\pi}{2}..\)</span></p>
-<h2 id="angoli-speciali"><span class="header-section-number">10.4</span> Angoli speciali</h2>
-<p><span class="math inline">\(\alpha= \frac{\pi}{4}\)</span> è un angolo speciale perchè crea un triangono isocele. <img src="vx_images/5116113239298.png%20=320x" /></p>
-<p>così sappiamo che OA e PA sono uguali e ci basta risolvere <span class="math inline">\(PO=\sqrt{OA^2+PA^2}\to PO^2=2PA^2 \to 1=2PA^2 \to PA=\frac{1}{\sqrt{2}}\)</span></p>
+<h2 id="angoli-speciali"><span class="header-section-number">10.5</span> Angoli speciali</h2>
+<p><span class="math inline">\(\alpha= \frac{\pi}{4}\)</span> è un angolo speciale perchè crea un triangono isocele. <img src="vx_images/5116113239298.png" /></p>
+<p>così sappiamo che OA e PA sono uguali e ci basta risolvere <span class="math inline">\(PO=\sqrt{OA^2+PA^2} \to PO^2=2PA^2 \to 1=2PA^2 \to PA= \frac{1}{ \sqrt{2}}\)</span></p>
 <p>quindi per quest’angolo ha: <span class="math inline">\(\sin \frac{\pi}{4}=\cos \frac{\pi}{4}=\frac{\sqrt{2}}{2}\)</span> <span class="math inline">\(tan \frac{\pi}{4}=1\)</span></p>
 <p><span class="math inline">\(\alpha= \frac{\pi}{4}\)</span> è un angolo speciale perchè è di 30°. <img src="vx_images/944801796821.png" /></p>
 <p>possiamo trasformarlo in questo modo ricavando un triangolo equilatero, e ricaviamo.</p>
 <p><span class="math inline">\(\cos \frac{\pi}{6}=\frac{\sqrt{3}}{2}\)</span> <span class="math inline">\(\sin \frac{\pi}{6}=\frac{1}{2}\)</span> <span class="math inline">\(\tan \frac{\pi}{6}=\frac{\sqrt{3}}{3}\)</span></p>
-<h2 id="grafici"><span class="header-section-number">10.5</span> Grafici</h2>
-<p><img src="../img/grafsen.png%20=320x" /> <img src="../img/grafcos.png%20=320x" /> <img src="../img/graftan.png%20=320x" /></p>
-<h2 id="formule-di-addizione-e-sottrazione"><span class="header-section-number">10.6</span> Formule di Addizione e Sottrazione</h2>
+<h2 id="grafici"><span class="header-section-number">10.6</span> Grafici</h2>
+<p><img src="../img/grafsen.png" /> <img src="../img/grafcos.png" /> <img src="../img/graftan.png" /></p>
+<h2 id="formule-di-addizione-e-sottrazione"><span class="header-section-number">10.7</span> Formule di Addizione e Sottrazione</h2>
 <p><span class="math inline">\(\cos(\alpha-\beta)=\cos \alpha \times \cos \beta +\sin \alpha \times \sin \beta\)</span></p>
 <p><span class="math inline">\(\cos(\alpha+\beta)=\cos \alpha \times \cos \beta -\sin \alpha \times \sin \beta\)</span></p>
 <p><span class="math inline">\(\sin(\alpha-\beta)=\sin \alpha \times \cos \beta -\cos \alpha \times \sin \beta\)</span></p>
@@ -786,20 +788,20 @@ la funzione <span class="math inline">\(\sin\)</span> è dispari (<span class="m
 <p><span class="math inline">\(\cos (\frac{\pi}{2}-\alpha) =\sin \alpha\)</span></p>
 <p><span class="math inline">\(\sin (\frac{\pi}{2}-\alpha) =\cos \alpha\)</span></p>
 <p><strong>Dalle formule di addizione si ha</strong>: <span class="math inline">\(\cos 2\alpha=\cos^2 \alpha -\sin^2 \alpha\)</span> <span class="math inline">\(\sin 2\alpha=2\sin \alpha \times \cos \alpha\)</span></p>
-<h2 id="funzioni-gognometriche-inverse"><span class="header-section-number">10.7</span> Funzioni Gognometriche Inverse</h2>
-<h3 id="arcsin"><span class="header-section-number">10.7.1</span> Arcsin</h3>
+<h2 id="funzioni-gognometriche-inverse"><span class="header-section-number">10.8</span> Funzioni Gognometriche Inverse</h2>
+<h3 id="arcsin"><span class="header-section-number">10.8.1</span> Arcsin</h3>
 <p>La funzione <span class="math inline">\(\sin : \mathbb{R}\rightarrow \mathbb{R}\)</span> non è inverstibile perchè non è suriettiva ne iniettiva. Possiamo però restrigere il suo codominio a <span class="math inline">\(\sin \mathbb{R}\rightarrow [-1,1]\)</span> per farla diventare surrettiva; Similmente renderla iniettiva modifichiamo il suo domninio a <span class="math inline">\(\sin : [-\frac{\pi}{2},\frac{\pi}{2}]\rightarrow \mathbb{R}\)</span>, così possiamo creare il seno biettivo come <span class="math inline">\(\sin : [-\frac{\pi}{2},\frac{\pi}{2}]\rightarrow [-1,1]\)</span>.</p>
 <p>La funzione inversa andrà <span class="math inline">\(\arcsin : [-1,1] \rightarrow [-\frac{\pi}{2},\frac{\pi}{2}]\)</span>.</p>
 <p>Quindi <span class="math inline">\(\forall x \in [-\frac{\pi}{2},\frac{\pi}{2}] \\ \arcsin(\sin x)=x\)</span> e quindi <span class="math inline">\(\forall y \in [-1,1] \\ \sin(\arcsin y)=y\)</span></p>
-<p><img src="vx_images/686515595913.png%20=400x" /></p>
-<h3 id="arccos"><span class="header-section-number">10.7.2</span> Arccos</h3>
+<p><img src="vx_images/686515595913.png" /></p>
+<h3 id="arccos"><span class="header-section-number">10.8.2</span> Arccos</h3>
 <p>Similmente a come abbiamo visto per seno per creare l’inverso dell coseno dobbiamo renderlo binuivoco. Per renderlo inietiva riduciamo il suo dominio a <span class="math inline">\([0,\pi]\)</span> e per renderlo surrettivo definiamo il suo codominio <span class="math inline">\([-\frac{\pi}{2},\frac{\pi}{2}]\)</span></p>
 <p>Quindi <span class="math inline">\(\forall x \in [-\frac{\pi}{2},\frac{\pi}{2}] \\ \arccos(\cos x)=x\)</span> e quindi <span class="math inline">\(\forall y \in [0,\pi] \\ \cos(\arccos y)=y\)</span></p>
-<p><img src="vx_images/4969738921664.png%20=300x" /></p>
-<h3 id="arctan"><span class="header-section-number">10.7.3</span> Arctan</h3>
+<p><img src="vx_images/4969738921664.png" /></p>
+<h3 id="arctan"><span class="header-section-number">10.8.3</span> Arctan</h3>
 <p>Per renderlo inietiva riduciamo il suo dominio a <span class="math inline">\([-\frac{\pi}{2},\frac{\pi}{2}]\)</span>.</p>
 <p>Quindi <span class="math inline">\(\forall x \in ]-\frac{\pi}{2},\frac{\pi}{2}[ \\ \arccos(\cos x)=x\)</span> e quindi <span class="math inline">\(\forall y \in \mathbb{R} \\ \cos(\arccos y)=y\)</span></p>
-<p><img src="vx_images/2312203870068.png%20=578x" /></p>
+<p><img src="vx_images/2312203870068.png" /></p>
 <h1 id="limiti-funzioni"><span class="header-section-number">11</span> Limiti Funzioni</h1>
 <h2 id="intorno-serico-e-punto-di-accomulazione"><span class="header-section-number">11.1</span> Intorno Serico e Punto di accomulazione</h2>
 <blockquote>
@@ -809,12 +811,12 @@ la funzione <span class="math inline">\(\sin\)</span> è dispari (<span class="m
 <p><span class="math inline">\(\bar{x}\)</span> è <strong>Punto di accumulazione</strong> di un insieme A, <span class="math inline">\(A\subset \mathbb{R}\)</span>, <span class="math inline">\(\bar{x}\in\mathbb{R}\)</span> se:</p>
 <p><span class="math inline">\(\displaylines{\forall r &gt; 0 : \\ a \cap (I_r(\bar{x})\backslash \{\bar{x}\})\neq \emptyset}\)</span></p>
 </blockquote>
-<p><img src="vx_images/1189241576710.png%20=254x" /></p>
+<p><img src="vx_images/1189241576710.png" /></p>
 <p><span class="math inline">\(D(A)=\{\bar{x}\in \mathbb{R}| \bar{x} \mbox{ è di accomulazione per A}\}\)</span></p>
 <p><strong>Idea</strong>:<span class="math inline">\(\bar{x}\)</span> si dice punto di accumulazione di A se ci si può avvicinare arbitrariamente a <span class="math inline">\(\bar{x}\)</span>, rimanendo in A!</p>
 <details>
 <p><summary> esempio </summary></p>
-<img src="vx_images/2412763123188.png%20=539x" />
+<img src="vx_images/2412763123188.png" />
 </details>
 <p><strong>proposizione</strong>:</p>
 <p><span class="math inline">\(A \subset \mathbb{R}\)</span>, <span class="math inline">\(\bar{x} \in \mathbb{R}\)</span>, <span class="math inline">\(\bar{x}\)</span> è di accumulazione per A <em>se e solo se</em>: <span class="math inline">\(\exists (a_n)_n \subseteq A \mbox{ t.c.:}\)</span></p>
