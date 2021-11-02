@@ -1,0 +1,119 @@
+/*
+ * Markdown PDF CSS
+*/
+:root {
+  --dracula-background: rgb(40, 42, 54);
+  --dracula-current-line: rgb(68, 71, 90);
+  --dracula-foreground: rgb(248, 248, 242);
+  --dracula-comment: rgb(98, 114, 164);
+  --dracula-cyan: rgb(139, 233, 253);
+  --dracula-green: rgb(80, 250, 123);
+  --dracula-orange: rgb(255, 184, 108);
+  --dracula-pink: rgb(255, 121, 198);
+  --dracula-purple: rgb(189, 147, 249);
+  --dracula-red: rgb(255, 85, 85);
+  --dracula-yellow: rgb(241, 250, 140);
+}
+
+body {
+    margin: 0 auto;
+    font-family: "Fira Code",Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.5;
+    background-color:var(--dracula-background);
+    color:var(--dracula-foreground);
+}
+
+summary {
+    font-weight: bold;
+    color:#ffb86c;
+}
+
+pre {
+    background-color: #f8f8f8;
+    border: none;
+}
+
+strong{
+    color:#ffb86c;
+}
+blockquote {
+    padding: 1 1em;
+    color: #f1fa8c;
+    border-left: 0.25em solid #ffffff;
+    background: #768ac713 ;
+    font-style: italic;
+}
+
+tr:nth-child(even){
+    background-color: #6273a40c;
+}
+
+.emoji {
+    height: 1.4em;
+}
+
+:not(pre):not(.hljs)>code {
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 14px;
+}
+a{
+    color:#50fa7b ;
+}
+.vscode-dark h1,
+.vscode-dark h2,
+.vscode-dark h3,
+.vscode-dark h4,
+.vscode-dark h5,
+.vscode-dark h6 {
+	font-weight: 700;
+	color: #bd93f9;
+}
+
+h1{
+    font-size: 2em;
+}
+h2{
+    font-size: 1.5em;
+}
+
+h3{
+    font-size: 1.25;
+}
+h4{
+    font-size: 1.15;
+}
+h5{
+    font-size: 1.10;
+}
+h6{
+    font-size: 1.05;
+}
+img{
+    padding:  1em 0 1em 0;
+    display: block;
+    max-width: 50vw;
+    max-height:50vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*
+h1::before{
+    content: "# ";
+}
+h2::before{
+    content: "## ";
+}
+h3::before{
+    content: "### ";
+}
+h4::before{
+    content: "#### ";
+}
+h5::before{
+    content: "##### ";
+}
+h6::before{
+    content: "###### ";
+}
+
+*/
