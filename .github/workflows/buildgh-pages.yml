@@ -33,11 +33,10 @@ jobs:
           git fetch                         # fetch branches
           git checkout $TARGET_BRANCH       # checkout to your branch
           git checkout ${GITHUB_REF##*/} -- $SRC_FOLDER_PATH # copy files from the source branch
-          cd Università
-          for i in $(find ./ -maxdepth 1 -type d  ! -name . ! -name img ); do cd $i;echo "try to build $i" ;pandoc --from markdown_mmd --to html5 -s  *.md -o $i.html  --metadata pagetitle="$i"  --toc --top-level-division=chapter -N --css=../img/style.css ;rm *.md ;cd .. ;done #
-          cd ..
           echo "#Index "> index.md
-          for i in $(find ./ -maxdepth 1 -type d  ! -name . ! -name img );do echo "($i)[Università/$i/$i.html]">>index.md;done
+          cd Università
+          for i in $(find ./ -maxdepth 1 -type d  ! -name . ! -name img ); do cd $i;echo "try to build $i" ;pandoc --from markdown_mmd --to html5 -s  *.md -o $i.html  --metadata pagetitle="$i"  --toc --top-level-division=chapter -N --css=../img/style.css ;rm *.md; echo -e "[$i](Università/$i/$i.html)\n" >> ;cd .. ;done #
+          cd ..
           pandoc --from markdown_mmd --to html5 -s  index.md -o index.html  --metadata pagetitle="Index"  --css=Università/img/style.css 
           rm index.md
           git add -A
