@@ -206,7 +206,7 @@ date f e g due cunzioni continue allora:
 1. $f \pm g$ è continua in $x_0$
 2. $\displaylines{c \in \mathbb{R} & cf(x)}$ è continua in $x_0$
 3. $f \times g$ è continua in $x_0$
-3. $\frac{f}{g}$ è continua in $x_0$ ( se$ $g(x_0)\neq 0$)
+3. $\frac{f}{g}$ è continua in $x_0$ ( se $g(x_0)\neq 0$)
 4. $|f|$ è continua in $x_0$ 
 
 ### Esempio importante
