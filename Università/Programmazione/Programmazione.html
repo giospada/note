@@ -97,8 +97,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li><a href="#c"><span class="toc-section-number">2</span> C++</a><ul>
 <li><a href="#reference"><span class="toc-section-number">2.1</span> Reference</a></li>
-<li><a href="#array"><span class="toc-section-number">2.2</span> Array</a></li>
-<li><a href="#array-multidimensionali"><span class="toc-section-number">2.3</span> Array Multidimensionali</a></li>
+<li><a href="#array"><span class="toc-section-number">2.2</span> Array</a><ul>
+<li><a href="#array-multidimensionali"><span class="toc-section-number">2.2.1</span> Array Multidimensionali</a></li>
+</ul></li>
+<li><a href="#stringhe"><span class="toc-section-number">2.3</span> Stringhe</a></li>
+<li><a href="#struct"><span class="toc-section-number">2.4</span> Struct</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -189,7 +192,13 @@ C --&gt; |vera| E[blocco di fine: output pari]</code></pre>
 <span id="cb3-7"><a href="#cb3-7"></a>  <span class="dt">int</span> ar[<span class="dv">5</span>]={<span class="dv">0</span>};</span>
 <span id="cb3-8"><a href="#cb3-8"></a>  passarray(ar);</span>
 <span id="cb3-9"><a href="#cb3-9"></a>}</span></code></pre></div>
-<h2 id="array-multidimensionali"><span class="header-section-number">2.3</span> Array Multidimensionali</h2>
+<h3 id="array-multidimensionali"><span class="header-section-number">2.2.1</span> Array Multidimensionali</h3>
 <p>gli array multidimensionali quando sono passati ad una funzione dev’essere esplicitato il numero dell’ultime dimensioni perché il compilatore deve sapere dove incomincia il nuovo array</p>
+<h2 id="stringhe"><span class="header-section-number">2.3</span> Stringhe</h2>
+<p>Possiamo utilizzare le c string, cioè degli array di char il cuoi ultimo carattere è il terminale delle stringhe <code>'\0'</code>.</p>
+<p>funzioni fatte:<br />
+- strlen - strcat - strncpy - strcmp - atoi - atol - atof</p>
+<h2 id="struct"><span class="header-section-number">2.4</span> Struct</h2>
+<p>Vengono copiate per valore, e se contengono un array statico al loro interno anche esso viene copitato per valore.</p>
 </body>
 </html>

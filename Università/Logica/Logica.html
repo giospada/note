@@ -170,6 +170,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="#dimostrazione-che-è-uguale-a"><span class="toc-section-number">8.4.1</span> Dimostrazione che +’ è uguale a ’+</a></li>
 <li><a href="#altre-prove"><span class="toc-section-number">8.4.2</span> Altre prove</a></li>
 </ul></li>
+<li><a href="#verità"><span class="toc-section-number">8.5</span> Verità</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -652,6 +653,40 @@ TODO: compleatre
 </blockquote>
 <p>case []: <span class="math inline">\(\forall\)</span>l2. (<span class="math inline">\(\forall\)</span> n. n &lt; |[]| <span class="math inline">\(\implies\)</span> nth n [] = nth n ( []@ l2)) <span class="math inline">\(\vee\)</span> (<span class="math inline">\(\forall\)</span>n. n &lt; |l2" <span class="math inline">\(\implies\)</span> nth n l2 = nth (|[]|+n) ([]<span class="citation" data-cites="l2">@l2</span>) ) ovvero<br />
 <span class="math inline">\(\forall\)</span>l2. (<span class="math inline">\(\forall\)</span> n. n &lt; 0 <span class="math inline">\(\implies\)</span> nth n [] = nth n ( []@ l2)) <span class="math inline">\(\vee\)</span> (<span class="math inline">\(\forall\)</span>n. n &lt; |l2" <span class="math inline">\(\implies\)</span> nth n l2 = nth (n) (l2) ) dimostro <span class="math inline">\(\forall\)</span> n &lt; 0 <span class="math inline">\(\implies\)</span> … sia n un numero t.c n &lt; 0 assurdo. dimostr <span class="math inline">\(\forall\)</span>n . n &lt; |l2| <span class="math inline">\(\implies\)</span> nth n l2 = nth n l2 ovvio</p>
-<p>caso x:l : <span class="math inline">\(\forall\)</span> (<span class="math inline">\(\forall\)</span> n. n &lt; |l1| <span class="math inline">\(\implies\)</span> nth n l1 = nth n ( l1@ l2)) <span class="math inline">\(\vee\)</span> (<span class="math inline">\(\forall\)</span>n. n &lt; |l2" <span class="math inline">\(\implies\)</span> nth n l2 = nth (|l1|+n) (l1@l2) )</p>
+<p>caso x:l : <span class="math inline">\(\forall\)</span> (<span class="math inline">\(\forall\)</span> n. n &lt; |l1| <span class="math inline">\(\implies\)</span> nth n l1 = nth n ( l1@ l2)) <span class="math inline">\(\vee\)</span> (<span class="math inline">\(\forall\)</span>n. n &lt; |l2" <span class="math inline">\(\implies\)</span> nth n l2 = nth (|l1|+n) (l1@l2) ) # Verità e Conseguenza Logica</p>
+<h2 id="verità"><span class="header-section-number">8.5</span> Verità</h2>
+<blockquote>
+<p>Verità fisiche, chimiche… sono associate al mondo sensibile, e sono definite da esperimenti ripetibili</p>
+</blockquote>
+<p>Cosa resta della verità quando manca il mondo sensibile?(matematica,informatica)</p>
+<ul>
+<li>In una <strong>teoria matematica</strong> si creano degli assiomi che sono delle leggi che supponiamo valere nei mondi sotto considerazione.</li>
+<li>Un <strong>modello matematico</strong> della teoria è un qualunque mondo in cui interpretare i concetti matematici primitivi in modo tale che ogni assioma della teoria valga</li>
+<li>un <strong>mondo</strong> è una descrizione completa che determina un concetto di verità, gli assiomi individuano una molteplicità di mondi</li>
+<li>data una <strong>preposizione</strong> potrebbe essere sicuramente vera/falsa/non determinata in ogni modello della teoria.</li>
+</ul>
+<blockquote>
+<p><strong>Conseguenza Logica</strong>: se una preposizione assume lo stesso valore di verità in tutti i mondi modelli della teoria</p>
+</blockquote>
+<p>F è consegnuenza logica di <span class="math inline">\(\Gamma (\Gamma \Vdash F)\)</span> quando F è vera in tutti i modelli di <span class="math inline">\(\Gamma\)</span> ovvero tutti i modni in cui ogniuna delle <span class="math inline">\(G \in \Gamma\)</span> è vera</p>
+<p>Siano F e G due sentenze, F è logicamente equivalente a <span class="math inline">\(G (F \equiv G)\)</span> sse <span class="math inline">\(F \Vdash G \mbox{ e } G \Vdash F\)</span></p>
+<blockquote>
+<p>Una teoroia è <strong>inconsistenze</strong> quando non ammette modelli, ovvero nessun mondo tutti gli assomi sono contemporanemanete veri.</p>
+</blockquote>
+<p><strong>se <span class="math inline">\(\Gamma\)</span> è inconsistente allora <span class="math inline">\(\forall F\)</span> si ha <span class="math inline">\(\Gamma \Vdash F\)</span></strong>.</p>
+<p>Se <span class="math inline">\(\Gamma\)</span> è inconsisntente vale anche l’assurdo. # Connotazione denotazione invarianza</p>
+<blockquote>
+<p><strong>Connotazione</strong> come indico qualcosa ,la sintassi che uso per dirla</p>
+</blockquote>
+<blockquote>
+<p><strong>Denotazione</strong> cosa indico con la connotazione, la semantica di ciò che sto dicendo</p>
+</blockquote>
+<p>Uso <strong>metalinguistico del liinguaggio</strong> significa riferirsi a Connotazioni</p>
+<details>
+<p><summary> Esempi </summary></p>
+“Berlusconi”, “Il Presidente del Consiglio”, “Il Cavaliere”, “Il tesserato P2 1816”, “Papi Silvio”, “Il 3o italiano piu ricco” ` “Il principale esponente dello schieramento a me avverso”, <strong>sono tutte connotazioni per la stessa denotazione</strong>
+</details>
+<p>Siano x e y due connotazioni per la stessa denotazione.<strong>Il principio di invarianza per sostituzione</strong> vale se per ogni contesto <span class="math inline">\(P[.]\)</span> le due connotazioni <span class="math inline">\(P[x]\)</span> e <span class="math inline">\(P[y]\)</span> denotano la stessa cosa.</p>
+<p>Piano: 1. definiamo la aintassi delle nostre logiche 2. definiremo la semantica delle nostre logiche 3. dimostriamo che vale il principio di ivarianza per sostituzione</p>
 </body>
 </html>
