@@ -109,6 +109,7 @@ C --> |vera| E[blocco di fine: output pari]
 
 # C++
 
+
 ## Reference
 
 i reference sono dei pointer immutabili, a differenza dei pointer non bisogna fare il dereferencing perchè il compilatore li tratta come se fossero l'oggetto stesso
@@ -133,7 +134,27 @@ int main(){
 }
 ```
 
-## Array Multidimensionali
+### Array Multidimensionali
 
 gli array multidimensionali quando sono passati ad una funzione dev'essere esplicitato il numero dell'ultime dimensioni perché il compilatore deve sapere dove incomincia il nuovo array
+
+## Stringhe
+
+Possiamo utilizzare le c string, cioè degli array di char il cuoi ultimo carattere è il terminale delle stringhe `'\0'`.
+
+funzioni fatte:  
+- strlen
+- strcat
+- strncpy
+- strcmp
+- atoi
+- atol
+- atof
+
+
+## Struct
+
+Vengono copiate per valore, e se contengono un array statico al loro interno anche esso viene copitato per valore.
+
+
 
