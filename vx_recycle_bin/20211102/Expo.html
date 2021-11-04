@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="../img/style.css">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<nav id="TOC">
+<ul>
+<li><a href="#realizzazione-del-computer-hack"><span class="toc-section-number">1</span> Realizzazione del Computer Hack</a><ul>
+<li><a href="#tastiera"><span class="toc-section-number">1.1</span> Tastiera</a></li>
+<li><a href="#schermo"><span class="toc-section-number">1.2</span> Schermo</a></li>
+<li><a href="#codifica-a-instruction"><span class="toc-section-number">1.3</span> Codifica A-instruction</a></li>
+<li><a href="#codifica-c-instruction"><span class="toc-section-number">1.4</span> Codifica C-Instruction</a></li>
+<li><a href="#livello-istruction-set-architeture"><span class="toc-section-number">1.5</span> Livello Istruction Set Architeture</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="realizzazione-del-computer-hack"><span class="header-section-number">1</span> Realizzazione del Computer Hack</h1>
+<h2 id="tastiera"><span class="header-section-number">1.1</span> Tastiera</h2>
+<p>Tastiera è una memoria ROM in solo lettura</p>
+<h2 id="schermo"><span class="header-section-number">1.2</span> Schermo</h2>
+<p>Lo Schermo è come una memoria ram, tutto quello che vieine scritto su questa memoria appare nella schermo del simulatore.</p>
+<p>Lo schermo è diviso in colonne e righe</p>
+<h2 id="codifica-a-instruction"><span class="header-section-number">1.3</span> Codifica A-instruction</h2>
+<figure>
+<img src="vx_images/2106204199297.png" />
+</figure>
+<h2 id="codifica-c-instruction"><span class="header-section-number">1.4</span> Codifica C-Instruction</h2>
+<figure>
+<img src="vx_images/5357587756820.png" />
+</figure>
+<h2 id="livello-istruction-set-architeture"><span class="header-section-number">1.5</span> Livello Istruction Set Architeture</h2>
+<blockquote>
+<p>ISA è l'interfaccia tra l'hardware e il software, i compilatori traucono i programmi in instruzioni livello ISA</p>
+</blockquote>
+<p>In generale le istruzioni sono divise in: - <strong>codice operativo</strong>: parte che indica il tipo di istruzione da eseguire - <strong>indirizzi</strong>: indicano gli operatori da utilizzare</p>
+<figure>
+<img src="vx_images/2558021179300.png" />
+</figure>
+<p>Gli indirizzamento: - Indirizzamento immediato: L’istruzione include già l’operando da usare (vedi A-instruction del linguaggio Hack) - Indirizzamento diretto: L’istruzione contiene l’indirizzo completo in memoria della cella in cui reperire l’operando - Indirizzamento a registro: L’operando viene prelevato da un registro - Indirizzamento a registro indiretto: L’operando viene prelevato dalla memoria, all’indirizzo puntato da un registro (vedi l’accesso in memoria del linguaggio Hack, con “indirizzamento a registro indiretto” tramite registro A)</p>
+<p>Indirizzamoento a stack: i processori hanno delle istruzioni per gestire lo stack, come push, pop + dei registri dedicati BSP ..</p>
+<p>Tipiche istruzioni: - operandi di trasfermiento dati: È trasferiscono dati da memoria a registri e viceversa e da registri a registri - operazioni aritmetico-logiche: Operazioni su interi e floating-point - operazioni unairie: (prendono un solo operatore) per esempio le instruzioni shift o inc - salti: condizionati e non - alcuni compilatori hanno</p>
+</body>
+</html>
