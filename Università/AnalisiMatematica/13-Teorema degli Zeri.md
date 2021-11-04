@@ -2,7 +2,6 @@
 
 Se abbiamo una funzione continua che in un certo punto è negativa e in un altro è positiva sappiamo che la funzione ha al minimo un punto in cui si annulla.
 
-
 Lemma: 
 $(b_n)_n \subset \mathbb{R}$
 $b_n < 0 \forall n (b_n > 0 \forall n)$
@@ -25,3 +24,4 @@ prendiamo il punto medio $\frac{(a+b)}{2}$ possiamo avere tre casi:
 1. $f(\frac{a_n+b_n}{2}) = 0$  fine 
 2. $f(\frac{a_n+b_n}{2}) < 0$ $a_{n+1}=\frac{a_n+b_n}{2}, b_{n+1}=b_n$
 3. $f(\frac{a_n+b_n}{2}) > 0$ $b_{n+1}=\frac{a_n+b_n}{2}, a_{n+1}=a_n$
+
