@@ -21,5 +21,10 @@ Piano:
 2. definiremo la semantica delle nostre logiche
 3. dimostriamo che vale il principio di ivarianza per sostituzione
 
+Fissiamo della semantica, perchè se no ogni cosa può significare qualsiasi cosa:  
+- **Connettivi Binari**:(e,o,se, ..allora..,se e solmaente se)
+- **Connettivi Unari**: ( non )
+- **Connettivi 0-ari**: (vero,falso)
+
 
 
