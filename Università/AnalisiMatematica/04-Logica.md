@@ -1,8 +1,10 @@
 
 # Logica
 
+## Preposizione
 > p = proposizione (è un affermazione che può essere o vera o falsa)
 
+## Negazione
 $\bar{p}$ = "non p", è la negazione di p
 
 
@@ -21,6 +23,7 @@ $\forall a \in A : \text{a è pari}$
 $\bar{p} = \exists a \in A : \text{a non è pari}$ 
 </details>
 
+## Inplicazione, Se e solo se
 
 $p \implies q$ = "p implica q" (p si chiama ipotesi e q si chiama tesi)
 

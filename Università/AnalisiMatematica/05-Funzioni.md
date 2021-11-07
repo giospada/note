@@ -1,6 +1,7 @@
 
 # Funzioni
 
+## Definizioni e Proprietà
 $f: A \rightarrow B$
 $x \xrightarrow{\space f\space} f(x)$:
 - A è il dominio di $f$ 
@@ -22,7 +23,7 @@ $\displaylines{f: A \rightarrow B \\ f': A'\rightarrow B' \\ \begin{cases} A=A' 
 ### Iniettività
 
 > prioprietà iniettiva (1-1): tutti gli elementi del codominio sono associati a un elemento del codominio diverso
- $f: A \rightarrow B$ se $\forall a \in A,\forall a' \in A : a\neq a' \rightarrow f(a) \neq f(a')$
+ $f: A \rightarrow B$ se $\forall a \in A,\forall a' \in A : a\neq a' \implies f(a) \neq f(a')$
 
 > l'inniettività dipenda dal dominio
 
@@ -61,7 +62,7 @@ $f(n)=n^3$ è (su)
 > Una funzione sia surrettiva che invettiva è detta biunivoca e quindi è invertibile
 
 $f: A \rightarrow B$ è invertibile
-$f^{-1}: A \rightarrow B$ e vuol dire che:
+$f^{-1}: A \rightarrow B$ e vuol dire che:  
 - $\forall a \in A: f^{-1}(f(a))=a$  
 - $\forall b \in B: f(f^{-1}(b))=b$  
 
@@ -152,21 +153,3 @@ TODO: aggiungerei l fico
 </details>
 
 
-
-# Geometria Analitica
-
->**retta nel piano** : $y=mx+q$ (si possono rappresentare tutte le rette tranne quelle veritcali ($x=k$))
-
-![](vx_images/4331916881741.png)
-
-
-$r1: y=mx+1 \mbox{ , } m=\tan \alpha_1$
-
-
-m: rappresenta la pendenza della retta
-
-Una retta con $m\neq 0$ può essere:  
-- crescente $m \le 0$
-- decrescente $m \ge 0$
-
-> **Fascio di rette**: è l'insieme delle rette che passano da un punto (si indica come $y-y_0=m(x-x_0)$) 

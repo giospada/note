@@ -1,13 +1,16 @@
 
 # L'insieme dei numeri reali
 
-i numeri razionali sono quanti sono i punti della retta? quindi possiamo trovare una funzione biunivoca tra i $\mathbb{Q}$ e i punti sulla retta?.
-
+> $\mathbb{R}$ possiede la proprità di continuità (che manca a $\mathbb{Q}$)
+i numeri razionali sono quanti sono i punti della retta? quindi possiamo trovare una funzione biunivoca tra i $\mathbb{Q}$ e i punti sulla retta?.  
 Prendiamo il punto $\sqrt{2}$ che è sulla retta, non è rappresentabile con i numeri razionali
 
-$\mathbb{R}$ possiede la proprità di continuità (che manca a $\mathbb{Q}$)
 
-**Dimostrazione per assurdo**: 
+<details>
+<summary>
+
+**Dimostrazione per assurdo**
+</summary>
 
 Assumiamo $\sqrt{2} \in \mathbb{Q}$ Quindi:  
 $\exists m,n \in \mathbb{N} | \sqrt{2} = \frac{m}{n}$
@@ -18,12 +21,13 @@ $\sqrt{2} = \frac{m}{n}$
 $2 = \frac{m^2}{n^2}$   
 $2n^2 = m^2$   
 
-allora $m^2$ è pari quindi $\exist m_1 \in \mathbb{N}: m=2m_1$
+allora $m^2$ è pari quindi $\exists m_1 \in \mathbb{N}: m=2m_1$
 
 $2n^2 = (2m_1)^2$   
 $n^2 = 2(m_1)^2$   
 
 $n^2$ è pari ma  $MCD(m,n)=1$ quindi è impossibile
+</details>
 
 
 
@@ -31,7 +35,12 @@ $n^2$ è pari ma  $MCD(m,n)=1$ quindi è impossibile
 
 > Sia $n \in \mathbb{N}$: $n$ non è un quadrato perfetto allora $\sqrt{n} \notin \mathbb{Q}$
 
+<details>
+<summary>
+
 **dimostrazione**
+</summary>
+
 
 Lemma: $m,n,l \in \mathbb{N}$  tali che $MCD(l,m)=1$ allora se $l | m \times n \implies l | n$
 
@@ -41,7 +50,7 @@ supponiamo che $\sqrt{n} \in \mathbb{Q} \implies \exists p,q \in N: \sqrt{n}=\fr
 $n=\frac{p^2}{q^2}$  
 $nq^2=p^2$  
 
-essendo che p e q sono primi tra loro allora $p^2 divide q^2n$ e quindi dall'lemma $p^2 divide n$  
+essendo che p e q sono primi tra loro allora $p^2$ divide $q^2n$ e quindi dall'lemma $p^2$ divide $n$  
 
 quindi $\exists v \in \mathbb{N}: n = p^2v$
 
@@ -52,13 +61,14 @@ Essendo $q^2 , v \in \mathbb{N}$ allora $v=1$
 allora $n=p^2$ n è un quadrato perfetto
 
 
+</details>
 
 ## Intervalli di $\mathbb{R}$
 
 
 ### Intervalli
 $[a,b]=\{x \in \mathbb{R} | a \leq n\leq b\}$  
-$]a,b[=\{x \in \mathbb{R} | a \le n\le b\}$  
+$]a,b[=\{x \in \mathbb{R} | a < n < b\}$  
 $[a, \infty [=\{x \in \mathbb{R} | a \le n\}$  
 
 
@@ -84,7 +94,7 @@ L'insieme dei Minoranti $M_n(A)=\{x\in R|\forall a \in A, x \leq a\}$
 ### Minimo e Massimo di un insieme
 
 > **minimo di un insieme**:  
-$\forall a \in A : b \leq A$ (b è i minimo )
+$\forall a \in A : b \leq a$ (b è i minimo )
 > se b è il minimo di A è il più grande dei minoranti
 
 > **massimo di un insieme**:  
@@ -102,7 +112,6 @@ $\forall a \in A : b \leq A$ (b è i minimo )
 
 
 Q a differenza di R non ha sempre la proprietà di avere un massimando e un minorando es. $\{q \in \mathbb{Q}| q \le \sqrt{2}\}$
-
 
 ### Esempi
 
@@ -142,11 +151,10 @@ $r_j=\begin{cases}5 & \text{se } b_{jj}\neq 5 \\ 6 & \text{se } b_{jj}=5\end{cas
 $\forall a \in \mathbb{R_{+}}, \forall n \in \mathbb{N} /\ \{0\} : \exists! b \in \mathbb{R_{+}} : b^n=a$
 
 
-**Abuso di notazione**:b si dice radice artimetica n-esima di a e si scrive $\sqrt{a}^{n}{:=} b$.
+**Abuso di notazione**:b si dice radice artimetica n-esima di a e si scrive $\sqrt[n]{a}{:=} b$.
 
 Oss: la radice **aritmetica è un numero $\ge 0$** quindi $\sqrt{4}=2$
 
-TODO: ricopiare il lemma pag 5
 
 **Lemma**:
 
@@ -160,6 +168,13 @@ si ha:
 
 le prime tre non valgono solo con x e y alla seconda ma quando condividono qualsiasi stesso esponente.
 
+
+[dimostrazione](https://virtuale.unibo.it/pluginfile.php/1024181/mod_resource/content/3/11%20Ottobre%202021.pdf)
 ### Teorema di esistenza di $\sqrt{}$
 
 cosiderando l'insieme $A = \{c \in \mathbb{R} | c \ge 0 , c^2 \le a\}$
+
+
+TODO:da completare
+
+[dimostrazione pag 13](https://virtuale.unibo.it/pluginfile.php/1024181/mod_resource/content/3/11%20Ottobre%202021.pdf)

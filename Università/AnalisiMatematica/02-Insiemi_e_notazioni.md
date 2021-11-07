@@ -1,13 +1,13 @@
 
-# Insiemi numerici, e le loro proprietà
+# Insiemi numerici, e Notazioni
 
+## Insiemi numerici
 
 **numeri naturiali** : $N =\{1,2,3,4...\}$   
 
 **numeri interi** : i numeri interi hanno la proprietà di avere l'opposto,  $Z =\{..-2,-1,0,1,2,...\}$ 
 
-**numeri razionali** : ogni unmero ha l'opposto e l'inverso, $Q =\{\frac{p}{q} | p \in N, q \in Z, p \neq 0 \}$  
-$Q = \{ \frac{n}{m} | n \in N, m \in Z \backslash \{0\}, MCD(n,|m|)=1\}$
+**numeri razionali** : ogni unmero ha l'opposto e l'inverso, $Q =\{\frac{p}{q} | p \in N, q \in Z, p \neq 0 \}$ (notazionione quasi equivalente $Q = \{ \frac{n}{m} | n \in N, m \in Z \backslash \{0\}, MCD(n,|m|)=1\}$)
 
 **numeri reali** :  $R$
 
@@ -48,9 +48,9 @@ TODO: da finire di aggiungere le operazioni e scrivere la loro definizione
 
 **Unione Insiemi**: crea un insieme contenente tutti gli elementi di a A e B
 A,B sono insiemi  
-$A \cap B = \{x | x \in A \vee x \in B \}$  
+$A \cup B = \{x | x \in A \vee x \in B \}$  
 
-**Unione Insiemi**: crea un insieme contenente tutti gli elementi comuni a A e B
+**Intersezione Insiemi**: crea un insieme contenente tutti gli elementi comuni a A e B
 A,B sono insiemi  
 $A \cap B = \{x | x \in A \wedge x \in B \}$  
 
