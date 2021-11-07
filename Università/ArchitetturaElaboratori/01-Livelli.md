@@ -1,7 +1,8 @@
 
-[TOC]
 
 # Livelli
+
+## Astrazione e Implementazione
 
 Nell'informatica si usano i principi di astrazione e implementazione, per diminuire la complessità, l'astrazione grazie a delle interfaccia accede alle implementazione (che utilizzando l'astrazione non bisogna più sapere com'è costruita)
 
@@ -11,7 +12,7 @@ Nell'informatica si usano i principi di astrazione e implementazione, per diminu
 
 questa implementazione e astrazione è utilizzata per creare macchine multilivello
 
-nella tipica struttura a livelli, ogni livello superiore esegue il codice su una macchina virtuale inferiore eseguendo:
+nella tipica struttura a livelli, ogni livello superiore esegue il codice su una macchina virtuale inferiore eseguendo:  
 - un interprete che viene eseguito eseguito su una macchina inferiore
 - una traduzione nel linguaggio di una macchina inferiore
 
@@ -20,26 +21,23 @@ nella tipica struttura a livelli, ogni livello superiore esegue il codice su una
 Tipico elaboratore a 6 livelli 
 ![](../img/elaboratore6livelli.png)
 
-##  Livello 0
-
+###  Livello 0
 
 > porte logiche:  
 > circuiti hanno tutti due input
 
 
-
-
-## Livello 1
+### Livello 1
 
 >Microarchitettura :  
 > governa il flusso dei dati fra i vari componenti del livello logico digitale (può essere hardware o software)
 
-## Livello 2
+### Livello 2
 
 > Istruzioni macchina :  
 > insieme di istruzioni eseguibili dalla microarchietettura
 
-## Livello 3-4 
+### Livello 3-4 
 
 Livelli ibridi perchè non sono rigidamente separati
 
@@ -49,19 +47,18 @@ Livelli ibridi perchè non sono rigidamente separati
 > linguaggio assembly:  
 > permette di programmare i livelli sottostanti
 
-## Linguaggi 5
+### Linguaggi 5
 
 > Linguaggi di programmazione ad alto livello:  
 > linguaggi che vengono compilati o interpretati, in linguaggio assembly
 
 ## Elaboratori
 
-sono macchine multi-livello, e si utilizzano le astrazioni, e ogni volta vengono eseguiti o tradotti in nella astrazione sottostante 
+> Glie **Elaboratori** sono macchine multi-livello, e si utilizzano le astrazioni, e ogni volta vengono eseguiti o tradotti in nella astrazione sottostante 
 
 
 ## Storia degli Elaboratori
 
-> non sono per l'esame
 
 1. Pascalina: prima macchina del 1600 che faceva da calcolatrice
 2. Analytical Engine: riusciva a fare somme con 50 cifre e una memoria di 1000 parole, ed è considerato il primo computer però non è stato mai costruito

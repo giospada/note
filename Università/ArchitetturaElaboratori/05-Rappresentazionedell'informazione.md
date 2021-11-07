@@ -176,4 +176,69 @@ Il codice rileva se c'è un singolo bit errato.
 Inventiamo un nuovo codice di 4 parole:0000000000-0000011111-0000011111-1111111111  
 Questo questo codice ha una distanza di hamming di 5 quindi è possibile correggere fino a due errori.
 
-TODO: finire
+
+### Codice Hamming
+
+> Creazione: mettiamo in ogni potenza di due, un codice di controllo che indica la parita della somma tra i 
+
+
+<details>
+<summary>
+Esempio Hamming
+</summary>
+
+```text
+Esempio di codifica con codice di Hamming
+
+Dato da codificare:
+11001011    m = 8
+
+0  0     0           1 
+X  X  1  X  1  0  0  X  1  0  1  1
+
+1  2  3  4  5  6  7  8  9 10 11 12
+
+0  0  0  0  0  0  0  1  1  1  1  1
+0  0  0  1  1  1  1  0  0  0  0  1
+0  1  1  0  0  1  1  0  0  1  1  0
+1  0  1  0  1  0  1  0  1  0  1  0
+
+X     1     1     0     1     1
+
+   X  1        0  0        0  1
+
+         X  1  0  0              1
+
+                     X  1  0  1  1
+
+Dato codificato:
+001010011011
+
+------------------------------------------------------------
+Esempio di decodifica:
+
+Dato da decodificare:
+0  1  1  0  1  0  0  1  1  0  1  1
+
+1  2  3  4  5  6  7  8  9 10 11 12
+
+0  0  0  0  0  0  0  1  1  1  1  1
+0  0  0  1  1  1  1  0  0  0  0  1
+0  1  1  0  0  1  1  0  0  1  1  0
+1  0  1  0  1  0  1  0  1  0  1  0
+
+0     1     1     0     1     1      OK   1  
+
+   1  1        0  0        0  1      X    2    2
+
+         0  1  0  0              1   OK   4
+    
+                     1  1  0  1  1   OK   8
+
+Scrivendo 1 per i bit di parita' errati e 0 per quelli corretti
+ottengo la posizione dell'errore:
+
+0010 pos 2
+
+``` 
+</details>

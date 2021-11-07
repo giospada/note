@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="../img/style.css">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<nav id="TOC">
+<ul>
+<li><a href="#livelli"><span class="toc-section-number">1</span> Livelli</a><ul>
+<li><a href="#livello-0"><span class="toc-section-number">1.1</span> Livello 0</a></li>
+<li><a href="#livello-1"><span class="toc-section-number">1.2</span> Livello 1</a></li>
+<li><a href="#livello-2"><span class="toc-section-number">1.3</span> Livello 2</a></li>
+<li><a href="#livello-3-4"><span class="toc-section-number">1.4</span> Livello 3-4</a></li>
+<li><a href="#linguaggi-5"><span class="toc-section-number">1.5</span> Linguaggi 5</a></li>
+<li><a href="#elaboratori"><span class="toc-section-number">1.6</span> Elaboratori</a></li>
+<li><a href="#storia-degli-elaboratori"><span class="toc-section-number">1.7</span> Storia degli Elaboratori</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="livelli"><span class="header-section-number">1</span> Livelli</h1>
+<p>Nell'informatica si usano i principi di astrazione e implementazione, per diminuire la complessità, l'astrazione grazie a delle interfaccia accede alle implementazione (che utilizzando l'astrazione non bisogna più sapere com'è costruita)</p>
+<blockquote>
+<p>astrazione: Si presenta la soluzione ad un problema concentrandosi solo su alcuni aspetti “rilevanti” (ad esempio, come ottenere la soluzione componendo soluzioni di problemi più semplici)</p>
+</blockquote>
+<blockquote>
+<p>Implementazione: Si realizza la soluzione aggiungendo gli aspetti astratti nella prima fase (ad esempio, si mostra come si possono risolvere i problemi più semplici)</p>
+</blockquote>
+<p>questa implementazione e astrazione è utilizzata per creare macchine multilivello</p>
+<p>nella tipica struttura a livelli, ogni livello superiore esegue il codice su una macchina virtuale inferiore eseguendo: - un interprete che viene eseguito eseguito su una macchina inferiore - una traduzione nel linguaggio di una macchina inferiore</p>
+<figure>
+<img src="../img/livellimacchinevirtuali.png" />
+</figure>
+<p>Tipico elaboratore a 6 livelli <img src="../img/elaboratore6livelli.png" /></p>
+<h2 id="livello-0"><span class="header-section-number">1.1</span> Livello 0</h2>
+<blockquote>
+<p>porte logiche:<br />
+circuiti hanno tutti due input</p>
+</blockquote>
+<h2 id="livello-1"><span class="header-section-number">1.2</span> Livello 1</h2>
+<blockquote>
+<p>Microarchitettura :<br />
+governa il flusso dei dati fra i vari componenti del livello logico digitale (può essere hardware o software)</p>
+</blockquote>
+<h2 id="livello-2"><span class="header-section-number">1.3</span> Livello 2</h2>
+<blockquote>
+<p>Istruzioni macchina :<br />
+insieme di istruzioni eseguibili dalla microarchietettura</p>
+</blockquote>
+<h2 id="livello-3-4"><span class="header-section-number">1.4</span> Livello 3-4</h2>
+<p>Livelli ibridi perchè non sono rigidamente separati</p>
+<blockquote>
+<p>sistema operativo:<br />
+fornisce la gestione di risorse ed esecuzione dei processi</p>
+</blockquote>
+<blockquote>
+<p>linguaggio assembly:<br />
+permette di programmare i livelli sottostanti</p>
+</blockquote>
+<h2 id="linguaggi-5"><span class="header-section-number">1.5</span> Linguaggi 5</h2>
+<blockquote>
+<p>Linguaggi di programmazione ad alto livello:<br />
+linguaggi che vengono compilati o interpretati, in linguaggio assembly</p>
+</blockquote>
+<h2 id="elaboratori"><span class="header-section-number">1.6</span> Elaboratori</h2>
+<p>sono macchine multi-livello, e si utilizzano le astrazioni, e ogni volta vengono eseguiti o tradotti in nella astrazione sottostante</p>
+<h2 id="storia-degli-elaboratori"><span class="header-section-number">1.7</span> Storia degli Elaboratori</h2>
+<blockquote>
+<p>non sono per l'esame</p>
+</blockquote>
+<ol type="1">
+<li>Pascalina: prima macchina del 1600 che faceva da calcolatrice</li>
+<li>Analytical Engine: riusciva a fare somme con 50 cifre e una memoria di 1000 parole, ed è considerato il primo computer però non è stato mai costruito</li>
+<li>colossus:si passa alle valvole al posto dei relè, ed è il primo computer funzionante</li>
+<li>EINAC: misto tra relè e valvole, usato per scopi militari, si programmava cambiando i cavi e le schede perforate come input</li>
+<li>IAS: progetto di un calcolatore, con la struttura che ancora viene utilizzata (formata da una memoria, una unità di controllo, unita aritmetico logica e un input e output)</li>
+<li>PDP-1: c'è il passaggio ai transistor, primo calcolatore ad avere un riscontro sul mercato, per la prima volta con un display</li>
+<li>CDC 6600: è il primo calcolatore che poteva eseguire istruzioni in parallelo</li>
+<li>IBM 360: multi programmazione (in memoria poteva avere più di un programma), diventa ancora più economico e si poteva comprare con diverse potenze</li>
+<li>VLSI: è un cip con milioni di transistor (i precessori dei giorni nostri)</li>
+<li>IBM 5150: primo personal computer che raggiungerà una veloce diffusione</li>
+<li>Osborne1 il primo computer portatile</li>
+<li>macintosh: primo con l'interfaccia grafica (senza lo schermo totalmente testuale)</li>
+</ol>
+<p>il computing non è solo nel computer ma in molti altri oggetti</p>
+<blockquote>
+<p><strong>MIPS</strong>: milioni di operazioni al secondo</p>
+</blockquote>
+<blockquote>
+<p><strong>MFLOPS</strong>: miliardi di operazioni a virgola mobile</p>
+</blockquote>
+</body>
+</html>
