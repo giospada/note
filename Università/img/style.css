@@ -22,7 +22,8 @@ body {
     background-color:var(--dracula-background);
     color:var(--dracula-foreground);
     max-width:1400px;
-    
+    margin-left:auto;
+    margin-right:auto;    
 }
 
 summary {
@@ -34,12 +35,16 @@ summary {
 strong{
     color:#ffb86c;
 }
+blockquote > p {
+    margin:0px;
+}
 blockquote {
-    padding: 1 1em;
     color: #f1fa8c;
     border-left: 0.25em solid #ffffff;
     background: #768ac713 ;
     font-style: italic;
+    margin: 0 1rem;
+    padding:0.15rem 0.35rem;
 }
 
 tr:nth-child(even){
