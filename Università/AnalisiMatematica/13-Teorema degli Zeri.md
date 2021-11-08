@@ -1,16 +1,15 @@
-# 13-Teorema degli Zeri
+# Teorema degli Zeri
+
+
+## Inutizione
 
 Se abbiamo una funzione continua che in un certo punto è negativa e in un altro è positiva sappiamo che la funzione ha al minimo un punto in cui si annulla.
-
-Lemma: 
-$(b_n)_n \subset \mathbb{R}$
-$b_n < 0 \forall n (b_n > 0 \forall n)$
-$\displaystyle \lim_{x \rightarrow \infty} b_n= l \in \mathbb{R} \implies l \le 0$
-
 
 ![](vx_images/3549954881665.png)
 
 
+
+## Algoritmo 
 
 
 $f: [a,b] \to \mathbb{R}$ continua  $f(a)\times f(b) <0 \implies \exists c \in ]a,b[: f(c)=0$
@@ -24,19 +23,26 @@ prendiamo il punto medio $\frac{(a+b)}{2}$ possiamo avere tre casi:
 2. $f(\frac{a_n+b_n}{2}) < 0$ $a_{n+1}=\frac{a_n+b_n}{2}, b_{n+1}=b_n$
 3. $f(\frac{a_n+b_n}{2}) > 0$ $b_{n+1}=\frac{a_n+b_n}{2}, a_{n+1}=a_n$
 
-allora le $a_n$ e $b_n$ hanno delle proprietà:
+Allora le $a_n$ e $b_n$ hanno delle proprietà:
 1. $a_n$ è cerescente $a_n \le a_{n+1} \mbox{ }\forall n \in \mathbb{N}$ 
 2. $b_n$ è cerescente $b_n \ge b_{n+1} \mbox{ }\forall n \in \mathbb{N}$ 
 3. $f(a_n)<0,f(b_n)>0 \forall n \in \mathbb{N}$
 4. $b_n - a_n = \frac{a_{n-1}-b_{n-1}}{2}=\frac{a_{n-2}-b_{n-2}}{2^2}= .... =\frac{a_n-b_n}{2^{n-1}}$
 
 
+## Dimostrazione
+
+>Lemma: 
+> $(b_n)_n \subset \mathbb{R}$
+> $b_n < 0 \forall n (b_n > 0 \forall n)$
+> $\displaystyle \lim_{x \rightarrow \infty} b_n= l \in \mathbb{R} \implies l \le 0$
+
 Vogliamo dimostrare che $\displaystyle \lim_{x \rightarrow \infty} a_n= \displaystyle \lim_{x \rightarrow \infty} b_n = c \mbox{ e } f(c)=0$
 
-$a_n \le a_{n+1} \mbox{ }\forall n \in \mathbb{N}$ 
- $b_n \ge b_{n+1} \mbox{ }\forall n \in \mathbb{N}$ 
+$a_n \le a_{n+1} \mbox{ }\forall n \in \mathbb{N}$  
+$b_n \ge b_{n+1} \mbox{ }\forall n \in \mathbb{N}$  
 
-implica che $(a_n)_n \subset [a,b] \to \mbox{ è limitata } a_n \nearrow \forall n \to \exists \displaystyle \lim_{x \rightarrow \infty} a_n=\alpha \in \mathbb{R}$
+$\implies (a_n)_n \subset [a,b] \to \mbox{ è limitata } a_n \nearrow \forall n \to \exists \displaystyle \lim_{x \rightarrow \infty} a_n=\alpha \in \mathbb{R}$
 
 $(b_n)_n \subset [a,b] \to \mbox{ è limitata } a_n \searrow \forall n \to \exists \displaystyle \lim_{x \rightarrow \infty} b_n=\beta \in \mathbb{R}$
 
