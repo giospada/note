@@ -35,11 +35,11 @@ Le **DRAM** (Dynamic RAM) o SDRAM (Synchronous DRAM), usate per le memorie centr
   - A causa del refresh sono più lente (ordine della decina di nanosecondi)
   - Richiedendo un solo transistor costano meno e possono essere maggiormente miniaturizzate
 
-### Cache
+## Cache
 
-La **cache memorizza gli ultimi dati utilizzati dalla cpu**, e se la cpu deve accedere dati che ha richiesto da poco la cache restituisce i dati molto velocemente evitando di andarli a riprendere dalla memoria .
+> La **cache memorizza gli ultimi dati utilizzati dalla cpu**, e se la cpu deve accedere dati che ha richiesto da poco la cache restituisce i dati molto velocemente evitando di andarli a riprendere dalla memoria .
 
-I linguaggi di programmazione sono fatti per utilizzare la cache,ma non la si può controllare.
+I linguaggi di programmazione vengono compilati per utilizzare la cache,ma non la possono controllare.
 
 Modello Cache di studio:  
 - Una prima piccola cache (livello 1: L1) è direttamente nel chip della CPU separata fra istruzioni e dati (dimensioni fra 16-64 KB)
@@ -50,9 +50,8 @@ Modello Cache di studio:
 La cache  è suddivisa in n righe ognuna che contiene m byte.  
 Si procede suddividendo la memoria in blocchi da m byte e il blocco i andrà nella riga `i mod n`, la cache tiene traccia anche di quale specifico blocco contiene la linea.
 
-**esempio**
+### Esempio di Cache Direct Mapped
 
-![](../img/cache.png)
 
 Immaginiamo ora una cache con n=2048 linee di dimensione m=32 byte:  
 - **Valid**: indica se la linea di cache contiene un blocco, (all'inizio tutti i valid sono a false e data e tag hanno valori randomizzi)
@@ -63,6 +62,8 @@ quindi se abbiamo un indirizzi da 32 bit:
 - primi **5**: (meno significativi) indicano quale byte dei 32 byte stiamo cercando
 - i successivi **11**: indicano quale linea della cache ($2^11$=2048)
 - i rimanenti **16**: quale tra gli indirizzi che utilizzano quel blocco
+
+![](../img/cache.png)
 
 <details>
   <summary>
@@ -132,17 +133,40 @@ locazione 13, non è nella cache 00 000 1101
 </details>
 
 
-### Paginazione
-TODO:
+### Gestione della cache
 
-### Pre-fetch istruzioni
+Quando si utilizza la cache ha:  
+- **cache hit**: quando la cache ha successo
+- **cache miss**: il contenuto nella cache dev'essere ricopiato in memoria, e sostituito con il nuovo blocco
+
+Nei momenti in cui i dati sono in cache e non in memoria si possono creare delle anomalie, se più processori o più dispositivi accedono alla memoria centrale.
+
+## Paginazione
+
+> Sistema per lo **spostamento di dati** tra la memoria **centrale** e la memoria di **massa**
+
+L'impaginazione è getsita dall'sistema operativo
+
+
+## Pre-fetch delle istruzioni
 
 
 Nell’architettura del nostro calcolatore Hack,  consideriamo due distinti ingressi per la CPU:  
-- “instruction”: carica l’istruzione da eseguire da una specifica memoria programma
+- instruction: carica l’istruzione da eseguire da una specifica memoria programma
 - inM: carica i dati necessari da una distinta memoria dati
 
 >  Nelle architetture usuali (Von Neumann) dati e programmi risiedono nella stessa memoria
 
+Il **Pre-fecth** delle istruini è il caricare la prossima istruzione mentre la precedente è in esecuzione.  
+Questa è già un esempio di pipeline, ce ne sono di molto più complesse, anche a 7 stadi come quella sotto.
+
+![](vx_images/2847648209379.png)
+
+### PipeLine, Salti e registri
+
+Per evitare di far lavorare il **processore inutilmente quando si ha un salto**, si usano varie tecniche come:  
+- mettere **nop** dopo l'istruzione di salto in modo che non sprechi tempo finche non si sà dove eseguirà
+- predire i salti usando **euristiche**, in particolare i salti all'indietro sono più comuni e in base hai salti fatti
 
 
+Con la pipeline inoltre si possono avere dei problemi con i registri, infatti se **operazioni accedono agli stessi registri bisogna aspettare** che una abbia concluso con l'utilizzo del registro.

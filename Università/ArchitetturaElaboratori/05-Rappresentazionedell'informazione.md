@@ -76,7 +76,7 @@ Lo si converta in binario (su 8 bit) con le codifiche:
 
 ### Numeri con la virgola
 
-la rappresentazione dei numeri con la virgola si usano due numeri:
+la rappresentazione dei numeri con la virgola si usano due numeri:  
 - f che è la mantissa
 - e che è l'esponente
 
@@ -96,7 +96,7 @@ riesco a rappresentare i numeri
 
 </details>
 
-**notazione concreta**:
+**notazione concreta**:  
 - utilizziamo la base 2
 - come mantissa utilizziamo un numero minore di 1
 - inoltre normalizziamo la mantissa (la cifra più significativa (dopo la virgola) non può essere uguale a zero)
@@ -111,7 +111,7 @@ la mantissa sarà 432=110110000b questo numero va normalizzato quindi dobbiamo s
 
 </details>
 
-**standard binary32**:
+**standard binary32**:  
 - 1 bit di segno
 - 8 bit di esponente
 - 23 bit di mantissa
@@ -152,7 +152,7 @@ Essendo che la codifica **unicode è all'esaurimento** dei possibili codici, e *
 
 ## Codici corretti
 
-Memorie e trasmissioni di dati sono soggette ad errori, così si creano dei codici di controllo:  
+Memorie e trasmissioni di dati sono soggette ad errori, così si creano dei codici di controllo:   
 - m bit: della parola
 - r bit: di controllo, scelti in un meccanismo
 - n bit: m+r "parola codice"
@@ -179,8 +179,17 @@ Questo questo codice ha una distanza di hamming di 5 quindi è possibile corregg
 
 ### Codice Hamming
 
-> Creazione: mettiamo in ogni potenza di due, un codice di controllo che indica la parita della somma tra i 
+> Creazione: mettiamo in ogni potenza di due, il bit indicherà la parità della somma di tutti i bit la quale posizione ha il bit attivo 
 
+Per un codice con m=16:  
+- bit 1: 3,5,7,9,11,13,15,17,19,21
+- bit 2: 3,6,7,10,11,14,15,18,19
+- bit 4: 5,6,7,12,13,14,15,20,21
+- bit 8: 9,10,11,12,13,14,15
+- bit 16: 17,18,19,20,21
+
+
+> Correzzione errore: il bit errato sarà nella posizione data dalla somma delle posizioni dei bit di parità errati
 
 <details>
 <summary>
