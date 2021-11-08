@@ -165,10 +165,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li><a href="#microarchitettura"><span class="toc-section-number">7</span> Microarchitettura</a><ul>
-<li><a href="#sram-e-dram"><span class="toc-section-number">7.1</span> SRAM e DRAM</a><ul>
-<li><a href="#cache"><span class="toc-section-number">7.1.1</span> Cache</a></li>
-<li><a href="#paginazione"><span class="toc-section-number">7.1.2</span> Paginazione</a></li>
-<li><a href="#pre-fetch-istruzioni"><span class="toc-section-number">7.1.3</span> Pre-fetch istruzioni</a></li>
+<li><a href="#sram-e-dram"><span class="toc-section-number">7.1</span> SRAM e DRAM</a></li>
+<li><a href="#cache"><span class="toc-section-number">7.2</span> Cache</a><ul>
+<li><a href="#esempio-di-cache-direct-mapped"><span class="toc-section-number">7.2.1</span> Esempio di Cache Direct Mapped</a></li>
+<li><a href="#gestione-della-cache"><span class="toc-section-number">7.2.2</span> Gestione della cache</a></li>
+</ul></li>
+<li><a href="#paginazione"><span class="toc-section-number">7.3</span> Paginazione</a></li>
+<li><a href="#pre-fetch-delle-istruzioni"><span class="toc-section-number">7.4</span> Pre-fetch delle istruzioni</a><ul>
+<li><a href="#pipeline-salti-e-registri"><span class="toc-section-number">7.4.1</span> PipeLine, Salti e registri</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#isa-del-processore-hack"><span class="toc-section-number">8</span> ISA del processore Hack</a><ul>
@@ -182,12 +186,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li><a href="#realizzazione-del-computer-hack"><span class="toc-section-number">9</span> Realizzazione del Computer Hack</a><ul>
-<li><a href="#tastiera"><span class="toc-section-number">9.1</span> Tastiera</a></li>
-<li><a href="#schermo"><span class="toc-section-number">9.2</span> Schermo</a></li>
-<li><a href="#codifica-a-instruction"><span class="toc-section-number">9.3</span> Codifica A-instruction</a></li>
-<li><a href="#codifica-c-instruction"><span class="toc-section-number">9.4</span> Codifica C-Instruction</a></li>
-<li><a href="#livello-istruction-set-architeture"><span class="toc-section-number">9.5</span> Livello Istruction Set Architeture</a></li>
-<li><a href="#trap-e-interrupt"><span class="toc-section-number">9.6</span> Trap e Interrupt</a></li>
+<li><a href="#codifica-a-instruction"><span class="toc-section-number">9.1</span> Codifica A-instruction</a></li>
+<li><a href="#codifica-c-instruction"><span class="toc-section-number">9.2</span> Codifica C-Instruction</a></li>
+<li><a href="#livello-istruction-set-architeture"><span class="toc-section-number">9.3</span> Livello Istruction Set Architeture</a></li>
+<li><a href="#trap-e-interrupt"><span class="toc-section-number">9.4</span> Trap e Interrupt</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -660,7 +662,8 @@ Lo si converta in binario (su 8 bit) con le codifiche:</p>
 </ul>
 </details>
 <h3 id="numeri-con-la-virgola"><span class="header-section-number">6.1.5</span> Numeri con la virgola</h3>
-<p>la rappresentazione dei numeri con la virgola si usano due numeri: - f che è la mantissa - e che è l’esponente</p>
+<p>la rappresentazione dei numeri con la virgola si usano due numeri:<br />
+- f che è la mantissa - e che è l’esponente</p>
 <p><span class="math inline">\(n=f \times 10^{e}\)</span></p>
 <details>
 <p><summary> esempio codifica </summary></p>
@@ -668,13 +671,15 @@ Lo si converta in binario (su 8 bit) con le codifiche:</p>
 <p>riesco a rappresentare i numeri</p>
 <p><img src="../img/overflowunder.png" /></p>
 </details>
-<p><strong>notazione concreta</strong>: - utilizziamo la base 2 - come mantissa utilizziamo un numero minore di 1 - inoltre normalizziamo la mantissa (la cifra più significativa (dopo la virgola) non può essere uguale a zero)</p>
+<p><strong>notazione concreta</strong>:<br />
+- utilizziamo la base 2 - come mantissa utilizziamo un numero minore di 1 - inoltre normalizziamo la mantissa (la cifra più significativa (dopo la virgola) non può essere uguale a zero)</p>
 <details>
 <p><summary> esempio concreto </summary></p>
 <p>vogliamo rappresentare il numero 432:<br />
 la mantissa sarà 432=110110000b questo numero va normalizzato quindi dobbiamo shiftarlo, quindi gli diamo un esponente di: <span class="math inline">\(2^9\)</span></p>
 </details>
-<p><strong>standard binary32</strong>: - 1 bit di segno - 8 bit di esponente - 23 bit di mantissa</p>
+<p><strong>standard binary32</strong>:<br />
+- 1 bit di segno - 8 bit di esponente - 23 bit di mantissa</p>
 <details>
 <p><summary> Si converta il numero 0.3 in notazione floating point in base 2 normalizzata (usando il complemento a 2 su 8 bit sia per la mantissa che per l’esponente). </summary></p>
 <p>TODO: da finire</p>
@@ -707,7 +712,12 @@ la mantissa sarà 432=110110000b questo numero va normalizzato quindi dobbiamo s
 Questo questo codice ha una distanza di hamming di 5 quindi è possibile correggere fino a due errori.</p>
 <h3 id="codice-hamming"><span class="header-section-number">6.3.3</span> Codice Hamming</h3>
 <blockquote>
-<p>Creazione: mettiamo in ogni potenza di due, un codice di controllo che indica la parita della somma tra i</p>
+<p>Creazione: mettiamo in ogni potenza di due, il bit indicherà la parità della somma di tutti i bit la quale posizione ha il bit attivo</p>
+</blockquote>
+<p>Per un codice con m=16:<br />
+- bit 1: 3,5,7,9,11,13,15,17,19,21 - bit 2: 3,6,7,10,11,14,15,18,19 - bit 4: 5,6,7,12,13,14,15,20,21 - bit 8: 9,10,11,12,13,14,15 - bit 16: 17,18,19,20,21</p>
+<blockquote>
+<p>Correzzione errore: il bit errato sarà nella posizione data dalla somma delle posizioni dei bit di parità errati</p>
 </blockquote>
 <details>
 <p><summary> Esempio Hamming </summary></p>
@@ -789,19 +799,21 @@ ottengo la posizione dell&#39;errore:
 - Veloci (ordine del nanosecondo) - Usate principalmente per le cache</p>
 <p>Le <strong>DRAM</strong> (Dynamic RAM) o SDRAM (Synchronous DRAM), usate per le memorie centrali, hanno un solo transistor ed un condensatore che mantiene (tramite carica elettrica) un singolo bit</p>
 <p>-Visto che il condensatore perde la propria carica, deve essere ricaricato per evitare di perdere la propria informazione - Si rendono necessarie periodiche fasi di “refresh” (ad intervalli dell’ordine del millisecondo) - A causa del refresh sono più lente (ordine della decina di nanosecondi) - Richiedendo un solo transistor costano meno e possono essere maggiormente miniaturizzate</p>
-<h3 id="cache"><span class="header-section-number">7.1.1</span> Cache</h3>
+<h2 id="cache"><span class="header-section-number">7.2</span> Cache</h2>
+<blockquote>
 <p>La <strong>cache memorizza gli ultimi dati utilizzati dalla cpu</strong>, e se la cpu deve accedere dati che ha richiesto da poco la cache restituisce i dati molto velocemente evitando di andarli a riprendere dalla memoria .</p>
-<p>I linguaggi di programmazione sono fatti per utilizzare la cache,ma non la si può controllare.</p>
+</blockquote>
+<p>I linguaggi di programmazione vengono compilati per utilizzare la cache,ma non la possono controllare.</p>
 <p>Modello Cache di studio:<br />
 - Una prima piccola cache (livello 1: L1) è direttamente nel chip della CPU separata fra istruzioni e dati (dimensioni fra 16-64 KB) - Una seconda cache (livello 2: L2) nel medesimo “involucro” della CPU “unificata” fra dati e istruzioni (fra 512 KB ed 1 MB) - Una terza cache (livello 3: L3) esterna alla CPU (alcuni MB)</p>
 <p>La cache è suddivisa in n righe ognuna che contiene m byte.<br />
 Si procede suddividendo la memoria in blocchi da m byte e il blocco i andrà nella riga <code>i mod n</code>, la cache tiene traccia anche di quale specifico blocco contiene la linea.</p>
-<p><strong>esempio</strong></p>
-<p><img src="../img/cache.png" /></p>
+<h3 id="esempio-di-cache-direct-mapped"><span class="header-section-number">7.2.1</span> Esempio di Cache Direct Mapped</h3>
 <p>Immaginiamo ora una cache con n=2048 linee di dimensione m=32 byte:<br />
 - <strong>Valid</strong>: indica se la linea di cache contiene un blocco, (all’inizio tutti i valid sono a false e data e tag hanno valori randomizzi) - <strong>Data</strong>: contiene i 32 byte del blocco - <strong>Tag</strong>: indica esattamente quale blocco è contenuto</p>
 <p>quindi se abbiamo un indirizzi da 32 bit:<br />
 - primi <strong>5</strong>: (meno significativi) indicano quale byte dei 32 byte stiamo cercando - i successivi <strong>11</strong>: indicano quale linea della cache (<span class="math inline">\(2^11\)</span>=2048) - i rimanenti <strong>16</strong>: quale tra gli indirizzi che utilizzano quel blocco</p>
+<p><img src="../img/cache.png" /></p>
 <details>
 <p><summary> Esercizio </summary></p>
 <p><strong>indirizzo:</strong><br />
@@ -947,14 +959,28 @@ Si procede suddividendo la memoria in blocchi da m byte e il blocco i andrà nel
 </tbody>
 </table>
 </details>
-<h3 id="paginazione"><span class="header-section-number">7.1.2</span> Paginazione</h3>
-<p>TODO:</p>
-<h3 id="pre-fetch-istruzioni"><span class="header-section-number">7.1.3</span> Pre-fetch istruzioni</h3>
+<h3 id="gestione-della-cache"><span class="header-section-number">7.2.2</span> Gestione della cache</h3>
+<p>Quando si utilizza la cache ha:<br />
+- <strong>cache hit</strong>: quando la cache ha successo - <strong>cache miss</strong>: il contenuto nella cache dev’essere ricopiato in memoria, e sostituito con il nuovo blocco</p>
+<p>Nei momenti in cui i dati sono in cache e non in memoria si possono creare delle anomalie, se più processori o più dispositivi accedono alla memoria centrale.</p>
+<h2 id="paginazione"><span class="header-section-number">7.3</span> Paginazione</h2>
+<blockquote>
+<p>Sistema per lo <strong>spostamento di dati</strong> tra la memoria <strong>centrale</strong> e la memoria di <strong>massa</strong></p>
+</blockquote>
+<p>L’impaginazione è getsita dall’sistema operativo</p>
+<h2 id="pre-fetch-delle-istruzioni"><span class="header-section-number">7.4</span> Pre-fetch delle istruzioni</h2>
 <p>Nell’architettura del nostro calcolatore Hack, consideriamo due distinti ingressi per la CPU:<br />
-- “instruction”: carica l’istruzione da eseguire da una specifica memoria programma - inM: carica i dati necessari da una distinta memoria dati</p>
+- instruction: carica l’istruzione da eseguire da una specifica memoria programma - inM: carica i dati necessari da una distinta memoria dati</p>
 <blockquote>
 <p>Nelle architetture usuali (Von Neumann) dati e programmi risiedono nella stessa memoria</p>
 </blockquote>
+<p>Il <strong>Pre-fecth</strong> delle istruini è il caricare la prossima istruzione mentre la precedente è in esecuzione.<br />
+Questa è già un esempio di pipeline, ce ne sono di molto più complesse, anche a 7 stadi come quella sotto.</p>
+<p><img src="vx_images/2847648209379.png" /></p>
+<h3 id="pipeline-salti-e-registri"><span class="header-section-number">7.4.1</span> PipeLine, Salti e registri</h3>
+<p>Per evitare di far lavorare il <strong>processore inutilmente quando si ha un salto</strong>, si usano varie tecniche come:<br />
+- mettere <strong>nop</strong> dopo l’istruzione di salto in modo che non sprechi tempo finche non si sà dove eseguirà - predire i salti usando <strong>euristiche</strong>, in particolare i salti all’indietro sono più comuni e in base hai salti fatti</p>
+<p>Con la pipeline inoltre si possono avere dei problemi con i registri, infatti se <strong>operazioni accedono agli stessi registri bisogna aspettare</strong> che una abbia concluso con l’utilizzo del registro.</p>
 <h1 id="isa-del-processore-hack"><span class="header-section-number">8</span> ISA del processore Hack</h1>
 <blockquote>
 <p><strong>Instruction Set Architeture</strong>:(rappresenta l’interfaccia fra l’hardware e il software) sono la serie di istruzioni che il processore esegue</p>
@@ -1188,16 +1214,11 @@ Si procede suddividendo la memoria in blocchi da m byte e il blocco i andrà nel
 </ul></li>
 </ul>
 <h1 id="realizzazione-del-computer-hack"><span class="header-section-number">9</span> Realizzazione del Computer Hack</h1>
-<h2 id="tastiera"><span class="header-section-number">9.1</span> Tastiera</h2>
-<p>Tastiera è una memoria ROM in solo lettura</p>
-<h2 id="schermo"><span class="header-section-number">9.2</span> Schermo</h2>
-<p>Lo Schermo è come una memoria ram, tutto quello che vieine scritto su questa memoria appare nella schermo del simulatore.</p>
-<p>Lo schermo è diviso in colonne e righe</p>
-<h2 id="codifica-a-instruction"><span class="header-section-number">9.3</span> Codifica A-instruction</h2>
+<h2 id="codifica-a-instruction"><span class="header-section-number">9.1</span> Codifica A-instruction</h2>
 <p><img src="vx_images/2106204199297.png" /></p>
-<h2 id="codifica-c-instruction"><span class="header-section-number">9.4</span> Codifica C-Instruction</h2>
+<h2 id="codifica-c-instruction"><span class="header-section-number">9.2</span> Codifica C-Instruction</h2>
 <p><img src="vx_images/5357587756820.png" /></p>
-<h2 id="livello-istruction-set-architeture"><span class="header-section-number">9.5</span> Livello Istruction Set Architeture</h2>
+<h2 id="livello-istruction-set-architeture"><span class="header-section-number">9.3</span> Livello Istruction Set Architeture</h2>
 <blockquote>
 <p>ISA è l’interfaccia tra l’hardware e il software, i compilatori traucono i programmi in instruzioni livello ISA</p>
 </blockquote>
@@ -1211,7 +1232,7 @@ Si procede suddividendo la memoria in blocchi da m byte e il blocco i andrà nel
 <p>Tipiche istruzioni: - operandi di trasfermiento dati: È trasferiscono dati da memoria a registri e viceversa e da registri a registri - operazioni aritmetico-logiche: Operazioni su interi e floating-point - operazioni unairie: (prendono un solo operatore) per esempio le instruzioni shift o inc - salti: condizionati e non - alcuni compilatori hanno</p>
 <p>TODO: add record d’attivazione, invocazione di procedura</p>
 <p><img src="vx_images/160408189373.png" /></p>
-<h2 id="trap-e-interrupt"><span class="header-section-number">9.6</span> Trap e Interrupt</h2>
+<h2 id="trap-e-interrupt"><span class="header-section-number">9.4</span> Trap e Interrupt</h2>
 <blockquote>
 <p>Trap è una procedura automatica, viene eseguita quando si verificano situazioni come Opcode non definito o accesso ad area di memoria non consentita, dopo di che il controllo è trasferita ad una procedura detta “gestore di trap”</p>
 </blockquote>

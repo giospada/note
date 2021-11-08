@@ -16,7 +16,7 @@
 }
 
 body {
-    margin: 20px ;
+    padding: 10px;
     font-family: "Fira Code",Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     line-height: 1.5;
     background-color:var(--dracula-background);
@@ -28,7 +28,7 @@ body {
 
 summary {
     font-weight: bold;
-    color:#ffb86c;
+    color:var(--dracula-pink);
 }
 
 
@@ -43,8 +43,8 @@ blockquote {
     border-left: 0.25em solid #ffffff;
     background: #768ac713 ;
     font-style: italic;
-    margin: 0 1rem;
-    padding:0.15rem 0.35rem;
+    margin: 1rem 0.5rem;
+    padding: 0.15rem 0.35rem;
 }
 
 tr:nth-child(even){
@@ -62,14 +62,14 @@ tr:nth-child(even){
 a{
     color:#50fa7b ;
 }
-.vscode-dark h1,
-.vscode-dark h2,
-.vscode-dark h3,
-.vscode-dark h4,
-.vscode-dark h5,
-.vscode-dark h6 {
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
 	font-weight: 700;
-	color: #bd93f9;
+	color: var(--dracula-purple);
 }
 
 h1{
@@ -99,24 +99,6 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
-/*
-h1::before{
-    content: "# ";
-}
-h2::before{
-    content: "## ";
-}
-h3::before{
-    content: "### ";
-}
-h4::before{
-    content: "#### ";
-}
-h5::before{
-    content: "##### ";
-}
-h6::before{
-    content: "###### ";
-}
 
-*/
+
+
