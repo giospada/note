@@ -86,8 +86,21 @@
             "attachment_folder": "",
             "created_time": "2021-11-07T19:05:51Z",
             "id": "0",
+<<<<<<< HEAD
+            "modified_time": "2021-11-10T08:20:19Z",
+=======
             "modified_time": "2021-11-07T19:05:51Z",
+>>>>>>> 5744ef251285dd86cdbf7f1bd952b2931c7b315e
             "name": "11-Logica Proporzionale.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2021-11-10T08:31:33Z",
+            "id": "0",
+            "modified_time": "2021-11-10T09:59:57Z",
+            "name": "12-Deduzione Naturale.md",
             "tags": [
             ]
         }

@@ -179,6 +179,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="#semantica"><span class="toc-section-number">10.3</span> Semantica</a></li>
 <li><a href="#dimostrazioni-e-prove"><span class="toc-section-number">10.4</span> Dimostrazioni e Prove</a></li>
 </ul></li>
+<li><a href="#sistemi-deduttivi"><span class="toc-section-number">11</span> Sistemi Deduttivi</a><ul>
+<li><a href="#regloa-di-inferenza"><span class="toc-section-number">11.1</span> Regloa Di Inferenza</a></li>
+</ul></li>
 </ul>
 </nav>
 <h1 id="docente"><span class="header-section-number">1</span> Docente</h1>
@@ -854,5 +857,27 @@ TODO
 <p><img src="vx_images/2567958149376.png" /></p>
 <h2 id="dimostrazioni-e-prove"><span class="header-section-number">10.4</span> Dimostrazioni e Prove</h2>
 <p>Partendo da <span class="math inline">\(\Gamma \vdash F\)</span></p>
+<h1 id="sistemi-deduttivi"><span class="header-section-number">11</span> Sistemi Deduttivi</h1>
+<p><span class="math inline">\(F \Vdash F \iff \forall v, (\forall G \in \Gamma,[G]^v=1)\implies [F]^v=1\)</span> # Deduzione Naturale</p>
+<p><img src="vx_images/165632139381.png" /></p>
+<p>Per dimostrare si utilizza un <strong>albero di deduzione naturale</strong> per <span class="math inline">\(\Gamma \vdash F\)</span> è una struttura dati arorescente tale che :</p>
+<ul>
+<li>i nodi sono etichettati con delle formule</li>
+<li>le foglie sono formule [G] ipotesi locali oppure formule non scartate G ipotesi globali</li>
+<li>la radice è etichettata con F</li>
+<li>le foglie non scaricate sono etichette con formule appartenenti a <span class="math inline">\(\Gamma\)</span></li>
+<li>i nodi interni, oltre alla formula sono etichettati con delle regole di inferenza</li>
+</ul>
+<h2 id="regloa-di-inferenza"><span class="header-section-number">11.1</span> Regloa Di Inferenza</h2>
+<p>Sintassi per la regloa di inferenza:</p>
+<p><span class="math inline">\(\frac{F_1... F_n}{F}\)</span></p>
+<p>La formula F è la conclusione della regola. Le formule <span class="math inline">\(F_1\dots F_n\)</span> sono le premesse della regola.</p>
+<p>La premessa <span class="math inline">\(F_i\)</span> verrà indicata con <span class="math inline">\(\displaylines{[A]\\ \vdots \\ F_i}\)</span> per indicare che è possibile assumere localmente A per concludere <span class="math inline">\(F_i\)</span></p>
+<p>Una regola senza premesse (n=0) si dice <strong>assioma</strong>.</p>
+<p>Regole di introduzione: rispnde alla domanda <strong>come concludo ?</strong> Regole di elminazione: rispnde alla domanda <strong>cosa ricavao da ?</strong></p>
+<ol type="1">
+<li>Bottom-up (dalle premesse alla conclusione) date le premesse <span class="math inline">\(F_1\dots F_n\)</span> posso concludere F</li>
+<li>Top-down (dalle premesse alla conclusione) per concludere F posso ridurmi a dimostrare <span class="math inline">\(F_1\dots F_n\)</span></li>
+</ol>
 </body>
 </html>
