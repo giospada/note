@@ -80,3 +80,10 @@ Utilizziamo 0 e 1, per denotare la falsità e la verità
 ## Dimostrazioni e Prove
 
 Partendo da $\Gamma \vdash F$ 
+
+
+
+# Sistemi Deduttivi
+
+
+$F \Vdash F \iff \forall v, (\forall G \in \Gamma,[G]^v=1)\implies [F]^v=1$
