@@ -130,7 +130,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <blockquote>
 <p>un <code>sistema di calcolo</code> è formato da hardware e software (collezione di programmi che i calcolatori eseguono)</p>
 </blockquote>
-<p>l’hardware (il calcolatore) ha 5 componenti principali: - dispositivi di input - dispositivi di output - processore - memoria principale (RAM) - memoria secondaria (dove vengono memorizzati i dati in modo permanente)</p>
+<p>l’hardware (il calcolatore) ha 5 componenti principali:</p>
+<ul>
+<li>dispositivi di input</li>
+<li>dispositivi di output</li>
+<li>processore</li>
+<li>memoria principale (RAM)</li>
+<li>memoria secondaria (dove vengono memorizzati i dati in modo permanente)</li>
+</ul>
 <h3 id="memoria-principale"><span class="header-section-number">1.4.1</span> Memoria Principale</h3>
 <blockquote>
 <p>la memoria principale è una sequenza di locazioni che si possono accedere attraverso gli indirizzi (ogni indirizzo contiene 8 bits, un byte)</p>
@@ -155,20 +162,37 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <blockquote>
 <p>sono linguaggi di programmazione che astraggono il linguaggio macchina e assomigliano di più ai linguaggi naturali (alla fine per essere eseguiti vengono tradotti in linguaggio macchina)</p>
 </blockquote>
-<p>questi linguaggi ad alto livello hanno bisogno di: - linker: collega le funzioni chiamate nel codice con le librerie - compilatore: traduce il codice ad alto livello ad un codice comprensibile dal computer</p>
+<p>questi linguaggi ad alto livello hanno bisogno di:</p>
+<ul>
+<li>linker: collega le funzioni chiamate nel codice con le librerie</li>
+<li>compilatore: traduce il codice ad alto livello ad un codice comprensibile dal computer</li>
+</ul>
 <h3 id="algoritmi-e-programmi"><span class="header-section-number">1.4.4</span> Algoritmi e Programmi</h3>
 <ul>
 <li>un algoritmo è una serie di istruzioni che risolve un certo problema, scritta in una forma logica qualsiasi</li>
 <li>un programma è un algoritmo espresso in un linguaggio di programmazione</li>
 </ul>
 <p>Problem Solving e implemantazione</p>
-<p>domande del problem solving:<br />
-- quale è l’input? - cosa contiene l’output? - come sono organizzati l’input e l’output?</p>
-<p>implementazione:<br />
-- tradurre l’algoritmo - compilare - eseguire il codice - rivelare errori nel nell’algoritmo</p>
+<p>domande del problem solving:</p>
+<ul>
+<li>quale è l’input?</li>
+<li>cosa contiene l’output?</li>
+<li>come sono organizzati l’input e l’output?</li>
+</ul>
+<p>implementazione:</p>
+<ul>
+<li>tradurre l’algoritmo</li>
+<li>compilare</li>
+<li>eseguire il codice</li>
+<li>rivelare errori nel nell’algoritmo</li>
+</ul>
 <h4 id="diagrammi-di-flusso"><span class="header-section-number">1.4.4.1</span> Diagrammi di flusso</h4>
-<p>tipi di nodi:<br />
-- nodo comando: un rettangolo - nodo condizione: un rombo con scritta una condizione - nodi speciali: di fine e di inizio</p>
+<p>tipi di nodi:</p>
+<ul>
+<li>nodo comando: un rettangolo</li>
+<li>nodo condizione: un rombo con scritta una condizione</li>
+<li>nodi speciali: di fine e di inizio</li>
+</ul>
 <p>esempio visualizzabile con mermaid:</p>
 <pre class="mermaid"><code>graph TD
 B[nodo speciale di inizio: input m ]
@@ -196,8 +220,16 @@ C --&gt; |vera| E[blocco di fine: output pari]</code></pre>
 <p>gli array multidimensionali quando sono passati ad una funzione dev’essere esplicitato il numero dell’ultime dimensioni perché il compilatore deve sapere dove incomincia il nuovo array</p>
 <h2 id="stringhe"><span class="header-section-number">2.3</span> Stringhe</h2>
 <p>Possiamo utilizzare le c string, cioè degli array di char il cuoi ultimo carattere è il terminale delle stringhe <code>'\0'</code>.</p>
-<p>funzioni fatte:<br />
-- strlen - strcat - strncpy - strcmp - atoi - atol - atof</p>
+<p>funzioni fatte:</p>
+<ul>
+<li>strlen</li>
+<li>strcat</li>
+<li>strncpy</li>
+<li>strcmp</li>
+<li>atoi</li>
+<li>atol</li>
+<li>atof</li>
+</ul>
 <h2 id="struct"><span class="header-section-number">2.4</span> Struct</h2>
 <p>Vengono copiate per valore, e se contengono un array statico al loro interno anche esso viene copitato per valore.</p>
 </body>

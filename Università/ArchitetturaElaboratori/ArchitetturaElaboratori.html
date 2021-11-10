@@ -219,8 +219,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Implementazione: Si realizza la soluzione aggiungendo gli aspetti astratti nella prima fase (ad esempio, si mostra come si possono risolvere i problemi più semplici)</p>
 </blockquote>
 <p>questa implementazione e astrazione è utilizzata per creare macchine multilivello</p>
-<p>nella tipica struttura a livelli, ogni livello superiore esegue il codice su una macchina virtuale inferiore eseguendo:<br />
-- un interprete che viene eseguito eseguito su una macchina inferiore - una traduzione nel linguaggio di una macchina inferiore</p>
+<p>nella tipica struttura a livelli, ogni livello superiore esegue il codice su una macchina virtuale inferiore eseguendo:</p>
+<ul>
+<li>un interprete che viene eseguito eseguito su una macchina inferiore</li>
+<li>una traduzione nel linguaggio di una macchina inferiore</li>
+</ul>
 <p><img src="../img/livellimacchinevirtuali.png" /></p>
 <p>Tipico elaboratore a 6 livelli <img src="../img/elaboratore6livelli.png" /></p>
 <h3 id="livello-0"><span class="header-section-number">2.1.1</span> Livello 0</h3>
@@ -293,23 +296,55 @@ linguaggi che vengono compilati o interpretati, in linguaggio assembly</p>
 <blockquote>
 <p>la cpu è il cervello della macchina che esegue i calcoli</p>
 </blockquote>
-<p><strong>la cpu è composta da</strong>: - unita di controllo:legge e interpreta le istruzioni - alu: esegue le operazioni - registri: che sono delle celle di memoria per i dati necessari al funzionamento</p>
+<p><strong>la cpu è composta da</strong>:</p>
+<ul>
+<li>unita di controllo:legge e interpreta le istruzioni</li>
+<li>alu: esegue le operazioni</li>
+<li>registri: che sono delle celle di memoria per i dati necessari al funzionamento</li>
+</ul>
 <blockquote>
 <p>[NOTA] la memoria centrale è più lenta del processore, e come primo accorgimento si utilizzano i registri per tenere i dati più utilizzati</p>
 </blockquote>
-<p><strong>Registri Speciali</strong>(non “general propose” di uso generale): - Program Counter:indica la prossima istruzione - Instruction Register: contiene l’istruzione che stiamo eseguendo (prende tutta l’istruzione per esempio prende tutto <code>add ax,bx</code>) - Memory registers:si usano per interagire con la memoria - Memory address Register: su questo si mette l’indirizzo da leggere o scrivere<br />
-- Memory data Register: qui si scrive li dato da scrivere o si legge il dato appena letto - Program Status Word: indica informazioni sull’andamento dell’ultima istruzione eseguita (c’è stata un’overflow, l’ultima operazione è risultata zero)</p>
-<p><strong>Esempio pratico dell’esecuzione di un istruzione</strong><br />
-1. il contenuto di Program counter viene messo su Memoriy address Register e viene letta l’istruzione 2. la memoria copia il contenuto della cella all’indirizzo del Memory address register su il Memory Data Register 3. il contenuto di Memory Data Register viene copiato su Instruction Register 4. l’istruzione passa all’ALU 5. se ci sono operatori da prelevare in memoria si collegano a i registri (utilizzando sempre il Memory Address Register e il Memory Data Register) 6. termina l’esecuzione e il risultato va sul registro di destinazione (aggiorna il Program Status Word), e se bisogna scrivere la memoria scrive in memoria il valore calcolato si sposta sulla memoria utilizzando sempre il MDR e il MAR 7. si torna al punto 1 dopo avere aggiornato il valore di Program Counter</p>
+<p><strong>Registri Speciali</strong>(non “general propose” di uso generale):</p>
+<ul>
+<li>Program Counter:indica la prossima istruzione</li>
+<li>Instruction Register: contiene l’istruzione che stiamo eseguendo (prende tutta l’istruzione per esempio prende tutto <code>add ax,bx</code>)</li>
+<li>Memory registers:si usano per interagire con la memoria
+<ul>
+<li>Memory address Register: su questo si mette l’indirizzo da leggere o scrivere<br />
+</li>
+<li>Memory data Register: qui si scrive li dato da scrivere o si legge il dato appena letto</li>
+</ul></li>
+<li>Program Status Word: indica informazioni sull’andamento dell’ultima istruzione eseguita (c’è stata un’overflow, l’ultima operazione è risultata zero)</li>
+</ul>
+<p><strong>Esempio pratico dell’esecuzione di un istruzione</strong></p>
+<ol type="1">
+<li>il contenuto di Program counter viene messo su Memoriy address Register e viene letta l’istruzione</li>
+<li>la memoria copia il contenuto della cella all’indirizzo del Memory address register su il Memory Data Register</li>
+<li>il contenuto di Memory Data Register viene copiato su Instruction Register</li>
+<li>l’istruzione passa all’ALU</li>
+<li>se ci sono operatori da prelevare in memoria si collegano a i registri (utilizzando sempre il Memory Address Register e il Memory Data Register)</li>
+<li>termina l’esecuzione e il risultato va sul registro di destinazione (aggiorna il Program Status Word), e se bisogna scrivere la memoria scrive in memoria il valore calcolato si sposta sulla memoria utilizzando sempre il MDR e il MAR</li>
+<li>si torna al punto 1 dopo avere aggiornato il valore di Program Counter</li>
+</ol>
 <blockquote>
 <p>[NOTA] il program counter viene incrementato in modo diverso dal tipo di architettura, alcuni sistemi hanno una dimensione fissa dell’istruzione e a quel punto incrementa di una costante, in altri casi quanto si hanno diversa lunghezza nelle istruzioni un circuito nel processore sa di quanto incrementare in base all’istruzione eseguita</p>
 </blockquote>
-<p>il ciclo di esecuzione può essere schematizzato anche come <strong>FDE</strong>: 1. <strong>Fetch</strong> caricamento della memoria di un’istruzione (punti 1-2 dell’esempio) 2. <strong>Decode</strong> identificazione del tipo di operazione da eseguire (punto 3) 3. <strong>Execute</strong> effettuazione delle operazioni corrispondenti all’istruzione (punti 4-5-6)</p>
+<p>il ciclo di esecuzione può essere schematizzato anche come <strong>FDE</strong>:</p>
+<ol type="1">
+<li><strong>Fetch</strong> caricamento della memoria di un’istruzione (punti 1-2 dell’esempio)</li>
+<li><strong>Decode</strong> identificazione del tipo di operazione da eseguire (punto 3)</li>
+<li><strong>Execute</strong> effettuazione delle operazioni corrispondenti all’istruzione (punti 4-5-6)</li>
+</ol>
 <h3 id="unita-di-controllo"><span class="header-section-number">3.1.1</span> Unita di controllo</h3>
 <blockquote>
 <p>l’unita di controllo gestisce la memoria e l’alu, e interpreta le istruzioni</p>
 </blockquote>
-<p>i tipi di set di istruzioni possono essere: - <strong>CISC</strong>: Complex Instruction Set Computer, e quindi utilizzare microprogrammazione e un processore più complesso - <strong>RISC</strong>: Reduced Instruction Set Computer, istruzioni più semplici possono essere eseguite più velocemente e potendo evitare la microprogrammazione</p>
+<p>i tipi di set di istruzioni possono essere:</p>
+<ul>
+<li><strong>CISC</strong>: Complex Instruction Set Computer, e quindi utilizzare microprogrammazione e un processore più complesso</li>
+<li><strong>RISC</strong>: Reduced Instruction Set Computer, istruzioni più semplici possono essere eseguite più velocemente e potendo evitare la microprogrammazione</li>
+</ul>
 <p>di solito in una cpu CISC c’è un collegamento diretto tra il MDR e l’alu senza passare dai registri, mentre nei RISC non c’è il collegamento diretto</p>
 <h2 id="alu-e-clock"><span class="header-section-number">3.2</span> 4.2. ALU e clock</h2>
 <blockquote>
@@ -319,9 +354,23 @@ linguaggi che vengono compilati o interpretati, in linguaggio assembly</p>
 <p><strong>Data Path</strong>: intendiamo la parte della CPU comprende ALU, i suoi input ed i suoi output(registri)</p>
 </blockquote>
 <p>nel calcolatore c’è un segnale che si chiama <strong>clock</strong>; è un segnale regolare che <strong>determina il tempo di Data Pah</strong> (un operazione può utilizzare anche più cicli di clock)</p>
-<p><strong>Velocità CPU</strong>: - il ciclo del clock (stessa durata ciclo di data pah) può essere calcolato <span class="math inline">\(\frac{1}{F}\)</span> (dove F è la frequenza) - durata di un istruzione può essere calcolata n*durata ciclo di path (n varia da istruzione a istruzione)</p>
+<p><strong>Velocità CPU</strong>:</p>
+<ul>
+<li>il ciclo del clock (stessa durata ciclo di data pah) può essere calcolato <span class="math inline">\(\frac{1}{F}\)</span> (dove F è la frequenza)</li>
+<li>durata di un istruzione può essere calcolata n*durata ciclo di path (n varia da istruzione a istruzione)</li>
+</ul>
 <h2 id="ottimizzazioni"><span class="header-section-number">3.3</span> 4.3. Ottimizzazioni</h2>
-<p>Metodi per velocizzare la cpu: - <strong>pipelining</strong>:Un modo per migliorare le prestazioni di un processore è eseguire contemporaneamente più cicli FDE, usando per ognuno di essi parti diversi della CPU - <strong>Multicore</strong>:In alcuni casi, all’interno della medesima CPU si replicano unità di controllo e ALU per esecuzioni di attività in parallelo - <strong>Parallelismo</strong>:com molte cpu che lavorano in coordinamento - SIMD i processori eseguino la stessa istruzione su dati diversi, possiamo utilizzare il SIMD (così utilizza più alu ma con con una sola control unit, si torova spesso nelle GPU) (cambia il numero di alu e di registri) - MIMD: sono più precessori che condividono la stessa memoria senza eseguire necessariamente la stessa istruzione - <strong>multicomputer</strong>: molti processi non condividono una memoria e che comunicano scambiandosi messaggi, così moltissime cpu possono cooperare</p>
+<p>Metodi per velocizzare la cpu:</p>
+<ul>
+<li><strong>pipelining</strong>:Un modo per migliorare le prestazioni di un processore è eseguire contemporaneamente più cicli FDE, usando per ognuno di essi parti diversi della CPU</li>
+<li><strong>Multicore</strong>:In alcuni casi, all’interno della medesima CPU si replicano unità di controllo e ALU per esecuzioni di attività in parallelo</li>
+<li><strong>Parallelismo</strong>:com molte cpu che lavorano in coordinamento
+<ul>
+<li>SIMD i processori eseguino la stessa istruzione su dati diversi, possiamo utilizzare il SIMD (così utilizza più alu ma con con una sola control unit, si torova spesso nelle GPU) (cambia il numero di alu e di registri)</li>
+<li>MIMD: sono più precessori che condividono la stessa memoria senza eseguire necessariamente la stessa istruzione</li>
+</ul></li>
+<li><strong>multicomputer</strong>: molti processi non condividono una memoria e che comunicano scambiandosi messaggi, così moltissime cpu possono cooperare</li>
+</ul>
 <h3 id="approfondimento-pipelining"><span class="header-section-number">3.3.1</span> approfondimento pipelining</h3>
 <p>è l’implementazione di una catena di montaggio dentro la cpu</p>
 <p>viene divisa l’esecuzione di un operazione in più step così mentre si sta eseguendo un operazione allo stato 2 nello stadio 1 si può incominciare un altra operazione</p>
@@ -349,7 +398,12 @@ linguaggi che vengono compilati o interpretati, in linguaggio assembly</p>
 <p>se la cpu accedesse la ram in indirizzi casuale al cache non servirebbe, molti programmi però utilizzano pezzi di memoria vicini e in questi casi la cache velocizza le operazioni.</p>
 <p><strong>tempo medio d’accesso</strong> = <span class="math inline">\(c+(1-h)m\)</span></p>
 <p><strong>spiegazione</strong><br />
-quantificare l’impatto della cache: - c sia il tempo di accesso alla cache - m sia il tempo di accesso alla memoria centrale - h sia l’hit-radio, la frazione di riferimenti che può essere soddisfatta dalla cache (una frazione che ci indica quante volte la cache riesce a non far accedere alla memoria)</p>
+quantificare l’impatto della cache:</p>
+<ul>
+<li>c sia il tempo di accesso alla cache</li>
+<li>m sia il tempo di accesso alla memoria centrale</li>
+<li>h sia l’hit-radio, la frazione di riferimenti che può essere soddisfatta dalla cache (una frazione che ci indica quante volte la cache riesce a non far accedere alla memoria)</li>
+</ul>
 <h3 id="hard-disck"><span class="header-section-number">3.4.2</span> 4.4.2. Hard Disck</h3>
 <blockquote>
 <p>hard disk (HD): è un dispositivo elettro-meccanico per la conservazione di informazioni sotto forma magnetica</p>
@@ -395,8 +449,21 @@ Circuiti che cambiano l’output in base agli input ricevuti in passato</p>
 <p><img src="../img/portelogiche.png" /></p>
 <p>La porta logica più inportante che utilizziermo è l’<strong>NAND</strong>, perchè da questa porta riusciremo a costriuire tutte le porte logiche.</p>
 <h2 id="algebra-di-bool"><span class="header-section-number">4.2</span> Algebra di bool</h2>
-<p>l’algerba di bool è composta da:<br />
-- <strong>constanti</strong> {0,1} - 1 che ha valore di vero - 0 che valore di falso - <strong>variabli</strong> (es. A,B,C…) - <strong>operazioni</strong>: - <strong>or</strong>: definita come addizione (<strong>importante 1+1=1</strong>, del resto è uguale) - <strong>and</strong>: definita come prodotto - <strong>not</strong>: si scrive barrando la variabile (not A è uguale a <span class="math inline">\(\bar{A}\)</span> e <span class="math inline">\(\bar{\bar{A}}=A\)</span>)</p>
+<p>l’algerba di bool è composta da:</p>
+<ul>
+<li><strong>constanti</strong> {0,1}
+<ul>
+<li>1 che ha valore di vero</li>
+<li>0 che valore di falso</li>
+</ul></li>
+<li><strong>variabli</strong> (es. A,B,C…)</li>
+<li><strong>operazioni</strong>:
+<ul>
+<li><strong>or</strong>: definita come addizione (<strong>importante 1+1=1</strong>, del resto è uguale)</li>
+<li><strong>and</strong>: definita come prodotto</li>
+<li><strong>not</strong>: si scrive barrando la variabile (not A è uguale a <span class="math inline">\(\bar{A}\)</span> e <span class="math inline">\(\bar{\bar{A}}=A\)</span>)</li>
+</ul></li>
+</ul>
 <h3 id="proprità-dellalgebra-di-bool"><span class="header-section-number">4.2.1</span> Proprità dell’algebra di bool</h3>
 <p><img src="../img/proprietadibool.png" /></p>
 <details>
@@ -529,8 +596,11 @@ fare la tabella di verità su <span class="math inline">\(A+ \overline{ (B+C) } 
 </tbody>
 </table>
 <p>possiamo racchiudere gli uno nella tabella in rettangoli con base e altezza che sono potenze di 2.</p>
-<p><strong>Copertura minimale</strong>:è una delle forme più piccole<br />
-- raggruppamenti che non sono contenuti in potenziali raggruppamenti più grandi - raggruppamenti che contengono almeno una cella che non appare anche in altri raggruppamenti della copertura</p>
+<p><strong>Copertura minimale</strong>:è una delle forme più piccole</p>
+<ul>
+<li>raggruppamenti che non sono contenuti in potenziali raggruppamenti più grandi</li>
+<li>raggruppamenti che contengono almeno una cella che non appare anche in altri raggruppamenti della copertura</li>
+</ul>
 <p>L’espressione booleana corrispondente ad una copertura minimale risulta essere un’espressione del tipo somma di prodotti di letterali (in altri termini OR fra AND di letterali) con un numero minimale di addendi.</p>
 <h1 id="circuiti-sequenziali"><span class="header-section-number">5</span> Circuiti sequenziali</h1>
 <p>I <strong>circuiti sequenziali</strong> sono circuiti il cui risultato cambia in base agli input presi in passato</p>
@@ -538,8 +608,13 @@ fare la tabella di verità su <span class="math inline">\(A+ \overline{ (B+C) } 
 <figure>
 <img src="vx_images/2893428209291.png%20=403x" alt="" /><figcaption>LatchSR</figcaption>
 </figure>
-<p><strong>creiamo la tabella di verità</strong><br />
-- Se S=1, R=0 allora Q=1, <span class="math inline">\(\bar{Q}\)</span>=0 - Se S=0, R=1 allora Q=0, <span class="math inline">\(\bar{Q}\)</span>=1 - Se S=1, R=1 allora Q=0, <span class="math inline">\(\bar{Q}\)</span>=0 - Se S=0, R=0 allora … non si sa!</p>
+<p><strong>creiamo la tabella di verità</strong></p>
+<ul>
+<li>Se S=1, R=0 allora Q=1, <span class="math inline">\(\bar{Q}\)</span>=0</li>
+<li>Se S=0, R=1 allora Q=0, <span class="math inline">\(\bar{Q}\)</span>=1</li>
+<li>Se S=1, R=1 allora Q=0, <span class="math inline">\(\bar{Q}\)</span>=0</li>
+<li>Se S=0, R=0 allora … non si sa!</li>
+</ul>
 <p>Essendo che nel caso S=0,R=0 gli output rimangono invariati. Ma se il circuito come primo input ha S=0,S=0 allora non si sa se Q è 0 o 1.</p>
 <h2 id="latch-sr-temporizzato"><span class="header-section-number">5.2</span> Latch SR temporizzato</h2>
 <figure>
@@ -662,8 +737,11 @@ Lo si converta in binario (su 8 bit) con le codifiche:</p>
 </ul>
 </details>
 <h3 id="numeri-con-la-virgola"><span class="header-section-number">6.1.5</span> Numeri con la virgola</h3>
-<p>la rappresentazione dei numeri con la virgola si usano due numeri:<br />
-- f che è la mantissa - e che è l’esponente</p>
+<p>la rappresentazione dei numeri con la virgola si usano due numeri:</p>
+<ul>
+<li>f che è la mantissa</li>
+<li>e che è l’esponente</li>
+</ul>
 <p><span class="math inline">\(n=f \times 10^{e}\)</span></p>
 <details>
 <p><summary> esempio codifica </summary></p>
@@ -671,15 +749,23 @@ Lo si converta in binario (su 8 bit) con le codifiche:</p>
 <p>riesco a rappresentare i numeri</p>
 <p><img src="../img/overflowunder.png" /></p>
 </details>
-<p><strong>notazione concreta</strong>:<br />
-- utilizziamo la base 2 - come mantissa utilizziamo un numero minore di 1 - inoltre normalizziamo la mantissa (la cifra più significativa (dopo la virgola) non può essere uguale a zero)</p>
+<p><strong>notazione concreta</strong>:</p>
+<ul>
+<li>utilizziamo la base 2</li>
+<li>come mantissa utilizziamo un numero minore di 1</li>
+<li>inoltre normalizziamo la mantissa (la cifra più significativa (dopo la virgola) non può essere uguale a zero)</li>
+</ul>
 <details>
 <p><summary> esempio concreto </summary></p>
 <p>vogliamo rappresentare il numero 432:<br />
 la mantissa sarà 432=110110000b questo numero va normalizzato quindi dobbiamo shiftarlo, quindi gli diamo un esponente di: <span class="math inline">\(2^9\)</span></p>
 </details>
-<p><strong>standard binary32</strong>:<br />
-- 1 bit di segno - 8 bit di esponente - 23 bit di mantissa</p>
+<p><strong>standard binary32</strong>:</p>
+<ul>
+<li>1 bit di segno</li>
+<li>8 bit di esponente</li>
+<li>23 bit di mantissa</li>
+</ul>
 <details>
 <p><summary> Si converta il numero 0.3 in notazione floating point in base 2 normalizzata (usando il complemento a 2 su 8 bit sia per la mantissa che per l’esponente). </summary></p>
 <p>TODO: da finire</p>
@@ -697,13 +783,20 @@ la mantissa sarà 432=110110000b questo numero va normalizzato quindi dobbiamo s
 <h3 id="utf-8"><span class="header-section-number">6.2.3</span> UTF-8</h3>
 <p>Essendo che la codifica <strong>unicode è all’esaurimento</strong> dei possibili codici, e <strong>usa 16 bit</strong> anche per i caratteri asci; Si è sviluppata la <strong>UTF</strong> che può dinamicamente occupare <strong>da 1 a 4 byte</strong> a seconda dell’informazione; <strong>rimane compatibile con ASCII</strong>, infatti se il primo bit è a zero significa che il carattere è un carattere ascii e che occuperà i prossimi 7 bit.</p>
 <h2 id="codici-corretti"><span class="header-section-number">6.3</span> Codici corretti</h2>
-<p>Memorie e trasmissioni di dati sono soggette ad errori, così si creano dei codici di controllo:<br />
-- m bit: della parola - r bit: di controllo, scelti in un meccanismo - n bit: m+r “parola codice”</p>
+<p>Memorie e trasmissioni di dati sono soggette ad errori, così si creano dei codici di controllo:</p>
+<ul>
+<li>m bit: della parola</li>
+<li>r bit: di controllo, scelti in un meccanismo</li>
+<li>n bit: m+r “parola codice”</li>
+</ul>
 <blockquote>
 <p><strong>la distanza di hamming</strong> è la differenza di bit tra due stringhe di bit. (es: distanza tra 101110 e 110101 è 4)</p>
 </blockquote>
-<p><strong>Regola generale:</strong><br />
-- Per rilevare d bit errati è necessario un codice con distanza di Hamming maggiore o uguale a d+1 - Per correggere d bit errati è necessario un codice con distanza di Hamming maggiore o uguale a 2d+1</p>
+<p><strong>Regola generale:</strong></p>
+<ul>
+<li>Per rilevare d bit errati è necessario un codice con distanza di Hamming maggiore o uguale a d+1</li>
+<li>Per correggere d bit errati è necessario un codice con distanza di Hamming maggiore o uguale a 2d+1</li>
+</ul>
 <h3 id="bit-di-parità"><span class="header-section-number">6.3.1</span> Bit di parità</h3>
 <p>Il codice è composto da un solo bit di controllo (r=1), se la parola ha i bit “1” di numero pari allora il bit di parità è a 1.(distanza Hamming 2)</p>
 <p>Il codice rileva se c’è un singolo bit errato.</p>
@@ -714,8 +807,14 @@ Questo questo codice ha una distanza di hamming di 5 quindi è possibile corregg
 <blockquote>
 <p>Creazione: mettiamo in ogni potenza di due, il bit indicherà la parità della somma di tutti i bit la quale posizione ha il bit attivo</p>
 </blockquote>
-<p>Per un codice con m=16:<br />
-- bit 1: 3,5,7,9,11,13,15,17,19,21 - bit 2: 3,6,7,10,11,14,15,18,19 - bit 4: 5,6,7,12,13,14,15,20,21 - bit 8: 9,10,11,12,13,14,15 - bit 16: 17,18,19,20,21</p>
+<p>Per un codice con m=16:</p>
+<ul>
+<li>bit 1: 3,5,7,9,11,13,15,17,19,21</li>
+<li>bit 2: 3,6,7,10,11,14,15,18,19</li>
+<li>bit 4: 5,6,7,12,13,14,15,20,21</li>
+<li>bit 8: 9,10,11,12,13,14,15</li>
+<li>bit 16: 17,18,19,20,21</li>
+</ul>
 <blockquote>
 <p>Correzzione errore: il bit errato sarà nella posizione data dalla somma delle posizioni dei bit di parità errati</p>
 </blockquote>
@@ -795,29 +894,55 @@ ottengo la posizione dell&#39;errore:
 </ul>
 <p>Il decode setta i c bit che vengono utilizzati come control bit per tutti gli altri componenti</p>
 <h2 id="sram-e-dram"><span class="header-section-number">7.1</span> SRAM e DRAM</h2>
-<p>Le <strong>SRAM</strong> (Static RAM) sono realizzate tramite flip-flop come le memorie viste in precedenza<br />
-- Veloci (ordine del nanosecondo) - Usate principalmente per le cache</p>
+<p>Le <strong>SRAM</strong> (Static RAM) sono realizzate tramite flip-flop come le memorie viste in precedenza</p>
+<ul>
+<li>Veloci (ordine del nanosecondo)</li>
+<li>Usate principalmente per le cache</li>
+</ul>
 <p>Le <strong>DRAM</strong> (Dynamic RAM) o SDRAM (Synchronous DRAM), usate per le memorie centrali, hanno un solo transistor ed un condensatore che mantiene (tramite carica elettrica) un singolo bit</p>
-<p>-Visto che il condensatore perde la propria carica, deve essere ricaricato per evitare di perdere la propria informazione - Si rendono necessarie periodiche fasi di “refresh” (ad intervalli dell’ordine del millisecondo) - A causa del refresh sono più lente (ordine della decina di nanosecondi) - Richiedendo un solo transistor costano meno e possono essere maggiormente miniaturizzate</p>
+<p>-Visto che il condensatore perde la propria carica, deve essere ricaricato per evitare di perdere la propria informazione</p>
+<ul>
+<li>Si rendono necessarie periodiche fasi di “refresh” (ad intervalli dell’ordine del millisecondo)
+<ul>
+<li>A causa del refresh sono più lente (ordine della decina di nanosecondi)</li>
+<li>Richiedendo un solo transistor costano meno e possono essere maggiormente miniaturizzate</li>
+</ul></li>
+</ul>
 <h2 id="cache"><span class="header-section-number">7.2</span> Cache</h2>
 <blockquote>
 <p>La <strong>cache memorizza gli ultimi dati utilizzati dalla cpu</strong>, e se la cpu deve accedere dati che ha richiesto da poco la cache restituisce i dati molto velocemente evitando di andarli a riprendere dalla memoria .</p>
 </blockquote>
 <p>I linguaggi di programmazione vengono compilati per utilizzare la cache,ma non la possono controllare.</p>
-<p>Modello Cache di studio:<br />
-- Una prima piccola cache (livello 1: L1) è direttamente nel chip della CPU separata fra istruzioni e dati (dimensioni fra 16-64 KB) - Una seconda cache (livello 2: L2) nel medesimo “involucro” della CPU “unificata” fra dati e istruzioni (fra 512 KB ed 1 MB) - Una terza cache (livello 3: L3) esterna alla CPU (alcuni MB)</p>
+<p>Modello Cache di studio:</p>
+<ul>
+<li>Una prima piccola cache (livello 1: L1) è direttamente nel chip della CPU separata fra istruzioni e dati (dimensioni fra 16-64 KB)</li>
+<li>Una seconda cache (livello 2: L2) nel medesimo “involucro” della CPU “unificata” fra dati e istruzioni (fra 512 KB ed 1 MB)</li>
+<li>Una terza cache (livello 3: L3) esterna alla CPU (alcuni MB)</li>
+</ul>
 <p>La cache è suddivisa in n righe ognuna che contiene m byte.<br />
 Si procede suddividendo la memoria in blocchi da m byte e il blocco i andrà nella riga <code>i mod n</code>, la cache tiene traccia anche di quale specifico blocco contiene la linea.</p>
 <h3 id="esempio-di-cache-direct-mapped"><span class="header-section-number">7.2.1</span> Esempio di Cache Direct Mapped</h3>
-<p>Immaginiamo ora una cache con n=2048 linee di dimensione m=32 byte:<br />
-- <strong>Valid</strong>: indica se la linea di cache contiene un blocco, (all’inizio tutti i valid sono a false e data e tag hanno valori randomizzi) - <strong>Data</strong>: contiene i 32 byte del blocco - <strong>Tag</strong>: indica esattamente quale blocco è contenuto</p>
-<p>quindi se abbiamo un indirizzi da 32 bit:<br />
-- primi <strong>5</strong>: (meno significativi) indicano quale byte dei 32 byte stiamo cercando - i successivi <strong>11</strong>: indicano quale linea della cache (<span class="math inline">\(2^11\)</span>=2048) - i rimanenti <strong>16</strong>: quale tra gli indirizzi che utilizzano quel blocco</p>
+<p>Immaginiamo ora una cache con n=2048 linee di dimensione m=32 byte:</p>
+<ul>
+<li><strong>Valid</strong>: indica se la linea di cache contiene un blocco, (all’inizio tutti i valid sono a false e data e tag hanno valori randomizzi)</li>
+<li><strong>Data</strong>: contiene i 32 byte del blocco</li>
+<li><strong>Tag</strong>: indica esattamente quale blocco è contenuto</li>
+</ul>
+<p>quindi se abbiamo un indirizzi da 32 bit:</p>
+<ul>
+<li>primi <strong>5</strong>: (meno significativi) indicano quale byte dei 32 byte stiamo cercando</li>
+<li>i successivi <strong>11</strong>: indicano quale linea della cache (<span class="math inline">\(2^11\)</span>=2048)</li>
+<li>i rimanenti <strong>16</strong>: quale tra gli indirizzi che utilizzano quel blocco</li>
+</ul>
 <p><img src="../img/cache.png" /></p>
 <details>
 <p><summary> Esercizio </summary></p>
-<p><strong>indirizzo:</strong><br />
-- primi 4 bit per l’indirizzo dentro data - 3 bit per capire la cache - 2 bit per il tag</p>
+<p><strong>indirizzo:</strong></p>
+<ul>
+<li>primi 4 bit per l’indirizzo dentro data</li>
+<li>3 bit per capire la cache</li>
+<li>2 bit per il tag</li>
+</ul>
 <p>locazioni e indirizzi 0:0-15,128-143.. 1:16-31.. 2:32-47.. 3:48-63.. 4:64-79.. 5:80-95.. 6:96-111.. 7:112-127..</p>
 <p><strong>esercizio</strong></p>
 <p>locazione 12, non è nella cache 00 000 1100</p>
@@ -960,8 +1085,11 @@ Si procede suddividendo la memoria in blocchi da m byte e il blocco i andrà nel
 </table>
 </details>
 <h3 id="gestione-della-cache"><span class="header-section-number">7.2.2</span> Gestione della cache</h3>
-<p>Quando si utilizza la cache ha:<br />
-- <strong>cache hit</strong>: quando la cache ha successo - <strong>cache miss</strong>: il contenuto nella cache dev’essere ricopiato in memoria, e sostituito con il nuovo blocco</p>
+<p>Quando si utilizza la cache ha:</p>
+<ul>
+<li><strong>cache hit</strong>: quando la cache ha successo</li>
+<li><strong>cache miss</strong>: il contenuto nella cache dev’essere ricopiato in memoria, e sostituito con il nuovo blocco</li>
+</ul>
 <p>Nei momenti in cui i dati sono in cache e non in memoria si possono creare delle anomalie, se più processori o più dispositivi accedono alla memoria centrale.</p>
 <h2 id="paginazione"><span class="header-section-number">7.3</span> Paginazione</h2>
 <blockquote>
@@ -969,8 +1097,11 @@ Si procede suddividendo la memoria in blocchi da m byte e il blocco i andrà nel
 </blockquote>
 <p>L’impaginazione è getsita dall’sistema operativo</p>
 <h2 id="pre-fetch-delle-istruzioni"><span class="header-section-number">7.4</span> Pre-fetch delle istruzioni</h2>
-<p>Nell’architettura del nostro calcolatore Hack, consideriamo due distinti ingressi per la CPU:<br />
-- instruction: carica l’istruzione da eseguire da una specifica memoria programma - inM: carica i dati necessari da una distinta memoria dati</p>
+<p>Nell’architettura del nostro calcolatore Hack, consideriamo due distinti ingressi per la CPU:</p>
+<ul>
+<li>instruction: carica l’istruzione da eseguire da una specifica memoria programma</li>
+<li>inM: carica i dati necessari da una distinta memoria dati</li>
+</ul>
 <blockquote>
 <p>Nelle architetture usuali (Von Neumann) dati e programmi risiedono nella stessa memoria</p>
 </blockquote>
@@ -978,8 +1109,11 @@ Si procede suddividendo la memoria in blocchi da m byte e il blocco i andrà nel
 Questa è già un esempio di pipeline, ce ne sono di molto più complesse, anche a 7 stadi come quella sotto.</p>
 <p><img src="vx_images/2847648209379.png" /></p>
 <h3 id="pipeline-salti-e-registri"><span class="header-section-number">7.4.1</span> PipeLine, Salti e registri</h3>
-<p>Per evitare di far lavorare il <strong>processore inutilmente quando si ha un salto</strong>, si usano varie tecniche come:<br />
-- mettere <strong>nop</strong> dopo l’istruzione di salto in modo che non sprechi tempo finche non si sà dove eseguirà - predire i salti usando <strong>euristiche</strong>, in particolare i salti all’indietro sono più comuni e in base hai salti fatti</p>
+<p>Per evitare di far lavorare il <strong>processore inutilmente quando si ha un salto</strong>, si usano varie tecniche come:</p>
+<ul>
+<li>mettere <strong>nop</strong> dopo l’istruzione di salto in modo che non sprechi tempo finche non si sà dove eseguirà</li>
+<li>predire i salti usando <strong>euristiche</strong>, in particolare i salti all’indietro sono più comuni e in base hai salti fatti</li>
+</ul>
 <p>Con la pipeline inoltre si possono avere dei problemi con i registri, infatti se <strong>operazioni accedono agli stessi registri bisogna aspettare</strong> che una abbia concluso con l’utilizzo del registro.</p>
 <h1 id="isa-del-processore-hack"><span class="header-section-number">8</span> ISA del processore Hack</h1>
 <blockquote>
@@ -1222,14 +1356,29 @@ Questa è già un esempio di pipeline, ce ne sono di molto più complesse, anche
 <blockquote>
 <p>ISA è l’interfaccia tra l’hardware e il software, i compilatori traucono i programmi in instruzioni livello ISA</p>
 </blockquote>
-<p>In generale le istruzioni sono divise in:<br />
-- <strong>codice operativo</strong>: parte che indica il tipo di istruzione da eseguire - <strong>indirizzi</strong>: indicano gli operatori da utilizzare</p>
+<p>In generale le istruzioni sono divise in:</p>
+<ul>
+<li><strong>codice operativo</strong>: parte che indica il tipo di istruzione da eseguire</li>
+<li><strong>indirizzi</strong>: indicano gli operatori da utilizzare</li>
+</ul>
 <p><img src="vx_images/2558021179300.png" /></p>
-<p>Gli indirizzamento:<br />
-- Indirizzamento immediato: L’istruzione include già l’operando da usare (vedi A-instruction del linguaggio Hack) - Indirizzamento diretto: L’istruzione contiene l’indirizzo completo in memoria della cella in cui reperire l’operando - Indirizzamento a registro: L’operando viene prelevato da un registro - Indirizzamento a registro indiretto: L’operando viene prelevato dalla memoria, all’indirizzo puntato da un registro (vedi l’accesso in memoria del linguaggio Hack, con “indirizzamento a registro indiretto” tramite registro A)</p>
+<p>Gli indirizzamento:</p>
+<ul>
+<li>Indirizzamento immediato: L’istruzione include già l’operando da usare (vedi A-instruction del linguaggio Hack)</li>
+<li>Indirizzamento diretto: L’istruzione contiene l’indirizzo completo in memoria della cella in cui reperire l’operando</li>
+<li>Indirizzamento a registro: L’operando viene prelevato da un registro</li>
+<li>Indirizzamento a registro indiretto: L’operando viene prelevato dalla memoria, all’indirizzo puntato da un registro (vedi l’accesso in memoria del linguaggio Hack, con “indirizzamento a registro indiretto” tramite registro A)</li>
+</ul>
 <p>TODO: <a href="https://virtuale.unibo.it/pluginfile.php/913786/mod_resource/content/10/10-Livello_ISA.pdf">add pag 7</a></p>
 <p>Indirizzamoento a stack: i processori hanno delle istruzioni per gestire lo stack, come push, pop + dei registri dedicati BSP ..</p>
-<p>Tipiche istruzioni: - operandi di trasfermiento dati: È trasferiscono dati da memoria a registri e viceversa e da registri a registri - operazioni aritmetico-logiche: Operazioni su interi e floating-point - operazioni unairie: (prendono un solo operatore) per esempio le instruzioni shift o inc - salti: condizionati e non - alcuni compilatori hanno</p>
+<p>Tipiche istruzioni:</p>
+<ul>
+<li>operandi di trasfermiento dati: È trasferiscono dati da memoria a registri e viceversa e da registri a registri</li>
+<li>operazioni aritmetico-logiche: Operazioni su interi e floating-point</li>
+<li>operazioni unairie: (prendono un solo operatore) per esempio le instruzioni shift o inc</li>
+<li>salti: condizionati e non</li>
+<li>alcuni compilatori hanno</li>
+</ul>
 <p>TODO: add record d’attivazione, invocazione di procedura</p>
 <p><img src="vx_images/160408189373.png" /></p>
 <h2 id="trap-e-interrupt"><span class="header-section-number">9.4</span> Trap e Interrupt</h2>

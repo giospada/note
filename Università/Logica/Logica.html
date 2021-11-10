@@ -188,7 +188,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </figure>
 <h1 id="logica"><span class="header-section-number">2</span> Logica</h1>
 <p>viene studiata da più discipline (fisica, matematica,informatica)</p>
-<p>Domande chiave: - cos’è la correttezza di un ragionamento?(e scriverlo in modo algoritmico) - quali ragionamenti sono corretti? - ci sono fatti non deducibili tramite un ragionamento?</p>
+<p>Domande chiave:</p>
+<ul>
+<li>cos’è la correttezza di un ragionamento?(e scriverlo in modo algoritmico)</li>
+<li>quali ragionamenti sono corretti?</li>
+<li>ci sono fatti non deducibili tramite un ragionamento?</li>
+</ul>
 <p>la logica non parla di verità (più ragionamenti corretti)</p>
 <h1 id="paradossi"><span class="header-section-number">3</span> Paradossi</h1>
 <blockquote>
@@ -208,8 +213,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </details>
 <h2 id="linguaggio-naturale"><span class="header-section-number">3.1</span> Linguaggio naturale</h2>
 <p>Il linguaggio naturale è alla base della comunicazione e del ragionamento umano, e per questo deve essere espressivo e viene esteso e specializzato (per comunicare )</p>
-<p>Non possiamo utilizzarlo per procedure di calcolo e dimostrazioni perché:<br />
-- è ambiguo - Fortemente dipende del contesto</p>
+<p>Non possiamo utilizzarlo per procedure di calcolo e dimostrazioni perché:</p>
+<ul>
+<li>è ambiguo</li>
+<li>Fortemente dipende del contesto</li>
+</ul>
 <details>
 <p><summary> es </summary></p>
 <p>“la vecchia porta la sbarra” può essere interpretata in più volte</p>
@@ -234,8 +242,12 @@ Aggettivo eterologico = aggettivo che non si applica a se stesso (p.e. monosilla
 <p>“Eterologico e eterologico”<br />
 eterologico e eterologico sse non si applica a se stesso <code>**eterologico e eterologico sse eterologico non</code> e eterologico**</p>
 </details>
-<p>i paradossi dei linguaggi naturali esistono perchè:<br />
-- l’uso meta-linguistico del linguaggio natruale - l’auto-applicazione di un concetto meta-linguistico a se stesso - l’uso della negazione per concludere qualcosa e la sua negazione</p>
+<p>i paradossi dei linguaggi naturali esistono perchè:</p>
+<ul>
+<li>l’uso meta-linguistico del linguaggio natruale</li>
+<li>l’auto-applicazione di un concetto meta-linguistico a se stesso</li>
+<li>l’uso della negazione per concludere qualcosa e la sua negazione</li>
+</ul>
 <p>per evitare i paradossi bisogna impedire l’uso meta-linguistico del linguaggio naturale (<strong>per questo si abbandona il linguaggio naturale per uno artificiale</strong>)</p>
 <h2 id="linguaggio-matematico"><span class="header-section-number">3.2</span> Linguaggio matematico</h2>
 <p>è che rientrino i paradossi</p>
@@ -250,20 +262,33 @@ Essendo che tutto è un insieme si può utilizzare il simbolo di appartenenza tr
 <span class="math inline">\(X =\{ Y| Y \notin Y\}\)</span><br />
 <span class="math inline">\(X \in X \text{ sse } X \notin X\)</span></p>
 </blockquote>
-<p>per ovviare al paradosso:<br />
-- non è possibile formare liberamnete un insieme per una proprietà - ma è possibile selezionare elementi da un insieme esistente - la collezione di tutti gli insiemi non è un insieme</p>
+<p>per ovviare al paradosso:</p>
+<ul>
+<li>non è possibile formare liberamnete un insieme per una proprietà</li>
+<li>ma è possibile selezionare elementi da un insieme esistente</li>
+<li>la collezione di tutti gli insiemi non è un insieme</li>
+</ul>
 <p><a href="#teoria-assiomatiche-degli-insiemi">More</a></p>
 <h2 id="i-paradossi-in-informatica"><span class="header-section-number">3.3</span> I paradossi in informatica</h2>
 <p>nella programmazione ogni linguaggio può eseguire delle funzioni che possono prendere in input e dare in output altre funzioni</p>
 <p>supponiamo che le funzioni scrivibili in un linguaggio di prograzione dato un input, restituiscano un output in tempo finito</p>
 <p>Sia <code>f(g) = not (g(g))</code></p>
 <p>allora <code>f(f)= not (f(f))</code></p>
-<p>pertanto:<br />
-- O f non è scrivibile in P è altamente inespressivo - Oppure f non è totale (diverge, cioè non mi da nessun output in un tempo finito)</p>
+<p>pertanto:</p>
+<ul>
+<li>O f non è scrivibile in P è altamente inespressivo</li>
+<li>Oppure f non è totale (diverge, cioè non mi da nessun output in un tempo finito)</li>
+</ul>
 <p><strong>Quindi le funzioni dei linguaggi di programmazione non sono funzioni matematiche</strong></p>
 <h1 id="teoria-degli-insiemi"><span class="header-section-number">4</span> Teoria degli Insiemi</h1>
-<p>punti informali:<br />
-- <strong>tutto è un insieme</strong>: gli insiemi contengono insiemi - <strong>è il linguaggio macchina</strong> della matematica moderna, (tutto viene implementato come insiemi, es. numeri, figure geometriche) - <strong>è estremamente efficace nel farlo</strong>: si riesce a descrivere ogni cosa, ma è difficilmente rappresentabili - permette di <strong>introdurre e comprendere concetti come gli infiniti</strong> - si perdono gli aspetti computazionali (le funzioni definite come insiemi non si calcolano, le rappresentazioni di dati sono inefficienti )</p>
+<p>punti informali:</p>
+<ul>
+<li><strong>tutto è un insieme</strong>: gli insiemi contengono insiemi</li>
+<li><strong>è il linguaggio macchina</strong> della matematica moderna, (tutto viene implementato come insiemi, es. numeri, figure geometriche)</li>
+<li><strong>è estremamente efficace nel farlo</strong>: si riesce a descrivere ogni cosa, ma è difficilmente rappresentabili</li>
+<li>permette di <strong>introdurre e comprendere concetti come gli infiniti</strong></li>
+<li>si perdono gli aspetti computazionali (le funzioni definite come insiemi non si calcolano, le rappresentazioni di dati sono inefficienti )</li>
+</ul>
 <h2 id="teoria-naive"><span class="header-section-number">4.1</span> Teoria naive</h2>
 <blockquote>
 <p>Attenzione:è inconsistente in quando si può avere il paradosso di Russell</p>
@@ -280,8 +305,14 @@ Per questo serve una teoria che rimuova l’<strong>assioma di comprensione</str
 <p>Attenzione: quando si usano insiemi rappresentanti altri insiemi, non si possono utilizzare i diagrammi di venn</p>
 </blockquote>
 <h2 id="teoria-assiomatiche-degli-insiemi"><span class="header-section-number">4.2</span> Teoria assiomatiche degli insiemi</h2>
-<p>In una teoria assiomatica degli insiemi:<br />
-- i concetti di <strong>insieme, appartenenza e uguaglianza</strong> non vengono definiti (gli insiemi sono <strong>enti primitivi</strong>) - usiamo assiomi per asserire l’esistenza di alcuni insiemi a partire da altri - ci sono numerose teorie insiemistiche che differiscono riguardo agli assiomi - Noi seguiamo la teoria Zermelo-Fraenkel è la meno controversa, ed è sufficiente per sviluppare la maggior parte della matematica - Zermelo Fraenkel non è mai stata dimostrata essere consistente (e non si è dimostrato che è dimostrabile che una teoria possa essere costistente)</p>
+<p>In una teoria assiomatica degli insiemi:</p>
+<ul>
+<li>i concetti di <strong>insieme, appartenenza e uguaglianza</strong> non vengono definiti (gli insiemi sono <strong>enti primitivi</strong>)</li>
+<li>usiamo assiomi per asserire l’esistenza di alcuni insiemi a partire da altri</li>
+<li>ci sono numerose teorie insiemistiche che differiscono riguardo agli assiomi</li>
+<li>Noi seguiamo la teoria Zermelo-Fraenkel è la meno controversa, ed è sufficiente per sviluppare la maggior parte della matematica</li>
+<li>Zermelo Fraenkel non è mai stata dimostrata essere consistente (e non si è dimostrato che è dimostrabile che una teoria possa essere costistente)</li>
+</ul>
 <h3 id="assioma-di-estensionalità"><span class="header-section-number">4.2.1</span> Assioma di estensionalità</h3>
 <blockquote>
 <p>Due insiemi sono uguali sse hanno gli stessi elementi.</p>
@@ -381,7 +412,11 @@ Per questo serve una teoria che rimuova l’<strong>assioma di comprensione</str
 <blockquote>
 <p>enunciato di un teorema e ci o che vogliamo dimostrare. Si compone di un insieme di ipotesi e di una conclusione</p>
 </blockquote>
-<p>ogni passaggio va a lavorare su: - le ipotesi - la conclusione: che è quello che vogliamo andare a dimostrare in un determinato momento</p>
+<p>ogni passaggio va a lavorare su:</p>
+<ul>
+<li>le ipotesi</li>
+<li>la conclusione: che è quello che vogliamo andare a dimostrare in un determinato momento</li>
+</ul>
 <h2 id="per-ogni-forall"><span class="header-section-number">5.1</span> Per Ogni <span class="math inline">\(\forall\)</span></h2>
 <p><strong>introduzione</strong>:Per dimostrare <span class="math inline">\(\forall x P(x)\)</span> (per ogni x vale P(x))</p>
 <blockquote>
@@ -484,8 +519,16 @@ Sia f una funzione. Scriviamo <span class="math inline">\(y=f(x)\)</span> per di
 <li><span class="math inline">\(\exists X,Y \in A,P(X,Y)\)</span> indica <span class="math inline">\(\exists X \in A , \exists Y \in A,P(X,Y)\)</span></li>
 </ol>
 <h2 id="proprietà-delle-relazioni"><span class="header-section-number">6.7</span> Proprietà delle relazioni</h2>
-<p>Sia $ A A $.La relazione <span class="math inline">\(\mathit{R}\)</span> gode della proprietà - riflessiva se <span class="math inline">\(\forall X \in A,X\mathit{R}X\)</span> - simmetrica se <span class="math inline">\(\forall X,Y \in A,(X\mathit{R}Y \Leftarrow Y\mathit{R}X)\)</span> - transitiva se <span class="math inline">\(\forall X,Y,Z \in A,(X\mathit{R}Y \wedge Y\mathit{R}Z \Leftarrow X\mathit{R}Z)\)</span></p>
-<p><strong>es</strong>: - = : gode di tutte le proprietà</p>
+<p>Sia $ A A $.La relazione <span class="math inline">\(\mathit{R}\)</span> gode della proprietà</p>
+<ul>
+<li>riflessiva se <span class="math inline">\(\forall X \in A,X\mathit{R}X\)</span></li>
+<li>simmetrica se <span class="math inline">\(\forall X,Y \in A,(X\mathit{R}Y \Leftarrow Y\mathit{R}X)\)</span></li>
+<li>transitiva se <span class="math inline">\(\forall X,Y,Z \in A,(X\mathit{R}Y \wedge Y\mathit{R}Z \Leftarrow X\mathit{R}Z)\)</span></li>
+</ul>
+<p><strong>es</strong>:</p>
+<ul>
+<li>= : gode di tutte le proprietà</li>
+</ul>
 <p>TODO: aggiungere gli es</p>
 <h3 id="relazioni-di-ordinamento-strette"><span class="header-section-number">6.7.1</span> Relazioni di ordinamento strette</h3>
 <p>Una relazione <span class="math inline">\(\mathit{R} \subset A * A\)</span> è di ordine stretto sse <span class="math inline">\(\mathit{R}\)</span> è trenaisitva e non riflessiva</p>
@@ -535,11 +578,26 @@ Intuitivamente sappiamo che l’insieme dei numeri naturali e infinito. <code>Im
 </ul>
 <h2 id="backus-naur-form-bnf"><span class="header-section-number">7.2</span> Backus-Naur Form (BNF)</h2>
 <p><strong>BNF</strong> è una notazione per descrivere le <strong>grammatiche</strong>; non tutti i linguaggi sono descrivibili tramite BNF .</p>
-<p>Una BNF è una quadrupla (T,NT,X,P): - T: è un alfabeto ovvero un insieme non vuoto di simboli detti <strong>temrinali</strong> - NT è un insieme non vuoto di simboli detti <strong>non terminali</strong> distinti da quelli di T - <span class="math inline">\(X \in NT\)</span> è il simobolo terminale non iniziale - P è un insieme di coppie formate da: - un simbolo non terminale - un insieme di stringe di simboli terminali e non terminali (es (X,{<span class="math inline">\(w_1,...w_2\)</span>}) si rappresenta <span class="math inline">\(X ::= w_1|....|w_n\)</span> (che si legge X è <span class="math inline">\(w_1\)</span> oppure … <span class="math inline">\(w_n\)</span></p>
+<p>Una BNF è una quadrupla (T,NT,X,P):</p>
+<ul>
+<li>T: è un alfabeto ovvero un insieme non vuoto di simboli detti <strong>temrinali</strong></li>
+<li>NT è un insieme non vuoto di simboli detti <strong>non terminali</strong> distinti da quelli di T</li>
+<li><span class="math inline">\(X \in NT\)</span> è il simobolo terminale non iniziale</li>
+<li>P è un insieme di coppie formate da:
+<ul>
+<li>un simbolo non terminale</li>
+<li>un insieme di stringe di simboli terminali e non terminali (es (X,{<span class="math inline">\(w_1,...w_2\)</span>}) si rappresenta <span class="math inline">\(X ::= w_1|....|w_n\)</span> (che si legge X è <span class="math inline">\(w_1\)</span> oppure … <span class="math inline">\(w_n\)</span></li>
+</ul></li>
+</ul>
 <details>
 <summary> Esempio: </summary> ({0, 1}, {X, Y}, X, {X ::= 0 | 0Y, Y ::= 1X})
 </details>
-<p>Di solito di una BNF si indicano solamente le produzioni P: - i <strong>simboli non terminali</strong> sono allora tutti quelli con cui iniziano le produzioni - i <strong>simboli terminali </strong>sono tutti i simboli delle produzioni esclusi i non terminali - il <strong>simbolo iniziale </strong>è il simbolo con cui inizia la prima produzione</p>
+<p>Di solito di una BNF si indicano solamente le produzioni P:</p>
+<ul>
+<li>i <strong>simboli non terminali</strong> sono allora tutti quelli con cui iniziano le produzioni</li>
+<li>i <strong>simboli terminali </strong>sono tutti i simboli delle produzioni esclusi i non terminali</li>
+<li>il <strong>simbolo iniziale </strong>è il simbolo con cui inizia la prima produzione</li>
+</ul>
 <details>
 <p><summary> esempio </summary></p>
 ({0,1},{X ,Y },X ,{X ::= 0 |0Y , Y ::= 1X }):<br />
@@ -555,7 +613,12 @@ Non terminali: {X ,Y }; Simbolo iniziale: X ; Terminali: {0,1}.
 <span class="math inline">\(x + y\times x\)</span> la posso ottenere in due modi diversi
 </details>
 <h3 id="precedenze"><span class="header-section-number">7.2.1</span> Precedenze</h3>
-<p>per non rendere le nostre grammatiche non ambigue, usiamo delle estenzioni nell BNF: 1. fissiamo un ordinae di precedenza fra operatori distinti: <span class="math inline">\(\times &gt;+\)</span> significa che <span class="math inline">\(x+y\times x\)</span> si legge <span class="math inline">\(x+(y\times x)\)</span> e non <span class="math inline">\((x+y) \times x\)</span> 2. fissiamo un’ associatività perogni perazione 3. introduciamo l’uso delle parentesi</p>
+<p>per non rendere le nostre grammatiche non ambigue, usiamo delle estenzioni nell BNF:</p>
+<ol type="1">
+<li>fissiamo un ordinae di precedenza fra operatori distinti: <span class="math inline">\(\times &gt;+\)</span> significa che <span class="math inline">\(x+y\times x\)</span> si legge <span class="math inline">\(x+(y\times x)\)</span> e non <span class="math inline">\((x+y) \times x\)</span></li>
+<li>fissiamo un’ associatività perogni perazione</li>
+<li>introduciamo l’uso delle parentesi</li>
+</ol>
 <p>Consideriamo una BNF non ambigua.</p>
 <p>Una stringa appartiene al linguaggio della BNF se è generata in modo unico.</p>
 <p>Ovvero a ogni stringa del linguaggio resta naturale associa una struttura ricordiva.</p>
@@ -574,7 +637,12 @@ Non terminali: {X ,Y }; Simbolo iniziale: X ; Terminali: {0,1}.
 <li>chiamate di funzione della forma g(w) dove g e la funzione da chiamare e w e una stringa sull’alfabeto formato da simboli terminali e parametri formali di f</li>
 </ul></li>
 </ul>
-<p>La funzione g(w) può essere: - tutte quelle ovviamente implementabili e non interessanti ai fini dell’esercizio (operatori +, =,…) - tutte quelle definite precedentemente nell’esercizio - la f puo invocare la stessa f (chiamata ricorsiva); in tal caso la f si dice funzione ricorsiva</p>
+<p>La funzione g(w) può essere:</p>
+<ul>
+<li>tutte quelle ovviamente implementabili e non interessanti ai fini dell’esercizio (operatori +, =,…)</li>
+<li>tutte quelle definite precedentemente nell’esercizio</li>
+<li>la f puo invocare la stessa f (chiamata ricorsiva); in tal caso la f si dice funzione ricorsiva</li>
+</ul>
 <p>Sia <span class="math inline">\(p\)</span> una strina di terminali e <span class="math inline">\(\omega\)</span> una stringa di terminali e non terminali (variabili).</p>
 <p>TODO:finisci slide 18/19</p>
 <details>
@@ -591,10 +659,22 @@ TODO: compleatre
 <h2 id="turing-completezza"><span class="header-section-number">8.1</span> Turing-completezza</h2>
 <p>Se non ci restringessimo alla ricorsione strutturale (vedi dopo), qualunque programma esprimibile in un qualunque linguaggio di programmazione sarebbe esprimibile in questo pseudo-codice!</p>
 <h2 id="ricorsione-strutturale"><span class="header-section-number">8.2</span> Ricorsione Strutturale</h2>
-<p>Le <strong>BNF</strong> imprimono alle stringhe una <strong>struttura ricorsiva</strong>; In una struttura ricorsiva, un elemento o è atomico, o è composto a partire da parti più piccole con la stessa struttura; quindi: - nei casi <strong>atomici</strong> il problema è semplice e si risove direttamente - nei casi <strong>composti</strong>, si risolve prima il problema sulle componeti, ottenute le risposte si sintetizza larisposte, si sintetizza la risposta per il caso composto senza osservare più componenti <span class="math inline">\(\implies\)</span> uniformità della soluzione</p>
-<p>Una funzione <span class="math inline">\(f(\omega)\)</span> dove <span class="math inline">\(\omega\)</span> è una stringa (formula) è definita per ricorsione strutturale sse: 1. <span class="math inline">\(f\)</span> considera tutte le possibili produzioni che definiscono <span class="math inline">\(\omega\)</span> una e una volta sola 2. per ogni produzione f si richiama ricorsivamente solamente sulle sottoformule immediate di <span class="math inline">\(\omega\)</span></p>
+<p>Le <strong>BNF</strong> imprimono alle stringhe una <strong>struttura ricorsiva</strong>; In una struttura ricorsiva, un elemento o è atomico, o è composto a partire da parti più piccole con la stessa struttura; quindi:</p>
+<ul>
+<li>nei casi <strong>atomici</strong> il problema è semplice e si risove direttamente</li>
+<li>nei casi <strong>composti</strong>, si risolve prima il problema sulle componeti, ottenute le risposte si sintetizza larisposte, si sintetizza la risposta per il caso composto senza osservare più componenti <span class="math inline">\(\implies\)</span> uniformità della soluzione</li>
+</ul>
+<p>Una funzione <span class="math inline">\(f(\omega)\)</span> dove <span class="math inline">\(\omega\)</span> è una stringa (formula) è definita per ricorsione strutturale sse:</p>
+<ol type="1">
+<li><span class="math inline">\(f\)</span> considera tutte le possibili produzioni che definiscono <span class="math inline">\(\omega\)</span> una e una volta sola</li>
+<li>per ogni produzione f si richiama ricorsivamente solamente sulle sottoformule immediate di <span class="math inline">\(\omega\)</span></li>
+</ol>
 <h2 id="induzione-strutturale"><span class="header-section-number">8.3</span> Induzione Strutturale</h2>
-<p>Sia P una proprietà che vogliamo dimostrare valere su tutte le stringhe <span class="math inline">\(\omega\)</span> di linguaggio generato da una BFN. La dimostraizone può essere data in questo modo: 1. Una sotto-dimostrazione per ogni produzione che genra <span class="math inline">\(\omega\)</span> 2. In ogni sotto-dimostrazione possiamo assumere che P già valga su tutte le sotto-formule immediate di <span class="math inline">\(\omega\)</span> # 08 Logica</p>
+<p>Sia P una proprietà che vogliamo dimostrare valere su tutte le stringhe <span class="math inline">\(\omega\)</span> di linguaggio generato da una BFN. La dimostraizone può essere data in questo modo:</p>
+<ol type="1">
+<li>Una sotto-dimostrazione per ogni produzione che genra <span class="math inline">\(\omega\)</span></li>
+<li>In ogni sotto-dimostrazione possiamo assumere che P già valga su tutte le sotto-formule immediate di <span class="math inline">\(\omega\)</span> # 08 Logica</li>
+</ol>
 <h2 id="funzioni-matematiche-e-informatiche"><span class="header-section-number">8.4</span> Funzioni Matematiche e Informatiche</h2>
 <p><strong>Matematica</strong>: l’operazine <span class="math inline">\(+\)</span> è una funzione, qundi un sottonsineme del prodotto cartesiano.(es <span class="math inline">\(+ =\{\langle \langle 0 ,0\rangle\,0 \rangle, \langle \langle 3, 7 \rangle, 10\rangle ...\}\)</span>)</p>
 <p><strong>Informatica</strong> viene definita come una procedura di calcolo, partendo dai i numeri in base uno <code>N = O | S R</code>, possiamo definiral in 4 modi.</p>
@@ -650,7 +730,11 @@ TODO: compleatre
 <p><strong>Caso S x:</strong> per induzione strutturale <span class="math inline">\(\forall\)</span> m x ‘+ m = x +’ m (H) devo dimostrarem <span class="math inline">\(\forall\)</span> m S x ‘+ m = S x +’ m ovvero <span class="math inline">\(\forall\)</span>m S (x ‘+ m)= S x +’ m siam m un numero per ipotesi H possiamo riscrivere S ( x +’ m) = S x +’ m ovvio per lemma2</p>
 <h3 id="altre-prove"><span class="header-section-number">8.4.2</span> Altre prove</h3>
 <p><code>nth  n l</code> ( restutiusce l’n-esimo elemento di l se l è sufficentemente lunga)</p>
-<p>la definisco per ricorsione strutturale su n: - tutte le prduzioni di n una e una sola volta - le chiamate ricorsive solamente su sottoformule immedite dell’input n</p>
+<p>la definisco per ricorsione strutturale su n:</p>
+<ul>
+<li>tutte le prduzioni di n una e una sola volta</li>
+<li>le chiamate ricorsive solamente su sottoformule immedite dell’input n</li>
+</ul>
 <p><code>head []=6699 --possiamo far restituire qualsiasi cosa</code> <code>head (n:l)=n</code></p>
 <p><code>tail []=6699 -- possiamo fare restituire qualsiasi cosa</code> <code>tail (n:l)=l</code></p>
 <p><code>nth O l = head l</code> <code>nth (S n) l = nth n (tail l)</code></p>
@@ -666,8 +750,13 @@ TODO: compleatre
 <p>Verità fisiche, chimiche… sono associate al mondo sensibile, e sono definite da esperimenti ripetibili</p>
 </blockquote>
 <p>Cosa resta della verità quando manca il mondo sensibile?(matematica,informatica)</p>
-<p>In una <strong>teoria matematica</strong>:<br />
-- si creano degli <strong>assiomi</strong> che sono delle leggi che supponiamo valere nei mondi sotto considerazione. - Un <strong>modello matematico</strong> della teoria è un qualunque mondo in cui interpretare i concetti matematici primitivi in modo tale che ogni assioma della teoria valga - un <strong>mondo</strong> è una descrizione completa che determina un concetto di verità, gli assiomi individuano una molteplicità di mondi - data una <strong>preposizione</strong> potrebbe essere sicuramente vera/falsa/non determinata in ogni modello della teoria.</p>
+<p>In una <strong>teoria matematica</strong>:</p>
+<ul>
+<li>si creano degli <strong>assiomi</strong> che sono delle leggi che supponiamo valere nei mondi sotto considerazione.</li>
+<li>Un <strong>modello matematico</strong> della teoria è un qualunque mondo in cui interpretare i concetti matematici primitivi in modo tale che ogni assioma della teoria valga</li>
+<li>un <strong>mondo</strong> è una descrizione completa che determina un concetto di verità, gli assiomi individuano una molteplicità di mondi</li>
+<li>data una <strong>preposizione</strong> potrebbe essere sicuramente vera/falsa/non determinata in ogni modello della teoria.</li>
+</ul>
 <blockquote>
 <p><strong>Conseguenza Logica</strong>: se una preposizione assume lo stesso valore di verità in tutti i mondi modelli della teoria</p>
 </blockquote>
@@ -692,18 +781,39 @@ F è consegnuenza logica di <span class="math inline">\(\Gamma (\Gamma \Vdash F)
 “Berlusconi”, “Il Presidente del Consiglio”, “Il Cavaliere”, “Il tesserato P2 1816”, “Papi Silvio”, “Il 3o italiano piu ricco” ` “Il principale esponente dello schieramento a me avverso”, <strong>sono tutte connotazioni per la stessa denotazione</strong>
 </details>
 <p>Siano x e y due connotazioni per la stessa denotazione.<strong>Il principio di invarianza per sostituzione</strong> vale se per ogni contesto <span class="math inline">\(P[.]\)</span> le due connotazioni <span class="math inline">\(P[x]\)</span> e <span class="math inline">\(P[y]\)</span> denotano la stessa cosa.</p>
-<p>Piano: 1. definiamo la aintassi delle nostre logiche 2. definiremo la semantica delle nostre logiche 3. dimostriamo che vale il principio di ivarianza per sostituzione</p>
-<p>Fissiamo della semantica, perchè se no ogni cosa può significare qualsiasi cosa:<br />
-- <strong>Connettivi Binari</strong>:(e,o,se, ..allora..,se e solmaente se) - <strong>Connettivi Unari</strong>: ( non ) - <strong>Connettivi 0-ari</strong>: (vero,falso)</p>
+<p>Piano:</p>
+<ol type="1">
+<li>definiamo la aintassi delle nostre logiche</li>
+<li>definiremo la semantica delle nostre logiche</li>
+<li>dimostriamo che vale il principio di ivarianza per sostituzione</li>
+</ol>
+<p>Fissiamo della semantica, perchè se no ogni cosa può significare qualsiasi cosa:</p>
+<ul>
+<li><strong>Connettivi Binari</strong>:(e,o,se, ..allora..,se e solmaente se)</li>
+<li><strong>Connettivi Unari</strong>: ( non )</li>
+<li><strong>Connettivi 0-ari</strong>: (vero,falso)</li>
+</ul>
 <h1 id="logica-proporzionale"><span class="header-section-number">10</span> Logica Proporzionale</h1>
 <p>La logica proprozionale studia solamente le connotazioni che denotano valori di verità.</p>
 <h2 id="sintassi-1"><span class="header-section-number">10.1</span> Sintassi</h2>
 <blockquote>
 <p><span class="math inline">\(F::= \top |\bot|A|B|...|\neg F|F\vee F|F\wedge F|F \implies F\)</span></p>
 </blockquote>
-<p>Semantica intuitiva:<br />
-- <span class="math inline">\(\top\)</span> denota la verità - <span class="math inline">\(\bot\)</span> denota la falsità - A,B,… Denotano un valore di verità non determinato o sconoscuto - <span class="math inline">\(\neg F\)</span> è la negazione di F - <span class="math inline">\(F\vee F\)</span> è la digiunzione inclusi di due formule - <span class="math inline">\(F\wedge F\)</span>: - <span class="math inline">\(F \implies F\)</span>:</p>
-<p>Rendiamo la sintassi non ambigua: - Precedenze: <span class="math inline">\(\neg , \wedge,\vee,\implies\)</span> - Associatività a destra</p>
+<p>Semantica intuitiva:</p>
+<ul>
+<li><span class="math inline">\(\top\)</span> denota la verità</li>
+<li><span class="math inline">\(\bot\)</span> denota la falsità</li>
+<li>A,B,… Denotano un valore di verità non determinato o sconoscuto</li>
+<li><span class="math inline">\(\neg F\)</span> è la negazione di F</li>
+<li><span class="math inline">\(F\vee F\)</span> è la digiunzione inclusi di due formule</li>
+<li><span class="math inline">\(F\wedge F\)</span>:</li>
+<li><span class="math inline">\(F \implies F\)</span>:</li>
+</ul>
+<p>Rendiamo la sintassi non ambigua:</p>
+<ul>
+<li>Precedenze: <span class="math inline">\(\neg , \wedge,\vee,\implies\)</span></li>
+<li>Associatività a destra</li>
+</ul>
 <details>
 <p><summary> Esempi </summary></p>
 TODO
@@ -715,7 +825,11 @@ TODO
 <details>
 <p><summary> Esempi </summary></p>
 <p>Se 2+2 fa 5 allora io sono una carriola</p>
-<p>Formalizzazione: <span class="math inline">\(A \implies B\)</span> - A sta per “2+2 fa 5” - B sta per “io sono una carriola”</p>
+<p>Formalizzazione: <span class="math inline">\(A \implies B\)</span></p>
+<ul>
+<li>A sta per “2+2 fa 5”</li>
+<li>B sta per “io sono una carriola”</li>
+</ul>
 <hr />
 <p>Non è vero che quando fa caldo bisogna accednere il condizionatore</p>
 <p>Formalizzazione: <span class="math inline">\(\neg (A \implies B)\)</span></p>
