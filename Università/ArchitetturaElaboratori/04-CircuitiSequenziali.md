@@ -29,12 +29,12 @@ Di solito si utilizza un clock per fare in modo che il Latch non cambi valore in
 
 Questo latch D, fa in modo che non possiamo mai avere la situazione sa S che R settati.
 
-## Implementazione di DFF
+## DFF
 
 ![DFF](vx_images/916559881657.png =370x)
 
 
-il circuito attaccato al clock sfrutta il tempo che fisico che il not ci mette a cambiare valore,così facendo il segnale risultante arriva per un brevissimo istante quando il clock è settato a 1.
+Il circuito attaccato al clock sfrutta il tempo che fisico che il not ci mette a cambiare valore,così facendo il segnale risultante arriva per un brevissimo istante quando il clock è settato a 1.
 
 
 **tabella di verità**
@@ -52,9 +52,13 @@ il circuito attaccato al clock sfrutta il tempo che fisico che il not ci mette a
 
 ## Bit
 
+
+Per costruire un registro di un bit utilizziamo il DFF e un Mux, che fa in modo che il DFF abbia lo stesso valore se il load non è attivo.
+
 ![Bit](vx_images/1466736840061.png =510x)
 
-TODO: da finire
+
+
 ## Program counter 
 
 
@@ -73,5 +77,7 @@ Una memoria con n locazioni da w-bit, può essere realizzata con n “w-bit regi
 (utilizzeremo un demultiplexer per il load e un multiplexer per l'out)
 
 
+![](vx_images/1041320229378.png)
 
-TODO: aggiungere immagine
+
+![](vx_images/4216002786901.png)

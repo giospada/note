@@ -1,9 +1,8 @@
 
 # Porte Logiche e Circuiti Combinatori
 
+## Derfinizione Porte Loiche, Circuiti Sequenziali e Combinatori
 > Porte Logiche:hanno 1/2 ingressi (che possono essere scambiati) e un uscita
-
-
 
 > Circuiti combinatori :  
 >  Sono circuiti che con lo stesso set di input input  producono lo stesso output
@@ -11,10 +10,27 @@
 > Circuiti Sequenziali :  
 > Circuiti che cambiano l'output in base agli input ricevuti in passato
 
+### Tabella di verità delle Porte Logiche
+
 ![](../img/portelogiche.png)
 
 La porta logica più inportante che utilizziermo è l'**NAND**, perchè da questa porta riusciremo a costriuire tutte le porte logiche.
 
+## Algebra di bool
+
+
+l'algerba di bool è composta da:  
+- **constanti** {0,1}
+    - 1 che ha valore di vero
+    - 0 che valore di falso
+- **variabli** (es. A,B,C...)
+- **operazioni**:
+    - **or**: definita come addizione (**importante 1+1=1**, del resto è uguale)
+    - **and**: definita come prodotto
+    - **not**: si scrive barrando la variabile (not A è uguale a $\bar{A}$ e $\bar{\bar{A}}=A$)
+
+
+### Proprità dell'algebra di bool
 
 ![](../img/proprietadibool.png)
 
@@ -25,6 +41,12 @@ es algebra di bool
 </summary>
 
 passare da $A+\bar{A}=1$ a $A\bar{A}=0$ utilizzando de morgan law
+
+$A+\bar{A}=1$
+$\bar{B}+\bar{A}=1, B=\bar{A}$
+$\overline{BA}=1$
+$\overline{\bar{A}A}=1$
+$\bar{A}A=0$
 </details>
 
 
@@ -33,12 +55,16 @@ passare da $A+\bar{A}=1$ a $A\bar{A}=0$ utilizzando de morgan law
 Un circuito non si può descrivere anche con una tabella di verità  
 >`tabella di verità` mappa tutti gli input con i risultato l'output (ha $2^n$ mintermini/righe)
 
+> **letterale**: una variabile
+
 > Un **mintermine** su n variabili è l’AND fra n letterali corrispondenti alle n variabili
 
 Ogni combinazione delle variabili di una funzione booleana ha un corrispondente mintermine (vero per quella specifica combinazione) ogni tabella di verità ha $2^n \text{mintermini}$ dove n è il numero di letterali.
 
 ![](../img/mintermini.png)
 
+
+### Forma Canonica
 
 > la **forma canonica** è una funzione booleana, che si ricava concatenando con l'or i mintermini per cui la funzione è verificata
 

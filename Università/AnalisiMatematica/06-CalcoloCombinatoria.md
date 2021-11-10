@@ -6,20 +6,20 @@
 
 > combinazioni: contano il numero di set diversi
 
-## Fattorial (permutazioni)
+## Fattoriale (permutazioni)
 
 
 $n!= 1*2*3*4*5*...*(n-1)*n, n\in \mathbb{N}$ , $0!=1$
 
 il **fattoriale** si usa per **contare le permutazioni di una lista di elementi diversi**.
 
-## Coefficente Binomiale (combinazioni)
+## Coefficiente Binomiale (combinazioni)
 
 
 $n \in \mathbb{N}, m \in \mathbb{N}$
 
 
-$\frac{n!}{k!(n - m)!} = \binom{n}{m} = {}^{n}C_{m} = C_{n}^m$
+$\binom{n}{m} = \frac{n!}{m!(n - m)!} = {}^{n}C_{m} = C_{n}^m$
 
 il **binomiale** si usa per contare **quanti sottoinsiemi partendo di m elementi posso formare partendo da un insieme di n**(non contano gli ordini,combinazioni).
 
@@ -33,7 +33,7 @@ il **binomiale** si usa per contare **quanti sottoinsiemi partendo di m elementi
     Prova coefficiente binomiale
     </summary>
 
-1. dimostrazione della prima prioperietà:  
+1. dimostrazione della prima proprietà:  
 se ci si pensa noi stiamo selezionando combinazioni k elementi partendo da un insieme di n, facendo così creaiamo un altro inieme di n-k elementi complementare per cui ha le stesse combinazioni
 2. dimostrazione seconda proprietà:
 
@@ -46,7 +46,7 @@ se ci si pensa noi stiamo selezionando combinazioni k elementi partendo da un in
 
 Come si calcola il binomio $(a+b)^n=?$
 
-TODO: spiegare con parole tue come si calcola il coefficente di ogni binomio
+TODO: spiegare con parole tue come si calcola il coefficiente di ogni binomio
 
 **Formula del binomio di newton**
 
