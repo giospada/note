@@ -30,3 +30,73 @@ Regole di elminazione: rispnde alla domanda **cosa ricavao da ?**
 1. Bottom-up (dalle premesse alla conclusione) date le premesse $F_1\dots F_n$ posso concludere F
 2. Top-down (dalle premesse alla conclusione) per concludere F posso ridurmi a dimostrare $F_1\dots F_n$
 
+
+
+## And $\wedge$
+
+### Eliminazione And
+
+#### Regola Unica
+
+
+
+## Derivabilità
+
+> un insieme di regole $R$ è derivabile a partire da un insieme di regole $S$ quando per ogni regola in $R$ le cui premesse sono $F1, . . . , Fn$ e la cui conclusione è $F$ si ha $F_1, . . . , F_n \vdash F$ usando solamente le regole in $S$
+
+## Or $\vee$
+
+## Introduzione
+
+
+$\frac{F_1}{F_1\vee F_2}$
+
+$\frac{F_1}{F_1\wedge F_2}$
+
+**Non è Invertibile **
+
+<details>
+<summary>
+A or Not A
+</summary>
+
+$\Vdash A \vee \neg A \mbox{ sse } \forall v \llbracket A \vee \neg A \rrbracket^v=1$   
+$\mbox{ sse } \forall v \max\{v(A),1-v(A)\}=1$  
+verificata
+
+</details>
+
+
+### Regola Di Eliminazione
+
+
+## Bottom $\bot$
+
+### Regola di eliminazione 
+
+$\frac{\bot}{F}$
+
+**Bottom-up**:dal falso seguie qualunque cosa
+**Top-Down**: per dimostrare qualunque cosa  ridurmi a dimostrare un assurdo
+
+
+
+## Top $\top$
+
+### Introduzione 
+
+$\frac{}{\top}$
+
+è un assioma
+
+### Regola di eliminazione
+
+
+## Implicazione $\implies$
+
+### Introduzione 
+
+### Eliminazione
+
+$\frac{F_1 \implies F_2, F_1}{F_2}$
+
