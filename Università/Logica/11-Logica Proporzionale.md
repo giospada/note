@@ -1,6 +1,6 @@
 # Logica Proporzionale
 
-La logica proprozionale studia solamente le connotazioni che denotano valori di verità.
+La logica proporzionale studia solamente le connotazioni che denotano valori di verità.
 
 ## Sintassi
 
@@ -9,24 +9,15 @@ La logica proprozionale studia solamente le connotazioni che denotano valori di 
 Semantica intuitiva:  
 - $\top$ denota la verità
 - $\bot$ denota la falsità
-- A,B,... Denotano un valore di verità non determinato o sconoscuto
+- A,B,... Denotano un valore di verità non determinato o sconosciuto
 - $\neg F$ è la negazione di F
-- $F\vee F$  è la digiunzione inclusi di due formule 
+- $F\vee F$  è la disgiunzione inclusi di due formule 
 - $F\wedge F$: 
 - $F \implies F$:
 
 Rendiamo la sintassi non ambigua:
 - Precedenze: $\neg , \wedge,\vee,\implies$
 - Associatività a destra
-
-
-<details>
-<summary>
-Esempi
-</summary>
-
-TODO
-</details>
 
 
 
@@ -40,18 +31,38 @@ TODO
 Esempi
 </summary>
 
-Se 2+2 fa 5 allora io sono una carriola
+1. Se 2+2 fa 5 allora io sono una carriola
+    Formalizzazione: $A \implies B$
+    - A sta per "2+2 fa 5"
+    - B sta per "io sono una carriola"
 
-Formalizzazione: $A \implies B$
-- A sta per "2+2 fa 5"
-- B sta per "io sono una carriola"
 
-------
+2.Non è vero che quando fa caldo bisogna accendere il condizionatore, Formalizzazione: $\neg (A \implies B)$
 
-Non è vero che quando fa caldo bisogna accednere il condizionatore
+</details>
 
-Formalizzazione: $\neg (A \implies B)$
+Bisogna stare attenti a :
+1. Connotazioni diverse per gli stessi connettivi 
+<details>
+<summary>
+Esempo:
+</summary>
 
+- “Se A allora B”, “A implica B”, “B se A”, “B quando A”,
+“quando A, B”, “A è condizione sufficiente per B”, “B è
+condizione necessaria per A”, . . .
+- “A e B”, “A ma B”, “A nonostante B”, . . .
+</details>
+
+2. Sinonimi e contrari. 
+<details>
+<summary>
+Esempio
+</summary>
+
+“se Mario è acculturato allora oggi c’è bel tempo”, “oggi
+splende il sole e Mario è ignorante” si formalizza come
+$M ⇒ B, B ∧ ¬M$
 </details>
 
 ## Semantica
@@ -59,23 +70,29 @@ Formalizzazione: $\neg (A \implies B)$
 > **Semantica**: ciò che viene associato alle connotazioni in un particolare 
 > **dominio di interpretazione**; insieme delle denotazioni
 
+### Semantica Classica
+
 La semantica classica: associa a ogni connotazione il suo **valore di verità** in un qualche mondo, sarà il **mondo a determinare** il vaolre di verità delle **variabili**.
 
 - Ogni enunciato è vero o falso
-- Un enunciato non può essere vero e falsoallo stesso tempo
+- Un enunciato non può essere vero e falso allo stesso tempo
 - il valore di verità non muta
 - il valore di verità di un enunciato è sempre determinato
-- Staticità e determinanza segnano un solco fra verità e conoscenza
+- Staticità e determinatezza segnano un solco fra verità e conoscenza
 - Staticità segna un solco fra verità e risorse
 
 
 Utilizziamo 0 e 1, per denotare la falsità e la verità
 
-> un interpretazione o mondo è una fnzione delle insieme delle variabili proposizionali {A,B,....} verso {0,1}
+>Definizione: una (funzione di) interpretazione (classica) o mondo è una funzione dall'insieme delle variabili proposizionali {A,B,...}verso {0,1
 
-
-![](vx_images/2567958149376.png)
-
+- $\llbracket  \bot \rrbracket^v= 0$
+- $\llbracket  \top \rrbracket^v = 1$
+- $\llbracket  A \rrbracket^v =v(A)$
+- $\llbracket  \neg F \rrbracket^v =1-\llbracket  F\rrbracket^v$
+- $\llbracket  F_1 \wedge F_2 \rrbracket=\min \{\llbracket  F_1 \rrbracket^v, \llbracket  F_2 \rrbracket^v\}$
+- $\llbracket  F_1 \vee F_2 \rrbracket=\max\{\llbracket  F_1 \rrbracket^v, \llbracket  F_2 \rrbracket^v\}$
+- $\llbracket  F_1 \implies F_2 \rrbracket=\max\{1-\llbracket  F_1 \rrbracket^v, \llbracket  F_2\rrbracket^v\}$
 
 ## Dimostrazioni e Prove
 

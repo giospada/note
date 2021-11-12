@@ -141,17 +141,14 @@ la definisco per ricorsione strutturale su n:
 
 
 case []:
-    $\forall$l2. ($\forall$ n. n < |[]| $\implies$ nth n [] = nth n ( []@ l2)) $\vee$
-  ($\forall$n. n  < |l2" $\implies$ nth n l2 = nth (|[]|+n)  ([]@l2)  )
-	 ovvero  
-    $\forall$l2. ($\forall$ n. n < 0 $\implies$ nth n [] = nth n ( []@ l2)) $\vee$
-  ($\forall$n. n  < |l2" $\implies$ nth n l2 = nth (n)  (l2)  )
-    dimostro $\forall$ n < 0 $\implies$ ...
-        sia n un numero t.c n < 0 
-        assurdo.
-    dimostr $\forall$n . n < |l2| $\implies$ nth n l2 = nth n l2
+$\displaylines{&}$ $\forall$l2. ($\forall$ n. n < |[]| $\implies$ nth n [] = nth n ( []@ l2)) $\vee$
+$\displaylines{&}$ ($\forall$n. n  < |l2" $\implies$ nth n l2 = nth (|[]|+n)  ([]@l2)  )
+$\displaylines{&}$ ovvero  
+$\displaylines{&}\forall$l2. ($\forall$ n. n < 0 $\implies$ nth n [] = nth n ( []@ l2)) $\vee$
+$\displaylines{&}$($\forall$n. n  < |l2" $\implies$ nth n l2 = nth (n)  (l2)  )
+$\displaylines{&}$ dimostro $\forall$ n < 0 $\implies$ ...
+ $\displaylines{&}$ sia n un numero t.c n < 0 
+$\displaylines{&}$ assurdo.
+$\displaylines{&}$ dimostr $\forall$n . n < |l2| $\implies$ nth n l2 = nth n l2
         ovvio
         
-caso x:l :
-    $\forall$ ($\forall$ n. n < |l1| $\implies$ nth n l1 = nth n ( l1@ l2)) $\vee$
-    ($\forall$n. n  < |l2" $\implies$ nth n l2 = nth (|l1|+n)  (l1@l2)  )

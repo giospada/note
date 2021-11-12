@@ -1,5 +1,7 @@
 # Connotazione denotazione invarianza
 
+## Definizione di connotazione e denotazione
+
 > **Connotazione** come indico qualcosa ,la sintassi che uso per dirla
 
 > **Denotazione** cosa indico con la connotazione, la semantica di ciò che sto dicendo
@@ -14,6 +16,8 @@ Esempi
 “Berlusconi”, “Il Presidente del Consiglio”, “Il Cavaliere”, “Il tesserato P2 1816”, “Papi Silvio”, “Il 3o italiano piu ricco” ` “Il principale esponente dello schieramento a me avverso”, **sono tutte connotazioni per la stessa denotazione**
 </details>
 
+## Invarianza
+
 Siano x e y due connotazioni per la stessa denotazione.**Il principio di invarianza per sostituzione** vale se per ogni contesto $P[.]$ le due connotazioni $P[x]$ e $P[y]$ denotano la stessa cosa.
 
 Piano:
@@ -26,5 +30,5 @@ Fissiamo della semantica, perchè se no ogni cosa può significare qualsiasi cos
 - **Connettivi Unari**: ( non )
 - **Connettivi 0-ari**: (vero,falso)
 
-
+> Definizione: una sentenza è una connotazione che denota un valore di verità 
 
