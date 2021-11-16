@@ -6,7 +6,7 @@
 
 > **Denotazione** cosa indico con la connotazione, la semantica di ciò che sto dicendo
 
-Uso **metalinguistico del liinguaggio** significa riferirsi a Connotazioni
+Uso **metalinguistico del linguaggio** significa riferirsi a Connotazioni
 
 <details>
 <summary>

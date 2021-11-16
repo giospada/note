@@ -8,8 +8,7 @@ Prendiamo il punto $\sqrt{2}$ che è sulla retta, non è rappresentabile con i n
 
 <details>
 <summary>
-
-**Dimostrazione per assurdo**
+Dimostrazione per assurdo
 </summary>
 
 Assumiamo $\sqrt{2} \in \mathbb{Q}$ Quindi:  
@@ -37,8 +36,7 @@ $n^2$ è pari ma  $MCD(m,n)=1$ quindi è impossibile
 
 <details>
 <summary>
-
-**dimostrazione**
+dimostrazione
 </summary>
 
 
