@@ -162,3 +162,14 @@ $f'(x)< 0 \mbox{ , }\forall x \in ]a,b[ \implies f$ è strettamente decrescente 
 
 </details>
 
+## Punto minimo e massimo
+
+![](vx_images/4147553139386.png)
+
+> Queste sono le condizioni sufficenti (non necessarie) per il minimo e il massimo
+
+
+
+
+
+
