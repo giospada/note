@@ -2,13 +2,16 @@
 # Logica
 
 ## Preposizione
+
 > p = proposizione (è un affermazione che può essere o vera o falsa)
 
 ## Negazione
+
 $\bar{p}$ = "non p", è la negazione di p
 
 
-attezione :
+### Per ogni e Esiste
+
 - la negazione di tutti è esiste almeno un elemento $\bar{\forall}$ = $\exists$  
 - la negazioni di esiste almeno un elementeo è tutti  $\bar{\exists}$ = $\forall$
 
