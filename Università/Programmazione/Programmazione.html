@@ -80,6 +80,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    "HTML-CSS": {fonts: ['STIX-web']},
+    SVG: {font: 'STIX-Web'},
+    TeX: {Augment: {
+      Definitions: {
+        delimiter: {
+          '\\llbracket': '27E6',
+          '\\rrbracket': '27E7
+        }
+      }
+    }}
+  });
+  </script>
 </head>
 <body>
 <nav id="TOC" role="doc-toc">

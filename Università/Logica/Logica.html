@@ -81,6 +81,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    "HTML-CSS": {fonts: ['STIX-web']},
+    SVG: {font: 'STIX-Web'},
+    TeX: {Augment: {
+      Definitions: {
+        delimiter: {
+          '\\llbracket': '27E6',
+          '\\rrbracket': '27E7
+        }
+      }
+    }}
+  });
+  </script>
 </head>
 <body>
 <nav id="TOC" role="doc-toc">
@@ -170,17 +184,51 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="#dimostrazione-che-è-uguale-a"><span class="toc-section-number">8.4.1</span> Dimostrazione che +’ è uguale a ’+</a></li>
 <li><a href="#altre-prove"><span class="toc-section-number">8.4.2</span> Altre prove</a></li>
 </ul></li>
-<li><a href="#verità"><span class="toc-section-number">8.5</span> Verità</a></li>
 </ul></li>
-<li><a href="#connotazione-denotazione-invarianza"><span class="toc-section-number">9</span> Connotazione denotazione invarianza</a></li>
-<li><a href="#logica-proporzionale"><span class="toc-section-number">10</span> Logica Proporzionale</a><ul>
-<li><a href="#sintassi-1"><span class="toc-section-number">10.1</span> Sintassi</a></li>
-<li><a href="#formalizzazione"><span class="toc-section-number">10.2</span> Formalizzazione</a></li>
-<li><a href="#semantica"><span class="toc-section-number">10.3</span> Semantica</a></li>
-<li><a href="#dimostrazioni-e-prove"><span class="toc-section-number">10.4</span> Dimostrazioni e Prove</a></li>
+<li><a href="#verità-e-conseguenza-logica"><span class="toc-section-number">9</span> Verità e Conseguenza Logica</a><ul>
+<li><a href="#verità"><span class="toc-section-number">9.1</span> Verità</a><ul>
+<li><a href="#esempio-teoria"><span class="toc-section-number">9.1.1</span> Esempio Teoria</a></li>
 </ul></li>
-<li><a href="#sistemi-deduttivi"><span class="toc-section-number">11</span> Sistemi Deduttivi</a><ul>
-<li><a href="#regloa-di-inferenza"><span class="toc-section-number">11.1</span> Regloa Di Inferenza</a></li>
+<li><a href="#conseguenza-logica"><span class="toc-section-number">9.2</span> Conseguenza Logica</a></li>
+<li><a href="#equivalenza-logica"><span class="toc-section-number">9.3</span> Equivalenza Logica</a></li>
+<li><a href="#teoria-inconsistente"><span class="toc-section-number">9.4</span> Teoria Inconsistente</a></li>
+</ul></li>
+<li><a href="#connotazione-denotazione-invarianza"><span class="toc-section-number">10</span> Connotazione denotazione invarianza</a><ul>
+<li><a href="#definizione-di-connotazione-e-denotazione"><span class="toc-section-number">10.1</span> Definizione di connotazione e denotazione</a></li>
+<li><a href="#invarianza"><span class="toc-section-number">10.2</span> Invarianza</a></li>
+</ul></li>
+<li><a href="#logica-proporzionale"><span class="toc-section-number">11</span> Logica Proporzionale</a><ul>
+<li><a href="#sintassi-1"><span class="toc-section-number">11.1</span> Sintassi</a></li>
+<li><a href="#formalizzazione"><span class="toc-section-number">11.2</span> Formalizzazione</a></li>
+<li><a href="#semantica"><span class="toc-section-number">11.3</span> Semantica</a><ul>
+<li><a href="#semantica-classica"><span class="toc-section-number">11.3.1</span> Semantica Classica</a></li>
+</ul></li>
+<li><a href="#dimostrazioni-e-prove"><span class="toc-section-number">11.4</span> Dimostrazioni e Prove</a></li>
+</ul></li>
+<li><a href="#sistemi-deduttivi"><span class="toc-section-number">12</span> Sistemi Deduttivi</a></li>
+<li><a href="#deduzione-naturale"><span class="toc-section-number">13</span> Deduzione Naturale</a><ul>
+<li><a href="#regola-di-inferenza"><span class="toc-section-number">13.1</span> Regola Di Inferenza</a></li>
+<li><a href="#regole-invertibili"><span class="toc-section-number">13.2</span> Regole Invertibili</a></li>
+<li><a href="#and-wedge"><span class="toc-section-number">13.3</span> And (<span class="math inline">\(\wedge\)</span>)</a><ul>
+<li><a href="#regole-di-introduzione"><span class="toc-section-number">13.3.1</span> Regole di introduzione</a></li>
+<li><a href="#regola-di-eliminazione"><span class="toc-section-number">13.3.2</span> Regola di eliminazione</a></li>
+<li><a href="#regole-alternative-di-eliminazione"><span class="toc-section-number">13.3.3</span> Regole alternative di eliminazione</a></li>
+</ul></li>
+<li><a href="#or-vee"><span class="toc-section-number">13.4</span> Or (<span class="math inline">\(\vee\)</span>)</a><ul>
+<li><a href="#regole-di-introduzione-1"><span class="toc-section-number">13.4.1</span> Regole di introduzione</a></li>
+<li><a href="#regole-di-eliminazione"><span class="toc-section-number">13.4.2</span> Regole di eliminazione</a></li>
+<li><a href="#armonia-tra-regole-di-introduzione-ed-eliminazione"><span class="toc-section-number">13.4.3</span> Armonia tra regole di introduzione ed eliminazione</a></li>
+</ul></li>
+<li><a href="#falso-bot"><span class="toc-section-number">13.5</span> Falso <span class="math inline">\(\bot\)</span></a><ul>
+<li><a href="#regola-di-eliminazione-1"><span class="toc-section-number">13.5.1</span> Regola di eliminazione</a></li>
+</ul></li>
+<li><a href="#vero-top"><span class="toc-section-number">13.6</span> Vero <span class="math inline">\(\top\)</span></a><ul>
+<li><a href="#regola-di-introduzione"><span class="toc-section-number">13.6.1</span> Regola di introduzione</a></li>
+</ul></li>
+<li><a href="#implica-implies"><span class="toc-section-number">13.7</span> Implica <span class="math inline">\(\implies\)</span></a><ul>
+<li><a href="#regola-di-introduzione-1"><span class="toc-section-number">13.7.1</span> Regola di introduzione</a></li>
+<li><a href="#regola-di-eliminazione-2"><span class="toc-section-number">13.7.2</span> Regola di eliminazione</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -745,10 +793,10 @@ TODO: compleatre
 <blockquote>
 <p>therorema: (<span class="math inline">\(\forall\)</span> n. n &lt; |l1| <span class="math inline">\(\implies\)</span> nth n l1 = nth n ( l1@ l2)) <span class="math inline">\(\vee\)</span> (<span class="math inline">\(\forall\)</span>n. n &lt; |l2" <span class="math inline">\(\implies\)</span> nth n l2 = nth (|l1|+n) (l1@l2) )</p>
 </blockquote>
-<p>case []: <span class="math inline">\(\forall\)</span>l2. (<span class="math inline">\(\forall\)</span> n. n &lt; |[]| <span class="math inline">\(\implies\)</span> nth n [] = nth n ( []@ l2)) <span class="math inline">\(\vee\)</span> (<span class="math inline">\(\forall\)</span>n. n &lt; |l2" <span class="math inline">\(\implies\)</span> nth n l2 = nth (|[]|+n) ([]<span class="citation" data-cites="l2">@l2</span>) ) ovvero<br />
-<span class="math inline">\(\forall\)</span>l2. (<span class="math inline">\(\forall\)</span> n. n &lt; 0 <span class="math inline">\(\implies\)</span> nth n [] = nth n ( []@ l2)) <span class="math inline">\(\vee\)</span> (<span class="math inline">\(\forall\)</span>n. n &lt; |l2" <span class="math inline">\(\implies\)</span> nth n l2 = nth (n) (l2) ) dimostro <span class="math inline">\(\forall\)</span> n &lt; 0 <span class="math inline">\(\implies\)</span> … sia n un numero t.c n &lt; 0 assurdo. dimostr <span class="math inline">\(\forall\)</span>n . n &lt; |l2| <span class="math inline">\(\implies\)</span> nth n l2 = nth n l2 ovvio</p>
-<p>caso x:l : <span class="math inline">\(\forall\)</span> (<span class="math inline">\(\forall\)</span> n. n &lt; |l1| <span class="math inline">\(\implies\)</span> nth n l1 = nth n ( l1@ l2)) <span class="math inline">\(\vee\)</span> (<span class="math inline">\(\forall\)</span>n. n &lt; |l2" <span class="math inline">\(\implies\)</span> nth n l2 = nth (|l1|+n) (l1@l2) ) # Verità e Conseguenza Logica</p>
-<h2 id="verità"><span class="header-section-number">8.5</span> Verità</h2>
+<p>case []: <span class="math inline">\(\displaylines{&amp;}\)</span> <span class="math inline">\(\forall\)</span>l2. (<span class="math inline">\(\forall\)</span> n. n &lt; |[]| <span class="math inline">\(\implies\)</span> nth n [] = nth n ( []@ l2)) <span class="math inline">\(\vee\)</span> <span class="math inline">\(\displaylines{&amp;}\)</span> (<span class="math inline">\(\forall\)</span>n. n &lt; |l2" <span class="math inline">\(\implies\)</span> nth n l2 = nth (|[]|+n) ([]<span class="citation" data-cites="l2">@l2</span>) ) <span class="math inline">\(\displaylines{&amp;}\)</span> ovvero<br />
+<span class="math inline">\(\displaylines{&amp;}\forall\)</span>l2. (<span class="math inline">\(\forall\)</span> n. n &lt; 0 <span class="math inline">\(\implies\)</span> nth n [] = nth n ( []@ l2)) <span class="math inline">\(\vee\)</span> <span class="math inline">\(\displaylines{&amp;}\)</span>(<span class="math inline">\(\forall\)</span>n. n &lt; |l2" <span class="math inline">\(\implies\)</span> nth n l2 = nth (n) (l2) ) <span class="math inline">\(\displaylines{&amp;}\)</span> dimostro <span class="math inline">\(\forall\)</span> n &lt; 0 <span class="math inline">\(\implies\)</span> … <span class="math inline">\(\displaylines{&amp;}\)</span> sia n un numero t.c n &lt; 0 <span class="math inline">\(\displaylines{&amp;}\)</span> assurdo. <span class="math inline">\(\displaylines{&amp;}\)</span> dimostr <span class="math inline">\(\forall\)</span>n . n &lt; |l2| <span class="math inline">\(\implies\)</span> nth n l2 = nth n l2 ovvio</p>
+<h1 id="verità-e-conseguenza-logica"><span class="header-section-number">9</span> Verità e Conseguenza Logica</h1>
+<h2 id="verità"><span class="header-section-number">9.1</span> Verità</h2>
 <blockquote>
 <p>Verità fisiche, chimiche… sono associate al mondo sensibile, e sono definite da esperimenti ripetibili</p>
 </blockquote>
@@ -760,29 +808,61 @@ TODO: compleatre
 <li>un <strong>mondo</strong> è una descrizione completa che determina un concetto di verità, gli assiomi individuano una molteplicità di mondi</li>
 <li>data una <strong>preposizione</strong> potrebbe essere sicuramente vera/falsa/non determinata in ogni modello della teoria.</li>
 </ul>
+<h3 id="esempio-teoria"><span class="header-section-number">9.1.1</span> Esempio Teoria</h3>
+<p>Enti primitivi: <span class="math inline">\(0,\space\le\)</span></p>
+<p>Assiomi: <span class="math inline">\(\le\)</span> ha le proprietà riflessiva, antisimmetrica, transitiva e <span class="math inline">\(\forall\space n,\space0\le n\)</span>.</p>
+<p>Proposizioni:</p>
+<ul>
+<li><span class="math inline">\(\forall\space x.x\le0\Rightarrow x=0\)</span></li>
+<li><span class="math inline">\(\forall x,y.x\le y\vee y\le x\)</span></li>
+</ul>
+<details>
+<p><summary> Modello 1 </summary></p>
+interpreto gli oggetti come numeri naturali 0 come numero 0 ≤ come ≤ sui naturali tutti gli assiomi sono soddisfatti entrambe le proposizioni sono vere
+</details>
+<details>
+<p><summary> Modello 2 </summary></p>
+interpreto gli oggetti come numeri naturali 0 come numero 1 ≤ come “divide” tutti gli assiomi sono soddisfatti solo la prima proposizione e vera
+</details>
+<h2 id="conseguenza-logica"><span class="header-section-number">9.2</span> Conseguenza Logica</h2>
 <blockquote>
-<p><strong>Conseguenza Logica</strong>: se una preposizione assume lo stesso valore di verità in tutti i mondi modelli della teoria</p>
+<p><strong>Conseguenza Logica</strong>: se una preposizione assume lo stesso valore di verità in tutti i mondi modelli della teoria (<span class="math inline">\(\Vdash\)</span>)</p>
 </blockquote>
-<p>Sia <span class="math inline">\(\Gamma\)</span> un insieme di sentenze (costituiscono dei vincoli che i mondi devono rispettare) e F una preposizione.<br />
-F è consegnuenza logica di <span class="math inline">\(\Gamma (\Gamma \Vdash F)\)</span> quando F è vera in tutti i modelli di <span class="math inline">\(\Gamma\)</span> ovvero tutti i modni in cui ogniuna delle <span class="math inline">\(G \in \Gamma\)</span> è vera</p>
-<p>Siano F e G due sentenze, F è logicamente equivalente a <span class="math inline">\(G (F \equiv G)\)</span> sse <span class="math inline">\(F \Vdash G \mbox{ e } G \Vdash F\)</span></p>
+<p>Sia <span class="math inline">\(\Gamma\)</span> un <strong>insieme di sentenze</strong> (costituiscono dei vincoli che i mondi devono rispettare) e F una preposizione.<br />
+<strong>F è conseguenza logica di</strong> <span class="math inline">\(\Gamma (\Gamma \Vdash F)\)</span> quando <strong>F è vera in tutti i modelli di</strong> <span class="math inline">\(\Gamma\)</span> ( ovvero tutti i mondi in cui ognuna delle <span class="math inline">\(G \in \Gamma\)</span> è vera).</p>
+<h2 id="equivalenza-logica"><span class="header-section-number">9.3</span> Equivalenza Logica</h2>
 <blockquote>
-<p>Una teoroia è <strong>inconsistenze</strong> quando non ammette modelli, ovvero nessun mondo tutti gli assomi sono contemporanemanete veri.</p>
+<p>Siano F e G due sentenze, F è logicamente equivalente a G (si scrive <span class="math inline">\(F \equiv G\)</span>) sse <span class="math inline">\(F \Vdash G \mbox{ e } G \Vdash F\)</span></p>
+</blockquote>
+<h2 id="teoria-inconsistente"><span class="header-section-number">9.4</span> Teoria Inconsistente</h2>
+<blockquote>
+<p>Una teoria è <strong>inconsistenze</strong> quando non ammette modelli, ovvero <strong>nessun mondo tutti gli assiomi sono contemporaneamente veri.</strong></p>
 </blockquote>
 <p><strong>se <span class="math inline">\(\Gamma\)</span> è inconsistente allora <span class="math inline">\(\forall F\)</span> si ha <span class="math inline">\(\Gamma \Vdash F\)</span></strong>.</p>
-<p>Se <span class="math inline">\(\Gamma\)</span> è inconsisntente vale anche l’assurdo.</p>
-<h1 id="connotazione-denotazione-invarianza"><span class="header-section-number">9</span> Connotazione denotazione invarianza</h1>
+<p>Se <span class="math inline">\(\Gamma\)</span> è inconsistente vale anche l’assurdo.</p>
+<details>
+<p><summary> Esempio </summary></p>
+<p><span class="math inline">\(1=0,0\ne1,\forall x.x=x\)</span> è una teoria inconsistente.</p>
+<p><strong>Fatto ovvio:</strong> <span class="math inline">\(\Gamma\)</span> inconsistente <span class="math inline">\(\Rightarrow\forall F.\Gamma\Vdash F\)</span>.</p>
+<p><strong>Dimostrazione:</strong> <span class="math inline">\(F\)</span> deve valere nell’insieme vuoto dei modelli, il che è vero.</p>
+<p><strong>Corollario:</strong> <span class="math inline">\(\Gamma\)</span> inconsistente <span class="math inline">\(\Rightarrow\Gamma\Vdash\perp\)</span>, dove <span class="math inline">\(\perp\)</span> è una proposizione falsa, chiamata assurdo (anche l’assurdo è una conseguenza logica). Se è vero l’assurdo allora tutto il resto è vero.</p>
+<p>Un teorema dice che è vero anche il contrario: <span class="math inline">\(\Gamma\Vdash\perp\Rightarrow\Gamma\)</span> è inconsistente, ovvero non ha modelli.</p>
+Tutte le teorie consistenti (= non consistenti, in cui l’assurdo non è conseguenza logica) sono interessanti. Esse hanno almeno un modello in cui tutte le conseguenze logiche di <span class="math inline">\(\Gamma\)</span> sono vere.
+</details>
+<h1 id="connotazione-denotazione-invarianza"><span class="header-section-number">10</span> Connotazione denotazione invarianza</h1>
+<h2 id="definizione-di-connotazione-e-denotazione"><span class="header-section-number">10.1</span> Definizione di connotazione e denotazione</h2>
 <blockquote>
 <p><strong>Connotazione</strong> come indico qualcosa ,la sintassi che uso per dirla</p>
 </blockquote>
 <blockquote>
 <p><strong>Denotazione</strong> cosa indico con la connotazione, la semantica di ciò che sto dicendo</p>
 </blockquote>
-<p>Uso <strong>metalinguistico del liinguaggio</strong> significa riferirsi a Connotazioni</p>
+<p>Uso <strong>metalinguistico del linguaggio</strong> significa riferirsi a Connotazioni</p>
 <details>
 <p><summary> Esempi </summary></p>
 “Berlusconi”, “Il Presidente del Consiglio”, “Il Cavaliere”, “Il tesserato P2 1816”, “Papi Silvio”, “Il 3o italiano piu ricco” ` “Il principale esponente dello schieramento a me avverso”, <strong>sono tutte connotazioni per la stessa denotazione</strong>
 </details>
+<h2 id="invarianza"><span class="header-section-number">10.2</span> Invarianza</h2>
 <p>Siano x e y due connotazioni per la stessa denotazione.<strong>Il principio di invarianza per sostituzione</strong> vale se per ogni contesto <span class="math inline">\(P[.]\)</span> le due connotazioni <span class="math inline">\(P[x]\)</span> e <span class="math inline">\(P[y]\)</span> denotano la stessa cosa.</p>
 <p>Piano:</p>
 <ol type="1">
@@ -796,9 +876,12 @@ F è consegnuenza logica di <span class="math inline">\(\Gamma (\Gamma \Vdash F)
 <li><strong>Connettivi Unari</strong>: ( non )</li>
 <li><strong>Connettivi 0-ari</strong>: (vero,falso)</li>
 </ul>
-<h1 id="logica-proporzionale"><span class="header-section-number">10</span> Logica Proporzionale</h1>
-<p>La logica proprozionale studia solamente le connotazioni che denotano valori di verità.</p>
-<h2 id="sintassi-1"><span class="header-section-number">10.1</span> Sintassi</h2>
+<blockquote>
+<p>Definizione: una sentenza è una connotazione che denota un valore di verità</p>
+</blockquote>
+<h1 id="logica-proporzionale"><span class="header-section-number">11</span> Logica Proporzionale</h1>
+<p>La logica proporzionale studia solamente le connotazioni che denotano valori di verità.</p>
+<h2 id="sintassi-1"><span class="header-section-number">11.1</span> Sintassi</h2>
 <blockquote>
 <p><span class="math inline">\(F::= \top |\bot|A|B|...|\neg F|F\vee F|F\wedge F|F \implies F\)</span></p>
 </blockquote>
@@ -806,9 +889,9 @@ F è consegnuenza logica di <span class="math inline">\(\Gamma (\Gamma \Vdash F)
 <ul>
 <li><span class="math inline">\(\top\)</span> denota la verità</li>
 <li><span class="math inline">\(\bot\)</span> denota la falsità</li>
-<li>A,B,… Denotano un valore di verità non determinato o sconoscuto</li>
+<li>A,B,… Denotano un valore di verità non determinato o sconosciuto</li>
 <li><span class="math inline">\(\neg F\)</span> è la negazione di F</li>
-<li><span class="math inline">\(F\vee F\)</span> è la digiunzione inclusi di due formule</li>
+<li><span class="math inline">\(F\vee F\)</span> è la disgiunzione inclusi di due formule</li>
 <li><span class="math inline">\(F\wedge F\)</span>:</li>
 <li><span class="math inline">\(F \implies F\)</span>:</li>
 </ul>
@@ -817,48 +900,71 @@ F è consegnuenza logica di <span class="math inline">\(\Gamma (\Gamma \Vdash F)
 <li>Precedenze: <span class="math inline">\(\neg , \wedge,\vee,\implies\)</span></li>
 <li>Associatività a destra</li>
 </ul>
-<details>
-<p><summary> Esempi </summary></p>
-TODO
-</details>
-<h2 id="formalizzazione"><span class="header-section-number">10.2</span> Formalizzazione</h2>
+<h2 id="formalizzazione"><span class="header-section-number">11.2</span> Formalizzazione</h2>
 <blockquote>
 <p>Con <strong>formalizzazione</strong> di una frase naturale si intende trovare la formula logica che meglio approssima la frase</p>
 </blockquote>
 <details>
 <p><summary> Esempi </summary></p>
-<p>Se 2+2 fa 5 allora io sono una carriola</p>
-<p>Formalizzazione: <span class="math inline">\(A \implies B\)</span></p>
+<ol type="1">
+<li>Se 2+2 fa 5 allora io sono una carriola Formalizzazione: <span class="math inline">\(A \implies B\)</span>
 <ul>
 <li>A sta per “2+2 fa 5”</li>
 <li>B sta per “io sono una carriola”</li>
-</ul>
-<hr />
-<p>Non è vero che quando fa caldo bisogna accednere il condizionatore</p>
-<p>Formalizzazione: <span class="math inline">\(\neg (A \implies B)\)</span></p>
+</ul></li>
+</ol>
+<p>2.Non è vero che quando fa caldo bisogna accendere il condizionatore, Formalizzazione: <span class="math inline">\(\neg (A \implies B)\)</span></p>
 </details>
-<h2 id="semantica"><span class="header-section-number">10.3</span> Semantica</h2>
+<p>Bisogna stare attenti a :</p>
+<ol type="1">
+<li>Connotazioni diverse per gli stessi connettivi
+<details>
+<summary> Esempo: </summary></li>
+</ol>
+<ul>
+<li>“Se A allora B”, “A implica B”, “B se A”, “B quando A”, “quando A, B”, “A è condizione sufficiente per B”, “B è condizione necessaria per A”, . . .</li>
+<li>“A e B”, “A ma B”, “A nonostante B”, . . .
+</details></li>
+</ul>
+<ol start="2" type="1">
+<li>Sinonimi e contrari.
+<details>
+<summary> Esempio </summary></li>
+</ol>
+“se Mario è acculturato allora oggi c’è bel tempo”, “oggi splende il sole e Mario è ignorante” si formalizza come <span class="math inline">\(M ⇒ B, B ∧ ¬M\)</span>
+</details>
+<h2 id="semantica"><span class="header-section-number">11.3</span> Semantica</h2>
 <blockquote>
 <p><strong>Semantica</strong>: ciò che viene associato alle connotazioni in un particolare <strong>dominio di interpretazione</strong>; insieme delle denotazioni</p>
 </blockquote>
+<h3 id="semantica-classica"><span class="header-section-number">11.3.1</span> Semantica Classica</h3>
 <p>La semantica classica: associa a ogni connotazione il suo <strong>valore di verità</strong> in un qualche mondo, sarà il <strong>mondo a determinare</strong> il vaolre di verità delle <strong>variabili</strong>.</p>
 <ul>
 <li>Ogni enunciato è vero o falso</li>
-<li>Un enunciato non può essere vero e falsoallo stesso tempo</li>
+<li>Un enunciato non può essere vero e falso allo stesso tempo</li>
 <li>il valore di verità non muta</li>
 <li>il valore di verità di un enunciato è sempre determinato</li>
-<li>Staticità e determinanza segnano un solco fra verità e conoscenza</li>
+<li>Staticità e determinatezza segnano un solco fra verità e conoscenza</li>
 <li>Staticità segna un solco fra verità e risorse</li>
 </ul>
 <p>Utilizziamo 0 e 1, per denotare la falsità e la verità</p>
 <blockquote>
-<p>un interpretazione o mondo è una fnzione delle insieme delle variabili proposizionali {A,B,….} verso {0,1}</p>
+<p>Definizione: una (funzione di) interpretazione (classica) o mondo è una funzione dall’insieme delle variabili proposizionali {A,B,…}verso {0,1</p>
 </blockquote>
-<p><img src="vx_images/2567958149376.png" /></p>
-<h2 id="dimostrazioni-e-prove"><span class="header-section-number">10.4</span> Dimostrazioni e Prove</h2>
+<ul>
+<li><span class="math inline">\(\llbracket \bot \rrbracket^v= 0\)</span></li>
+<li><span class="math inline">\(\llbracket \top \rrbracket^v = 1\)</span></li>
+<li><span class="math inline">\(\llbracket A \rrbracket^v =v(A)\)</span></li>
+<li><span class="math inline">\(\llbracket \neg F \rrbracket^v =1-\llbracket F\rrbracket^v\)</span></li>
+<li><span class="math inline">\(\llbracket F_1 \wedge F_2 \rrbracket=\min \{\llbracket F_1 \rrbracket^v, \llbracket F_2 \rrbracket^v\}\)</span></li>
+<li><span class="math inline">\(\llbracket F_1 \vee F_2 \rrbracket=\max\{\llbracket F_1 \rrbracket^v, \llbracket F_2 \rrbracket^v\}\)</span></li>
+<li><span class="math inline">\(\llbracket F_1 \implies F_2 \rrbracket=\max\{1-\llbracket F_1 \rrbracket^v, \llbracket F_2\rrbracket^v\}\)</span></li>
+</ul>
+<h2 id="dimostrazioni-e-prove"><span class="header-section-number">11.4</span> Dimostrazioni e Prove</h2>
 <p>Partendo da <span class="math inline">\(\Gamma \vdash F\)</span></p>
-<h1 id="sistemi-deduttivi"><span class="header-section-number">11</span> Sistemi Deduttivi</h1>
-<p><span class="math inline">\(F \Vdash F \iff \forall v, (\forall G \in \Gamma,[G]^v=1)\implies [F]^v=1\)</span> # Deduzione Naturale</p>
+<h1 id="sistemi-deduttivi"><span class="header-section-number">12</span> Sistemi Deduttivi</h1>
+<p><span class="math inline">\(F \Vdash F \iff \forall v, (\forall G \in \Gamma,[G]^v=1)\implies [F]^v=1\)</span></p>
+<h1 id="deduzione-naturale"><span class="header-section-number">13</span> Deduzione Naturale</h1>
 <p><img src="vx_images/165632139381.png" /></p>
 <p>Per dimostrare si utilizza un <strong>albero di deduzione naturale</strong> per <span class="math inline">\(\Gamma \vdash F\)</span> è una struttura dati arorescente tale che :</p>
 <ul>
@@ -868,8 +974,8 @@ TODO
 <li>le foglie non scaricate sono etichette con formule appartenenti a <span class="math inline">\(\Gamma\)</span></li>
 <li>i nodi interni, oltre alla formula sono etichettati con delle regole di inferenza</li>
 </ul>
-<h2 id="regloa-di-inferenza"><span class="header-section-number">11.1</span> Regloa Di Inferenza</h2>
-<p>Sintassi per la regloa di inferenza:</p>
+<h2 id="regola-di-inferenza"><span class="header-section-number">13.1</span> Regola Di Inferenza</h2>
+<p>Sintassi per la regola di inferenza:</p>
 <p><span class="math inline">\(\frac{F_1... F_n}{F}\)</span></p>
 <p>La formula F è la conclusione della regola. Le formule <span class="math inline">\(F_1\dots F_n\)</span> sono le premesse della regola.</p>
 <p>La premessa <span class="math inline">\(F_i\)</span> verrà indicata con <span class="math inline">\(\displaylines{[A]\\ \vdots \\ F_i}\)</span> per indicare che è possibile assumere localmente A per concludere <span class="math inline">\(F_i\)</span></p>
@@ -879,5 +985,108 @@ TODO
 <li>Bottom-up (dalle premesse alla conclusione) date le premesse <span class="math inline">\(F_1\dots F_n\)</span> posso concludere F</li>
 <li>Top-down (dalle premesse alla conclusione) per concludere F posso ridurmi a dimostrare <span class="math inline">\(F_1\dots F_n\)</span></li>
 </ol>
+<h2 id="regole-invertibili"><span class="header-section-number">13.2</span> Regole Invertibili</h2>
+<blockquote>
+<p>Una regola <span class="math inline">\(\frac{F_1...F_n}{F}\)</span> è invertibile quando per ogni <span class="math inline">\(i\)</span> si ha <span class="math inline">\(F\Vdash F_i\)</span>. Come per la correttezza, eventuali ipotesi scaricate di <span class="math inline">\(F_i\)</span> vanno integrate con una implicazione (es. <span class="math inline">\(F\Vdash H\implies F_i\)</span>).</p>
+</blockquote>
+<p>Le regole invertibili portano sempre a conseguenze logiche, applicandole non si arriverà mai ad un “vicolo ceco”..</p>
+<h2 id="and-wedge"><span class="header-section-number">13.3</span> And (<span class="math inline">\(\wedge\)</span>)</h2>
+<h3 id="regole-di-introduzione"><span class="header-section-number">13.3.1</span> Regole di introduzione</h3>
+<p><span class="math inline">\(\frac{F_1\space F_2}{F_1\wedge F_2}\)</span> <strong>Lettura bottom-up</strong>: se <span class="math inline">\(F_1\)</span> e <span class="math inline">\(F_2\)</span> allora <span class="math inline">\(F_1\wedge F_2\)</span> <strong>Lettura top-down</strong>: per dimostrare <span class="math inline">\(F_1\wedge F_2\)</span> devo dimostrare sia <span class="math inline">\(F_1\)</span> che <span class="math inline">\(F_2\)</span>.</p>
+<details>
+<p><summary> Scrittura informale: </summary></p>
+<p><span class="math inline">\(...\)</span> e quindi <span class="math inline">\(F_1\)</span></p>
+<p><span class="math inline">\(...\)</span> e quindi <span class="math inline">\(F_2\)</span></p>
+[e quindi <span class="math inline">\(F_1\wedge F_2\)</span>]
+</details>
+<details>
+<p><summary> Correttezza classica: </summary></p>
+<span class="math inline">\(F_1,F_2\Vdash F_1\wedge F_2\)</span> in quanto, <span class="math inline">\(\forall v,\llbracket F_1\rrbracket^v=\llbracket F_2\rrbracket^v=1\implies\llbracket F_1\wedge F_2\rrbracket^v=min\{\llbracket F_1\rrbracket^v,\llbracket F_2\rrbracket^v\}=1\)</span>
+</details>
+<details>
+<p><summary> Invertibilità classica: </summary></p>
+<span class="math inline">\(F_1\wedge F_2\Vdash F_i\)</span> per <span class="math inline">\(I\in\{1,2\}\)</span> in quanto, <span class="math inline">\(\forall v,\llbracket F_1\wedge F_2\rrbracket^v=min\{\llbracket F_1\rrbracket^v,\llbracket F_2\rrbracket^v\}=1\implies\llbracket F_i\rrbracket^v=1\)</span> per <span class="math inline">\(I\in\{1,2\}\)</span>.
+</details>
+<h3 id="regola-di-eliminazione"><span class="header-section-number">13.3.2</span> Regola di eliminazione</h3>
+<p><span class="math display">\[\frac{F_1\wedge F_2\space\space\space \begin{matrix}
+[F_1][F_2]\\
+\vdots\\
+F_3
+\end{matrix}}{F_3}\space\space\space(\wedge_e)\]</span></p>
+<p><strong>Lettura bottom-up</strong>: se <span class="math inline">\(F_1\wedge F_2\)</span> e se ipotizzando <span class="math inline">\(F_1\)</span> e <span class="math inline">\(F_2\)</span> concludo <span class="math inline">\(F_3\)</span>, allora <span class="math inline">\(F_3\)</span>. <strong>Lettura top-down</strong>: per dimostrare <span class="math inline">\(F_3\)</span> data l’ipotesi F1 ∧ F2 è sufficiente dimostrare <span class="math inline">\(F_3\)</span> sotto le ipotesi <span class="math inline">\(F_1\)</span> e <span class="math inline">\(F_2\)</span></p>
+<details>
+<p><summary> Scrittura informale: </summary></p>
+<span class="math inline">\(. . . F_1 ∧ F_2\)</span> [supponiamo <span class="math inline">\(F_1\)</span> e anche <span class="math inline">\(F_2\)</span>] <span class="math inline">\(. . .\)</span> e quindi <span class="math inline">\(F_3\)</span> [e quindi <span class="math inline">\(F_3\)</span>] L’applicazione della regola viene sempre lasciata implicita.
+</details>
+<blockquote>
+<p>Nota: un albero di derivazione che termini applicando la regola <span class="math inline">\(∧_e\)</span> ha due sotto-alberi immediati. Il primo dimostra <span class="math inline">\(F_1 ∧ F_2\)</span>. Il secondo dimostra <span class="math inline">\(F_3\)</span> usando, fra le altre, le ipotesi <span class="math inline">\(F_1\)</span> e <span class="math inline">\(F_2\)</span> non ancora scaricate. è l’applicazione della regola che scarica le ipotesi dal sotto-albero.</p>
+</blockquote>
+<p>La regola di eliminazione non è invertibile</p>
+<p><span class="math inline">\(F_3=\top\)</span> e <span class="math inline">\(F_1,F_2=\bot\)</span>: si ha <span class="math inline">\(\top\not{\Vdash}\bot\wedge\bot\)</span></p>
+<p>La regola è invertibile se si assume <span class="math inline">\(F_1\wedge F_2\)</span>: ovvio in quanto <span class="math inline">\(F_3\Vdash F_1\implies F_2\implies F_3\)</span>.</p>
+<h3 id="regole-alternative-di-eliminazione"><span class="header-section-number">13.3.3</span> Regole alternative di eliminazione</h3>
+<p><span class="math inline">\(\frac{F_1\wedge F_2}{F_1}\space\space(\wedge_{e1}),\space\space\space\space\frac{F_1\wedge F_2}{F_2}\space\space(\wedge_{e2})\)</span></p>
+<p><strong>Lettura bottom-up</strong>: se <span class="math inline">\(F_1\wedge F_2\)</span> allora <span class="math inline">\(F_1\)</span> (e <span class="math inline">\(F_2\)</span>).</p>
+<p><strong>Lettura top-down</strong>: per dimostrare <span class="math inline">\(F_1\)</span> (o <span class="math inline">\(F_2\)</span>) basta dimostrare <span class="math inline">\(F_1\wedge F_2.\)</span></p>
+<details>
+<p><summary> Correttezza classica: </summary></p>
+<span class="math inline">\(F_1\wedge F_2\Vdash F_i\)</span> per <span class="math inline">\(i\in\{1,2\}\)</span> in quanto in ogni mondo <span class="math inline">\(v\)</span> tale che <span class="math inline">\(\llbracket F1 ∧ F2\rrbracket^v = min\{\llbracket F\rrbracket^v ,\llbracket F2\rrbracket^v \} = 1\)</span> si ha <span class="math inline">\(\llbracket Fi\rrbracket^v = 1\)</span> per <span class="math inline">\(i ∈ \{1, 2\}\)</span>.
+</details>
+<h2 id="or-vee"><span class="header-section-number">13.4</span> Or (<span class="math inline">\(\vee\)</span>)</h2>
+<h3 id="regole-di-introduzione-1"><span class="header-section-number">13.4.1</span> Regole di introduzione</h3>
+<p><span class="math inline">\(\frac{F_1}{F_1\vee F_2}(\vee_{i_1})\space\space\frac{F_2}{F_1\vee F_2}(\vee_{i_2})\)</span></p>
+<p><strong>Lettura bottom-up</strong>: se <span class="math inline">\(F_1\space(F_2)\)</span> vale, allora vale anche <span class="math inline">\(F_1\vee F_2\)</span></p>
+<p><strong>Lettura top-down</strong>: per dimostrare <span class="math inline">\(F_1\vee F_2\)</span> è sufficente dimostrare <span class="math inline">\(F_1\space(F_2)\)</span></p>
+<details>
+<p><summary> Correttezza Classica: </summary></p>
+<span class="math inline">\(F_i\Vdash F_1\vee F_2\)</span> per <span class="math inline">\(i\in\{1,2\}\)</span> in quanto in ogni mondo <span class="math inline">\(v\)</span> tale che <span class="math inline">\(\llbracket F_i\rrbracket^v=1\)</span> si ha <span class="math inline">\(\max\{\llbracket F_1\rrbracket^v,\llbracket F_2\rrbracket^v\}=1\)</span>
+</details>
+<p>Le due regole <strong>non sono invertibili</strong>: per esempio <span class="math inline">\(F_1=\bot\)</span> e <span class="math inline">\(F_2=\top\)</span> si ha <span class="math inline">\(\bot\vee\top\not{\Vdash}\bot\)</span>.</p>
+<h3 id="regole-di-eliminazione"><span class="header-section-number">13.4.2</span> Regole di eliminazione</h3>
+<p><span class="math display">\[\frac{F_1\vee F_2\space\space\begin{matrix}
+[F_1]\\
+\vdots\\
+F_3
+\end{matrix}\space\space\begin{matrix}
+[F_2]\\
+\vdots\\
+F_3
+\end{matrix}}{F_3}\]</span></p>
+<p><strong>Lettura bottom-up</strong>: se vale <span class="math inline">\(F_1\vee F_2\)</span> e <span class="math inline">\(F_3\)</span> vale sia quando vale <span class="math inline">\(F_1\)</span> che quando vale <span class="math inline">\(F_2\)</span>, allora necessariamente <span class="math inline">\(F_3\)</span> vale.</p>
+<p><strong>Lettura top-down</strong>: per dimostrare qualunque cosa sapendo <span class="math inline">\(F_1\vee F_2\)</span> è sufficente per procedere per casi, dimostrando la stessa cosa assumendo prima che <span class="math inline">\(F_1\)</span> valga e poi che valga <span class="math inline">\(F_2\)</span></p>
+<details>
+<p><summary> Correttezza Classica: </summary></p>
+si ha <span class="math inline">\(F_1\vee F_2,F_1\implies F_3,F_2\implies F_3\Vdash F_3\)</span> in quanto in ogni mondo <span class="math inline">\(v\)</span> tale che <span class="math inline">\(\llbracket F_1\vee F_2\rrbracket^v=\max\{\llbracket F_1\rrbracket^v\}=1\)</span> e <span class="math inline">\(\llbracket F_1\implies F_3\rrbracket^v=\max\{1-\llbracket F_1\rrbracket^v,\llbracket F_3\rrbracket^v\}=1\)</span> e <span class="math inline">\(\llbracket F_F\implies F_3\rrbracket^v=\max\{1-\llbracket F_2\rrbracket^v,\llbracket F_3\rrbracket^v\}=1\)</span> si ha <span class="math inline">\(\llbracket F_3\rrbracket^v=1\)</span>. Il massimo vale sse c’è un <span class="math inline">\(\llbracket F_i\rrbracket^v=1\)</span> e in tal caso <span class="math inline">\(1=\max\{1-\llbracket F_i\rrbracket^v,\llbracket F_3\rrbracket^v\}=\max\{0,\llbracket F_3\rrbracket^v\}=\llbracket F_3\rrbracket^v\)</span>
+</details>
+<p><strong>Invertibilità</strong>: la regola non è invertibile (controesempio: <span class="math inline">\(F_3=\top\)</span> e <span class="math inline">\(F_1=F_2=\bot\)</span>). Tuttavia, quando <span class="math inline">\(F_1\vee F_2\)</span> è dimostrabile, allora la regola è banalmente invertibile.</p>
+<h3 id="armonia-tra-regole-di-introduzione-ed-eliminazione"><span class="header-section-number">13.4.3</span> Armonia tra regole di introduzione ed eliminazione</h3>
+<p><span class="math inline">\(\frac{F_1\vee F_2\space\space\begin{matrix} [F_1]\\ \vdots\\ F_3 \end{matrix}\space\space\begin{matrix} [F_2]\\ \vdots\\ F_3 \end{matrix}}{F_3}\)</span></p>
+<ul>
+<li>Ci sono due modi diretti per introdurre <span class="math inline">\(F_1\vee F_2\)</span> nel modo <span class="math inline">\(i\)</span>-esimo si ha come premessa <span class="math inline">\(F_i\)</span>. La regola di eliminazione analizza come la premessa <span class="math inline">\(F_1\vee F_2\)</span> viene ricavata. La regola ha 2 premesse: la <span class="math inline">\(i\)</span>-esima assume <span class="math inline">\(F_i\)</span></li>
+<li>C’è un modo diretto per introdurre <span class="math inline">\(F_1\wedge F_2\)</span>. Si ha come premesse <span class="math inline">\(F_1\)</span> e <span class="math inline">\(F_2\)</span>. La regola di eliminazione analizza come la premessa <span class="math inline">\(F_1\wedge F_2\)</span> viene ricavata. La regola ha una premessa e assume sia <span class="math inline">\(F_i\)</span> che <span class="math inline">\(F_2\)</span></li>
+</ul>
+<h2 id="falso-bot"><span class="header-section-number">13.5</span> Falso <span class="math inline">\(\bot\)</span></h2>
+<h3 id="regola-di-eliminazione-1"><span class="header-section-number">13.5.1</span> Regola di eliminazione</h3>
+<p><span class="math inline">\(\frac{\bot}{F}\)</span></p>
+<p><strong>Lettura bottom-up</strong>: dal falso segue qualunque cosa.</p>
+<p><strong>Lettura top-down</strong>: per dimostrare qualunque cosa posso ridurmi a dimostrare un assurdo</p>
+<p>(Se le ipotesi sono false allora posso verificare qualsiasi cosa)</p>
+<h2 id="vero-top"><span class="header-section-number">13.6</span> Vero <span class="math inline">\(\top\)</span></h2>
+<h3 id="regola-di-introduzione"><span class="header-section-number">13.6.1</span> Regola di introduzione</h3>
+<p><span class="math inline">\(\frac{}{\top}\)</span></p>
+<p><strong>Lettura bottom-up</strong>: il <span class="math inline">\(\top\)</span> è vero. <strong>Lettura top-down</strong>: per dimostrare <span class="math inline">\(\top\)</span> non debbo fare nulla</p>
+<h2 id="implica-implies"><span class="header-section-number">13.7</span> Implica <span class="math inline">\(\implies\)</span></h2>
+<h3 id="regola-di-introduzione-1"><span class="header-section-number">13.7.1</span> Regola di introduzione</h3>
+<p><span class="math inline">\(\frac{\displaylines{[F_1] \\ \vdots \\ F_2}}{F_1 \implies F_2}\)</span></p>
+<p><strong>Lettura bottom-up</strong>: se ipotizzando <span class="math inline">\(F_1\)</span> dimostro <span class="math inline">\(F_2\)</span> allora <span class="math inline">\(F_1\implies F_2\)</span>.</p>
+<p><strong>Lettura top-down</strong>: per dimostrare <span class="math inline">\(F_1\implies F_2\)</span> basta assumere <span class="math inline">\(F_1\)</span> e dimostrare <span class="math inline">\(F_2\)</span>.</p>
+<details>
+<p><summary> Correttezza e invertibilità: </summary></p>
+trivialmente <span class="math inline">\(F_1\implies F_2\Vdash F_1\implies F_2\)</span>
+</details>
+<h3 id="regola-di-eliminazione-2"><span class="header-section-number">13.7.2</span> Regola di eliminazione</h3>
+<p><span class="math inline">\(\frac{F_1\implies F_2\space\space F_1}{F_2}\)</span></p>
+<p><strong>Lettura bottom-up</strong>: se <span class="math inline">\(F_1\)</span> e <span class="math inline">\(F_1\implies F_2\)</span>, allora necessariamente <span class="math inline">\(F_2\)</span>.</p>
+<p><strong>Lettura top-down</strong>: per dimostrare <span class="math inline">\(F_2\)</span> debbo trovare un <span class="math inline">\(F_1\)</span> che valga e tale per cui <span class="math inline">\(F_1\implies F_2\)</span></p>
 </body>
 </html>

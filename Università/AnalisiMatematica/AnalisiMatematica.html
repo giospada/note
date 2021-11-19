@@ -17,6 +17,20 @@
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    "HTML-CSS": {fonts: ['STIX-web']},
+    SVG: {font: 'STIX-Web'},
+    TeX: {Augment: {
+      Definitions: {
+        delimiter: {
+          '\\llbracket': '27E6',
+          '\\rrbracket': '27E7
+        }
+      }
+    }}
+  });
+  </script>
 </head>
 <body>
 <header id="title-block-header">
@@ -45,7 +59,9 @@
 </ul></li>
 <li><a href="#logica"><span class="toc-section-number">3</span> Logica</a><ul>
 <li><a href="#preposizione"><span class="toc-section-number">3.1</span> Preposizione</a></li>
-<li><a href="#negazione"><span class="toc-section-number">3.2</span> Negazione</a></li>
+<li><a href="#negazione"><span class="toc-section-number">3.2</span> Negazione</a><ul>
+<li><a href="#per-ogni-e-esiste"><span class="toc-section-number">3.2.1</span> Per ogni e Esiste</a></li>
+</ul></li>
 <li><a href="#inplicazione-se-e-solo-se"><span class="toc-section-number">3.3</span> Inplicazione, Se e solo se</a></li>
 </ul></li>
 <li><a href="#funzioni"><span class="toc-section-number">4</span> Funzioni</a><ul>
@@ -159,8 +175,33 @@
 <li><a href="#teorema-deravibilità-e-continuità"><span class="toc-section-number">14.3</span> Teorema, deravibilità e continuità</a></li>
 <li><a href="#derivate-di-ordine-superiore"><span class="toc-section-number">14.4</span> Derivate di ordine superiore</a></li>
 <li><a href="#classi-di-derivabilità"><span class="toc-section-number">14.5</span> Classi di derivabilità</a></li>
+<li><a href="#massimo-relativo"><span class="toc-section-number">14.6</span> Massimo Relativo</a></li>
+<li><a href="#minimo-relativo"><span class="toc-section-number">14.7</span> Minimo Relativo</a></li>
 </ul></li>
-<li><a href="#geometria-analitica"><span class="toc-section-number">15</span> Geometria Analitica</a></li>
+<li><a href="#teorema-di-fermat"><span class="toc-section-number">15</span> Teorema di Fermat</a><ul>
+<li><a href="#teorema-di-rolle"><span class="toc-section-number">15.1</span> Teorema di Rolle</a></li>
+<li><a href="#teorema-di-lagrnge"><span class="toc-section-number">15.2</span> Teorema di Lagrnge</a><ul>
+<li><a href="#crollairio"><span class="toc-section-number">15.2.1</span> Crollairio</a></li>
+</ul></li>
+<li><a href="#teorema-di-cauchy"><span class="toc-section-number">15.3</span> Teorema di cauchy</a></li>
+<li><a href="#relazione-tra-segno-della-derivata-prima-e-la-crescenza-della-funzine"><span class="toc-section-number">15.4</span> Relazione tra segno della derivata prima e la crescenza della funzine</a></li>
+<li><a href="#punto-minimo-e-massimo"><span class="toc-section-number">15.5</span> Punto minimo e massimo</a></li>
+</ul></li>
+<li><a href="#geometria-analitica"><span class="toc-section-number">16</span> Geometria Analitica</a><ul>
+<li><a href="#grafico-qualitativo-di-una-funzione"><span class="toc-section-number">16.1</span> Grafico Qualitativo di una funzione</a></li>
+</ul></li>
+<li><a href="#possibili-esercizi"><span class="toc-section-number">17</span> Possibili Esercizi</a><ul>
+<li><a href="#domande"><span class="toc-section-number">17.1</span> Domande</a></li>
+</ul></li>
+<li><a href="#ripasso"><span class="toc-section-number">18</span> Ripasso</a><ul>
+<li><a href="#potenze"><span class="toc-section-number">18.1</span> Potenze</a></li>
+<li><a href="#proprietà"><span class="toc-section-number">18.2</span> Proprietà</a></li>
+<li><a href="#valore-assoluto"><span class="toc-section-number">18.3</span> Valore Assoluto</a></li>
+<li><a href="#monomio"><span class="toc-section-number">18.4</span> Monomio</a><ul>
+<li><a href="#grado"><span class="toc-section-number">18.4.1</span> Grado</a></li>
+<li><a href="#simili"><span class="toc-section-number">18.4.2</span> Simili</a></li>
+</ul></li>
+</ul></li>
 </ul>
 </nav>
 <h1 id="introduzione"><span class="header-section-number">1</span> Introduzione</h1>
@@ -318,7 +359,7 @@
 </blockquote>
 <h2 id="negazione"><span class="header-section-number">3.2</span> Negazione</h2>
 <p><span class="math inline">\(\bar{p}\)</span> = “non p”, è la negazione di p</p>
-<p>attezione :</p>
+<h3 id="per-ogni-e-esiste"><span class="header-section-number">3.2.1</span> Per ogni e Esiste</h3>
 <ul>
 <li>la negazione di tutti è esiste almeno un elemento <span class="math inline">\(\bar{\forall}\)</span> = <span class="math inline">\(\exists\)</span><br />
 </li>
@@ -568,8 +609,7 @@ quindi: <span class="math inline">\(p_1 =1\)</span></p>
 Prendiamo il punto <span class="math inline">\(\sqrt{2}\)</span> che è sulla retta, non è rappresentabile con i numeri razionali</p>
 </blockquote>
 <details>
-<p><summary></p>
-<p><strong>Dimostrazione per assurdo</strong> </summary></p>
+<p><summary> Dimostrazione per assurdo </summary></p>
 <p>Assumiamo <span class="math inline">\(\sqrt{2} \in \mathbb{Q}\)</span> Quindi:<br />
 <span class="math inline">\(\exists m,n \in \mathbb{N} | \sqrt{2} = \frac{m}{n}\)</span></p>
 <p>Supponiamo che la frazione sia ridotta ai minimi termini: <span class="math inline">\(MCD(m,n)=1\)</span></p>
@@ -586,8 +626,7 @@ Prendiamo il punto <span class="math inline">\(\sqrt{2}\)</span> che è sulla re
 <p>Sia <span class="math inline">\(n \in \mathbb{N}\)</span>: <span class="math inline">\(n\)</span> non è un quadrato perfetto allora <span class="math inline">\(\sqrt{n} \notin \mathbb{Q}\)</span></p>
 </blockquote>
 <details>
-<p><summary></p>
-<p><strong>dimostrazione</strong> </summary></p>
+<p><summary> dimostrazione </summary></p>
 <p>Lemma: <span class="math inline">\(m,n,l \in \mathbb{N}\)</span> tali che <span class="math inline">\(MCD(l,m)=1\)</span> allora se <span class="math inline">\(l | m \times n \implies l | n\)</span></p>
 <p>supponiamo che <span class="math inline">\(\sqrt{n} \in \mathbb{Q} \implies \exists p,q \in N: \sqrt{n}=\frac{p}{q}\)</span> dove <span class="math inline">\(MCD(p,q)=1\)</span></p>
 <p><span class="math inline">\(n=\frac{p^2}{q^2}\)</span><br />
@@ -1126,7 +1165,59 @@ se <span class="math inline">\(f\)</span> è derivabile in <span class="math inl
 la classe di derivabilità denota la regolarità della funzione</p>
 </blockquote>
 <p><span class="math inline">\(f \in C^k (I) \iff \begin{cases}f \mbox{ è derivabile k-volte su }I_j \\ f^k\mbox{ è continua su I}\end{cases}\)</span></p>
-<h1 id="geometria-analitica"><span class="header-section-number">15</span> Geometria Analitica</h1>
+<h2 id="massimo-relativo"><span class="header-section-number">14.6</span> Massimo Relativo</h2>
+<blockquote>
+<p><span class="math inline">\(x_0 \in A\)</span> si dice <strong>punto di massimo relatio</strong> (o locale se) <span class="math inline">\(\exists r&gt;0: f(x)\le f(x_0), \forall x \in A \cap I_r(x_0)\)</span></p>
+</blockquote>
+<h2 id="minimo-relativo"><span class="header-section-number">14.7</span> Minimo Relativo</h2>
+<blockquote>
+<p><span class="math inline">\(x_0 \in A\)</span> si dice <strong>punto di minimo relatio</strong> (o locale se) <span class="math inline">\(\exists r&gt;0: f(x)\ge f(x_0), \forall x \in A \cap I_r(x_0)\)</span></p>
+</blockquote>
+<h1 id="teorema-di-fermat"><span class="header-section-number">15</span> Teorema di Fermat</h1>
+<p><span class="math inline">\(f:[a,b]\to \mathbb{R}\)</span>, <span class="math inline">\(x_0 \in ]a,b[\)</span></p>
+<h2 id="teorema-di-rolle"><span class="header-section-number">15.1</span> Teorema di Rolle</h2>
+<p><span class="math inline">\(f:[a,b]\to \mathbb{R}\)</span></p>
+<ol type="1">
+<li><span class="math inline">\(f\)</span> è continua su <span class="math inline">\([a,b]\)</span></li>
+<li><span class="math inline">\(f\)</span> è derivabile in <span class="math inline">\(]a,b[\)</span></li>
+<li><span class="math inline">\(f(a)=f(b)\)</span></li>
+</ol>
+<p>Allora:<br />
+<span class="math inline">\(\exists c \in ]a,b[ : f&#39;(c)=0\)</span></p>
+<p><img src="vx_images/3176647189382.png" /></p>
+<h2 id="teorema-di-lagrnge"><span class="header-section-number">15.2</span> Teorema di Lagrnge</h2>
+<p><span class="math inline">\(f:[a,b]\to \mathbb{R}\)</span></p>
+<ol type="1">
+<li><span class="math inline">\(f\)</span> è continua su <span class="math inline">\([a,b]\)</span></li>
+<li><span class="math inline">\(f\)</span> è derivabile su <span class="math inline">\(]a,b[\)</span></li>
+</ol>
+<p>Allora :<br />
+<span class="math inline">\(\exists c \in ]a,b[ : \frac{f(b)-f(a)}{b-a}=f&#39;(c)\)</span></p>
+<p><img src="vx_images/1352483756905.png" /></p>
+<h3 id="crollairio"><span class="header-section-number">15.2.1</span> Crollairio</h3>
+<p><span class="math inline">\(f: ]a,b[ \to \mathbb{R}\)</span> <span class="math inline">\(f\)</span> derivabile t.c. <span class="math inline">\(f&#39;(x)=0 \forall x \in ]a,b[\)</span> Allora f è constante</p>
+<h2 id="teorema-di-cauchy"><span class="header-section-number">15.3</span> Teorema di cauchy</h2>
+<p><span class="math inline">\(f,g:[a,b] \to \mathbb{R}\)</span></p>
+<ol type="1">
+<li><span class="math inline">\(f,g\)</span> continua su <span class="math inline">\([a,b]\)</span></li>
+<li><span class="math inline">\(f,g\)</span> derivabili su <span class="math inline">\(]a,b[\)</span></li>
+<li><span class="math inline">\(g&#39;(x)\neq 0\)</span> continua su <span class="math inline">\(\forall x \in ]a,b[\)</span></li>
+</ol>
+<p>Allora: <span class="math inline">\(\exists c \in ]a,b[:\frac{f(b)-f(a)}{g(b)-g(a)}=\frac{f&#39;(c)}{g&#39;(c)}\)</span></p>
+<h2 id="relazione-tra-segno-della-derivata-prima-e-la-crescenza-della-funzine"><span class="header-section-number">15.4</span> Relazione tra segno della derivata prima e la crescenza della funzine</h2>
+<p><span class="math inline">\(f&#39;(x)\ge 0 \mbox{ , }\forall x \in ]a,b[ \iff f\)</span> è crescente su<span class="math inline">\(]a,b[\)</span></p>
+<span class="math inline">\(f&#39;(x)&gt; 0 \mbox{ , }\forall x \in ]a,b[ \implies f\)</span> è strettamente crescente su<span class="math inline">\(]a,b[\)</span> 9
+<details>
+<p><summary> decresente </summary></p>
+<p><span class="math inline">\(f&#39;(x)\le 0 \mbox{ , }\forall x \in ]a,b[ \iff f\)</span> è decrescente su<span class="math inline">\(]a,b[\)</span></p>
+<p><span class="math inline">\(f&#39;(x)&lt; 0 \mbox{ , }\forall x \in ]a,b[ \implies f\)</span> è strettamente decrescente su<span class="math inline">\(]a,b[\)</span></p>
+</details>
+<h2 id="punto-minimo-e-massimo"><span class="header-section-number">15.5</span> Punto minimo e massimo</h2>
+<p><img src="vx_images/4147553139386.png" /></p>
+<blockquote>
+<p>Queste sono le condizioni sufficenti (non necessarie) per il minimo e il massimo</p>
+</blockquote>
+<h1 id="geometria-analitica"><span class="header-section-number">16</span> Geometria Analitica</h1>
 <blockquote>
 <p><strong>retta nel piano</strong> : <span class="math inline">\(y=mx+q\)</span> (si possono rappresentare tutte le rette tranne quelle veritcali (<span class="math inline">\(x=k\)</span>))</p>
 </blockquote>
@@ -1141,5 +1232,52 @@ la classe di derivabilità denota la regolarità della funzione</p>
 <blockquote>
 <p><strong>Fascio di rette</strong>: è l’insieme delle rette che passano da un punto (si indica come <span class="math inline">\(y-y_0=m(x-x_0)\)</span>)</p>
 </blockquote>
+<h2 id="grafico-qualitativo-di-una-funzione"><span class="header-section-number">16.1</span> Grafico Qualitativo di una funzione</h2>
+<ol type="1">
+<li><strong>definire il dominio naturale</strong> di <span class="math inline">\(D(f)\)</span></li>
+<li>(Facoltativo) Individuazione di <strong>simmetrie</strong>(pari o dispari) (se il dominio non è simmetrico si scarta già la possibilità)</li>
+<li>Calcolo dei <strong>limiti relativi alla frontiera del dominio</strong> di <span class="math inline">\(f\)</span> (ninte asintoti obliqui, solo verticali e orizzontali)</li>
+<li>Studio della monotonia di <span class="math inline">\(f\)</span> attraverso l’<strong>analisi del segno della derivata prima</strong></li>
+</ol>
+<h1 id="possibili-esercizi"><span class="header-section-number">17</span> Possibili Esercizi</h1>
+<h2 id="domande"><span class="header-section-number">17.1</span> Domande</h2>
+<ol type="1">
+<li>Calcolare <span class="math inline">\(Img f\)</span></li>
+<li>Stabilire <strong>quante</strong> soluzioni ha l’equazione <span class="math inline">\(f(x)=\lambda\)</span></li>
+</ol>
+<details>
+<p><summary> punto 2 </summary></p>
+<p>possiamo scrivere <span class="math inline">\(f(x)=\lambda \to \begin{cases}y=f(x) \\ y=\lambda \end{cases}\)</span></p>
+con <span class="math inline">\(\# S\)</span> indichiamo il numero di soluzioni
+</details>
+<h1 id="ripasso"><span class="header-section-number">18</span> Ripasso</h1>
+<h2 id="potenze"><span class="header-section-number">18.1</span> Potenze</h2>
+<h2 id="proprietà"><span class="header-section-number">18.2</span> Proprietà</h2>
+<ol type="1">
+<li><span class="math inline">\(a^m+a^n=a^{n+m}\)</span></li>
+<li><span class="math inline">\((a^n)^m=a^{n\times m}\)</span></li>
+<li><span class="math inline">\((a^n : a^m)=a^{n-m}\)</span></li>
+<li><span class="math inline">\(a^n\times b^n=(a\times b)^n\)</span></li>
+<li><span class="math inline">\(a^n: b^n=(a:b)^n\)</span></li>
+<li><span class="math inline">\(\frac{a}{b}^{-n}=\frac{b}{a}^n\)</span></li>
+</ol>
+<h2 id="valore-assoluto"><span class="header-section-number">18.3</span> Valore Assoluto</h2>
+<p><span class="math inline">\(|a| = \begin{cases} a &amp; \mbox{se} &amp; a\ge 0 \\ -a &amp; \mbox{se} &amp; a &lt;0\end{cases}\)</span></p>
+<h2 id="monomio"><span class="header-section-number">18.4</span> Monomio</h2>
+<blockquote>
+<p>Chiamiamo monomio un’espressione letterata in cui compaiono soltanto moltiplicazioni fra numeri e potenze di lettere con numeri naturali come esponenti</p>
+</blockquote>
+<h3 id="grado"><span class="header-section-number">18.4.1</span> Grado</h3>
+<blockquote>
+<p><strong>Grado di lettera del monomio</strong> è il suo esponente</p>
+</blockquote>
+<blockquote>
+<p>il <strong>Grado</strong> è la somma dei gradi delle lettere monomio che compare in esso</p>
+</blockquote>
+<h3 id="simili"><span class="header-section-number">18.4.2</span> Simili</h3>
+<blockquote>
+<p>Due monomi sono <strong>simili</strong> se hanno la stessa parte letterale</p>
+</blockquote>
+<p>TODO:da completare</p>
 </body>
 </html>

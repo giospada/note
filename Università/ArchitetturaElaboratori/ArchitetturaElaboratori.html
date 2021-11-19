@@ -82,6 +82,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    "HTML-CSS": {fonts: ['STIX-web']},
+    SVG: {font: 'STIX-Web'},
+    TeX: {Augment: {
+      Definitions: {
+        delimiter: {
+          '\\llbracket': '27E6',
+          '\\rrbracket': '27E7
+        }
+      }
+    }}
+  });
+  </script>
 </head>
 <body>
 <header id="title-block-header">
@@ -190,6 +204,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="#codifica-c-instruction"><span class="toc-section-number">9.2</span> Codifica C-Instruction</a></li>
 <li><a href="#livello-istruction-set-architeture"><span class="toc-section-number">9.3</span> Livello Istruction Set Architeture</a></li>
 <li><a href="#trap-e-interrupt"><span class="toc-section-number">9.4</span> Trap e Interrupt</a></li>
+</ul></li>
+<li><a href="#sistema-operativo"><span class="toc-section-number">10</span> Sistema Operativo</a><ul>
+<li><a href="#paginazione-1"><span class="toc-section-number">10.1</span> Paginazione</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -1388,5 +1405,17 @@ Questa è già un esempio di pipeline, ce ne sono di molto più complesse, anche
 <blockquote>
 <p>Interrupt interropono il programma e traseriscono il controllo ad un gestore deputato,sono “asincroni” cioè vengono scetenati da dispositivi indipendenti dal programma in esecutzione</p>
 </blockquote>
+<h1 id="sistema-operativo"><span class="header-section-number">10</span> Sistema Operativo</h1>
+<blockquote>
+<p>Possiamo vedere il <strong>sistema operativo</strong> come <strong>l’interfaccia fra il calcolatore ed i programmi applicativi</strong></p>
+</blockquote>
+<p>Ha diversi compiti come:</p>
+<ul>
+<li>Gestione della memoria</li>
+<li>Gestione dei processi</li>
+<li>Gestione delle periferiche I/O</li>
+</ul>
+<h2 id="paginazione-1"><span class="header-section-number">10.1</span> Paginazione</h2>
+<p>Il sistema opeartivo crea dei indirizzi virtuali per</p>
 </body>
 </html>
