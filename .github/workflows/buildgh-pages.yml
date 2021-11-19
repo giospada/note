@@ -34,9 +34,9 @@ jobs:
           git checkout $TARGET_BRANCH       # checkout to your branch
           rm -R *
           git checkout ${GITHUB_REF##*/} -- $SRC_FOLDER_PATH # copy files from the source branch
-          echo "#Index "> index.md
+          echo "# Index "> index.md
           cd Università
-          for i in $(find ./ -maxdepth 1 -type d  ! -name . ! -name img ); do cd $i;echo "try to build $i" ;pandoc --from markdown+markdown_in_html_blocks+lists_without_preceding_blankline --mathjax  --to html5 -s  *.md -o $i.html  --metadata pagetitle="$i"  --toc --top-level-division=chapter -N --css=../img/style.css --H ../img/head.html ;rm *.md; echo -e "\n[$i](Università/$i/$i.html)\n" >> ../../index.md;cd .. ;done #
+          for i in $(find ./ -maxdepth 1 -type d  ! -name . ! -name img ); do cd $i;echo "try to build $i" ;pandoc --from markdown+markdown_in_html_blocks+lists_without_preceding_blankline --mathjax  --to html5 -s  *.md -o $i.html  --metadata pagetitle="$i"  --toc --top-level-division=chapter -N --css=../img/style.css -H ../img/head.html ;rm *.md; echo -e "\n[$i](Università/$i/$i.html)\n" >> ../../index.md;cd .. ;done #
           cd ..
           pandoc --from markdown --to html5 -s  index.md -o index.html  --metadata pagetitle="Index"  --css=Università/img/style.css  --mathjax
           rm index.md
