@@ -230,6 +230,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="#regola-di-eliminazione-2"><span class="toc-section-number">13.7.2</span> Regola di eliminazione</a></li>
 </ul></li>
 </ul></li>
+<li><a href="#deduzione-semantica"><span class="toc-section-number">14</span> Deduzione Semantica</a><ul>
+<li><a href="#teoria-di-invarianza-per-sostituzione"><span class="toc-section-number">14.1</span> Teoria di invarianza per Sostituzione</a></li>
+<li><a href="#connettivi-logici"><span class="toc-section-number">14.2</span> Connettivi Logici</a></li>
+<li><a href="#operatori-0-ari"><span class="toc-section-number">14.3</span> Operatori 0-ari</a></li>
+<li><a href="#operatori-1-ari"><span class="toc-section-number">14.4</span> Operatori 1-ari</a></li>
+<li><a href="#operatore-2-ari"><span class="toc-section-number">14.5</span> Operatore 2-ari</a><ul>
+<li><a href="#connettivi-ridondanti"><span class="toc-section-number">14.5.1</span> Connettivi ridondanti</a></li>
+<li><a href="#funzionalmente-completo"><span class="toc-section-number">14.5.2</span> Funzionalmente Completo</a></li>
+</ul></li>
+<li><a href="#connettivi-2-ari-funzionalemente-completi"><span class="toc-section-number">14.6</span> Connettivi 2-ari Funzionalemente Completi</a></li>
+</ul></li>
 </ul>
 </nav>
 <h1 id="docente"><span class="header-section-number">1</span> Docente</h1>
@@ -1088,5 +1099,39 @@ trivialmente <span class="math inline">\(F_1\implies F_2\Vdash F_1\implies F_2\)
 <p><span class="math inline">\(\frac{F_1\implies F_2\space\space F_1}{F_2}\)</span></p>
 <p><strong>Lettura bottom-up</strong>: se <span class="math inline">\(F_1\)</span> e <span class="math inline">\(F_1\implies F_2\)</span>, allora necessariamente <span class="math inline">\(F_2\)</span>.</p>
 <p><strong>Lettura top-down</strong>: per dimostrare <span class="math inline">\(F_2\)</span> debbo trovare un <span class="math inline">\(F_1\)</span> che valga e tale per cui <span class="math inline">\(F_1\implies F_2\)</span></p>
+<h1 id="deduzione-semantica"><span class="header-section-number">14</span> Deduzione Semantica</h1>
+<h2 id="teoria-di-invarianza-per-sostituzione"><span class="header-section-number">14.1</span> Teoria di invarianza per Sostituzione</h2>
+<p>Una formaula può contenere più buchi, riempire un buco significa rimpiazzare la variabile con una formula.</p>
+<details>
+<p><summary> esempio </summary></p>
+<span class="math inline">\((A \vee A) [B \implies C/ A ]= (B \implies C) \wedge (B\implies C)\)</span>
+</details>
+<blockquote>
+<p>Teorema di invarianza per sostituzione, per tutte le formule F,<span class="math inline">\(G_1\)</span>,<span class="math inline">\(G_2\)</span> e per ogni A se <span class="math inline">\(G_1 \equiv G_2\)</span> allora <span class="math inline">\(F[G_1/A] \equiv F[G_2/A]\)</span></p>
+</blockquote>
+<p>Dimostrazione per induzione strutturale su F. TODO # Connettivi della logica proporzionale classica</p>
+<h2 id="connettivi-logici"><span class="header-section-number">14.2</span> Connettivi Logici</h2>
+<p>Un connettivo n-ario, viene definito da una tabella di verità con <span class="math inline">\(2^n\)</span> righe.</p>
+<p>Quindi possiamo dire che è una funzione <span class="math inline">\(f:\{0,1\}^n\to \{0,1\}\)</span></p>
+<details>
+<p><summary> Quanti connettivi n-ari distinti esistono? </summary></p>
+<p>Dimostarazione per induzione strutturale</p>
+<p>TODO:</p>
+</details>
+<h2 id="operatori-0-ari"><span class="header-section-number">14.3</span> Operatori 0-ari</h2>
+<p><img src="vx_images/586836149390.png" /></p>
+<h2 id="operatori-1-ari"><span class="header-section-number">14.4</span> Operatori 1-ari</h2>
+<p><img src="vx_images/1732319706913.png" /></p>
+<h2 id="operatore-2-ari"><span class="header-section-number">14.5</span> Operatore 2-ari</h2>
+<h3 id="connettivi-ridondanti"><span class="header-section-number">14.5.1</span> Connettivi ridondanti</h3>
+<blockquote>
+<p>Definizione: un insieme di connettivi è ridondante se contiene un connettivo riducibile ai restanti</p>
+</blockquote>
+<h3 id="funzionalmente-completo"><span class="header-section-number">14.5.2</span> Funzionalmente Completo</h3>
+<blockquote>
+<p>Definizione: un insieme di connettivi è funzionalmente completo se ogni altro connettivo e riducibile a questi</p>
+</blockquote>
+<h2 id="connettivi-2-ari-funzionalemente-completi"><span class="header-section-number">14.6</span> Connettivi 2-ari Funzionalemente Completi</h2>
+<p>I connettivi nand e nor, sono connettivi funzionalmente completi.</p>
 </body>
 </html>

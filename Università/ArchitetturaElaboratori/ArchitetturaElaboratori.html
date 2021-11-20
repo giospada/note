@@ -207,6 +207,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li><a href="#sistema-operativo"><span class="toc-section-number">10</span> Sistema Operativo</a><ul>
 <li><a href="#paginazione-1"><span class="toc-section-number">10.1</span> Paginazione</a></li>
+<li><a href="#algoritmi-di-paginazione"><span class="toc-section-number">10.2</span> Algoritmi di paginazione</a><ul>
+<li><a href="#lru"><span class="toc-section-number">10.2.1</span> LRU</a></li>
+<li><a href="#fifo"><span class="toc-section-number">10.2.2</span> FIFO</a></li>
+</ul></li>
+<li><a href="#dirty-bit"><span class="toc-section-number">10.3</span> Dirty bit</a></li>
+<li><a href="#frammentazione-interna"><span class="toc-section-number">10.4</span> Frammentazione interna</a></li>
+<li><a href="#segmentazione"><span class="toc-section-number">10.5</span> Segmentazione</a><ul>
+<li><a href="#segmentazione-e-paginazione"><span class="toc-section-number">10.5.1</span> Segmentazione e Paginazione</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -1416,6 +1425,39 @@ Questa è già un esempio di pipeline, ce ne sono di molto più complesse, anche
 <li>Gestione delle periferiche I/O</li>
 </ul>
 <h2 id="paginazione-1"><span class="header-section-number">10.1</span> Paginazione</h2>
-<p>Il sistema opeartivo crea dei indirizzi virtuali per</p>
+<p>Il sistema opeartivo crea una mappatura tra gli indirizzi virtuali che vedono i processi, e quelli fisici della ram, così facendo i processi hanno l’lillusione di usare un unico ampio spazio di indirizzamento che coicide con la memoria virtuale.</p>
+<p>Questa Memoria virtuale è divisa in Pagine di uguale dimensione che corrispodono ad una potenza di due, se la dimensione di pagina è <span class="math inline">\(2^k\)</span>, si usano esattamente k bit per indirizzare una locazione alll’interno di una pagina</p>
+<p>La memoria viene suddivisa in parti di medesima dimensione chiamate “blocchi di memoria”</p>
+<p>Il MMU (memory managment unit) si occupa di tradurre un indirizzo virtuale nel corrispondente indirizzo reale, utilizza una tabella delle che indica se la tabella è in memoria e se è si, indica l’indirizzo del blocco reale e l’indirizzo del blocco virtuale.</p>
+<p><img src="vx_images/3743539179390.png" /></p>
+<blockquote>
+<p>Working set: sono le pagine in memoria in un determiatao momento</p>
+</blockquote>
+<p>Quando si accede ad una pagina che non è nel working set avviene una, page fault il gestore di trap toglie una pagina per liberare il blocco e inserici la nuova pagina.</p>
+<h2 id="algoritmi-di-paginazione"><span class="header-section-number">10.2</span> Algoritmi di paginazione</h2>
+<h3 id="lru"><span class="header-section-number">10.2.1</span> LRU</h3>
+<p>Si rimove dall amemoria la pagina che da più tempo non viene utilizzata.</p>
+<p>(più performante)</p>
+<h3 id="fifo"><span class="header-section-number">10.2.2</span> FIFO</h3>
+<p>Si toglie la pagina che è stata inserita da più tempo</p>
+<p>(più facile da implementare e veloce nel processo)</p>
+<h2 id="dirty-bit"><span class="header-section-number">10.3</span> Dirty bit</h2>
+<p>Per evitare di riscrivere tutti i blocchi nella memoria secondaria, si utilizza la tecnica del dirty bit.</p>
+<p>Ogni blocco ha associato un bit che viene settato a zero quando entra in memoria primaria, e viene posto a uno se vi è un accesso in lettura nel blocco.<br />
+Quando blocco dovrà essere riscritto nella memoria secondaria se il dirty bit è a zero non viene ricopiato.</p>
+<h2 id="frammentazione-interna"><span class="header-section-number">10.4</span> Frammentazione interna</h2>
+<p>(questa tecnica è infefficente e non utilizzata)</p>
+<p><strong>Frammentazione Intertna</strong>(problema della paginazione): se un programma serve una quantità di memoria che non è un della pagina, l’ultima pagina non verrà utilizzata completamente</p>
+<h2 id="segmentazione"><span class="header-section-number">10.5</span> Segmentazione</h2>
+<p>È come se ci fossero contemporaneamente utilizzabili tante diverse memorie, ognuna chiamata segmento. Questi segmenti sono visibili dal programmatore e ognuno ha dimensione diversa.</p>
+<p><img src="vx_images/1112816199390.png" /></p>
+<p>Come nella paginazione tentiamo in memoria primaria solo i segmenti necessari (le operazioni di swapping però generano aree non utilizziate creando il fenomeno di “frammentazione esterna”). Questo però genera delle zone inutilizzata dette Lacune, che a volte rendono necessario compattare i sementi eliminando le lacune . Per fare lo swap dei segmenti sono state ideate diverse tecniche:</p>
+<ul>
+<li>Best Fit: si inserisce nella lacuna più piccola ma sufficente per il segmento</li>
+<li>First Fit: si inserisce nel primo segmento in cui ci sta (più veloce)</li>
+</ul>
+<p><img src="vx_images/3165305756913.png" /></p>
+<h3 id="segmentazione-e-paginazione"><span class="header-section-number">10.5.1</span> Segmentazione e Paginazione</h3>
+<p>I segmenti vengono suddivisi in pagine</p>
 </body>
 </html>
