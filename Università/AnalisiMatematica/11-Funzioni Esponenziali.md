@@ -163,8 +163,7 @@ $\cos (\frac{\pi}{2}-\alpha) =\sin \alpha$
 $\sin (\frac{\pi}{2}-\alpha) =\cos \alpha$
 
 **Dalle formule di addizione si ha**:
-$\cos 2\alpha=\cos^2 \alpha -\sin^2 \alpha$
-$\sin 2\alpha=2\sin \alpha \times \cos \alpha$
+$\cos 2\alpha=\cos^2 \alpha -\sin^2 \alpha$ ,$\sin 2\alpha=2\sin \alpha \times \cos \alpha$
 
 ## Funzioni Gognometriche Inverse
 

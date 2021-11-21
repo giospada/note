@@ -2,7 +2,7 @@
 # Limiti Funzioni
 
 
-## Intorno Serico e Punto di accomulazione
+## Intorno Sferico e Punto di accomulazione
 > Intorno sferico di un punto $x_0 \in \mathbb{R}$, e raggio $r \in \mathbb{R}: r>0$ 
 > $I_r(x_0) = \{x\in \mathbb{R} : |x-x_1|<r\}$
 > $I_r=]x_0-r,x_0+r[$
@@ -10,7 +10,7 @@
 
 > $\bar{x}$ è **Punto di accumulazione** di un insieme A, $A\subset \mathbb{R}$, $\bar{x}\in\mathbb{R}$ se:  
 > 
-> $\displaylines{\forall r > 0 : \\ a \cap (I_r(\bar{x})\backslash \{\bar{x}\})\neq \emptyset}$
+> $\displaylines{\forall r > 0 : \\ A \cap (I_r(\bar{x})\backslash \{\bar{x}\})\neq \emptyset}$
 
 ![](vx_images/1189241576710.png)
 
@@ -35,38 +35,30 @@ $A \subset \mathbb{R}$, $\bar{x} \in \mathbb{R}$, $\bar{x}$ è di accumulazione 
 1. $\forall n \mbox{ , } a_n \neq \bar{x}$
 1. $a_n \xrightarrow{n\to \infty} \bar{x}$
 
+## Limiti in generale
 
 
-## Definizione di limite finito
+**Limite verso (k):**
+
+**Limite tendente a(m):**
 
 
-$f: A \rightarrow \mathbb{R}, x_0 \in D(A)$
-si dice che $\displaystyle \lim_{x \to x_0}  f(x)=L$se:
-$\displaylines{\forall \varepsilon \in \mathbb{R}\mbox{ , }  \exists \delta = \delta(x_o,\varepsilon)>0: \forall x \in A  : \\ 0 < |x-x_0| < \delta  \implies |f(x)-L|> \varepsilon}$
+
+$\displaystyle \lim_{\begin{cases} \mbox{1. }x \to +\infty \\ \mbox{2. }x \to -\infty  \\ \mbox{3. }x \to x_0 \\ \mbox{4. }x \to x_0^+ \\ \mbox{5. }x \to x_0^- \end{cases}} f(x)= \begin{cases} \mbox{6. } L \\ \mbox{7. }+\infty \\ \mbox{8. }-\infty \\ \end{cases}$
+
+$\forall \varepsilon>0 \exists \delta (x_0,\varepsilon)>0:\forall x \in D(f(x))\begin{cases}\mbox{1. }x >\delta \\ \mbox{2. }x < -\delta  \\ \mbox{3. } 0<|x_0-x|<\delta \\ \mbox{4. } x_0<x<x_0+\delta  \\ \mbox{5. }x_0-\delta<x<x_0 \end{cases} \implies \begin{cases} |f(x)-L| < \varepsilon \\  f(x)>\varepsilon  \\ f(x)<-\varepsilon \end{cases}$
+
 
 
 <details>
 <summary>
-Visualizzazione del limite
+rappresentazione grafica
 </summary>
 
 ![](vx_images/5320002239302.png)
 </details>
 
-
-## Limite Finito da Destra e Sinistra
-
-$\displaystyle \lim_{x \rightarrow x_0^+}f(x)=l \iff \displaylines{\forall \varepsilon \in \mathbb{R} \exists \delta = \delta(x_o,\varepsilon)>0 \\ \forall x \in A : x_0  < x <x_0+ \delta \\ \implies |f(x) -l|< \varepsilon }$
-
-
-$\displaystyle \lim_{x \rightarrow x_0^-}f(x)=l \iff \displaylines{\forall \varepsilon \in \mathbb{R} \exists \delta = \delta(x_o,\varepsilon)<0 \\ \forall x \in A : x_0-\delta  < x <x_0 \\ \implies |f(x) -l|< \varepsilon }$
-
-## Limite Infinito  da Destra e Sinistra
-
-TODO: completare
-
-
-## Definizione Limite 
+### Definizione Limite al finito
 
 $$\displaystyle \lim_{x \rightarrow x_0} L=
 \begin{cases} 
@@ -75,31 +67,97 @@ $$\displaystyle \lim_{x \rightarrow x_0} L=
 \end{cases}$$
 
 
-## Limite Infinito
+### Tutti i limiti
+
+
+<details>
+<summary>
+all
+</summary>
+
+
+**Definizione di limite finito**
+
+
+$f: A \rightarrow \mathbb{R}, x_0 \in D(A)$
+si dice che $\displaystyle \lim_{x \to x_0}  f(x)=L$se:
+$\displaylines{\forall \varepsilon > 0\in \mathbb{R}\mbox{ , }  \exists \delta = \delta(x_o,\varepsilon)>0: \forall x \in A  : \\ 0 < |x-x_0| < \delta  \implies |f(x)-L|> \varepsilon}$
+
+
+
+
+**Limite Finito da Destra**
+
+$\displaystyle \lim_{x \rightarrow x_0^+}f(x)=l \iff \displaylines{\forall \varepsilon \in \mathbb{R} , \exists \delta = \delta(x_o,\varepsilon)>0 \\ \forall x \in A : x_0  < x <x_0+ \delta \\ \implies |f(x) -l|< \varepsilon }$
+
+**Limite Finito da sinistra**
+
+$\displaystyle \lim_{x \rightarrow x_0^-}f(x)=l \iff \displaylines{\forall \varepsilon \in \mathbb{R}, \exists \delta = \delta(x_o,\varepsilon)<0 \\ \forall x \in A : x_0-\delta  < x <x_0 \\ \implies |f(x) -l|< \varepsilon }$
+
+
+
+**limite infinito da destra**
+$\displaystyle \lim_{x \rightarrow x_0^+}f(x)=+\infty \iff \displaylines{\forall \varepsilon \in \mathbb{R} \exists \delta = \delta(x_o,\varepsilon)<0 \\ \forall x \in A : x_0  < x <x_0+\delta \\ \implies f(x)> \varepsilon }$
+
+**limite infinito da sinistra**
+$\displaystyle \lim_{x \rightarrow x_0^-}f(x)=+\infty \iff \displaylines{\forall \varepsilon \in \mathbb{R} \exists \delta = \delta(x_o,\varepsilon)<0 \\ \forall x \in A : x_0-\delta  < x <x_0 \\ \implies f(x)> \varepsilon }$
+
+
+
+**limite all'infinito**
 
 $$\lim_{x\to +\infty} f(x) = \begin{cases}
-l \iff |f(x) - l| < \epsilon \\
+l \\
 +\infty \\
 - \infty
 \end{cases}$$
 
 
-$\displaylines{\forall \varepsilon, \exists \delta) \delta(\varepsilon) > 0 : \forall x \in A : x < - \delta \\ \implies \begin{cases} |f(n)-l| < \varepsilon \\ f(n) > \varepsilon \\ f(n)< - \varepsilon  \end{cases}}$
+$\displaylines{\forall \varepsilon \in \mathbb{R} >0 , \exists  \delta(\varepsilon) > 0 : \forall x \in A : x >  \delta \\ \implies \begin{cases} |f(x)-l| < \varepsilon \\ f(x) > \varepsilon \\ f(x)< - \varepsilon  \end{cases}}$
+
+</details>
+
+
+## Teorema di permanenza del segno
+
+
+![](vx_images/5696221209392.png)
+
+
+## Teorema del confronto (o dei carabinieri)
+
+
+$f,g,h: A \to \mathbb{R}$
+
+$x_0 \in D(A)$ 
+
+se: $\displaystyle \lim_{x \to x_0} g(x) =\displaystyle \lim_{x \to x_0} h(x)= l \in \mathbb{R}$  
+
+$\exists \delta >0$:  
+ $\displaystyle \lim_{x \to x_0} g(x) <\displaystyle \lim_{x \to x_0} f(x)<\displaystyle \lim_{x \to x_0} h(x)$  
+ 
+allora: $\displaystyle \lim_{x \to x_0} f(x)=L$
+
+
+
+
 
 ## Limiti Notevoli
 
 
 ### Sin
 
+$\displaystyle \lim_{x \rightarrow 0} \sin x=1$
+
 $\displaystyle \lim_{x \rightarrow 0} \frac{\sin x}{x}=1$
 
-TODO:dimostrazione
+(pagina 54)[https://virtuale.unibo.it/pluginfile.php/1039220/mod_resource/content/2/21%20Ottobre%202021.pdf]
 
 ### Cos
 
 $\displaystyle \lim_{x \rightarrow 0} \frac{1-\cos^2 x}{x^2}=\frac{1}{2}$
 
-TODO:dimostrazione
+$\displaystyle \lim_{x \rightarrow 0} \cos x=1$
 
 
 ### Esponenziale
@@ -136,10 +194,9 @@ soluzione
 ### Area Del Cerchio
 
 
- Sia C un cerchio di raggio $r$, $S_n£ èpoligono regolare instritto di n lati instritto nel cerchio:
+ Sia C un cerchio di raggio $r$, $S_n$ èpoligono regolare instritto di n lati instritto nel cerchio:
  
- ![](vx_images/1575947139296.png)
- 
+![](vx_images/999333696819.png)
 si calcola l'area di questo poligono con il numero di lati che tende ad infinito.
 
 
@@ -147,7 +204,6 @@ $A(C)=\displaystyle \lim_{x \rightarrow \infty} A(S_n)$
 
 
 
-![](vx_images/999333696819.png)
 <details>
 <summary>
 dimostrazione
@@ -178,9 +234,7 @@ $$\displaylines{
  \displaystyle \lim \frac{f(x)}{g(x)}} = \begin{cases}
  0 & \mbox{se g(x) cresce più velocemente} \\
  +\infty & \mbox{se f(x) cresce più velocemente} \\
- \end{cases}
- 
-$$
+ \end{cases} $$
 
 
 
@@ -210,6 +264,8 @@ date f e g due cunzioni continue allora:
 4. $|f|$ è continua in $x_0$ 
 
 ### Esempio importante
+
+TODO riguardare la lezione del 28 ottobre
 
 per esempio
 
