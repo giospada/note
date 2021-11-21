@@ -229,6 +229,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="#regola-di-introduzione-1"><span class="toc-section-number">13.7.1</span> Regola di introduzione</a></li>
 <li><a href="#regola-di-eliminazione-2"><span class="toc-section-number">13.7.2</span> Regola di eliminazione</a></li>
 </ul></li>
+<li><a href="#negazione"><span class="toc-section-number">13.8</span> Negazione</a><ul>
+<li><a href="#regola-di-introduzione-2"><span class="toc-section-number">13.8.1</span> Regola di introduzione</a></li>
+</ul></li>
+<li><a href="#regole-di-eliminazione-1"><span class="toc-section-number">13.9</span> Regole di eliminazione</a></li>
 </ul></li>
 <li><a href="#deduzione-semantica"><span class="toc-section-number">14</span> Deduzione Semantica</a><ul>
 <li><a href="#teoria-di-invarianza-per-sostituzione"><span class="toc-section-number">14.1</span> Teoria di invarianza per Sostituzione</a></li>
@@ -837,20 +841,24 @@ interpreto gli oggetti come numeri naturali 0 come numero 1 ≤ come “divide�
 </details>
 <h2 id="conseguenza-logica"><span class="header-section-number">9.2</span> Conseguenza Logica</h2>
 <blockquote>
-<p><strong>Conseguenza Logica</strong>: se una preposizione assume lo stesso valore di verità in tutti i mondi modelli della teoria (<span class="math inline">\(\Vdash\)</span>)</p>
+<p><strong>Conseguenza Logica</strong>: se una preposizione assume lo stesso valore di <strong>verità in tutti i mondi</strong>/modelli della teoria (<span class="math inline">\(\Vdash\)</span>)</p>
 </blockquote>
-<p>Sia <span class="math inline">\(\Gamma\)</span> un <strong>insieme di sentenze</strong> (costituiscono dei vincoli che i mondi devono rispettare) e F una preposizione.<br />
+<p>Sia <span class="math inline">\(\Gamma\)</span> un <strong>insieme di sentenze</strong> (costituiscono dei vincoli che i mondi devono rispettare) e F <strong>una preposizione</strong>.<br />
 <strong>F è conseguenza logica di</strong> <span class="math inline">\(\Gamma (\Gamma \Vdash F)\)</span> quando <strong>F è vera in tutti i modelli di</strong> <span class="math inline">\(\Gamma\)</span> ( ovvero tutti i mondi in cui ognuna delle <span class="math inline">\(G \in \Gamma\)</span> è vera).</p>
 <h2 id="equivalenza-logica"><span class="header-section-number">9.3</span> Equivalenza Logica</h2>
 <blockquote>
-<p>Siano F e G due sentenze, F è logicamente equivalente a G (si scrive <span class="math inline">\(F \equiv G\)</span>) sse <span class="math inline">\(F \Vdash G \mbox{ e } G \Vdash F\)</span></p>
+<p>Siano F e G due sentenze, F è <strong>logicamente equivalente</strong> a G (si scrive <span class="math inline">\(F \equiv G\)</span>) sse <span class="math inline">\(F \Vdash G \mbox{ e } G \Vdash F\)</span></p>
 </blockquote>
 <h2 id="teoria-inconsistente"><span class="header-section-number">9.4</span> Teoria Inconsistente</h2>
 <blockquote>
 <p>Una teoria è <strong>inconsistenze</strong> quando non ammette modelli, ovvero <strong>nessun mondo tutti gli assiomi sono contemporaneamente veri.</strong></p>
 </blockquote>
 <p><strong>se <span class="math inline">\(\Gamma\)</span> è inconsistente allora <span class="math inline">\(\forall F\)</span> si ha <span class="math inline">\(\Gamma \Vdash F\)</span></strong>.</p>
-<p>Se <span class="math inline">\(\Gamma\)</span> è inconsistente vale anche l’assurdo.</p>
+<p>Se <span class="math inline">\(\Gamma\)</span> è inconsistente vale anche l’assurdo (se riesco a dimostrare l’assurdo <span class="math inline">\(\Gamma\)</span> è inconsistente).</p>
+<details>
+<p><summary> crollario </summary></p>
+Corollario: se <span class="math inline">\(\Gamma\)</span> è inconsistente allora <span class="math inline">\(\Gamma \Vdash \bot\)</span> dove <span class="math inline">\(\bot\)</span> è una proposizione falsa (anche chiamata assurdo)
+</details>
 <details>
 <p><summary> Esempio </summary></p>
 <p><span class="math inline">\(1=0,0\ne1,\forall x.x=x\)</span> è una teoria inconsistente.</p>
@@ -924,11 +932,11 @@ Tutte le teorie consistenti (= non consistenti, in cui l’assurdo non è conseg
 <li>B sta per “io sono una carriola”</li>
 </ul></li>
 </ol>
-<p>2.Non è vero che quando fa caldo bisogna accendere il condizionatore, Formalizzazione: <span class="math inline">\(\neg (A \implies B)\)</span></p>
+2.Non è vero che quando fa caldo bisogna accendere il condizionatore, Formalizzazione: <span class="math inline">\(\neg (A \implies B)\)</span>
 </details>
 <p>Bisogna stare attenti a :</p>
 <ol type="1">
-<li>Connotazioni diverse per gli stessi connettivi
+<li><strong>Connotazioni diverse per gli stessi connettivi</strong>
 <details>
 <summary> Esempo: </summary></li>
 </ol>
@@ -938,7 +946,7 @@ Tutte le teorie consistenti (= non consistenti, in cui l’assurdo non è conseg
 </details></li>
 </ul>
 <ol start="2" type="1">
-<li>Sinonimi e contrari.
+<li><strong>Sinonimi e contrari</strong>
 <details>
 <summary> Esempio </summary></li>
 </ol>
@@ -946,10 +954,10 @@ Tutte le teorie consistenti (= non consistenti, in cui l’assurdo non è conseg
 </details>
 <h2 id="semantica"><span class="header-section-number">11.3</span> Semantica</h2>
 <blockquote>
-<p><strong>Semantica</strong>: ciò che viene associato alle connotazioni in un particolare <strong>dominio di interpretazione</strong>; insieme delle denotazioni</p>
+<p><strong>Semantica</strong>: ciò che viene associato alle connotazioni in un particolare <strong>dominio di interpretazione</strong>; insieme delle denotazioni (la semantica determina il significato di un lingaggio)</p>
 </blockquote>
 <h3 id="semantica-classica"><span class="header-section-number">11.3.1</span> Semantica Classica</h3>
-<p>La semantica classica: associa a ogni connotazione il suo <strong>valore di verità</strong> in un qualche mondo, sarà il <strong>mondo a determinare</strong> il vaolre di verità delle <strong>variabili</strong>.</p>
+<p><strong>La semantica classica:</strong> associa a ogni connotazione il suo <strong>valore di verità</strong> in un qualche mondo, sarà il <strong>mondo a determinare</strong> il vaolre di verità delle <strong>variabili</strong>.</p>
 <ul>
 <li>Ogni enunciato è vero o falso</li>
 <li>Un enunciato non può essere vero e falso allo stesso tempo</li>
@@ -960,7 +968,7 @@ Tutte le teorie consistenti (= non consistenti, in cui l’assurdo non è conseg
 </ul>
 <p>Utilizziamo 0 e 1, per denotare la falsità e la verità</p>
 <blockquote>
-<p>Definizione: una (funzione di) interpretazione (classica) o mondo è una funzione dall’insieme delle variabili proposizionali {A,B,…}verso {0,1</p>
+<p><strong>Definizione</strong>: una (funzione di) interpretazione (classica) o mondo è una funzione dall’insieme delle variabili proposizionali {A,B,…}verso {0,1}</p>
 </blockquote>
 <ul>
 <li><span class="math inline">\(\llbracket \bot \rrbracket^v= 0\)</span></li>
@@ -1099,6 +1107,25 @@ trivialmente <span class="math inline">\(F_1\implies F_2\Vdash F_1\implies F_2\)
 <p><span class="math inline">\(\frac{F_1\implies F_2\space\space F_1}{F_2}\)</span></p>
 <p><strong>Lettura bottom-up</strong>: se <span class="math inline">\(F_1\)</span> e <span class="math inline">\(F_1\implies F_2\)</span>, allora necessariamente <span class="math inline">\(F_2\)</span>.</p>
 <p><strong>Lettura top-down</strong>: per dimostrare <span class="math inline">\(F_2\)</span> debbo trovare un <span class="math inline">\(F_1\)</span> che valga e tale per cui <span class="math inline">\(F_1\implies F_2\)</span></p>
+<h2 id="negazione"><span class="header-section-number">13.8</span> Negazione</h2>
+<p>Connetivo derivato <span class="math inline">\(\neg F\equiv(F\implies\bot)\)</span></p>
+<p>Infatti in logica classica l’implicazione è vera sse</p>
+<ol type="1">
+<li>la conclusione <span class="math inline">\(\bot\)</span> è vera in nessun mondo</li>
+<li>la premessa <span class="math inline">\(F\)</span> è falsa (<span class="math inline">\(\equiv F\)</span> è vera)</li>
+</ol>
+<p>Pertanto possiamo derivare le regole del <span class="math inline">\(\neg\)</span> come caso speciale di quelle dell’ <span class="math inline">\(\implies\)</span>.</p>
+<p>Definiamo <span class="math inline">\(\neg F_1\)</span> come <span class="math inline">\(F_1\implies\bot\)</span> per ottenere le regole per il <span class="math inline">\(\neg\)</span> come istanze delle regole per l’<span class="math inline">\(\implies\)</span>.</p>
+<h3 id="regola-di-introduzione-2"><span class="header-section-number">13.8.1</span> Regola di introduzione</h3>
+<p><span class="math inline">\(\frac{\begin{matrix} [F_1]\\ \vdots\\ \bot \end{matrix}}{\neg F_1}\space(\neg_i)\)</span></p>
+<p><strong>Lettura bottom-up</strong>: se ipotizzando <span class="math inline">\(F_1\)</span> dimostro l’assurdo allora <span class="math inline">\(\neg F_1\)</span>. <strong>Lettura top-down</strong>: per dimostrare <span class="math inline">\(\neg F_1\)</span> basta assumere <span class="math inline">\(F_1\)</span> e dimostrare l’assurdo.</p>
+<h2 id="regole-di-eliminazione-1"><span class="header-section-number">13.9</span> Regole di eliminazione</h2>
+<p><span class="math inline">\(\frac{\neg F_1\space\space F_1}{\bot}\space\space(\neg_e)\)</span></p>
+<p><strong>Lettura bottom-up</strong>: è assurdo avere sia <span class="math inline">\(\neg F_1\)</span> che <span class="math inline">\(F_1\)</span></p>
+<p><strong>Lettura top-down</strong>: per dimostrare l’assurdo basta dimostrare qualcosa e il suo contrario.</p>
+<p>L’invertibilità per il <span class="math inline">\(\neg\)</span> segue da quella della regola per il <span class="math inline">\(\implies_i\)</span>.</p>
+<p>Inoltre, quando ci is trova a dimostrare il <span class="math inline">\(\bot\)</span>, da quel momento in avanti tutte le regole applicabili sono invertibili in quanto la conclusione <span class="math inline">\(\bot\)</span> ha come conseguenza logica qualunque formula. In ogni momento, dopo aver accumulato nuove ipotesi e quando si è bloccati, è possibile tornare a dimostrare <span class="math inline">\(\bot\)</span> per mezzo della regola <span class="math inline">\(\bot_e\)</span>. Infine, l’intuizione diventa spesso inutile (le ipotesi sono inconsistenti).</p>
+<p>L’invertibilità per l’ <span class="math inline">\(\neg_e\)</span> è ovvia in quanto <span class="math inline">\(\bot\vdash F_1\)</span> e <span class="math inline">\(\bot\vdash\neg F_1\)</span>. La regola è comunque di difficile applicazione in quanto se non si sceglie l’<span class="math inline">\(F_1\)</span> giusto, si è solo duplicato il lavoro inutilmente.</p>
 <h1 id="deduzione-semantica"><span class="header-section-number">14</span> Deduzione Semantica</h1>
 <h2 id="teoria-di-invarianza-per-sostituzione"><span class="header-section-number">14.1</span> Teoria di invarianza per Sostituzione</h2>
 <p>Una formaula può contenere più buchi, riempire un buco significa rimpiazzare la variabile con una formula.</p>

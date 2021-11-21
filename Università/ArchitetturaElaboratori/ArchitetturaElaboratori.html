@@ -124,17 +124,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="#cpu"><span class="toc-section-number">3.1</span> 4.1. CPU</a><ul>
 <li><a href="#unita-di-controllo"><span class="toc-section-number">3.1.1</span> Unita di controllo</a></li>
 </ul></li>
-<li><a href="#alu-e-clock"><span class="toc-section-number">3.2</span> 4.2. ALU e clock</a></li>
-<li><a href="#ottimizzazioni"><span class="toc-section-number">3.3</span> 4.3. Ottimizzazioni</a><ul>
+<li><a href="#alu-e-clock"><span class="toc-section-number">3.2</span> ALU e clock</a></li>
+<li><a href="#ottimizzazioni"><span class="toc-section-number">3.3</span> Ottimizzazioni</a><ul>
 <li><a href="#approfondimento-pipelining"><span class="toc-section-number">3.3.1</span> approfondimento pipelining</a></li>
 </ul></li>
-<li><a href="#le-memorie"><span class="toc-section-number">3.4</span> 4.4. Le Memorie</a><ul>
-<li><a href="#memoria-cache"><span class="toc-section-number">3.4.1</span> 4.4.1. Memoria cache</a></li>
-<li><a href="#hard-disck"><span class="toc-section-number">3.4.2</span> 4.4.2. Hard Disck</a></li>
-<li><a href="#memorie-a-stato-solido"><span class="toc-section-number">3.4.3</span> 4.4.3. Memorie a Stato Solido</a></li>
-<li><a href="#velocizzare-le-memorie"><span class="toc-section-number">3.4.4</span> 4.4.4. Velocizzare le Memorie</a></li>
-<li><a href="#dischi-ottici"><span class="toc-section-number">3.4.5</span> 4.4.5. Dischi Ottici</a></li>
-<li><a href="#oltre-le-memorie"><span class="toc-section-number">3.4.6</span> 4.4.6. Oltre le memorie</a></li>
+<li><a href="#le-memorie"><span class="toc-section-number">3.4</span> Le Memorie</a><ul>
+<li><a href="#memoria-cache"><span class="toc-section-number">3.4.1</span> Memoria cache</a></li>
+<li><a href="#hard-disck"><span class="toc-section-number">3.4.2</span> Hard Disck</a></li>
+<li><a href="#memorie-a-stato-solido"><span class="toc-section-number">3.4.3</span> Memorie a Stato Solido</a></li>
+<li><a href="#velocizzare-le-memorie"><span class="toc-section-number">3.4.4</span> Velocizzare le Memorie</a></li>
+<li><a href="#dischi-ottici"><span class="toc-section-number">3.4.5</span> Dischi Ottici</a></li>
+<li><a href="#oltre-le-memorie"><span class="toc-section-number">3.4.6</span> Oltre le memorie</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#porte-logiche-e-circuiti-combinatori"><span class="toc-section-number">4</span> Porte Logiche e Circuiti Combinatori</a><ul>
@@ -216,6 +216,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="#segmentazione"><span class="toc-section-number">10.5</span> Segmentazione</a><ul>
 <li><a href="#segmentazione-e-paginazione"><span class="toc-section-number">10.5.1</span> Segmentazione e Paginazione</a></li>
 </ul></li>
+<li><a href="#linking"><span class="toc-section-number">10.6</span> Linking</a></li>
+<li><a href="#collegamento-dinamico"><span class="toc-section-number">10.7</span> Collegamento dinamico</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -372,7 +374,7 @@ linguaggi che vengono compilati o interpretati, in linguaggio assembly</p>
 <li><strong>RISC</strong>: Reduced Instruction Set Computer, istruzioni più semplici possono essere eseguite più velocemente e potendo evitare la microprogrammazione</li>
 </ul>
 <p>di solito in una cpu CISC c’è un collegamento diretto tra il MDR e l’alu senza passare dai registri, mentre nei RISC non c’è il collegamento diretto</p>
-<h2 id="alu-e-clock"><span class="header-section-number">3.2</span> 4.2. ALU e clock</h2>
+<h2 id="alu-e-clock"><span class="header-section-number">3.2</span> ALU e clock</h2>
 <blockquote>
 <p>alu esegue le operazioni</p>
 </blockquote>
@@ -385,7 +387,7 @@ linguaggi che vengono compilati o interpretati, in linguaggio assembly</p>
 <li>il ciclo del clock (stessa durata ciclo di data pah) può essere calcolato <span class="math inline">\(\frac{1}{F}\)</span> (dove F è la frequenza)</li>
 <li>durata di un istruzione può essere calcolata n*durata ciclo di path (n varia da istruzione a istruzione)</li>
 </ul>
-<h2 id="ottimizzazioni"><span class="header-section-number">3.3</span> 4.3. Ottimizzazioni</h2>
+<h2 id="ottimizzazioni"><span class="header-section-number">3.3</span> Ottimizzazioni</h2>
 <p>Metodi per velocizzare la cpu:</p>
 <ul>
 <li><strong>pipelining</strong>:Un modo per migliorare le prestazioni di un processore è eseguire contemporaneamente più cicli FDE, usando per ognuno di essi parti diversi della CPU</li>
@@ -402,7 +404,7 @@ linguaggi che vengono compilati o interpretati, in linguaggio assembly</p>
 <p>viene divisa l’esecuzione di un operazione in più step così mentre si sta eseguendo un operazione allo stato 2 nello stadio 1 si può incominciare un altra operazione</p>
 <p>essendo che suddividiamo l’operazioni in vari passi, possiamo diminuire il ciclo di clock per ogni di questi stage</p>
 <p><img src="../img/pipelining.png" /></p>
-<h2 id="le-memorie"><span class="header-section-number">3.4</span> 4.4. Le Memorie</h2>
+<h2 id="le-memorie"><span class="header-section-number">3.4</span> Le Memorie</h2>
 <p>in ordine di velocità:<br />
 <img src="../img/velocitamemorie.png" /></p>
 <ul>
@@ -417,7 +419,7 @@ linguaggi che vengono compilati o interpretati, in linguaggio assembly</p>
 <p><img src="../img/bytes.png" /></p>
 <p><strong>word</strong> è uguale al blocco con il quale il calcolatore lavora (quanti bit ha la cpu), per memorizzare le word in un byte si può memorizzare in big endian o end endian</p>
 <p><img src="../img/littlebigendian.png" /></p>
-<h3 id="memoria-cache"><span class="header-section-number">3.4.1</span> 4.4.1. Memoria cache</h3>
+<h3 id="memoria-cache"><span class="header-section-number">3.4.1</span> Memoria cache</h3>
 <blockquote>
 <p>la cache è una memoria volatile poco capiente ma molto veloce</p>
 </blockquote>
@@ -430,7 +432,7 @@ quantificare l’impatto della cache:</p>
 <li>m sia il tempo di accesso alla memoria centrale</li>
 <li>h sia l’hit-radio, la frazione di riferimenti che può essere soddisfatta dalla cache (una frazione che ci indica quante volte la cache riesce a non far accedere alla memoria)</li>
 </ul>
-<h3 id="hard-disck"><span class="header-section-number">3.4.2</span> 4.4.2. Hard Disck</h3>
+<h3 id="hard-disck"><span class="header-section-number">3.4.2</span> Hard Disck</h3>
 <blockquote>
 <p>hard disk (HD): è un dispositivo elettro-meccanico per la conservazione di informazioni sotto forma magnetica</p>
 </blockquote>
@@ -440,21 +442,21 @@ quantificare l’impatto della cache:</p>
 <li><strong>Traccia</strong>: sequenza circolare di bit</li>
 <li><strong>Settore</strong>: porzione di traccia che contiene una quantità prefissata di bit (uguale per tutti i settori)</li>
 </ul>
-<h3 id="memorie-a-stato-solido"><span class="header-section-number">3.4.3</span> 4.4.3. Memorie a Stato Solido</h3>
+<h3 id="memorie-a-stato-solido"><span class="header-section-number">3.4.3</span> Memorie a Stato Solido</h3>
 <blockquote>
 <p>si tratta di dispositivi completamente elettronici senza parte in movimento (consumano meno energia e maggiore resistenza agli urti rispetto agli hard disck )</p>
 </blockquote>
-<h3 id="velocizzare-le-memorie"><span class="header-section-number">3.4.4</span> 4.4.4. Velocizzare le Memorie</h3>
+<h3 id="velocizzare-le-memorie"><span class="header-section-number">3.4.4</span> Velocizzare le Memorie</h3>
 <blockquote>
 <p>RAID: tecnica che utilizza più dischi in parallelo per aumentare le prestazioni e diminuire il data lost</p>
 </blockquote>
 <p>Più veloce perché si leggono più dati contemporaneamente, più affidabile se si replicano i dati e si aggiungono bit di controllo per verificare/correggere errori</p>
-<h3 id="dischi-ottici"><span class="header-section-number">3.4.5</span> 4.4.5. Dischi Ottici</h3>
+<h3 id="dischi-ottici"><span class="header-section-number">3.4.5</span> Dischi Ottici</h3>
 <blockquote>
 <p>Dischi Ottici: dischi in cui un laser legge e scrive le informazioni</p>
 </blockquote>
 <p>vengono scritti e letti tramite fori (pit) e con delle zone piane (lend)</p>
-<h3 id="oltre-le-memorie"><span class="header-section-number">3.4.6</span> 4.4.6. Oltre le memorie</h3>
+<h3 id="oltre-le-memorie"><span class="header-section-number">3.4.6</span> Oltre le memorie</h3>
 <p>ci sono i dispositivi di input e output (stampanti, tastiera, schermo,mouse, schede di rete, etc..)</p>
 <p><strong>monitor</strong>: deve essere molto veloce e ha una gran quantità di dati, ogni pixel richiede 32bit (in uno schermo normale 1920x1080 66 milioni di bit)</p>
 <p>Negli anni si sono sviluppati processori solo per la gestione dello schermo (GPU)</p>
@@ -1458,6 +1460,28 @@ Quando blocco dovrà essere riscritto nella memoria secondaria se il dirty bit �
 </ul>
 <p><img src="vx_images/3165305756913.png" /></p>
 <h3 id="segmentazione-e-paginazione"><span class="header-section-number">10.5.1</span> Segmentazione e Paginazione</h3>
-<p>I segmenti vengono suddivisi in pagine</p>
+<p>I segmenti vengono suddivisi in pagine; Si complica il MMU che deve tenere</p>
+<ul>
+<li>indicazione del segmento</li>
+<li>Indicazione della pagina</li>
+<li>Offset all’interno della pagina</li>
+</ul>
+<p><img src="vx_images/5271329159391.png" /></p>
+<h2 id="linking"><span class="header-section-number">10.6</span> Linking</h2>
+<blockquote>
+<p>Il linker “collega” più moduli oggetto in un eseguibile</p>
+</blockquote>
+<p><img src="vx_images/2407717716914.png" /></p>
+<p>Ogni modulo oggetto viene realizzato assumendo che il proprio spazio inizi da zero, quando vengono collegati si uniscono in un unico file, aggiornando tutti gli indirizzi interni (al file oggetti)(utilizzando il <strong>dizionario di ricollocazione</strong>) per gli indirizzi esterni il linker li collega. <img src="vx_images/2466712576006.png" /></p>
+<h2 id="collegamento-dinamico"><span class="header-section-number">10.7</span> Collegamento dinamico</h2>
+<p>Alcune procedure, non vengono inserite nell’eseguibile, ma vengono collegate durante l’esecuzione</p>
+<p><strong>Passi per il collegamento dinamico</strong>:</p>
+<ul>
+<li>si compia con un indirizzo sbagliato (che quando è chiamato genera un trap)</li>
+<li>nel programma compilato si inserisce il nome della procedura che si desiderava invocare tramite link dinamico</li>
+<li>Per implementare il collegamento dinamico, si compila la chiamata con un indirizzo sbagliato che genera un treap,</li>
+</ul>
+<p>Il collegamento dinamico viene utilizzato per una serie di procedure che vengono usate da tanti programmi diversi (dentro delle share library es. DLL),infatti occupano meno spazio nell’eseguibile ed è più facile aggiornarle e modifiarle</p>
+<p><img src="vx_images/5554490776915.png" /></p>
 </body>
 </html>
