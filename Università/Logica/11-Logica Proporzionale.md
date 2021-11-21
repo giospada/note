@@ -36,13 +36,11 @@ Esempi
     - A sta per "2+2 fa 5"
     - B sta per "io sono una carriola"
 
-
 2.Non è vero che quando fa caldo bisogna accendere il condizionatore, Formalizzazione: $\neg (A \implies B)$
-
 </details>
 
 Bisogna stare attenti a :
-1. Connotazioni diverse per gli stessi connettivi 
+1. **Connotazioni diverse per gli stessi connettivi** 
 <details>
 <summary>
 Esempo:
@@ -54,7 +52,7 @@ condizione necessaria per A”, . . .
 - “A e B”, “A ma B”, “A nonostante B”, . . .
 </details>
 
-2. Sinonimi e contrari. 
+2. **Sinonimi e contrari** 
 <details>
 <summary>
 Esempio
@@ -67,12 +65,11 @@ $M ⇒ B, B ∧ ¬M$
 
 ## Semantica
 
-> **Semantica**: ciò che viene associato alle connotazioni in un particolare 
-> **dominio di interpretazione**; insieme delle denotazioni
+> **Semantica**: ciò che viene associato alle connotazioni in un particolare **dominio di interpretazione**; insieme delle denotazioni (la semantica determina il significato di un lingaggio)
 
 ### Semantica Classica
 
-La semantica classica: associa a ogni connotazione il suo **valore di verità** in un qualche mondo, sarà il **mondo a determinare** il vaolre di verità delle **variabili**.
+**La semantica classica:** associa a ogni connotazione il suo **valore di verità** in un qualche mondo, sarà il **mondo a determinare** il vaolre di verità delle **variabili**.
 
 - Ogni enunciato è vero o falso
 - Un enunciato non può essere vero e falso allo stesso tempo
@@ -84,7 +81,8 @@ La semantica classica: associa a ogni connotazione il suo **valore di verità** 
 
 Utilizziamo 0 e 1, per denotare la falsità e la verità
 
->Definizione: una (funzione di) interpretazione (classica) o mondo è una funzione dall'insieme delle variabili proposizionali {A,B,...}verso {0,1
+> **Definizione**: una (funzione di) interpretazione (classica) o mondo è una funzione dall'insieme delle variabili proposizionali {A,B,...}verso {0,1}
+
 
 - $\llbracket  \bot \rrbracket^v= 0$
 - $\llbracket  \top \rrbracket^v = 1$

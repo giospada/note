@@ -49,15 +49,16 @@ solo la prima proposizione e vera
 
 ## Conseguenza Logica
 
-> **Conseguenza Logica**: se una preposizione assume lo stesso valore di verità in tutti i mondi modelli della teoria ($\Vdash$)
+> **Conseguenza Logica**: se una preposizione assume lo stesso valore di **verità in tutti i mondi**/modelli della teoria ($\Vdash$)
 
-Sia $\Gamma$ un **insieme di sentenze** (costituiscono dei vincoli che i mondi devono rispettare) e F una preposizione.  
+Sia $\Gamma$ un **insieme di sentenze** (costituiscono dei vincoli che i mondi devono rispettare) e F **una preposizione**.  
 **F è conseguenza logica  di** $\Gamma (\Gamma \Vdash F)$ quando **F è vera in tutti i modelli di** $\Gamma$ ( ovvero tutti i mondi in cui ognuna delle $G \in \Gamma$ è vera).
 
 
 ## Equivalenza Logica
 
-> Siano F e G due sentenze, F è logicamente equivalente a G (si scrive $F \equiv G$) sse $F \Vdash G \mbox{ e } G \Vdash F$
+> Siano F e G due sentenze, F è **logicamente equivalente** a G (si scrive $F \equiv G$) sse $F \Vdash G \mbox{ e } G \Vdash F$
+
 
 
 ## Teoria Inconsistente
@@ -67,9 +68,19 @@ Sia $\Gamma$ un **insieme di sentenze** (costituiscono dei vincoli che i mondi d
 
 **se $\Gamma$ è inconsistente allora $\forall F$ si ha $\Gamma \Vdash F$**.
 
-Se $\Gamma$ è inconsistente vale anche l'assurdo.
+Se $\Gamma$ è inconsistente vale anche l'assurdo (se riesco a dimostrare l'assurdo $\Gamma$ è inconsistente).
+
 
 <details>
+<summary>
+crollario
+</summary>
+
+Corollario: se $\Gamma$ è   inconsistente allora $\Gamma \Vdash \bot$ dove $\bot$ è una proposizione falsa (anche chiamata assurdo)
+</details>
+<details>
+
+
 <summary>
 Esempio
 </summary>

@@ -229,3 +229,36 @@ $\frac{F_1\implies F_2\space\space F_1}{F_2}$
 
 **Lettura top-down**: per dimostrare $F_2$ debbo trovare un $F_1$ che valga e tale per cui $F_1\implies F_2$
 
+
+## Negazione
+
+Connetivo derivato $\neg F\equiv(F\implies\bot)$
+
+Infatti in logica classica l'implicazione è vera sse 
+
+1. la conclusione $\bot$ è vera in nessun mondo
+2. la premessa $F$ è falsa ($\equiv F$ è vera)
+
+Pertanto possiamo derivare le regole del $\neg$ come caso speciale di quelle dell' $\implies$.
+
+Definiamo $\neg F_1$ come $F_1\implies\bot$ per ottenere le regole per il $\neg$ come istanze delle regole per l'$\implies$.
+
+### Regola di introduzione
+$\frac{\begin{matrix} [F_1]\\ \vdots\\ \bot \end{matrix}}{\neg F_1}\space(\neg_i)$
+
+**Lettura bottom-up**: se ipotizzando $F_1$ dimostro l'assurdo allora  $\neg F_1$.
+**Lettura top-down**: per dimostrare $\neg F_1$ basta assumere $F_1$ e dimostrare l'assurdo.
+
+## Regole di eliminazione
+
+$\frac{\neg F_1\space\space F_1}{\bot}\space\space(\neg_e)$
+
+**Lettura bottom-up**: è assurdo avere sia $\neg F_1$ che $F_1$
+
+**Lettura top-down**: per dimostrare l'assurdo basta dimostrare qualcosa e il suo contrario.
+
+L'invertibilità per il $\neg$ segue da quella della regola per il $\implies_i$.
+
+Inoltre, quando ci is trova a dimostrare il $\bot$, da quel momento in avanti tutte le regole applicabili sono invertibili in quanto la conclusione  $\bot$ ha come conseguenza logica qualunque formula. In ogni momento, dopo aver accumulato nuove ipotesi  e quando si è bloccati, è possibile tornare a dimostrare $\bot$ per mezzo della regola $\bot_e$. Infine, l'intuizione diventa spesso inutile (le ipotesi sono inconsistenti).
+
+L'invertibilità per l' $\neg_e$ è ovvia in quanto $\bot\vdash F_1$ e $\bot\vdash\neg F_1$. La regola è comunque di difficile applicazione in quanto se non si sceglie l'$F_1$ giusto, si è solo duplicato il lavoro inutilmente. 
