@@ -68,7 +68,7 @@ i tipi di set di istruzioni possono essere:
 di solito in una cpu CISC c'è un collegamento diretto tra il MDR e l'alu senza passare dai registri, mentre nei RISC non c'è il collegamento diretto
 
 
-## 4.2. ALU e clock
+##  ALU e clock
 
 > alu esegue le operazioni
 
@@ -80,7 +80,7 @@ nel calcolatore c'è un segnale che si chiama **clock**; è un segnale regolare 
 - il ciclo del clock (stessa durata ciclo di data pah) può essere calcolato $\frac{1}{F}$ (dove F è la frequenza)
 - durata di un istruzione può essere calcolata n*durata ciclo di path (n varia da istruzione a istruzione)
 
-## 4.3. Ottimizzazioni
+##  Ottimizzazioni
 
 Metodi per velocizzare la cpu:
 - **pipelining**:Un modo per migliorare le prestazioni di un processore è eseguire contemporaneamente più cicli FDE, usando per ognuno di essi parti diversi della CPU
@@ -101,7 +101,7 @@ essendo che suddividiamo l'operazioni in vari passi, possiamo diminuire il ciclo
 ![](../img/pipelining.png)
 
 
-## 4.4. Le Memorie
+## Le Memorie
 
 in ordine di velocità:  
 ![](../img/velocitamemorie.png)
@@ -122,7 +122,7 @@ in ordine di velocità:
 ![](../img/littlebigendian.png)
 
 
-### 4.4.1. Memoria cache
+###  Memoria cache
 
 > la cache è una memoria volatile poco capiente ma molto veloce
 
@@ -136,7 +136,7 @@ quantificare l'impatto della cache:
 - m sia il tempo di accesso alla memoria centrale
 - h sia l'hit-radio, la frazione di riferimenti che può essere soddisfatta dalla cache (una frazione che ci indica quante volte la cache riesce a non far accedere alla memoria)
 
-### 4.4.2. Hard Disck
+###  Hard Disck
 
 > hard disk (HD): è un dispositivo elettro-meccanico per la conservazione di informazioni sotto forma magnetica
 
@@ -146,24 +146,24 @@ quantificare l'impatto della cache:
 - **Traccia**: sequenza circolare di bit
 - **Settore**: porzione di traccia che contiene una quantità prefissata di bit (uguale per tutti i settori)
 
-### 4.4.3. Memorie a Stato Solido
+### Memorie a Stato Solido
 
 > si tratta di dispositivi completamente elettronici senza parte in movimento (consumano meno energia e maggiore resistenza agli urti rispetto agli hard disck )
 
-### 4.4.4. Velocizzare le Memorie
+### Velocizzare le Memorie
 
 > RAID: tecnica che utilizza più dischi in parallelo per aumentare le prestazioni e diminuire il data lost
 
 Più veloce perché si leggono più dati contemporaneamente, più affidabile se si replicano i dati e si aggiungono bit di controllo per verificare/correggere errori
 
-###  4.4.5. Dischi Ottici
+### Dischi Ottici
 
 > Dischi Ottici: dischi in cui un laser legge e scrive le informazioni
 
 vengono scritti e letti tramite fori (pit) e con delle zone piane (lend)
 
 
-### 4.4.6. Oltre le memorie
+### Oltre le memorie
 
 ci sono i dispositivi di input e output (stampanti, tastiera, schermo,mouse, schede di rete, etc..)
 

@@ -70,5 +70,36 @@ Per fare lo swap dei segmenti sono state ideate diverse tecniche:
 
 ### Segmentazione e Paginazione
 
-I segmenti vengono suddivisi in pagine
+I segmenti vengono suddivisi in pagine; Si complica il MMU che deve tenere
+- indicazione del segmento
+- Indicazione della pagina
+- Offset all’interno della pagina
+
+![](vx_images/5271329159391.png)
+
+
+
+## Linking
+
+> Il linker "collega" più moduli oggetto in un eseguibile
+
+![](vx_images/2407717716914.png)
+
+
+Ogni modulo oggetto viene realizzato assumendo che il proprio spazio inizi da zero, quando vengono collegati si uniscono in un unico file, aggiornando tutti gli indirizzi interni (al file oggetti)(utilizzando il **dizionario di ricollocazione**) per gli indirizzi esterni il linker li collega.
+![](vx_images/2466712576006.png)
+
+
+## Collegamento dinamico
+
+Alcune procedure, non vengono inserite nell'eseguibile, ma vengono collegate durante l'esecuzione
+
+**Passi per il collegamento dinamico**:
+- si compia con un indirizzo sbagliato (che quando è chiamato genera un trap)
+- nel programma compilato si inserisce il nome della procedura che si desiderava invocare tramite link dinamico
+- Per implementare il collegamento dinamico, si compila la chiamata con un indirizzo sbagliato che genera un treap,
+
+Il collegamento dinamico viene utilizzato per una serie di procedure che vengono usate da tanti programmi diversi (dentro delle share library es. DLL),infatti occupano meno spazio nell'eseguibile ed è più facile aggiornarle e modifiarle
+
+![](vx_images/5554490776915.png)
 
