@@ -236,6 +236,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="#regola-di-introduzione-2"><span class="toc-section-number">12.13.1</span> Regola di introduzione</a></li>
 </ul></li>
 <li><a href="#regole-di-eliminazione-1"><span class="toc-section-number">12.14</span> Regole di eliminazione</a></li>
+<li><a href="#teorema-di-completezza"><span class="toc-section-number">12.15</span> Teorema di Completezza</a></li>
+<li><a href="#raa"><span class="toc-section-number">12.16</span> RAA</a></li>
 </ul></li>
 <li><a href="#connettivi-logici"><span class="toc-section-number">13</span> Connettivi Logici</a></li>
 <li><a href="#deduzione-semantica"><span class="toc-section-number">14</span> Deduzione Semantica</a><ul>
@@ -1177,6 +1179,21 @@ trivialmente <span class="math inline">\(F_1\implies F_2\Vdash F_1\implies F_2\)
 <p>L’invertibilità per il <span class="math inline">\(\neg\)</span> segue da quella della regola per il <span class="math inline">\(\implies_i\)</span>.</p>
 <p>Inoltre, quando ci is trova a dimostrare il <span class="math inline">\(\bot\)</span>, da quel momento in avanti tutte le regole applicabili sono invertibili in quanto la conclusione <span class="math inline">\(\bot\)</span> ha come conseguenza logica qualunque formula. In ogni momento, dopo aver accumulato nuove ipotesi e quando si è bloccati, è possibile tornare a dimostrare <span class="math inline">\(\bot\)</span> per mezzo della regola <span class="math inline">\(\bot_e\)</span>. Infine, l’intuizione diventa spesso inutile (le ipotesi sono inconsistenti).</p>
 <p>L’invertibilità per l’ <span class="math inline">\(\neg_e\)</span> è ovvia in quanto <span class="math inline">\(\bot\vdash F_1\)</span> e <span class="math inline">\(\bot\vdash\neg F_1\)</span>. La regola è comunque di difficile applicazione in quanto se non si sceglie l’<span class="math inline">\(F_1\)</span> giusto, si è solo duplicato il lavoro inutilmente.</p>
+<p>todo:da 45</p>
+<h2 id="teorema-di-completezza"><span class="header-section-number">12.15</span> Teorema di Completezza</h2>
+<p>ho aggiunto tute le regole che mi servono per catturare sintatticamente un concetto semantico</p>
+<p>la deduzione naturale non è completa perchè non possiamo verificare le seguenti tautologie:</p>
+<ul>
+<li><span class="math inline">\(\Vdash \neg \neg A \implies A\)</span></li>
+<li><span class="math inline">\(\Vdash \neg A \vee A\)</span></li>
+</ul>
+<p>le regole date finora non rendono il sistema completo per la logica proposizionale classica</p>
+<h2 id="raa"><span class="header-section-number">12.16</span> RAA</h2>
+<p><img src="vx_images/4374204149395.png" /></p>
+<p><strong>Lettura bottom-up</strong>: Assumiamo per assurdo <span class="math inline">\(\neg F\)</span>. . . . Assurdo! Quindi F. <strong>Lettura top-down</strong>: Per dimostrare F procediamo per assurdo assumendo <span class="math inline">\(\neg F\)</span> e dimostrando <span class="math inline">\(\bot\)</span>.</p>
+<blockquote>
+<p>ATTENZIONE: Funziona solamente per la logica classica</p>
+</blockquote>
 <h1 id="connettivi-logici"><span class="header-section-number">13</span> Connettivi Logici</h1>
 <h1 id="deduzione-semantica"><span class="header-section-number">14</span> Deduzione Semantica</h1>
 <h2 id="teoria-di-invarianza-per-sostituzione"><span class="header-section-number">14.1</span> Teoria di invarianza per Sostituzione</h2>
