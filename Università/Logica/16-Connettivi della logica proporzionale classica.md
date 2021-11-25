@@ -13,10 +13,8 @@ Quindi possiamo dire che è una funzione $f:\{0,1\}^n\to \{0,1\}$
 Quanti connettivi n-ari distinti esistono? 
 </summary>
 
-Dimostarazione per induzione strutturale
 
-TODO:
-
+$2^{2^n}$
 </details>
 
 ## Operatori 0-ari 
@@ -31,6 +29,19 @@ TODO:
 
 ## Operatore 2-ari
 
+![](vx_images/743627776917.png)
+
+## Riduzione tra Connettivi
+
+è possibile esprimere un connettivo logico usandone altri e l'equivalenza logica
+
+<details>
+<summary>
+es
+</summary>
+
+![](vx_images/3514138566009.png)
+</details>
 
 ### Connettivi ridondanti
 
@@ -44,9 +55,26 @@ TODO:
 > completo se ogni altro connettivo e riducibile a questi 
 
 
+## Insiemi funzionalmente completi
 
-## Connettivi 2-ari Funzionalemente Completi
+Esistono insiemi funzionalmente completi come ${\vee,\wedge,\bot,\top,\neg}$ (è ridondante per $\bot\equiv A \wedge \neg A$)
 
-I connettivi nand e nor, sono connettivi funzionalmente completi.
+Qual'è l'insieme funzionalmente completo con cardinalità minima (l'esempio prima è ridondante), l'insieme ${\vee,\neg}$ è funzionalmente completo e non ridondante
 
+
+## Scelta dei connettivi
+
+La scelta è un compromesso fra l’esigenza di considerare
+un insieme piccolo (ma funzionalmente completo) e un
+insieme che permetta di catturare naturalmente,
+direttamente espressioni del linguaggio naturale
+
+## Equivalenze logiche notevoli
+
+
+![](vx_images/181067891760.png)
+
+
+
+![](vx_images/1909031840164.png)
 
