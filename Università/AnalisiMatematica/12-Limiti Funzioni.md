@@ -38,9 +38,6 @@ $A \subset \mathbb{R}$, $\bar{x} \in \mathbb{R}$, $\bar{x}$ è di accumulazione 
 ## Limiti in generale
 
 
-**Limite verso (k):**
-
-**Limite tendente a(m):**
 
 
 
@@ -147,8 +144,6 @@ allora: $\displaystyle \lim_{x \to x_0} f(x)=L$
 
 ### Sin
 
-$\displaystyle \lim_{x \rightarrow 0} \sin x=1$
-
 $\displaystyle \lim_{x \rightarrow 0} \frac{\sin x}{x}=1$
 
 (pagina 54)[https://virtuale.unibo.it/pluginfile.php/1039220/mod_resource/content/2/21%20Ottobre%202021.pdf]
@@ -157,7 +152,7 @@ $\displaystyle \lim_{x \rightarrow 0} \frac{\sin x}{x}=1$
 
 $\displaystyle \lim_{x \rightarrow 0} \frac{1-\cos^2 x}{x^2}=\frac{1}{2}$
 
-$\displaystyle \lim_{x \rightarrow 0} \cos x=1$
+$\displaystyle \lim_{x \rightarrow 0} \frac{1-\cos x}{x}=1$
 
 
 ### Esponenziale

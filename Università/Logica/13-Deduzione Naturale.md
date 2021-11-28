@@ -1,6 +1,8 @@
 # Deduzione Naturale
 
 
+## Introduzione
+
 ![](vx_images/165632139381.png)
 
 Per dimostrare si utilizza un **albero di deduzione naturale** per $\Gamma \vdash F$ è una struttura dati arorescente tale che :  
@@ -9,6 +11,22 @@ Per dimostrare si utilizza un **albero di deduzione naturale** per $\Gamma \vdas
 - la radice è etichettata con F
 - le foglie non scaricate sono etichette con formule appartenenti a $\Gamma$
 - i nodi interni, oltre alla formula sono etichettati con delle regole di inferenza
+
+### Correttezza
+
+Una regola $\frac{F_1... F_n}{H}$ è corretta quando  $F_1,...,F_n \Vdash H$
+
+$$\frac{ E \space\space\space\space \begin{matrix}
+[F]\\
+\vdots\\
+G
+\end{matrix}}{H}$$
+
+Se contempla ipotesi allora si ha $E,F \implies G \Vdash H$
+
+## Invertibilità
+
+Una regola $\frac{F_1... F_n}{H}$ è **invertibile** quando per ogni i si ha  $H \Vdash F_i$, se scaricano delle ipotesi $H \Vdash G \implies F_i$ (queste regole sono importanti perchè può è essere applicata **senza portare a vicoli cechi**)
 
 ## Regola Di Inferenza
 
@@ -30,11 +48,6 @@ Regole di elminazione: rispnde alla domanda **cosa ricavao da ?**
 1. Bottom-up (dalle premesse alla conclusione) date le premesse $F_1\dots F_n$ posso concludere F
 2. Top-down (dalle premesse alla conclusione) per concludere F posso ridurmi a dimostrare $F_1\dots F_n$
 
-## Regole Invertibili
-
-> Una regola $\frac{F_1...F_n}{F}$ è invertibile quando per ogni $i$ si ha $F\Vdash F_i$. Come per la correttezza, eventuali ipotesi scaricate di $F_i$ vanno integrate con una implicazione (es. $F\Vdash H\implies F_i$).
-
-Le regole invertibili portano sempre a conseguenze logiche, applicandole non si arriverà mai ad un "vicolo ceco"..
 
 ## And ($\wedge$)
 
@@ -76,7 +89,7 @@ $F_1\wedge F_2\Vdash F_i$ per $I\in\{1,2\}$ in quanto, $\forall v,\llbracket F_1
 
 ### Regola di eliminazione
 
-$$\frac{F_1\wedge F_2\space\space\space \begin{matrix}
+$$\frac{ F_1\wedge F_2 \space\space\space \begin{matrix}
 [F_1][F_2]\\
 \vdots\\
 F_3

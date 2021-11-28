@@ -39,11 +39,13 @@ Esempi
 2.Non è vero che quando fa caldo bisogna accendere il condizionatore, Formalizzazione: $\neg (A \implies B)$
 </details>
 
-Bisogna stare attenti a :
+Bisogna stare attenti a :  
 1. **Connotazioni diverse per gli stessi connettivi** 
+2. **Sinonimi e contrari** 
+
 <details>
 <summary>
-Esempo:
+Esempo connotazioni diverse:
 </summary>
 
 - “Se A allora B”, “A implica B”, “B se A”, “B quando A”,
@@ -52,10 +54,9 @@ condizione necessaria per A”, . . .
 - “A e B”, “A ma B”, “A nonostante B”, . . .
 </details>
 
-2. **Sinonimi e contrari** 
 <details>
 <summary>
-Esempio
+Esempio Sinonimi e contrari:
 </summary>
 
 “se Mario è acculturato allora oggi c’è bel tempo”, “oggi
@@ -88,6 +89,6 @@ Utilizziamo 0 e 1, per denotare la falsità e la verità
 - $\llbracket  \top \rrbracket^v = 1$
 - $\llbracket  A \rrbracket^v =v(A)$
 - $\llbracket  \neg F \rrbracket^v =1-\llbracket  F\rrbracket^v$
-- $\llbracket  F_1 \wedge F_2 \rrbracket=\min \{\llbracket  F_1 \rrbracket^v, \llbracket  F_2 \rrbracket^v\}$
-- $\llbracket  F_1 \vee F_2 \rrbracket=\max\{\llbracket  F_1 \rrbracket^v, \llbracket  F_2 \rrbracket^v\}$
-- $\llbracket  F_1 \implies F_2 \rrbracket=\max\{1-\llbracket  F_1 \rrbracket^v, \llbracket  F_2\rrbracket^v\}$
+- $\llbracket  F_1 \wedge F_2 \rrbracket^v=\min \{\llbracket  F_1 \rrbracket^v, \llbracket  F_2 \rrbracket^v\}$
+- $\llbracket  F_1 \vee F_2 \rrbracket^v=\max\{\llbracket  F_1 \rrbracket^v, \llbracket  F_2 \rrbracket^v\}$
+- $\llbracket  F_1 \implies F_2 \rrbracket^v=\max\{1-\llbracket  F_1 \rrbracket^v, \llbracket  F_2\rrbracket^v\}$

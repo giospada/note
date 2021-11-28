@@ -88,7 +88,7 @@ $f: X \to \mathbb{R}$
 # Teorema di Weierstrass
 
 
-> $f: [a,b] \to \mathbb{R}$ **e la funzione è continua continua**  
+> $f: [a,b] \to \mathbb{R}$ **e la funzione è continua**  
 > Allora:  
 > $\exists x_0 \in [a,b]: f(x)\le f(x_0), \forall x \in [a,b]$  
 > $\exists x_0 \in [a,b]: f(x)\ge f(x_0),  \forall x \in [a,b]$

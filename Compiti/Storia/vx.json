@@ -4,34 +4,38 @@
         {
             "attachment_folder": "",
             "created_time": "2021-10-19T17:23:43Z",
-            "id": "0",
+            "id": "44",
             "modified_time": "2021-10-19T17:23:43Z",
             "name": "index.md",
+            "signature": "1769586519693040864",
             "tags": [
             ]
         },
         {
             "attachment_folder": "",
             "created_time": "2021-10-19T17:23:43Z",
-            "id": "0",
+            "id": "45",
             "modified_time": "2021-10-19T17:23:43Z",
             "name": "Storia.md",
+            "signature": "2062419507353197792",
             "tags": [
             ]
         },
         {
             "attachment_folder": "",
             "created_time": "2021-10-19T17:23:43Z",
-            "id": "0",
+            "id": "46",
             "modified_time": "2021-10-19T17:23:43Z",
             "name": "Storia4.md",
+            "signature": "7197612969161628896",
             "tags": [
             ]
         }
     ],
     "folders": [
     ],
-    "id": "0",
+    "id": "43",
     "modified_time": "2021-10-19T17:23:43Z",
-    "version": "1"
+    "signature": "774460846525881568",
+    "version": 3
 }

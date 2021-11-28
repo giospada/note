@@ -25,12 +25,13 @@ Il decode setta i c bit che vengono utilizzati come control bit per tutti gli al
 ## SRAM e DRAM
 
 Le **SRAM** (Static RAM) sono realizzate tramite flip-flop come le memorie viste in precedenza  
+
 - Veloci (ordine del nanosecondo)
 - Usate principalmente per le cache
 
 Le **DRAM** (Dynamic RAM) o SDRAM (Synchronous DRAM), usate per le memorie centrali, hanno un solo transistor ed un condensatore che mantiene (tramite carica elettrica) un singolo bit
 
--Visto che il condensatore perde la propria carica, deve essere ricaricato per evitare di perdere la propria informazione
+- Visto che il condensatore perde la propria carica, deve essere ricaricato per evitare di perdere la propria informazione
 - Si rendono necessarie periodiche fasi di “refresh” (ad intervalli dell’ordine del millisecondo)
   - A causa del refresh sono più lente (ordine della decina di nanosecondi)
   - Richiedendo un solo transistor costano meno e possono essere maggiormente miniaturizzate

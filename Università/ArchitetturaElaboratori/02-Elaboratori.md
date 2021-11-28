@@ -2,6 +2,7 @@
 # Organizzazione degli Elaboratori
 
 ![](../img/VonNeumann.png)
+
 > "bus oriented": un bus è un insieme di connessioni elettriche per collegare i vari componenti
 
 IL bus a differenza dello schema di van Neumann, non ha una connessione punto a punto ma tutti i componenti sono collegati al bus 
@@ -18,7 +19,7 @@ il bus collega anche le periferiche, l'accesso al bus condivisio viene gestito d
 
 i nuovi dispositivi, possono trasferire i dati dalla memoria ad un altro dispositivo senza passare dalla cpu (che da l'ordine solo da che indirizzo a quale copiare)
 
-## 4.1. CPU
+## CPU
 
 ![](../img/cpuschema.png)
 

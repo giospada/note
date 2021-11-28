@@ -77,5 +77,12 @@ esempio
 
 > Teorema di invarianza per sostituzione: per tutte le formule $F,G_1,G_2$ e per ogni A, se $G_1 \equiv G_2$ allora $F[G1/A] \equiv F[G_2/A]$
 
+<details>
+<summary>
+dimostrarzione 
+</summary>
 
-TODO: chiedere ad angi
+![](vx_images/324474819259397.png)
+![](vx_images/590965001816920.png)
+</details>
+

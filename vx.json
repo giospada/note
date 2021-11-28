@@ -4,44 +4,45 @@
         {
             "attachment_folder": "",
             "created_time": "2021-10-19T17:23:43Z",
-            "id": "0",
+            "id": "149",
             "modified_time": "2021-10-19T17:23:43Z",
             "name": "index.md",
+            "signature": "207324004195544",
             "tags": [
             ]
         },
         {
             "attachment_folder": "",
             "created_time": "2021-10-19T17:23:43Z",
-            "id": "0",
+            "id": "150",
             "modified_time": "2021-10-19T17:23:43Z",
             "name": "Notable.md",
+            "signature": "784285914927963352",
             "tags": [
             ]
         },
         {
             "attachment_folder": "",
             "created_time": "2021-10-19T17:23:43Z",
-            "id": "0",
+            "id": "151",
             "modified_time": "2021-10-19T17:23:43Z",
             "name": "Precorso.md",
+            "signature": "5546498803229498584",
             "tags": [
             ]
         },
         {
             "attachment_folder": "",
             "created_time": "2021-10-19T17:23:43Z",
-            "id": "0",
+            "id": "152",
             "modified_time": "2021-10-19T17:23:43Z",
             "name": "README.md",
+            "signature": "8223662518529137880",
             "tags": [
             ]
         }
     ],
     "folders": [
-        {
-            "name": "vx_recycle_bin"
-        },
         {
             "name": "assets"
         },
@@ -57,5 +58,6 @@
     ],
     "id": "1",
     "modified_time": "2021-10-19T17:23:43Z",
-    "version": "1"
+    "signature": "8927815551940533464",
+    "version": 3
 }

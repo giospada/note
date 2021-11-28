@@ -13,9 +13,12 @@ $h: A \to R, \bar{x}\in D(a):$ allora $(l \in \mathbb{R} \cup \{+\infty\} \cup \
 
 Siano $f,g: [a,b]\to \mathbb{R}$ due funzioni reali di variabile reale continue in $[a,b]$ e derivabili in $(a,b)$ eccetto al più $x_0$, con $-\infty \le a< b \le +\infty$; sia $g'(x)$ diversa da 0 per $x\neq x_0$ 
 
-$\lim_{x\to x_0}{|f(x)|} = \lim_{x\to x_0}{|g(x)|} = \infty$
-$\lim_{x\to x_0}{f(x)} = \lim_{x\to x_0}g(x) = 0$
-$\lim_{x \to x_0}{\frac{f'(x)}{g'(x)}} = L \in \mathbb{\bar{R}}$
+$\lim_{x\to x_0}{|f(x)|} = \lim_{x\to x_0}{|g(x)|} = \infty$ oppure $\lim_{x\to x_0}{f(x)} = \lim_{x\to x_0}g(x) = 0$  
+se esiste:  
+$\lim_{x \to x_0}{\frac{f'(x)}{g'(x)}} = L \in \mathbb{\bar{R}}$  
+allora:   
 $\lim_{x \to x_0}{\frac{f(x)}{g(x)}} = L$
 
 ## Dimostrazioni
+
+tt

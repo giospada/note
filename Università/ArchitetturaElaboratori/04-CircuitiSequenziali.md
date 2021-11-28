@@ -4,7 +4,7 @@ I **circuiti sequenziali** sono circuiti il cui risultato cambia in base agli in
 
 ## Latch SR
 
-![LatchSR](vx_images/2893428209291.png =403x)
+![LatchSR](vx_images/2893428209291.png)
 
 **creiamo la tabella di verità**  
 - Se S=1, R=0 allora Q=1, $\bar{Q}$=0
@@ -19,19 +19,19 @@ Ma se il circuito come primo input ha S=0,S=0 allora non si sa se Q è 0 o 1.
 
 ## Latch SR temporizzato
 
-![Latch SR Temporizzto](vx_images/2872921766814.png =537x)
+![Latch SR Temporizzto](vx_images/2872921766814.png )
 
 Di solito si utilizza un clock per fare in modo che il Latch non cambi valore in momenti non opportuni.
 
 ## Latch D temporizzato
 
-![latch D temporizzato](vx_images/109232555906.png =354x)
+![latch D temporizzato](vx_images/109232555906.png)
 
 Questo latch D, fa in modo che non possiamo mai avere la situazione sa S che R settati.
 
 ## DFF
 
-![DFF](vx_images/916559881657.png =370x)
+![DFF](vx_images/916559881657.png)
 
 
 Il circuito attaccato al clock sfrutta il tempo che fisico che il not ci mette a cambiare valore,così facendo il segnale risultante arriva per un brevissimo istante quando il clock è settato a 1.
@@ -55,7 +55,7 @@ Il circuito attaccato al clock sfrutta il tempo che fisico che il not ci mette a
 
 Per costruire un registro di un bit utilizziamo il DFF e un Mux, che fa in modo che il DFF abbia lo stesso valore se il load non è attivo.
 
-![Bit](vx_images/1466736840061.png =510x)
+![Bit](vx_images/1466736840061.png )
 
 
 
