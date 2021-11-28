@@ -121,7 +121,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="#storia-degli-elaboratori"><span class="toc-section-number">2.3</span> Storia degli Elaboratori</a></li>
 </ul></li>
 <li><a href="#organizzazione-degli-elaboratori"><span class="toc-section-number">3</span> Organizzazione degli Elaboratori</a><ul>
-<li><a href="#cpu"><span class="toc-section-number">3.1</span> 4.1. CPU</a><ul>
+<li><a href="#cpu"><span class="toc-section-number">3.1</span> CPU</a><ul>
 <li><a href="#unita-di-controllo"><span class="toc-section-number">3.1.1</span> Unita di controllo</a></li>
 </ul></li>
 <li><a href="#alu-e-clock"><span class="toc-section-number">3.2</span> ALU e clock</a></li>
@@ -311,7 +311,10 @@ linguaggi che vengono compilati o interpretati, in linguaggio assembly</p>
 <p><strong>MFLOPS</strong>: miliardi di operazioni a virgola mobile</p>
 </blockquote>
 <h1 id="organizzazione-degli-elaboratori"><span class="header-section-number">3</span> Organizzazione degli Elaboratori</h1>
-<p><img src="../img/VonNeumann.png" /> &gt; “bus oriented”: un bus è un insieme di connessioni elettriche per collegare i vari componenti</p>
+<p><img src="../img/VonNeumann.png" /></p>
+<blockquote>
+<p>“bus oriented”: un bus è un insieme di connessioni elettriche per collegare i vari componenti</p>
+</blockquote>
 <p>IL bus a differenza dello schema di van Neumann, non ha una connessione punto a punto ma tutti i componenti sono collegati al bus</p>
 <p>Una altra novità è che con von Neumann la memoria non solo per i dati ma anche per i programmi</p>
 <p>La cpu e la memoria utilizzano i <strong>bus dati</strong> e il <strong>bus indirizzi</strong> per scambiarsi le informazioni</p>
@@ -319,7 +322,7 @@ linguaggi che vengono compilati o interpretati, in linguaggio assembly</p>
 <p>i dispositivi si <strong>collegano al bus tramite controller</strong>, alcuni controller accedono direttamentente alla memoria, e al termine della scrittura/lettura invia un segnale alla cpu</p>
 <p>il bus collega anche le periferiche, l’accesso al bus condivisio viene gestito da un “albitro” del bus</p>
 <p>i nuovi dispositivi, possono trasferire i dati dalla memoria ad un altro dispositivo senza passare dalla cpu (che da l’ordine solo da che indirizzo a quale copiare)</p>
-<h2 id="cpu"><span class="header-section-number">3.1</span> 4.1. CPU</h2>
+<h2 id="cpu"><span class="header-section-number">3.1</span> CPU</h2>
 <p><img src="../img/cpuschema.png" /></p>
 <blockquote>
 <p>la cpu è il cervello della macchina che esegue i calcoli</p>
@@ -500,8 +503,10 @@ Circuiti che cambiano l’output in base agli input ricevuti in passato</p>
 <span class="math inline">\(A+\bar{A}=1\)</span> <span class="math inline">\(\bar{B}+\bar{A}=1, B=\bar{A}\)</span> <span class="math inline">\(\overline{BA}=1\)</span> <span class="math inline">\(\overline{\bar{A}A}=1\)</span> <span class="math inline">\(\bar{A}A=0\)</span>
 </details>
 <h2 id="funzioni-booleane-e-tabelle-di-verità"><span class="header-section-number">4.3</span> Funzioni booleane e tabelle di verità</h2>
-<p>Un circuito non si può descrivere anche con una tabella di verità<br />
-&gt;<code>tabella di verità</code> mappa tutti gli input con i risultato l’output (ha <span class="math inline">\(2^n\)</span> mintermini/righe)</p>
+<p>Un circuito non si può descrivere anche con una tabella di verità</p>
+<blockquote>
+<p><code>tabella di verità</code> mappa tutti gli input con i risultato l’output (ha <span class="math inline">\(2^n\)</span> mintermini/righe)</p>
+</blockquote>
 <blockquote>
 <p><strong>letterale</strong>: una variabile</p>
 </blockquote>
@@ -517,7 +522,7 @@ Circuiti che cambiano l’output in base agli input ricevuti in passato</p>
 <p>Per esempio la forma canonica della funzione definita nell’immagine sopra è : <span class="math inline">\(\bar{A}B\bar{C}+AB\bar{C}+ABC\)</span></p>
 <h2 id="implementare-funzioni-booleane"><span class="header-section-number">4.4</span> Implementare Funzioni Booleane</h2>
 <p>Creaiamo dei circuiti che rappresentano fisicamente le nostre funzioni booleane. Per creare tutte le nostre funzioni booleane possiamo partire dalla porta NAND, infatti con questa porta si riescono ad implementare tutte le porte logiche (AND,OR e NOT). Inoltre la porta NAND è molto facile da implementare fisicamente.</p>
-<p><img src="../img/orandnot.png%20=400x" /></p>
+<p><img src="../img/orandnot.png" /></p>
 <p><strong>Xor</strong>:è vero solo se i due input sono diversi</p>
 <p><img src="../img/xor.png" /></p>
 <p><strong>Multiplexer</strong>: ha 3 input, il terzo input decide quale dei due input far passare</p>
@@ -634,7 +639,7 @@ fare la tabella di verità su <span class="math inline">\(A+ \overline{ (B+C) } 
 <p>I <strong>circuiti sequenziali</strong> sono circuiti il cui risultato cambia in base agli input presi in passato</p>
 <h2 id="latch-sr"><span class="header-section-number">5.1</span> Latch SR</h2>
 <figure>
-<img src="vx_images/2893428209291.png%20=403x" alt="" /><figcaption>LatchSR</figcaption>
+<img src="vx_images/2893428209291.png" alt="" /><figcaption>LatchSR</figcaption>
 </figure>
 <p><strong>creiamo la tabella di verità</strong></p>
 <ul>
@@ -646,17 +651,17 @@ fare la tabella di verità su <span class="math inline">\(A+ \overline{ (B+C) } 
 <p>Essendo che nel caso S=0,R=0 gli output rimangono invariati. Ma se il circuito come primo input ha S=0,S=0 allora non si sa se Q è 0 o 1.</p>
 <h2 id="latch-sr-temporizzato"><span class="header-section-number">5.2</span> Latch SR temporizzato</h2>
 <figure>
-<img src="vx_images/2872921766814.png%20=537x" alt="" /><figcaption>Latch SR Temporizzto</figcaption>
+<img src="vx_images/2872921766814.png" alt="" /><figcaption>Latch SR Temporizzto</figcaption>
 </figure>
 <p>Di solito si utilizza un clock per fare in modo che il Latch non cambi valore in momenti non opportuni.</p>
 <h2 id="latch-d-temporizzato"><span class="header-section-number">5.3</span> Latch D temporizzato</h2>
 <figure>
-<img src="vx_images/109232555906.png%20=354x" alt="" /><figcaption>latch D temporizzato</figcaption>
+<img src="vx_images/109232555906.png" alt="" /><figcaption>latch D temporizzato</figcaption>
 </figure>
 <p>Questo latch D, fa in modo che non possiamo mai avere la situazione sa S che R settati.</p>
 <h2 id="dff"><span class="header-section-number">5.4</span> DFF</h2>
 <figure>
-<img src="vx_images/916559881657.png%20=370x" alt="" /><figcaption>DFF</figcaption>
+<img src="vx_images/916559881657.png" alt="" /><figcaption>DFF</figcaption>
 </figure>
 <p>Il circuito attaccato al clock sfrutta il tempo che fisico che il not ci mette a cambiare valore,così facendo il segnale risultante arriva per un brevissimo istante quando il clock è settato a 1.</p>
 <p><strong>tabella di verità</strong></p>
@@ -702,7 +707,7 @@ fare la tabella di verità su <span class="math inline">\(A+ \overline{ (B+C) } 
 <h2 id="bit"><span class="header-section-number">5.5</span> Bit</h2>
 <p>Per costruire un registro di un bit utilizziamo il DFF e un Mux, che fa in modo che il DFF abbia lo stesso valore se il load non è attivo.</p>
 <figure>
-<img src="vx_images/1466736840061.png%20=510x" alt="" /><figcaption>Bit</figcaption>
+<img src="vx_images/1466736840061.png" alt="" /><figcaption>Bit</figcaption>
 </figure>
 <h2 id="program-counter"><span class="header-section-number">5.6</span> Program counter</h2>
 <pre><code>if reset(t-1) then out(t)=0
@@ -928,8 +933,8 @@ ottengo la posizione dell&#39;errore:
 <li>Usate principalmente per le cache</li>
 </ul>
 <p>Le <strong>DRAM</strong> (Dynamic RAM) o SDRAM (Synchronous DRAM), usate per le memorie centrali, hanno un solo transistor ed un condensatore che mantiene (tramite carica elettrica) un singolo bit</p>
-<p>-Visto che il condensatore perde la propria carica, deve essere ricaricato per evitare di perdere la propria informazione</p>
 <ul>
+<li>Visto che il condensatore perde la propria carica, deve essere ricaricato per evitare di perdere la propria informazione</li>
 <li>Si rendono necessarie periodiche fasi di “refresh” (ad intervalli dell’ordine del millisecondo)
 <ul>
 <li>A causa del refresh sono più lente (ordine della decina di nanosecondi)</li>

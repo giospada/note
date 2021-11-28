@@ -4,88 +4,189 @@
         {
             "attachment_folder": "",
             "created_time": "2021-11-20T10:53:34Z",
-            "id": "0",
+            "id": "76",
             "modified_time": "2021-11-20T10:53:34Z",
             "name": "15-Geometria Analitica.md",
+            "signature": "1760403806599748837",
             "tags": [
             ]
         },
         {
             "attachment_folder": "",
             "created_time": "2021-11-20T18:41:19Z",
-            "id": "0",
+            "id": "77",
             "modified_time": "2021-11-20T18:41:19Z",
             "name": "08-Numeri_Reali.md",
+            "signature": "1525533343924329701",
             "tags": [
             ]
         },
         {
             "attachment_folder": "",
             "created_time": "2021-11-20T19:04:05Z",
-            "id": "0",
+            "id": "78",
             "modified_time": "2021-11-20T19:04:48Z",
             "name": "11-Funzioni Esponenziali.md",
+            "signature": "8841029587331685605",
             "tags": [
             ]
         },
         {
             "attachment_folder": "",
             "created_time": "2021-11-20T19:07:29Z",
-            "id": "0",
-            "modified_time": "2021-11-21T15:39:42Z",
+            "id": "79",
+            "modified_time": "2021-11-28T20:31:26Z",
             "name": "12-Limiti Funzioni.md",
+            "signature": "9138556518979837157",
             "tags": [
             ]
         },
         {
             "attachment_folder": "",
             "created_time": "2021-11-21T09:15:21Z",
-            "id": "0",
+            "id": "80",
             "modified_time": "2021-11-21T09:15:21Z",
             "name": "99-Ripasso.md",
+            "signature": "1047447378721742053",
             "tags": [
             ]
         },
         {
             "attachment_folder": "",
             "created_time": "2021-11-21T09:15:22Z",
-            "id": "0",
+            "id": "81",
             "modified_time": "2021-11-21T09:15:22Z",
             "name": "98-Possibili Esercizi.md",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2021-11-21T09:39:25Z",
-            "id": "0",
-            "modified_time": "2021-11-21T09:39:25Z",
-            "name": "14-Derivate.md",
+            "signature": "8030228757864226021",
             "tags": [
             ]
         },
         {
             "attachment_folder": "",
             "created_time": "2021-11-21T14:35:06Z",
-            "id": "0",
-            "modified_time": "2021-11-24T14:14:50Z",
+            "id": "82",
+            "modified_time": "2021-11-28T20:43:25Z",
             "name": "13-Teorema degli Zeri.md",
+            "signature": "5739251446505774309",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "96324919259399",
+            "created_time": "2021-11-22T17:28:09Z",
+            "id": "83",
+            "modified_time": "2021-11-28T21:30:27Z",
+            "name": "16-De Hopital.md",
+            "signature": "6204125254787243237",
+            "tags": [
+                "todo"
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2021-11-25T12:57:00Z",
+            "id": "84",
+            "modified_time": "2021-11-25T12:57:00Z",
+            "name": "10-SuccessioniNumeriche.md",
+            "signature": "5663569591559757029",
             "tags": [
             ]
         },
         {
             "attachment_folder": "",
-            "created_time": "2021-11-22T08:42:37Z",
-            "id": "0",
-            "modified_time": "2021-11-24T14:01:48Z",
-            "name": "16-De Hopital.md",
+            "created_time": "2021-11-25T13:41:21Z",
+            "id": "85",
+            "modified_time": "2021-11-28T21:44:33Z",
+            "name": "17- Sviluppo di serie di Taylor.md",
+            "signature": "5420630049271291109",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2021-11-28T20:57:53Z",
+            "id": "154",
+            "modified_time": "2021-11-28T20:57:53Z",
+            "name": "09-ValoreAssoluto.md",
+            "signature": "784285914928246097",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2021-11-28T20:57:54Z",
+            "id": "155",
+            "modified_time": "2021-11-28T20:57:54Z",
+            "name": "07-EsDimostrazioni.md",
+            "signature": "5546498803229781330",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2021-11-28T20:57:55Z",
+            "id": "156",
+            "modified_time": "2021-11-28T21:22:15Z",
+            "name": "14-Derivate.md",
+            "signature": "8223662518529420627",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2021-11-28T20:57:56Z",
+            "id": "157",
+            "modified_time": "2021-11-28T20:57:56Z",
+            "name": "06-CalcoloCombinatoria.md",
+            "signature": "8927815551940816212",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2021-11-28T20:57:57Z",
+            "id": "158",
+            "modified_time": "2021-11-28T20:57:57Z",
+            "name": "05-Funzioni.md",
+            "signature": "1749579337962876245",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2021-11-28T20:57:57Z",
+            "id": "159",
+            "modified_time": "2021-11-28T20:57:57Z",
+            "name": "04-Logica.md",
+            "signature": "4749813615708859733",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2021-11-28T20:57:58Z",
+            "id": "160",
+            "modified_time": "2021-11-28T20:57:58Z",
+            "name": "02-Insiemi_e_notazioni.md",
+            "signature": "3670979437964553558",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2021-11-28T20:57:59Z",
+            "id": "161",
+            "modified_time": "2021-11-28T20:57:59Z",
+            "name": "01-AnalisiMatematica.md",
+            "signature": "2424881375239990615",
             "tags": [
             ]
         }
     ],
     "folders": [
     ],
-    "id": "0",
+    "id": "75",
     "modified_time": "",
-    "version": "1"
+    "signature": "1391837626249485541",
+    "version": 3
 }

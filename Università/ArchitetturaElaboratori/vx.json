@@ -4,97 +4,108 @@
         {
             "attachment_folder": "",
             "created_time": "2021-10-30T09:06:57Z",
-            "id": "0",
+            "id": "87",
             "modified_time": "2021-11-08T22:13:03Z",
             "name": "08-Realizzazione del Computer Hack.md",
+            "signature": "2352092464235388137",
             "tags": [
             ]
         },
         {
             "attachment_folder": "",
             "created_time": "2021-11-02T12:13:37Z",
-            "id": "0",
+            "id": "88",
             "modified_time": "2021-11-02T12:13:37Z",
             "name": "07-ISA-Hack.md",
+            "signature": "7368913268701633769",
             "tags": [
             ]
         },
         {
             "attachment_folder": "",
             "created_time": "2021-11-02T12:14:03Z",
-            "id": "0",
+            "id": "89",
             "modified_time": "2021-11-07T18:55:30Z",
             "name": "05-Rappresentazionedell'informazione.md",
+            "signature": "5469878768512244969",
             "tags": [
             ]
         },
         {
             "attachment_folder": "",
             "created_time": "2021-11-02T12:14:22Z",
-            "id": "0",
-            "modified_time": "2021-11-08T15:55:53Z",
+            "id": "90",
+            "modified_time": "2021-11-28T16:47:11Z",
             "name": "06-Microarhitettura.md",
+            "signature": "8270151738462280937",
             "tags": [
             ]
         },
         {
             "attachment_folder": "",
             "created_time": "2021-11-02T12:15:11Z",
-            "id": "0",
-            "modified_time": "2021-11-07T17:23:40Z",
+            "id": "91",
+            "modified_time": "2021-11-28T15:37:17Z",
             "name": "04-CircuitiSequenziali.md",
+            "signature": "2506175000094940393",
             "tags": [
             ]
         },
         {
             "attachment_folder": "",
             "created_time": "2021-11-07T15:55:33Z",
-            "id": "0",
+            "id": "92",
             "modified_time": "2021-11-07T16:31:31Z",
             "name": "01-Livelli.md",
+            "signature": "1825771469383113961",
             "tags": [
             ]
         },
         {
             "attachment_folder": "",
             "created_time": "2021-11-07T15:55:46Z",
-            "id": "0",
+            "id": "93",
             "modified_time": "2021-11-07T15:56:15Z",
             "name": "00-ArchitetturaElaboratori.md",
+            "signature": "2494748424287526121",
             "tags": [
             ]
         },
         {
             "attachment_folder": "",
             "created_time": "2021-11-07T15:56:21Z",
-            "id": "0",
-            "modified_time": "2021-11-20T19:16:58Z",
+            "id": "94",
+            "modified_time": "2021-11-28T14:48:26Z",
             "name": "02-Elaboratori.md",
+            "signature": "3655852623277300969",
             "tags": [
             ]
         },
         {
             "attachment_folder": "",
             "created_time": "2021-11-07T15:56:23Z",
-            "id": "0",
-            "modified_time": "2021-11-07T16:53:22Z",
+            "id": "95",
+            "modified_time": "2021-11-28T15:18:49Z",
             "name": "03-Circuiti.md",
+            "signature": "884800192742661353",
             "tags": [
             ]
         },
         {
             "attachment_folder": "",
             "created_time": "2021-11-15T13:15:46Z",
-            "id": "0",
+            "id": "96",
             "modified_time": "2021-11-21T16:11:39Z",
             "name": "09-Sistema Operativo.md",
+            "signature": "5977514070056606953",
             "tags": [
             ]
         }
     ],
     "folders": [
     ],
-    "id": "0",
+    "id": "86",
     "modified_time": "",
-    "version": "1"
+    "signature": "5834302074948394217",
+    "version": 3
 }
