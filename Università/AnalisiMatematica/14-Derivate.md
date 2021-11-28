@@ -97,7 +97,13 @@ $f \in C^k (I) \iff \begin{cases}f \mbox{ è derivabile k-volte su }I_j  \\ f^k\
 
 # Teorema di Fermat 
 
-$f:[a,b]\to \mathbb{R}$, $x_0 \in ]a,b[$ 
+$f:[a,b]\to \mathbb{R}$  
+
+1. $x_0 \in ]a,b[$ punto di massimo o minimo relativo
+2. $f$ è derivabile in $x_0"
+
+Allora:  
+$f'(x_0)=0$
 
 
 ## Teorema di Rolle
@@ -130,7 +136,7 @@ $\exists c \in ]a,b[ : \frac{f(b)-f(a)}{b-a}=f'(c)$
 ### Crollairio
 
 $f: ]a,b[ \to \mathbb{R}$
-$f$  derivabile t.c. $f'(x)=0 \forall x \in ]a,b[$
+$f$  derivabile t.c. $f'(x)=0,\space \forall x \in ]a,b[$
 Allora f è constante
 
 ## Teorema di cauchy

@@ -275,3 +275,32 @@ L'invertibilità per il $\neg$ segue da quella della regola per il $\implies_i$.
 Inoltre, quando ci is trova a dimostrare il $\bot$, da quel momento in avanti tutte le regole applicabili sono invertibili in quanto la conclusione  $\bot$ ha come conseguenza logica qualunque formula. In ogni momento, dopo aver accumulato nuove ipotesi  e quando si è bloccati, è possibile tornare a dimostrare $\bot$ per mezzo della regola $\bot_e$. Infine, l'intuizione diventa spesso inutile (le ipotesi sono inconsistenti).
 
 L'invertibilità per l' $\neg_e$ è ovvia in quanto $\bot\vdash F_1$ e $\bot\vdash\neg F_1$. La regola è comunque di difficile applicazione in quanto se non si sceglie l'$F_1$ giusto, si è solo duplicato il lavoro inutilmente. 
+
+
+
+todo:da 45
+
+## Teorema di Completezza 
+
+
+ho aggiunto tute le regole che mi servono per catturare sintatticamente un concetto semantico
+
+
+la deduzione naturale non è completa perchè non possiamo verificare le seguenti tautologie:
+- $\Vdash \neg \neg A \implies A$
+- $\Vdash \neg A \vee A$
+
+le regole date finora non rendono il sistema completo per la logica proposizionale classica
+
+
+## RAA
+
+![](vx_images/4374204149395.png)
+
+
+**Lettura bottom-up**: Assumiamo per assurdo $\neg F$. . . . Assurdo! Quindi F.
+**Lettura top-down**: Per dimostrare F procediamo per assurdo assumendo $\neg F$ e dimostrando $\bot$.
+
+
+> ATTENZIONE: Funziona solamente per la logica classica 
+

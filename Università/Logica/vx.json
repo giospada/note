@@ -94,10 +94,21 @@
         {
             "attachment_folder": "",
             "created_time": "2021-11-10T08:31:33Z",
+<<<<<<< HEAD
             "id": "141",
             "modified_time": "2021-11-27T10:45:53Z",
             "name": "13-Deduzione Naturale.md",
             "signature": "4704407225750232305",
+=======
+            "id": "0",
+<<<<<<< HEAD
+            "modified_time": "2021-11-24T09:13:59Z",
+            "name": "12-Deduzione Naturale.md",
+=======
+            "modified_time": "2021-11-21T19:34:17Z",
+            "name": "13-Deduzione Naturale.md",
+>>>>>>> 5ca9618e073b040e7ac09043e9b19240dd875e1b
+>>>>>>> 4e3fad0822e4ab3ba70fc89a6d808f5c9817ccaf
             "tags": [
             ]
         },

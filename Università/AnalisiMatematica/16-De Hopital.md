@@ -21,4 +21,4 @@ $\lim_{x \to x_0}{\frac{f(x)}{g(x)}} = L$
 
 ## Dimostrazioni
 
-tt
+TODO

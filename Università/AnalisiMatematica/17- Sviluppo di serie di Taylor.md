@@ -69,7 +69,7 @@ altri esempi dopo pag 11 [pdf](https://virtuale.unibo.it/pluginfile.php/1078465/
 
 >Attenzione $x \to 0$ e $(n,m \in \mathbb{N})$
 
-1. $f= o(x^4)\implies f=o(x^m), m<n$
+1. $f= o(x^n)\implies f=o(x^m), m<n$
     <details>
     <summary> Dim </summary> 
     
