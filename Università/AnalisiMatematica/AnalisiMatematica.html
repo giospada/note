@@ -201,6 +201,8 @@
 <li><a href="#o-piccolo"><span class="toc-section-number">17.5</span> O piccolo</a><ul>
 <li><a href="#proprietà-degli-o-piccoli-per-x-tendente-a-0"><span class="toc-section-number">17.5.1</span> Proprietà degli O-piccoli per x tendente a 0</a></li>
 </ul></li>
+<li><a href="#serie-di-taylor"><span class="toc-section-number">17.6</span> Serie di Taylor</a></li>
+<li><a href="#taylor"><span class="toc-section-number">17.7</span> Taylor</a></li>
 </ul></li>
 <li><a href="#possibili-esercizi"><span class="toc-section-number">18</span> Possibili Esercizi</a><ul>
 <li><a href="#domande"><span class="toc-section-number">18.1</span> Domande</a></li>
@@ -1348,6 +1350,32 @@ altri esempi dopo pag 11 <a href="https://virtuale.unibo.it/pluginfile.php/10784
 <li><p>se <span class="math inline">\(f,g\)</span> sono infinitesime per <span class="math inline">\(x\to x_0\)</span> allora <span class="math inline">\(o(f(x))=o(g(x))\)</span></p></li>
 <li><p>se <span class="math inline">\(h(x)\xrightarrow{x\to 0}k\neq 0 \implies o(h(x)\times x^n)\)</span> è un <span class="math inline">\(o(x^n)\)</span></p></li>
 </ol>
+<h2 id="serie-di-taylor"><span class="header-section-number">17.6</span> Serie di Taylor</h2>
+<p><span class="math inline">\(f:]a,b[ \to \mathbb{R}, 0 \in ]a,b[\)</span></p>
+<p>se <span class="math inline">\(f\)</span> è continua in 0</p>
+<p><span class="math inline">\(\displaystyle \lim_{x \rightarrow 0} f(x)= f(0)\)</span></p>
+<p>quindi</p>
+<p><span class="math inline">\(\displaystyle \lim_{x \rightarrow 0} (f(x) -f(0)) =0\)</span><br />
+<span class="math inline">\(\implies f(x)=f(0)+o(1)\)</span></p>
+<p>utilizzando la derivata</p>
+<p><span class="math inline">\(\displaystyle \lim_{x \rightarrow 0} \frac{f(x) -f(0)}{x} = f&#39;(0)\)</span></p>
+<p><span class="math inline">\(\displaystyle \lim_{x \rightarrow 0} \frac{f(x) -f(0)}{x} -f&#39;(0)=0\)</span><br />
+<span class="math inline">\(\displaystyle \lim_{x \rightarrow 0} \frac{f(x) -f(0)-f&#39;(x)}{x} =0\)</span></p>
+<p>Quindi sappiamo che</p>
+<p><span class="math inline">\(f(x) -f(0)-f&#39;(x)=o(x)\)</span></p>
+<p>quindi</p>
+<p><span class="math inline">\(f(x)= f(0) + f&#39;(x)\times x + o(x)\)</span> per <span class="math inline">\(x\to 0\)</span></p>
+<p>quindi abbiamo trovato la retta tangente a x in 0</p>
+<h2 id="taylor"><span class="header-section-number">17.7</span> Taylor</h2>
+<p><span class="math inline">\(f:]a,b[ \to \mathbb{R}, 0 \in ]a,b[\)</span></p>
+<p>se <span class="math inline">\(f\)</span> è continua in 0</p>
+<p><span class="math inline">\(f\)</span> è derivabile n-volte in <span class="math inline">\(\bar{x}=0\)</span></p>
+<p>Si verifica che il polinomi di tailor di <span class="math inline">\(f\)</span> in <span class="math inline">\(\bar{x}=0\)</span> di grado <span class="math inline">\(\le n\)</span></p>
+<p><span class="math inline">\(T_n(x)=\displaystyle{ \sum^{n}_{j=0} \frac{f^j(0)}{j!}x^j}\)</span></p>
+<p><span class="math inline">\(f(x)=T_n(x)+o(x^n)\)</span></p>
+<p><span class="math inline">\(f\)</span> in <span class="math inline">\(\bar{x}\)</span> di grado <span class="math inline">\(\le n\)</span></p>
+<p><span class="math inline">\(T_n(x)=\displaystyle{ \sum^{n}_{j=0} \frac{f^j(0)}{j!}(x-\bar{x})^j}\)</span></p>
+<p><span class="math inline">\(f(x)=T_n(x)+o((x-\bar{x})^n)\)</span></p>
 <h1 id="possibili-esercizi"><span class="header-section-number">18</span> Possibili Esercizi</h1>
 <h2 id="domande"><span class="header-section-number">18.1</span> Domande</h2>
 <ol type="1">
