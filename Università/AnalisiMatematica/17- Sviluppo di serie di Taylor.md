@@ -88,7 +88,57 @@ altri esempi dopo pag 11 [pdf](https://virtuale.unibo.it/pluginfile.php/1078465/
 12. se $h(x)\xrightarrow{x\to 0}k\neq 0 \implies o(h(x)\times x^n)$ è un $o(x^n)$
 
 
+##  Serie di Taylor
+
+
+$f:]a,b[ \to \mathbb{R}, 0 \in ]a,b[$ 
+
+se $f$ è continua in 0
+
+$\displaystyle \lim_{x \rightarrow 0} f(x)= f(0)$
+
+quindi
+
+$\displaystyle \lim_{x \rightarrow 0} (f(x) -f(0)) =0$  
+$\implies  f(x)=f(0)+o(1)$
+
+utilizzando la derivata
+
+$\displaystyle \lim_{x \rightarrow 0} \frac{f(x) -f(0)}{x} = f'(0)$  
+
+$\displaystyle \lim_{x \rightarrow 0} \frac{f(x) -f(0)}{x} -f'(0)=0$  
+$\displaystyle \lim_{x \rightarrow 0} \frac{f(x) -f(0)-f'(x)}{x} =0$  
+
+Quindi sappiamo che 
+
+$f(x) -f(0)-f'(x)=o(x)$  
+
+quindi
+
+$f(x)= f(0) + f'(x)\times x + o(x)$ per $x\to 0$
+
+quindi abbiamo trovato la retta tangente a x in 0
+
+## Taylor
+
+
+$f:]a,b[ \to \mathbb{R}, 0 \in ]a,b[$ 
+
+se $f$ è continua in 0
+
+$f$ è derivabile n-volte in $\bar{x}=0$
+
+Si verifica che il polinomi di tailor di $f$ in $\bar{x}=0$ di grado $\le n$
+
+$T_n(x)=\displaystyle{ \sum^{n}_{j=0} \frac{f^j(0)}{j!}x^j}$
+
+$f(x)=T_n(x)+o(x^n)$
 
 
 
+ $f$ in $\bar{x}$ di grado $\le n$
+
+$T_n(x)=\displaystyle{ \sum^{n}_{j=0} \frac{f^j(0)}{j!}(x-\bar{x})^j}$
+
+$f(x)=T_n(x)+o((x-\bar{x})^n)$
 

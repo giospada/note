@@ -7,7 +7,6 @@
             "id": "149",
             "modified_time": "2021-10-19T17:23:43Z",
             "name": "index.md",
-            "signature": "207324004195544",
             "tags": [
             ]
         },
@@ -17,7 +16,6 @@
             "id": "150",
             "modified_time": "2021-10-19T17:23:43Z",
             "name": "Notable.md",
-            "signature": "784285914927963352",
             "tags": [
             ]
         },
@@ -27,7 +25,6 @@
             "id": "151",
             "modified_time": "2021-10-19T17:23:43Z",
             "name": "Precorso.md",
-            "signature": "5546498803229498584",
             "tags": [
             ]
         },
@@ -37,7 +34,6 @@
             "id": "152",
             "modified_time": "2021-10-19T17:23:43Z",
             "name": "README.md",
-            "signature": "8223662518529137880",
             "tags": [
             ]
         }
@@ -54,10 +50,12 @@
         },
         {
             "name": "Università"
+        },
+        {
+            "name": "vx_recycle_bin"
         }
     ],
     "id": "1",
     "modified_time": "2021-10-19T17:23:43Z",
-    "signature": "8927815551940533464",
-    "version": 3
+    "version": "1"
 }
