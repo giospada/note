@@ -15,7 +15,7 @@ Esempio
 **in logica classica**: $\exists x.P(x)$ significa "so che c'è un x t.c $P(x)$"  
 **in logica intuizionista**: $\exists x.P(x)$ significa "so che chi è quell' x t.c $P(x)$"  
 
-Tutte le prove **intuizioniste** di $\forall i. \exists o.P(i,o)$
+Tutte le prove **intuizioniste** di $\forall i. \exists o.P(i,o)$ contengono un algoritmo per calcolare o a partire da i .
 
 <details>
 <summary>
@@ -37,6 +37,24 @@ Nella semantica classica:
 
 ## Semantiche intuizioniste
 
+###  Kripke
 - Semantica alla **Kripke** (o dei mondi possibili)
     - l'insieme delle denotazioni è {0,1} ma 1significa vero, e con 0 significa Ignoto, il falso si ha quando $\neg A$ vale 1
-- Semantica di **Brouwer Heyting**
+   
+### Brouwer Heyting
+
+Semantica di **Brouwer Heyting**  
+- Insieme vuoto = assenza di algoritmi = falsità
+- Insieme non vuoto = almeno un algoritmi = verità
+
+
+**Semantica**:
+![](vx_images/581501354927706.png)
+
+<details>
+<summary>
+esempio
+</summary>
+
+![](vx_images/85421364797892.png)
+</details>

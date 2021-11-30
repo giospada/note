@@ -88,7 +88,29 @@ altri esempi dopo pag 11 [pdf](https://virtuale.unibo.it/pluginfile.php/1078465/
 12. se $h(x)\xrightarrow{x\to 0}k\neq 0 \implies o(h(x)\times x^n)$ è un $o(x^n)$
 
 
-##  Serie di Taylor
+## Teorema di Peano
+
+$f:]a,b[ \to \mathbb{R}, 0 \in ]a,b[$ 
+
+se $f$ è continua in 0, e $f$ è derivabile n-volte in $\bar{x}=0$
+
+Si verifica che il polinomi di Taylor di $f$ in $\bar{x}=0$ di grado $\le n$
+
+$T_n(x)=\displaystyle{ \sum^{n}_{j=0} \frac{f^j(0)}{j!}x^j}$
+
+$f(x)=T_n(x)+o(x^n)$
+
+
+### Per $\bar{x}$
+
+ $f$ in $\bar{x}$ di grado $\le n$
+
+$T_n(x)=\displaystyle{ \sum^{n}_{j=0} \frac{f^j(0)}{j!}(x-\bar{x})^j}$
+
+$f(x)=T_n(x)+o((x-\bar{x})^n)$
+
+
+### Dimostrazione Serie di Taylor
 
 
 $f:]a,b[ \to \mathbb{R}, 0 \in ]a,b[$ 
@@ -119,26 +141,6 @@ $f(x)= f(0) + f'(x)\times x + o(x)$ per $x\to 0$
 
 quindi abbiamo trovato la retta tangente a x in 0
 
-## Taylor
-
-
-$f:]a,b[ \to \mathbb{R}, 0 \in ]a,b[$ 
-
-se $f$ è continua in 0
-
-$f$ è derivabile n-volte in $\bar{x}=0$
-
-Si verifica che il polinomi di tailor di $f$ in $\bar{x}=0$ di grado $\le n$
-
-$T_n(x)=\displaystyle{ \sum^{n}_{j=0} \frac{f^j(0)}{j!}x^j}$
-
-$f(x)=T_n(x)+o(x^n)$
-
-
-
- $f$ in $\bar{x}$ di grado $\le n$
-
-$T_n(x)=\displaystyle{ \sum^{n}_{j=0} \frac{f^j(0)}{j!}(x-\bar{x})^j}$
-
-$f(x)=T_n(x)+o((x-\bar{x})^n)$
-
+### Taylor per l'esponenziale di e
+### Taylor per il logaritmo di e
+### Taylor per  di e
