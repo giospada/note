@@ -262,7 +262,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="#logica-intuizionista"><span class="toc-section-number">16</span> Logica intuizionista</a><ul>
 <li><a href="#evidenze-dirette-e-indirette"><span class="toc-section-number">16.1</span> Evidenze dirette e indirette</a></li>
 <li><a href="#modello-classico"><span class="toc-section-number">16.2</span> Modello Classico</a></li>
-<li><a href="#semantiche-intuizioniste"><span class="toc-section-number">16.3</span> Semantiche intuizioniste</a></li>
+<li><a href="#semantiche-intuizioniste"><span class="toc-section-number">16.3</span> Semantiche intuizioniste</a><ul>
+<li><a href="#kripke"><span class="toc-section-number">16.3.1</span> Kripke</a></li>
+<li><a href="#brouwer-heyting"><span class="toc-section-number">16.3.2</span> Brouwer Heyting</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -1274,7 +1277,7 @@ trivialmente <span class="math inline">\(F_1\implies F_2\Vdash F_1\implies F_2\)
 </details>
 <p><strong>in logica classica</strong>: <span class="math inline">\(\exists x.P(x)\)</span> significa “so che c’è un x t.c <span class="math inline">\(P(x)\)</span>”<br />
 <strong>in logica intuizionista</strong>: <span class="math inline">\(\exists x.P(x)\)</span> significa “so che chi è quell’ x t.c <span class="math inline">\(P(x)\)</span>”</p>
-<p>Tutte le prove <strong>intuizioniste</strong> di <span class="math inline">\(\forall i. \exists o.P(i,o)\)</span></p>
+<p>Tutte le prove <strong>intuizioniste</strong> di <span class="math inline">\(\forall i. \exists o.P(i,o)\)</span> contengono un algoritmo per calcolare o a partire da i .</p>
 <details>
 <p><summary> paradosso di Banach </summary></p>
 <p>è un teorema classico che non si può dimostrare con la logica intuizionista.</p>
@@ -1287,12 +1290,23 @@ prendete una sfera piena la riempiamo di punti, è possibile tre insiemi di punt
 <li>il valore di verità di ogni enunciato è immutabile</li>
 </ul>
 <h2 id="semantiche-intuizioniste"><span class="header-section-number">16.3</span> Semantiche intuizioniste</h2>
+<h3 id="kripke"><span class="header-section-number">16.3.1</span> Kripke</h3>
 <ul>
 <li>Semantica alla <strong>Kripke</strong> (o dei mondi possibili)
 <ul>
 <li>l’insieme delle denotazioni è {0,1} ma 1significa vero, e con 0 significa Ignoto, il falso si ha quando <span class="math inline">\(\neg A\)</span> vale 1</li>
 </ul></li>
-<li>Semantica di <strong>Brouwer Heyting</strong></li>
 </ul>
+<h3 id="brouwer-heyting"><span class="header-section-number">16.3.2</span> Brouwer Heyting</h3>
+<p>Semantica di <strong>Brouwer Heyting</strong></p>
+<ul>
+<li>Insieme vuoto = assenza di algoritmi = falsità</li>
+<li>Insieme non vuoto = almeno un algoritmi = verità</li>
+</ul>
+<p><strong>Semantica</strong>: <img src="vx_images/581501354927706.png" /></p>
+<details>
+<p><summary> esempio </summary></p>
+<img src="vx_images/85421364797892.png" />
+</details>
 </body>
 </html>
