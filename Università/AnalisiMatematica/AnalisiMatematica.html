@@ -204,9 +204,7 @@
 <li><a href="#teorema-di-peano"><span class="toc-section-number">17.6</span> Teorema di Peano</a><ul>
 <li><a href="#per-barx"><span class="toc-section-number">17.6.1</span> Per <span class="math inline">\(\bar{x}\)</span></a></li>
 <li><a href="#dimostrazione-serie-di-taylor"><span class="toc-section-number">17.6.2</span> Dimostrazione Serie di Taylor</a></li>
-<li><a href="#taylor-per-lesponenziale-di-e"><span class="toc-section-number">17.6.3</span> Taylor per l’esponenziale di e</a></li>
-<li><a href="#taylor-per-il-logaritmo-di-e"><span class="toc-section-number">17.6.4</span> Taylor per il logaritmo di e</a></li>
-<li><a href="#taylor-per-di-e"><span class="toc-section-number">17.6.5</span> Taylor per di e</a></li>
+<li><a href="#alcuni-polinomi-di-taylor"><span class="toc-section-number">17.6.3</span> Alcuni polinomi di taylor</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#possibili-esercizi"><span class="toc-section-number">18</span> Possibili Esercizi</a><ul>
@@ -1381,9 +1379,37 @@ altri esempi dopo pag 11 <a href="https://virtuale.unibo.it/pluginfile.php/10784
 <p>quindi</p>
 <p><span class="math inline">\(f(x)= f(0) + f&#39;(x)\times x + o(x)\)</span> per <span class="math inline">\(x\to 0\)</span></p>
 <p>quindi abbiamo trovato la retta tangente a x in 0</p>
-<h3 id="taylor-per-lesponenziale-di-e"><span class="header-section-number">17.6.3</span> Taylor per l’esponenziale di e</h3>
-<h3 id="taylor-per-il-logaritmo-di-e"><span class="header-section-number">17.6.4</span> Taylor per il logaritmo di e</h3>
-<h3 id="taylor-per-di-e"><span class="header-section-number">17.6.5</span> Taylor per di e</h3>
+<h3 id="alcuni-polinomi-di-taylor"><span class="header-section-number">17.6.3</span> Alcuni polinomi di taylor</h3>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>funzione in zero</th>
+<th>polinomio di taylor</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(e^x\)</span> in <span class="math inline">\(x\to 0\)</span></td>
+<td><span class="math inline">\(T_n(x)=\displaystyle \sum^n_{j=0} \frac{1}{j!} t^j\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\sin x\)</span> in <span class="math inline">\(x\to 0\)</span></td>
+<td><span class="math inline">\(T_n(x)=\displaystyle \sum^n_{j=0} \frac{(-1)^j\times t^{2j+1}}{(2j+1)!}+o(t^{2n+1})\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\cos x\)</span> in <span class="math inline">\(x\to 0\)</span></td>
+<td><span class="math inline">\(T_n(x)=\displaystyle \sum^n_{j=0} \frac{(-1)^j\times t^{2j}}{(2j)!}+o(t^{2n})\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\ln (x+1)\)</span> in <span class="math inline">\(x\to 0\)</span></td>
+<td><span class="math inline">\(T_n(x)=\displaystyle \sum^n_{j=1} \frac{(-1)^{j-1}\times t^{j}}{j}+o(t^n)\)</span></td>
+</tr>
+</tbody>
+</table>
 <h1 id="possibili-esercizi"><span class="header-section-number">18</span> Possibili Esercizi</h1>
 <h2 id="domande"><span class="header-section-number">18.1</span> Domande</h2>
 <ol type="1">

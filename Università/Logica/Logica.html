@@ -267,7 +267,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="#brouwer-heyting"><span class="toc-section-number">16.3.2</span> Brouwer Heyting</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#logica-di-prim-ordine"><span class="toc-section-number">17</span> Logica di prim ordine</a></li>
+<li><a href="#logica-di-primordine"><span class="toc-section-number">17</span> Logica di prim’ordine</a><ul>
+<li><a href="#quantificatori"><span class="toc-section-number">17.1</span> Quantificatori</a></li>
+<li><a href="#definizione-della-sintassi"><span class="toc-section-number">17.2</span> Definizione della Sintassi</a></li>
+</ul></li>
 </ul>
 </nav>
 <h1 id="docente"><span class="header-section-number">1</span> Docente</h1>
@@ -1312,18 +1315,26 @@ prendete una sfera piena la riempiamo di punti, è possibile tre insiemi di punt
 </details>
 <p><span class="math inline">\(\neg F \equiv F \implies \bot=\)</span> <span class="math inline">\(\llbracket \bot\rrbracket^{\llbracket F\rrbracket^v}=\llbracket \emptyset\rrbracket^{\llbracket F\rrbracket^v}=\begin{cases}\{\emptyset\} &amp; \mbox{ se } \llbracket F \rrbracket ^v = \emptyset \\ \emptyset &amp; \mbox{ se } \llbracket F \rrbracket ^v \neq \emptyset \end{cases}\)</span></p>
 <p><strong>teorema di compattezza</strong>: se esiste una conseguenza logica a partire da un insieme infinito di ipotesi, solo se esiste un insieme <span class="math inline">\(\delta\)</span> sottiinsieme di Gamma per cui vale la conseguenza logica F conseguenza logica di delta</p>
-<h1 id="logica-di-prim-ordine"><span class="header-section-number">17</span> Logica di prim ordine</h1>
+<p>TODO: da finire</p>
+<h1 id="logica-di-primordine"><span class="header-section-number">17</span> Logica di prim’ordine</h1>
 <blockquote>
-<p>Logica di prim ordine è molto utilizzata dai matematici</p>
+<p>Logica di prim0ordine è molto utilizzata dai matematici</p>
 </blockquote>
-<p>la <strong>Logica proposizionale</strong> è quella logica le cui connotazioni denotano tutte valori di verità</p>
-<p>è molto limitata quando si si sposta su <strong>oggetti infiniti</strong> ( non cattura i quantificatori , dicono quanto sia esteso l’insieme degli oggetti che soddisfa un predicato)</p>
-<p>quantificatori: ( unici quantificatori utilizzabili)</p>
+<p>la <strong>Logica proposizionale</strong> è quella logica le cui connotazioni denotano tutte valori di verità, è molto limitata quando si si sposta su <strong>oggetti infiniti</strong> ( <strong>non cattura i quantificatori </strong>, dicono quanto sia esteso l’insieme degli oggetti che soddisfa un predicato)</p>
+<h2 id="quantificatori"><span class="header-section-number">17.1</span> Quantificatori</h2>
 <ul>
-<li>esiste</li>
-<li>per ogni</li>
+<li>esiste <span class="math inline">\(\exists\)</span></li>
+<li>per ogni <span class="math inline">\(\forall\)</span></li>
 </ul>
-<p>i quantificatori possono essere utilizzati solo su elementi ( non preposizionei, funzioni etc..) u</p>
-<pre><code>v           </code></pre>
+<p>I quantificatori sono <strong>utilizzati sugli elementi</strong> del dominio, <strong>non</strong> sono utilizzabili su <strong>funzioni e predicati</strong></p>
+<h2 id="definizione-della-sintassi"><span class="header-section-number">17.2</span> Definizione della Sintassi</h2>
+<p>Oltre ai quantificatori definiamo:</p>
+<ul>
+<li>variabili: denotano un oggetto ignoto e variabile sul dominio (es x,y,z..)</li>
+<li>constanti: denotano un oggetto noto e fissato del dominio (es 1,0,<span class="math inline">\(\pi\)</span>,…)</li>
+<li>simboli di funzione: applicati a connotazioni di oggetti del dominio denotano un oggetto del dominio (es +,*,il fratello di …)</li>
+<li>simboli di predicato: applicati a connotazioni di oggetti del dominio denotano un valore di verità (es <span class="math inline">\(&lt;,le,=,...\)</span>)</li>
+</ul>
+<p><img src="vx_images/84383600816995.png" /></p>
 </body>
 </html>
