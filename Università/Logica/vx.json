@@ -7,7 +7,6 @@
             "id": "163",
             "modified_time": "2021-11-29T17:58:42Z",
             "name": "16-Connettivi della logica proporzionale classica.md",
-            "signature": "784285914928321746",
             "tags": [
             ]
         },
@@ -15,9 +14,17 @@
             "attachment_folder": "",
             "created_time": "2021-11-30T22:50:11Z",
             "id": "164",
-            "modified_time": "2021-11-30T23:08:09Z",
+            "modified_time": "2021-12-01T08:53:50Z",
             "name": "18-Logica intuizionista.md",
-            "signature": "4749813615709039267",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2021-12-01T08:56:38Z",
+            "id": "0",
+            "modified_time": "2021-12-01T09:54:20Z",
+            "name": "20-Logica di prim ordine.md",
             "tags": [
             ]
         }
@@ -26,6 +33,5 @@
     ],
     "id": "162",
     "modified_time": "",
-    "signature": "207324004547686",
-    "version": 3
+    "version": "1"
 }
