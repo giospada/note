@@ -71,3 +71,4 @@ $\llbracket \bot\rrbracket^{\llbracket F\rrbracket^v}=\llbracket \emptyset\rrbra
 **teorema di compattezza**: se esiste una conseguenza logica a partire da un insieme infinito di ipotesi, solo se esiste un insieme $\delta$ sottiinsieme di Gamma per cui vale la conseguenza logica F conseguenza logica di delta   	
 
 
+TODO: da finire
