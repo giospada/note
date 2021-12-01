@@ -51,6 +51,9 @@ Semantica di **Brouwer Heyting**
 **Semantica**:
 ![](vx_images/581501354927706.png)
 
+
+implica: F è un algoritmo che pracchiude anche G
+
 <details>
 <summary>
 esempio
@@ -58,3 +61,13 @@ esempio
 
 ![](vx_images/85421364797892.png)
 </details>
+
+
+$\neg F \equiv  F \implies \bot=$
+$\llbracket \bot\rrbracket^{\llbracket F\rrbracket^v}=\llbracket \emptyset\rrbracket^{\llbracket F\rrbracket^v}=\begin{cases}\{\emptyset\} & \mbox{ se } \llbracket F \rrbracket ^v = \emptyset \\  \emptyset & \mbox{ se } \llbracket F \rrbracket ^v \neq \emptyset \end{cases}$
+
+
+
+**teorema di compattezza**: se esiste una conseguenza logica a partire da un insieme infinito di ipotesi, solo se esiste un insieme $\delta$ sottiinsieme di Gamma per cui vale la conseguenza logica F conseguenza logica di delta   	
+
+
