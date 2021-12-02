@@ -149,4 +149,3 @@ quindi abbiamo trovato la retta tangente a x in 0
 | $\sin x$ in $x\to 0$    | $T_n(x)=\displaystyle \sum^n_{j=0} \frac{(-1)^j\times t^{2j+1}}{(2j+1)!}+o(t^{2n+1})$ |
 | $\cos x$ in $x\to 0$    | $T_n(x)=\displaystyle \sum^n_{j=0} \frac{(-1)^j\times t^{2j}}{(2j)!}+o(t^{2n})$       |
 | $\ln (x+1)$ in $x\to 0$ | $T_n(x)=\displaystyle \sum^n_{j=1} \frac{(-1)^{j-1}\times t^{j}}{j}+o(t^n)$           |
-
