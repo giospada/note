@@ -168,10 +168,10 @@
 <li><a href="#definizione-derivata"><span class="toc-section-number">14.2</span> Definizione Derivata</a><ul>
 <li><a href="#equazione-tangente"><span class="toc-section-number">14.2.1</span> Equazione Tangente</a></li>
 <li><a href="#teorema-dellalgebra-delle-derivate"><span class="toc-section-number">14.2.2</span> Teorema dell’algebra delle derivate</a></li>
-<li><a href="#drivate-delle-funzioni-goniometriche"><span class="toc-section-number">14.2.3</span> Drivate delle Funzioni Goniometriche</a></li>
-<li><a href="#derivata-esponenziale"><span class="toc-section-number">14.2.4</span> Derivata Esponenziale</a></li>
-<li><a href="#deriva-logaritmica"><span class="toc-section-number">14.2.5</span> Deriva Logaritmica</a></li>
-<li><a href="#derivate-funzioni-coposte"><span class="toc-section-number">14.2.6</span> Derivate funzioni coposte</a></li>
+<li><a href="#derivate-funzioni-coposte"><span class="toc-section-number">14.2.3</span> Derivate funzioni coposte</a></li>
+<li><a href="#drivate-delle-funzioni-goniometriche"><span class="toc-section-number">14.2.4</span> Drivate delle Funzioni Goniometriche</a></li>
+<li><a href="#derivata-esponenziale"><span class="toc-section-number">14.2.5</span> Derivata Esponenziale</a></li>
+<li><a href="#deriva-logaritmica"><span class="toc-section-number">14.2.6</span> Deriva Logaritmica</a></li>
 </ul></li>
 <li><a href="#teorema-deravibilità-e-continuità"><span class="toc-section-number">14.3</span> Teorema, deravibilità e continuità</a></li>
 <li><a href="#derivate-di-ordine-superiore"><span class="toc-section-number">14.4</span> Derivate di ordine superiore</a></li>
@@ -218,6 +218,8 @@
 <li><a href="#grado"><span class="toc-section-number">19.4.1</span> Grado</a></li>
 <li><a href="#simili"><span class="toc-section-number">19.4.2</span> Simili</a></li>
 </ul></li>
+<li><a href="#polinomio"><span class="toc-section-number">19.5</span> Polinomio</a></li>
+<li><a href="#scomposizione-di-polinomi"><span class="toc-section-number">19.6</span> Scomposizione di polinomi</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -367,7 +369,7 @@
 <p><strong>Sottrazione tra Insiemi</strong>: Dati due insiemi A e B crea un insieme che contiene tutti gli elementi di A che non appartengono in B</p>
 <p><span class="math inline">\(A \backslash B =\{x| x \in A \wedge x \notin B \}\)</span></p>
 <p><strong>Moltiplicazione Insiemi</strong>(prodotto cartesiano): associa ogni elemento dell’insieme A tutti gli elementi dell’insieme B creando delle coppie ordinate A,B sono insiemi<br />
-<span class="math inline">\(A\)</span> x <span class="math inline">\(B\)</span> = <span class="math inline">\(\{ (a,b) | a \in A \vee b \in B\}\)</span><br />
+<span class="math inline">\(A\)</span> x <span class="math inline">\(B\)</span> = <span class="math inline">\(\{ (a,b) | a \in A \wedge b \in B\}\)</span><br />
 <span class="math inline">\(A\)</span> x <span class="math inline">\(B \neq B\)</span> x <span class="math inline">\(A\)</span></p>
 <h1 id="logica"><span class="header-section-number">3</span> Logica</h1>
 <h2 id="preposizione"><span class="header-section-number">3.1</span> Preposizione</h2>
@@ -697,7 +699,7 @@ se A ammette sia un minorante che un maggiorante è limitato</p>
 <ul>
 <li>Ha come insieme dei massimandi <span class="math inline">\(M_g(A)=\{x \in \mathbb{R}| x \geq 4\}\)</span></li>
 <li>Ha come insieme dei massimandi <span class="math inline">\(M_g(A)=\{x \in \mathbb{R}| x \geq 3\}\)</span></li>
-<li>Ha un massimo 4:<span class="math inline">\(\max A = 5\)</span></li>
+<li>Ha un massimo 4:<span class="math inline">\(\max A = 4\)</span></li>
 <li>Non ha un minimo: <span class="math inline">\(\nexists \min A\)</span></li>
 <li><span class="math inline">\(\sup A= 4\)</span></li>
 <li><span class="math inline">\(\inf A= 3\)</span></li>
@@ -1171,19 +1173,19 @@ in tal caso, tale limite si chiama derivata di f in x_0, e si scrive:<br />
 </tr>
 </tbody>
 </table>
-<h3 id="drivate-delle-funzioni-goniometriche"><span class="header-section-number">14.2.3</span> Drivate delle Funzioni Goniometriche</h3>
+<h3 id="derivate-funzioni-coposte"><span class="header-section-number">14.2.3</span> Derivate funzioni coposte</h3>
+<p><strong>funzione composta</strong>: <span class="math inline">\(Df(g(x_0))=f&#39;(g(x_0))g&#39;(x_0)\)</span></p>
+<h3 id="drivate-delle-funzioni-goniometriche"><span class="header-section-number">14.2.4</span> Drivate delle Funzioni Goniometriche</h3>
 <p><strong>Funzioni Goniometriche</strong></p>
 <ol type="1">
 <li><span class="math inline">\(D \sin x=\cos x\)</span></li>
 <li><span class="math inline">\(D \cos x=-\sin x\)</span></li>
 <li><span class="math inline">\(D \tan x= \frac{1}{\cos^2 x}=1+\tan^2 x\)</span></li>
 </ol>
-<h3 id="derivata-esponenziale"><span class="header-section-number">14.2.4</span> Derivata Esponenziale</h3>
+<h3 id="derivata-esponenziale"><span class="header-section-number">14.2.5</span> Derivata Esponenziale</h3>
 <p><strong>Esponenziale</strong> <span class="math inline">\(Da^x=(\ln a)a^x\)</span></p>
-<h3 id="deriva-logaritmica"><span class="header-section-number">14.2.5</span> Deriva Logaritmica</h3>
+<h3 id="deriva-logaritmica"><span class="header-section-number">14.2.6</span> Deriva Logaritmica</h3>
 <p><strong>funzione logaritmica</strong>: <span class="math inline">\(D \log_a y= \frac{1}{\ln a }\times \frac{1}{y}\)</span></p>
-<h3 id="derivate-funzioni-coposte"><span class="header-section-number">14.2.6</span> Derivate funzioni coposte</h3>
-<p><strong>funzione composta</strong>: <span class="math inline">\(Df(g(x_0))=f&#39;(g(x_0))g&#39;(x_0)\)</span></p>
 <h2 id="teorema-deravibilità-e-continuità"><span class="header-section-number">14.3</span> Teorema, deravibilità e continuità</h2>
 <p>Dato I un intevallo <span class="math inline">\(\subset \mathbb{R}\)</span>, <span class="math inline">\(x_0 \in I\)</span>,<span class="math inline">\(f: I \to \mathbb{R}\)</span> si ha che:<br />
 se <span class="math inline">\(f\)</span> è derivabile in <span class="math inline">\(x_0 \implies f\)</span> è continua in <span class="math inline">\(x_0\)</span></p>
@@ -1382,8 +1384,8 @@ altri esempi dopo pag 11 <a href="https://virtuale.unibo.it/pluginfile.php/10784
 <h3 id="alcuni-polinomi-di-taylor"><span class="header-section-number">17.6.3</span> Alcuni polinomi di taylor</h3>
 <table>
 <colgroup>
-<col style="width: 21%" />
-<col style="width: 78%" />
+<col style="width: 23%" />
+<col style="width: 76%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1393,20 +1395,24 @@ altri esempi dopo pag 11 <a href="https://virtuale.unibo.it/pluginfile.php/10784
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math inline">\(e^x\)</span> in <span class="math inline">\(x\to 0\)</span></td>
-<td><span class="math inline">\(T_n(x)=\displaystyle \sum^n_{j=0} \frac{1}{j!} t^j\)</span></td>
+<td><span class="math inline">\(e^t\)</span> in <span class="math inline">\(t\to 0\)</span></td>
+<td><span class="math inline">\(T_n(t)=\displaystyle \sum^n_{j=0} \frac{1}{j!} t^j\)</span></td>
 </tr>
 <tr class="even">
-<td><span class="math inline">\(\sin x\)</span> in <span class="math inline">\(x\to 0\)</span></td>
-<td><span class="math inline">\(T_n(x)=\displaystyle \sum^n_{j=0} \frac{(-1)^j\times t^{2j+1}}{(2j+1)!}+o(t^{2n+1})\)</span></td>
+<td><span class="math inline">\(\sin t\)</span> in <span class="math inline">\(t\to 0\)</span></td>
+<td><span class="math inline">\(T_n(t)=\displaystyle \sum^n_{j=0} \frac{(-1)^j\times t^{2j+1}}{(2j+1)!}+o(t^{2n+1})\)</span></td>
 </tr>
 <tr class="odd">
-<td><span class="math inline">\(\cos x\)</span> in <span class="math inline">\(x\to 0\)</span></td>
-<td><span class="math inline">\(T_n(x)=\displaystyle \sum^n_{j=0} \frac{(-1)^j\times t^{2j}}{(2j)!}+o(t^{2n})\)</span></td>
+<td><span class="math inline">\(\cos t\)</span> in <span class="math inline">\(t\to 0\)</span></td>
+<td><span class="math inline">\(T_n(t)=\displaystyle \sum^n_{j=0} \frac{(-1)^j\times t^{2j}}{(2j)!}+o(t^{2n})\)</span></td>
 </tr>
 <tr class="even">
-<td><span class="math inline">\(\ln (x+1)\)</span> in <span class="math inline">\(x\to 0\)</span></td>
-<td><span class="math inline">\(T_n(x)=\displaystyle \sum^n_{j=1} \frac{(-1)^{j-1}\times t^{j}}{j}+o(t^n)\)</span></td>
+<td><span class="math inline">\(\ln (t+1)\)</span> in <span class="math inline">\(t\to 0\)</span></td>
+<td><span class="math inline">\(T_n(t)=\displaystyle \sum^n_{j=1} \frac{(-1)^{j-1}\times t^{j}}{j}+o(t^n)\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\((t+1)^\alpha\)</span> in <span class="math inline">\(t\to 0\)</span></td>
+<td><span class="math inline">\(T_n(t)=\displaystyle \sum^n_{j=0} \binom{\alpha}{j}\times t^{j}+o(t^n)\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -1449,6 +1455,17 @@ con <span class="math inline">\(\# S\)</span> indichiamo il numero di soluzioni
 <blockquote>
 <p>Due monomi sono <strong>simili</strong> se hanno la stessa parte letterale</p>
 </blockquote>
-<p>TODO:da completare</p>
+<h2 id="polinomio"><span class="header-section-number">19.5</span> Polinomio</h2>
+<blockquote>
+<p>Polinomio è una somma di monomi non tutti simili</p>
+</blockquote>
+<h2 id="scomposizione-di-polinomi"><span class="header-section-number">19.6</span> Scomposizione di polinomi</h2>
+<ol type="1">
+<li><span class="math inline">\(a^2-b^2=(a-b)(a+b)\)</span></li>
+<li><span class="math inline">\(a^3-b^3=(a-b)(a^2+2ab+b^2)\)</span></li>
+<li><span class="math inline">\(a^3+b^3=(a+b)(a^2-2ab+b^2)\)</span></li>
+</ol>
+<p><strong>generalizzato</strong></p>
+<p><span class="math inline">\(a^n-b^n=(a-b)\displaystyle \sum^{n-1}_{k=0}a^{n-1-k}b^k \space \forall n \in \mathbb{Z}^+\)</span></p>
 </body>
 </html>
