@@ -45,21 +45,19 @@ es
 
 ### Connettivi ridondanti
 
-> Definizione: un insieme di connettivi è ridondante se contiene
-> un connettivo riducibile ai restanti
+Definizione: un insieme di connettivi è ridondante se contiene un connettivo riducibile ai restanti
 
 
 ### Funzionalmente Completo
 
-> Definizione: un insieme di connettivi è funzionalmente
-> completo se ogni altro connettivo e riducibile a questi 
+Definizione: un insieme di connettivi è funzionalmente completo se ogni altro connettivo e riducibile a questi 
 
 
 ## Insiemi funzionalmente completi
 
-Esistono insiemi funzionalmente completi come ${\vee,\wedge,\bot,\top,\neg}$ (è ridondante per $\bot\equiv A \wedge \neg A$)
+Esistono insiemi funzionalmente completi come $\{\vee,\wedge,\bot,\top,\neg\}$ (è ridondante per $\bot\equiv A \wedge \neg A$)
 
-Qual'è l'insieme funzionalmente completo con cardinalità minima (l'esempio prima è ridondante), l'insieme ${\vee,\neg}$ è funzionalmente completo e non ridondante
+Qual'è l'insieme funzionalmente completo con cardinalità minima (l'esempio prima è ridondante), l'insieme $\{\vee,\neg\}$ è funzionalmente completo e non ridondante
 
 
 ## Scelta dei connettivi

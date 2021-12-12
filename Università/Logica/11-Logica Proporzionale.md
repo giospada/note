@@ -92,3 +92,24 @@ Utilizziamo 0 e 1, per denotare la falsità e la verità
 - $\llbracket  F_1 \wedge F_2 \rrbracket^v=\min \{\llbracket  F_1 \rrbracket^v, \llbracket  F_2 \rrbracket^v\}$
 - $\llbracket  F_1 \vee F_2 \rrbracket^v=\max\{\llbracket  F_1 \rrbracket^v, \llbracket  F_2 \rrbracket^v\}$
 - $\llbracket  F_1 \implies F_2 \rrbracket^v=\max\{1-\llbracket  F_1 \rrbracket^v, \llbracket  F_2\rrbracket^v\}$
+
+
+### Tabelle Di Verità
+
+Possiamo creare delle tabelle di verità per la logica proporzionale(**cosa che non sarà possibile con la logica di prim'ordine**)  
+Per creare la tabella di verità ci serve sapere **quali variabili compaiono ella formula**; per farlo prima definiamo una funzione in ricorsione strutturale che a partire da una formula ci da l'insieme delle variabili che appartengono.
+
+<details>
+<summary>
+Definizione di Var(F) 
+</summary>
+
+![](vx_images/426991120259477.png)
+
+</details>
+
+
+Ora possiamo creare la tabella di verità con $n=|Var(F)|$ che il numero di variabili e $2^n$ che è il numero di righe.
+
+> NOTA: **Ogni riga rappresenta un insieme di mondi** che **concordano su un numero finito di variabili** e il numero di tali insiemi è finito
+

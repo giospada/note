@@ -1,4 +1,0 @@
-# Connettivi Logici
-
-
-

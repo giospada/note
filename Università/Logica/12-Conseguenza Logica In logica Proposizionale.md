@@ -1,13 +1,26 @@
 # Conseguenza Logica
 
-## Conseguenza Logica e tabella di verità 
+## Conseguenza Logica 
 > $\Gamma \Vdash F$ (conseguenza logica) quando per ogni mondo v si ha che, $\llbracket  G\rrbracket^v=1$ per ogni $G \in \Gamma$, allora $\llbracket  F\rrbracket^v=1$
+
+### Tabella di verità 
 
 $\Gamma \Vdash F$  è rappresentabile con tabelle di verità, ma solo se $\Gamma$ è un insieme finito
 
+<details>
+<summary>
+Importante
+</summary>
+
+![](vx_images/442124002817000.png)
+
+</details>
+
 ![](vx_images/5947726596008.png)
 
-## Tautologica e non 
+
+
+## Tautologica 
 
 > F è tautologica quando $\Vdash F$ (F è conseguenza logica dell'insieme vuoto)
 
@@ -25,7 +38,7 @@ $A\implies A$
 </details>
 
 
-## Soddisfacibile e non
+## Soddisfacibile 
 
 > F è soddisfacibile quando esiste un mondo v tale che $v \Vdash F$
 
@@ -53,7 +66,7 @@ $A \wedge \neg A$
 
 </details>
 
-## Equivalenza e tabella di verità
+## Equivalenza 
 
 F e G sono logicamente equivalenti $F \equiv G$ quando **le loro tabelle diverità sono identiche**
 

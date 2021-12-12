@@ -143,9 +143,10 @@ quindi abbiamo trovato la retta tangente a x in 0
 
 ### Alcuni polinomi di taylor
 
-|    funzione in zero     |                                  polinomio di taylor                                  |
-| ----------------------- | ------------------------------------------------------------------------------------- |
-| $e^x$ in $x\to 0$       | $T_n(x)=\displaystyle \sum^n_{j=0} \frac{1}{j!} t^j$                                  |
-| $\sin x$ in $x\to 0$    | $T_n(x)=\displaystyle \sum^n_{j=0} \frac{(-1)^j\times t^{2j+1}}{(2j+1)!}+o(t^{2n+1})$ |
-| $\cos x$ in $x\to 0$    | $T_n(x)=\displaystyle \sum^n_{j=0} \frac{(-1)^j\times t^{2j}}{(2j)!}+o(t^{2n})$       |
-| $\ln (x+1)$ in $x\to 0$ | $T_n(x)=\displaystyle \sum^n_{j=1} \frac{(-1)^{j-1}\times t^{j}}{j}+o(t^n)$           |
+|      funzione in zero      |                                  polinomio di taylor                                  |
+| -------------------------- | ------------------------------------------------------------------------------------- |
+| $e^t$ in $t\to 0$          | $T_n(t)=\displaystyle \sum^n_{j=0} \frac{1}{j!} t^j$                                  |
+| $\sin t$ in $t\to 0$       | $T_n(t)=\displaystyle \sum^n_{j=0} \frac{(-1)^j\times t^{2j+1}}{(2j+1)!}+o(t^{2n+1})$ |
+| $\cos t$ in $t\to 0$       | $T_n(t)=\displaystyle \sum^n_{j=0} \frac{(-1)^j\times t^{2j}}{(2j)!}+o(t^{2n})$       |
+| $\ln (t+1)$ in $t\to 0$    | $T_n(t)=\displaystyle \sum^n_{j=1} \frac{(-1)^{j-1}\times t^{j}}{j}+o(t^n)$           |
+| $(t+1)^\alpha$ in $t\to 0$ | $T_n(t)=\displaystyle \sum^n_{j=0} \binom{\alpha}{j}\times t^{j}+o(t^n)$              |

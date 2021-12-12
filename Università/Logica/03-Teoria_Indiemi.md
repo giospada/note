@@ -43,7 +43,7 @@ per ogni insieme X e Y, X e Y sono uguali se e solo se per ogni Z appartiene a X
 
 > X è sottoinsieme di Y se Y possiede tutti gli elementi di X
 
-$X \subseteq Y =^{def}= \forall Z, (X \in X \implies Z \in Y)$
+$X \subseteq Y =^{def}= \forall Z, (Z \in X \implies Z \in Y)$
 
 
 definisco che X è sottoinsieme di Y quando per ogni Z , Z appartiene a X implica che Z appartiene a Y
