@@ -99,7 +99,7 @@ $f \in C^k (I) \iff \begin{cases}f \mbox{ è derivabile k-volte su }I_j  \\ f^k\
 $f:[a,b]\to \mathbb{R}$  
 
 1. $x_0 \in ]a,b[$ punto di massimo o minimo relativo
-2. $f$ è derivabile in $x_0"
+2. $f$ è derivabile in $x_0$
 
 Allora:  
 $f'(x_0)=0$

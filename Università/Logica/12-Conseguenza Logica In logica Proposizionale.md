@@ -1,7 +1,10 @@
 # Conseguenza Logica
 
 ## Conseguenza Logica 
-> $\Gamma \Vdash F$ (conseguenza logica) quando per ogni mondo v si ha che, $\llbracket  G\rrbracket^v=1$ per ogni $G \in \Gamma$, allora $\llbracket  F\rrbracket^v=1$
+$\Gamma \Vdash F$ (conseguenza logica) quando per ogni mondo v si ha che, $\llbracket  G\rrbracket^v=1$ per ogni $G \in \Gamma$, allora $\llbracket  F\rrbracket^v=1$
+
+Riscritta:
+$\Gamma \Vdash F \iff \forall v(\forall G \in \Gamma, \llbracket G\rrbracket^v =1)\implies \llbracket  F\rrbracket^v =1$
 
 ### Tabella di verità 
 
