@@ -65,7 +65,7 @@
             "attachment_folder": "",
             "created_time": "2021-12-06T17:18:50Z",
             "id": "181",
-            "modified_time": "2021-12-06T19:39:30Z",
+            "modified_time": "2021-12-26T17:07:47Z",
             "name": "12-Conseguenza Logica In logica Proposizionale.md",
             "signature": "8927815551941494266",
             "tags": [
@@ -158,6 +158,16 @@
             "modified_time": "2021-12-06T17:18:56Z",
             "name": "02-Paradossi.md",
             "signature": "7466934429671114240",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2021-12-15T08:19:30Z",
+            "id": "182",
+            "modified_time": "2021-12-15T09:25:17Z",
+            "name": "22-Astrazione e Genarlizzazione in matematica e programmazione.md",
+            "signature": "207324005901586",
             "tags": [
             ]
         }

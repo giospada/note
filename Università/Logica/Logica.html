@@ -272,10 +272,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="#quantificatori"><span class="toc-section-number">15.1</span> Quantificatori</a></li>
 <li><a href="#definizione-della-sintassi"><span class="toc-section-number">15.2</span> Definizione della Sintassi</a></li>
 </ul></li>
-<li><a href="#logica-1"><span class="toc-section-number">16</span> 08 Logica</a><ul>
-<li><a href="#funzioni-matematiche-e-informatiche"><span class="toc-section-number">16.1</span> Funzioni Matematiche e Informatiche</a><ul>
-<li><a href="#dimostrazione-che-è-uguale-a"><span class="toc-section-number">16.1.1</span> Dimostrazione che +’ è uguale a ’+</a></li>
-<li><a href="#altre-prove"><span class="toc-section-number">16.1.2</span> Altre prove</a></li>
+<li><a href="#astrazione-in-matematica-e-informatica"><span class="toc-section-number">16</span> Astrazione in matematica e informatica</a><ul>
+<li><a href="#introduzione-1"><span class="toc-section-number">16.1</span> Introduzione</a></li>
+<li><a href="#astrazione-e-generalizzazione"><span class="toc-section-number">16.2</span> Astrazione e Generalizzazione</a><ul>
+<li><a href="#benefici-dellastrazione-e-generalizzazione"><span class="toc-section-number">16.2.1</span> Benefici dell’astrazione e generalizzazione</a></li>
+</ul></li>
+<li><a href="#tesi-di-church-turing"><span class="toc-section-number">16.3</span> Tesi di Church-Turing</a></li>
+<li><a href="#strutture-algebriche"><span class="toc-section-number">16.4</span> Strutture Algebriche</a></li>
+</ul></li>
+<li><a href="#logica-1"><span class="toc-section-number">17</span> 08 Logica</a><ul>
+<li><a href="#funzioni-matematiche-e-informatiche"><span class="toc-section-number">17.1</span> Funzioni Matematiche e Informatiche</a><ul>
+<li><a href="#dimostrazione-che-è-uguale-a"><span class="toc-section-number">17.1.1</span> Dimostrazione che +’ è uguale a ’+</a></li>
+<li><a href="#altre-prove"><span class="toc-section-number">17.1.2</span> Altre prove</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -958,9 +966,8 @@ Per creare la tabella di verità ci serve sapere <strong>quali variabili compaio
 </blockquote>
 <h1 id="conseguenza-logica-1"><span class="header-section-number">11</span> Conseguenza Logica</h1>
 <h2 id="conseguenza-logica-2"><span class="header-section-number">11.1</span> Conseguenza Logica</h2>
-<blockquote>
 <p><span class="math inline">\(\Gamma \Vdash F\)</span> (conseguenza logica) quando per ogni mondo v si ha che, <span class="math inline">\(\llbracket G\rrbracket^v=1\)</span> per ogni <span class="math inline">\(G \in \Gamma\)</span>, allora <span class="math inline">\(\llbracket F\rrbracket^v=1\)</span></p>
-</blockquote>
+<p>Riscritta: <span class="math inline">\(\Gamma \Vdash F \iff \forall v(\forall G \in \Gamma, \llbracket G\rrbracket^v =1)\implies \llbracket F\rrbracket^v =1\)</span></p>
 <h3 id="tabella-di-verità"><span class="header-section-number">11.1.1</span> Tabella di verità</h3>
 <p><span class="math inline">\(\Gamma \Vdash F\)</span> è rappresentabile con tabelle di verità, ma solo se <span class="math inline">\(\Gamma\)</span> è un insieme finito</p>
 <details>
@@ -1308,8 +1315,39 @@ prendete una sfera piena la riempiamo di punti, è possibile tre insiemi di punt
 <li>simboli di predicato: applicati a connotazioni di oggetti del dominio denotano un valore di verità (es <span class="math inline">\(&lt;,le,=,...\)</span>)</li>
 </ul>
 <p><img src="vx_images/84383600816995.png" /></p>
-<h1 id="logica-1"><span class="header-section-number">16</span> 08 Logica</h1>
-<h2 id="funzioni-matematiche-e-informatiche"><span class="header-section-number">16.1</span> Funzioni Matematiche e Informatiche</h2>
+<h1 id="astrazione-in-matematica-e-informatica"><span class="header-section-number">16</span> Astrazione in matematica e informatica</h1>
+<h2 id="introduzione-1"><span class="header-section-number">16.1</span> Introduzione</h2>
+<p>Mentre la matematica ha avuto millenni in cui si è sviluppato un modello di astrzione e generalizzazione.</p>
+<p>Mentre nell’informatica si stanno provando più modi di astrzione e generallizazione ma non si è ancrora arrivati ad uno senza problemi logici</p>
+<h2 id="astrazione-e-generalizzazione"><span class="header-section-number">16.2</span> Astrazione e Generalizzazione</h2>
+<blockquote>
+<p>Processo tipico della matematica che permette di definire enti, concetti o procedure matematiche, estraendo e isolando alcune caratteristiche comuni a pi `u oggetti e trascurandone altre</p>
+</blockquote>
+<details>
+<p><summary> esempio matematica </summary></p>
+<p><img src="vx_images/562534191817009.png" /></p>
+</details>
+<details>
+<p><summary> esempio informatica </summary></p>
+<p><img src="vx_images/297755400606101.png" /></p>
+</details>
+<blockquote>
+<p>Generalizzare significa prendere una definizione o una relazione che si applica a certi casi, e definirla in un nuovo modo tale che nei casi di prima dia gli stessi risultati, però si applichi anche ad altri casi.</p>
+</blockquote>
+<h3 id="benefici-dellastrazione-e-generalizzazione"><span class="header-section-number">16.2.1</span> Benefici dell’astrazione e generalizzazione</h3>
+<ol type="1">
+<li>Riuso: le buone generalizzazioni si applicano moltissime volte</li>
+<li>Chiarezza: le generalizzazioni catturano concetti di alto livello</li>
+<li>Decoupling: attraverso astrazione e generalizzazione è possibile fare in modo che la chiarezza di una parete non dipena dall’implementazione di un altra</li>
+<li>Correttezza: l’alternativa al riuso è il cut&amp;paste che può propagare errori, da correggere poi in tutte le copie, e introdurre errori quando il codice viene riusato ove non valgano gli stessi invarianti sui dati</li>
+</ol>
+<h2 id="tesi-di-church-turing"><span class="header-section-number">16.3</span> Tesi di Church-Turing</h2>
+<blockquote>
+<p>Qualunque problema di calcolo risolvibile da un linguaggio di programmazione general-purpose lo `e da qualunque altro linguaggio general-purpose</p>
+</blockquote>
+<h2 id="strutture-algebriche"><span class="header-section-number">16.4</span> Strutture Algebriche</h2>
+<h1 id="logica-1"><span class="header-section-number">17</span> 08 Logica</h1>
+<h2 id="funzioni-matematiche-e-informatiche"><span class="header-section-number">17.1</span> Funzioni Matematiche e Informatiche</h2>
 <p><strong>Matematica</strong>: l’operazine <span class="math inline">\(+\)</span> è una funzione, qundi un sottonsineme del prodotto cartesiano.(es <span class="math inline">\(+ =\{\langle \langle 0 ,0\rangle\,0 \rangle, \langle \langle 3, 7 \rangle, 10\rangle ...\}\)</span>)</p>
 <p><strong>Informatica</strong> viene definita come una procedura di calcolo, partendo dai i numeri in base uno <code>N = O | S R</code>, possiamo definiral in 4 modi.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb2-1"><a href="#cb2-1"></a></span>
@@ -1343,7 +1381,7 @@ prendete una sfera piena la riempiamo di punti, è possibile tre insiemi di punt
 <p>la prima funzione utilizza le cella dello stack mentre la seconda della heap.</p>
 <p><strong>Queste funzioni sono uguali, e sono uguali a quella matematica?</strong></p>
 <p>Per definzione bisogna avere il dominio e il codominio uguale con la stessa legge d’associzione.</p>
-<h3 id="dimostrazione-che-è-uguale-a"><span class="header-section-number">16.1.1</span> Dimostrazione che +’ è uguale a ’+</h3>
+<h3 id="dimostrazione-che-è-uguale-a"><span class="header-section-number">17.1.1</span> Dimostrazione che +’ è uguale a ’+</h3>
 <blockquote>
 <p>lemma1 : m = O +’ m</p>
 </blockquote>
@@ -1362,7 +1400,7 @@ prendete una sfera piena la riempiamo di punti, è possibile tre insiemi di punt
 <p>Procediamo per ricorsione strutturale su n per dimostrare <span class="math inline">\(\forall\)</span> m. n ‘+m = n +’ m</p>
 <p><strong>Caso 0:</strong> dimostro <span class="math inline">\(\forall m.\)</span> O ‘+m= O +` m ovvero <span class="math inline">\(\forall\)</span> m= 0 +’ m ovvio per lemma1</p>
 <p><strong>Caso S x:</strong> per induzione strutturale <span class="math inline">\(\forall\)</span> m x ‘+ m = x +’ m (H) devo dimostrarem <span class="math inline">\(\forall\)</span> m S x ‘+ m = S x +’ m ovvero <span class="math inline">\(\forall\)</span>m S (x ‘+ m)= S x +’ m siam m un numero per ipotesi H possiamo riscrivere S ( x +’ m) = S x +’ m ovvio per lemma2</p>
-<h3 id="altre-prove"><span class="header-section-number">16.1.2</span> Altre prove</h3>
+<h3 id="altre-prove"><span class="header-section-number">17.1.2</span> Altre prove</h3>
 <p><code>nth  n l</code> ( restutiusce l’n-esimo elemento di l se l è sufficentemente lunga)</p>
 <p>la definisco per ricorsione strutturale su n:</p>
 <ul>
