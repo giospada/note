@@ -6,6 +6,28 @@ $\Gamma \Vdash F$ (conseguenza logica) quando per ogni mondo v si ha che, $\llbr
 Riscritta:
 $\Gamma \Vdash F \iff \forall v(\forall G \in \Gamma, \llbracket G\rrbracket^v =1)\implies \llbracket  F\rrbracket^v =1$
 
+
+## Equivalenza 
+
+Come già anticipato:  
+$F \equiv G$ quando $F \Vdash G$ e $G \Vdash F$  
+Oppure si può dire:  
+$F \equiv G$ quando per ogni mondo v , $\llbracket  F\rrbracket^v = \llbracket  G\rrbracket^v$
+
+
+Nella logica **classica** si può anche dire:  
+
+F e G sono logicamente equivalenti $F \equiv G$ quando **le loro tabelle diverità sono identiche**
+
+<details>
+<summary>
+esempio
+</summary>
+
+![](vx_images/1099714806916.png)
+</details>
+
+
 ### Tabella di verità 
 
 $\Gamma \Vdash F$  è rappresentabile con tabelle di verità, ma solo se $\Gamma$ è un insieme finito
@@ -67,18 +89,6 @@ esempio
 
 $A \wedge \neg A$
 
-</details>
-
-## Equivalenza 
-
-F e G sono logicamente equivalenti $F \equiv G$ quando **le loro tabelle diverità sono identiche**
-
-<details>
-<summary>
-esempio
-</summary>
-
-![](vx_images/1099714806916.png)
 </details>
 
 

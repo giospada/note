@@ -2,7 +2,7 @@
 
 ## Teorema di deduzione semantica
 
-> **Deduzione semantica** per ogni formula F e G si ha $\Gamma \Vdash F \implies G \mbox{  sse  } \Gamma,F \Vdash G$
+**Deduzione semantica** per ogni formula F e G si ha $\Gamma \Vdash F \implies G \mbox{  sse  } \Gamma,F \Vdash G$
 
 <details>
 <summary>

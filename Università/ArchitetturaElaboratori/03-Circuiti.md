@@ -52,9 +52,11 @@ $\bar{A}A=0$
 
 ## Funzioni booleane e tabelle di verità
 
-Un circuito non si può descrivere anche con una tabella di verità  
+Una **funzione booleana** associa alle variabili booleane in input un valore booleano in output
 
->`tabella di verità` mappa tutti gli input con i risultato l'output (ha $2^n$ mintermini/righe)
+Non tutti i circuiti si possono descrivere con delle tabelle di verità.
+
+>**tabella di verità** mappa tutti gli input con i risultato l'output (ha $2^n$ mintermini/righe)
 
 > **letterale**: una variabile
 
@@ -93,7 +95,7 @@ fare la tabella di verità su $A+ \overline{ (B+C) } B$
 
 $A+ \overline{ (B+C) } B$  
 $A+\bar{B}\bar{C}B$  
-$A+0$
+$A+1$
 
 
 ## Mappe di Karnaugh
