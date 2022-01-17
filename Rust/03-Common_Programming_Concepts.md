@@ -275,3 +275,36 @@ fn main() {
 ```
 
 ### While
+
+```rust
+while boolean_expression{
+    
+}
+}
+```
+
+### For
+
+Serve per iterare su una collezione(esempio iterare su un array).
+
+```rust
+fn main() {
+    let array = [10, 20, 30, 40, 50];
+
+    for element in array {
+        println!("the value is: {}", element);
+    }
+}
+```
+
+Inoltre può tornare utile con **Range** definito dalla standard library con cui si può definire su quanto iterare.
+
+esempio
+```rust
+fn main() {
+    for number in (1..4).rev() {
+        println!("{}!", number);
+    }
+    println!("LIFTOFF!!!");
+}
+```
