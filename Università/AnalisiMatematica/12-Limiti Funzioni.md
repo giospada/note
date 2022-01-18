@@ -248,9 +248,9 @@ $f$ si dice **continua in $x_0$** se:
 2. $x_0 \in D(A) \implies \displaystyle \lim_{x \rightarrow \infty} f(x)=f(x_0)$
 
 
-##### Algerba tra le funzioni continue
+##### Algebra tra le funzioni continue
 
-date f e g due cunzioni continue allora:
+date f e g due funzioni continue allora:
 
 1. $f \pm g$ è continua in $x_0$
 2. $\displaylines{c \in \mathbb{R} & cf(x)}$ è continua in $x_0$

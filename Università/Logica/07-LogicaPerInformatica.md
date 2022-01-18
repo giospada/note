@@ -32,8 +32,8 @@ Esempio:
 
 Di solito di una BNF si indicano solamente le produzioni P:
 - i **simboli non terminali** sono allora tutti quelli con cui iniziano le produzioni
-- i **simboli terminali **sono tutti i simboli delle produzioni esclusi i non terminali
-- il **simbolo iniziale **è il simbolo con cui inizia la prima produzione
+- i **simboli terminali** sono tutti i simboli delle produzioni esclusi i non terminali
+- il **simbolo iniziale** è il simbolo con cui inizia la prima produzione
 
 <details>
 <summary>
@@ -140,6 +140,14 @@ Una funzione $f(\omega)$ dove $\omega$ è una stringa (formula) è definita per
 ricorsione strutturale sse:
 1. $f$ considera tutte le possibili produzioni che definiscono $\omega$ una e una volta sola
 2. per ogni produzione f si richiama ricorsivamente solamente sulle sottoformule immediate di $\omega$
+
+
+### Convergenza Ricorsione Strutturale
+
+**Teorema:** tutte le funzioni definite per ricorsione strutturale
+convergono su ogni input.  
+
+**Dimostrazione:** a ogni chiamata ricorsiva, il numero di espansioni di non terminali necessarie per ottenere la stringa in input cala di 1 e, prima o poi, arriva a 0
 
 ## Induzione Strutturale
 

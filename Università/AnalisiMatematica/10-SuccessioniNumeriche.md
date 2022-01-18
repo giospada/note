@@ -128,7 +128,7 @@ Forme Indeterminate $0\times (\pm \infty)$
 
 
 $$\frac{a_n}{b_n} \rightarrow \begin{cases}
-l_1\times l_2 &\text{se } l_1,l_2 \in \mathbb{R} \\
+\frac{l_1}{l_2} &\text{se } l_1,l_2 \in \mathbb{R} \\
 +\infty &\text{se } l_1=+\infty,l_2 \in l_2>0 \\
 +\infty &\text{se } l_1=-\infty,l_2 \in l_2<0 \\
 -\infty &\text{se } l_1=-\infty,l_2 \in l_2>0 \\

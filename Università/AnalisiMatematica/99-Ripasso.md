@@ -31,5 +31,18 @@ $|a| = \begin{cases} a & \mbox{se} & a\ge 0 \\ -a & \mbox{se} & a <0\end{cases}$
 
 > Due monomi sono **simili** se hanno la stessa parte letterale
 
+## Polinomio
 
-TODO:da completare
+> Polinomio è una somma di monomi non tutti simili
+
+## Scomposizione di polinomi
+
+1. $a^2-b^2=(a-b)(a+b)$
+1. $a^3-b^3=(a-b)(a^2+2ab+b^2)$
+1. $a^3+b^3=(a+b)(a^2-2ab+b^2)$
+
+
+**generalizzato**
+
+$a^n-b^n=(a-b)\displaystyle \sum^{n-1}_{k=0}a^{n-1-k}b^k \space \forall n \in \mathbb{Z}^+$
+

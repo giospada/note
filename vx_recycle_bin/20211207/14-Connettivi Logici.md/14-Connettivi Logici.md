@@ -1,0 +1,6 @@
+# Connettivi Logici Logica Classica
+
+## 
+
+
+

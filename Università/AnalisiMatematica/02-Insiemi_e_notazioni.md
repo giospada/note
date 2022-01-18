@@ -61,5 +61,5 @@ $A \backslash B =\{x| x \in A \wedge x \notin B \}$
 
 **Moltiplicazione Insiemi**(prodotto cartesiano): associa ogni elemento dell'insieme A tutti gli elementi dell'insieme B creando delle coppie ordinate
 A,B sono insiemi  
-$A$ x $B$ = $\{ (a,b) | a \in A \vee b \in B\}$  
+$A$ x $B$ = $\{ (a,b) | a \in A \wedge b \in B\}$  
 $A$ x $B \neq B$ x $A$

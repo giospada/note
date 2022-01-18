@@ -118,7 +118,7 @@ Q a differenza di R non ha sempre la proprietà di avere un massimando e un mino
 L'intervallo $A = ]3,4]$ :
 - Ha come insieme dei massimandi $M_g(A)=\{x \in \mathbb{R}| x \geq 4\}$
 - Ha come insieme dei massimandi $M_g(A)=\{x \in \mathbb{R}| x \geq 3\}$
-- Ha un massimo 4:$\max A = 5$
+- Ha un massimo 4:$\max A = 4$
 - Non ha un minimo: $\nexists \min A$
 - $\sup A= 4$
 - $\inf A= 3$

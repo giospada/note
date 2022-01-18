@@ -57,7 +57,7 @@ Sia $\Gamma$ un **insieme di sentenze** (costituiscono dei vincoli che i mondi d
 
 ## Equivalenza Logica
 
-> Siano F e G due sentenze, F è **logicamente equivalente** a G (si scrive $F \equiv G$) sse $F \Vdash G \mbox{ e } G \Vdash F$
+Siano F e G due sentenze, F è **logicamente equivalente** a G (si scrive $F \equiv G$) sse $F \Vdash G \mbox{ e } G \Vdash F$
 
 
 

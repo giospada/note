@@ -29,8 +29,8 @@ Siano x e y due connotazioni per la stessa denotazione.**Il principio di invaria
 
 
 Piano:
-1. definiamo la **sintassi **delle nostre logiche (**connotazioni**)
-2. definiremo la **semantica **delle nostre logiche (**denotazioni**)
+1. definiamo la **sintassi** delle nostre logiche (**connotazioni**)
+2. definiremo la **semantica** delle nostre logiche (**denotazioni**)
 3. dimostriamo che **vale il principio di invarianza** per sostituzione
 
 **Fissiamo della semantica**, in particolare fissiamo **l'interpretazione dei connettivi**, perché se no ogni cosa può significare qualsiasi cosa:  

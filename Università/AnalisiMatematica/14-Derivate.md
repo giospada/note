@@ -42,6 +42,9 @@ $f,g$ sono derivabili in $x_0$, allora:
 | $f \times g$ è derivabile in $x_0$  | $(f\times g)'(x_0)=f'(x_0)\times g(x_0)+ f(x_0)\times g'(x_0)$                     |
 | $\frac{f}{g}$ è derivabile in $x_0$ | $(\frac{f}{g})'(x_0)=\frac{f'(x_0)\times g(x_0)-f(x_0)\times g'(x_0)}{(g(x_0))^2}$ |
 
+### Derivate funzioni coposte
+
+**funzione composta**: $Df(g(x_0))=f'(g(x_0))g'(x_0)$
 
 ### Drivate delle Funzioni Goniometriche
 
@@ -60,10 +63,6 @@ $Da^x=(\ln a)a^x$
 **funzione logaritmica**:
 $D \log_a y= \frac{1}{\ln a }\times \frac{1}{y}$
 
-### Derivate funzioni coposte
-
-**funzione composta**:
-$Df(g(x_0))=f'(g(x_0))g'(x_0)$
 
 ## Teorema, deravibilità e continuità
 
@@ -100,7 +99,7 @@ $f \in C^k (I) \iff \begin{cases}f \mbox{ è derivabile k-volte su }I_j  \\ f^k\
 $f:[a,b]\to \mathbb{R}$  
 
 1. $x_0 \in ]a,b[$ punto di massimo o minimo relativo
-2. $f$ è derivabile in $x_0"
+2. $f$ è derivabile in $x_0$
 
 Allora:  
 $f'(x_0)=0$
