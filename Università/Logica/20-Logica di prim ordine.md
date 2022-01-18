@@ -21,8 +21,52 @@ Oltre ai quantificatori definiamo:
 
 ![](vx_images/84383600816995.png)
 
+Ultima logica in cui vale la competenza e in alcuni casi anche la compattenza
 
 
+
+## Formalizzazione
+
+i quantificatori che abbiamo utilizzato non riescono a catturare tutti i quantificatori
+
+### Binder
+
+i quantificatori sono cais particolari di binder
+
+Un binder **lega** una variabile di uno scope.
+
+dentro lo scope la variabile verrà sostituita con un valore.
+
+<details>
+<summary>
+esempi
+</summary>
+
+$\forall x. P$, una volta che calcola per tutti gli x prende il minimo
+
+
+</details>
+
+
+shodowing: qunado una variabile non è più utilizzabile in uno scope perchè è stata dichiarata in uno scope più interno
+
+1. **collegare** ongi occorrenza di una variabile legata con un binder
+
+
+![](vx_images/4954654139474.png)
+
+
+
+
+
+
+![](vx_images/5586110706997.png)		
+
+
+
+## Semantica
+
+> un mondo o interpretazione per la logica del primo ordine è una coppia (A,i) dove A è un insieme non vuoto di denotazioni per i termini e l è una funzioen di interpretazione che associa
 
 
 
