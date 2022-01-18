@@ -276,6 +276,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="#logica-di-primordine"><span class="toc-section-number">15</span> Logica di prim’ordine</a><ul>
 <li><a href="#quantificatori"><span class="toc-section-number">15.1</span> Quantificatori</a></li>
 <li><a href="#definizione-della-sintassi"><span class="toc-section-number">15.2</span> Definizione della Sintassi</a></li>
+<li><a href="#formalizzazione-1"><span class="toc-section-number">15.3</span> Formalizzazione</a><ul>
+<li><a href="#binder"><span class="toc-section-number">15.3.1</span> Binder</a></li>
+</ul></li>
+<li><a href="#semantica-1"><span class="toc-section-number">15.4</span> Semantica</a></li>
 </ul></li>
 <li><a href="#astrazione-in-matematica-e-informatica"><span class="toc-section-number">16</span> Astrazione in matematica e informatica</a><ul>
 <li><a href="#introduzione-1"><span class="toc-section-number">16.1</span> Introduzione</a></li>
@@ -1334,6 +1338,27 @@ prendete una sfera piena la riempiamo di punti, è possibile tre insiemi di punt
 <li>simboli di predicato: applicati a connotazioni di oggetti del dominio denotano un valore di verità (es <span class="math inline">\(&lt;,le,=,...\)</span>)</li>
 </ul>
 <p><img src="vx_images/84383600816995.png" /></p>
+<p>Ultima logica in cui vale la competenza e in alcuni casi anche la compattenza</p>
+<h2 id="formalizzazione-1"><span class="header-section-number">15.3</span> Formalizzazione</h2>
+<p>i quantificatori che abbiamo utilizzato non riescono a catturare tutti i quantificatori</p>
+<h3 id="binder"><span class="header-section-number">15.3.1</span> Binder</h3>
+<p>i quantificatori sono cais particolari di binder</p>
+<p>Un binder <strong>lega</strong> una variabile di uno scope.</p>
+<p>dentro lo scope la variabile verrà sostituita con un valore.</p>
+<details>
+<p><summary> esempi </summary></p>
+<p><span class="math inline">\(\forall x. P\)</span>, una volta che calcola per tutti gli x prende il minimo</p>
+</details>
+<p>shodowing: qunado una variabile non è più utilizzabile in uno scope perchè è stata dichiarata in uno scope più interno</p>
+<ol type="1">
+<li><strong>collegare</strong> ongi occorrenza di una variabile legata con un binder</li>
+</ol>
+<p><img src="vx_images/4954654139474.png" /></p>
+<p><img src="vx_images/5586110706997.png" /></p>
+<h2 id="semantica-1"><span class="header-section-number">15.4</span> Semantica</h2>
+<blockquote>
+<p>un mondo o interpretazione per la logica del primo ordine è una coppia (A,i) dove A è un insieme non vuoto di denotazioni per i termini e l è una funzioen di interpretazione che associa</p>
+</blockquote>
 <h1 id="astrazione-in-matematica-e-informatica"><span class="header-section-number">16</span> Astrazione in matematica e informatica</h1>
 <h2 id="introduzione-1"><span class="header-section-number">16.1</span> Introduzione</h2>
 <p>Mentre la matematica ha avuto millenni in cui si è sviluppato un modello di astrzione e generalizzazione.</p>

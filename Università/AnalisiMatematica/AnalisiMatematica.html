@@ -188,24 +188,24 @@
 <li><a href="#relazione-tra-segno-della-derivata-prima-e-la-crescenza-della-funzine"><span class="toc-section-number">15.4</span> Relazione tra segno della derivata prima e la crescenza della funzine</a></li>
 <li><a href="#punto-minimo-e-massimo"><span class="toc-section-number">15.5</span> Punto minimo e massimo</a></li>
 </ul></li>
-<li><a href="#geometria-analitica"><span class="toc-section-number">16</span> Geometria Analitica</a><ul>
-<li><a href="#grafico-qualitativo-di-una-funzione"><span class="toc-section-number">16.1</span> Grafico Qualitativo di una funzione</a></li>
+<li><a href="#de-hopital"><span class="toc-section-number">16</span> De Hopital</a><ul>
+<li><a href="#lemmi-introduttivi"><span class="toc-section-number">16.1</span> Lemmi Introduttivi</a></li>
+<li><a href="#teorema-di-de-lhopital"><span class="toc-section-number">16.2</span> Teorema di de l’Hopital</a></li>
+<li><a href="#dimostrazioni"><span class="toc-section-number">16.3</span> Dimostrazioni</a></li>
+<li><a href="#infinitesimo"><span class="toc-section-number">16.4</span> Infinitesimo</a><ul>
+<li><a href="#confronto-di-infinitesimi"><span class="toc-section-number">16.4.1</span> Confronto di infinitesimi</a></li>
 </ul></li>
-<li><a href="#de-hopital"><span class="toc-section-number">17</span> De Hopital</a><ul>
-<li><a href="#lemmi-introduttivi"><span class="toc-section-number">17.1</span> Lemmi Introduttivi</a></li>
-<li><a href="#teorema-di-de-lhopital"><span class="toc-section-number">17.2</span> Teorema di de l’Hopital</a></li>
-<li><a href="#dimostrazioni"><span class="toc-section-number">17.3</span> Dimostrazioni</a></li>
-<li><a href="#infinitesimo"><span class="toc-section-number">17.4</span> Infinitesimo</a><ul>
-<li><a href="#confronto-di-infinitesimi"><span class="toc-section-number">17.4.1</span> Confronto di infinitesimi</a></li>
+<li><a href="#o-piccolo"><span class="toc-section-number">16.5</span> O piccolo</a><ul>
+<li><a href="#proprietà-degli-o-piccoli-per-x-tendente-a-0"><span class="toc-section-number">16.5.1</span> Proprietà degli O-piccoli per x tendente a 0</a></li>
 </ul></li>
-<li><a href="#o-piccolo"><span class="toc-section-number">17.5</span> O piccolo</a><ul>
-<li><a href="#proprietà-degli-o-piccoli-per-x-tendente-a-0"><span class="toc-section-number">17.5.1</span> Proprietà degli O-piccoli per x tendente a 0</a></li>
+<li><a href="#teorema-di-peano"><span class="toc-section-number">16.6</span> Teorema di Peano</a><ul>
+<li><a href="#per-barx"><span class="toc-section-number">16.6.1</span> Per <span class="math inline">\(\bar{x}\)</span></a></li>
+<li><a href="#dimostrazione-serie-di-taylor"><span class="toc-section-number">16.6.2</span> Dimostrazione Serie di Taylor</a></li>
+<li><a href="#alcuni-polinomi-di-taylor"><span class="toc-section-number">16.6.3</span> Alcuni polinomi di taylor</a></li>
 </ul></li>
-<li><a href="#teorema-di-peano"><span class="toc-section-number">17.6</span> Teorema di Peano</a><ul>
-<li><a href="#per-barx"><span class="toc-section-number">17.6.1</span> Per <span class="math inline">\(\bar{x}\)</span></a></li>
-<li><a href="#dimostrazione-serie-di-taylor"><span class="toc-section-number">17.6.2</span> Dimostrazione Serie di Taylor</a></li>
-<li><a href="#alcuni-polinomi-di-taylor"><span class="toc-section-number">17.6.3</span> Alcuni polinomi di taylor</a></li>
 </ul></li>
+<li><a href="#geometria-analitica"><span class="toc-section-number">17</span> Geometria Analitica</a><ul>
+<li><a href="#grafico-qualitativo-di-una-funzione"><span class="toc-section-number">17.1</span> Grafico Qualitativo di una funzione</a></li>
 </ul></li>
 <li><a href="#possibili-esercizi"><span class="toc-section-number">18</span> Possibili Esercizi</a><ul>
 <li><a href="#domande"><span class="toc-section-number">18.1</span> Domande</a></li>
@@ -1257,53 +1257,31 @@ la classe di derivabilità denota la regolarità della funzione</p>
 <blockquote>
 <p>Queste sono le condizioni sufficenti (non necessarie) per il minimo e il massimo</p>
 </blockquote>
-<h1 id="geometria-analitica"><span class="header-section-number">16</span> Geometria Analitica</h1>
-<blockquote>
-<p><strong>retta nel piano</strong> : <span class="math inline">\(y=mx+q\)</span> (si possono rappresentare tutte le rette tranne quelle veritcali (<span class="math inline">\(x=k\)</span>))</p>
-</blockquote>
-<p><img src="vx_images/4331916881741.png" /></p>
-<p><span class="math inline">\(r1: y=mx+1 \mbox{ , } m=\tan \alpha_1\)</span></p>
-<p>m: rappresenta la pendenza della retta</p>
-<p>Una retta con <span class="math inline">\(m\neq 0\)</span> può essere:</p>
-<ul>
-<li>crescente <span class="math inline">\(m \le 0\)</span></li>
-<li>decrescente <span class="math inline">\(m \ge 0\)</span></li>
-</ul>
-<blockquote>
-<p><strong>Fascio di rette</strong>: è l’insieme delle rette che passano da un punto (si indica come <span class="math inline">\(y-y_0=m(x-x_0)\)</span>)</p>
-</blockquote>
-<h2 id="grafico-qualitativo-di-una-funzione"><span class="header-section-number">16.1</span> Grafico Qualitativo di una funzione</h2>
-<ol type="1">
-<li><strong>definire il dominio naturale</strong> di <span class="math inline">\(D(f)\)</span></li>
-<li>(Facoltativo) Individuazione di <strong>simmetrie</strong>(pari o dispari) (se il dominio non è simmetrico si scarta già la possibilità)</li>
-<li>Calcolo dei <strong>limiti relativi alla frontiera del dominio</strong> di <span class="math inline">\(f\)</span> (ninte asintoti obliqui, solo verticali e orizzontali)</li>
-<li>Studio della monotonia di <span class="math inline">\(f\)</span> attraverso l’<strong>analisi del segno della derivata prima</strong></li>
-</ol>
-<h1 id="de-hopital"><span class="header-section-number">17</span> De Hopital</h1>
-<h2 id="lemmi-introduttivi"><span class="header-section-number">17.1</span> Lemmi Introduttivi</h2>
+<h1 id="de-hopital"><span class="header-section-number">16</span> De Hopital</h1>
+<h2 id="lemmi-introduttivi"><span class="header-section-number">16.1</span> Lemmi Introduttivi</h2>
 <p><span class="math inline">\(h: A \to R, \bar{x}\in D(a):\)</span> allora <span class="math inline">\((l \in \mathbb{R} \cup \{+\infty\} \cup \{-\infty\})\)</span></p>
 <ol type="1">
 <li><span class="math inline">\(\displaystyle \lim_{x \to \bar{x}?^-} h(x)=l \iff \begin{cases} \forall (x_n)_n \subseteq A, x_n &lt; \bar{x} , \forall n \mbox{ tale che: } x_n \to \bar{x} \\ \mbox{si ha:} h(x_n) \to l \end{cases}\)</span></li>
 <li><span class="math inline">\(\displaystyle \lim_{x \to \bar{x}^+} h(x)=l \iff \begin{cases} \forall (x_n)_n \subseteq A, x_n &gt; \bar{x} , \forall n \mbox{ tale che: } x_n \to \bar{x} \\ \mbox{si ha:} h(x_n) \to l \end{cases}\)</span></li>
 <li><span class="math inline">\(\displaystyle \lim_{x \to \bar{x}} h(x)=l \iff \begin{cases} \forall (x_n)_n \subseteq A, x_n \neq \bar{x} , \forall n \mbox{ tale che: } x_n \to \bar{x} \\ \mbox{si ha:} h(x_n) \to l \end{cases}\)</span></li>
 </ol>
-<h2 id="teorema-di-de-lhopital"><span class="header-section-number">17.2</span> Teorema di de l’Hopital</h2>
+<h2 id="teorema-di-de-lhopital"><span class="header-section-number">16.2</span> Teorema di de l’Hopital</h2>
 <p>Siano <span class="math inline">\(f,g: [a,b]\to \mathbb{R}\)</span> due funzioni reali di variabile reale continue in <span class="math inline">\([a,b]\)</span> e derivabili in <span class="math inline">\((a,b)\)</span> eccetto al più <span class="math inline">\(x_0\)</span>, con <span class="math inline">\(-\infty \le a&lt; b \le +\infty\)</span>; sia <span class="math inline">\(g&#39;(x)\)</span> diversa da 0 per <span class="math inline">\(x\neq x_0\)</span></p>
 <p><span class="math inline">\(\lim_{x\to x_0}{|f(x)|} = \lim_{x\to x_0}{|g(x)|} = \infty\)</span> oppure <span class="math inline">\(\lim_{x\to x_0}{f(x)} = \lim_{x\to x_0}g(x) = 0\)</span><br />
 se esiste:<br />
 <span class="math inline">\(\lim_{x \to x_0}{\frac{f&#39;(x)}{g&#39;(x)}} = L \in \mathbb{\bar{R}}\)</span><br />
 allora:<br />
 <span class="math inline">\(\lim_{x \to x_0}{\frac{f(x)}{g(x)}} = L\)</span></p>
-<h2 id="dimostrazioni"><span class="header-section-number">17.3</span> Dimostrazioni</h2>
+<h2 id="dimostrazioni"><span class="header-section-number">16.3</span> Dimostrazioni</h2>
 <p>TODO # Sviluppo di serie di Taylor</p>
-<h2 id="infinitesimo"><span class="header-section-number">17.4</span> Infinitesimo</h2>
+<h2 id="infinitesimo"><span class="header-section-number">16.4</span> Infinitesimo</h2>
 <blockquote>
 <p>IDEA: approssimiamo una funzione ad un polinomio senza cambiare il limite</p>
 </blockquote>
 <p><span class="math inline">\(f:A\to\mathbb{R}\)</span><br />
 <span class="math inline">\(x_0 \in D(A)\)</span> <span class="math inline">\(f(x)\)</span> si dice <strong>infinitesimo</strong> per <span class="math inline">\(x\to x_o\)</span> se:</p>
 <p><span class="math inline">\(\displaystyle \lim_{x \to x_0} f(x) =0\)</span></p>
-<h3 id="confronto-di-infinitesimi"><span class="header-section-number">17.4.1</span> Confronto di infinitesimi</h3>
+<h3 id="confronto-di-infinitesimi"><span class="header-section-number">16.4.1</span> Confronto di infinitesimi</h3>
 <p>Date due funzioni (infinitesime per <span class="math inline">\(x\to x_0\)</span>):</p>
 <ul>
 <li><p><span class="math inline">\(f(x) \xrightarrow{x\to x_0} 0\)</span></p></li>
@@ -1321,7 +1299,7 @@ allora:<br />
 <p><summary> Esempi </summary></p>
 <p><img src="vx_images/205564121192423.png" /> <img src="vx_images/18654627283136.png" /></p>
 </details>
-<h2 id="o-piccolo"><span class="header-section-number">17.5</span> O piccolo</h2>
+<h2 id="o-piccolo"><span class="header-section-number">16.5</span> O piccolo</h2>
 <p><span class="math inline">\(f,g: A \to \mathbb{R}, x_0 \in D(A)\)</span><br />
 <span class="math inline">\(f(x)\neq 0\)</span> se <span class="math inline">\(A \backslash \{x_0\}\)</span><br />
 <span class="math inline">\(g(x) \to 0\)</span></p>
@@ -1333,7 +1311,7 @@ allora:<br />
 <p><img src="vx_images/262344853876896.png" /></p>
 altri esempi dopo pag 11 <a href="https://virtuale.unibo.it/pluginfile.php/1078465/mod_resource/content/1/25%20Novembre%202021.pdf">pdf</a>
 </details>
-<h3 id="proprietà-degli-o-piccoli-per-x-tendente-a-0"><span class="header-section-number">17.5.1</span> Proprietà degli O-piccoli per x tendente a 0</h3>
+<h3 id="proprietà-degli-o-piccoli-per-x-tendente-a-0"><span class="header-section-number">16.5.1</span> Proprietà degli O-piccoli per x tendente a 0</h3>
 <blockquote>
 <p>Attenzione <span class="math inline">\(x \to 0\)</span> e <span class="math inline">\((n,m \in \mathbb{N})\)</span></p>
 </blockquote>
@@ -1355,17 +1333,17 @@ altri esempi dopo pag 11 <a href="https://virtuale.unibo.it/pluginfile.php/10784
 <li><p>se <span class="math inline">\(f,g\)</span> sono infinitesime per <span class="math inline">\(x\to x_0\)</span> allora <span class="math inline">\(o(f(x))=o(g(x))\)</span></p></li>
 <li><p>se <span class="math inline">\(h(x)\xrightarrow{x\to 0}k\neq 0 \implies o(h(x)\times x^n)\)</span> è un <span class="math inline">\(o(x^n)\)</span></p></li>
 </ol>
-<h2 id="teorema-di-peano"><span class="header-section-number">17.6</span> Teorema di Peano</h2>
+<h2 id="teorema-di-peano"><span class="header-section-number">16.6</span> Teorema di Peano</h2>
 <p><span class="math inline">\(f:]a,b[ \to \mathbb{R}, 0 \in ]a,b[\)</span></p>
 <p>se <span class="math inline">\(f\)</span> è continua in 0, e <span class="math inline">\(f\)</span> è derivabile n-volte in <span class="math inline">\(\bar{x}=0\)</span></p>
 <p>Si verifica che il polinomi di Taylor di <span class="math inline">\(f\)</span> in <span class="math inline">\(\bar{x}=0\)</span> di grado <span class="math inline">\(\le n\)</span></p>
 <p><span class="math inline">\(T_n(x)=\displaystyle{ \sum^{n}_{j=0} \frac{f^j(0)}{j!}x^j}\)</span></p>
 <p><span class="math inline">\(f(x)=T_n(x)+o(x^n)\)</span></p>
-<h3 id="per-barx"><span class="header-section-number">17.6.1</span> Per <span class="math inline">\(\bar{x}\)</span></h3>
+<h3 id="per-barx"><span class="header-section-number">16.6.1</span> Per <span class="math inline">\(\bar{x}\)</span></h3>
 <p><span class="math inline">\(f\)</span> in <span class="math inline">\(\bar{x}\)</span> di grado <span class="math inline">\(\le n\)</span></p>
 <p><span class="math inline">\(T_n(x)=\displaystyle{ \sum^{n}_{j=0} \frac{f^j(0)}{j!}(x-\bar{x})^j}\)</span></p>
 <p><span class="math inline">\(f(x)=T_n(x)+o((x-\bar{x})^n)\)</span></p>
-<h3 id="dimostrazione-serie-di-taylor"><span class="header-section-number">17.6.2</span> Dimostrazione Serie di Taylor</h3>
+<h3 id="dimostrazione-serie-di-taylor"><span class="header-section-number">16.6.2</span> Dimostrazione Serie di Taylor</h3>
 <p><span class="math inline">\(f:]a,b[ \to \mathbb{R}, 0 \in ]a,b[\)</span></p>
 <p>se <span class="math inline">\(f\)</span> è continua in 0</p>
 <p><span class="math inline">\(\displaystyle \lim_{x \rightarrow 0} f(x)= f(0)\)</span></p>
@@ -1381,7 +1359,7 @@ altri esempi dopo pag 11 <a href="https://virtuale.unibo.it/pluginfile.php/10784
 <p>quindi</p>
 <p><span class="math inline">\(f(x)= f(0) + f&#39;(x)\times x + o(x)\)</span> per <span class="math inline">\(x\to 0\)</span></p>
 <p>quindi abbiamo trovato la retta tangente a x in 0</p>
-<h3 id="alcuni-polinomi-di-taylor"><span class="header-section-number">17.6.3</span> Alcuni polinomi di taylor</h3>
+<h3 id="alcuni-polinomi-di-taylor"><span class="header-section-number">16.6.3</span> Alcuni polinomi di taylor</h3>
 <table>
 <colgroup>
 <col style="width: 23%" />
@@ -1416,6 +1394,28 @@ altri esempi dopo pag 11 <a href="https://virtuale.unibo.it/pluginfile.php/10784
 </tr>
 </tbody>
 </table>
+<h1 id="geometria-analitica"><span class="header-section-number">17</span> Geometria Analitica</h1>
+<blockquote>
+<p><strong>retta nel piano</strong> : <span class="math inline">\(y=mx+q\)</span> (si possono rappresentare tutte le rette tranne quelle veritcali (<span class="math inline">\(x=k\)</span>))</p>
+</blockquote>
+<p><img src="vx_images/4331916881741.png" /></p>
+<p><span class="math inline">\(r1: y=mx+1 \mbox{ , } m=\tan \alpha_1\)</span></p>
+<p>m: rappresenta la pendenza della retta</p>
+<p>Una retta con <span class="math inline">\(m\neq 0\)</span> può essere:</p>
+<ul>
+<li>crescente <span class="math inline">\(m \le 0\)</span></li>
+<li>decrescente <span class="math inline">\(m \ge 0\)</span></li>
+</ul>
+<blockquote>
+<p><strong>Fascio di rette</strong>: è l’insieme delle rette che passano da un punto (si indica come <span class="math inline">\(y-y_0=m(x-x_0)\)</span>)</p>
+</blockquote>
+<h2 id="grafico-qualitativo-di-una-funzione"><span class="header-section-number">17.1</span> Grafico Qualitativo di una funzione</h2>
+<ol type="1">
+<li><strong>definire il dominio naturale</strong> di <span class="math inline">\(D(f)\)</span></li>
+<li>(Facoltativo) Individuazione di <strong>simmetrie</strong>(pari o dispari) (se il dominio non è simmetrico si scarta già la possibilità)</li>
+<li>Calcolo dei <strong>limiti relativi alla frontiera del dominio</strong> di <span class="math inline">\(f\)</span> (ninte asintoti obliqui, solo verticali e orizzontali)</li>
+<li>Studio della monotonia di <span class="math inline">\(f\)</span> attraverso l’<strong>analisi del segno della derivata prima</strong></li>
+</ol>
 <h1 id="possibili-esercizi"><span class="header-section-number">18</span> Possibili Esercizi</h1>
 <h2 id="domande"><span class="header-section-number">18.1</span> Domande</h2>
 <ol type="1">
