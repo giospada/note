@@ -7,6 +7,7 @@
             "id": "76",
             "modified_time": "2021-11-20T10:53:34Z",
             "name": "19-Geometria Analitica.md",
+            "signature": "207324009213231",
             "tags": [
             ]
         },
@@ -16,6 +17,7 @@
             "id": "77",
             "modified_time": "2021-12-05T14:45:20Z",
             "name": "08-Numeri_Reali.md",
+            "signature": "784285914932981039",
             "tags": [
             ]
         },
@@ -25,6 +27,7 @@
             "id": "78",
             "modified_time": "2021-11-20T19:04:48Z",
             "name": "11-Funzioni Esponenziali.md",
+            "signature": "5546498803234516271",
             "tags": [
             ]
         },
@@ -34,6 +37,7 @@
             "id": "79",
             "modified_time": "2021-12-13T17:04:20Z",
             "name": "12-Limiti Funzioni.md",
+            "signature": "8223662518534155567",
             "tags": [
             ]
         },
@@ -43,6 +47,7 @@
             "id": "80",
             "modified_time": "2021-12-05T16:30:47Z",
             "name": "99-Ripasso.md",
+            "signature": "8927815551945551151",
             "tags": [
             ]
         },
@@ -52,6 +57,7 @@
             "id": "81",
             "modified_time": "2021-11-21T09:15:22Z",
             "name": "98-Possibili Esercizi.md",
+            "signature": "1749579337967611183",
             "tags": [
             ]
         },
@@ -61,6 +67,7 @@
             "id": "82",
             "modified_time": "2021-11-28T20:43:25Z",
             "name": "13-Teorema degli Zeri.md",
+            "signature": "4749813615713594671",
             "tags": [
             ]
         },
@@ -70,6 +77,7 @@
             "id": "83",
             "modified_time": "2021-11-28T21:30:27Z",
             "name": "16-De Hopital.md",
+            "signature": "3670979437969288495",
             "tags": [
                 "todo"
             ]
@@ -80,6 +88,7 @@
             "id": "84",
             "modified_time": "2021-12-13T16:27:10Z",
             "name": "10-SuccessioniNumeriche.md",
+            "signature": "2424881375244725551",
             "tags": [
             ]
         },
@@ -89,6 +98,7 @@
             "id": "85",
             "modified_time": "2021-12-06T09:40:57Z",
             "name": "17- Sviluppo di serie di Taylor.md",
+            "signature": "6857691952937970991",
             "tags": [
             ]
         },
@@ -98,6 +108,7 @@
             "id": "154",
             "modified_time": "2021-11-28T20:57:53Z",
             "name": "09-ValoreAssoluto.md",
+            "signature": "825932396031126831",
             "tags": [
             ]
         },
@@ -107,6 +118,7 @@
             "id": "155",
             "modified_time": "2021-11-28T20:57:54Z",
             "name": "07-EsDimostrazioni.md",
+            "signature": "5168684793791786287",
             "tags": [
             ]
         },
@@ -116,6 +128,7 @@
             "id": "156",
             "modified_time": "2021-12-15T15:14:29Z",
             "name": "14-Derivate.md",
+            "signature": "5370121079256526127",
             "tags": [
             ]
         },
@@ -125,6 +138,7 @@
             "id": "157",
             "modified_time": "2021-11-28T20:57:56Z",
             "name": "06-CalcoloCombinatoria.md",
+            "signature": "7466934429675171119",
             "tags": [
             ]
         },
@@ -134,6 +148,7 @@
             "id": "158",
             "modified_time": "2021-11-28T20:57:57Z",
             "name": "05-Funzioni.md",
+            "signature": "5459487176748969263",
             "tags": [
             ]
         },
@@ -143,6 +158,7 @@
             "id": "159",
             "modified_time": "2021-11-28T20:57:57Z",
             "name": "04-Logica.md",
+            "signature": "4719715249407405359",
             "tags": [
             ]
         },
@@ -152,6 +168,7 @@
             "id": "160",
             "modified_time": "2021-12-05T14:35:19Z",
             "name": "02-Insiemi_e_notazioni.md",
+            "signature": "8085520616354753839",
             "tags": [
             ]
         },
@@ -161,6 +178,7 @@
             "id": "161",
             "modified_time": "2021-11-28T20:57:59Z",
             "name": "01-AnalisiMatematica.md",
+            "signature": "9178034990786293039",
             "tags": [
             ]
         }
@@ -169,5 +187,6 @@
     ],
     "id": "75",
     "modified_time": "",
-    "version": "1"
+    "signature": "6698120998629944623",
+    "version": 3
 }
