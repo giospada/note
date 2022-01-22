@@ -49,6 +49,7 @@ Grazie a questo meccanismo non ci dobbiamo preuccupare che più variabili che pu
 <summary>
 shallow copy
 </summary>
+
 ![](vx_images/557445401889154.png)
 
 </details>
@@ -57,6 +58,7 @@ shallow copy
 <summary>
 deep copy
 </summary>
+
 ![](vx_images/51723830575796.png)
 
 </details>
