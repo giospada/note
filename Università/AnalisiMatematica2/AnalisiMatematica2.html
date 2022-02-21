@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>./AnalisiMatematica2</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="../img/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    "HTML-CSS": {fonts: ['STIX-web']},
+    SVG: {font: 'STIX-Web'},
+    TeX: {Augment: {
+      Definitions: {
+        delimiter: {
+          '\\llbracket': '27E6',
+          '\\rrbracket': '27E7'
+        }
+      }
+    }}
+  });
+  </script>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#introduzione"><span class="toc-section-number">1</span> Introduzione</a><ul>
+<li><a href="#somme-di-reimann"><span class="toc-section-number">1.1</span> Somme di Reimann</a><ul>
+<li><a href="#osservazioni"><span class="toc-section-number">1.1.1</span> Osservazioni</a></li>
+</ul></li>
+<li><a href="#proprità"><span class="toc-section-number">1.2</span> Proprità</a><ul>
+<li><a href="#linearità"><span class="toc-section-number">1.2.1</span> Linearità</a></li>
+<li><a href="#additionalità"><span class="toc-section-number">1.2.2</span> Additionalità</a></li>
+<li><a href="#monotonia"><span class="toc-section-number">1.2.3</span> Monotonia</a></li>
+</ul></li>
+<li><a href="#teorema-della-media"><span class="toc-section-number">1.3</span> Teorema della media</a><ul>
+<li><a href="#dimostrazione"><span class="toc-section-number">1.3.1</span> Dimostrazione</a></li>
+</ul></li>
+<li><a href="#primitiva"><span class="toc-section-number">1.4</span> Primitiva</a><ul>
+<li><a href="#infinite-primitive-di-una-funzione"><span class="toc-section-number">1.4.1</span> Infinite primitive di una funzione</a></li>
+</ul></li>
+<li><a href="#funzione-integrale"><span class="toc-section-number">1.5</span> Funzione integrale</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="introduzione"><span class="header-section-number">1</span> Introduzione</h1>
+<ul>
+<li>calcolo integrale (1 variabile)</li>
+<li>calcolo differenzaile (1/2 variabili)</li>
+<li>calcolo integrale a 2 variabili # Integrale</li>
+</ul>
+<p>L’integrale di una funzione calcola l’area che c’è tra essa e l’asse delle x in un determinato intervallo.</p>
+<h2 id="somme-di-reimann"><span class="header-section-number">1.1</span> Somme di Reimann</h2>
+<ol type="1">
+<li><p>come prima cosa divido l’intervallo in n parti, l’intervallo va da <span class="math inline">\([a,b]\)</span>, fisso un <span class="math inline">\(n \in \mathbb{N}\)</span> qundi ogni pezzo è di lunghezza <span class="math inline">\(h=\frac{b-a}{n}\)</span> quindi avremo <span class="math inline">\(a=x_0,x_1=x_0+h,x_k=x_0+n\times h=b\)</span></p></li>
+<li><p><span class="math inline">\(\forall k=0,1,...,n-1\)</span> scelgo un punto (arbitrario) <span class="math inline">\(\xi_{k+1} \in [x_k,xk+1], \text{se } k=0 ,\space \xi \in [x_0,x_1]\)</span></p></li>
+<li><p>somma n-esima <span class="math inline">\(S_n=\sum^n_{k=1} f(\xi_k)*h\)</span></p></li>
+</ol>
+<p><strong>Teorema</strong>: sia <strong>f</strong> continua su <strong>[a,b]</strong> sia <span class="math inline">\((S_n) n \in \mathbb{N}\)</span> una famiglia di somme di riemenn. allora <span class="math inline">\(\exists \displaystyle \lim_{n \rightarrow +\infty} S_n\)</span> finito e indipendente dalle scelte degli <span class="math inline">\(\xi\)</span> ( xi è la variabile che si mette nella funzione per calcolarne l’altezza in quel punto), Notazione <span class="math inline">\(\displaystyle \lim_{n \rightarrow \infty} S_n= \int_{a}^b f(x) dx\)</span></p>
+<h3 id="osservazioni"><span class="header-section-number">1.1.1</span> Osservazioni</h3>
+<p><strong>osservazione-1</strong> se <span class="math inline">\(a=b \text{ allora } S_n=0 \space \forall n \in \mathbb{N} \int^b_a f(x) dx=0\)</span></p>
+<p><strong>osservazione-2</strong> se <span class="math inline">\(f(x)=c ,\space \forall x \in [a,b], S_n=c(b-a), \space \int_a^b c \space dc=c(b-a)\)</span></p>
+<p><strong>osservazione-3</strong> se <span class="math inline">\(S_n=\sum_{k=1}^n f(\xi_k)\times h \space \text{ dove h è uguale}=\frac{b-a}{n}\)</span> le somme di reimann si possono definire qualsiasi <span class="math inline">\(f\)</span> continua</p>
+<p><strong>osservazione</strong>: esistono funzioni discontinue per le quali il <span class="math inline">\(\displaystyle \lim_{n \rightarrow \infty} S_n\)</span> dipende dalla scelta di <span class="math inline">\(\xi_k\)</span> oppure non esiste</p>
+<p><strong>osservazione</strong> se <span class="math inline">\(f\)</span> ha un numero finito di discontinuità con salto finito (senza limiti che vanno a <span class="math inline">\(\pm \infty\)</span>), <span class="math inline">\(\int_a^b f\)</span> + definito</p>
+<h2 id="proprità"><span class="header-section-number">1.2</span> Proprità</h2>
+<h3 id="linearità"><span class="header-section-number">1.2.1</span> Linearità</h3>
+<p><span class="math inline">\(f,g\)</span> continua su <span class="math inline">\([a,b], \lambda \varphi \in \mathbb{R}\)</span> allora <span class="math inline">\(h\times[a,b]\to \mathbb{R}, h(x)=\lambda f(x)+ \varphi g(x)\)</span> h è integrabilie <span class="math inline">\(\int_a^b [\lambda f(x)+\varphi g(x)] dx = \lambda \int^a_b f + \varphi \int^b_a g\)</span> (<strong>limite della somma è uguale alla somma dei limiti</strong>)</p>
+<h3 id="additionalità"><span class="header-section-number">1.2.2</span> Additionalità</h3>
+<blockquote>
+<p>la somma di due integrali della stessa funzione con punto il limite opposto in comune allora è equivalente alla l’integrale degli altri due estremi</p>
+</blockquote>
+<p>sia <span class="math inline">\(f [a,b] \to \mathbb{R}\)</span> continua , <span class="math inline">\(c \in [a,b] \text{ allora } \int_a^b f= \int_a^c f + \int^b_c f\)</span></p>
+<details>
+<p><summary> Convenzione </summary></p>
+<blockquote>
+<p>semplicemente l’integrale delle parti dei punti invertiti è uguale all’integrale negato questo per come si calcola l’integrale</p>
+</blockquote>
+<p><strong>convenzione</strong> <span class="math inline">\(f :\mathbb{R} \to \mathbb{R}, a,b \in \mathbb{R} : a&gt; b, \int_a^b f(x) dx = - \int^a_b f(x) dx\)</span></p>
+<p>Con la convenzione se <span class="math inline">\(f:\mathbb{R} \to \mathbb{R}\)</span> è continua <span class="math inline">\(\forall a,b,c \in \mathbb{R}\)</span> vale <span class="math inline">\(\int^b_a f = \int^c_a f+ \int_c^b f\)</span> anche se <span class="math inline">\(a&lt;b&lt;c \text{ si inverte l&#39;ultimo integrale}\)</span></p>
+</details>
+<h3 id="monotonia"><span class="header-section-number">1.2.3</span> Monotonia</h3>
+<blockquote>
+<p>se una funzione è sempre maggiore uguale in un intervallo chiuso allora sara maggiore uguale anche l’integrale</p>
+</blockquote>
+<p><strong>Monotonia</strong> <span class="math inline">\(f,g [a,b] \to \mathbb{R}\)</span> continue, <span class="math inline">\(f(x)\le g(x) \forall x \in [a,b]\)</span> se <span class="math inline">\(a&lt;b\)</span> allora <span class="math inline">\(\int^b_a f(x) dx \le \int^b_a g(x) dx\)</span></p>
+<p><strong>oss</strong> <span class="math inline">\(f:[a,b] \to \mathbb{R} ,\space \forall x f(x) \le b , \space A =\{(x,y)| x \in [a,b] f(x) \le y \le 0\} \space \int_a^b f(x) dx =- \text{Area}(A)\)</span></p>
+<h2 id="teorema-della-media"><span class="header-section-number">1.3</span> Teorema della media</h2>
+<p><strong>Teorema</strong> <span class="math inline">\(S_b = \sum^n_{k=1} f(\xi_k) \frac{b-a}{n}\)</span> <span class="math inline">\(\frac{S_n}{b-a}= \frac{ \sum^n_{k=1} f(\xi_k)}{n}\)</span></p>
+<p><strong>Teorema</strong>: della media integrale, <span class="math inline">\(f:[a,b]\to \mathbb{R}\)</span> continua <span class="math inline">\(\exists c \in [a,b] : \frac{1}{b-a}\times \int_a^b f(x) dx=f(c)\)</span></p>
+<h3 id="dimostrazione"><span class="header-section-number">1.3.1</span> Dimostrazione</h3>
+<details>
+<p><summary> teorema dei valori intermedi </summary></p>
+<p><strong>teorema (valori intermedi)</strong>: <span class="math inline">\(f:[a,b] \to \mathbb{R}\)</span> continua siano <span class="math inline">\(x_0,x_1 \in [a,b] : f(x_0) &lt; f(x_1) \text{ allora } \forall y \in [f(x_0),f(x_1)] \text{ allora } \exists c \in [a,b] \text{tale che } f(x) = c\)</span></p>
+</details>
+<p><strong>Dim</strong> Uso del toerema dei valori intermedi <span class="math inline">\(\exists x_0 ,x_1 \in [a,b] f(x_0) \le f(x \le f(x_1) \text{ dove x_0 è il minimo e x_1 è il massimo } \forall x \in [a,b]\)</span> proprietà di monotonia <span class="math inline">\(\int^b_a f(x_0) dx \le \int_a^b f(x) dx \le \int_a^b f(x_1) dx\)</span> essendo che x_0 è una constante per il teorema precedente <span class="math inline">\(f(x_0)(b-a) \le \int_a^b f(x) dx \le f(x_1) (b-a) \to f(x_0) \le \frac{1}{b-a} \int_a^b f(x) dx \le f(x_1)\)</span> quindi abbiamo <span class="math inline">\(y \in [f(x_0),f(x_1)] \to \exists c \in [a,b] \text{tale che } f(c)=\frac{1}{b-a} \int^b_a f(x) dx\)</span></p>
+<h2 id="primitiva"><span class="header-section-number">1.4</span> Primitiva</h2>
+<p><strong>Definizione</strong> <span class="math inline">\(f : ]a,b[ \to \mathbb{R}\)</span>, prendiamo una funzione <span class="math inline">\(F\)</span> si dice primitiva (se è derivabile nell’intervallo) <span class="math inline">\(f \text{ su } ]a,b[\)</span> se vale <span class="math inline">\(F&#39;(x)=f(x)\)</span></p>
+<details>
+<p><summary> esempio </summary></p>
+es : <span class="math inline">\(f(x)=x, x \in \mathbb{R} F(x)=\frac{x^2}{2}\)</span> è una primitiva <span class="math inline">\(f\)</span> su <span class="math inline">\(\mathbb{R} (D \frac{x^2}{2}=x , \forall x)\)</span> e ne posso trovare infinite aggiungendo delle costanti <span class="math inline">\(G(x)=\frac{x^2}{2}+k\)</span> è primitiva di <span class="math inline">\(f \space \forall k \in \mathbb{R}\)</span>
+</details>
+<h3 id="infinite-primitive-di-una-funzione"><span class="header-section-number">1.4.1</span> Infinite primitive di una funzione</h3>
+<blockquote>
+<p>una funzione ha infinite primitive perchè si può aggiungere una costante che poi viene persa quando si fa la derivata</p>
+</blockquote>
+<p>Proposizione sia <span class="math inline">\(f: ]a,b[ \to \mathbb{R}\)</span> siano <span class="math inline">\(F,G :]a,b[ \to \mathbb{R}\)</span> due primitive di f piccolo su <span class="math inline">\(]a,b[\)</span> Allora <span class="math inline">\(\forall x \in ]a,b[, \exists k \in \mathbb{R}, F(x) - G(x) =k\)</span></p>
+<p>es <span class="math inline">\(f(x)=\frac{1}{x^2} , x\neq 0, x \in \mathbb{R} \backslash \{0\}\)</span> <span class="math inline">\(F(x)=-\frac{1}{x}\)</span> primitiva di <span class="math inline">\(f \text{su} \mathbb{R} \backslash \{0\} G(x)=\begin{cases}-\frac{1}{x} \text{ se } x&gt; 0 \\ -\frac{1}{x}+2 \text{ se } x &lt;0 \end{cases} \text{allora} F&#39;(x)=G&#39;(x)=\frac{1}{x^2} \text{ma } G(x)-F(x)=\begin{cases}0 \text{ se } x&gt; 0 \\ 2 \text{ se } x &lt;0 \end{cases}\)</span></p>
+<p><strong>Dim</strong> considero <span class="math inline">\(H: ]a,b[ \to \mathbb{R} ,\space H(x)=F(x)-G(x) , \space H&#39;(x)=F&#39;(x)-G&#39;(x)=f(x)-f(x)=0, \forall x \in ]a,b[ \space \exists k \in \mathbb{R} , H(x)=k\)</span></p>
+<h2 id="funzione-integrale"><span class="header-section-number">1.5</span> Funzione integrale</h2>
+<blockquote>
+<p>la funzione integrale è una funzione che parte da un punto e calcola l’area fino ad un altro punto preso come variabilie</p>
+</blockquote>
+<blockquote>
+<p>def : sia <span class="math inline">\(f : ]a_0,b_0[ \to \mathbb{R}\)</span> sia <span class="math inline">\(c \in ]a_0,b_0[\)</span> definisco <span class="math inline">\(I_c : ]a_0,b_0[ \to \mathbb{R}, I_c(x)=\int_c^x f(t) dt = \int_c^x f\)</span></p>
+</blockquote>
+<p><strong>osservazione</strong> <span class="math inline">\(I_c (c)= \int^c_c f = 0\)</span></p>
+<p><strong>osservazione</strong> siano <span class="math inline">\(c_1,c_2 \in ]a_0,b_0[ f\)</span> continua <span class="math inline">\(I_{c_1}(x)=\int_{c_1}^x f , I_{c_2}(x)=\int_{c_2}^x f\)</span> , <span class="math inline">\(I_{c_1}(x)- I_{c_2}(x)=\int_{c_1}^x f - \int_{c_2}^x f= \int_{c_1}^x f + \int^{c_2}_x f = \text{proprieta add}= \int_{c_1}^{c_2} f(t) dt\)</span> dunque <span class="math inline">\(I_{c_1}(x) I_{c_2}\)</span> differeiscono per una constante</p>
+</body>
+</html>
