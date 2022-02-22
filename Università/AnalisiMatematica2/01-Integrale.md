@@ -12,6 +12,7 @@ L'integrale di una funzione calcola l'area che c'è tra essa e l'asse delle x in
 
 
 
+> come la continuità è relazionata con l'integrale
 
 **Teorema**: sia **f** continua su **[a,b]** sia $(S_n) n \in \mathbb{N}$ una famiglia di somme di riemenn. allora $\exists \displaystyle \lim_{n \rightarrow +\infty}  S_n$ finito e indipendente dalle scelte degli $\xi$ ( xi è la variabile che si mette nella funzione per calcolarne l'altezza in quel punto), Notazione $\displaystyle \lim_{n \rightarrow \infty} S_n= \int_{a}^b f(x) dx$
 
@@ -122,3 +123,6 @@ es $f(x)=\frac{1}{x^2} , x\neq 0, x \in \mathbb{R} \backslash \{0\}$ $F(x)=-\fra
 **osservazione** $I_c (c)= \int^c_c f = 0$
 
 **osservazione** siano $c_1,c_2 \in ]a_0,b_0[ f$ continua $I_{c_1}(x)=\int_{c_1}^x f , I_{c_2}(x)=\int_{c_2}^x f$ , $I_{c_1}(x)- I_{c_2}(x)=\int_{c_1}^x f - \int_{c_2}^x f= \int_{c_1}^x f + \int^{c_2}_x f = \text{proprieta add}= \int_{c_1}^{c_2} f(t) dt$  dunque $I_{c_1}(x) I_{c_2}$ differeiscono per una constante
+
+
+

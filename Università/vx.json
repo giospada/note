@@ -23,9 +23,13 @@
         },
         {
             "name": "AlgoritmiStruttureDati"
+        },
+        {
+            "name": "AlgebraGeormetria"
         }
     ],
-    "id": "74",
+    "id": "195",
     "modified_time": "2021-10-19T17:23:43Z",
-    "version": "1"
+    "signature": "207324011828881",
+    "version": 3
 }
