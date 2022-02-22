@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>./AlgebraGeormetria</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="../img/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    "HTML-CSS": {fonts: ['STIX-web']},
+    SVG: {font: 'STIX-Web'},
+    TeX: {Augment: {
+      Definitions: {
+        delimiter: {
+          '\\llbracket': '27E6',
+          '\\rrbracket': '27E7'
+        }
+      }
+    }}
+  });
+  </script>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#introduzione"><span class="toc-section-number">1</span> Introduzione</a><ul>
+<li><a href="#esame-scritto"><span class="toc-section-number">1.1</span> Esame scritto</a></li>
+<li><a href="#tutor"><span class="toc-section-number">1.2</span> Tutor</a></li>
+<li><a href="#libro"><span class="toc-section-number">1.3</span> Libro</a></li>
+</ul></li>
+<li><a href="#sistemilineari"><span class="toc-section-number">2</span> SistemiLineari</a><ul>
+<li><a href="#equazione-lineare"><span class="toc-section-number">2.1</span> Equazione lineare</a></li>
+<li><a href="#soluzioni-dei-sistemi-lineari"><span class="toc-section-number">2.2</span> Soluzioni dei sistemi lineari</a></li>
+<li><a href="#scrittura-compatta"><span class="toc-section-number">2.3</span> Scrittura compatta</a></li>
+<li><a href="#matrici"><span class="toc-section-number">2.4</span> Matrici</a><ul>
+<li><a href="#vettori"><span class="toc-section-number">2.4.1</span> Vettori</a></li>
+<li><a href="#somma"><span class="toc-section-number">2.4.2</span> Somma</a></li>
+<li><a href="#prodotto-tra-vettori"><span class="toc-section-number">2.4.3</span> Prodotto tra vettori</a></li>
+<li><a href="#prodotto-matrici"><span class="toc-section-number">2.4.4</span> Prodotto Matrici</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="introduzione"><span class="header-section-number">1</span> Introduzione</h1>
+<p>Agebra lineare:</p>
+<ul>
+<li>spazi vettoriali</li>
+<li>matrici</li>
+<li>funzioni tra spazi vettoriali</li>
+<li>diagonalizzazioni di matrici, autovalori e autovettori</li>
+<li>classi resto modulo n</li>
+</ul>
+<h2 id="esame-scritto"><span class="header-section-number">1.1</span> Esame scritto</h2>
+<p>voto &gt;= 18 si è ammessi all’esame (4/5 es)</p>
+<p>orale (teorema e dimostrazioni)</p>
+<h2 id="tutor"><span class="header-section-number">1.2</span> Tutor</h2>
+<p>martedì 15-17</p>
+<p>esercitazini nell’aula E1, fogli di esercizi su virtuale</p>
+<h2 id="libro"><span class="header-section-number">1.3</span> Libro</h2>
+<p>Introduzione linerare lineare,Fianesi Morigi CEA 2021</p>
+<h1 id="sistemilineari"><span class="header-section-number">2</span> SistemiLineari</h1>
+<p>Un sistema lineare è un insieme di equazioni lineare che devonno essere soddisfatte contemporaneamente</p>
+<details>
+<p><summary> esempio </summary></p>
+<p><span class="math inline">\(\begin{cases} 3x -2y =1 \\x+y=7\end{cases}\)</span></p>
+<p>in questo caso si può rappresentare come due rette sul piano cartesiamo ed esiste solo la soluzione <span class="math inline">\((3,4)\)</span></p>
+</details>
+<p>Il sistema potrebbe non avere soluzioni come infinite</p>
+<h2 id="equazione-lineare"><span class="header-section-number">2.1</span> Equazione lineare</h2>
+<p>un equzione lineare è un equazione del tipo: <span class="math inline">\(a_1x_1+a_2x_2 +\dots + a_nx_n=b \text{ dove } a_1,\dots, a_n,b \in \mathbb{R}\)</span> gli <span class="math inline">\(a_i\)</span> sono i coefficenti e b è il termine noto</p>
+<details>
+<p><summary> proprità delle equazioni </summary></p>
+<ul>
+<li>aggiungendo ad entrambi i membri uno stesso numero l’uguaglianza rimane</li>
+<li>moltiplicando ad entrambi i membri uno stesso numero l’uguaglianza rimane</li>
+</ul>
+</details>
+<h2 id="soluzioni-dei-sistemi-lineari"><span class="header-section-number">2.2</span> Soluzioni dei sistemi lineari</h2>
+<p>una soluzione è una n-upla ordinata (n numeri ) che sostituiti alle incognite rendono vere l’uguaglianza</p>
+<h2 id="scrittura-compatta"><span class="header-section-number">2.3</span> Scrittura compatta</h2>
+<p>un sistema lineare si può scrivere in maniera compatta con le matrici</p>
+<details>
+<p><summary> es </summary></p>
+<p>da <span class="math inline">\(\begin{cases} 3x -2y =1 \\x+y=7\end{cases}\)</span></p>
+<p>a</p>
+<span class="math inline">\(\begin{matrix} 3 &amp; -2 &amp;| 1 \\1 &amp;1 &amp; |7\end{matrix}\)</span>
+</details>
+<h2 id="matrici"><span class="header-section-number">2.4</span> Matrici</h2>
+<p>Una matrice <span class="math inline">\(n\times m\)</span> con coefficenti in <span class="math inline">\(\mathbb{R}\)</span> è una tabella con n righe e m colonne</p>
+<p>l’insieme di matrici <span class="math inline">\(m\times n\)</span> si indica con <span class="math inline">\(M_{m,n} (\mathbb{R})\)</span> se <span class="math inline">\(m=n\)</span> allora la matrice si dice quadrata <span class="math inline">\(M_{n,n}(\mathbb{R})=M_{n}(\mathbb{R})\)</span>, se <span class="math inline">\(A\in M_{m,n}(\mathbb{R})\)</span> scriviamo anche <span class="math inline">\(A(a_{i,j}) \text{ dove } i=1..m \text{ e } j=1..n\)</span></p>
+<h3 id="vettori"><span class="header-section-number">2.4.1</span> Vettori</h3>
+<p>una matrice con 1xn si dice <strong>vettore riga</strong></p>
+<p>una matrice con nx1 si dice <strong>vettore colonna</strong></p>
+<h3 id="somma"><span class="header-section-number">2.4.2</span> Somma</h3>
+<p>siano <span class="math inline">\(A,B \in M_{n,n}(\mathbb{R})\)</span> definiamo <span class="math inline">\(C=A+B\)</span> se <span class="math inline">\(A=(a_{i,j}),B=(b_{i,j}),C=(a_{i,j}) \text{ allora la somma è definita come }c_{i,j}=a_{i,j}+b_{i,j}\)</span></p>
+<details>
+<p><summary> esempio </summary></p>
+<span class="math display">\[
+\begin{pmatrix} 1 &amp; 0 &amp; -1 \\ 3 &amp; -5 &amp; 1\end{pmatrix} + \begin{pmatrix} -1 &amp; 2 &amp; -1 \\ 1 &amp; 7 &amp; -2\end{pmatrix} = \begin{pmatrix} 0 &amp; 2 &amp; -2 \\ 4 &amp; 2 &amp; -1\end{pmatrix}
+\]</span>
+</details>
+<h3 id="prodotto-tra-vettori"><span class="header-section-number">2.4.3</span> Prodotto tra vettori</h3>
+<p>Primo esempio tra un vettore riga e un vettore colonna della stessa lunghezza . (se <span class="math inline">\(A\in M_{1,m}(\mathbb{R}),B\in M_{m,1}(\mathbb{R})\)</span>) il risultato è un numero (<span class="math inline">\(AB \in \mathbb{R}\)</span>)</p>
+<details>
+<p><summary> come si calcola </summary></p>
+<p><span class="math display">\[
+c_{i,j}=\begin{pmatrix} a_{i1} &amp; a_{i2} &amp; ... &amp; a_{im}\end{pmatrix}\begin{pmatrix} b_{1j} \\ b_{2j} \\ ... \\ b_{mj}\end{pmatrix}=a_{i1}b_{1j}+a_{i2}b_{2j}+...+a_{im}b_{mj}
+\]</span></p>
+<p>forma compatta</p>
+<p><span class="math display">\[
+c_{ij}= \sum_{\substack{h=1}}^{s}a_{ih}b_{hj}
+\]</span></p>
+</details>
+<h3 id="prodotto-matrici"><span class="header-section-number">2.4.4</span> Prodotto Matrici</h3>
+<p>se <span class="math inline">\(A\in M_{m,r}(\mathbb{R}),B\in M_{r,n}(\mathbb{R})\)</span>) il risultato è un numero <span class="math inline">\(AB=C, C\in M_{m,n}\mathbb{R}\)</span> e si calcola <span class="math inline">\({\displaystyle c_{ij}=\sum _{r=1}^{n}a_{ir}b_{rj}}\)</span></p>
+<p>il prodotto righe per colonne di due matrici è <strong>definito</strong> solo se il numero di righe della prima è uguale al numero di colonne della seconda, e anche se è definito non gode della proprietà commutativa</p>
+<details>
+<p><summary> esempio </summary></p>
+<p><span class="math display">\[
+A=\begin{pmatrix} 1 &amp; 0 &amp; 3 &amp; -1 \\ 0 &amp; -2 &amp; 2 &amp; 1 \\ 1 &amp; 0 &amp; -1 &amp; 0\end{pmatrix} \space B= \begin{pmatrix} 0 &amp; 1 \\ -3 &amp; 5 \\ 1 &amp; 0 \\ 2 &amp; -1\end{pmatrix}
+\]</span></p>
+<p>si ha <span class="math inline">\(c_{12}=(1*1)+(0*5)+(3*0)+(-1*-1)=2\)</span></p>
+<p>e <span class="math inline">\(c_{31}=(1*0)+(0*-3)+(-1*1)+(0*2)=-1\)</span></p>
+<p><span class="math display">\[
+C=\begin{pmatrix} 1 &amp; 0 &amp; 3 &amp; -1 \\ 0 &amp; -2 &amp; 2 &amp; 1 \\ 1 &amp; 0 &amp; -1 &amp; 0\end{pmatrix} \begin{pmatrix} 0 &amp; 1 \\ -3 &amp; 5 \\ 1 &amp; 0 \\ 2 &amp; -1\end{pmatrix}= \begin{pmatrix} 1 &amp; 2 \\ 10 &amp; -11 \\-1&amp;1\end{pmatrix}
+\]</span></p>
+</details>
+</body>
+</html>
