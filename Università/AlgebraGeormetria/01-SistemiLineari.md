@@ -107,6 +107,9 @@ $$
 </details>
 
 
+
+
+
 ### Prodotto Matrici
 
 
@@ -133,3 +136,143 @@ C=\begin{pmatrix} 1 & 0 & 3 & -1 \\ 0 & -2 & 2 & 1 \\ 1 & 0 & -1 & 0\end{pmatrix
 $$
 
 </details>
+
+#### Proprità matrici
+
+- **Proprità associativa** (se è definitio il prodotto) $A(BC)=(AB)C$    
+- **Proprità distributiva** $A(B+C)=AB+AC$  
+
+- **Non vale** commutativa
+
+
+
+### Trasposizione
+
+se $A$ è una matrice con $m,n$ righe e colonne la sua trasposta $A^t$ è la matrice $M_{n,m}(\mathbb{R})$ ottenuta da $A$ scambiando righe e colonne
+
+
+quindi $(A^t)_{i,j}=A_{ji}$
+
+
+## Matrici e Sistemi Lineari
+
+
+consideriamo un sistema lineare della forma
+
+$$
+\begin{cases}a_{11}x_1 + a_{21}x_2 + ... +a_{n1} x_n = b1\\a_{12}x_1 + a_{22}x_2 + ... +a_{n2} x_n = b2\\...\\a_{1m}x_1 + a_{2m}x_2 + ... +a_{nm} x_n = b_m\end{cases}
+$$
+
+possiamo scrivere questo sistema nel seguente modo
+
+$$
+\begin{pmatrix}a_{11}x_1 + a_{21}x_2 + ... +a_{n1} x_n \\a_{12}x_1 + a_{22}x_2 + ... +a_{n2} x_n\\...\\a_{1m}x_1 + a_{2m}x_2 + ... +a_{nm} x_n \end{pmatrix}=\begin{pmatrix} b_1\\b_2\\...\\b_m\end{pmatrix}
+$$
+
+quindi il sistema può essere riscritto utilizzando il prodotto righe per colonne
+
+$$
+\begin{pmatrix}a_{11} & a_{21}& ... &a_{n1} \\a_{12} & a_{22} & ... &a_{n2} \\...\\a_{1m} & a_{2m} & ... &a_{nm} \end{pmatrix}\begin{pmatrix} x_1\\x_2\\...\\x_m\end{pmatrix}=\begin{pmatrix} b_1\\b_2\\...\\b_m\end{pmatrix}
+$$
+
+o più semplicemente come $A_{\underline x}=\underline b$
+
+
+<details>
+<summary>
+un altra forma compatta
+</summary>
+
+$$
+A(a|b)=\begin{pmatrix}a_{11} & a_{21}& ... &a_{n1} & |& b_{1} \\a_{12} & a_{22} & ... &a_{n2}  & | & b_2\\ \vdots &\vdots && \vdots & | & \vdots \\a_{1m} & a_{2m} & ... &a_{nm} & | &b_n \end{pmatrix}
+$$
+
+</details>
+
+dove $A=(a_{ij})$ è la matrice $m \times n$ dei coefficienti delle incognite$\underline x =\begin{pmatrix} x_1\\x_2\\...\\x_m\end{pmatrix}$ è la colonna delle $n$ incognite, e 
+
+$\underline b = \begin{pmatrix} b_1\\b_2\\...\\b_m\end{pmatrix}$ è la colonna degli $m$ termini noti.
+
+
+## Matrice Scala
+
+una matrice si dice in forma a scala se sono soddisfatte le seguenti condizioni
+
+1. eventuali righe nulle si trovano in fondo alla matrice;
+2. il primo elemento non nullo di ogni riga (non nulla) si trova più a destra del primo elemento non nullo della riga precedente
+    
+<details>
+<summary>
+esempio
+</summary>
+
+
+$$
+    A=\begin{pmatrix}1 & -1&-1&2&-4\\0&0&-1&3&5\\0&0&0&\frac{1}{3}&1\\0&0&0&0&0\end{pmatrix}
+$$
+
+</details>
+
+### Pivot e Rango righe
+**Pivot**: primo elemento non nullo di una riga 
+
+**Rango righe** numero delle righe non nulle $rr(A)$
+
+<details>
+<summary>
+esempio
+</summary>
+
+$$
+A=\begin{pmatrix}1 & -1&-1&2&-4\\0&0&-1&3&5\\0&0&0&\frac{1}{3}&1\\0&0&0&0&0\end{pmatrix}
+$$
+
+i pivot di A sono $1,-1,\frac{1}{3}$ quindi $rr(A)=3$
+
+</details>
+
+### Risolvere sistemi con matrici a scala
+
+Un sistema lineare associato ad una matrice a scala, si risolve faccilmente ( se ha soluzione ) per sostituzione dal basso e ricavando le incognite corrispondenti ai pivot, se una variabile non è una pivot la lasciamo generica
+
+
+
+<details>
+<summary>
+esempio
+</summary>
+il sistema può essere risolto per sostituzioni successive dal basso, cioè a partire dall'ultima equazione e risalendo verso la prima:
+
+dalla quarta equazione abbiamo $x_4=1$
+
+sostituendo $x_4=1$ nella terza equazione abbiamo $x_3=x_4=1$
+
+sostituendo $x_3=1$ nella seconda equazione abbiamo $x_2=2+2x_3=4$
+
+sostituendo $x2=4$ nella prima equazione abbiamo $x_1=\frac 14 (1-2x_2-3x_3-4x_4)=-\frac 73$
+
+il sistema ha dunque una sola soluzione $(\frac 72,4,1,1)$.
+
+nota: nel caso
+
+$$
+(A|\underline b) = \begin{pmatrix}4&2&3&4&|&1\\0&1&-2&0&|&2\\0&0&1&-1&|&2\end{pmatrix}
+$$
+
+ arriveremo a $x_1=\frac 14(-3-11x_4)$ , che indica un sistema con infinite soluzioni in quella forma.
+
+</details>
+
+### Algoritmo di Gauss
+
+Due sistemi lineari si dicono equivalenti se hanno le stesse soluzioni.
+
+Strategia: datu un sistema lineare tramite l'algritmo di Gauss lo trasformiramo in un sistema lineare a scala che è equivalente.
+
+
+Ci sono 3 operazioni dette operazioni elementari, che non cambiano le soluzioni di un sistema:
+
+1. scambio di due equazioni, cioè lo scabio di due rige nella matrice
+2. moltiplicazione di un'equazione per un numero reale diverso da 0
+3. sostituzione dell'equazione i-esima e della j-esima moltiplicata per un numero reale $\alpha$ qualsiasi.
+

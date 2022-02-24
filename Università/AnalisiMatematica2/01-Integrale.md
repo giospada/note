@@ -120,9 +120,95 @@ es $f(x)=\frac{1}{x^2} , x\neq 0, x \in \mathbb{R} \backslash \{0\}$ $F(x)=-\fra
 
 >def : sia $f : ]a_0,b_0[ \to \mathbb{R}$ sia $c \in ]a_0,b_0[$ definisco $I_c : ]a_0,b_0[ \to \mathbb{R}, I_c(x)=\int_c^x f(t) dt = \int_c^x f$  
 
-**osservazione** $I_c (c)= \int^c_c f = 0$
+Proprietà:
+- **osservazione** $I_c (c)= \int^c_c f = 0$
 
-**osservazione** siano $c_1,c_2 \in ]a_0,b_0[ f$ continua $I_{c_1}(x)=\int_{c_1}^x f , I_{c_2}(x)=\int_{c_2}^x f$ , $I_{c_1}(x)- I_{c_2}(x)=\int_{c_1}^x f - \int_{c_2}^x f= \int_{c_1}^x f + \int^{c_2}_x f = \text{proprieta add}= \int_{c_1}^{c_2} f(t) dt$  dunque $I_{c_1}(x) I_{c_2}$ differeiscono per una constante
+- **osservazione** siano $c_1,c_2 \in ]a_0,b_0[ f$ continua $I_{c_1}(x)=\int_{c_1}^x f , I_{c_2}(x)=\int_{c_2}^x f$ , $I_{c_1}(x)- I_{c_2}(x)=\int_{c_1}^x f - \int_{c_2}^x f= \int_{c_1}^x f + \int^{c_2}_x f = \text{proprieta add}= \int_{c_1}^{c_2} f(t) dt$  dunque $I_{c_1}(x) I_{c_2}$ differeiscono per una constante
+
+
+
+## Teorema Fondamentale del Calcolo Integrale
+
+$f: ]a,b[ \to  \mathbb{R} \text{ continua }, c \in ]a,b[ \forall x \in ]a,b[, I_c \text{ è derivabilie in x   e vale } I'_c=f(x)$
+
+$(\frac{d}{dx} \int_c^x f(t) \space dt =f(x) \forall x \in ]a,b[)$
+
+<details>
+<summary>
+esempio
+</summary>
+   
+$F(x)= \int_0^x log(1+t^2)e^{-\sqrt{1+t^4}} dt$
+
+possiamo semplicemente calcolare la derivata di f prendendo la funzione dentro l'integrale
+
+$F'(t)=  log(1+t^2)e^{-\sqrt{1+t^4}}$
+
+
+</details>
+
+### Dimostrazione
+
+$f:]a,b[\to \mathbb{R} \space I'_c(x)=f(x) \iff \displaystyle \lim_{h \rightarrow 0} \frac{I_c(x+h)-I_c(x)}{h}=f(x)$
+
+caso $h \to 0+$:
+
+$I_c(x+h) - I_c(x)=\int_c^{x+h}f -\int_c^xf=\int_c^{x+h}f +\int_x^cf=\int_x^{x+h} f$
+
+
+$\displaystyle \lim_{h \rightarrow +0} \frac{1}{h}\int_x^{x+h} f = f(x) \iff \forall h_n \to 0+, \displaystyle \lim_{x \rightarrow +\infty} \frac{1}{h_n} \int_x^{x+hn} f= f(x)$  posso applicare il teorema della media integrale $\exists c_n \in ]x,x+h_n[ \text{ tale che } \frac{1}{h_n} \int_x^{x+hn}=f(c_n) \text{ con n che tende a più infinito e con f continua tende a } f(x)$
+
+## Teorema fondamentale del calcolo (Formula di torricelli)
+
+Teorema: Sia $f:]a_0,b_0[ \to \mathbb{R}$ continua, Sia $F:]a_0,b_0[ \to \mathbb{R}$ primitiva di $F$ e siano $a,b \in ]a_0,b_0[$  allora vale $\int _a^b f(x) \space dx =F(b)-F(a)=[F(x)]_a^b=F(x)|_a^b$
+
+
+<details>
+<summary>
+esempio
+</summary>
+
+fai un esempio del calcolo.
+
+</details>
+
+
+Dim : Per il teorema (versione 1), fissata $c\in ]a,b[$ $I_c$ è una proimitiva di $f$. F è una primitiva di $f \implies \exists k\in \mathbb{R}$ tale che $F(x) = I_c(x)+k \forall x \in ]a,b[, \space F(b)-F(a)=I_c(b)+k-(I_c(a)+k)=I_c(b)-I_c(a)=\int_c^b f - \int_c^a f= \int_c^b f + \int _a^c f=\int_a^b f(x)\space dx$ 
+
+
+
+### Tabella primitive
+
+|               f                |                                                                 F                                                                  |
+| ----------------------- | ----------------------------------------------------------------------------------------------------- |
+| $x^n$                     | $\frac{x^{n+1}}{n+1}$  $n \in \mathbb{N} \ \{0\}, x\in \mathbb{R}$                          |
+| $x^k$                     | $\frac{x^{k+1}}{k+1}$  con $k \in \mathbb{Z}\wedge k \neq -1, x\neq 0$                    |
+| $\frac{1}{x}$          | $ln(|x|)$  con $x\neq 0$                                                                                                |
+| $x^{\alpha}$           | $\frac{x^{\alpha +1}}{\alpha +1}$  con $\alpha \in \mathbb{R}\backslash \{-1\},x>0$ |
+| $cos(x)$                  | $sin(x)$                                                                                                                        |
+| $sin(x)$                   | $-cos(x)$                                                                                                                      |
+| $e^x$                     | $e^x$                                                                                                                          |
+| $\frac{1}{1+x^2}$  | $\arctan(x)$                                                                                                                 |
+| $\frac{1}{cos^2x}$ | $\tan(x)$                                                                                                                      |
+
+
+<details>
+<summary>
+esempio di integrale
+</summary>
+
+fai un esempio 
+
+</details>
+
+
+$f:I\to J, g: J \to \mathbb{R}, I, J$ intervalli aperti, $f,g$ derivabile, allora $g \cdot f$ è derivabile in I $(g \cdot f)(x)=g(f(x))$ vale 
+$(g \cdot f) (x)=g'(f(x))- f'(x) \forall x \in I, g \cdot f$ è una primitiva di $h(x)=g'(f(x))f'(x) \implies \int_a^b g'(f(x))f'(x) dx=[g(f(x))]^{x=b}_{x=a}$
+
+1. $g(z)=e^z, g'(z)=e^z, \space \int e^{f(x)}f'(x) \space dx=[e^{f(x)}]^{x=b}_{x=a}$
+2. $g(z) = ln(z), g'(x)=\frac{1}{z} z>0 \space \int_a^b \frac{f'(x)}{f(x)} dx = [ln f(x)]_{x=a}^{x=a}$  
+3. $g(z) = sin(z), g'(x)=cos(z) \space \int_a^b cos(f(x))f'(x) dx = [sin(f(x))]_{x=a}^{x=a}$  
+3. $g(z) = \frac{z^\alpha}{\alpha +1 }, g'(x)=z^{\alpha}, \alpha\neq -1, z \in  \text{ dominio della potenza di alpha+1 } \space \int_a^b f(x)^{\alpha}f'(x) dx = [\frac{f(x)^{\alpha+1}}{\alpha+1}]_{x=a}^{x=a}$  
 
 
 
