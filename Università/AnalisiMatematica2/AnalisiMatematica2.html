@@ -50,6 +50,12 @@
 <li><a href="#infinite-primitive-di-una-funzione"><span class="toc-section-number">1.4.1</span> Infinite primitive di una funzione</a></li>
 </ul></li>
 <li><a href="#funzione-integrale"><span class="toc-section-number">1.5</span> Funzione integrale</a></li>
+<li><a href="#teorema-fondamentale-del-calcolo-integrale"><span class="toc-section-number">1.6</span> Teorema Fondamentale del Calcolo Integrale</a><ul>
+<li><a href="#dimostrazione-1"><span class="toc-section-number">1.6.1</span> Dimostrazione</a></li>
+</ul></li>
+<li><a href="#teorema-fondamentale-del-calcolo-formula-di-torricelli"><span class="toc-section-number">1.7</span> Teorema fondamentale del calcolo (Formula di torricelli)</a><ul>
+<li><a href="#tabella-primitive"><span class="toc-section-number">1.7.1</span> Tabella primitive</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -127,7 +133,95 @@ es : <span class="math inline">\(f(x)=x, x \in \mathbb{R} F(x)=\frac{x^2}{2}\)</
 <blockquote>
 <p>def : sia <span class="math inline">\(f : ]a_0,b_0[ \to \mathbb{R}\)</span> sia <span class="math inline">\(c \in ]a_0,b_0[\)</span> definisco <span class="math inline">\(I_c : ]a_0,b_0[ \to \mathbb{R}, I_c(x)=\int_c^x f(t) dt = \int_c^x f\)</span></p>
 </blockquote>
-<p><strong>osservazione</strong> <span class="math inline">\(I_c (c)= \int^c_c f = 0\)</span></p>
-<p><strong>osservazione</strong> siano <span class="math inline">\(c_1,c_2 \in ]a_0,b_0[ f\)</span> continua <span class="math inline">\(I_{c_1}(x)=\int_{c_1}^x f , I_{c_2}(x)=\int_{c_2}^x f\)</span> , <span class="math inline">\(I_{c_1}(x)- I_{c_2}(x)=\int_{c_1}^x f - \int_{c_2}^x f= \int_{c_1}^x f + \int^{c_2}_x f = \text{proprieta add}= \int_{c_1}^{c_2} f(t) dt\)</span> dunque <span class="math inline">\(I_{c_1}(x) I_{c_2}\)</span> differeiscono per una constante</p>
+<p>Proprietà:</p>
+<ul>
+<li><p><strong>osservazione</strong> <span class="math inline">\(I_c (c)= \int^c_c f = 0\)</span></p></li>
+<li><p><strong>osservazione</strong> siano <span class="math inline">\(c_1,c_2 \in ]a_0,b_0[ f\)</span> continua <span class="math inline">\(I_{c_1}(x)=\int_{c_1}^x f , I_{c_2}(x)=\int_{c_2}^x f\)</span> , <span class="math inline">\(I_{c_1}(x)- I_{c_2}(x)=\int_{c_1}^x f - \int_{c_2}^x f= \int_{c_1}^x f + \int^{c_2}_x f = \text{proprieta add}= \int_{c_1}^{c_2} f(t) dt\)</span> dunque <span class="math inline">\(I_{c_1}(x) I_{c_2}\)</span> differeiscono per una constante</p></li>
+</ul>
+<h2 id="teorema-fondamentale-del-calcolo-integrale"><span class="header-section-number">1.6</span> Teorema Fondamentale del Calcolo Integrale</h2>
+<p><span class="math inline">\(f: ]a,b[ \to \mathbb{R} \text{ continua }, c \in ]a,b[ \forall x \in ]a,b[, I_c \text{ è derivabilie in x   e vale } I&#39;_c=f(x)\)</span></p>
+<p><span class="math inline">\((\frac{d}{dx} \int_c^x f(t) \space dt =f(x) \forall x \in ]a,b[)\)</span></p>
+<details>
+<p><summary> esempio </summary></p>
+<p><span class="math inline">\(F(x)= \int_0^x log(1+t^2)e^{-\sqrt{1+t^4}} dt\)</span></p>
+<p>possiamo semplicemente calcolare la derivata di f prendendo la funzione dentro l’integrale</p>
+<p><span class="math inline">\(F&#39;(t)= log(1+t^2)e^{-\sqrt{1+t^4}}\)</span></p>
+</details>
+<h3 id="dimostrazione-1"><span class="header-section-number">1.6.1</span> Dimostrazione</h3>
+<p><span class="math inline">\(f:]a,b[\to \mathbb{R} \space I&#39;_c(x)=f(x) \iff \displaystyle \lim_{h \rightarrow 0} \frac{I_c(x+h)-I_c(x)}{h}=f(x)\)</span></p>
+<p>caso <span class="math inline">\(h \to 0+\)</span>:</p>
+<p><span class="math inline">\(I_c(x+h) - I_c(x)=\int_c^{x+h}f -\int_c^xf=\int_c^{x+h}f +\int_x^cf=\int_x^{x+h} f\)</span></p>
+<p><span class="math inline">\(\displaystyle \lim_{h \rightarrow +0} \frac{1}{h}\int_x^{x+h} f = f(x) \iff \forall h_n \to 0+, \displaystyle \lim_{x \rightarrow +\infty} \frac{1}{h_n} \int_x^{x+hn} f= f(x)\)</span> posso applicare il teorema della media integrale <span class="math inline">\(\exists c_n \in ]x,x+h_n[ \text{ tale che } \frac{1}{h_n} \int_x^{x+hn}=f(c_n) \text{ con n che tende a più infinito e con f continua tende a } f(x)\)</span></p>
+<h2 id="teorema-fondamentale-del-calcolo-formula-di-torricelli"><span class="header-section-number">1.7</span> Teorema fondamentale del calcolo (Formula di torricelli)</h2>
+<p>Teorema: Sia <span class="math inline">\(f:]a_0,b_0[ \to \mathbb{R}\)</span> continua, Sia <span class="math inline">\(F:]a_0,b_0[ \to \mathbb{R}\)</span> primitiva di <span class="math inline">\(F\)</span> e siano <span class="math inline">\(a,b \in ]a_0,b_0[\)</span> allora vale <span class="math inline">\(\int _a^b f(x) \space dx =F(b)-F(a)=[F(x)]_a^b=F(x)|_a^b\)</span></p>
+<details>
+<p><summary> esempio </summary></p>
+<p>fai un esempio del calcolo.</p>
+</details>
+<p>Dim : Per il teorema (versione 1), fissata <span class="math inline">\(c\in ]a,b[\)</span> <span class="math inline">\(I_c\)</span> è una proimitiva di <span class="math inline">\(f\)</span>. F è una primitiva di <span class="math inline">\(f \implies \exists k\in \mathbb{R}\)</span> tale che <span class="math inline">\(F(x) = I_c(x)+k \forall x \in ]a,b[, \space F(b)-F(a)=I_c(b)+k-(I_c(a)+k)=I_c(b)-I_c(a)=\int_c^b f - \int_c^a f= \int_c^b f + \int _a^c f=\int_a^b f(x)\space dx\)</span></p>
+<h3 id="tabella-primitive"><span class="header-section-number">1.7.1</span> Tabella primitive</h3>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 81%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>f</th>
+<th>F</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(x^n\)</span></td>
+<td><span class="math inline">\(\frac{x^{n+1}}{n+1}\)</span> <span class="math inline">\(n \in \mathbb{N} \ \{0\}, x\in \mathbb{R}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(x^k\)</span></td>
+<td><span class="math inline">\(\frac{x^{k+1}}{k+1}\)</span> con <span class="math inline">\(k \in \mathbb{Z}\wedge k \neq -1, x\neq 0\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\frac{1}{x}\)</span></td>
+<td><span class="math inline">\(ln(|x|)\)</span> con <span class="math inline">\(x\neq 0\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(x^{\alpha}\)</span></td>
+<td><span class="math inline">\(\frac{x^{\alpha +1}}{\alpha +1}\)</span> con <span class="math inline">\(\alpha \in \mathbb{R}\backslash \{-1\},x&gt;0\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(cos(x)\)</span></td>
+<td><span class="math inline">\(sin(x)\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(sin(x)\)</span></td>
+<td><span class="math inline">\(-cos(x)\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(e^x\)</span></td>
+<td><span class="math inline">\(e^x\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\frac{1}{1+x^2}\)</span></td>
+<td><span class="math inline">\(\arctan(x)\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\frac{1}{cos^2x}\)</span></td>
+<td><span class="math inline">\(\tan(x)\)</span></td>
+</tr>
+</tbody>
+</table>
+<details>
+<p><summary> esempio di integrale </summary></p>
+<p>fai un esempio</p>
+</details>
+<p><span class="math inline">\(f:I\to J, g: J \to \mathbb{R}, I, J\)</span> intervalli aperti, <span class="math inline">\(f,g\)</span> derivabile, allora <span class="math inline">\(g \cdot f\)</span> è derivabile in I <span class="math inline">\((g \cdot f)(x)=g(f(x))\)</span> vale <span class="math inline">\((g \cdot f) (x)=g&#39;(f(x))- f&#39;(x) \forall x \in I, g \cdot f\)</span> è una primitiva di <span class="math inline">\(h(x)=g&#39;(f(x))f&#39;(x) \implies \int_a^b g&#39;(f(x))f&#39;(x) dx=[g(f(x))]^{x=b}_{x=a}\)</span></p>
+<ol type="1">
+<li><span class="math inline">\(g(z)=e^z, g&#39;(z)=e^z, \space \int e^{f(x)}f&#39;(x) \space dx=[e^{f(x)}]^{x=b}_{x=a}\)</span></li>
+<li><span class="math inline">\(g(z) = ln(z), g&#39;(x)=\frac{1}{z} z&gt;0 \space \int_a^b \frac{f&#39;(x)}{f(x)} dx = [ln f(x)]_{x=a}^{x=a}\)</span><br />
+</li>
+<li><span class="math inline">\(g(z) = sin(z), g&#39;(x)=cos(z) \space \int_a^b cos(f(x))f&#39;(x) dx = [sin(f(x))]_{x=a}^{x=a}\)</span><br />
+</li>
+<li><span class="math inline">\(g(z) = \frac{z^\alpha}{\alpha +1 }, g&#39;(x)=z^{\alpha}, \alpha\neq -1, z \in \text{ dominio della potenza di alpha+1 } \space \int_a^b f(x)^{\alpha}f&#39;(x) dx = [\frac{f(x)^{\alpha+1}}{\alpha+1}]_{x=a}^{x=a}\)</span></li>
+</ol>
 </body>
 </html>
