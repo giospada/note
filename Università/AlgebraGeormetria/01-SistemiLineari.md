@@ -88,8 +88,7 @@ $$
 
 ### Prodotto tra vettori
 
-Primo esempio tra un vettore riga e un vettore colonna della stessa lunghezza . (se $A\in M_{1,m}(\mathbb{R}),B\in M_{m,1}(\mathbb{R})$) il risultato è un numero ($AB \in \mathbb{R}$)
-
+Primo esempio tra un vettore riga e un vettore colonna della stessa lunghezza . (se $A\in M_{1,m}(\mathbb{R}),B\in M_{m,1}(\mathbb{R})$) il risultato è un numero ($AB \in \mathbb{R}$) 
 <details>
 <summary>
 come si calcola 
