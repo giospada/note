@@ -48,6 +48,13 @@
 <li><a href="#somma"><span class="toc-section-number">2.4.2</span> Somma</a></li>
 <li><a href="#prodotto-tra-vettori"><span class="toc-section-number">2.4.3</span> Prodotto tra vettori</a></li>
 <li><a href="#prodotto-matrici"><span class="toc-section-number">2.4.4</span> Prodotto Matrici</a></li>
+<li><a href="#trasposizione"><span class="toc-section-number">2.4.5</span> Trasposizione</a></li>
+</ul></li>
+<li><a href="#matrici-e-sistemi-lineari"><span class="toc-section-number">2.5</span> Matrici e Sistemi Lineari</a></li>
+<li><a href="#matrice-scala"><span class="toc-section-number">2.6</span> Matrice Scala</a><ul>
+<li><a href="#pivot-e-rango-righe"><span class="toc-section-number">2.6.1</span> Pivot e Rango righe</a></li>
+<li><a href="#risolvere-sistemi-con-matrici-a-scala"><span class="toc-section-number">2.6.2</span> Risolvere sistemi con matrici a scala</a></li>
+<li><a href="#algoritmo-di-gauss"><span class="toc-section-number">2.6.3</span> Algoritmo di Gauss</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -136,5 +143,83 @@ A=\begin{pmatrix} 1 &amp; 0 &amp; 3 &amp; -1 \\ 0 &amp; -2 &amp; 2 &amp; 1 \\ 1 
 C=\begin{pmatrix} 1 &amp; 0 &amp; 3 &amp; -1 \\ 0 &amp; -2 &amp; 2 &amp; 1 \\ 1 &amp; 0 &amp; -1 &amp; 0\end{pmatrix} \begin{pmatrix} 0 &amp; 1 \\ -3 &amp; 5 \\ 1 &amp; 0 \\ 2 &amp; -1\end{pmatrix}= \begin{pmatrix} 1 &amp; 2 \\ 10 &amp; -11 \\-1&amp;1\end{pmatrix}
 \]</span></p>
 </details>
+<h4 id="proprità-matrici"><span class="header-section-number">2.4.4.1</span> Proprità matrici</h4>
+<ul>
+<li><p><strong>Proprità associativa</strong> (se è definitio il prodotto) <span class="math inline">\(A(BC)=(AB)C\)</span><br />
+</p></li>
+<li><p><strong>Proprità distributiva</strong> <span class="math inline">\(A(B+C)=AB+AC\)</span></p></li>
+<li><p><strong>Non vale</strong> commutativa</p></li>
+</ul>
+<h3 id="trasposizione"><span class="header-section-number">2.4.5</span> Trasposizione</h3>
+<p>se <span class="math inline">\(A\)</span> è una matrice con <span class="math inline">\(m,n\)</span> righe e colonne la sua trasposta <span class="math inline">\(A^t\)</span> è la matrice <span class="math inline">\(M_{n,m}(\mathbb{R})\)</span> ottenuta da <span class="math inline">\(A\)</span> scambiando righe e colonne</p>
+<p>quindi <span class="math inline">\((A^t)_{i,j}=A_{ji}\)</span></p>
+<h2 id="matrici-e-sistemi-lineari"><span class="header-section-number">2.5</span> Matrici e Sistemi Lineari</h2>
+<p>consideriamo un sistema lineare della forma</p>
+<p><span class="math display">\[
+\begin{cases}a_{11}x_1 + a_{21}x_2 + ... +a_{n1} x_n = b1\\a_{12}x_1 + a_{22}x_2 + ... +a_{n2} x_n = b2\\...\\a_{1m}x_1 + a_{2m}x_2 + ... +a_{nm} x_n = b_m\end{cases}
+\]</span></p>
+<p>possiamo scrivere questo sistema nel seguente modo</p>
+<p><span class="math display">\[
+\begin{pmatrix}a_{11}x_1 + a_{21}x_2 + ... +a_{n1} x_n \\a_{12}x_1 + a_{22}x_2 + ... +a_{n2} x_n\\...\\a_{1m}x_1 + a_{2m}x_2 + ... +a_{nm} x_n \end{pmatrix}=\begin{pmatrix} b_1\\b_2\\...\\b_m\end{pmatrix}
+\]</span></p>
+<p>quindi il sistema può essere riscritto utilizzando il prodotto righe per colonne</p>
+<p><span class="math display">\[
+\begin{pmatrix}a_{11} &amp; a_{21}&amp; ... &amp;a_{n1} \\a_{12} &amp; a_{22} &amp; ... &amp;a_{n2} \\...\\a_{1m} &amp; a_{2m} &amp; ... &amp;a_{nm} \end{pmatrix}\begin{pmatrix} x_1\\x_2\\...\\x_m\end{pmatrix}=\begin{pmatrix} b_1\\b_2\\...\\b_m\end{pmatrix}
+\]</span></p>
+<p>o più semplicemente come <span class="math inline">\(A_{\underline x}=\underline b\)</span></p>
+<details>
+<p><summary> un altra forma compatta </summary></p>
+<p><span class="math display">\[
+A(a|b)=\begin{pmatrix}a_{11} &amp; a_{21}&amp; ... &amp;a_{n1} &amp; |&amp; b_{1} \\a_{12} &amp; a_{22} &amp; ... &amp;a_{n2}  &amp; | &amp; b_2\\ \vdots &amp;\vdots &amp;&amp; \vdots &amp; | &amp; \vdots \\a_{1m} &amp; a_{2m} &amp; ... &amp;a_{nm} &amp; | &amp;b_n \end{pmatrix}
+\]</span></p>
+</details>
+<p>dove <span class="math inline">\(A=(a_{ij})\)</span> è la matrice <span class="math inline">\(m \times n\)</span> dei coefficienti delle incognite<span class="math inline">\(\underline x =\begin{pmatrix} x_1\\x_2\\...\\x_m\end{pmatrix}\)</span> è la colonna delle <span class="math inline">\(n\)</span> incognite, e</p>
+<p><span class="math inline">\(\underline b = \begin{pmatrix} b_1\\b_2\\...\\b_m\end{pmatrix}\)</span> è la colonna degli <span class="math inline">\(m\)</span> termini noti.</p>
+<h2 id="matrice-scala"><span class="header-section-number">2.6</span> Matrice Scala</h2>
+<p>una matrice si dice in forma a scala se sono soddisfatte le seguenti condizioni</p>
+<ol type="1">
+<li>eventuali righe nulle si trovano in fondo alla matrice;</li>
+<li>il primo elemento non nullo di ogni riga (non nulla) si trova più a destra del primo elemento non nullo della riga precedente</li>
+</ol>
+<details>
+<p><summary> esempio </summary></p>
+<p><span class="math display">\[
+    A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&amp;0&amp;0&amp;\frac{1}{3}&amp;1\\0&amp;0&amp;0&amp;0&amp;0\end{pmatrix}
+\]</span></p>
+</details>
+<h3 id="pivot-e-rango-righe"><span class="header-section-number">2.6.1</span> Pivot e Rango righe</h3>
+<p><strong>Pivot</strong>: primo elemento non nullo di una riga</p>
+<p><strong>Rango righe</strong> numero delle righe non nulle <span class="math inline">\(rr(A)\)</span></p>
+<details>
+<p><summary> esempio </summary></p>
+<p><span class="math display">\[
+A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&amp;0&amp;0&amp;\frac{1}{3}&amp;1\\0&amp;0&amp;0&amp;0&amp;0\end{pmatrix}
+\]</span></p>
+<p>i pivot di A sono <span class="math inline">\(1,-1,\frac{1}{3}\)</span> quindi <span class="math inline">\(rr(A)=3\)</span></p>
+</details>
+<h3 id="risolvere-sistemi-con-matrici-a-scala"><span class="header-section-number">2.6.2</span> Risolvere sistemi con matrici a scala</h3>
+<p>Un sistema lineare associato ad una matrice a scala, si risolve faccilmente ( se ha soluzione ) per sostituzione dal basso e ricavando le incognite corrispondenti ai pivot, se una variabile non è una pivot la lasciamo generica</p>
+<details>
+<p><summary> esempio </summary> il sistema può essere risolto per sostituzioni successive dal basso, cioè a partire dall’ultima equazione e risalendo verso la prima:</p>
+<p>dalla quarta equazione abbiamo <span class="math inline">\(x_4=1\)</span></p>
+<p>sostituendo <span class="math inline">\(x_4=1\)</span> nella terza equazione abbiamo <span class="math inline">\(x_3=x_4=1\)</span></p>
+<p>sostituendo <span class="math inline">\(x_3=1\)</span> nella seconda equazione abbiamo <span class="math inline">\(x_2=2+2x_3=4\)</span></p>
+<p>sostituendo <span class="math inline">\(x2=4\)</span> nella prima equazione abbiamo <span class="math inline">\(x_1=\frac 14 (1-2x_2-3x_3-4x_4)=-\frac 73\)</span></p>
+<p>il sistema ha dunque una sola soluzione <span class="math inline">\((\frac 72,4,1,1)\)</span>.</p>
+<p>nota: nel caso</p>
+<p><span class="math display">\[
+(A|\underline b) = \begin{pmatrix}4&amp;2&amp;3&amp;4&amp;|&amp;1\\0&amp;1&amp;-2&amp;0&amp;|&amp;2\\0&amp;0&amp;1&amp;-1&amp;|&amp;2\end{pmatrix}
+\]</span></p>
+<p>arriveremo a <span class="math inline">\(x_1=\frac 14(-3-11x_4)\)</span> , che indica un sistema con infinite soluzioni in quella forma.</p>
+</details>
+<h3 id="algoritmo-di-gauss"><span class="header-section-number">2.6.3</span> Algoritmo di Gauss</h3>
+<p>Due sistemi lineari si dicono equivalenti se hanno le stesse soluzioni.</p>
+<p>Strategia: datu un sistema lineare tramite l’algritmo di Gauss lo trasformiramo in un sistema lineare a scala che è equivalente.</p>
+<p>Ci sono 3 operazioni dette operazioni elementari, che non cambiano le soluzioni di un sistema:</p>
+<ol type="1">
+<li>scambio di due equazioni, cioè lo scabio di due rige nella matrice</li>
+<li>moltiplicazione di un’equazione per un numero reale diverso da 0</li>
+<li>sostituzione dell’equazione i-esima e della j-esima moltiplicata per un numero reale <span class="math inline">\(\alpha\)</span> qualsiasi.</li>
+</ol>
 </body>
 </html>

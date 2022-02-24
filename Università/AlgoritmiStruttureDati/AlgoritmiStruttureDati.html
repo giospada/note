@@ -12,6 +12,7 @@
       div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
   <link rel="stylesheet" href="../img/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -33,12 +34,63 @@
 <body>
 <nav id="TOC" role="doc-toc">
 <ul>
-<li><a href="#algoritmi"><span class="toc-section-number">1</span> Algoritmi</a></li>
+<li><a href="#algoritmi"><span class="toc-section-number">1</span> Algoritmi</a><ul>
+<li><a href="#analizzare-gli-algoritmi"><span class="toc-section-number">1.1</span> Analizzare gli algoritmi</a><ul>
+<li><a href="#theta"><span class="toc-section-number">1.1.1</span> Theta</a></li>
+<li><a href="#o-grande"><span class="toc-section-number">1.1.2</span> O grande</a></li>
+<li><a href="#omega"><span class="toc-section-number">1.1.3</span> Omega</a></li>
+<li><a href="#teorema-di-theta"><span class="toc-section-number">1.1.4</span> Teorema di theta</a></li>
+<li><a href="#o-piccolo"><span class="toc-section-number">1.1.5</span> O piccolo</a></li>
+<li><a href="#omega-piccola"><span class="toc-section-number">1.1.6</span> omega piccola</a></li>
+</ul></li>
+<li><a href="#proprietà-della-notazione-asintotica"><span class="toc-section-number">1.2</span> Proprietà della notazione asintotica</a><ul>
+<li><a href="#transitiva"><span class="toc-section-number">1.2.1</span> Transitiva</a></li>
+<li><a href="#riflessiva"><span class="toc-section-number">1.2.2</span> Riflessiva</a></li>
+<li><a href="#simetrica"><span class="toc-section-number">1.2.3</span> Simetrica</a></li>
+<li><a href="#simmetrica-trasposta"><span class="toc-section-number">1.2.4</span> Simmetrica trasposta</a></li>
+</ul></li>
+</ul></li>
 </ul>
 </nav>
 <h1 id="algoritmi"><span class="header-section-number">1</span> Algoritmi</h1>
 <blockquote>
 <p>Procedura per risolvere un problema prendendo determinati input e dando determinati output in un numero finito di passi</p>
 </blockquote>
+<h2 id="analizzare-gli-algoritmi"><span class="header-section-number">1.1</span> Analizzare gli algoritmi</h2>
+<p>dobbiamo analizzare :</p>
+<ul>
+<li>la quanità di memoria</li>
+<li>il tempo d’esecuzione di un algoritmo</li>
+</ul>
+<h3 id="theta"><span class="header-section-number">1.1.1</span> Theta</h3>
+<p>La notazione theta indica <span class="math inline">\(f \in \Theta(g)\)</span> indica che le due funzioni f e g hanno la stessa crescita</p>
+<p><span class="math inline">\(\Theta(g(n)) = \{f(n) : \text{ esistono delle costanti positive c1, c2 e n0 tali che } 0 ≤ c_1g(n) ≤ f(n) ≤ c_2g(n) \text{ per ogni } n ≥ n_0\}\)</span></p>
+<h3 id="o-grande"><span class="header-section-number">1.1.2</span> O grande</h3>
+<p>Limite asintotico superiore, <span class="math inline">\(f\in O(g)\)</span> incica che la funzione g ha una crescita minore uguale a quella di g</p>
+<p><span class="math inline">\(O(g(n)) = \{f(n) : \text{esistono delle costanti positive c e n0 tali che } 0 ≤ f(n) ≤ cg(n) \forall n ≥ n_0\}\)</span></p>
+<h3 id="omega"><span class="header-section-number">1.1.3</span> Omega</h3>
+<p>Limite asintotico inferiore, <span class="math inline">\(f\in \Omega(g)\)</span> f è omega di g se f ha una crescita maggiore uguale a g</p>
+<p><span class="math inline">\(\Omega(g(n)) = \{f(n) : \text{esistono delle costanti positive c e n0 tali che } 0 ≤ cg(n) ≤ f(n) per ogni n ≥ n_0\}\)</span></p>
+<h3 id="teorema-di-theta"><span class="header-section-number">1.1.4</span> Teorema di theta</h3>
+<p><span class="math inline">\(\forall f(n) ,g(n) : f(n) = Θ(g(n)) \iff f(n) = O(g(n)) \wedge f(n) = \Omega(g(n))\)</span></p>
+<h3 id="o-piccolo"><span class="header-section-number">1.1.5</span> O piccolo</h3>
+<p>Limite asintotico inferiore stretto, indica una funzione con crescita strettamente minore</p>
+<p><span class="math inline">\(o(g(n)) = \{f(n) : \text{per qualsiasi costante c &gt; 0, esiste una costante n0 &gt; 0 tale che  } 0 ≤ f(n) &lt; cg(n) \forall n ≥ n0\}\)</span></p>
+<p>oppure <span class="math inline">\(\displaystyle \lim_{x \rightarrow +\infty} \frac{f(x)}{g(x)}=0\)</span></p>
+<h3 id="omega-piccola"><span class="header-section-number">1.1.6</span> omega piccola</h3>
+<p>Limite asintotico maggiore stretto, indica una funzione che ha una crescita maggiore</p>
+<p><span class="math inline">\(\omega(g(n)) = \{f(n) : \text{per qualsiasi costante c &gt; 0, esiste una costante n0 &gt; 0 tale che  } cg(n) &lt; f(n), \forall n ≥ n0\}\)</span></p>
+<h2 id="proprietà-della-notazione-asintotica"><span class="header-section-number">1.2</span> Proprietà della notazione asintotica</h2>
+<h3 id="transitiva"><span class="header-section-number">1.2.1</span> Transitiva</h3>
+<p><span class="math inline">\(f (n) = O(g(n)) \wedge g(n) = O(h(n)) \implies f (n) = O(h(n))\)</span></p>
+<p>Vale anche per <span class="math inline">\(o,\omega,\Theta,\Omega\)</span></p>
+<h3 id="riflessiva"><span class="header-section-number">1.2.2</span> Riflessiva</h3>
+<p><span class="math inline">\(f(n)=O(f(n))\)</span></p>
+<p>Vale anche per <span class="math inline">\(\Theta,\Omega\)</span></p>
+<h3 id="simetrica"><span class="header-section-number">1.2.3</span> Simetrica</h3>
+<p><span class="math inline">\(g(n) = \Theta(f (n)) \iff f (n) = \Theta(g(n))\)</span></p>
+<h3 id="simmetrica-trasposta"><span class="header-section-number">1.2.4</span> Simmetrica trasposta</h3>
+<p><span class="math inline">\(g(n) = O(f (n)) \implies f (n) = o(g(n))\)</span><br />
+<span class="math inline">\(g(n) = \Omega(f (n)) \implies f (n) = \omega(g(n))\)</span></p>
 </body>
 </html>
