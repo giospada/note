@@ -49,6 +49,11 @@
 <li><a href="#simetrica"><span class="toc-section-number">1.2.3</span> Simetrica</a></li>
 <li><a href="#simmetrica-trasposta"><span class="toc-section-number">1.2.4</span> Simmetrica trasposta</a></li>
 </ul></li>
+<li><a href="#costo-e-complessità-computazionale"><span class="toc-section-number">1.3</span> Costo e Complessità computazionale</a></li>
+<li><a href="#caso-medio-pessimo-ottimo"><span class="toc-section-number">1.4</span> Caso Medio, Pessimo, Ottimo</a></li>
+<li><a href="#analisi-delle-ricorsioni"><span class="toc-section-number">1.5</span> Analisi delle Ricorsioni</a><ul>
+<li><a href="#metodo-di-sostituzione"><span class="toc-section-number">1.5.1</span> Metodo di sostituzione</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -62,6 +67,7 @@
 <li>la quanità di memoria</li>
 <li>il tempo d’esecuzione di un algoritmo</li>
 </ul>
+<p><img src="vx_images/572822910268496.png" /></p>
 <h3 id="theta"><span class="header-section-number">1.1.1</span> Theta</h3>
 <p>La notazione theta indica <span class="math inline">\(f \in \Theta(g)\)</span> indica che le due funzioni f e g hanno la stessa crescita</p>
 <p><span class="math inline">\(\Theta(g(n)) = \{f(n) : \text{ esistono delle costanti positive c1, c2 e n0 tali che } 0 ≤ c_1g(n) ≤ f(n) ≤ c_2g(n) \text{ per ogni } n ≥ n_0\}\)</span></p>
@@ -92,5 +98,20 @@
 <h3 id="simmetrica-trasposta"><span class="header-section-number">1.2.4</span> Simmetrica trasposta</h3>
 <p><span class="math inline">\(g(n) = O(f (n)) \implies f (n) = o(g(n))\)</span><br />
 <span class="math inline">\(g(n) = \Omega(f (n)) \implies f (n) = \omega(g(n))\)</span></p>
+<h2 id="costo-e-complessità-computazionale"><span class="header-section-number">1.3</span> Costo e Complessità computazionale</h2>
+<blockquote>
+<p><strong>costo computazionale</strong> è il costo dell’ algoritmo <strong>complessità computazionale</strong> è il costo per risolvere un problema</p>
+</blockquote>
+<h2 id="caso-medio-pessimo-ottimo"><span class="header-section-number">1.4</span> Caso Medio, Pessimo, Ottimo</h2>
+<blockquote>
+<p><strong>Caso ottimo:</strong> descrive il comportamento in condizioni ottimali <strong>Caso pessimo:</strong> descrive il comportamento in condizioni sfavorevoli <strong>Caso medio:</strong> descrive il comportamento medio su tutti i possibili input</p>
+</blockquote>
+<h2 id="analisi-delle-ricorsioni"><span class="header-section-number">1.5</span> Analisi delle Ricorsioni</h2>
+<h3 id="metodo-di-sostituzione"><span class="header-section-number">1.5.1</span> Metodo di sostituzione</h3>
+<ol type="1">
+<li>Ipotizzare la soluzione</li>
+<li>Usare l’induzione matematica per dimostrare la ricorsione</li>
+</ol>
+<p>Ovviamante si può utilizzare solo se si ha un’ipotesi da verificare</p>
 </body>
 </html>
