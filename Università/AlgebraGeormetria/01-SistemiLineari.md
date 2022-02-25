@@ -277,3 +277,38 @@ Ci sono 3 operazioni dette operazioni elementari, che non cambiano le soluzioni 
 2. moltiplicazione di un'equazione per un numero reale diverso da 0
 3. sostituzione dell'equazione i-esima e della j-esima moltiplicata per un numero reale $\alpha$ qualsiasi.
 
+
+## Verificare è risolvibile
+
+bisogna fare il check se il rango righe della matrice dei coefficenti è uguale alla matrice completa
+
+
+## Sistema omogeneo
+
+
+Un sistema si dice omogeneo, quando tutti i valori noti sono zero
+
+
+<details>
+<summary>
+esercizio
+</summary>
+
+discutere al variare di $\alpha$ le soluzioni del seguente sistema lineare omogeneo associato alla matrice
+
+$$
+\begin{pmatrix}
+\alpha &  3\alpha & \alpha & |& 0 \\
+\alpha+1 & 3\alpha -2 & \alpha & |& 0  \\
+2\alpha & 4\alpha  & \alpha+1  & |& 0 \\
+\end{pmatrix}
+$$
+
+risolvi
+
+
+
+</details>
+
+
+

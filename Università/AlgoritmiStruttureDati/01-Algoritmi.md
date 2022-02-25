@@ -9,6 +9,7 @@ dobbiamo analizzare :
 - il tempo d'esecuzione di un algoritmo
 
 
+![](vx_images/572822910268496.png)
 
 
 ### Theta
@@ -82,3 +83,26 @@ $g(n) = \Theta(f (n)) \iff f (n) = \Theta(g(n))$
 
 $g(n) = O(f (n)) \implies f (n) = o(g(n))$  
 $g(n) = \Omega(f (n)) \implies f (n) = \omega(g(n))$  
+
+
+## Costo e Complessità computazionale
+
+> **costo computazionale** è il costo dell' algoritmo 
+> **complessità computazionale** è il costo per risolvere un problema
+
+
+## Caso Medio, Pessimo, Ottimo
+
+> **Caso ottimo:** descrive il comportamento in condizioni ottimali
+> **Caso pessimo:** descrive il comportamento in condizioni sfavorevoli
+> **Caso medio:** descrive il comportamento medio su tutti i possibili input
+
+## Analisi delle Ricorsioni
+
+### Metodo di sostituzione
+
+
+1. Ipotizzare la soluzione
+2. Usare l'induzione matematica per dimostrare la ricorsione
+
+Ovviamante si può utilizzare solo se si ha un'ipotesi da verificare

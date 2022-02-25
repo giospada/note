@@ -212,3 +212,4 @@ $(g \cdot f) (x)=g'(f(x))- f'(x) \forall x \in I, g \cdot f$ è una primitiva di
 
 
 
+
