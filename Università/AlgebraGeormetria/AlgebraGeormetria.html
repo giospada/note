@@ -42,22 +42,21 @@
 <li><a href="#sistemilineari"><span class="toc-section-number">2</span> SistemiLineari</a><ul>
 <li><a href="#equazione-lineare"><span class="toc-section-number">2.1</span> Equazione lineare</a></li>
 <li><a href="#soluzioni-dei-sistemi-lineari"><span class="toc-section-number">2.2</span> Soluzioni dei sistemi lineari</a></li>
-<li><a href="#scrittura-compatta"><span class="toc-section-number">2.3</span> Scrittura compatta</a></li>
-<li><a href="#matrici"><span class="toc-section-number">2.4</span> Matrici</a><ul>
-<li><a href="#vettori"><span class="toc-section-number">2.4.1</span> Vettori</a></li>
-<li><a href="#somma"><span class="toc-section-number">2.4.2</span> Somma</a></li>
-<li><a href="#prodotto-tra-vettori"><span class="toc-section-number">2.4.3</span> Prodotto tra vettori</a></li>
-<li><a href="#prodotto-matrici"><span class="toc-section-number">2.4.4</span> Prodotto Matrici</a></li>
-<li><a href="#trasposizione"><span class="toc-section-number">2.4.5</span> Trasposizione</a></li>
+<li><a href="#matrici"><span class="toc-section-number">2.3</span> Matrici</a><ul>
+<li><a href="#vettori"><span class="toc-section-number">2.3.1</span> Vettori</a></li>
+<li><a href="#somma"><span class="toc-section-number">2.3.2</span> Somma</a></li>
+<li><a href="#prodotto-tra-vettori"><span class="toc-section-number">2.3.3</span> Prodotto tra vettori</a></li>
+<li><a href="#prodotto-matrici"><span class="toc-section-number">2.3.4</span> Prodotto Matrici</a></li>
+<li><a href="#trasposizione"><span class="toc-section-number">2.3.5</span> Trasposizione</a></li>
 </ul></li>
-<li><a href="#matrici-e-sistemi-lineari"><span class="toc-section-number">2.5</span> Matrici e Sistemi Lineari</a></li>
-<li><a href="#matrice-scala"><span class="toc-section-number">2.6</span> Matrice Scala</a><ul>
-<li><a href="#pivot-e-rango-righe"><span class="toc-section-number">2.6.1</span> Pivot e Rango righe</a></li>
-<li><a href="#risolvere-sistemi-con-matrici-a-scala"><span class="toc-section-number">2.6.2</span> Risolvere sistemi con matrici a scala</a></li>
-<li><a href="#algoritmo-di-gauss"><span class="toc-section-number">2.6.3</span> Algoritmo di Gauss</a></li>
+<li><a href="#matrici-e-sistemi-lineari"><span class="toc-section-number">2.4</span> Matrici e Sistemi Lineari</a></li>
+<li><a href="#matrice-scala"><span class="toc-section-number">2.5</span> Matrice Scala</a><ul>
+<li><a href="#pivot-e-rango-righe"><span class="toc-section-number">2.5.1</span> Pivot e Rango righe</a></li>
+<li><a href="#risolvere-sistemi-con-matrici-a-scala"><span class="toc-section-number">2.5.2</span> Risolvere sistemi con matrici a scala</a></li>
+<li><a href="#algoritmo-di-gauss"><span class="toc-section-number">2.5.3</span> Algoritmo di Gauss</a></li>
 </ul></li>
-<li><a href="#verificare-è-risolvibile"><span class="toc-section-number">2.7</span> Verificare è risolvibile</a></li>
-<li><a href="#sistema-omogeneo"><span class="toc-section-number">2.8</span> Sistema omogeneo</a></li>
+<li><a href="#verificare-è-risolvibile"><span class="toc-section-number">2.6</span> Verificare è risolvibile</a></li>
+<li><a href="#sistema-omogeneo"><span class="toc-section-number">2.7</span> Sistema omogeneo</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -98,21 +97,13 @@
 </details>
 <h2 id="soluzioni-dei-sistemi-lineari"><span class="header-section-number">2.2</span> Soluzioni dei sistemi lineari</h2>
 <p>una soluzione è una n-upla ordinata (n numeri ) che sostituiti alle incognite rendono vere l’uguaglianza</p>
-<h2 id="scrittura-compatta"><span class="header-section-number">2.3</span> Scrittura compatta</h2>
-<p>un sistema lineare si può scrivere in maniera compatta con le matrici</p>
-<details>
-<p><summary> es </summary></p>
-<p>da <span class="math inline">\(\begin{cases} 3x -2y =1 \\x+y=7\end{cases}\)</span></p>
-<p>a</p>
-<span class="math inline">\(\begin{matrix} 3 &amp; -2 &amp;| 1 \\1 &amp;1 &amp; |7\end{matrix}\)</span>
-</details>
-<h2 id="matrici"><span class="header-section-number">2.4</span> Matrici</h2>
+<h2 id="matrici"><span class="header-section-number">2.3</span> Matrici</h2>
 <p>Una matrice <span class="math inline">\(n\times m\)</span> con coefficenti in <span class="math inline">\(\mathbb{R}\)</span> è una tabella con n righe e m colonne</p>
 <p>l’insieme di matrici <span class="math inline">\(m\times n\)</span> si indica con <span class="math inline">\(M_{m,n} (\mathbb{R})\)</span> se <span class="math inline">\(m=n\)</span> allora la matrice si dice quadrata <span class="math inline">\(M_{n,n}(\mathbb{R})=M_{n}(\mathbb{R})\)</span>, se <span class="math inline">\(A\in M_{m,n}(\mathbb{R})\)</span> scriviamo anche <span class="math inline">\(A(a_{i,j}) \text{ dove } i=1..m \text{ e } j=1..n\)</span></p>
-<h3 id="vettori"><span class="header-section-number">2.4.1</span> Vettori</h3>
+<h3 id="vettori"><span class="header-section-number">2.3.1</span> Vettori</h3>
 <p>una matrice con 1xn si dice <strong>vettore riga</strong></p>
 <p>una matrice con nx1 si dice <strong>vettore colonna</strong></p>
-<h3 id="somma"><span class="header-section-number">2.4.2</span> Somma</h3>
+<h3 id="somma"><span class="header-section-number">2.3.2</span> Somma</h3>
 <p>siano <span class="math inline">\(A,B \in M_{n,n}(\mathbb{R})\)</span> definiamo <span class="math inline">\(C=A+B\)</span> se <span class="math inline">\(A=(a_{i,j}),B=(b_{i,j}),C=(a_{i,j}) \text{ allora la somma è definita come }c_{i,j}=a_{i,j}+b_{i,j}\)</span></p>
 <details>
 <p><summary> esempio </summary></p>
@@ -120,8 +111,8 @@
 \begin{pmatrix} 1 &amp; 0 &amp; -1 \\ 3 &amp; -5 &amp; 1\end{pmatrix} + \begin{pmatrix} -1 &amp; 2 &amp; -1 \\ 1 &amp; 7 &amp; -2\end{pmatrix} = \begin{pmatrix} 0 &amp; 2 &amp; -2 \\ 4 &amp; 2 &amp; -1\end{pmatrix}
 \]</span>
 </details>
-<h3 id="prodotto-tra-vettori"><span class="header-section-number">2.4.3</span> Prodotto tra vettori</h3>
-<p>Primo esempio tra un vettore riga e un vettore colonna della stessa lunghezza . (se <span class="math inline">\(A\in M_{1,m}(\mathbb{R}),B\in M_{m,1}(\mathbb{R})\)</span>) il risultato è un numero (<span class="math inline">\(AB \in \mathbb{R}\)</span>)</p>
+<h3 id="prodotto-tra-vettori"><span class="header-section-number">2.3.3</span> Prodotto tra vettori</h3>
+Primo esempio tra un vettore riga e un vettore colonna della stessa lunghezza . (se <span class="math inline">\(A\in M_{1,m}(\mathbb{R}),B\in M_{m,1}(\mathbb{R})\)</span>) il risultato è un numero (<span class="math inline">\(AB \in \mathbb{R}\)</span>)
 <details>
 <p><summary> come si calcola </summary></p>
 <p><span class="math display">\[
@@ -132,8 +123,8 @@ c_{i,j}=\begin{pmatrix} a_{i1} &amp; a_{i2} &amp; ... &amp; a_{im}\end{pmatrix}\
 c_{ij}= \sum_{\substack{h=1}}^{s}a_{ih}b_{hj}
 \]</span></p>
 </details>
-<h3 id="prodotto-matrici"><span class="header-section-number">2.4.4</span> Prodotto Matrici</h3>
-<p>se <span class="math inline">\(A\in M_{m,r}(\mathbb{R}),B\in M_{r,n}(\mathbb{R})\)</span>) il risultato è un numero <span class="math inline">\(AB=C, C\in M_{m,n}\mathbb{R}\)</span> e si calcola <span class="math inline">\({\displaystyle c_{ij}=\sum _{r=1}^{n}a_{ir}b_{rj}}\)</span></p>
+<h3 id="prodotto-matrici"><span class="header-section-number">2.3.4</span> Prodotto Matrici</h3>
+<p>se <span class="math inline">\(A\in M_{m,r}(\mathbb{R}),B\in M_{r,n}(\mathbb{R})\)</span>) il risultato è un numero <span class="math inline">\(AB=C, C\in M_{m,n}\mathbb{R}\)</span> e si calcola <span class="math inline">\({\displaystyle c_{ij}=\sum _{r=1}^{r}a_{ir}b_{rj}}\)</span></p>
 <p>il prodotto righe per colonne di due matrici è <strong>definito</strong> solo se il numero di righe della prima è uguale al numero di colonne della seconda, e anche se è definito non gode della proprietà commutativa</p>
 <details>
 <p><summary> esempio </summary></p>
@@ -146,17 +137,17 @@ A=\begin{pmatrix} 1 &amp; 0 &amp; 3 &amp; -1 \\ 0 &amp; -2 &amp; 2 &amp; 1 \\ 1 
 C=\begin{pmatrix} 1 &amp; 0 &amp; 3 &amp; -1 \\ 0 &amp; -2 &amp; 2 &amp; 1 \\ 1 &amp; 0 &amp; -1 &amp; 0\end{pmatrix} \begin{pmatrix} 0 &amp; 1 \\ -3 &amp; 5 \\ 1 &amp; 0 \\ 2 &amp; -1\end{pmatrix}= \begin{pmatrix} 1 &amp; 2 \\ 10 &amp; -11 \\-1&amp;1\end{pmatrix}
 \]</span></p>
 </details>
-<h4 id="proprità-matrici"><span class="header-section-number">2.4.4.1</span> Proprità matrici</h4>
+<h4 id="proprità-matrici"><span class="header-section-number">2.3.4.1</span> Proprità matrici</h4>
 <ul>
 <li><p><strong>Proprità associativa</strong> (se è definitio il prodotto) <span class="math inline">\(A(BC)=(AB)C\)</span><br />
 </p></li>
 <li><p><strong>Proprità distributiva</strong> <span class="math inline">\(A(B+C)=AB+AC\)</span></p></li>
 <li><p><strong>Non vale</strong> commutativa</p></li>
 </ul>
-<h3 id="trasposizione"><span class="header-section-number">2.4.5</span> Trasposizione</h3>
+<h3 id="trasposizione"><span class="header-section-number">2.3.5</span> Trasposizione</h3>
 <p>se <span class="math inline">\(A\)</span> è una matrice con <span class="math inline">\(m,n\)</span> righe e colonne la sua trasposta <span class="math inline">\(A^t\)</span> è la matrice <span class="math inline">\(M_{n,m}(\mathbb{R})\)</span> ottenuta da <span class="math inline">\(A\)</span> scambiando righe e colonne</p>
 <p>quindi <span class="math inline">\((A^t)_{i,j}=A_{ji}\)</span></p>
-<h2 id="matrici-e-sistemi-lineari"><span class="header-section-number">2.5</span> Matrici e Sistemi Lineari</h2>
+<h2 id="matrici-e-sistemi-lineari"><span class="header-section-number">2.4</span> Matrici e Sistemi Lineari</h2>
 <p>consideriamo un sistema lineare della forma</p>
 <p><span class="math display">\[
 \begin{cases}a_{11}x_1 + a_{21}x_2 + ... +a_{n1} x_n = b1\\a_{12}x_1 + a_{22}x_2 + ... +a_{n2} x_n = b2\\...\\a_{1m}x_1 + a_{2m}x_2 + ... +a_{nm} x_n = b_m\end{cases}
@@ -176,9 +167,8 @@ C=\begin{pmatrix} 1 &amp; 0 &amp; 3 &amp; -1 \\ 0 &amp; -2 &amp; 2 &amp; 1 \\ 1 
 A(a|b)=\begin{pmatrix}a_{11} &amp; a_{21}&amp; ... &amp;a_{n1} &amp; |&amp; b_{1} \\a_{12} &amp; a_{22} &amp; ... &amp;a_{n2}  &amp; | &amp; b_2\\ \vdots &amp;\vdots &amp;&amp; \vdots &amp; | &amp; \vdots \\a_{1m} &amp; a_{2m} &amp; ... &amp;a_{nm} &amp; | &amp;b_n \end{pmatrix}
 \]</span></p>
 </details>
-<p>dove <span class="math inline">\(A=(a_{ij})\)</span> è la matrice <span class="math inline">\(m \times n\)</span> dei coefficienti delle incognite<span class="math inline">\(\underline x =\begin{pmatrix} x_1\\x_2\\...\\x_m\end{pmatrix}\)</span> è la colonna delle <span class="math inline">\(n\)</span> incognite, e</p>
-<p><span class="math inline">\(\underline b = \begin{pmatrix} b_1\\b_2\\...\\b_m\end{pmatrix}\)</span> è la colonna degli <span class="math inline">\(m\)</span> termini noti.</p>
-<h2 id="matrice-scala"><span class="header-section-number">2.6</span> Matrice Scala</h2>
+<p>dove <span class="math inline">\(A=(a_{ij})\)</span> è la matrice <span class="math inline">\(m \times n\)</span> dei coefficienti delle incognite<span class="math inline">\(\underline x =\begin{pmatrix} x_1\\x_2\\...\\x_m\end{pmatrix}\)</span> è la colonna delle <span class="math inline">\(n\)</span> incognite, e <span class="math inline">\(\underline b = \begin{pmatrix} b_1\\b_2\\...\\b_m\end{pmatrix}\)</span> è la colonna degli <span class="math inline">\(m\)</span> termini noti.</p>
+<h2 id="matrice-scala"><span class="header-section-number">2.5</span> Matrice Scala</h2>
 <p>una matrice si dice in forma a scala se sono soddisfatte le seguenti condizioni</p>
 <ol type="1">
 <li>eventuali righe nulle si trovano in fondo alla matrice;</li>
@@ -190,7 +180,7 @@ A(a|b)=\begin{pmatrix}a_{11} &amp; a_{21}&amp; ... &amp;a_{n1} &amp; |&amp; b_{1
     A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&amp;0&amp;0&amp;\frac{1}{3}&amp;1\\0&amp;0&amp;0&amp;0&amp;0\end{pmatrix}
 \]</span></p>
 </details>
-<h3 id="pivot-e-rango-righe"><span class="header-section-number">2.6.1</span> Pivot e Rango righe</h3>
+<h3 id="pivot-e-rango-righe"><span class="header-section-number">2.5.1</span> Pivot e Rango righe</h3>
 <p><strong>Pivot</strong>: primo elemento non nullo di una riga</p>
 <p><strong>Rango righe</strong> numero delle righe non nulle <span class="math inline">\(rr(A)\)</span></p>
 <details>
@@ -200,7 +190,7 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 \]</span></p>
 <p>i pivot di A sono <span class="math inline">\(1,-1,\frac{1}{3}\)</span> quindi <span class="math inline">\(rr(A)=3\)</span></p>
 </details>
-<h3 id="risolvere-sistemi-con-matrici-a-scala"><span class="header-section-number">2.6.2</span> Risolvere sistemi con matrici a scala</h3>
+<h3 id="risolvere-sistemi-con-matrici-a-scala"><span class="header-section-number">2.5.2</span> Risolvere sistemi con matrici a scala</h3>
 <p>Un sistema lineare associato ad una matrice a scala, si risolve faccilmente ( se ha soluzione ) per sostituzione dal basso e ricavando le incognite corrispondenti ai pivot, se una variabile non è una pivot la lasciamo generica</p>
 <details>
 <p><summary> esempio </summary> il sistema può essere risolto per sostituzioni successive dal basso, cioè a partire dall’ultima equazione e risalendo verso la prima:</p>
@@ -215,7 +205,7 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 \]</span></p>
 <p>arriveremo a <span class="math inline">\(x_1=\frac 14(-3-11x_4)\)</span> , che indica un sistema con infinite soluzioni in quella forma.</p>
 </details>
-<h3 id="algoritmo-di-gauss"><span class="header-section-number">2.6.3</span> Algoritmo di Gauss</h3>
+<h3 id="algoritmo-di-gauss"><span class="header-section-number">2.5.3</span> Algoritmo di Gauss</h3>
 <p>Due sistemi lineari si dicono equivalenti se hanno le stesse soluzioni.</p>
 <p>Strategia: datu un sistema lineare tramite l’algritmo di Gauss lo trasformiramo in un sistema lineare a scala che è equivalente.</p>
 <p>Ci sono 3 operazioni dette operazioni elementari, che non cambiano le soluzioni di un sistema:</p>
@@ -224,9 +214,9 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <li>moltiplicazione di un’equazione per un numero reale diverso da 0</li>
 <li>sostituzione dell’equazione i-esima e della j-esima moltiplicata per un numero reale <span class="math inline">\(\alpha\)</span> qualsiasi.</li>
 </ol>
-<h2 id="verificare-è-risolvibile"><span class="header-section-number">2.7</span> Verificare è risolvibile</h2>
+<h2 id="verificare-è-risolvibile"><span class="header-section-number">2.6</span> Verificare è risolvibile</h2>
 <p>bisogna fare il check se il rango righe della matrice dei coefficenti è uguale alla matrice completa</p>
-<h2 id="sistema-omogeneo"><span class="header-section-number">2.8</span> Sistema omogeneo</h2>
+<h2 id="sistema-omogeneo"><span class="header-section-number">2.7</span> Sistema omogeneo</h2>
 <p>Un sistema si dice omogeneo, quando tutti i valori noti sono zero</p>
 <details>
 <p><summary> esercizio </summary></p>
@@ -240,5 +230,8 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 \]</span></p>
 <p>risolvi</p>
 </details>
+<button style="position: fixed; /* Fixed/sticky position */ bottom: 20px; /* Place the button at the bottom of the page */ right: 30px; /* Place the button 30px from the right */ z-index: 99; /* Make sure it does not overlap */ border: none; /* Remove borders */ outline: none; /* Remove outline */ cursor: pointer; /* Add a mouse pointer on hover */ padding: 15px; /* Some padding */ border-radius: 10px; /* Rounded corners */font-size: 18px;">
+    top
+</button>
 </body>
 </html>
