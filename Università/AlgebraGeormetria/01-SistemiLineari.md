@@ -38,23 +38,6 @@ proprità delle equazioni
 una soluzione è una n-upla ordinata (n numeri ) che sostituiti alle incognite rendono vere l'uguaglianza
 
 
-## Scrittura compatta
-
-un sistema lineare si può scrivere in maniera compatta con le matrici
-
-<details>
-<summary>
-es
-</summary>
-
-
-da 
-$\begin{cases} 3x -2y =1 \\x+y=7\end{cases}$
-
-a 
-
-$\begin{matrix} 3 & -2 &| 1 \\1 &1 & |7\end{matrix}$
-</details>
 
 ## Matrici
 
@@ -88,8 +71,7 @@ $$
 
 ### Prodotto tra vettori
 
-Primo esempio tra un vettore riga e un vettore colonna della stessa lunghezza . (se $A\in M_{1,m}(\mathbb{R}),B\in M_{m,1}(\mathbb{R})$) il risultato è un numero ($AB \in \mathbb{R}$)
-
+Primo esempio tra un vettore riga e un vettore colonna della stessa lunghezza . (se $A\in M_{1,m}(\mathbb{R}),B\in M_{m,1}(\mathbb{R})$) il risultato è un numero ($AB \in \mathbb{R}$) 
 <details>
 <summary>
 come si calcola 
@@ -115,7 +97,7 @@ $$
 
 
 
-se $A\in M_{m,r}(\mathbb{R}),B\in M_{r,n}(\mathbb{R})$) il risultato è un numero $AB=C, C\in M_{m,n}\mathbb{R}$ e si calcola ${\displaystyle c_{ij}=\sum _{r=1}^{n}a_{ir}b_{rj}}$
+se $A\in M_{m,r}(\mathbb{R}),B\in M_{r,n}(\mathbb{R})$) il risultato è un numero $AB=C, C\in M_{m,n}\mathbb{R}$ e si calcola ${\displaystyle c_{ij}=\sum _{r=1}^{r}a_{ir}b_{rj}}$
 
 il prodotto righe per colonne di due matrici è **definito** solo se il numero di righe della prima è uguale al numero di colonne della seconda, e anche se è definito non gode della proprietà commutativa
 
@@ -190,9 +172,7 @@ $$
 
 </details>
 
-dove $A=(a_{ij})$ è la matrice $m \times n$ dei coefficienti delle incognite$\underline x =\begin{pmatrix} x_1\\x_2\\...\\x_m\end{pmatrix}$ è la colonna delle $n$ incognite, e 
-
-$\underline b = \begin{pmatrix} b_1\\b_2\\...\\b_m\end{pmatrix}$ è la colonna degli $m$ termini noti.
+dove $A=(a_{ij})$ è la matrice $m \times n$ dei coefficienti delle incognite$\underline x =\begin{pmatrix} x_1\\x_2\\...\\x_m\end{pmatrix}$ è la colonna delle $n$ incognite, e $\underline b = \begin{pmatrix} b_1\\b_2\\...\\b_m\end{pmatrix}$ è la colonna degli $m$ termini noti.
 
 
 ## Matrice Scala
