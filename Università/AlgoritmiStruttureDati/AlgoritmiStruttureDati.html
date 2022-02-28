@@ -51,9 +51,16 @@
 </ul></li>
 <li><a href="#costo-e-complessità-computazionale"><span class="toc-section-number">1.3</span> Costo e Complessità computazionale</a></li>
 <li><a href="#caso-medio-pessimo-ottimo"><span class="toc-section-number">1.4</span> Caso Medio, Pessimo, Ottimo</a></li>
-<li><a href="#analisi-delle-ricorsioni"><span class="toc-section-number">1.5</span> Analisi delle Ricorsioni</a><ul>
-<li><a href="#metodo-di-sostituzione"><span class="toc-section-number">1.5.1</span> Metodo di sostituzione</a></li>
+<li><a href="#analisi-ammortizzata"><span class="toc-section-number">1.5</span> Analisi Ammortizzata</a><ul>
+<li><a href="#metodo-dellaggregazione"><span class="toc-section-number">1.5.1</span> Metodo dell’Aggregazione</a></li>
+<li><a href="#metodo-con-accantonamenti"><span class="toc-section-number">1.5.2</span> Metodo con Accantonamenti</a></li>
 </ul></li>
+</ul></li>
+<li><a href="#analisi-delle-ricorsioni"><span class="toc-section-number">2</span> Analisi delle Ricorsioni</a><ul>
+<li><a href="#metodo-delliterazione"><span class="toc-section-number">2.1</span> Metodo dell’iterazione</a></li>
+<li><a href="#metodo-di-sostituzione"><span class="toc-section-number">2.2</span> Metodo di sostituzione</a></li>
+<li><a href="#albero-di-ricorsione"><span class="toc-section-number">2.3</span> Albero di ricorsione</a></li>
+<li><a href="#teorema-dellesperto"><span class="toc-section-number">2.4</span> Teorema dell’esperto</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -106,13 +113,89 @@
 <blockquote>
 <p><strong>Caso ottimo:</strong> descrive il comportamento in condizioni ottimali <strong>Caso pessimo:</strong> descrive il comportamento in condizioni sfavorevoli <strong>Caso medio:</strong> descrive il comportamento medio su tutti i possibili input</p>
 </blockquote>
-<h2 id="analisi-delle-ricorsioni"><span class="header-section-number">1.5</span> Analisi delle Ricorsioni</h2>
-<h3 id="metodo-di-sostituzione"><span class="header-section-number">1.5.1</span> Metodo di sostituzione</h3>
+<h2 id="analisi-ammortizzata"><span class="header-section-number">1.5</span> Analisi Ammortizzata</h2>
+<blockquote>
+<p>L’analisi ammortizzata è un metodo per valutare il costo medio di una sequenza di operazioni</p>
+</blockquote>
+<details>
+<p><summary> costo medio vs costo ammortizzato </summary></p>
+<ul>
+<li>costo medio: media del costo di una singola operazione</li>
+<li>costo ammortizzato: media del costo di una sequenza di operazioni</li>
+</ul>
+</details>
+<h3 id="metodo-dellaggregazione"><span class="header-section-number">1.5.1</span> Metodo dell’Aggregazione</h3>
+<blockquote>
+<p>determiniamo un limite superiore al costo totale di una sequenza di n operazioni e dividiamo per n</p>
+</blockquote>
+<h3 id="metodo-con-accantonamenti"><span class="header-section-number">1.5.2</span> Metodo con Accantonamenti</h3>
+<ul>
+<li>Assegniamo un costo ammortizzato ad ogni operazione</li>
+<li>Ogni operazione viene addebitata con il suo costo ammortizzato</li>
+<li>Dopo ogni operazione, salviamo come credito la differenza tra il</li>
+<li>suo costo ammortizzato e costo reale</li>
+<li>Accumuliamo il credito collezionato durante l’esecuzione</li>
+<li>Se il costo reale è piu alto del costo ammortizzato, usiamo il credito `</li>
+<li>Il costo ammortizzato è corretto se il credito non è mai negativo</li>
+</ul>
+<h1 id="analisi-delle-ricorsioni"><span class="header-section-number">2</span> Analisi delle Ricorsioni</h1>
+<h2 id="metodo-delliterazione"><span class="header-section-number">2.1</span> Metodo dell’iterazione</h2>
+<p><strong>Idea</strong>: sostituiamo iterativamente la parte ricorsiva nell’equazione finchè non appare uno schema ricorsivo legato al passo di iterazione</p>
+<details>
+<p><summary> esempio </summary></p>
+<p><img src="vx_images/163812216268499.png" /></p>
+</details>
+<h2 id="metodo-di-sostituzione"><span class="header-section-number">2.2</span> Metodo di sostituzione</h2>
 <ol type="1">
 <li>Ipotizzare la soluzione</li>
 <li>Usare l’induzione matematica per dimostrare la ricorsione</li>
 </ol>
 <p>Ovviamante si può utilizzare solo se si ha un’ipotesi da verificare</p>
+<details>
+<p><summary> esempio </summary></p>
+<p><img src="vx_images/64852598826022.png" /></p>
+</details>
+<h2 id="albero-di-ricorsione"><span class="header-section-number">2.3</span> Albero di ricorsione</h2>
+<p>In un albero di ricorsione un nodo esprime il costo di un sottoproblema</p>
+<blockquote>
+<p>Idea: può essere visto come la versione su albero del metodo iterativo</p>
+</blockquote>
+<p>1 Generiamo l’albero di ricorsione dall’equazione di ricorrenza 2 Calcoliamo il numero di nodi ad ogni livello dell’albero 3 Identifichiamo qualche schema ricorrente legato al livello dell’albero</p>
+<p>Può essere complesso formulare un’ipotesi (metodo della sostituzione) L’albero di ricorsione pu`o essere usato per generare ipotesi Tali ipotesi possono poi essere validate col metodo di sostituzione</p>
+<h2 id="teorema-dellesperto"><span class="header-section-number">2.4</span> Teorema dell’esperto</h2>
+<p><span class="math display">\[
+T(n)= \begin{cases}d &amp; &amp; \text{if }n=1\\aT(n/b)+cn^\beta &amp; &amp;\text{if }n&gt;1\end{cases} 
+\]</span></p>
+<p>e sia <span class="math inline">\(\alpha = \frac{\log a} {\log b}\)</span>. l’equazione di ricorrenza ha la seguente soluzione:</p>
+<ol type="1">
+<li><span class="math inline">\(T(n)=\Theta(n^\alpha) \text{ if }\alpha &gt; \beta\)</span></li>
+<li><span class="math inline">\(T(n)=\Theta(n^\alpha\log n) \text{ if }\alpha = \beta\)</span></li>
+<li><span class="math inline">\(T(n)=\Theta(n^\beta ) \text{ if }\alpha &lt; \beta\)</span></li>
+</ol>
+<details>
+<p><summary> applicazione </summary></p>
+<p><span class="math display">\[
+T(n)= \begin{cases}d &amp; &amp; \text{if }n=1\\aT(n/b)+cn^\beta &amp; &amp;\text{if }n&gt;1\end{cases} 
+\]</span></p>
+<ol type="1">
+<li>nel caso della ricerca binaria, abbiamo <span class="math inline">\(T(n)=T(n/2)+O(1).\)</span> da cui <span class="math inline">\(a=1, b=2,\beta=0\)</span>; siamo nel secondo caso in quanto <span class="math inline">\(\alpha = \frac{\log 1}{\log 2}=0\)</span> e <span class="math inline">\(\beta = 0\)</span>, da cui <span class="math inline">\(T(n)=\Theta(\log n)\)</span>.</li>
+<li>consideriamo <span class="math inline">\(T(n)=16T(n/4)+n\)</span>; in questo caso <span class="math inline">\(a=16, b=4 \text{ e }\beta=1\)</span>. siamo nel primo caso in quanto <span class="math inline">\(\alpha = \frac{\log 16}{\log 4}=\frac42=2 \text{ e }\beta=1\)</span>, da cui <span class="math inline">\(T(n)=\Theta(n^2)\)</span></li>
+<li>consideriamo <span class="math inline">\(T(n)=2T(n/2)+n^2\)</span>; in questo caso <span class="math inline">\(a=2, b=2 \text{ e }\beta=2\)</span>. siamo nel terzo caso in quanto <span class="math inline">\(\alpha = \frac{\log 2}{\log 2}=1 \text{ e }\beta=2\)</span>, da cui <span class="math inline">\(T(n)=\Theta(n^2)\)</span></li>
+</ol>
+<p>il teorema fondamentale non si può applicare ad algoritmi ricorsivi che non effettuano partizioni bilanciate.</p>
+<p>ad esempio, selection sort (cerca il minimo, scambia con il primo elemento, e procedi ricorsivamente sul resto del vettore) ha equazione di ricorrenza del tipo</p>
+<p><span class="math display">\[
+T(n)=\Bigg\lbrace  \begin{matrix}1\\n+T(n-1)\end{matrix}\quad \frac{\text{if }n=1}{\text{if }n&gt;1}
+\]</span></p>
+<p>come altro esempio, il calcolo di fibonacci ricorsivo ha equazione di ricorrenza del tipo</p>
+<p><span class="math display">\[
+T(n)=\Bigg\lbrace  \begin{matrix}1\\T(n-1)+T(n-2)+1\end{matrix}\quad \frac{\text{if }n\le1}{\text{if }n&gt;2}
+\]</span></p>
+<p>in questi casi utilizzeremo altre tecniche per risolvere le equazioni di ricorrenza.</p>
+<ul>
+<li></li>
+</ul>
+</details>
 <button style="position: fixed; bottom: 20px; right: 30px; z-index: 99; border: none; outline: none; cursor: pointer; padding: 9px; border-radius: 8px; font-size: 18px; background: var(--dracula-current-line); color: var(--dracula-background);" onclick=" document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">
     top
 </button>
