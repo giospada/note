@@ -248,14 +248,14 @@ $$
 
 Due sistemi lineari si dicono equivalenti se hanno le stesse soluzioni.
 
-Strategia: datu un sistema lineare tramite l'algritmo di Gauss lo trasformiramo in un sistema lineare a scala che è equivalente.
+Strategia: datu un sistema lineare tramite l'algritmo di Gauss lo trasformiramo in un sistema lineare a scala che è equivalente: riga $i$-esima con riga$_i$ + $\alpha\ $riga$_j$.
 
 
 Ci sono 3 operazioni dette operazioni elementari, che non cambiano le soluzioni di un sistema:
 
 1. scambio di due equazioni, cioè lo scabio di due rige nella matrice
 2. moltiplicazione di un'equazione per un numero reale diverso da 0
-3. sostituzione dell'equazione i-esima e della j-esima moltiplicata per un numero reale $\alpha$ qualsiasi.
+3. sostituzione dell'equazione i-esima e della j-esima moltiplicata per un numero reale $\alpha$ qualsiasi.q
 
 
 ## Verificare è risolvibile
