@@ -181,9 +181,9 @@ Dim : Per il teorema (versione 1), fissata $c\in ]a,b[$ $I_c$ è una proimitiva 
 
 |               f                |                                                                 F                                                                  |
 | ----------------------- | ----------------------------------------------------------------------------------------------------- |
-| $x^n$                     | $\frac{x^{n+1}}{n+1}$  $n \in \mathbb{N} \ \{0\}, x\in \mathbb{R}$                          |
+| $x^n$                     | $\frac{x^{n+1}}{n+1}$  $n \in \mathbb{N} \backslash \{0\}, x\in \mathbb{R}$            |
 | $x^k$                     | $\frac{x^{k+1}}{k+1}$  con $k \in \mathbb{Z}\wedge k \neq -1, x\neq 0$                    |
-| $\frac{1}{x}$          | $ln(|x|)$  con $x\neq 0$                                                                                                |
+| $\frac{1}{x}$          | $ln(\|x\|)$  con $x\neq 0$                                                                                             |
 | $x^{\alpha}$           | $\frac{x^{\alpha +1}}{\alpha +1}$  con $\alpha \in \mathbb{R}\backslash \{-1\},x>0$ |
 | $cos(x)$                  | $sin(x)$                                                                                                                        |
 | $sin(x)$                   | $-cos(x)$                                                                                                                      |
@@ -231,9 +231,9 @@ $\int_a^b f(x) g(x) \space  dx=[F(x)g(x)]_a^b - \int F(x)-g'(x) dx$
 
 $I \subseteq \mathbb{R}$  intervallo  aperto $c\in I, I_c(x)=\int_c^x f(t) \space dt$ (f continua ) $TDC:I_c'(x)=f(x), \frac{d}{dx} \int_c^x f(t) dt=f(x)$
 
-Se consindero $H(x) = \in_x^c f(t) \space dt, H'(x)=\frac{d}{dx}( - \int_c^x f(t)\space dt \bigr)=-f(x)$
+Se considero $H(x) = \in_x^c f(t) \space dt, H'(x)=\frac{d}{dx}( - \int_c^x f(t)\space dt \bigr)=-f(x)$
 
-$\frac{d}{dx} \int_x^{x^3} f(t) \space dt$ sia $f \cdot I \to \mathbb{R}$ continua $h: \mathbb{R} \to I$ vogliamo alcolare $- \frac{d}{dx} \int_c^{h(x)} f(t) \space dt$  dove h deve essere una funzione derivabile
+$\frac{d}{dx} \int_x^{x^3} f(t) \space dt$ sia $f \cdot I \to \mathbb{R}$ continua $h: \mathbb{R} \to I$ vogliamo allora $- \frac{d}{dx} \int_c^{h(x)} f(t) \space dt$  dove h deve essere una funzione derivabile
 
 
 Scrivo $I_c(z)= \int_c^z f(t) \space dt ,\forall z \in I$ 
@@ -255,4 +255,41 @@ $\frac{d}{dx}=\int_c^{h(x)} f(t) dt = f(h(x)) h'(x)$
 ### cambio di variabile
 
 
-$h:I \to J, t \to h(t)$
+Cambio di variabile $x=h(t)$ in $\int f(x) dx$.
+
+**Teorema**: $I,J\subset \mathbb{R}$  intervalli aperti, $h:I\to J$ $f:J\to\mathbb{R}$, continua siano parti $\alpha,\beta \in I$ allora vale:  
+$\int _{h(\alpha)}^{h(\beta)} f(x)\space dx=\int_{\alpha}^{\beta}f(h(t))h'(t) \space dt$  
+$x=h(t) \in J$= dominio di f
+
+
+Considero $F,G: I \to \mathbb{R}$
+$F(x)= \int_{h(\alpha)}^{h'(x)} f(x) dx, G(z) = \int_\alpha^z f(h(t))h'(t)\space dt$
+
+Dimostro che $F \equiv G$
+
+
+1. $F(\alpha)=G(\alpha)$
+2. $F,G$ derivabile in $I$ e $F'(z)=G'(z) \forall z \in I$
+ 
+$F(\alpha)=0, G(\alpha)=0$  
+$G'(z)=f(h(z))h'(z) \forall z \in I$
+
+$F'(z)=f(h(z))h'(z)\implies$ 2 vale e la tesi e dimostrata
+
+
+### Integrale Generalizzato
+
+
+Def: $F:[a,+\infty[ \to \mathbb{R}$, continua. Si dice $f$ integrabile in senso generalizzato su $[a,+\infty[$ se $\exists$ finito :
+
+$\displaystyle \lim_{x \rightarrow \infty} \int_a^z f(x) dx = \int_a^{+\infty} f(x) dx$
+
+
+$f::]-\infty,b] \to \mathbb{R}$ si fa $\displaystyle \lim_{x \rightarrow -\infty} \int_z^b f(x) \space dx$
+
+
+
+Def $f:]a,b[\to \mathbb{R}$ continua.Dico f integrabile in $S,G$. se $\exists$ finito $\displaystyle \lim_{x \rightarrow 0_+}  \int_z^b f(x) \space dx= \int_a^b f(x) \space dx$
+
+
+nel caso $f: [a,b[ \to \mathbb{R}$ continua $\int_a^b f(x) \space dx$ si definisca con $\displaystyle \lim_{x \rightarrow b-} \int_a^z f(x)\space dx$

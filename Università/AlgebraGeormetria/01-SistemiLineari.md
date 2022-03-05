@@ -16,6 +16,8 @@ in questo caso si può rappresentare come due rette sul piano cartesiamo ed esis
 
 Il sistema potrebbe non avere soluzioni come infinite
 
+Due sistemi lineari si dicono **equivalenti** se hanno le stesse soluzioni.
+
 ##  Equazione lineare
 
 
@@ -246,9 +248,16 @@ $$
 
 ### Algoritmo di Gauss
 
-Due sistemi lineari si dicono equivalenti se hanno le stesse soluzioni.
+Strategia: dato un sistema lineare tramite l'algritmo di Gauss lo trasformiramo in un sistema lineare a scala che è equivalente.
 
-Strategia: datu un sistema lineare tramite l'algritmo di Gauss lo trasformiramo in un sistema lineare a scala che è equivalente.
+1. se $a_{11}=0$ si scambiano la prima riga di A con una riga il cui elemento non è nullo, e lo indichiamo con a.
+2. per ogni riga oltre la prima, se il primo elemento è nullo non facciamo nienete, se il primo elemento non è nullo lo chiamiamo $b$ e sostituiamo la riga corrente con la rpima riga moltiplicata per $-\frac{b}{a}$
+3. Tutti gli elementi della prima colonna sono nulli (tranne il pvot), dunque si considera la matrice cancellando la prima riga e la prima colonna e si torna al punto 1
+
+
+
+#### Proprietà
+
 
 
 Ci sono 3 operazioni dette operazioni elementari, che non cambiano le soluzioni di un sistema:
@@ -260,13 +269,17 @@ Ci sono 3 operazioni dette operazioni elementari, che non cambiano le soluzioni 
 
 ## Verificare è risolvibile
 
-bisogna fare il check se il rango righe della matrice dei coefficenti è uguale alla matrice completa
+bisogna fare il check se il rango righe della matrice dei coefficenti è uguale alla matrice completa, per esempio data una matrice A bisogna verificare se il $rr(A)=rr(A|b)$
+
+Per capire qunte soluzioni ci sono devo contare il numero di pivot confontare al numero di righe, se c'è una riga nulla implica che ci sia una variabile libera e quindi infinte soluzioni
+
+
 
 
 ## Sistema omogeneo
 
 
-Un sistema si dice omogeneo, quando tutti i valori noti sono zero
+Un sistema si dice omogeneo, quando tutti i valori noti sono zero $\implies$ che ci sia sempre una soluzione
 
 
 <details>
