@@ -58,6 +58,24 @@
 <li><a href="#verificare-è-risolvibile"><span class="toc-section-number">2.6</span> Verificare è risolvibile</a></li>
 <li><a href="#sistema-omogeneo"><span class="toc-section-number">2.7</span> Sistema omogeneo</a></li>
 </ul></li>
+<li><a href="#spazi-vettoriali"><span class="toc-section-number">3</span> Spazi Vettoriali</a><ul>
+<li><a href="#piano-cartesiano"><span class="toc-section-number">3.1</span> Piano cartesiano</a></li>
+<li><a href="#addizione"><span class="toc-section-number">3.2</span> Addizione</a><ul>
+<li><a href="#proprità-addizzione"><span class="toc-section-number">3.2.1</span> Proprità Addizzione</a></li>
+</ul></li>
+<li><a href="#moltiplicazione"><span class="toc-section-number">3.3</span> Moltiplicazione</a><ul>
+<li><a href="#proprità-moltiplicazione"><span class="toc-section-number">3.3.1</span> Proprità moltiplicazione</a></li>
+</ul></li>
+<li><a href="#polinomi"><span class="toc-section-number">3.4</span> Polinomi</a></li>
+<li><a href="#sottospazio"><span class="toc-section-number">3.5</span> Sottospazio</a></li>
+<li><a href="#sottospazio-banale"><span class="toc-section-number">3.6</span> Sottospazio banale</a><ul>
+<li><a href="#sottospazi-di-r"><span class="toc-section-number">3.6.1</span> Sottospazi di R</a></li>
+</ul></li>
+<li><a href="#combinazione-lineare"><span class="toc-section-number">3.7</span> Combinazione Lineare</a><ul>
+<li><a href="#dimostrazione"><span class="toc-section-number">3.7.1</span> Dimostrazione</a></li>
+<li><a href="#nel-piano-cartesiano"><span class="toc-section-number">3.7.2</span> Nel piano Cartesiano</a></li>
+</ul></li>
+</ul></li>
 </ul>
 </nav>
 <h1 id="introduzione"><span class="header-section-number">1</span> Introduzione</h1>
@@ -86,6 +104,7 @@
 <p>in questo caso si può rappresentare come due rette sul piano cartesiamo ed esiste solo la soluzione <span class="math inline">\((3,4)\)</span></p>
 </details>
 <p>Il sistema potrebbe non avere soluzioni come infinite</p>
+<p>Due sistemi lineari si dicono <strong>equivalenti</strong> se hanno le stesse soluzioni.</p>
 <h2 id="equazione-lineare"><span class="header-section-number">2.1</span> Equazione lineare</h2>
 <p>un equzione lineare è un equazione del tipo: <span class="math inline">\(a_1x_1+a_2x_2 +\dots + a_nx_n=b \text{ dove } a_1,\dots, a_n,b \in \mathbb{R}\)</span> gli <span class="math inline">\(a_i\)</span> sono i coefficenti e b è il termine noto</p>
 <details>
@@ -206,8 +225,13 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <p>arriveremo a <span class="math inline">\(x_1=\frac 14(-3-11x_4)\)</span> , che indica un sistema con infinite soluzioni in quella forma.</p>
 </details>
 <h3 id="algoritmo-di-gauss"><span class="header-section-number">2.5.3</span> Algoritmo di Gauss</h3>
-<p>Due sistemi lineari si dicono equivalenti se hanno le stesse soluzioni.</p>
-<p>Strategia: datu un sistema lineare tramite l’algritmo di Gauss lo trasformiramo in un sistema lineare a scala che è equivalente.</p>
+<p>Strategia: dato un sistema lineare tramite l’algritmo di Gauss lo trasformiramo in un sistema lineare a scala che è equivalente.</p>
+<ol type="1">
+<li>se <span class="math inline">\(a_{11}=0\)</span> si scambiano la prima riga di A con una riga il cui elemento non è nullo, e lo indichiamo con a.</li>
+<li>per ogni riga oltre la prima, se il primo elemento è nullo non facciamo nienete, se il primo elemento non è nullo lo chiamiamo <span class="math inline">\(b\)</span> e sostituiamo la riga corrente con la rpima riga moltiplicata per <span class="math inline">\(-\frac{b}{a}\)</span></li>
+<li>Tutti gli elementi della prima colonna sono nulli (tranne il pvot), dunque si considera la matrice cancellando la prima riga e la prima colonna e si torna al punto 1</li>
+</ol>
+<h4 id="proprietà"><span class="header-section-number">2.5.3.1</span> Proprietà</h4>
 <p>Ci sono 3 operazioni dette operazioni elementari, che non cambiano le soluzioni di un sistema:</p>
 <ol type="1">
 <li>scambio di due equazioni, cioè lo scabio di due rige nella matrice</li>
@@ -215,9 +239,10 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <li>sostituzione dell’equazione i-esima e della j-esima moltiplicata per un numero reale <span class="math inline">\(\alpha\)</span> qualsiasi.</li>
 </ol>
 <h2 id="verificare-è-risolvibile"><span class="header-section-number">2.6</span> Verificare è risolvibile</h2>
-<p>bisogna fare il check se il rango righe della matrice dei coefficenti è uguale alla matrice completa</p>
+<p>bisogna fare il check se il rango righe della matrice dei coefficenti è uguale alla matrice completa, per esempio data una matrice A bisogna verificare se il <span class="math inline">\(rr(A)=rr(A|b)\)</span></p>
+<p>Per capire qunte soluzioni ci sono devo contare il numero di pivot confontare al numero di righe, se c’è una riga nulla implica che ci sia una variabile libera e quindi infinte soluzioni</p>
 <h2 id="sistema-omogeneo"><span class="header-section-number">2.7</span> Sistema omogeneo</h2>
-<p>Un sistema si dice omogeneo, quando tutti i valori noti sono zero</p>
+<p>Un sistema si dice omogeneo, quando tutti i valori noti sono zero <span class="math inline">\(\implies\)</span> che ci sia sempre una soluzione</p>
 <details>
 <p><summary> esercizio </summary></p>
 <p>discutere al variare di <span class="math inline">\(\alpha\)</span> le soluzioni del seguente sistema lineare omogeneo associato alla matrice</p>
@@ -230,6 +255,93 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 \]</span></p>
 <p>risolvi</p>
 </details>
+<h1 id="spazi-vettoriali"><span class="header-section-number">3</span> Spazi Vettoriali</h1>
+<h2 id="piano-cartesiano"><span class="header-section-number">3.1</span> Piano cartesiano</h2>
+<p>Piano cartesiano a due dimensioni <span class="math inline">\(\mathbb{R}^2=\{(x,y)|x,y\in \mathbb{R}\}\)</span></p>
+<p><span class="math inline">\(\mathbb{R}^2\)</span> è in corrispondentza biunivoca con i vettori del piano applicati all’origine</p>
+<p><span class="math inline">\(\mathbb{R}^2\)</span> è in corrispondentza biunivoca anche con in punti del piano</p>
+<h2 id="addizione"><span class="header-section-number">3.2</span> Addizione</h2>
+<p>In <span class="math inline">\(\mathbb{R}^2\)</span> supponiamo somme di 2 elementi <span class="math inline">\(v_1=(5,7),v_2=(-1,4) \in \mathbb{R}^2, v_1+v_2=(5+(-1),7+4)=(4,11)\)</span></p>
+<p>e vale anche in un piano con n dimensioni <span class="math inline">\(\mathbb{R}^n=\{(x_1,x_2,\dots,x_n)|x_1,x_2,\dots,x_n\in \mathbb{R}\}\)</span></p>
+<h3 id="proprità-addizzione"><span class="header-section-number">3.2.1</span> Proprità Addizzione</h3>
+<ul>
+<li>associativa</li>
+<li>commutativa</li>
+<li>ammette un’elemento neutro <span class="math inline">\((0,0)\)</span> indicato come <span class="math inline">\(\underline{0}\)</span></li>
+<li>ogni elemento ha un opposto ( che sommato con il vettore da l’elemento neutro)</li>
+</ul>
+<h2 id="moltiplicazione"><span class="header-section-number">3.3</span> Moltiplicazione</h2>
+<p>Supponiamo di moltiplicare un elemento per un numero 2 reale <span class="math inline">\(v_1(x,y), d\in \mathbb{R}, dv=(dx,dy)\)</span></p>
+<p>e vale anche in un piano con n dimensioni <span class="math inline">\(\mathbb{R}^n=\{(x_1,x_2,\dots,x_n)|x_1,x_2,\dots,x_n\in \mathbb{R}\}\)</span></p>
+<h3 id="proprità-moltiplicazione"><span class="header-section-number">3.3.1</span> Proprità moltiplicazione</h3>
+<ul>
+<li>ammette l’elemento neutro 1</li>
+<li>associatività tra due numeri e un vettore, <span class="math inline">\((\lambda\mu) u =\lambda(\mu u)\quad \forall u \in V\ \&amp;\ \forall \lambda,\mu \in \mathbb{R}\)</span></li>
+<li>distributiva tra un numero e due vettori <span class="math inline">\(\lambda({u+v})=\lambda u+\lambda v\quad \forall {u,v} \in V\ \&amp;\ \forall \lambda \in \mathbb{R}\)</span></li>
+<li>distributiva tra due numero e un vettori <span class="math inline">\((\lambda+\mu){u}=\lambda u+\mu u\quad \forall {u} \in V\ \&amp;\ \forall \lambda,\mu \in \mathbb{R}\)</span></li>
+</ul>
+<h2 id="polinomi"><span class="header-section-number">3.4</span> Polinomi</h2>
+<p>Polinomi a coefficenti in <span class="math inline">\(\mathbb{R}, \mathbb{R}[x]=\{a_0+a_1+x+\dots+a_nx^n|m\in \mathbb{R},a,\dots,a_n\in \mathbb{R}\}\)</span></p>
+<p>rappresenta anch’esso uno spazio vettoriale</p>
+<h2 id="sottospazio"><span class="header-section-number">3.5</span> Sottospazio</h2>
+<p>Sia W un sottoinsieme dello spazio vettoriale V. Diremo che W è un sottospazio vettoriale di V se soddisfa le seguenti proprietà</p>
+<ul>
+<li><ol type="1">
+<li><span class="math inline">\(W \ne \emptyset\)</span></li>
+</ol></li>
+<li><ol start="2" type="1">
+<li>W è chiuso rispetto alla somma, cioè <span class="math inline">\(\forall{ u,v} \in W\)</span> si ha che <span class="math inline">\({u+v}\in W\)</span></li>
+</ol></li>
+<li><ol start="3" type="1">
+<li>W è chiuso rispetto al prodotto per scalari, cioè <span class="math inline">\(\forall u \in W\)</span> e <span class="math inline">\(\forall \lambda \in \mathbb{R}\)</span> si ha che <span class="math inline">\(\lambda u\in W\)</span></li>
+</ol></li>
+</ul>
+<p>allora <strong>valgono anche le seguenti proprità</strong>:</p>
+<ul>
+<li>(1’) <span class="math inline">\(\underline{0}\in W\)</span></li>
+<li><ol start="23" type="1">
+<li><span class="math inline">\(\forall d,\mu\in \mathbb{R}, \forall u_1,u_2 \in U, ( d u_1+\mu u_2 )\in W\)</span></li>
+</ol></li>
+</ul>
+<blockquote>
+<p>Nota valgono le proprità <span class="math inline">\(1,2,3\)</span> se e solo se (<span class="math inline">\(\iff\)</span>)<span class="math inline">\(1&#39;,2,3\)</span> valgono le proprità <span class="math inline">\(2,3\)</span> se e solo se vale (<span class="math inline">\(\iff\)</span>)<span class="math inline">\(23\)</span></p>
+</blockquote>
+<p>osserviamo che poiché W non è vuoto, e <span class="math inline">\(\lambda u \in W\quad \forall \lambda \in \mathbb{R}\)</span>, allora prendendo un vettore qualsiasi di W e moltiplicandolo per <span class="math inline">\(\lambda = 0\)</span> si ottiene che <span class="math inline">\(0_v \in W\)</span>. questo ci permette di sostituire la prima proprietà con</p>
+<p>il sottospazio vettoriale W di V è quindi uno spazio vettoriale con le operazioni di V ristrette a W.</p>
+<p>la seconda proprietà infatti assicura la restrizione della somma</p>
+<p><span class="math display">\[
++v|w\times w : W\times W \to W
+\]</span></p>
+<p>analogalmente la proprietà 3 assicura la restizione a <span class="math inline">\(\mathbb{R} \times W\)</span> del prodotto per scalari definito su <span class="math inline">\(\mathbb{R}\times W\)</span> dia come risultato un vettore di W.</p>
+<details>
+<p><summary> esempio </summary></p>
+<p>sia <span class="math inline">\(U = \{ (x,y) \in \mathbb{R}^2 | y=mx \}\)</span>, è un sottospazio di <span class="math inline">\(\mathbb{R}^2\)</span></p>
+<p>sia <span class="math inline">\(U = \{ (x,y) \in \mathbb{R}^2 | y=5x+4 \}\)</span>, non è un sottospazio di <span class="math inline">\(\mathbb{R}^2\)</span> perchè non ha l’elemento nullo</p>
+</details>
+<h2 id="sottospazio-banale"><span class="header-section-number">3.6</span> Sottospazio banale</h2>
+<p>Se V è sottospazio di <span class="math inline">\(U=\{\underline{0}\}\)</span> è sottospazio e si dice sottospazio banale o sosttospazoi nullo</p>
+<h3 id="sottospazi-di-r"><span class="header-section-number">3.6.1</span> Sottospazi di R</h3>
+<p>In Generale se prendiamo due punti che non appartengono alla stessa retta per l’origine, il più piccolo sottospazio che li contiene entrambi è il piano</p>
+<p>Abbiamo scoperto che gli unici sottospazi di <span class="math inline">\(\mathbb{R}^2\)</span> sono:</p>
+<ol type="1">
+<li><span class="math inline">\(\{(0,0)\}\)</span></li>
+<li>le rette per l’origine</li>
+<li><span class="math inline">\(\mathbb{R}^2\)</span></li>
+</ol>
+<h2 id="combinazione-lineare"><span class="header-section-number">3.7</span> Combinazione Lineare</h2>
+<p>Sia <span class="math inline">\(V\)</span> uno spazio vettoriale <span class="math inline">\(v_1,\dots,v_n \in V\)</span>. Un vettore <span class="math inline">\(v\)</span> si dice combinazione lim di <span class="math inline">\(v_1,\dots,v_n\)</span> se esistono <span class="math inline">\(d_1,\dots,d_n\in\mathbb{R}\)</span> tali che <span class="math inline">\(v=d_1v_1+\dots+v_nd_n\)</span></p>
+<p>Def sia <span class="math inline">\(V\)</span> uno spazio vettoriale <span class="math inline">\(v_1,\dots,v_n \in V\)</span> <span class="math inline">\(&lt;v_1,\dots,v_n \in V&gt;:=\{d_1v_1+\dots+d_nv_n|d_1,\dots,d_n \in \mathbb{R}\}\)</span></p>
+<p>Propo (3.1.5) Sia <span class="math inline">\(V\)</span> spazio vettoriale <span class="math inline">\(v_1,\dots,v_n\in V\)</span> , allora <span class="math inline">\(&lt;v_1,\dots,v_n&gt; \subseteq Z\)</span></p>
+<h3 id="dimostrazione"><span class="header-section-number">3.7.1</span> Dimostrazione</h3>
+<p><span class="math inline">\(\underline{0}=0v_1+\dots+v_n \in &lt;v_1,\dots,v_n&gt;\)</span></p>
+<p>Siano <span class="math inline">\(u_1,u_2 \in &lt;v_1,\dots,v_n&gt;\)</span><br />
+<span class="math inline">\(u_1 = d_1v_1+\dots+d_nv_n\)</span> <span class="math inline">\(u_2 = \beta_1+\dots+\beta_nv_n\)</span> <span class="math inline">\(u_2+u_1 = \beta_1+\dots+\beta_nv_n + d_1v_1+\dots+d_nv_n = (d_1+\beta_1)v_1+\dots+(d_n+\beta_n)v_n \in &lt;v_1,\dots, v_n&gt;\)</span></p>
+<p><span class="math inline">\(u_2+u_1 = \beta_1+\dots+\beta_nv_n + d_1v_1+\dots+d_nv_n = (d_1+\beta_1)v_1+\dots+(d_n+\beta_n)v_n \in &lt;v_1,\dots, v_n&gt;\)</span></p>
+<p>mostriamo che <span class="math inline">\(&lt;v_1,\dots,v_n&gt; \subseteq Z\)</span> Sia <span class="math inline">\(v \in &lt;v_1, \dots&gt;\)</span></p>
+<h3 id="nel-piano-cartesiano"><span class="header-section-number">3.7.2</span> Nel piano Cartesiano</h3>
+<p>in <span class="math inline">\(\mathbb{R}^2\)</span> <span class="math inline">\(&lt;v&gt;\)</span> è una retta per <span class="math inline">\((0,0)\)</span></p>
+<p>In <span class="math inline">\(\mathbb{R}^3&lt;v,w&gt;\)</span> è una retta appartiene <span class="math inline">\((0,0,0)\)</span></p>
+<p>Sia <span class="math inline">\(V\)</span> spazio vetoriale <span class="math inline">\(v_1,\dots,v_n \in V\)</span> e <span class="math inline">\(w= d_1v_1+\dots+d_nv_n\)</span> allora <span class="math inline">\(&lt;v_1,\dots,v_n&gt;=&lt;v_1,\dots,v_n,w&gt;\)</span></p>
 <button style="position: fixed; bottom: 20px; right: 30px; z-index: 99; border: none; outline: none; cursor: pointer; padding: 9px; border-radius: 8px; font-size: 18px; background: var(--dracula-current-line); color: var(--dracula-background);" onclick=" document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">
     top
 </button>

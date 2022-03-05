@@ -59,6 +59,7 @@
 <li><a href="#formula-di-integrazione-per-parti"><span class="toc-section-number">1.8</span> Formula di integrazione per parti</a><ul>
 <li><a href="#generalizzazione-teorema-fondamentale-del-calcolo"><span class="toc-section-number">1.8.1</span> Generalizzazione Teorema Fondamentale del Calcolo</a></li>
 <li><a href="#cambio-di-variabile"><span class="toc-section-number">1.8.2</span> cambio di variabile</a></li>
+<li><a href="#integrale-generalizzato"><span class="toc-section-number">1.8.3</span> Integrale Generalizzato</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -178,7 +179,7 @@ es : <span class="math inline">\(f(x)=x, x \in \mathbb{R} F(x)=\frac{x^2}{2}\)</
 <tbody>
 <tr class="odd">
 <td><span class="math inline">\(x^n\)</span></td>
-<td><span class="math inline">\(\frac{x^{n+1}}{n+1}\)</span> <span class="math inline">\(n \in \mathbb{N} \ \{0\}, x\in \mathbb{R}\)</span></td>
+<td><span class="math inline">\(\frac{x^{n+1}}{n+1}\)</span> <span class="math inline">\(n \in \mathbb{N} \backslash \{0\}, x\in \mathbb{R}\)</span></td>
 </tr>
 <tr class="even">
 <td><span class="math inline">\(x^k\)</span></td>
@@ -186,7 +187,7 @@ es : <span class="math inline">\(f(x)=x, x \in \mathbb{R} F(x)=\frac{x^2}{2}\)</
 </tr>
 <tr class="odd">
 <td><span class="math inline">\(\frac{1}{x}\)</span></td>
-<td><span class="math inline">\(ln(|x|)\)</span> con <span class="math inline">\(x\neq 0\)</span></td>
+<td><span class="math inline">\(ln(\|x\|)\)</span> con <span class="math inline">\(x\neq 0\)</span></td>
 </tr>
 <tr class="even">
 <td><span class="math inline">\(x^{\alpha}\)</span></td>
@@ -238,8 +239,8 @@ es : <span class="math inline">\(f(x)=x, x \in \mathbb{R} F(x)=\frac{x^2}{2}\)</
 <p>Sia <span class="math inline">\([a,b]\subseteq I, \int_a^b \frac{x}{dx}F(x)g(x) dx=\int_a^b fg + \int_a^b Fg&#39;=[F(x)g(x)]^b_a\)</span></p>
 <p>quindi <span class="math inline">\(\int_a^b f(x) g(x) \space dx=[F(x)g(x)]_a^b - \int F(x)-g&#39;(x) dx\)</span></p>
 <p><span class="math inline">\(I \subseteq \mathbb{R}\)</span> intervallo aperto <span class="math inline">\(c\in I, I_c(x)=\int_c^x f(t) \space dt\)</span> (f continua ) <span class="math inline">\(TDC:I_c&#39;(x)=f(x), \frac{d}{dx} \int_c^x f(t) dt=f(x)\)</span></p>
-<p>Se consindero <span class="math inline">\(H(x) = \in_x^c f(t) \space dt, H&#39;(x)=\frac{d}{dx}( - \int_c^x f(t)\space dt \bigr)=-f(x)\)</span></p>
-<p><span class="math inline">\(\frac{d}{dx} \int_x^{x^3} f(t) \space dt\)</span> sia <span class="math inline">\(f \cdot I \to \mathbb{R}\)</span> continua <span class="math inline">\(h: \mathbb{R} \to I\)</span> vogliamo alcolare <span class="math inline">\(- \frac{d}{dx} \int_c^{h(x)} f(t) \space dt\)</span> dove h deve essere una funzione derivabile</p>
+<p>Se considero <span class="math inline">\(H(x) = \in_x^c f(t) \space dt, H&#39;(x)=\frac{d}{dx}( - \int_c^x f(t)\space dt \bigr)=-f(x)\)</span></p>
+<p><span class="math inline">\(\frac{d}{dx} \int_x^{x^3} f(t) \space dt\)</span> sia <span class="math inline">\(f \cdot I \to \mathbb{R}\)</span> continua <span class="math inline">\(h: \mathbb{R} \to I\)</span> vogliamo allora <span class="math inline">\(- \frac{d}{dx} \int_c^{h(x)} f(t) \space dt\)</span> dove h deve essere una funzione derivabile</p>
 <p>Scrivo <span class="math inline">\(I_c(z)= \int_c^z f(t) \space dt ,\forall z \in I\)</span></p>
 <p>Scrive <span class="math inline">\(\int_c^{h(x)}f(t) \space dt=I_c h(x)=I_c \cdot h(x)\)</span></p>
 <p>se h è derivabile f è continua, la funzione <span class="math inline">\(I_c\)</span> è derivabile (TeoremaFondamentaleCalcolo). Dunque <span class="math inline">\((I_c \cdot h)&#39;(x)=I_c(h(x))*h&#39;(x)\)</span> (derivata f. compota) <span class="math inline">\(= f(h(x)) h&#39;(x)\)</span></p>
@@ -248,7 +249,25 @@ es : <span class="math inline">\(f(x)=x, x \in \mathbb{R} F(x)=\frac{x^2}{2}\)</
 <p>allora vale:</p>
 <p><span class="math inline">\(\frac{d}{dx}=\int_c^{h(x)} f(t) dt = f(h(x)) h&#39;(x)\)</span></p>
 <h3 id="cambio-di-variabile"><span class="header-section-number">1.8.2</span> cambio di variabile</h3>
-<p><span class="math inline">\(h:I \to J, t \to h(t)\)</span></p>
+<p>Cambio di variabile <span class="math inline">\(x=h(t)\)</span> in <span class="math inline">\(\int f(x) dx\)</span>.</p>
+<p><strong>Teorema</strong>: <span class="math inline">\(I,J\subset \mathbb{R}\)</span> intervalli aperti, <span class="math inline">\(h:I\to J\)</span> <span class="math inline">\(f:J\to\mathbb{R}\)</span>, continua siano parti <span class="math inline">\(\alpha,\beta \in I\)</span> allora vale:<br />
+<span class="math inline">\(\int _{h(\alpha)}^{h(\beta)} f(x)\space dx=\int_{\alpha}^{\beta}f(h(t))h&#39;(t) \space dt\)</span><br />
+<span class="math inline">\(x=h(t) \in J\)</span>= dominio di f</p>
+<p>Considero <span class="math inline">\(F,G: I \to \mathbb{R}\)</span> <span class="math inline">\(F(x)= \int_{h(\alpha)}^{h&#39;(x)} f(x) dx, G(z) = \int_\alpha^z f(h(t))h&#39;(t)\space dt\)</span></p>
+<p>Dimostro che <span class="math inline">\(F \equiv G\)</span></p>
+<ol type="1">
+<li><span class="math inline">\(F(\alpha)=G(\alpha)\)</span></li>
+<li><span class="math inline">\(F,G\)</span> derivabile in <span class="math inline">\(I\)</span> e <span class="math inline">\(F&#39;(z)=G&#39;(z) \forall z \in I\)</span></li>
+</ol>
+<p><span class="math inline">\(F(\alpha)=0, G(\alpha)=0\)</span><br />
+<span class="math inline">\(G&#39;(z)=f(h(z))h&#39;(z) \forall z \in I\)</span></p>
+<p><span class="math inline">\(F&#39;(z)=f(h(z))h&#39;(z)\implies\)</span> 2 vale e la tesi e dimostrata</p>
+<h3 id="integrale-generalizzato"><span class="header-section-number">1.8.3</span> Integrale Generalizzato</h3>
+<p>Def: <span class="math inline">\(F:[a,+\infty[ \to \mathbb{R}\)</span>, continua. Si dice <span class="math inline">\(f\)</span> integrabile in senso generalizzato su <span class="math inline">\([a,+\infty[\)</span> se <span class="math inline">\(\exists\)</span> finito :</p>
+<p><span class="math inline">\(\displaystyle \lim_{x \rightarrow \infty} \int_a^z f(x) dx = \int_a^{+\infty} f(x) dx\)</span></p>
+<p><span class="math inline">\(f::]-\infty,b] \to \mathbb{R}\)</span> si fa <span class="math inline">\(\displaystyle \lim_{x \rightarrow -\infty} \int_z^b f(x) \space dx\)</span></p>
+<p>Def <span class="math inline">\(f:]a,b[\to \mathbb{R}\)</span> continua.Dico f integrabile in <span class="math inline">\(S,G\)</span>. se <span class="math inline">\(\exists\)</span> finito <span class="math inline">\(\displaystyle \lim_{x \rightarrow 0_+} \int_z^b f(x) \space dx= \int_a^b f(x) \space dx\)</span></p>
+<p>nel caso <span class="math inline">\(f: [a,b[ \to \mathbb{R}\)</span> continua <span class="math inline">\(\int_a^b f(x) \space dx\)</span> si definisca con <span class="math inline">\(\displaystyle \lim_{x \rightarrow b-} \int_a^z f(x)\space dx\)</span></p>
 <button style="position: fixed; bottom: 20px; right: 30px; z-index: 99; border: none; outline: none; cursor: pointer; padding: 9px; border-radius: 8px; font-size: 18px; background: var(--dracula-current-line); color: var(--dracula-background);" onclick=" document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">
     top
 </button>
