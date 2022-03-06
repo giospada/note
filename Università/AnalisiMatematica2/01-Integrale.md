@@ -181,15 +181,16 @@ Dim : Per il teorema (versione 1), fissata $c\in ]a,b[$ $I_c$ è una proimitiva 
 
 |               f                |                                                                 F                                                                  |
 | ----------------------- | ----------------------------------------------------------------------------------------------------- |
-| $x^n$                     | $\frac{x^{n+1}}{n+1}$  $n \in \mathbb{N} \ \{0\}, x\in \mathbb{R}$                          |
+| $x^n$                     | $\frac{x^{n+1}}{n+1}$  $n \in \mathbb{N} \backslash \{0\}, x\in \mathbb{R}$            |
 | $x^k$                     | $\frac{x^{k+1}}{k+1}$  con $k \in \mathbb{Z}\wedge k \neq -1, x\neq 0$                    |
-| $\frac{1}{x}$          | $ln(|x|)$  con $x\neq 0$                                                                                                |
+| $\frac{1}{x}$          | $ln(\|x\|)$  con $x\neq 0$                                                                                             |
 | $x^{\alpha}$           | $\frac{x^{\alpha +1}}{\alpha +1}$  con $\alpha \in \mathbb{R}\backslash \{-1\},x>0$ |
 | $cos(x)$                  | $sin(x)$                                                                                                                        |
 | $sin(x)$                   | $-cos(x)$                                                                                                                      |
 | $e^x$                     | $e^x$                                                                                                                          |
 | $\frac{1}{1+x^2}$  | $\arctan(x)$                                                                                                                 |
 | $\frac{1}{cos^2x}$ | $\tan(x)$                                                                                                                      |
+| $\ln x$                     | $x \ln x - x$                                                                                                                  |
 
 
 <details>
@@ -208,8 +209,87 @@ $(g \cdot f) (x)=g'(f(x))- f'(x) \forall x \in I, g \cdot f$ è una primitiva di
 1. $g(z)=e^z, g'(z)=e^z, \space \int e^{f(x)}f'(x) \space dx=[e^{f(x)}]^{x=b}_{x=a}$
 2. $g(z) = ln(z), g'(x)=\frac{1}{z} z>0 \space \int_a^b \frac{f'(x)}{f(x)} dx = [ln f(x)]_{x=a}^{x=a}$  
 3. $g(z) = sin(z), g'(x)=cos(z) \space \int_a^b cos(f(x))f'(x) dx = [sin(f(x))]_{x=a}^{x=a}$  
-3. $g(z) = \frac{z^\alpha}{\alpha +1 }, g'(x)=z^{\alpha}, \alpha\neq -1, z \in  \text{ dominio della potenza di alpha+1 } \space \int_a^b f(x)^{\alpha}f'(x) dx = [\frac{f(x)^{\alpha+1}}{\alpha+1}]_{x=a}^{x=a}$  
+4. $g(z) = \frac{z^\alpha}{\alpha +1 }, g'(x)=z^{\alpha}, \alpha\neq -1, z \in  \text{ dominio della potenza di alpha+1 } \space \int_a^b f(x)^{\alpha}f'(x) dx = [\frac{f(x)^{\alpha+1}}{\alpha+1}]_{x=a}^{x=a}$  
 
 
 
+**esponenziale**
+$\int a^x \space dx=\int e^{x\ln a} \space dx= \frac{1}{\ln a} \int \ln{a} \space  e^{x \ln a}=[\frac{1}{\ln a}e^{x \ln a}]=\frac{1}{\ln a } a^x$
 
+
+## Formula di integrazione per parti
+
+$I \subseteq \mathbb{R},f$ dove è una funzione continua su $I, g$ derivabile su $I,g'$ continua, $F$   primitiva di $f$ su $I$  
+$F F(x)g(x)=F'(x)g(x)+F(x)g'(x), \forall x \in I$
+
+
+Sia $[a,b]\subseteq I, \int_a^b \frac{x}{dx}F(x)g(x) dx=\int_a^b fg + \int_a^b Fg'=[F(x)g(x)]^b_a$ 
+
+quindi
+$\int_a^b f(x) g(x) \space  dx=[F(x)g(x)]_a^b - \int F(x)-g'(x) dx$
+
+
+$I \subseteq \mathbb{R}$  intervallo  aperto $c\in I, I_c(x)=\int_c^x f(t) \space dt$ (f continua ) $TDC:I_c'(x)=f(x), \frac{d}{dx} \int_c^x f(t) dt=f(x)$
+
+Se considero $H(x) = \in_x^c f(t) \space dt, H'(x)=\frac{d}{dx}( - \int_c^x f(t)\space dt \bigr)=-f(x)$
+
+$\frac{d}{dx} \int_x^{x^3} f(t) \space dt$ sia $f \cdot I \to \mathbb{R}$ continua $h: \mathbb{R} \to I$ vogliamo allora $- \frac{d}{dx} \int_c^{h(x)} f(t) \space dt$  dove h deve essere una funzione derivabile
+
+
+Scrivo $I_c(z)= \int_c^z f(t) \space dt ,\forall z \in I$ 
+
+Scrive $\int_c^{h(x)}f(t) \space dt=I_c h(x)=I_c \cdot h(x)$ 
+
+
+se h è derivabile f è continua, la funzione $I_c$ è derivabile (TeoremaFondamentaleCalcolo). Dunque $(I_c \cdot h)'(x)=I_c(h(x))*h'(x)$ (derivata f. compota) $= f(h(x)) h'(x)$
+
+### Generalizzazione Teorema Fondamentale del Calcolo
+
+$f:I \to \mathbb{R}$ continua.
+$g:\mathbb{R} \to I$ derivabile
+
+allora vale:
+
+$\frac{d}{dx}=\int_c^{h(x)} f(t) dt = f(h(x)) h'(x)$
+
+### cambio di variabile
+
+
+Cambio di variabile $x=h(t)$ in $\int f(x) dx$.
+
+**Teorema**: $I,J\subset \mathbb{R}$  intervalli aperti, $h:I\to J$ $f:J\to\mathbb{R}$, continua siano parti $\alpha,\beta \in I$ allora vale:  
+$\int _{h(\alpha)}^{h(\beta)} f(x)\space dx=\int_{\alpha}^{\beta}f(h(t))h'(t) \space dt$  
+$x=h(t) \in J$= dominio di f
+
+
+Considero $F,G: I \to \mathbb{R}$
+$F(x)= \int_{h(\alpha)}^{h'(x)} f(x) dx, G(z) = \int_\alpha^z f(h(t))h'(t)\space dt$
+
+Dimostro che $F \equiv G$
+
+
+1. $F(\alpha)=G(\alpha)$
+2. $F,G$ derivabile in $I$ e $F'(z)=G'(z) \forall z \in I$
+ 
+$F(\alpha)=0, G(\alpha)=0$  
+$G'(z)=f(h(z))h'(z) \forall z \in I$
+
+$F'(z)=f(h(z))h'(z)\implies$ 2 vale e la tesi e dimostrata
+
+
+### Integrale Generalizzato
+
+
+Def: $F:[a,+\infty[ \to \mathbb{R}$, continua. Si dice $f$ integrabile in senso generalizzato su $[a,+\infty[$ se $\exists$ finito :
+
+$\displaystyle \lim_{x \rightarrow \infty} \int_a^z f(x) dx = \int_a^{+\infty} f(x) dx$
+
+
+$f::]-\infty,b] \to \mathbb{R}$ si fa $\displaystyle \lim_{x \rightarrow -\infty} \int_z^b f(x) \space dx$
+
+
+
+Def $f:]a,b[\to \mathbb{R}$ continua.Dico f integrabile in $S,G$. se $\exists$ finito $\displaystyle \lim_{x \rightarrow 0_+}  \int_z^b f(x) \space dx= \int_a^b f(x) \space dx$
+
+
+nel caso $f: [a,b[ \to \mathbb{R}$ continua $\int_a^b f(x) \space dx$ si definisca con $\displaystyle \lim_{x \rightarrow b-} \int_a^z f(x)\space dx$

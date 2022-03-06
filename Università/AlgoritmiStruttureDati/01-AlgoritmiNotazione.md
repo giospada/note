@@ -97,12 +97,37 @@ $g(n) = \Omega(f (n)) \implies f (n) = \omega(g(n))$
 > **Caso pessimo:** descrive il comportamento in condizioni sfavorevoli
 > **Caso medio:** descrive il comportamento medio su tutti i possibili input
 
-## Analisi delle Ricorsioni
-
-### Metodo di sostituzione
+## Analisi Ammortizzata
 
 
-1. Ipotizzare la soluzione
-2. Usare l'induzione matematica per dimostrare la ricorsione
+> L’analisi ammortizzata è un metodo per valutare il costo medio di una
+sequenza di operazioni
 
-Ovviamante si può utilizzare solo se si ha un'ipotesi da verificare
+<details>
+<summary>
+costo medio vs costo ammortizzato
+</summary>
+
+- costo medio: media del costo di una singola operazione
+- costo ammortizzato: media del costo di una sequenza di operazioni
+
+</details>
+
+
+### Metodo dell'Aggregazione
+
+> determiniamo un limite superiore al costo totale di una sequenza di n operazioni e dividiamo per n
+
+
+
+### Metodo con Accantonamenti
+
+- Assegniamo un costo ammortizzato ad ogni operazione
+- Ogni operazione viene addebitata con il suo costo ammortizzato
+- Dopo ogni operazione, salviamo come credito la differenza tra il
+- suo costo ammortizzato e costo reale
+- Accumuliamo il credito collezionato durante l’esecuzione
+- Se il costo reale è piu alto del costo ammortizzato, usiamo il credito
+- Il costo ammortizzato è corretto se il credito non è mai negativo
+
+
