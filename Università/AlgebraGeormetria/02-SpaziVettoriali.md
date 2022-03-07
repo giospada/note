@@ -69,8 +69,9 @@ allora **valgono anche le seguenti proprità**:
 > valgono le proprità $1,2,3$ se e solo se ($\iff$)$1',2,3$ 
 > valgono le proprità $2,3$ se e solo se vale  ($\iff$)$23$ 
 
+### Analisi delle proprietà
 
-osserviamo che poiché W non è vuoto, e $\lambda  u \in W\quad \forall \lambda \in \mathbb{R}$, allora prendendo un vettore qualsiasi di W e moltiplicandolo per $\lambda = 0$ si ottiene che $0_v \in W$. questo ci permette di sostituire la prima proprietà con
+osserviamo che poiché W non è vuoto, e $\lambda  u \in W\quad \forall \lambda \in \mathbb{R}$, allora prendendo un vettore qualsiasi di W e moltiplicandolo per $\lambda = 0$ si ottiene che $0_v \in W$. questo ci permette di sostituire la prima proprietà con $0_v \in W$
 
 
 il sottospazio vettoriale W di V è quindi uno spazio vettoriale con le operazioni di V ristrette a W.
