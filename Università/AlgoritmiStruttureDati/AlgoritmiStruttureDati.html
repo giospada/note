@@ -62,6 +62,16 @@
 <li><a href="#albero-di-ricorsione"><span class="toc-section-number">2.3</span> Albero di ricorsione</a></li>
 <li><a href="#teorema-dellesperto"><span class="toc-section-number">2.4</span> Teorema dell’esperto</a></li>
 </ul></li>
+<li><a href="#strutture-dati-basi"><span class="toc-section-number">3</span> Strutture Dati Basi</a><ul>
+<li><a href="#struttura-dati"><span class="toc-section-number">3.1</span> Struttura Dati</a></li>
+<li><a href="#dizionario-array-associativo"><span class="toc-section-number">3.2</span> Dizionario / Array associativo</a></li>
+<li><a href="#esempio-di-implementazini"><span class="toc-section-number">3.3</span> esempio di implementazini</a></li>
+<li><a href="#linked-list"><span class="toc-section-number">3.4</span> Linked List</a></li>
+<li><a href="#stack"><span class="toc-section-number">3.5</span> Stack</a></li>
+<li><a href="#queue"><span class="toc-section-number">3.6</span> Queue</a></li>
+<li><a href="#albero"><span class="toc-section-number">3.7</span> Albero</a></li>
+<li><a href="#albero-binario"><span class="toc-section-number">3.8</span> Albero Binario</a></li>
+</ul></li>
 </ul>
 </nav>
 <h1 id="algoritmi"><span class="header-section-number">1</span> Algoritmi</h1>
@@ -196,6 +206,97 @@ T(n)=\Bigg\lbrace  \begin{matrix}1\\T(n-1)+T(n-2)+1\end{matrix}\quad \frac{\text
 <li></li>
 </ul>
 </details>
+<h1 id="strutture-dati-basi"><span class="header-section-number">3</span> Strutture Dati Basi</h1>
+<h2 id="struttura-dati"><span class="header-section-number">3.1</span> Struttura Dati</h2>
+<p><strong>Def:</strong> Definisce come i dati sono logicamente organizzati Definisce le operazioni per accedere e modificare i dati</p>
+<p><strong>Prototipi</strong>: (descrizione ad alto livello della struttura)</p>
+<p><strong>Implementazione</strong>:(realizzazione concreta della struttura dati in un linguaggio di programmazione, determina i tempi d’esecuzione)</p>
+<p><strong>Tipi di Strutture di dati</strong>:</p>
+<ul>
+<li><p>Lineari: dati in ordine sequenziale</p></li>
+<li><p>Non-Lineari: nessun ordine</p></li>
+<li><p>Statiche: numero di elementi costante</p></li>
+<li><p>Dinamiche: numero di elementi può variare</p></li>
+<li><p>Omogenee: un solo tipo di dato memorizzabile</p></li>
+<li><p>Eterogenee: differenti tipi di dato memorizzabili</p></li>
+</ul>
+<h2 id="dizionario-array-associativo"><span class="header-section-number">3.2</span> Dizionario / Array associativo</h2>
+<p><strong>Descrizione</strong>:Contiene delle chiavi univoche, ognuna delle quali è associata ad un valore e ogni chiave è univoca</p>
+<p><strong>Operazioni</strong>:</p>
+<ul>
+<li><code>search(key)</code>: cerca l’oggetto associato alla chiave</li>
+<li><code>insert(key,dato)</code>: inserisce nel dizionario il dato associato alla chiave</li>
+<li><code>delete(key)</code> elimina la coppia chiave e dato dal dizionario</li>
+</ul>
+<h2 id="esempio-di-implementazini"><span class="header-section-number">3.3</span> esempio di implementazini</h2>
+<p><strong>implementazione con array:</strong> teniamo un array ordinato con tutte le chiavi</p>
+<ul>
+<li><code>search(key)</code>: utilizziamo la ricerca binaria per trovare l’oggetto <span class="math inline">\(O(\lg n)\)</span></li>
+<li><code>insert(key,dato)</code>: ricerchiamo la chiave più vicina e poi spostiamo tutte le chiavi di un passo più avanti <span class="math inline">\(O(\lg n)+O(n)=O(n)\)</span></li>
+<li><code>delete(key)</code>: ricerchiamo la chiave spostiamo tutte le chiavi di un passo indietro <span class="math inline">\(O(\lg n)+O(n)=O(n)\)</span></li>
+</ul>
+<p><strong>implementazione con liste</strong></p>
+<ul>
+<li><code>search(Key k)</code>
+<ul>
+<li>Ricerca sequenziale su lista non ordinata</li>
+<li>Costo nel caso pessimo: <span class="math inline">\(O(n)\)</span></li>
+</ul></li>
+<li><code>insert(Key k, Data d)</code>
+<ul>
+<li>Inserimento in testa alla lista</li>
+<li>Costo nel caso pessimo: <span class="math inline">\(O(1)\)</span></li>
+</ul></li>
+<li><code>delete(Key k)</code>
+<ul>
+<li>Ricerca sequenziale + rimozione</li>
+<li>Costo nel caso pessimo: <span class="math inline">\(O(n) + O(1) = O(n)\)</span></li>
+</ul></li>
+</ul>
+<h2 id="linked-list"><span class="header-section-number">3.4</span> Linked List</h2>
+<p><strong>Descrizione</strong> le linked list sono dove ogni elemento mantiene il pointer dell’elemento successivo, e mantiene lìordine sequenziale</p>
+<p><img src="vx_images/130594698826101.png" /></p>
+<p><strong>Operazioni</strong>:</p>
+<ul>
+<li>Ricerca <span class="math inline">\(O(n)\)</span></li>
+<li>Inserimento <span class="math inline">\(O(1)\)</span></li>
+<li>Rimozione <span class="math inline">\(O(n)\)</span></li>
+</ul>
+<h2 id="stack"><span class="header-section-number">3.5</span> Stack</h2>
+<p><strong>Descrizione</strong>: è una struttura dati che tiene gli elementi come una pila si può accedere solo all’ultimo elemento inserito ed eliminarlo</p>
+<p><strong>Operazioni</strong>:</p>
+<ul>
+<li><code>push(elemento)</code>: aggiunge un nuovo elemento all’inizio della struttura <span class="math inline">\(O(1)\)</span></li>
+<li><code>pop()</code>: rimuove l’elemento aggiunto più di recente alla struttura <span class="math inline">\(O(1)\)</span>
+<details>
+<summary> implementazione con le linked list vs array </summary></li>
+</ul>
+<p>TODO:analisi ammortizzata da pag 34 <a href="https://virtuale.unibo.it/pluginfile.php/1113427/mod_resource/content/4/04%20-%20Strutture%20dati%20elementari.pdf">pdf</a></p>
+</details>
+<h2 id="queue"><span class="header-section-number">3.6</span> Queue</h2>
+<p><strong>Descrizione</strong>: è una SD che permette di aggiungere elementi alla fine e toglierne all’inizio, fa accedere all’primo e all’ultimo elemento</p>
+<p><strong>Operazioni</strong>:</p>
+<ul>
+<li><code>queue(elemento)</code>: inseriesce l’elemento alla fine <span class="math inline">\(O(1)\)</span></li>
+<li><code>dequeue()</code>: elimina l’elememto all’inizio <span class="math inline">\(O(1)\)</span></li>
+</ul>
+<h2 id="albero"><span class="header-section-number">3.7</span> Albero</h2>
+<p><strong>Def</strong>: è un grafo con <span class="math inline">\(n\)</span> vertici e <span class="math inline">\(n-1\)</span> archi, in particolare c’è un unico percorso tra due vertici</p>
+<h2 id="albero-binario"><span class="header-section-number">3.8</span> Albero Binario</h2>
+<p><strong>Def</strong>: è un albero in cui ogni vertice ha massimo due figli è massimo un padre</p>
+<p><strong>definizioni</strong>:</p>
+<ul>
+<li><strong>profondità</strong>:di un nodo u è la lungezza del percorso per arrivare ala radice</li>
+<li><strong>livello</strong>: è l’insieme di nodi con la stessa profondità</li>
+<li><strong>altezza</strong>: è la massima profondità dell’albero</li>
+<li><strong>grado</strong>: è il numero dei suoi figli</li>
+</ul>
+<p><strong>visita di profondità</strong> (dfs)</p>
+<ul>
+<li><strong>in-order</strong>:visita il nodo sinsitro, poi se stesso e poi il destro</li>
+<li><strong>post-order</strong>: visita il destro,poi il corrente e poi il sinistro</li>
+<li><strong>pre-order</strong>:visita il nodo corrente, poi il sinistro e poi il destro</li>
+</ul>
 <button style="position: fixed; bottom: 20px; right: 30px; z-index: 99; border: none; outline: none; cursor: pointer; padding: 9px; border-radius: 8px; font-size: 18px; background: var(--dracula-current-line); color: var(--dracula-background);" onclick=" document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">
     top
 </button>

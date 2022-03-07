@@ -63,7 +63,9 @@
 <li><a href="#esempi-di-spazi-vettoriali"><span class="toc-section-number">3.1.1</span> Esempi di spazi vettoriali</a></li>
 <li><a href="#proprietà-degli-spazi-vettoriali"><span class="toc-section-number">3.1.2</span> Proprietà degli spazi Vettoriali</a></li>
 </ul></li>
-<li><a href="#sottospazio-vettoriale"><span class="toc-section-number">3.2</span> Sottospazio Vettoriale</a></li>
+<li><a href="#sottospazio-vettoriale"><span class="toc-section-number">3.2</span> Sottospazio Vettoriale</a><ul>
+<li><a href="#analisi-delle-proprietà"><span class="toc-section-number">3.2.1</span> Analisi delle proprietà</a></li>
+</ul></li>
 <li><a href="#sottospazio-banale"><span class="toc-section-number">3.3</span> Sottospazio banale</a><ul>
 <li><a href="#sottospazi-di-r"><span class="toc-section-number">3.3.1</span> Sottospazi di R</a></li>
 </ul></li>
@@ -71,6 +73,9 @@
 <li><a href="#dimostrazione"><span class="toc-section-number">3.4.1</span> Dimostrazione</a></li>
 <li><a href="#nel-piano-cartesiano"><span class="toc-section-number">3.4.2</span> Nel piano Cartesiano</a></li>
 </ul></li>
+</ul></li>
+<li><a href="#combinazioni-lineari-e-indipendenza-lineare"><span class="toc-section-number">4</span> Combinazioni lineari e indipendenza lineare</a><ul>
+<li><a href="#combinazione-lineare-1"><span class="toc-section-number">4.1</span> Combinazione lineare</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -311,7 +316,8 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <blockquote>
 <p>Nota valgono le proprità <span class="math inline">\(1,2,3\)</span> se e solo se (<span class="math inline">\(\iff\)</span>)<span class="math inline">\(1&#39;,2,3\)</span> valgono le proprità <span class="math inline">\(2,3\)</span> se e solo se vale (<span class="math inline">\(\iff\)</span>)<span class="math inline">\(23\)</span></p>
 </blockquote>
-<p>osserviamo che poiché W non è vuoto, e <span class="math inline">\(\lambda u \in W\quad \forall \lambda \in \mathbb{R}\)</span>, allora prendendo un vettore qualsiasi di W e moltiplicandolo per <span class="math inline">\(\lambda = 0\)</span> si ottiene che <span class="math inline">\(0_v \in W\)</span>. questo ci permette di sostituire la prima proprietà con</p>
+<h3 id="analisi-delle-proprietà"><span class="header-section-number">3.2.1</span> Analisi delle proprietà</h3>
+<p>osserviamo che poiché W non è vuoto, e <span class="math inline">\(\lambda u \in W\quad \forall \lambda \in \mathbb{R}\)</span>, allora prendendo un vettore qualsiasi di W e moltiplicandolo per <span class="math inline">\(\lambda = 0\)</span> si ottiene che <span class="math inline">\(0_v \in W\)</span>. questo ci permette di sostituire la prima proprietà con <span class="math inline">\(0_v \in W\)</span></p>
 <p>il sottospazio vettoriale W di V è quindi uno spazio vettoriale con le operazioni di V ristrette a W.</p>
 <p>la seconda proprietà infatti assicura la restrizione della somma</p>
 <p><span class="math display">\[
@@ -347,6 +353,18 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <p>in <span class="math inline">\(\mathbb{R}^2\)</span> <span class="math inline">\(&lt;v&gt;\)</span> è una retta per <span class="math inline">\((0,0)\)</span></p>
 <p>In <span class="math inline">\(\mathbb{R}^3&lt;v,w&gt;\)</span> è una retta appartiene <span class="math inline">\((0,0,0)\)</span></p>
 <p>Sia <span class="math inline">\(V\)</span> spazio vetoriale <span class="math inline">\(v_1,\dots,v_n \in V\)</span> e <span class="math inline">\(w= d_1v_1+\dots+d_nv_n\)</span> allora <span class="math inline">\(&lt;v_1,\dots,v_n&gt;=&lt;v_1,\dots,v_n,w&gt;\)</span></p>
+<h1 id="combinazioni-lineari-e-indipendenza-lineare"><span class="header-section-number">4</span> Combinazioni lineari e indipendenza lineare</h1>
+<h2 id="combinazione-lineare-1"><span class="header-section-number">4.1</span> Combinazione lineare</h2>
+<p><strong>Combinazione lineare:</strong> dato uno SV <span class="math inline">\(V\)</span> i cui vettori sono <span class="math inline">\(v_1,...\ v_n\)</span> e dati <span class="math inline">\(\lambda_1,...\ \lambda_n \in \mathbb{R}\)</span>, il vettore <span class="math inline">\(w = \lambda_1v_1+...+\lambda_n v_n\)</span> si dice <em>combinazione lineare</em> di <span class="math inline">\(v_1,...\ v_n\)</span> con scalari <span class="math inline">\(\lambda_1,...\ \lambda_n\)</span>.</p>
+<p>Sottospazio generato: dato uno SV <span class="math inline">\(V\)</span> e un insieme di vettori <span class="math inline">\(\{v_1,...\ v_n\}\)</span> di <span class="math inline">\(V\)</span>, il <em>sottospazio generato</em> dai vettori <span class="math inline">\(v_1,...\ v_n\)</span> è l’insieme di tutte le loro combinazioni lineari, che tradotto in simboli è: <span class="math inline">\(\langle v_1,...\ v_n \rangle = \{ \lambda_1v_1 + ... + \lambda_nv_n\ |\ \lambda_1, ...\ \lambda_n \in \mathbb{R} \}\)</span></p>
+<p>Osservazioni:</p>
+<ul>
+<li>il sottospazio generato da un singolo vettore dello SV <span class="math inline">\(v \in V\)</span> è l’insieme dei multipli di <span class="math inline">\(v\)</span>, ovvero <span class="math inline">\(\langle v \rangle = \{ \lambda v\ |\ \lambda \in \mathbb{R} \}\)</span></li>
+<li>il sottospazio generato dal vettore nullo invece è il sottospazio banale contenente solo il vettore nullo, ovvero <span class="math inline">\(\langle 0 \rangle = \{ 0 \}\)</span></li>
+</ul>
+<p>Generatori: dato uno SV <span class="math inline">\(V\)</span> e un insieme di vettori di <span class="math inline">\(V\ \{v_1, ...\ v_n \}\)</span>, si dice che <span class="math inline">\(v_1,...\ v_n\)</span> <em>generano <span class="math inline">\(V\)</span></em> o che <span class="math inline">\(\{v_1, ...\ v_n \}\)</span> è un <em>insieme di generatori</em> di <span class="math inline">\(V\)</span> se <span class="math inline">\(V = \langle v_1, ...\ v_n\rangle\)</span>.</p>
+<p>PROP: siano <span class="math inline">\(V\)</span> uno SV e <span class="math inline">\(\{v_1, ...\ v_n \}\)</span> un insieme di vettori di <span class="math inline">\(V\)</span>, si ha che <span class="math inline">\(\langle v_1, ...\ v_n\rangle\)</span> è un sottospazio vettoriale di <span class="math inline">\(V\)</span>.</p>
+<p>Inoltre se <span class="math inline">\(Z\)</span> è un sottospazio vettoriale di <span class="math inline">\(V\)</span> contenente <span class="math inline">\(v_1,...\ v_n\)</span>, allora <span class="math inline">\(\langle v_1, ...\ v_n\rangle \subseteq Z\)</span>, cioè <span class="math inline">\(\langle v_1, ...\ v_n\rangle\)</span> è <em>il più piccolo</em> sottospazio vettoriale di <span class="math inline">\(V\)</span> contenente <span class="math inline">\(v_1, ...\ v_n\)</span>.</p>
 <button style="position: fixed; bottom: 20px; right: 30px; z-index: 99; border: none; outline: none; cursor: pointer; padding: 9px; border-radius: 8px; font-size: 18px; background: var(--dracula-current-line); color: var(--dracula-background);" onclick=" document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">
     top
 </button>
