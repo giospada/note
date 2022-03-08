@@ -148,15 +148,3 @@ In $\mathbb{R}^3<v,w>$ è una retta appartiene $(0,0,0)$
 
 Sia $V$ spazio vetoriale $v_1,\dots,v_n \in V$ e $w= d_1v_1+\dots+d_nv_n$ allora $<v_1,\dots,v_n>=<v_1,\dots,v_n,w>$
 
-
-
-
-
-
-
-
-
-
-
-
-
