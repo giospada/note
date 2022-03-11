@@ -69,8 +69,12 @@
 <li><a href="#norma-vettore"><span class="toc-section-number">3.3</span> Norma vettore</a></li>
 <li><a href="#normalizzare-un-vettore"><span class="toc-section-number">3.4</span> Normalizzare un vettore</a><ul>
 <li><a href="#disuguaglianza-di-couchy--schwarz"><span class="toc-section-number">3.4.1</span> Disuguaglianza di couchy- schwarz</a></li>
+<li><a href="#disuguaglianza-triangolare"><span class="toc-section-number">3.4.2</span> Disuguaglianza triangolare</a></li>
 </ul></li>
 <li><a href="#formula-quadrato-di-un-binomio"><span class="toc-section-number">3.5</span> Formula quadrato di un binomio</a></li>
+<li><a href="#intorni-specifici-dischi-palle"><span class="toc-section-number">3.6</span> Intorni specifici (dischi, palle)</a></li>
+<li><a href="#insiemi-aperti"><span class="toc-section-number">3.7</span> Insiemi aperti</a></li>
+<li><a href="#succcessioni-in-mathbbrn"><span class="toc-section-number">3.8</span> Succcessioni in <span class="math inline">\(\mathbb{R}^n\)</span></a></li>
 </ul></li>
 </ul>
 </nav>
@@ -333,8 +337,41 @@ dato un vettore x con un angolo di <span class="math inline">\(\alpha\)</span> �
 </details>
 <h3 id="disuguaglianza-di-couchy--schwarz"><span class="header-section-number">3.4.1</span> Disuguaglianza di couchy- schwarz</h3>
 <p><span class="math inline">\(\forall x ,y \in \mathbb{R}^n\)</span> vale <span class="math inline">\(|&lt;x,y&gt;| \leq |x| \times |y|\)</span> vale “=” solo se x,y sono dipendenti</p>
+<h3 id="disuguaglianza-triangolare"><span class="header-section-number">3.4.2</span> Disuguaglianza triangolare</h3>
+<p><span class="math inline">\(\forall x ,y \in \mathbb{R}^n\)</span> vale <span class="math inline">\(|&lt;x,y&gt;| \leq |x| + |y|\)</span> vale “=” solo se x,y sono dipendenti</p>
+<details>
+<p><summary> dimostrazione </summary></p>
+<p><span class="math inline">\(|x+y|^2=|x|^2+|y|^2+2&lt;x,y&gt; \leq |x|^2+|y|^2+2&lt;x,y&gt;\)</span> per la disuguaglianza di cauchy-shwarez <span class="math inline">\(\le|x|^2+|y|^2+2|x||y|\)</span> ovvero <span class="math inline">\(\leq (|x|+|y|)^2\)</span></p>
+</details>
 <h2 id="formula-quadrato-di-un-binomio"><span class="header-section-number">3.5</span> Formula quadrato di un binomio</h2>
-<p>Dati <span class="math inline">\(x,y \in \mathbb{R}^n\)</span> <span class="math inline">\(||x+y||^2=&lt;x+y,x+y&gt;=&lt;x,x+y&gt;+&lt;y+x+y&gt;=\)</span> <span class="math inline">\(&lt;x,y&gt;+&lt;x,x&gt;+&lt;y,x&gt;+&lt;y,y&gt;\)</span><span class="math inline">\(=||x||^2+2&lt;x,y&gt;+||y||^2\)</span></p>
+<p>Dati <span class="math inline">\(x,y \in \mathbb{R}^n\)</span> <span class="math inline">\(||x+y||^2=&lt;x+y,x+y&gt;=&lt;x,x+y&gt;+&lt;y+x+y&gt;=\)</span> <span class="math inline">\(&lt;x,y&gt;+&lt;x,x&gt;+&lt;y,x&gt;+&lt;y,y&gt;\)</span> <span class="math inline">\(=||x||^2+2&lt;x,y&gt;+||y||^2\)</span></p>
+<p><strong>Def</strong>: dati <span class="math inline">\(x,y \in \mathbb{R}^n\)</span> la distanza tra <span class="math inline">\(x,y\)</span> è il numero della norma della differenza <span class="math inline">\(||x-y||\)</span></p>
+<h2 id="intorni-specifici-dischi-palle"><span class="header-section-number">3.6</span> Intorni specifici (dischi, palle)</h2>
+<p><strong>def</strong> <span class="math inline">\(x \in \mathbb{R},r &gt;0\)</span> <span class="math inline">\(B(x,r)=\{y \in \mathbb{R}^n / |y-x|&lt;r\}\)</span></p>
+<p><span class="math inline">\(n=1, x \in \mathbb{R},r &gt;0\)</span> <span class="math inline">\(B(x,r)=\{y \in \mathbb{R}^n / |y-x|&lt;r\}= ]x-r,x+r[\)</span></p>
+<p><span class="math inline">\(n=2, x =(0,0)\)</span> <span class="math inline">\(B((0,0),r)=\{y \in \mathbb{R}^n / |(y_1,y_2)-(0,0)|&lt;r\}= \sqrt{y_1^2+y_2^2}&lt;r\)</span></p>
+<p><span class="math inline">\(n=2, x =(0,0,0)=\underline{0}\)</span> <span class="math inline">\(B(\underline{0},r)=\{y \in \mathbb{R}^n / |(y_1,y_2)-(0,0)|&lt;r\}= \sqrt{y_1^2+y_2^2}&lt;r\)</span></p>
+<p><strong>Def</strong>: <span class="math inline">\(A \subseteq \mathbb{R}^n\)</span> si dice limitato se <span class="math inline">\(\exists R&gt;0\)</span> tale che <span class="math inline">\(P\subseteq A\)</span></p>
+<h2 id="insiemi-aperti"><span class="header-section-number">3.7</span> Insiemi aperti</h2>
+<p><strong>Def</strong>: un insieme aperto sia <span class="math inline">\(A \subseteq \mathbb{R}^n\)</span>. Si dice che <span class="math inline">\(A\)</span> è aperto se <span class="math inline">\(\forall x \in A, \exists r&gt;o\)</span> tale che <span class="math inline">\(B(x,r)\subseteq A\)</span></p>
+<p><span class="math inline">\(n=1 , A=]0,1[=\{x \in \mathbb{R}\space|\space 0&lt;x&lt;1\}\)</span> <span class="math inline">\(]a,b[\)</span> è aperto <span class="math inline">\(\forall a,b \in \mathbb{R}\)</span> <span class="math inline">\(]a,+\infty[\)</span>, <span class="math inline">\(]-\infty,b[\)</span> intervalli aperti</p>
+<h2 id="succcessioni-in-mathbbrn"><span class="header-section-number">3.8</span> Succcessioni in <span class="math inline">\(\mathbb{R}^n\)</span></h2>
+<p>una successione in <span class="math inline">\(\mathbb{R}^n\)</span> è una famiglia di <span class="math inline">\((x_k) k \in \mathbb{N}\)</span> dove <span class="math inline">\(x_k \in \mathbb{R}^n\)</span> <span class="math inline">\(\forall x \in \mathbb{N}5\)</span> <span class="math inline">\(x=(x_k^1,x_k^2,\dots,x_k^n) \in \mathbb{R}^n\)</span> <span class="math inline">\(\forall x \in \mathbb{N}\)</span></p>
+<p><strong>def</strong> successione convergente <span class="math inline">\((x_k) k \in \mathbb{N}\)</span> successioni in <span class="math inline">\(\mathbb{R}^n, x \in \mathbb{R}^n\)</span> .<span class="math inline">\(\displaystyle \lim_{k \rightarrow \infty}x_k=x\)</span> Si dice <span class="math inline">\(\displaystyle \lim_{k \rightarrow +\infty} x^1_k = x^1 , \dots, \displaystyle \lim_{k \rightarrow +\infty} x^n_k = x^n\)</span></p>
+<p><strong>oss</strong>: <span class="math inline">\((x_k)_{k \in \mathbb{N}},\)</span> in <span class="math inline">\(\mathbb{R}^n\)</span> <span class="math inline">\(x_k \to x \in \mathbb{R}^n \iff |x_k -x |\to 0\)</span>(con k che tende a +infinito)</p>
+<p><strong>Funzioni di più variabili</strong> <span class="math inline">\(A \subseteq \mathbb{R}^n, B \subseteq \mathbb{R}^q \space n,q \in \mathbb{N}\)</span> <span class="math inline">\(f:A\to B\)</span></p>
+<p><span class="math inline">\(Graf(f)=\{(x,f(x))\in A \times B\}\)</span></p>
+<p>Dato <span class="math inline">\(E \subseteq A\)</span>,</p>
+<p><span class="math inline">\(Im(E)=\{f(x)|x \in E\}\)</span></p>
+<p>Funzioni Scalarei</p>
+<ul>
+<li><span class="math inline">\(q=1, A\subset \mathbb{R}^n , f:A \to \mathbb{R}\)</span></li>
+<li><span class="math inline">\(n=1, q&gt;1 I \subseteq \mathbb{R}, f:I \to \mathbb{R}^q\)</span></li>
+</ul>
+<p><strong>Def</strong>(funzione continua) <span class="math inline">\(A \subseteq \mathbb{R}^n, B\subset \mathbb{R}^q\)</span> <span class="math inline">\(f: A \to B\)</span> Sia <span class="math inline">\(\bar{x} \in A\)</span> si dice f continua in <span class="math inline">\(\bar{x}\)</span> se <span class="math inline">\(\forall (x_k)_{k \in \mathbb{N}}\)</span> <span class="math inline">\(\begin{cases}x_k \in A \forall k \\ x_k \to \bar{x} \end{cases}\)</span> vale <span class="math inline">\(f(x_k) \to f(\bar{x})\)</span> <span class="math inline">\(k\to + \infty\)</span> (convergenza in <span class="math inline">\(\mathbb{R}^q\)</span>)</p>
+<p>Si dimostra che tutte le funzioni “elementari” sono continue</p>
+<p><strong>oss</strong> <span class="math inline">\(f:A\to B\)</span> è continua in <span class="math inline">\(\bar{x}\)</span> <span class="math inline">\(\iff \forall \varepsilon &gt;0 \exists \delta_{\varepsilon}\)</span> tale che <span class="math inline">\(|f(y)-f(\bar{x})| &lt; \varepsilon\)</span> <span class="math inline">\(\forall x \in A\)</span> con <span class="math inline">\(|y-\bar{x}|&lt;\delta\)</span></p>
+<p>Si dimostra che se <span class="math inline">\(f_1,f_2,\dots,f_p:\mathbb{R}^n\to \mathbb{R}\)</span> scalari sono continue, allora ogni insieme <span class="math inline">\(A=\{x\in\mathbb{R}|f(x)_1&lt;c_1,\dots,f(x)_p&lt;c_p\}\)</span></p>
 <button style="position: fixed; bottom: 20px; right: 30px; z-index: 99; border: none; outline: none; cursor: pointer; padding: 9px; border-radius: 8px; font-size: 18px; background: var(--dracula-current-line); color: var(--dracula-background);" onclick=" document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">
     top
 </button>
