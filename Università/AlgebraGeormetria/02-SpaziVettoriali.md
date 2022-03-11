@@ -1,7 +1,10 @@
 # Spazi Vettoriali e Sottospazi
 
 ## Spazi Vettoriali
+
+
 **Spazio vettoriale reale**: insieme $V$ munito di operazioni di *somma* e *prodotto per scalari:*
+
 
  
 
@@ -30,6 +33,12 @@ e che soddisfa le seguenti proprietà:
 - associatività tra due numeri e un vettore,  $(\lambda\mu) u =\lambda(\mu u)\quad \forall  u \in V\ \&\ \forall \lambda,\mu \in \mathbb{R}$
 - distributiva tra un numero e due vettori $\lambda({u+v})=\lambda u+\lambda v\quad \forall  {u,v} \in V\ \&\ \forall \lambda \in \mathbb{R}$
 - distributiva tra due numero e un vettori $(\lambda+\mu){u}=\lambda u+\mu u\quad \forall  {u} \in V\ \&\ \forall \lambda,\mu \in \mathbb{R}$
+
+
+**vettori**:gli elementi di uno spazio vettoriale si dicono vettori
+**scalari**:sono i valori reali
+
+
 
 ### Esempi di spazi vettoriali
 
@@ -110,42 +119,4 @@ In Generale se prendiamo due punti che non appartengono alla stessa retta per l'
  3. $\mathbb{R}^2$
  
 
-
-
-## Combinazione Lineare
-
-Sia $V$ uno spazio vettoriale $v_1,\dots,v_n \in V$. Un vettore $v$ si dice combinazione lim di $v_1,\dots,v_n$ se esistono $d_1,\dots,d_n\in\mathbb{R}$ tali che $v=d_1v_1+\dots+v_nd_n$
-
-
-Def sia $V$ uno spazio vettoriale $v_1,\dots,v_n \in V$ $<v_1,\dots,v_n \in V>:=\{d_1v_1+\dots+d_nv_n|d_1,\dots,d_n \in \mathbb{R}\}$
-
-Propo (3.1.5) Sia $V$ spazio vettoriale $v_1,\dots,v_n\in V$ , allora $<v_1,\dots,v_n> \subseteq Z$
-
-### Dimostrazione
-
-$\underline{0}=0v_1+\dots+v_n \in <v_1,\dots,v_n>$
-
-Siano $u_1,u_2 \in <v_1,\dots,v_n>$   
-$u_1 = d_1v_1+\dots+d_nv_n$
-$u_2 = \beta_1+\dots+\beta_nv_n$
-$u_2+u_1 = \beta_1+\dots+\beta_nv_n + d_1v_1+\dots+d_nv_n = (d_1+\beta_1)v_1+\dots+(d_n+\beta_n)v_n \in <v_1,\dots, v_n>$
-
-$u_2+u_1 = \beta_1+\dots+\beta_nv_n + d_1v_1+\dots+d_nv_n = (d_1+\beta_1)v_1+\dots+(d_n+\beta_n)v_n \in <v_1,\dots, v_n>$
-
-
-
-
-mostriamo che $<v_1,\dots,v_n> \subseteq Z$ Sia $v \in <v_1, \dots>$
-
-
-### Nel piano Cartesiano
-
-
-in $\mathbb{R}^2$  $<v>$ è una retta per $(0,0)$  
-
-In $\mathbb{R}^3<v,w>$ è una retta appartiene $(0,0,0)$  
-
-
-
-Sia $V$ spazio vetoriale $v_1,\dots,v_n \in V$ e $w= d_1v_1+\dots+d_nv_n$ allora $<v_1,\dots,v_n>=<v_1,\dots,v_n,w>$
 

@@ -89,7 +89,7 @@ $\displaystyle \lim_{x \rightarrow x_0^+}f(x)=l \iff \displaylines{\forall \vare
 
 **Limite Finito da sinistra**
 
-$\displaystyle \lim_{x \rightarrow x_0^-}f(x)=l \iff \displaylines{\forall \varepsilon \in \mathbb{R}, \exists \delta = \delta(x_o,\varepsilon)<0 \\ \forall x \in A : x_0-\delta  < x <x_0 \\ \implies |f(x) -l|< \varepsilon }$
+## $\displaystyle \lim_{x \rightarrow x_0^-}f(x)=l \iff \displaylines{\forall \varepsilon \in \mathbb{R}, \exists \delta = \delta(x_o,\varepsilon)<0 \\ \forall x \in A : x_0-\delta  < x <x_0 \\ \implies |f(x) -l|< \varepsilon }$
 
 
 
