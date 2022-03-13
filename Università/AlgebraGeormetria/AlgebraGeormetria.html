@@ -70,17 +70,19 @@
 <li><a href="#sottospazi-di-r"><span class="toc-section-number">3.3.1</span> Sottospazi di R</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#combinazioni-lineari-e-indipendenza-lineare"><span class="toc-section-number">4</span> Combinazioni lineari e indipendenza lineare</a><ul>
-<li><a href="#combinazione-lineare"><span class="toc-section-number">4.1</span> Combinazione lineare</a></li>
-<li><a href="#combinazione-lineare-1"><span class="toc-section-number">4.2</span> Combinazione Lineare</a><ul>
-<li><a href="#dimostrazione"><span class="toc-section-number">4.2.1</span> Dimostrazione</a></li>
+<li><a href="#combinazioni-lineari-indipendenza-lineare"><span class="toc-section-number">4</span> Combinazioni Lineari Indipendenza Lineare</a><ul>
+<li><a href="#combinazione-lineare"><span class="toc-section-number">4.1</span> Combinazione Lineare</a></li>
+<li><a href="#sottospazio-generato"><span class="toc-section-number">4.2</span> Sottospazio Generato</a><ul>
+<li><a href="#osservazioni"><span class="toc-section-number">4.2.1</span> Osservazioni</a></li>
 <li><a href="#nel-piano-cartesiano"><span class="toc-section-number">4.2.2</span> Nel piano Cartesiano</a></li>
 </ul></li>
-<li><a href="#linearmente-indimpendenti"><span class="toc-section-number">4.3</span> Linearmente indimpendenti</a></li>
+<li><a href="#linearmente-indipendenti"><span class="toc-section-number">4.3</span> Linearmente indipendenti</a></li>
 <li><a href="#linearmente-dipendenti"><span class="toc-section-number">4.4</span> Linearmente dipendenti</a></li>
-<li><a href="#teorema-del-completamenteo"><span class="toc-section-number">4.5</span> Teorema del Completamenteo</a></li>
-<li><a href="#basi-canoniche"><span class="toc-section-number">4.6</span> Basi canoniche</a><ul>
-<li><a href="#uso-dellalgoritmo-di-gauss-sugli-spazi-vettoriali"><span class="toc-section-number">4.6.1</span> Uso dell’algoritmo di gauss sugli spazi vettoriali</a></li>
+</ul></li>
+<li><a href="#combinazioni-lineari-e-indipendenza-lineare"><span class="toc-section-number">5</span> Combinazioni lineari e indipendenza lineare</a><ul>
+<li><a href="#teorema-del-completamenteo"><span class="toc-section-number">5.1</span> Teorema del Completamenteo</a></li>
+<li><a href="#basi-canoniche"><span class="toc-section-number">5.2</span> Basi canoniche</a><ul>
+<li><a href="#uso-dellalgoritmo-di-gauss-sugli-spazi-vettoriali"><span class="toc-section-number">5.2.1</span> Uso dell’algoritmo di gauss sugli spazi vettoriali</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -346,46 +348,34 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <li>le rette per l’origine</li>
 <li><span class="math inline">\(\mathbb{R}^2\)</span></li>
 </ol>
-<h1 id="combinazioni-lineari-e-indipendenza-lineare"><span class="header-section-number">4</span> Combinazioni lineari e indipendenza lineare</h1>
-<h2 id="combinazione-lineare"><span class="header-section-number">4.1</span> Combinazione lineare</h2>
-<p><strong>Combinazione lineare:</strong> dato uno SV <span class="math inline">\(V\)</span> i cui vettori sono <span class="math inline">\(v_1,...\ v_n\)</span> e dati <span class="math inline">\(\lambda_1,...\ \lambda_n \in \mathbb{R}\)</span>, il vettore <span class="math inline">\(w = \lambda_1v_1+...+\lambda_n v_n\)</span> si dice <em>combinazione lineare</em> di <span class="math inline">\(v_1,...\ v_n\)</span> con scalari <span class="math inline">\(\lambda_1,...\ \lambda_n\)</span>.</p>
+<h1 id="combinazioni-lineari-indipendenza-lineare"><span class="header-section-number">4</span> Combinazioni Lineari Indipendenza Lineare</h1>
+<h2 id="combinazione-lineare"><span class="header-section-number">4.1</span> Combinazione Lineare</h2>
+<p>Sia <span class="math inline">\(V\)</span> uno spazio vettoriale <span class="math inline">\(v_1,\dots,v_n \in V\)</span>. Un vettore <span class="math inline">\(v\)</span> si dice combinazione lineare di <span class="math inline">\(v_1,\dots,v_n\)</span> se esistono <span class="math inline">\(d_1,\dots,d_n\in\mathbb{R}\)</span> tali che <span class="math inline">\(v=d_1v_1+\dots+v_nd_n\)</span></p>
+<h2 id="sottospazio-generato"><span class="header-section-number">4.2</span> Sottospazio Generato</h2>
 <p><strong>Sottospazio generato:</strong> dato uno SV <span class="math inline">\(V\)</span> e un insieme di vettori <span class="math inline">\(\{v_1,...\ v_n\}\)</span> di <span class="math inline">\(V\)</span>, il <em>sottospazio generato</em> dai vettori <span class="math inline">\(v_1,...\ v_n\)</span> è l’insieme di tutte le loro combinazioni lineari, che tradotto in simboli è: <span class="math inline">\(\langle v_1,...\ v_n \rangle = \{ \lambda_1v_1 + ... + \lambda_nv_n\ |\ \lambda_1, ...\ \lambda_n \in \mathbb{R} \}\)</span></p>
-<p>Osservazioni:</p>
+<blockquote>
+<p>Nota: non l’ho capita</p>
+</blockquote>
+<p><strong>Prop (3.1.5)</strong> siano <span class="math inline">\(V\)</span> uno SV e <span class="math inline">\(\{v_1, ...\ v_n \}\)</span> un insieme di vettori di <span class="math inline">\(V\)</span>, si ha che <span class="math inline">\(\langle v_1, ...\ v_n\rangle\)</span> è un sottospazio vettoriale di <span class="math inline">\(V\)</span>.</p>
+<p>Inoltre se <span class="math inline">\(Z\)</span> è un sottospazio vettoriale di <span class="math inline">\(V\)</span> contenente <span class="math inline">\(v_1,...\ v_n\)</span>, allora <span class="math inline">\(\langle v_1, ...\ v_n\rangle \subseteq Z\)</span>, cioè <span class="math inline">\(\langle v_1, ...\ v_n\rangle\)</span> è <em>il più piccolo</em> sottospazio vettoriale di <span class="math inline">\(V\)</span> contenente <span class="math inline">\(v_1, ...\ v_n\)</span>.</p>
+<p><strong>Prop (3.1.8):</strong> dato un SV <span class="math inline">\(V\)</span>, <span class="math inline">\(v_1,...\ v_n \in V\)</span> e <span class="math inline">\(w\)</span> una loro combinazione lineare, cioè <span class="math inline">\(w = \lambda_1v_1+...+\lambda_n v_n\)</span>, allora: <span class="math inline">\(\langle v_1, ...\ v_n\rangle = \langle v_1, ...\ v_n, w\rangle\)</span> Vale anche il viceversa, ovvero se <span class="math inline">\(\langle v_1, ...\ v_n\rangle = \langle v_1, ...\ v_n, w\rangle\)</span> allora <span class="math inline">\(w\)</span> è combinazione lineare di <span class="math inline">\(v_1 ...\ v_n\)</span>.</p>
+<h3 id="osservazioni"><span class="header-section-number">4.2.1</span> Osservazioni</h3>
 <ul>
 <li>il sottospazio generato da un singolo vettore dello SV <span class="math inline">\(v \in V\)</span> è l’insieme dei multipli di <span class="math inline">\(v\)</span>, ovvero <span class="math inline">\(\langle v \rangle = \{ \lambda v\ |\ \lambda \in \mathbb{R} \}\)</span></li>
 <li>il sottospazio generato dal vettore nullo invece è il sottospazio banale contenente solo il vettore nullo, ovvero <span class="math inline">\(\langle 0 \rangle = \{ 0 \}\)</span></li>
 </ul>
-<p>Generatori: dato uno SV <span class="math inline">\(V\)</span> e un insieme di vettori di <span class="math inline">\(V\ \{v_1, ...\ v_n \}\)</span>, si dice che <span class="math inline">\(v_1,...\ v_n\)</span> <em>generano <span class="math inline">\(V\)</span></em> o che <span class="math inline">\(\{v_1, ...\ v_n \}\)</span> è un <em>insieme di generatori</em> di <span class="math inline">\(V\)</span> se <span class="math inline">\(V = \langle v_1, ...\ v_n\rangle\)</span>.</p>
-<p>PROP: siano <span class="math inline">\(V\)</span> uno SV e <span class="math inline">\(\{v_1, ...\ v_n \}\)</span> un insieme di vettori di <span class="math inline">\(V\)</span>, si ha che <span class="math inline">\(\langle v_1, ...\ v_n\rangle\)</span> è un sottospazio vettoriale di <span class="math inline">\(V\)</span>.</p>
-<p>Inoltre se <span class="math inline">\(Z\)</span> è un sottospazio vettoriale di <span class="math inline">\(V\)</span> contenente <span class="math inline">\(v_1,...\ v_n\)</span>, allora <span class="math inline">\(\langle v_1, ...\ v_n\rangle \subseteq Z\)</span>, cioè <span class="math inline">\(\langle v_1, ...\ v_n\rangle\)</span> è <em>il più piccolo</em> sottospazio vettoriale di <span class="math inline">\(V\)</span> contenente <span class="math inline">\(v_1, ...\ v_n\)</span>.</p>
-<h2 id="combinazione-lineare-1"><span class="header-section-number">4.2</span> Combinazione Lineare</h2>
-<p>Sia <span class="math inline">\(V\)</span> uno spazio vettoriale <span class="math inline">\(v_1,\dots,v_n \in V\)</span>. Un vettore <span class="math inline">\(v\)</span> si dice combinazione lim di <span class="math inline">\(v_1,\dots,v_n\)</span> se esistono <span class="math inline">\(d_1,\dots,d_n\in\mathbb{R}\)</span> tali che <span class="math inline">\(v=d_1v_1+\dots+v_nd_n\)</span></p>
-<p><strong>Def</strong> sia <span class="math inline">\(V\)</span> uno spazio vettoriale <span class="math inline">\(v_1,\dots,v_n \in V\)</span> <span class="math inline">\(&lt;v_1,\dots,v_n \in V&gt;:=\{d_1v_1+\dots+d_nv_n|d_1,\dots,d_n \in \mathbb{R}\}\)</span></p>
-<p>Propo (3.1.5) Sia <span class="math inline">\(V\)</span> spazio vettoriale <span class="math inline">\(v_1,\dots,v_n\in V\)</span> , allora <span class="math inline">\(&lt;v_1,\dots,v_n&gt; \subseteq Z\)</span></p>
-<h3 id="dimostrazione"><span class="header-section-number">4.2.1</span> Dimostrazione</h3>
-<p><span class="math inline">\(\underline{0}=0v_1+\dots+v_n \in &lt;v_1,\dots,v_n&gt;\)</span></p>
-<p>Siano <span class="math inline">\(u_1,u_2 \in &lt;v_1,\dots,v_n&gt;\)</span><br />
-<span class="math inline">\(u_1 = d_1v_1+\dots+d_nv_n\)</span> <span class="math inline">\(u_2 = \beta_1+\dots+\beta_nv_n\)</span> <span class="math inline">\(u_2+u_1 = \beta_1+\dots+\beta_nv_n + d_1v_1+\dots+d_nv_n = (d_1+\beta_1)v_1+\dots+(d_n+\beta_n)v_n \in &lt;v_1,\dots, v_n&gt;\)</span></p>
-<p><span class="math inline">\(u_2+u_1 = \beta_1+\dots+\beta_nv_n + d_1v_1+\dots+d_nv_n = (d_1+\beta_1)v_1+\dots+(d_n+\beta_n)v_n \in &lt;v_1,\dots, v_n&gt;\)</span></p>
-<p>mostriamo che <span class="math inline">\(&lt;v_1,\dots,v_n&gt; \subseteq Z\)</span> Sia <span class="math inline">\(v \in &lt;v_1, \dots&gt;\)</span></p>
+<p><strong>Generatori:</strong> dato uno SV <span class="math inline">\(V\)</span> e un insieme di vettori di <span class="math inline">\(V\ \{v_1, ...\ v_n \}\)</span>, si dice che <span class="math inline">\(v_1,...\ v_n\)</span> <em>generano <span class="math inline">\(V\)</span></em> o che <span class="math inline">\(\{v_1, ...\ v_n \}\)</span> è un <em>insieme di generatori</em> di <span class="math inline">\(V\)</span> se <span class="math inline">\(V = \langle v_1, ...\ v_n\rangle\)</span>.</p>
 <h3 id="nel-piano-cartesiano"><span class="header-section-number">4.2.2</span> Nel piano Cartesiano</h3>
 <p>in <span class="math inline">\(\mathbb{R}^2\)</span> <span class="math inline">\(&lt;v&gt;\)</span> è una retta per <span class="math inline">\((0,0)\)</span></p>
 <p>In <span class="math inline">\(\mathbb{R}^3&lt;v,w&gt;\)</span> è una retta appartiene <span class="math inline">\((0,0,0)\)</span></p>
 <p>Sia <span class="math inline">\(V\)</span> spazio vetoriale <span class="math inline">\(v_1,\dots,v_n \in V\)</span> e <span class="math inline">\(w= d_1v_1+\dots+d_nv_n\)</span> allora <span class="math inline">\(&lt;v_1,\dots,v_n&gt;=&lt;v_1,\dots,v_n,w&gt;\)</span></p>
-<h2 id="linearmente-indimpendenti"><span class="header-section-number">4.3</span> Linearmente indimpendenti</h2>
-<p><strong>Def</strong>: V spazio vettoriale <span class="math inline">\(v_1,\dots,v_n\in V\)</span> si dicono linearmente indipendenti se l’unica loro combinazione lineare che da <span class="math inline">\(\underline{0}\)</span> ()è quella con i coeffincenti tutti nulli)</p>
+<h2 id="linearmente-indipendenti"><span class="header-section-number">4.3</span> Linearmente indipendenti</h2>
+<p><strong>Def</strong>: V spazio vettoriale <span class="math inline">\(v_1,\dots,v_n\in V\)</span> si dicono linearmente indipendenti se l’unica loro combinazione lineare che da <span class="math inline">\(\underline{0}\)</span> ()è quella con i coefficienti tutti nulli)</p>
 <h2 id="linearmente-dipendenti"><span class="header-section-number">4.4</span> Linearmente dipendenti</h2>
-<p><span class="math inline">\(v_1,\dots,v_n\)</span> si dicono dipendenti se non sono linearmente indipendenti, cioà <span class="math inline">\(\exists d_1,\dots,d_n \in \mathbb{R}\)</span> dove non sono tutti nulli tale che <span class="math inline">\(d_1v_1+\dots+d_nv_n=\underline{0}\)</span></p>
+<p><strong>Def</strong> un insieme di vettori <span class="math inline">\(v_1,\dots,v_n\)</span> sono <em>linearmente dipendenti</em> <span class="math inline">\(\exists d_1,\dots,d_n \in \mathbb{R}\)</span> dove non sono tutti nulli tale che <span class="math inline">\(d_1v_1+\dots+d_nv_n=\underline{0}\)</span></p>
 <p><strong>Oss</strong>: se un insieme di vettori contiene <span class="math inline">\(\underline{0}\)</span> allora i vettori sono (sempre) dipendenti</p>
 <p><strong>prop(3.24)</strong> sia V uno spazio vettoriale <span class="math inline">\(v_1,\dots,v_n\)</span> sono dipendenti <span class="math inline">\(\iff\)</span> almeno uno di essi è combinazione lineare degli altri</p>
-<details>
-<p><summary> dimostrazione </summary></p>
-<p>Ip: <span class="math inline">\(v_1,\dots,v_n\)</span> dipendenti esistono <span class="math inline">\(d_1,\dots,d_n\)</span> non tutti nulli, quindi <span class="math inline">\(\exists d_k\neq 0\)</span></p>
-<p><span class="math inline">\(\iff\)</span> prima parte: <span class="math inline">\(d_kv_k=d_1v_1-\dots-d_{k-1}v_{k-1}-d_{k+1}v_{k+1}-\dots-d_nv_n\)</span></p>
-<p>quindi <span class="math inline">\(v_k=\frac{(d_1v_1-\dots-d_{k-1}v_{k-1}-d_{k+1}v_{k+1}-\dots-d_nv_n)}{d_k}\)</span></p>
-<p>quindi <span class="math inline">\(v_k\)</span> è combinazione lineare degli altri</p>
-<p><span class="math inline">\(\iff\)</span> prima seconda parte: <span class="math inline">\(v_k=d_1v_1+\dots+d_{k-1}v_{k-1}+d_{k+1}v_{k+1}+\dots+d_nv_n\)</span> <span class="math inline">\(d_1v_1+\dots+d_{k-1}v_{k-1}+v_k+d_{k+1}v_{k+1}+\dots+d_nv_n\)</span></p>
-</details>
+<h1 id="combinazioni-lineari-e-indipendenza-lineare"><span class="header-section-number">5</span> Combinazioni lineari e indipendenza lineare</h1>
 <p><strong>def</strong>: sia V uno spazio vettoriale, una base di vettoriale <span class="math inline">\(\{v_1,\dots,v_n\}\)</span> tali che:</p>
 <ol type="1">
 <li><span class="math inline">\(v_1,\dots,v_n\)</span> generano V cioè V è l’insieme lineare generato da <span class="math inline">\(v_1,\dots,v_n\)</span> (<span class="math inline">\(V=&lt;v_1,\dots,v_n&gt;\)</span>)</li>
@@ -410,15 +400,15 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <p>Un insieme di vettori con una certa proprità si dice minimale se ogni suo sottoinsieme proprio non ha più quella proprietù e massimale se ogni suo sovrainsieme proprio non ha più la proprietà</p>
 <p><strong>Teorema:4.1.4</strong> Siano <span class="math inline">\(v_1,\dots,v_n \in V\)</span>: 1.<span class="math inline">\(\{v_1,\dots,v_n \}\)</span> è una base <span class="math inline">\(\iff\)</span> è un insieme minimale di generatori 2.<span class="math inline">\(\{v_1,\dots,v_n \}\)</span> è una base <span class="math inline">\(\iff\)</span> è un insieme massimale di vettori lineramente indipendenti</p>
 <p>Dimostrazione sul libro</p>
-<h2 id="teorema-del-completamenteo"><span class="header-section-number">4.5</span> Teorema del Completamenteo</h2>
+<h2 id="teorema-del-completamenteo"><span class="header-section-number">5.1</span> Teorema del Completamenteo</h2>
 <p>Sia V uno spazio vettoriale con base <span class="math inline">\(\{v_1,\dots,v_n\}\)</span> e siano <span class="math inline">\(\{w_1,\dots,w_m\}\)</span> linearmente indipendenti allora <span class="math inline">\(m\leq n\)</span></p>
 <p>Inoltre possiamo aggiungere a <span class="math inline">\(\{w_1,\dots,w_1\}, n-m\)</span> vetotri di <span class="math inline">\(\beta\)</span> per ottenere una base</p>
 <p><strong>Prop: 4.2.2</strong> tutte le basi di uno spazio vettoriale (finitamente generato), hanno lo stesso numero di elementi</p>
-<h2 id="basi-canoniche"><span class="header-section-number">4.6</span> Basi canoniche</h2>
+<h2 id="basi-canoniche"><span class="header-section-number">5.2</span> Basi canoniche</h2>
 <p>in <span class="math inline">\(\mathbb{R}^n, \beta=\{e_1,\dots,e_n\},\)</span> <span class="math inline">\(e_1=(1,\dots,0), e_2=(0,1,\dots,0), e_n=(0,\dots,1)\)</span> <span class="math inline">\(v=(a_1,\dots,a_n)\in \mathbb{R}^n\)</span> <span class="math inline">\(v=a_1(1,\dots,0)+a_2(0,1,\dots,0)+\dots+e_n=(0,\dots,1)\)</span> <span class="math inline">\(\implies &lt;e_1,\dots,e_n&gt; = \mathbb{R}^n\)</span> sono indipendenti <span class="math inline">\(\mathbb{R}^n\)</span> base di dimensione n</p>
 <p>Base di <span class="math inline">\(\mathbb{R}_n[x]=\{a_nx^n+\dots+a_1x+a_0|a_0,\dots,a_n \in \mathbb{R}\}\)</span> quindi <span class="math inline">\(\mathbb{R}_n[x]\)</span> ha dimensione <span class="math inline">\(n+1\)</span></p>
 <p><span class="math inline">\(M_{m,n}\)</span> ha dimensione <span class="math inline">\(n\times m\)</span></p>
-<h3 id="uso-dellalgoritmo-di-gauss-sugli-spazi-vettoriali"><span class="header-section-number">4.6.1</span> Uso dell’algoritmo di gauss sugli spazi vettoriali</h3>
+<h3 id="uso-dellalgoritmo-di-gauss-sugli-spazi-vettoriali"><span class="header-section-number">5.2.1</span> Uso dell’algoritmo di gauss sugli spazi vettoriali</h3>
 <ol type="1">
 <li>L’algoritmo di Gauss non cambia il sottospazio generato dalle righe di una matrice</li>
 <li>le righe non nulle di una matrice a scala sono indip</li>
