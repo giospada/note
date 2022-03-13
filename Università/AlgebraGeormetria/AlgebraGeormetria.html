@@ -79,7 +79,9 @@
 <li><a href="#linearmente-indimpendenti"><span class="toc-section-number">4.3</span> Linearmente indimpendenti</a></li>
 <li><a href="#linearmente-dipendenti"><span class="toc-section-number">4.4</span> Linearmente dipendenti</a></li>
 <li><a href="#teorema-del-completamenteo"><span class="toc-section-number">4.5</span> Teorema del Completamenteo</a></li>
-<li><a href="#basi-canoniche"><span class="toc-section-number">4.6</span> Basi canoniche</a></li>
+<li><a href="#basi-canoniche"><span class="toc-section-number">4.6</span> Basi canoniche</a><ul>
+<li><a href="#uso-dellalgoritmo-di-gauss-sugli-spazi-vettoriali"><span class="toc-section-number">4.6.1</span> Uso dell’algoritmo di gauss sugli spazi vettoriali</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -416,6 +418,13 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <p>in <span class="math inline">\(\mathbb{R}^n, \beta=\{e_1,\dots,e_n\},\)</span> <span class="math inline">\(e_1=(1,\dots,0), e_2=(0,1,\dots,0), e_n=(0,\dots,1)\)</span> <span class="math inline">\(v=(a_1,\dots,a_n)\in \mathbb{R}^n\)</span> <span class="math inline">\(v=a_1(1,\dots,0)+a_2(0,1,\dots,0)+\dots+e_n=(0,\dots,1)\)</span> <span class="math inline">\(\implies &lt;e_1,\dots,e_n&gt; = \mathbb{R}^n\)</span> sono indipendenti <span class="math inline">\(\mathbb{R}^n\)</span> base di dimensione n</p>
 <p>Base di <span class="math inline">\(\mathbb{R}_n[x]=\{a_nx^n+\dots+a_1x+a_0|a_0,\dots,a_n \in \mathbb{R}\}\)</span> quindi <span class="math inline">\(\mathbb{R}_n[x]\)</span> ha dimensione <span class="math inline">\(n+1\)</span></p>
 <p><span class="math inline">\(M_{m,n}\)</span> ha dimensione <span class="math inline">\(n\times m\)</span></p>
+<h3 id="uso-dellalgoritmo-di-gauss-sugli-spazi-vettoriali"><span class="header-section-number">4.6.1</span> Uso dell’algoritmo di gauss sugli spazi vettoriali</h3>
+<ol type="1">
+<li>L’algoritmo di Gauss non cambia il sottospazio generato dalle righe di una matrice</li>
+<li>le righe non nulle di una matrice a scala sono indip</li>
+</ol>
+<p>data una matrix<span class="math inline">\(\begin{pmatrix}R1\\R2\\\vdots\\R_k\end{pmatrix}\)</span>Gauss <span class="math inline">\(\to\)</span> <span class="math inline">\(\begin{pmatrix}\bar{R1}\\\bar{R2}\\\vdots\\\bar{R_k}\end{pmatrix}\)</span></p>
+<p><span class="math inline">\(&lt;R_1,\dots,R_k&gt;=&lt;\bar{R_1},\dots,\bar{R_k}&gt;\)</span></p>
 <button style="position: fixed; bottom: 20px; right: 30px; z-index: 99; border: none; outline: none; cursor: pointer; padding: 9px; border-radius: 8px; font-size: 18px; background: var(--dracula-current-line); color: var(--dracula-background);" onclick=" document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">
     top
 </button>
