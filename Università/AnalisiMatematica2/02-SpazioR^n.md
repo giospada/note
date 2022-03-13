@@ -155,6 +155,7 @@ Dato $E \subseteq A$,
 $Im(E)=\{f(x)|x \in E\}$ 
 
 
+
 Funzioni Scalarei 
 - $q=1, A\subset \mathbb{R}^n , f:A \to \mathbb{R}$
 - $n=1, q>1 I \subseteq \mathbb{R}, f:I \to \mathbb{R}^q$
