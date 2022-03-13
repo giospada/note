@@ -1,7 +1,10 @@
 # Spazi Vettoriali e Sottospazi
 
 ## Spazi Vettoriali
+
+
 **Spazio vettoriale reale**: insieme $V$ munito di operazioni di *somma* e *prodotto per scalari:*
+
 
  
 
@@ -30,6 +33,12 @@ e che soddisfa le seguenti proprietà:
 - associatività tra due numeri e un vettore,  $(\lambda\mu) u =\lambda(\mu u)\quad \forall  u \in V\ \&\ \forall \lambda,\mu \in \mathbb{R}$
 - distributiva tra un numero e due vettori $\lambda({u+v})=\lambda u+\lambda v\quad \forall  {u,v} \in V\ \&\ \forall \lambda \in \mathbb{R}$
 - distributiva tra due numero e un vettori $(\lambda+\mu){u}=\lambda u+\mu u\quad \forall  {u} \in V\ \&\ \forall \lambda,\mu \in \mathbb{R}$
+
+
+**vettori**:gli elementi di uno spazio vettoriale si dicono vettori
+**scalari**:sono i valori reali
+
+
 
 ### Esempi di spazi vettoriali
 
@@ -109,15 +118,3 @@ In Generale se prendiamo due punti che non appartengono alla stessa retta per l'
  2. le rette per l'origine
  3. $\mathbb{R}^2$
  
-
-
-
-
-
-
-
-
-
-
-
-
