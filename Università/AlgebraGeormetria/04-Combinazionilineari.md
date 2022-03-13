@@ -170,3 +170,18 @@ $M_{m,n}$ ha dimensione $n\times m$
 
 
 
+
+### Uso dell'algoritmo di gauss sugli spazi vettoriali
+
+1. L'algoritmo di Gauss non cambia il sottospazio generato dalle righe di una matrice
+2. le righe non nulle di una matrice a scala sono indip
+
+
+
+data una matrix$\begin{pmatrix}R1\\R2\\\vdots\\R_k\end{pmatrix}$Gauss $\to$ $\begin{pmatrix}\bar{R1}\\\bar{R2}\\\vdots\\\bar{R_k}\end{pmatrix}$
+
+$<R_1,\dots,R_k>=<\bar{R_1},\dots,\bar{R_k}>$
+
+
+
+
