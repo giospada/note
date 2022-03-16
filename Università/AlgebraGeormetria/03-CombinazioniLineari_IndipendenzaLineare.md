@@ -47,6 +47,27 @@ Sia $V$ spazio vetoriale $v_1,\dots,v_n \in V$ e $w= d_1v_1+\dots+d_nv_n$ allora
 
 **Def**: V spazio vettoriale $v_1,\dots,v_n\in V$ si dicono linearmente indipendenti se l'unica loro combinazione lineare che da $\underline{0}$ ()è quella con i coefficienti tutti nulli)
 
+
+<details>
+<summary>
+metodo diretto per capire se un insieme di vettori è linearmente indipendente
+</summary>
+
+
+Metodo uasto Gauss in modo diretto si costruisce la matrice
+
+$\begin{pmatrix}v_1 &&\\\vdots \\ v_n\end{pmatrix}$
+
+e la si fa a scala, se compare qulache riga nulla i vettori $v_1,\dots,v_n$ sono dip. altrimenti sono indipendenti
+
+Motivo se $U=<v_1,\dots,v_n>$
+1. $U=<\bar{v_1},\dots,\bar{v_k},\underline{0},\dots,\underline{0}>=<v_1,\dots,v_k>$
+2. $\bar{v_1},\dots,\bar{v_k}$  linearmente indipendente $\implies \{\bar{v_1},\dots,\bar{v_k}\}$ base di $U\implies U$ una dimensione $K \space v_1,\dots,v_n$ generiamo uno spazio di dimensione K (gel)
+
+Preposizione 4.2.6: (gel)
+
+</details>
+
 ## Linearmente dipendenti
 
 **Def** un insieme di vettori $v_1,\dots,v_n$ sono *linearmente dipendenti* $\exists d_1,\dots,d_n \in \mathbb{R}$  dove non sono tutti nulli tale che $d_1v_1+\dots+d_nv_n=\underline{0}$

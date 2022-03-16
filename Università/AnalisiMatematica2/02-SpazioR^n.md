@@ -169,3 +169,136 @@ Si dimostra che tutte le funzioni "elementari" sono continue
 
 Si dimostra che se  $f_1,f_2,\dots,f_p:\mathbb{R}^n\to \mathbb{R}$ scalari sono continue, allora ogni insieme $A=\{x\in\mathbb{R}|f(x)_1<c_1,\dots,f(x)_p<c_p\}$
 
+
+
+
+
+
+## Funzione radicale
+
+$f: \mathbb{R}^2 \to  \mathbb{R}$ tale che $\exists g:[0; +\infty[ \to \mathbb{R}$ per cui $f(x,y)=g(|(x,y)|)=g(\sqrt{x^2+y^2})$
+
+
+
+## Insiemi di livello
+
+gli insiemi di livello sono un modo di rappresentare le funzioni che consiste nel studiare una funzione ad  un livello minore, per esempio studiare una funzione in $\mathbb{R}^3$ come diverse funzioni in $\mathbb{R}^2$
+
+
+<details>
+<summary>
+es
+</summary>
+
+
+$f:\mathbb{R}^2 \to \mathbb{R}$
+$A \subseteq \mathbb{R}^2, f:A \to \mathbb{R}, b \in \mathbb{R}$ l'insieme di livello b di f è $L_b=\{(x,y)\in A | f(x,y)=b\}=f(b)$
+
+</details>
+
+
+
+## Funzioni di primo grado
+
+$f: \mathbb{R}^2 \to \mathbb{R},\space f(x,y)= ax+by+c \space (a,b,c)\in \mathbb{R}^3$ 
+
+il $Graf(f)$ è un piano 
+
+## Derivata parziale
+
+$A \subseteq \mathbb{R}^2$
+
+$f:A \to \mathbb{R}$
+
+$\frac{\delta f}{\delta x}(\bar{x},\bar{y})=\displaystyle \lim_{h \rightarrow 0} \frac{f(\bar{x}+h,\bar{y})-f(\bar{x},\bar{y})}{h}$
+
+Se il limite esiste si chiama derivata parziale di f rispetto a x  ( nel punto $(\bar{x},\bar{y})$)
+
+
+$\frac{\delta f}{\delta y}(\bar{x},\bar{y})=\displaystyle \lim_{k \rightarrow 0} \frac{f(\bar{x},\bar{y}+k)-f(\bar{x},\bar{y})}{k}$
+
+
+<details>
+<summary>
+Notazioni
+</summary>
+
+$\frac{\delta f}{\delta y}f(\bar{x},\bar{y})= D_y f(\bar{x},\bar{y})=\delta_y f(\bar{x},\bar{y})$
+
+</details>
+
+$f(x,y)=x^3+y+2e^{-2y}$
+
+Se $\exists D_x f$ in $(\bar{x},\bar{y})$ scrivo $\nabla f(\bar{x},\bar{y})=(D_x f(\bar{x},\bar{y}), D_y f(\bar{x},\bar{y}))$
+
+Se $\exists D_x f$ e $D_y f$ in ogni $(x,y) \in Dom(f)$, poniamo $\nabla f(x,y)= (D_xf(x,y), D_y f(x,y))$
+$\nabla f : Dom(f) \mathbb{R}^2\to \mathbb{R}^2$
+
+$f(x,y)= xye^{-x^2}$ $D_x f= y D_x(xe^{-x^2})$
+$=y[e^{-x^2}-2x^2 e^{-x^2}]=y(1-2x^2)e^{-x^2}$
+
+$D_y f= xe^{-x^2}$ 
+
+-----
+
+
+Caso n dimensionale
+
+
+$\mathbb{R}^n$ 
+
+$e_1=(1,0,\dots,0)$
+$e_1=(0,1,\dots,0)$
+
+$f:\mathbb{R}^n \to \mathbb{R}$
+
+$x=(x_1,x_2,\dots,x_n) \to_f f(x)$
+
+$D_{x_j} (\bar{x})=x+he_j=(x_1,\dots,x_n)+(0,\dots,h_j,\dots,0)=(x_1,\dots,x_j+h_j,\dots,x_n)$
+
+$D_{x_j}=\displaystyle \lim_{x \rightarrow \infty} \frac{f(\bar{x}+he_j)-f(\bar{x})}{h}$
+
+
+## Derivabilità continuità
+
+$f: A \to \mathbb{R}, A \subseteq \mathbb{R}, f$ derivabile in $\bar{x} \in A \implies f$ è continua in $\bar{x}$
+
+funzione $f: A \to \mathbb{R}$  $A \subseteq \mathbb{R}^2$ aperto $\exists D_x f(\bar{x},\bar{y}), D_y f(\bar{x},\bar{y}) \implies$ continua in $(\bar{x}, \bar{y})$
+
+$f: \mathbb{R}^2 \to \mathbb{R}$
+
+$f(x,y)= \begin{cases} \frac{xy}{x^2+y^2} & \text{se } (x,y)=(0,0) \\ 0 & \text{in } (x,y)=(0,0)\end{cases}$
+
+1. $\exists D_x f(0,0), D_y f(0,0)$ f derivabile
+2. f non è continua in (0,0)
+
+$D_x f(0,0)=\displaystyle \lim_{h \rightarrow 0} \frac{f(h,0)-f(0,0)}{h}$
+
+$f(h,0)$ per $h\neq 0$ $=\frac{h\times 0}{h^2+0^2}$ $\forall h \neq 0$
+
+$(h \to f(h,0)$ è $0 \forall h \in \mathbb{R})$
+
+$\displaystyle \lim_{x \rightarrow 0} \frac{0-0}{h}$
+
+Derivabilità differenziabilità
+
+
+$\mathbb{R}, f:A \to \mathbb{R}$ derivabilie $\displaystyle \lim_{x \rightarrow \infty} \frac{f(\bar{x}+h)-f(\bar{x})}{h}=f'(\bar{x})\in \mathbb{R}$
+
+$\displaystyle \lim_{x \rightarrow \infty} \frac{f(\bar{x}+h)-f(\bar{x})-f'(\bar{x})h}{h}=0$
+
+
+**Def** $g: \mathbb{R}^2 \to \mathbb{R}, (h,k)\to g(h,k)$
+
+Si dice che $g(h,k)=o(|(h,k)|)$ se vale $\forall \varepsilon >0 \exists \delta_varepsilon >0$ tale che $\frac{|g(h,k)|}{||(h,k)||}<\varepsilon$ se $||(h,k)|| < \delta_\varepsilon$
+
+Dunque $g(h,k)=ah^2+ck^2=o(|(h,k)|)$
+
+
+
+
+
+
+
+
+

@@ -1,8 +1,4 @@
-# Combinazioni lineari e indipendenza lineare
-
-
-
-
+# Basi vettoriali
 
  **def**: sia V uno spazio vettoriale, una base di vettoriale $\{v_1,\dots,v_n\}$ tali che:
  1. $v_1,\dots,v_n$ generano V  cioè V è l'insieme lineare generato da $v_1,\dots,v_n$ ($V=<v_1,\dots,v_n>$)
@@ -92,7 +88,4 @@ $M_{m,n}$ ha dimensione $n\times m$
 data una matrix$\begin{pmatrix}R1\\R2\\\vdots\\R_k\end{pmatrix}$Gauss $\to$ $\begin{pmatrix}\bar{R1}\\\bar{R2}\\\vdots\\\bar{R_k}\end{pmatrix}$
 
 $<R_1,\dots,R_k>=<\bar{R_1},\dots,\bar{R_k}>$
-
-
-
 
