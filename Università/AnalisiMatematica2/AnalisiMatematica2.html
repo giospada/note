@@ -75,6 +75,18 @@
 <li><a href="#intorni-specifici-dischi-palle"><span class="toc-section-number">3.6</span> Intorni specifici (dischi, palle)</a></li>
 <li><a href="#insiemi-aperti"><span class="toc-section-number">3.7</span> Insiemi aperti</a></li>
 <li><a href="#succcessioni-in-mathbbrn"><span class="toc-section-number">3.8</span> Succcessioni in <span class="math inline">\(\mathbb{R}^n\)</span></a></li>
+<li><a href="#funzione-radicale"><span class="toc-section-number">3.9</span> Funzione radicale</a></li>
+<li><a href="#insiemi-di-livello"><span class="toc-section-number">3.10</span> Insiemi di livello</a></li>
+<li><a href="#funzioni-di-primo-grado"><span class="toc-section-number">3.11</span> Funzioni di primo grado</a></li>
+<li><a href="#derivata-parziale"><span class="toc-section-number">3.12</span> Derivata parziale</a></li>
+<li><a href="#derivabilità-continuità"><span class="toc-section-number">3.13</span> Derivabilità continuità</a></li>
+</ul></li>
+<li><a href="#derivabilità-continuità-1"><span class="toc-section-number">4</span> Derivabilità continuità</a><ul>
+<li><a href="#o-piccolo"><span class="toc-section-number">4.1</span> o piccolo</a></li>
+<li><a href="#definizione-di-funzione-differenziabile"><span class="toc-section-number">4.2</span> Definizione di Funzione differenziabile</a><ul>
+<li><a href="#riscrivo-taylor"><span class="toc-section-number">4.2.1</span> Riscrivo Taylor</a></li>
+</ul></li>
+<li><a href="#condizioni-sufficienti-di-differenziabilità"><span class="toc-section-number">4.3</span> Condizioni sufficienti di differenziabilità</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -372,6 +384,149 @@ dato un vettore x con un angolo di <span class="math inline">\(\alpha\)</span> �
 <p>Si dimostra che tutte le funzioni “elementari” sono continue</p>
 <p><strong>oss</strong> <span class="math inline">\(f:A\to B\)</span> è continua in <span class="math inline">\(\bar{x}\)</span> <span class="math inline">\(\iff \forall \varepsilon &gt;0 \exists \delta_{\varepsilon}\)</span> tale che <span class="math inline">\(|f(y)-f(\bar{x})| &lt; \varepsilon\)</span> <span class="math inline">\(\forall x \in A\)</span> con <span class="math inline">\(|y-\bar{x}|&lt;\delta\)</span></p>
 <p>Si dimostra che se <span class="math inline">\(f_1,f_2,\dots,f_p:\mathbb{R}^n\to \mathbb{R}\)</span> scalari sono continue, allora ogni insieme <span class="math inline">\(A=\{x\in\mathbb{R}|f(x)_1&lt;c_1,\dots,f(x)_p&lt;c_p\}\)</span></p>
+<h2 id="funzione-radicale"><span class="header-section-number">3.9</span> Funzione radicale</h2>
+<p><span class="math inline">\(f: \mathbb{R}^2 \to \mathbb{R}\)</span> tale che <span class="math inline">\(\exists g:[0; +\infty[ \to \mathbb{R}\)</span> per cui <span class="math inline">\(f(x,y)=g(|(x,y)|)=g(\sqrt{x^2+y^2})\)</span></p>
+<h2 id="insiemi-di-livello"><span class="header-section-number">3.10</span> Insiemi di livello</h2>
+<p>gli insiemi di livello sono un modo di rappresentare le funzioni che consiste nel studiare una funzione ad un livello minore, per esempio studiare una funzione in <span class="math inline">\(\mathbb{R}^3\)</span> come diverse funzioni in <span class="math inline">\(\mathbb{R}^2\)</span></p>
+<details>
+<p><summary> es </summary></p>
+<p><span class="math inline">\(f:\mathbb{R}^2 \to \mathbb{R}\)</span> <span class="math inline">\(A \subseteq \mathbb{R}^2, f:A \to \mathbb{R}, b \in \mathbb{R}\)</span> l’insieme di livello b di f è <span class="math inline">\(L_b=\{(x,y)\in A | f(x,y)=b\}=f(b)\)</span></p>
+</details>
+<h2 id="funzioni-di-primo-grado"><span class="header-section-number">3.11</span> Funzioni di primo grado</h2>
+<p><span class="math inline">\(f: \mathbb{R}^2 \to \mathbb{R},\space f(x,y)= ax+by+c \space (a,b,c)\in \mathbb{R}^3\)</span></p>
+<p>il <span class="math inline">\(Graf(f)\)</span> è un piano</p>
+<h2 id="derivata-parziale"><span class="header-section-number">3.12</span> Derivata parziale</h2>
+<p><span class="math inline">\(A \subseteq \mathbb{R}^2\)</span></p>
+<p><span class="math inline">\(f:A \to \mathbb{R}\)</span></p>
+<p><span class="math inline">\(\frac{\delta f}{\delta x}(\bar{x},\bar{y})=\displaystyle \lim_{h \rightarrow 0} \frac{f(\bar{x}+h,\bar{y})-f(\bar{x},\bar{y})}{h}\)</span></p>
+<p>Se il limite esiste si chiama derivata parziale di f rispetto a x ( nel punto <span class="math inline">\((\bar{x},\bar{y})\)</span>)</p>
+<p><span class="math inline">\(\frac{\delta f}{\delta y}(\bar{x},\bar{y})=\displaystyle \lim_{k \rightarrow 0} \frac{f(\bar{x},\bar{y}+k)-f(\bar{x},\bar{y})}{k}\)</span></p>
+<details>
+<p><summary> Notazioni </summary></p>
+<p><span class="math inline">\(\frac{\delta f}{\delta y}f(\bar{x},\bar{y})= D_y f(\bar{x},\bar{y})=\delta_y f(\bar{x},\bar{y})\)</span></p>
+</details>
+<p><span class="math inline">\(f(x,y)=x^3+y+2e^{-2y}\)</span></p>
+<p>Se <span class="math inline">\(\exists D_x f\)</span> in <span class="math inline">\((\bar{x},\bar{y})\)</span> scrivo <span class="math inline">\(\nabla f(\bar{x},\bar{y})=(D_x f(\bar{x},\bar{y}), D_y f(\bar{x},\bar{y}))\)</span></p>
+<p>Se <span class="math inline">\(\exists D_x f\)</span> e <span class="math inline">\(D_y f\)</span> in ogni <span class="math inline">\((x,y) \in Dom(f)\)</span>, poniamo <span class="math inline">\(\nabla f(x,y)= (D_xf(x,y), D_y f(x,y))\)</span> <span class="math inline">\(\nabla f : Dom(f) \mathbb{R}^2\to \mathbb{R}^2\)</span></p>
+<p><span class="math inline">\(f(x,y)= xye^{-x^2}\)</span> <span class="math inline">\(D_x f= y D_x(xe^{-x^2})\)</span> <span class="math inline">\(=y[e^{-x^2}-2x^2 e^{-x^2}]=y(1-2x^2)e^{-x^2}\)</span></p>
+<p><span class="math inline">\(D_y f= xe^{-x^2}\)</span></p>
+<hr />
+<p>Caso n dimensionale</p>
+<p><span class="math inline">\(\mathbb{R}^n\)</span></p>
+<p><span class="math inline">\(e_1=(1,0,\dots,0)\)</span> <span class="math inline">\(e_1=(0,1,\dots,0)\)</span></p>
+<p><span class="math inline">\(f:\mathbb{R}^n \to \mathbb{R}\)</span></p>
+<p><span class="math inline">\(x=(x_1,x_2,\dots,x_n) \to_f f(x)\)</span></p>
+<p><span class="math inline">\(D_{x_j} (\bar{x})=x+he_j=(x_1,\dots,x_n)+(0,\dots,h_j,\dots,0)=(x_1,\dots,x_j+h_j,\dots,x_n)\)</span></p>
+<p><span class="math inline">\(D_{x_j}=\displaystyle \lim_{x \rightarrow \infty} \frac{f(\bar{x}+he_j)-f(\bar{x})}{h}\)</span></p>
+<h2 id="derivabilità-continuità"><span class="header-section-number">3.13</span> Derivabilità continuità</h2>
+<p><span class="math inline">\(f: A \to \mathbb{R}, A \subseteq \mathbb{R}, f\)</span> derivabile in <span class="math inline">\(\bar{x} \in A \implies f\)</span> è continua in <span class="math inline">\(\bar{x}\)</span></p>
+<p>funzione <span class="math inline">\(f: A \to \mathbb{R}\)</span> <span class="math inline">\(A \subseteq \mathbb{R}^2\)</span> aperto <span class="math inline">\(\exists D_x f(\bar{x},\bar{y}), D_y f(\bar{x},\bar{y}) \implies\)</span> continua in <span class="math inline">\((\bar{x}, \bar{y})\)</span></p>
+<p><span class="math inline">\(f: \mathbb{R}^2 \to \mathbb{R}\)</span></p>
+<p><span class="math inline">\(f(x,y)= \begin{cases} \frac{xy}{x^2+y^2} &amp; \text{se } (x,y)=(0,0) \\ 0 &amp; \text{in } (x,y)=(0,0)\end{cases}\)</span></p>
+<ol type="1">
+<li><span class="math inline">\(\exists D_x f(0,0), D_y f(0,0)\)</span> f derivabile</li>
+<li>f non è continua in (0,0)</li>
+</ol>
+<p><span class="math inline">\(D_x f(0,0)=\displaystyle \lim_{h \rightarrow 0} \frac{f(h,0)-f(0,0)}{h}\)</span></p>
+<p><span class="math inline">\(f(h,0)\)</span> per <span class="math inline">\(h\neq 0\)</span> <span class="math inline">\(=\frac{h\times 0}{h^2+0^2}\)</span> <span class="math inline">\(\forall h \neq 0\)</span></p>
+<p><span class="math inline">\((h \to f(h,0)\)</span> è <span class="math inline">\(0 \forall h \in \mathbb{R})\)</span></p>
+<p><span class="math inline">\(\displaystyle \lim_{x \rightarrow 0} \frac{0-0}{h}\)</span></p>
+<p>Derivabilità differenziabilità</p>
+<p><span class="math inline">\(\mathbb{R}, f:A \to \mathbb{R}\)</span> derivabilie <span class="math inline">\(\displaystyle \lim_{x \rightarrow \infty} \frac{f(\bar{x}+h)-f(\bar{x})}{h}=f&#39;(\bar{x})\in \mathbb{R}\)</span></p>
+<p><span class="math inline">\(\displaystyle \lim_{x \rightarrow \infty} \frac{f(\bar{x}+h)-f(\bar{x})-f&#39;(\bar{x})h}{h}=0\)</span></p>
+<p><strong>Def</strong> <span class="math inline">\(g: \mathbb{R}^2 \to \mathbb{R}, (h,k)\to g(h,k)\)</span></p>
+<p>Si dice che <span class="math inline">\(g(h,k)=o(|(h,k)|)\)</span> se vale <span class="math inline">\(\forall \varepsilon &gt;0 \exists \delta_varepsilon &gt;0\)</span> tale che <span class="math inline">\(\frac{|g(h,k)|}{||(h,k)||}&lt;\varepsilon\)</span> se <span class="math inline">\(||(h,k)|| &lt; \delta_\varepsilon\)</span></p>
+<p>Dunque <span class="math inline">\(g(h,k)=ah^2+ck^2=o(|(h,k)|)\)</span></p>
+<h1 id="derivabilità-continuità-1"><span class="header-section-number">4</span> Derivabilità continuità</h1>
+<h2 id="o-piccolo"><span class="header-section-number">4.1</span> o piccolo</h2>
+<p><strong>Def</strong>: Se <span class="math inline">\(A \subset \mathbb{R}^2, (0,0) \in A, g:A \to \mathbb{R}, p \ge 0\)</span> <span class="math inline">\(g(h,k)=o(|(h,k)|)\)</span> per <span class="math inline">\((h,k) \to (0,0)\)</span> se <span class="math inline">\(\forall \varepsilon &gt;0 \exists \delta &gt;0\)</span> tale che <span class="math inline">\(\frac{|g(h,k)|}{|(h,k)|^p}&lt;\varepsilon\)</span> <span class="math inline">\(\forall (h,k) \in A \space 0&lt;|(h,k)|&lt;\delta\)</span> <span class="math inline">\(\iff \forall (h_n,k_n)_{n \in \mathbb{N}}, (h_n,k_n)\to (0,0)\)</span> <span class="math inline">\((h_n,k_n)\neq (0,0) \space \forall n \in \mathbb{N}\implies\)</span> <span class="math inline">\(\displaystyle \lim_{n \rightarrow \infty} \frac{|g(h_n,k_n)|}{|(h_n,k_n)|^p}=0\)</span></p>
+<h2 id="definizione-di-funzione-differenziabile"><span class="header-section-number">4.2</span> Definizione di Funzione differenziabile</h2>
+<blockquote>
+<p>NOTA: in dimensione uno dire differenziabile e derivabile è la stessa cosa</p>
+</blockquote>
+<p><strong>Def</strong>: <span class="math inline">\(A \subseteq \mathbb{R}^2\)</span> aperto. <span class="math inline">\(f:A\to \mathbb{R}, (\bar{x},\bar{y})\in A\)</span> si dice <span class="math inline">\(f\)</span> differenziale in <span class="math inline">\((\bar{x},\bar{y})\in A\)</span> se</p>
+<ol type="1">
+<li><span class="math inline">\(\exists \frac{\delta f}{\delta x} (\bar{x},\bar{y})\)</span> e <span class="math inline">\(\frac{\delta f}{\delta x} (\bar{x},\bar{y})\in \mathbb{R}\)</span></li>
+<li>Vale <span class="math inline">\(f((\bar{x},\bar{y})+(h,k))=\)</span> <span class="math inline">\(f(\bar{x},\bar{y})+f&gt;\nabla(\bar{x},\bar{y}),(h,k)&gt;+o(|(h,k)|)\)</span></li>
+</ol>
+<p>Formule Taylor per f del primo ordine con punto <span class="math inline">\((\bar{x},\bar{y})\)</span> <span class="math inline">\(=f(\bar{x},\bar{y})+D_x f(\bar{x},\bar{y})h + D_y f(\bar{x},\bar{y})k+o(|(|h,k)|)\)</span></p>
+<h3 id="riscrivo-taylor"><span class="header-section-number">4.2.1</span> Riscrivo Taylor</h3>
+<p><span class="math inline">\((\bar{x}+h,\bar{y}+k)=(x,y)\)</span><br />
+<span class="math inline">\(\bar{x}+h=\)</span>(con h che tende a zero)<span class="math inline">\(x\to\bar{x}\)</span><br />
+<span class="math inline">\(\bar{y}+k=\)</span>(con k che tende a zero)<span class="math inline">\(y\to\bar{y}\)</span></p>
+<p>Taylor per F:</p>
+<p><span class="math inline">\(f(x,y)=f(\bar{x},\bar{y})+f&lt;\nabla(\bar{x},\bar{y}),(x-\bar{x},y-\bar{y})&gt;+o(|(x-\bar{x},y-\bar{y})|)\)</span></p>
+<p><span class="math inline">\(T_1(x,y)=f(\bar{x},\bar{y})+f&lt;\nabla(\bar{x},\bar{y}),(x-\bar{x},y-\bar{y})&gt;\)</span><br />
+<span class="math inline">\(T_1=\)</span> Pol. Taylor 1° ordine</p>
+<p>Il piano di equazione <span class="math inline">\(Z=T_1(x,y)\)</span> si chiama piano tangente al grafico di <span class="math inline">\(f\)</span> in <span class="math inline">\((\bar{x},\bar{y},f(\bar{x},\bar{y}))\)</span> (se si immagina una curva nello spazio si può immaginare il piano tangente come un cartoncino appoggiato su un punto della curva)</p>
+<details>
+<p><summary> esempio </summary></p>
+<p><span class="math inline">\(f(x,y)=\sqrt{1+xy^2}\)</span> <span class="math inline">\((\bar{x},\bar{y})=(2,-1)\)</span></p>
+<p><span class="math inline">\(D_x f=\frac{y^2}{2\sqrt{1+xy^2}}\)</span><br />
+<span class="math inline">\(D_y f=\frac{2xy}{2\sqrt{1+xy^2}}\)</span></p>
+<p><span class="math inline">\(f(2,-1)=\sqrt{3}\)</span></p>
+<p><span class="math inline">\(\nabla f(2,-1)=(\frac{y^2}{2\sqrt{1+xy^2}},\frac{2xy}{2\sqrt{1+xy^2}})\)</span> <span class="math inline">\(=(\frac{1}{2\sqrt{3}},\frac{-2}{\sqrt{3}})\)</span><br />
+<span class="math inline">\(T_1(x,y)=f(2,1)+&lt;\nabla f(2,-1),(x-2,y+1)&gt;=\sqrt{3}+\frac{1}{2\sqrt{3}}(x-2)-\frac{-2}{\sqrt{3}}(y+1)\)</span></p>
+<p><span class="math inline">\(z=T_1(x,y)\)</span> eq paino tangente</p>
+</details>
+<p><strong>oss</strong> <span class="math inline">\(f:A \to \mathbb{R}\)</span> A aperto di <span class="math inline">\(\mathbb{R}^2\)</span>, e se <span class="math inline">\(f\)</span> è differenziabile in <span class="math inline">\((\bar{x},\bar{y})\implies f\)</span> è continua in <span class="math inline">\((\bar{x},\bar{y})\)</span></p>
+<details>
+<p><summary> Verifica </summary></p>
+<p>bisogna vedere che <span class="math inline">\(\forall (h_n,k_n) \to (0,0)\)</span> (per ogni successione che tende a 0,0) vale <span class="math inline">\(f(\bar{x}+h_n,\bar{y}+k_n)\to f(\bar{x},\bar{y})\)</span> (con <span class="math inline">\(n \to \infty\)</span>)<br />
+Sia <span class="math inline">\((h_n,k_n)\to (0,0)\)</span> Taylor <span class="math inline">\(f(\bar{x}+h_n+\bar{y}+k_n)-f(\bar{x},\bar{y})=&lt;\nabla f(\bar{x},\bar{y}),(h_n,k_n)&gt;+o(|(h_n,k_n)|)\)</span></p>
+</details>
+<h2 id="condizioni-sufficienti-di-differenziabilità"><span class="header-section-number">4.3</span> Condizioni sufficienti di differenziabilità</h2>
+<p><strong>Def</strong> <span class="math inline">\(A \subseteq \mathbb{R}^2\)</span> aperto, <span class="math inline">\(f: A \to \mathbb{R}\)</span> si dice che <span class="math inline">\(f\)</span> è di classe <span class="math inline">\(C^1 (A)\)</span> se <span class="math inline">\(\exists D_x f, D_y f\)</span> in ogni punto di A e in oltre sono continue in A</p>
+<blockquote>
+<p>NOTA: si dimostra che le funzioni “elementari”,sono continue nei loro domini</p>
+</blockquote>
+<p><strong>Lemma</strong>: Se <span class="math inline">\(f\)</span> è <span class="math inline">\(C^1(\mathbb{R}^2)\)</span>, dati <span class="math inline">\((\bar{x},\bar{y})\in \mathbb{R^2}\)</span> e <span class="math inline">\(h,k \in \mathbb{R}\)</span> allora <span class="math inline">\(\theta_1,\theta_2 \in ]0,1[\)</span> tali che: 1.<span class="math inline">\(f(\bar{x}+h,y)-f(\bar{x},\bar{y})=D_x f(\bar{x}+\theta_1 h_1,\bar{y})h\)</span></p>
+<ol start="2" type="1">
+<li><span class="math inline">\(f(\bar{x},\bar{y}+k)-f(\bar{x},\bar{y})=D_y f(\bar{x},\bar{y}+\theta_2k)k\)</span></li>
+</ol>
+<details>
+<p><summary> dimostriamo il punto 2 </summary></p>
+<p><span class="math inline">\(g(t)=f(\bar{x},t)\)</span> per <span class="math inline">\(t \in \mathbb{R}\)</span></p>
+<p><span class="math inline">\(g(\bar{y}+k)-g(\bar{y})=f(\bar{x},\bar{y}+k)-f(\bar{x},\bar{y})\)</span></p>
+<p><strong>Lagrange</strong></p>
+<p><span class="math inline">\(g&#39;(t)=\displaystyle \lim_{s \rightarrow 0} \frac{g(t+2)-g(t)}{s}=\)</span> <span class="math inline">\(\displaystyle \lim_{s \rightarrow 0} \frac{f(\bar{x},t+s)-f(\bar{x},t)}{s}\)</span> <span class="math inline">\(=\frac{\delta f}{\delta x} (\bar{x},t)\implies g&#39;(t)=D_y f(\bar{x},t)\)</span> per ipotesi g’ esiste ed è anche continua</p>
+<p>Uso Lagrange per g con <span class="math inline">\(\bar{y}\)</span> e <span class="math inline">\(\bar{y}+k\)</span></p>
+<p><span class="math inline">\(\exists \theta \in ]0,1[\)</span> tale che <span class="math inline">\(g(\bar{y}+k)- g(\bar{y})=g&#39;(\bar{y}+\theta)k\)</span> che è uguale a dire <span class="math inline">\(f(\bar{x},\bar{y}+k)-f(\bar{x},\bar{y})= D_y f(\bar{x}+\theta_2 k)\)</span></p>
+</details>
+<p><strong>Teorema</strong>: <span class="math inline">\(A \subseteq \mathbb{R}^2\)</span>, aperto <span class="math inline">\(f:A \to \mathbb{R}\)</span>. se <span class="math inline">\(f\)</span> è <span class="math inline">\(C^1(A)\)</span> allora <span class="math inline">\(f\)</span> è differenziali in ogni <span class="math inline">\((\bar{x},\bar{y})\in A\)</span></p>
+<details>
+<p><summary> Dimostrazione </summary></p>
+<p><span class="math inline">\(A=\mathbb{R}, f \space C^1(\mathbb{R}^2),(\bar{x},\bar{y})\in \mathbb{R}^2\)</span> sia <span class="math inline">\((h,k)\in \mathbb{R}^2\)</span></p>
+<p>Utilizziamo Taylor</p>
+<p><span class="math inline">\(f(\bar{x}+h,\bar{y}+k)-f(\bar{x},\bar{y})=\)</span> <span class="math inline">\(f(\bar{x}+h,\bar{y}+k)-f(\bar{x}+h,\bar{y})+f(\bar{x}+h,\bar{y})-f(\bar{x},\bar{y})\)</span></p>
+<p>ora applichiamo il lemma, prima per <span class="math inline">\(f(\bar{x}+h,\bar{y}+k)-f(\bar{x}+h,\bar{y})\)</span> e poi per <span class="math inline">\(f(\bar{x}+h,\bar{y})-f(\bar{x},\bar{y})\)</span></p>
+<ol start="2" type="1">
+<li><span class="math inline">\(f(\bar{x}+h,\bar{y})-f(\bar{x},\bar{y})\)</span> <span class="math inline">\(\exists \theta_1 \in ]0,1[\)</span> tali che <span class="math inline">\(D_x f(\bar{x})+ \theta _1 h, \bar{y})h\)</span> <span class="math inline">\(\exists \theta_2 \in ]0,1[\)</span> tale che</li>
+</ol>
+<ol type="1">
+<li><span class="math inline">\(f(\bar{x}+h,\bar{y}+k)- f(\bar{x}+h,\bar{y})=D_y f(\bar{x}+h,\bar{y}+\theta_2 k)k\)</span></li>
+</ol>
+<p>Dunque abbiamo <span class="math inline">\(\exists \theta_1,\theta_2 \in ]0,1[\)</span> <span class="math inline">\(f(\bar{x}+h,\bar{y}+k)-f(\bar{x},\bar{y})=D_x f(\bar{x}+\theta_1h,\bar{y}h)+D_y f(\bar{x}+h,\bar{y}+\theta_2 k)k\)</span></p>
+<p>Mostriamo che</p>
+<ol type="1">
+<li><span class="math inline">\(D_x f(\bar{x},\bar{y})h+o(|(h,k)|)\)</span></li>
+<li><span class="math inline">\(D_y f(\bar{x},\bar{y})k+o(|(h,k)|)\)</span></li>
+</ol>
+<p>Prima affermazione <span class="math inline">\(\iff D_x [f(\bar{x}+\theta_1 h,\bar{y})- D_x f(\bar{x},\bar{y})]h=o(|(h,k)|)\)</span></p>
+<p><span class="math inline">\(\forall \varepsilon &gt;0 \exists \delta &gt;0\)</span> tale che <span class="math inline">\(\frac{|[D_x f(\bar{x}+\theta_1 h,\bar{y})-D_x f(\bar{x},\bar{y})]h|}{|(h,k)|}&lt;\varepsilon\)</span> <span class="math inline">\(0&lt;|(h,k)|&lt;\delta\)</span> <span class="math inline">\(|D_x f(\bar{x}+\theta+h,\bar{y})- D_x f(\bar{x},\bar{y})| |\frac{h}{(h,k)}| \le |D_x f(\bar{x}+\theta_1 h, \bar{y})-D_x f(\bar{x},\bar{y})|&lt;\varepsilon\)</span></p>
+<p>se prendiamo <span class="math inline">\(\varepsilon &gt;0,\delta\)</span> verra fuori questo delta che dalla continuità <span class="math inline">\(D_x f\)</span> in <span class="math inline">\((\bar{x},\bar{y}) \implies\)</span> <span class="math inline">\(|D_x f(\bar{x}+\theta_1 h, \bar{y})-D_x f(\bar{x},\bar{y})|&lt;\varepsilon\)</span> <span class="math inline">\(\forall (y,v) \in B((\bar{x},\bar{y}),\delta)\)</span></p>
+</details>
+<details>
+<p><summary> es </summary></p>
+<p><span class="math inline">\(f(x,y)= \sin(x^2+xy)\)</span> <span class="math inline">\((\bar{x},\bar{y})=(-\sqrt{\frac{\pi}{4}},0)\)</span></p>
+<p><span class="math inline">\(f(-\sqrt{\frac{\pi}{4}},0)=\sin(\sqrt{\frac{\pi}{4})}=\frac{1}{\sqrt{2}}\)</span></p>
+<p><span class="math inline">\(D_x f(x,y)=\cos(x^2+xy)+ D_x(x^2+xy)=\cos(x^2+xy)+2x+y\)</span> <span class="math inline">\(D_y f(x,y)=\cos(x^2+xy)+ D_y(x^2+xy)=\cos(x^2+xy)+x\)</span></p>
+<p><span class="math inline">\(\nabla f(-\frac{\pi}{4},0)=(-\sqrt{\frac{\pi}{2}},-\frac{1}{2}\sqrt{\frac{\pi}{2}})\)</span></p>
+<p><span class="math inline">\(T_1(x,y)=f(-\frac{\sqrt{\pi}}{2},2)+&lt;\nabla f(-\sqrt{\frac{\pi}{4}},0),(x+\sqrt{\frac{\pi}{4}},y)&gt;\)</span> <span class="math inline">\(=\frac{1}{\sqrt{2}}+&lt;\nabla (-\sqrt{\frac{\pi}{2}},-\frac{1}{2}\sqrt{\frac{\pi}{2}}),(x+\sqrt{\frac{\pi}{4}},y)&gt;\)</span></p>
+<p>Formula di Taylor:</p>
+<p><span class="math inline">\(f(x,y)=T_1(x,y)+o(|(x+\frac{\sqrt{\pi}}{2},y)|)\)</span> per <span class="math inline">\((x,y) \to (-\frac{\sqrt{\pi}}{2},0)\)</span></p>
+<p><span class="math inline">\(z=T_1(x,y)\)</span> equazione piano tangente <span class="math inline">\(=\{(x,y,z) \in \mathbb{R}^3 / z= T_1(x,y)\}\)</span></p>
+</details>
 <button style="position: fixed; bottom: 20px; right: 30px; z-index: 99; border: none; outline: none; cursor: pointer; padding: 9px; border-radius: 8px; font-size: 18px; background: var(--dracula-current-line); color: var(--dracula-background);" onclick=" document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">
     top
 </button>

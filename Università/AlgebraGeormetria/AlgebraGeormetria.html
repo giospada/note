@@ -79,7 +79,7 @@
 <li><a href="#linearmente-indipendenti"><span class="toc-section-number">4.3</span> Linearmente indipendenti</a></li>
 <li><a href="#linearmente-dipendenti"><span class="toc-section-number">4.4</span> Linearmente dipendenti</a></li>
 </ul></li>
-<li><a href="#combinazioni-lineari-e-indipendenza-lineare"><span class="toc-section-number">5</span> Combinazioni lineari e indipendenza lineare</a><ul>
+<li><a href="#basi-vettoriali"><span class="toc-section-number">5</span> Basi vettoriali</a><ul>
 <li><a href="#teorema-del-completamenteo"><span class="toc-section-number">5.1</span> Teorema del Completamenteo</a></li>
 <li><a href="#basi-canoniche"><span class="toc-section-number">5.2</span> Basi canoniche</a><ul>
 <li><a href="#uso-dellalgoritmo-di-gauss-sugli-spazi-vettoriali"><span class="toc-section-number">5.2.1</span> Uso dell’algoritmo di gauss sugli spazi vettoriali</a></li>
@@ -371,11 +371,23 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <p>Sia <span class="math inline">\(V\)</span> spazio vetoriale <span class="math inline">\(v_1,\dots,v_n \in V\)</span> e <span class="math inline">\(w= d_1v_1+\dots+d_nv_n\)</span> allora <span class="math inline">\(&lt;v_1,\dots,v_n&gt;=&lt;v_1,\dots,v_n,w&gt;\)</span></p>
 <h2 id="linearmente-indipendenti"><span class="header-section-number">4.3</span> Linearmente indipendenti</h2>
 <p><strong>Def</strong>: V spazio vettoriale <span class="math inline">\(v_1,\dots,v_n\in V\)</span> si dicono linearmente indipendenti se l’unica loro combinazione lineare che da <span class="math inline">\(\underline{0}\)</span> ()è quella con i coefficienti tutti nulli)</p>
+<details>
+<p><summary> metodo diretto per capire se un insieme di vettori è linearmente indipendente </summary></p>
+<p>Metodo uasto Gauss in modo diretto si costruisce la matrice</p>
+<p><span class="math inline">\(\begin{pmatrix}v_1 &amp;&amp;\\\vdots \\ v_n\end{pmatrix}\)</span></p>
+<p>e la si fa a scala, se compare qulache riga nulla i vettori <span class="math inline">\(v_1,\dots,v_n\)</span> sono dip. altrimenti sono indipendenti</p>
+<p>Motivo se <span class="math inline">\(U=&lt;v_1,\dots,v_n&gt;\)</span></p>
+<ol type="1">
+<li><span class="math inline">\(U=&lt;\bar{v_1},\dots,\bar{v_k},\underline{0},\dots,\underline{0}&gt;=&lt;v_1,\dots,v_k&gt;\)</span></li>
+<li><span class="math inline">\(\bar{v_1},\dots,\bar{v_k}\)</span> linearmente indipendente <span class="math inline">\(\implies \{\bar{v_1},\dots,\bar{v_k}\}\)</span> base di <span class="math inline">\(U\implies U\)</span> una dimensione <span class="math inline">\(K \space v_1,\dots,v_n\)</span> generiamo uno spazio di dimensione K (gel)</li>
+</ol>
+<p>Preposizione 4.2.6: (gel)</p>
+</details>
 <h2 id="linearmente-dipendenti"><span class="header-section-number">4.4</span> Linearmente dipendenti</h2>
 <p><strong>Def</strong> un insieme di vettori <span class="math inline">\(v_1,\dots,v_n\)</span> sono <em>linearmente dipendenti</em> <span class="math inline">\(\exists d_1,\dots,d_n \in \mathbb{R}\)</span> dove non sono tutti nulli tale che <span class="math inline">\(d_1v_1+\dots+d_nv_n=\underline{0}\)</span></p>
 <p><strong>Oss</strong>: se un insieme di vettori contiene <span class="math inline">\(\underline{0}\)</span> allora i vettori sono (sempre) dipendenti</p>
 <p><strong>prop(3.24)</strong> sia V uno spazio vettoriale <span class="math inline">\(v_1,\dots,v_n\)</span> sono dipendenti <span class="math inline">\(\iff\)</span> almeno uno di essi è combinazione lineare degli altri</p>
-<h1 id="combinazioni-lineari-e-indipendenza-lineare"><span class="header-section-number">5</span> Combinazioni lineari e indipendenza lineare</h1>
+<h1 id="basi-vettoriali"><span class="header-section-number">5</span> Basi vettoriali</h1>
 <p><strong>def</strong>: sia V uno spazio vettoriale, una base di vettoriale <span class="math inline">\(\{v_1,\dots,v_n\}\)</span> tali che:</p>
 <ol type="1">
 <li><span class="math inline">\(v_1,\dots,v_n\)</span> generano V cioè V è l’insieme lineare generato da <span class="math inline">\(v_1,\dots,v_n\)</span> (<span class="math inline">\(V=&lt;v_1,\dots,v_n&gt;\)</span>)</li>
