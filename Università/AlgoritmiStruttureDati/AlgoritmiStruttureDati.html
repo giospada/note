@@ -69,8 +69,13 @@
 <li><a href="#linked-list"><span class="toc-section-number">3.4</span> Linked List</a></li>
 <li><a href="#stack"><span class="toc-section-number">3.5</span> Stack</a></li>
 <li><a href="#queue"><span class="toc-section-number">3.6</span> Queue</a></li>
-<li><a href="#albero"><span class="toc-section-number">3.7</span> Albero</a></li>
-<li><a href="#albero-binario"><span class="toc-section-number">3.8</span> Albero Binario</a></li>
+<li><a href="#albero"><span class="toc-section-number">3.7</span> Albero</a><ul>
+<li><a href="#albero-binario"><span class="toc-section-number">3.7.1</span> Albero Binario</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#binary-search-tree"><span class="toc-section-number">4</span> Binary Search Tree</a><ul>
+<li><a href="#implementazione"><span class="toc-section-number">4.1</span> Implementazione</a></li>
+<li><a href="#operazioni"><span class="toc-section-number">4.2</span> Operazioni</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -282,7 +287,7 @@ T(n)=\Bigg\lbrace  \begin{matrix}1\\T(n-1)+T(n-2)+1\end{matrix}\quad \frac{\text
 </ul>
 <h2 id="albero"><span class="header-section-number">3.7</span> Albero</h2>
 <p><strong>Def</strong>: è un grafo con <span class="math inline">\(n\)</span> vertici e <span class="math inline">\(n-1\)</span> archi, in particolare c’è un unico percorso tra due vertici</p>
-<h2 id="albero-binario"><span class="header-section-number">3.8</span> Albero Binario</h2>
+<h3 id="albero-binario"><span class="header-section-number">3.7.1</span> Albero Binario</h3>
 <p><strong>Def</strong>: è un albero in cui ogni vertice ha massimo due figli è massimo un padre</p>
 <p><strong>definizioni</strong>:</p>
 <ul>
@@ -297,6 +302,52 @@ T(n)=\Bigg\lbrace  \begin{matrix}1\\T(n-1)+T(n-2)+1\end{matrix}\quad \frac{\text
 <li><strong>post-order</strong>: visita il destro,poi il corrente e poi il sinistro</li>
 <li><strong>pre-order</strong>:visita il nodo corrente, poi il sinistro e poi il destro</li>
 </ul>
+<h1 id="binary-search-tree"><span class="header-section-number">4</span> Binary Search Tree</h1>
+<p>Il bst è una struttura dati che permette la ricerca di una chiave dentro l’albero</p>
+<ul>
+<li><code>search(Key k)</code>: cerca l’oggetto associato alla chiave k</li>
+<li><code>insert(Key k, Data d)</code>: aggiunge la coppia (k, d) al Dizionario</li>
+<li><code>delete(Key k)</code>: elmina la coppia (k, d) dal Dizionario</li>
+</ul>
+<p><strong>proprietà</strong>: tutte le chiavi nel sottoalbero sinistro di v sono ≤ v.key e tutte le chiavi nel sottoalbero destro di v sono ≥ v.key</p>
+<h2 id="implementazione"><span class="header-section-number">4.1</span> Implementazione</h2>
+<p><code>search</code>: confronta la chiave con quella del nodo corrente se è uguale ritorna il valore se è maggiore va ricorsivamente nel sottoalbero destro se è minore nel sinistro(Costo <span class="math inline">\(O(h)\)</span> dove h è l’altezza dell’albero)</p>
+<p><code>min</code> e <code>max</code>: min va nel nodo più a sinistra del’albero che riesce a trovare , il massimo nel nodo più a destra # AVL</p>
+<p>È un albero bilanciato che mantiene l’altezza dell’albero così che tutte le operazioni abbiano costo algoritmico per le operazioni di <code>search</code>, <code>delete</code> e <code>insert</code> in <span class="math inline">\(O(\log n)\)</span>n le caso pessimo.</p>
+<blockquote>
+<p><strong>Fattore di bilanciamento</strong> β(v) di un nodo v è dato dalla differenza tra l’altezza del sottoalbero sinistro e destro di v: β(v) = altezza(v.left) - altezza(v.right)</p>
+</blockquote>
+<blockquote>
+<p><strong>Bilanciamento in altezza</strong> se per ogni nodo v le altezze dei suoi sottoalberi sinistro e destro differiscono al più di uno <span class="math inline">\(|\beta(v)|\le 1\)</span></p>
+</blockquote>
+<p>L’albero può essere <strong>sbilanciato</strong> dalle operazioni di insert e delete</p>
+<h2 id="operazioni"><span class="header-section-number">4.2</span> Operazioni</h2>
+<p><strong>UpdateHeight</strong>: TODO</p>
+<p><strong>Beta</strong>: TODO</p>
+<p><a href="https://virtuale.unibo.it/pluginfile.php/1113437/mod_resource/content/5/07%20-%20Alberi%20AVL.pdf">finire pag 13</a></p>
+<p><strong>Rotazione semplice</strong>:scambia il nodo radice mantenendo la proprietà di ordinamento dell’albero<br />
+<img src="vx_images/260206600615204.png" /></p>
+<p>questa operazione costa <code>O(1)</code></p>
+<p><strong>Sbilanciamenti</strong>:</p>
+<ul>
+<li><p>SS:<span class="math inline">\(\beta(u)=2\)</span> e <span class="math inline">\(\beta(left(u))\ge 0\)</span></p></li>
+<li><p>DD: <span class="math inline">\(\beta(u)=-2\)</span> e <span class="math inline">\(\beta(right(u))\le 0\)</span></p></li>
+<li><p>SD: <span class="math inline">\(\beta(u)=2\)</span>e <span class="math inline">\(\beta(right(u))=-1\)</span></p></li>
+<li><p>DS:<span class="math inline">\(\beta(u)=-2\)</span>e <span class="math inline">\(\beta(right(u))= 1\)</span></p></li>
+</ul>
+<details>
+<p><summary> Sbilanciamento SS </summary></p>
+<p>si fa perno su u e si ruota v, rotazione a destra</p>
+<p><img src="vx_images/421803324940955.png" /></p>
+</details>
+<details>
+<p><summary> Sbilanciamento SD </summary></p>
+<ol type="1">
+<li><p>si fa perno su v e si fa una rotazione a SX <img src="vx_images/486084188889359.png" /></p></li>
+<li><p>rotazione DX con perno su u</p></li>
+</ol>
+<p><img src="vx_images/310112717576001.png" /></p>
+</details>
 <button style="position: fixed; bottom: 20px; right: 30px; z-index: 99; border: none; outline: none; cursor: pointer; padding: 9px; border-radius: 8px; font-size: 18px; background: var(--dracula-current-line); color: var(--dracula-background);" onclick=" document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">
     top
 </button>

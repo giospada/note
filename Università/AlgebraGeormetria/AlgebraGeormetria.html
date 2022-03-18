@@ -80,10 +80,10 @@
 <li><a href="#linearmente-dipendenti"><span class="toc-section-number">4.4</span> Linearmente dipendenti</a></li>
 </ul></li>
 <li><a href="#basi-vettoriali"><span class="toc-section-number">5</span> Basi vettoriali</a><ul>
-<li><a href="#teorema-del-completamenteo"><span class="toc-section-number">5.1</span> Teorema del Completamenteo</a></li>
-<li><a href="#basi-canoniche"><span class="toc-section-number">5.2</span> Basi canoniche</a><ul>
-<li><a href="#uso-dellalgoritmo-di-gauss-sugli-spazi-vettoriali"><span class="toc-section-number">5.2.1</span> Uso dell’algoritmo di gauss sugli spazi vettoriali</a></li>
+<li><a href="#teorema-del-completamenteo"><span class="toc-section-number">5.1</span> Teorema del Completamenteo</a><ul>
+<li><a href="#basi-canoniche"><span class="toc-section-number">5.1.1</span> Basi canoniche</a></li>
 </ul></li>
+<li><a href="#uso-dellalgoritmo-di-gauss-sugli-spazi-vettoriali"><span class="toc-section-number">5.2</span> Uso dell’algoritmo di gauss sugli spazi vettoriali</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -397,11 +397,7 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <p><summary> esempio in <span class="math inline">\(\mathbb{R}^2\)</span> </summary></p>
 <p><span class="math inline">\(v_1=(1,0)\)</span>,<span class="math inline">\(v_2=(0,1)\)</span> sono lineramente indiependenti perche sono multiplo dell’altro e generano <span class="math inline">\(\mathbb{R}^2\)</span></p>
 </details>
-<p>Uno spazio vettoriale V si dice finitamente generato se <span class="math inline">\(V= &lt;v_1,\dots,v_n&gt;\)</span></p>
-<details>
-<p><summary> esempio </summary></p>
-<p><span class="math inline">\(\mathbb{R}[x]\)</span> non è finitamente generato</p>
-</details>
+<p>Uno spazio vettoriale V si dice <strong>finitamente generato</strong> se <span class="math inline">\(V= &lt;v_1,\dots,v_n&gt;\)</span>( <span class="math inline">\(\mathbb{R}[x]\)</span> non è finitamente generato)</p>
 <p><strong>Prop</strong> sia <span class="math inline">\(V=&lt;v_1,\dots,v_n&gt;\)</span> spazio vettorialiale ginitamenteo generato allora esiste un sottinsieme di <span class="math inline">\(\{v_1,\dots,v_n\}\)</span> he è una base di V</p>
 <details>
 <p><summary> dimostrazione </summary></p>
@@ -409,18 +405,29 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <p>Prop 3.1.8 : <span class="math inline">\(&lt;v_1,\dots_,v_{k-1},v_{k+1},\dots,v_n&gt;=&lt;v_1,\dots,v_k,\dots,k_n&gt;\)</span></p>
 <p>cancelliamo tutti i vettori finche non abbiamo tutti i vettori indipendenti</p>
 </details>
-<p>Un insieme di vettori con una certa proprità si dice minimale se ogni suo sottoinsieme proprio non ha più quella proprietù e massimale se ogni suo sovrainsieme proprio non ha più la proprietà</p>
 <p><strong>Teorema:4.1.4</strong> Siano <span class="math inline">\(v_1,\dots,v_n \in V\)</span>: 1.<span class="math inline">\(\{v_1,\dots,v_n \}\)</span> è una base <span class="math inline">\(\iff\)</span> è un insieme minimale di generatori 2.<span class="math inline">\(\{v_1,\dots,v_n \}\)</span> è una base <span class="math inline">\(\iff\)</span> è un insieme massimale di vettori lineramente indipendenti</p>
-<p>Dimostrazione sul libro</p>
+<details>
+<p><summary> massimale e minimale def </summary></p>
+<p>Un insieme di vettori con una certa proprità si dice minimale se ogni suo sottoinsieme proprio non ha più quella proprietù e massimale se ogni suo sovrainsieme proprio non ha più la proprietà</p>
+</details>
 <h2 id="teorema-del-completamenteo"><span class="header-section-number">5.1</span> Teorema del Completamenteo</h2>
-<p>Sia V uno spazio vettoriale con base <span class="math inline">\(\{v_1,\dots,v_n\}\)</span> e siano <span class="math inline">\(\{w_1,\dots,w_m\}\)</span> linearmente indipendenti allora <span class="math inline">\(m\leq n\)</span></p>
-<p>Inoltre possiamo aggiungere a <span class="math inline">\(\{w_1,\dots,w_1\}, n-m\)</span> vetotri di <span class="math inline">\(\beta\)</span> per ottenere una base</p>
+<p>Sia V uno spazio vettoriale con base <span class="math inline">\(\{v_1,\dots,v_n\}\)</span> e siano <span class="math inline">\(\{w_1,\dots,w_m\}\)</span> linearmente indipendenti con <span class="math inline">\(m\leq n\)</span> possiamo aggiungere a <span class="math inline">\(\{w_1,\dots,w_1\}, n-m\)</span> vetotri di <span class="math inline">\(\beta\)</span> per ottenere una base</p>
 <p><strong>Prop: 4.2.2</strong> tutte le basi di uno spazio vettoriale (finitamente generato), hanno lo stesso numero di elementi</p>
-<h2 id="basi-canoniche"><span class="header-section-number">5.2</span> Basi canoniche</h2>
-<p>in <span class="math inline">\(\mathbb{R}^n, \beta=\{e_1,\dots,e_n\},\)</span> <span class="math inline">\(e_1=(1,\dots,0), e_2=(0,1,\dots,0), e_n=(0,\dots,1)\)</span> <span class="math inline">\(v=(a_1,\dots,a_n)\in \mathbb{R}^n\)</span> <span class="math inline">\(v=a_1(1,\dots,0)+a_2(0,1,\dots,0)+\dots+e_n=(0,\dots,1)\)</span> <span class="math inline">\(\implies &lt;e_1,\dots,e_n&gt; = \mathbb{R}^n\)</span> sono indipendenti <span class="math inline">\(\mathbb{R}^n\)</span> base di dimensione n</p>
-<p>Base di <span class="math inline">\(\mathbb{R}_n[x]=\{a_nx^n+\dots+a_1x+a_0|a_0,\dots,a_n \in \mathbb{R}\}\)</span> quindi <span class="math inline">\(\mathbb{R}_n[x]\)</span> ha dimensione <span class="math inline">\(n+1\)</span></p>
-<p><span class="math inline">\(M_{m,n}\)</span> ha dimensione <span class="math inline">\(n\times m\)</span></p>
-<h3 id="uso-dellalgoritmo-di-gauss-sugli-spazi-vettoriali"><span class="header-section-number">5.2.1</span> Uso dell’algoritmo di gauss sugli spazi vettoriali</h3>
+<p><strong>Prop: 4.2.4</strong> Sia uno spazio vettoriale V e W un suo sottospazio <span class="math inline">\(dim(V)&gt;dim(W)\)</span> e se <span class="math inline">\(dim(V)=dim(W)\)</span> allora <span class="math inline">\(V=W\)</span></p>
+<p><strong>Prop: 4.2.6</strong> Sia V uno spazio vettoriale di dimensione n e <span class="math inline">\({v_1,\dots,v_n}\)</span> dei vettori appartenenti a V, allora le seguenti affermazioni sono equivalenti:</p>
+<ol type="a">
+<li><span class="math inline">\({v_1,\dots,v_n}\)</span> sono una base di V</li>
+<li><span class="math inline">\(v_1,\dots,v_n\)</span> sono linearmente indipendenti</li>
+<li><span class="math inline">\(&lt;v_1,\dots,v_n&gt;\)</span> generano V</li>
+</ol>
+<p><strong>Prop: 4.2.8</strong> Sia B una base ordinata dello spazio vettoriale V allora esiste una sola combinazione lineare della base (un nupla di scalari) che genera il vettore <span class="math inline">\(v\in V\)</span></p>
+<h3 id="basi-canoniche"><span class="header-section-number">5.1.1</span> Basi canoniche</h3>
+<ul>
+<li><span class="math inline">\(\mathbb{R}^n\)</span> ha dimensione <strong>n</strong> es.<span class="math inline">\(&lt;(1,\dots,0),(0,1\dots,0),\dots,(0,dots,1)&gt;\)</span></li>
+<li><span class="math inline">\(\mathbb{R}^n[x]\)</span> ha dimensione <strong>n+1</strong> es.<span class="math inline">\(&lt;(x^n,\dots,0)(0,x^{n-1},\dots,0)\dots,(0,\dots,1))&gt;\)</span></li>
+<li><span class="math inline">\(\mathbb{M}_{M,N}(R)\)</span> ha dimensione <strong>N x M</strong> es (troppo lungo da scrivere)</li>
+</ul>
+<h2 id="uso-dellalgoritmo-di-gauss-sugli-spazi-vettoriali"><span class="header-section-number">5.2</span> Uso dell’algoritmo di gauss sugli spazi vettoriali</h2>
 <ol type="1">
 <li>L’algoritmo di Gauss non cambia il sottospazio generato dalle righe di una matrice</li>
 <li>le righe non nulle di una matrice a scala sono indip</li>
