@@ -15,16 +15,8 @@ sono lineramente indiependenti perche sono multiplo dell'altro e generano $\math
 </details>
 
 
-Uno spazio vettoriale V si dice finitamente generato se $V= <v_1,\dots,v_n>$
+Uno spazio vettoriale V si dice **finitamente generato** se $V= <v_1,\dots,v_n>$( $\mathbb{R}[x]$ non è finitamente generato)
 
-<details>
-<summary>
-esempio
-</summary>
-
-$\mathbb{R}[x]$ non è finitamente generato
-
-</details>
 
 
 **Prop** sia $V=<v_1,\dots,v_n>$ spazio vettorialiale ginitamenteo generato allora esiste un sottinsieme di $\{v_1,\dots,v_n\}$ he è una base di V
@@ -43,42 +35,53 @@ cancelliamo tutti i vettori finche non abbiamo tutti i vettori indipendenti
 </details>
 
 
-Un insieme di vettori con una certa proprità si dice minimale se ogni suo sottoinsieme proprio non ha più quella proprietù e massimale se ogni suo sovrainsieme proprio non ha più la proprietà
-
 
 **Teorema:4.1.4** Siano $v_1,\dots,v_n \in V$:
 1.$\{v_1,\dots,v_n \}$ è una base  $\iff$ è un insieme minimale di generatori
 2.$\{v_1,\dots,v_n \}$ è una base  $\iff$ è un insieme massimale di vettori lineramente indipendenti 
 
 
-Dimostrazione sul libro
+<details>
+<summary>
+massimale e minimale def
+</summary>
+
+Un insieme di vettori con una certa proprità si dice minimale se ogni suo sottoinsieme proprio non ha più quella proprietù e massimale se ogni suo sovrainsieme proprio non ha più la proprietà
+
+</details>
 
 
 ## Teorema del Completamenteo
 
 
-Sia V uno spazio vettoriale con base $\{v_1,\dots,v_n\}$ e siano $\{w_1,\dots,w_m\}$  linearmente indipendenti allora $m\leq n$
-
-Inoltre possiamo aggiungere a $\{w_1,\dots,w_1\}, n-m$  vetotri di $\beta$ per ottenere una base 
+Sia V uno spazio vettoriale con base $\{v_1,\dots,v_n\}$ e siano $\{w_1,\dots,w_m\}$  linearmente indipendenti con $m\leq n$ 
+possiamo aggiungere a $\{w_1,\dots,w_1\}, n-m$  vetotri di $\beta$ per ottenere una base 
 
 
 **Prop: 4.2.2** tutte le basi di uno spazio vettoriale (finitamente generato), hanno lo stesso numero di elementi
 
 
-## Basi canoniche
-
-in $\mathbb{R}^n, \beta=\{e_1,\dots,e_n\},$ $e_1=(1,\dots,0), e_2=(0,1,\dots,0), e_n=(0,\dots,1)$ 
-$v=(a_1,\dots,a_n)\in \mathbb{R}^n$  $v=a_1(1,\dots,0)+a_2(0,1,\dots,0)+\dots+e_n=(0,\dots,1)$
-$\implies <e_1,\dots,e_n> = \mathbb{R}^n$ sono indipendenti $\mathbb{R}^n$ base di dimensione n
-
-Base di $\mathbb{R}_n[x]=\{a_nx^n+\dots+a_1x+a_0|a_0,\dots,a_n \in \mathbb{R}\}$ quindi $\mathbb{R}_n[x]$ ha dimensione $n+1$
-
-$M_{m,n}$ ha dimensione $n\times m$
+**Prop: 4.2.4** Sia uno spazio vettoriale V e W un suo sottospazio $dim(V)>dim(W)$ e se $dim(V)=dim(W)$ allora $V=W$
 
 
+**Prop: 4.2.6** Sia V uno spazio vettoriale di dimensione  n e ${v_1,\dots,v_n}$  dei vettori appartenenti a V, allora le seguenti affermazioni sono equivalenti:
+a. ${v_1,\dots,v_n}$ sono una base di V
+b. $v_1,\dots,v_n$ sono linearmente indipendenti
+c. $<v_1,\dots,v_n>$ generano V
+
+**Prop: 4.2.8**  Sia B una base ordinata dello spazio vettoriale V allora esiste una sola combinazione lineare della base (un nupla di scalari) che genera il vettore $v\in V$
 
 
-### Uso dell'algoritmo di gauss sugli spazi vettoriali
+### Basi canoniche
+
+- $\mathbb{R}^n$ ha dimensione **n** es.$<(1,\dots,0),(0,1\dots,0),\dots,(0,dots,1)>$
+- $\mathbb{R}^n[x]$ ha dimensione **n+1** es.$<(x^n,\dots,0)(0,x^{n-1},\dots,0)\dots,(0,\dots,1))>$
+- $\mathbb{M}_{M,N}(R)$ ha dimensione **N x M** es (troppo lungo da scrivere)
+
+
+
+
+## Uso dell'algoritmo di gauss sugli spazi vettoriali
 
 1. L'algoritmo di Gauss non cambia il sottospazio generato dalle righe di una matrice
 2. le righe non nulle di una matrice a scala sono indip

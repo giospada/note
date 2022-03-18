@@ -94,7 +94,7 @@ TODO:analisi ammortizzata da pag 34 [pdf](https://virtuale.unibo.it/pluginfile.p
 **Def**: è un grafo con $n$ vertici e $n-1$ archi, in particolare c'è un unico percorso tra due vertici
 
 
-## Albero Binario
+### Albero Binario
 
 **Def**: è un albero in cui ogni vertice ha massimo due figli è massimo un padre
 
@@ -108,3 +108,5 @@ TODO:analisi ammortizzata da pag 34 [pdf](https://virtuale.unibo.it/pluginfile.p
 - **in-order**:visita il nodo sinsitro, poi se stesso e poi il destro
 - **post-order**: visita il destro,poi il corrente e poi il sinistro
 - **pre-order**:visita il nodo corrente, poi il sinistro e poi il destro
+
+
