@@ -83,12 +83,17 @@
 <li><a href="#teorema-del-completamenteo"><span class="toc-section-number">5.1</span> Teorema del Completamenteo</a><ul>
 <li><a href="#basi-canoniche"><span class="toc-section-number">5.1.1</span> Basi canoniche</a></li>
 </ul></li>
-<li><a href="#uso-dellalgoritmo-di-gauss-sugli-spazi-vettoriali"><span class="toc-section-number">5.2</span> Uso dell’algoritmo di gauss sugli spazi vettoriali</a></li>
+<li><a href="#uso-dellalgoritmo-di-gauss-sugli-spazi-vettoriali"><span class="toc-section-number">5.2</span> Uso dell’algoritmo di gauss sugli spazi vettoriali</a><ul>
+<li><a href="#utilizzo-negli-esercizi"><span class="toc-section-number">5.2.1</span> Utilizzo negli esercizi</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
 <h1 id="introduzione"><span class="header-section-number">1</span> Introduzione</h1>
-<p><img src="vx_images/582452494826019.png" /> &gt; it’s about drive it’s about power, we stay hungry , we devour, put in it the work put in it the hours, and take what’s ours</p>
+<p><img src="vx_images/582452494826019.png" /></p>
+<blockquote>
+<p>it’s about drive it’s about power, we stay hungry , we devour, put in it the work put in it the hours, and take what’s ours</p>
+</blockquote>
 <p>Agebra lineare:</p>
 <ul>
 <li>spazi vettoriali</li>
@@ -428,12 +433,16 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <li><span class="math inline">\(\mathbb{M}_{M,N}(R)\)</span> ha dimensione <strong>N x M</strong> es (troppo lungo da scrivere)</li>
 </ul>
 <h2 id="uso-dellalgoritmo-di-gauss-sugli-spazi-vettoriali"><span class="header-section-number">5.2</span> Uso dell’algoritmo di gauss sugli spazi vettoriali</h2>
-<ol type="1">
-<li>L’algoritmo di Gauss non cambia il sottospazio generato dalle righe di una matrice</li>
-<li>le righe non nulle di una matrice a scala sono indip</li>
-</ol>
-<p>data una matrix<span class="math inline">\(\begin{pmatrix}R1\\R2\\\vdots\\R_k\end{pmatrix}\)</span>Gauss <span class="math inline">\(\to\)</span> <span class="math inline">\(\begin{pmatrix}\bar{R1}\\\bar{R2}\\\vdots\\\bar{R_k}\end{pmatrix}\)</span></p>
-<p><span class="math inline">\(&lt;R_1,\dots,R_k&gt;=&lt;\bar{R_1},\dots,\bar{R_k}&gt;\)</span></p>
+<p><strong>Prop 4.3.1</strong>: data una matrice <span class="math inline">\(A \in M_{n,m} (\mathbb{R})\)</span> le operazioni elementerai di riga non cambiano lo sottospazio <span class="math inline">\(\mathbb{R}^n\)</span> generato dai vettori riga <span class="math inline">\(A\)</span></p>
+<p><strong>Prop 4.3.3</strong> Se una matrice A è a scala per riga, i suoi vettori riga non nulli sono linearmente indipendenti</p>
+<h3 id="utilizzo-negli-esercizi"><span class="header-section-number">5.2.1</span> Utilizzo negli esercizi</h3>
+<p><strong>trovare una base di un sottospazio</strong> (cercare se una serie di vettori sono linearmenete indipendenti):</p>
+<ul>
+<li>creare la matrice che contiene come righe i vettori</li>
+<li>utilizzare l’algorimto di gaus per creare una matrice a scala</li>
+<li>i vettori formati da righe non nulle sono linearmente indipendenti</li>
+</ul>
+<p><strong>per ottenere una base di un sottospazio <span class="math inline">\(\mathbb{R}^n\)</span></strong></p>
 <button style="position: fixed; bottom: 20px; right: 30px; z-index: 99; border: none; outline: none; cursor: pointer; padding: 9px; border-radius: 8px; font-size: 18px; background: var(--dracula-current-line); color: var(--dracula-background);" onclick=" document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">
     top
 </button>
