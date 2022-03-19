@@ -31,13 +31,12 @@ L'integrale di una funzione calcola l'area che c'è tra essa e l'asse delle x in
 
 **osservazione** se $f$ ha un numero finito di discontinuità con salto finito (senza limiti che vanno a $\pm \infty$),  $\int_a^b f$ + definito
 
-## Proprità
+### Proprità
 
-### Linearità
- $f,g$ continua su $[a,b], \lambda \varphi \in \mathbb{R}$ allora $h\times[a,b]\to \mathbb{R}, h(x)=\lambda f(x)+ \varphi g(x)$ h è integrabilie 
-$\int_a^b [\lambda f(x)+\varphi g(x)] dx = \lambda \int^a_b f + \varphi \int^b_a g$  (**limite della somma è uguale alla somma dei limiti**)
+#### Linearità
+ $f,g$ continua su $[a,b], \lambda \varphi \in \mathbb{R}$ allora $h\times[a,b]\to \mathbb{R}, h(x)=\lambda f(x)+ \varphi g(x)$ h è integrabilie $\int_a^b [\lambda f(x)+\varphi g(x)] dx = \lambda \int^a_b f + \varphi \int^b_a g$  (**limite della somma è uguale alla somma dei limiti**)
 
-### Additionalità
+#### Additionalità
 
 > la somma di due integrali della stessa funzione con punto il limite opposto in comune allora è equivalente alla l'integrale degli altri due estremi
 
@@ -57,7 +56,7 @@ Con la convenzione se $f:\mathbb{R} \to \mathbb{R}$ è continua $\forall a,b,c \
 
 </details>
 
-### Monotonia
+#### Monotonia
 
 > se una funzione è sempre maggiore uguale in un intervallo chiuso allora sara maggiore uguale anche l'integrale
 
@@ -65,7 +64,6 @@ Con la convenzione se $f:\mathbb{R} \to \mathbb{R}$ è continua $\forall a,b,c \
 
 
 
-**oss** $f:[a,b] \to \mathbb{R} ,\space \forall x f(x) \le b , \space A =\{(x,y)| x \in [a,b] f(x) \le y \le 0\} \space \int_a^b f(x) dx =- \text{Area}(A)$ 
 
 
 ## Teorema della media
@@ -101,35 +99,41 @@ es : $f(x)=x, x \in \mathbb{R} F(x)=\frac{x^2}{2}$ è una primitiva $f$ su $\mat
 </details>
 
 
-### Infinite primitive di una funzione
+### Osservazioni 
 
-> una funzione ha infinite primitive perchè si può aggiungere una costante che poi viene persa quando si fa la derivata
+**Oss:** una **funzione ha infinite primitive** perchè si può aggiungere una costante che poi viene persa quando si fa la derivata
 
-Proposizione sia $f: ]a,b[ \to \mathbb{R}$  siano $F,G :]a,b[ \to \mathbb{R}$ due primitive di f piccolo su $]a,b[$ Allora $\forall x \in ]a,b[, \exists k \in \mathbb{R}, F(x) - G(x) =k$ 
+**Prop:** sia $f: ]a,b[ \to \mathbb{R}$  siano $F,G :]a,b[ \to \mathbb{R}$ due primitive di f piccolo su $]a,b[$ Allora $\forall x \in ]a,b[, \exists k \in \mathbb{R}, F(x) - G(x) =k$ 
 
-es $f(x)=\frac{1}{x^2} , x\neq 0, x \in \mathbb{R} \backslash \{0\}$ $F(x)=-\frac{1}{x}$ primitiva di $f \text{su} \mathbb{R} \backslash \{0\} G(x)=\begin{cases}-\frac{1}{x}  \text{ se } x> 0 \\ -\frac{1}{x}+2 \text{ se } x <0 \end{cases} \text{allora} F'(x)=G'(x)=\frac{1}{x^2} \text{ma } G(x)-F(x)=\begin{cases}0  \text{ se } x> 0 \\ 2 \text{ se }  x <0 \end{cases}$ 
+<details>
+<summary>
+esempio
+</summary>
+
+es $f(x)=\frac{1}{x^2} , x\neq 0, x \in \mathbb{R} \backslash \{0\}$ $F(x)=-\frac{1}{x}$ primitiva di $f$ su $\mathbb{R} \backslash \{0\} G(x)=\begin{cases}-\frac{1}{x}  & \text{ se } x> 0 \\ -\frac{1}{x}+2 & \text{ se } x <0 \end{cases}$ allora  $F'(x)=G'(x)=\frac{1}{x^2} \text{ma } G(x)-F(x)=\begin{cases}0  \text{ se } x> 0 \\ 2 \text{ se }  x <0 \end{cases}$ 
+</details>
 
 
 
-**Dim** considero $H: ]a,b[ \to \mathbb{R} ,\space H(x)=F(x)-G(x) , \space H'(x)=F'(x)-G'(x)=f(x)-f(x)=0,  \forall x \in ]a,b[ \space \exists k \in \mathbb{R} , H(x)=k$  
+**Dim** considero $H: ]a,b[ \to \mathbb{R} ,\space H(x)=F(x)-G(x) ,$ $\space H'(x)=F'(x)-G'(x)=f(x)-f(x)=0,$ $\forall x \in ]a,b[ \space \exists k \in \mathbb{R} , H(x)=k$  
 
 
 ## Funzione integrale
 
 > la funzione integrale è una funzione che parte da un punto e calcola l'area fino ad un altro punto preso come variabilie
 
->def : sia $f : ]a_0,b_0[ \to \mathbb{R}$ sia $c \in ]a_0,b_0[$ definisco $I_c : ]a_0,b_0[ \to \mathbb{R}, I_c(x)=\int_c^x f(t) dt = \int_c^x f$  
+**Def :** sia $f : ]a_0,b_0[ \to \mathbb{R}$ sia $c \in ]a_0,b_0[$ definisco $I_c : ]a_0,b_0[ \to \mathbb{R}, I_c(x)=\int_c^x f(t) dt = \int_c^x f$  
 
-Proprietà:
-- **osservazione** $I_c (c)= \int^c_c f = 0$
+### Proprietà
+**osservazione** $I_c (c)= \int^c_c f = 0$
 
-- **osservazione** siano $c_1,c_2 \in ]a_0,b_0[ f$ continua $I_{c_1}(x)=\int_{c_1}^x f , I_{c_2}(x)=\int_{c_2}^x f$ , $I_{c_1}(x)- I_{c_2}(x)=\int_{c_1}^x f - \int_{c_2}^x f= \int_{c_1}^x f + \int^{c_2}_x f = \text{proprieta add}= \int_{c_1}^{c_2} f(t) dt$  dunque $I_{c_1}(x) I_{c_2}$ differeiscono per una constante
+ **osservazione** siano $c_1,c_2 \in ]a_0,b_0[ ,\space  f$ continua $I_{c_1}(x)=\int_{c_1}^x f , I_{c_2}(x)=\int_{c_2}^x f$ , $I_{c_1}(x)- I_{c_2}(x)=\int_{c_1}^x f - \int_{c_2}^x f= \int_{c_1}^x f + \int^{c_2}_x f = \text{proprieta add}= \int_{c_1}^{c_2} f(t) dt$  dunque $I_{c_1}(x) I_{c_2}$ differeiscono per una constante
 
 
 
 ## Teorema Fondamentale del Calcolo Integrale
 
-$f: ]a,b[ \to  \mathbb{R} \text{ continua }, c \in ]a,b[ \forall x \in ]a,b[, I_c \text{ è derivabilie in x   e vale } I'_c=f(x)$
+$f: ]a,b[ \to  \mathbb{R}\space$ continua $, c \in ]a,b[$ $\forall x \in ]a,b[$, $I_c$ è derivabilie in x  e vale  $I'_c(x)=f(x)$
 
 $(\frac{d}{dx} \int_c^x f(t) \space dt =f(x) \forall x \in ]a,b[)$
 
@@ -160,7 +164,7 @@ $\displaystyle \lim_{h \rightarrow +0} \frac{1}{h}\int_x^{x+h} f = f(x) \iff \fo
 
 ## Teorema fondamentale del calcolo (Formula di torricelli)
 
-Teorema: Sia $f:]a_0,b_0[ \to \mathbb{R}$ continua, Sia $F:]a_0,b_0[ \to \mathbb{R}$ primitiva di $F$ e siano $a,b \in ]a_0,b_0[$  allora vale $\int _a^b f(x) \space dx =F(b)-F(a)=[F(x)]_a^b=F(x)|_a^b$
+**Teorema:** Sia $f:]a_0,b_0[ \to \mathbb{R}$ continua, Sia $F:]a_0,b_0[ \to \mathbb{R}$ primitiva di $F$ e siano $a,b \in ]a_0,b_0[$  allora vale $\int _a^b f(x) \space dx =F(b)-F(a)=[F(x)]_a^b=F(x)|_a^b$
 
 
 <details>
@@ -173,7 +177,7 @@ fai un esempio del calcolo.
 </details>
 
 
-Dim : Per il teorema (versione 1), fissata $c\in ]a,b[$ $I_c$ è una proimitiva di $f$. F è una primitiva di $f \implies \exists k\in \mathbb{R}$ tale che $F(x) = I_c(x)+k \forall x \in ]a,b[, \space F(b)-F(a)=I_c(b)+k-(I_c(a)+k)=I_c(b)-I_c(a)=\int_c^b f - \int_c^a f= \int_c^b f + \int _a^c f=\int_a^b f(x)\space dx$ 
+Dim : Per il teorema (versione 1), fissata $c\in ]a,b[$ $I_c$ è una proimitiva di $f$. F è una primitiva di $f \implies \exists k\in \mathbb{R}$ tale che $F(x) = I_c(x)+k \forall x \in ]a,b[, \space F(b)-F(a)=I_c(b)+k-(I_c(a)+k)$ $=I_c(b)-I_c(a)=\int_c^b f - \int_c^a f$ $= \int_c^b f + \int _a^c f=\int_a^b f(x)\space dx$ 
 
 
 
@@ -193,23 +197,16 @@ Dim : Per il teorema (versione 1), fissata $c\in ]a,b[$ $I_c$ è una proimitiva 
 | $\ln x$                     | $x \ln x - x$                                                                                                                  |
 
 
-<details>
-<summary>
-esempio di integrale
-</summary>
+#### Primitive di funzioni composte
 
-fai un esempio 
+**primitiva generale di funzioni composte** $f:I\to J, g: J \to \mathbb{R}, I, J$ intervalli aperti, $f,g$ derivabile, allora $g \cdot f$ è derivabile in I $(g \cdot f)(x)=g(f(x))$ vale 
+$(g \cdot f) (x)=g'(f(x))- f'(x) \forall x \in I, g \cdot f$ è una primitiva di $h(x)=g'(f(x))f'(x)$ $\implies \int_a^b g'(f(x))f'(x) dx$ $=[g(f(x))]^{x=b}_{x=a}$
 
-</details>
-
-
-$f:I\to J, g: J \to \mathbb{R}, I, J$ intervalli aperti, $f,g$ derivabile, allora $g \cdot f$ è derivabile in I $(g \cdot f)(x)=g(f(x))$ vale 
-$(g \cdot f) (x)=g'(f(x))- f'(x) \forall x \in I, g \cdot f$ è una primitiva di $h(x)=g'(f(x))f'(x) \implies \int_a^b g'(f(x))f'(x) dx=[g(f(x))]^{x=b}_{x=a}$
-
-1. $g(z)=e^z, g'(z)=e^z, \space \int e^{f(x)}f'(x) \space dx=[e^{f(x)}]^{x=b}_{x=a}$
-2. $g(z) = ln(z), g'(x)=\frac{1}{z} z>0 \space \int_a^b \frac{f'(x)}{f(x)} dx = [ln f(x)]_{x=a}^{x=a}$  
-3. $g(z) = sin(z), g'(x)=cos(z) \space \int_a^b cos(f(x))f'(x) dx = [sin(f(x))]_{x=a}^{x=a}$  
-4. $g(z) = \frac{z^\alpha}{\alpha +1 }, g'(x)=z^{\alpha}, \alpha\neq -1, z \in  \text{ dominio della potenza di alpha+1 } \space \int_a^b f(x)^{\alpha}f'(x) dx = [\frac{f(x)^{\alpha+1}}{\alpha+1}]_{x=a}^{x=a}$  
+**Altre derivate composte**
+1. $g(z)=e^z, g'(z)=e^z,$ $\space \int e^{f(x)}f'(x) \space dx=[e^{f(x)}]^{x=b}_{x=a}$
+2. $g(z) = ln(z), g'(x)=\frac{1}{z} z>0$ $\space \int_a^b \frac{f'(x)}{f(x)} dx = [ln f(x)]_{x=a}^{x=a}$  
+3. $g(z) = sin(z), g'(x)=cos(z),$  $\space \int_a^b cos(f(x))f'(x) dx = [sin(f(x))]_{x=a}^{x=a}$  
+4. $g(z) = \frac{z^\alpha}{\alpha +1 }, g'(x)=z^{\alpha}, \alpha\neq -1, z \in$  dominio della potenza di $\alpha+1 \space \int_a^b f(x)^{\alpha}f'(x) dx = [\frac{f(x)^{\alpha+1}}{\alpha+1}]_{x=a}^{x=a}$  
 
 
 

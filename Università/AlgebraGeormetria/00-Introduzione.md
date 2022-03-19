@@ -1,6 +1,7 @@
 # Introduzione
 
 ![](vx_images/582452494826019.png)
+
 > it's about drive it's about power, we stay hungry , we devour, put in it the work put in it the hours, and take what's ours
 
 Agebra lineare:

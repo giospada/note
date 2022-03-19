@@ -83,12 +83,18 @@ c. $<v_1,\dots,v_n>$ generano V
 
 ## Uso dell'algoritmo di gauss sugli spazi vettoriali
 
-1. L'algoritmo di Gauss non cambia il sottospazio generato dalle righe di una matrice
-2. le righe non nulle di una matrice a scala sono indip
+**Prop 4.3.1**: data una matrice $A \in M_{n,m} (\mathbb{R})$ le operazioni elementerai di riga non cambiano lo sottospazio $\mathbb{R}^n$ generato dai vettori riga $A$
 
 
+**Prop 4.3.3** Se una matrice A è a scala per riga, i suoi vettori riga non nulli sono linearmente indipendenti
 
-data una matrix$\begin{pmatrix}R1\\R2\\\vdots\\R_k\end{pmatrix}$Gauss $\to$ $\begin{pmatrix}\bar{R1}\\\bar{R2}\\\vdots\\\bar{R_k}\end{pmatrix}$
+### Utilizzo negli esercizi
 
-$<R_1,\dots,R_k>=<\bar{R_1},\dots,\bar{R_k}>$
+**trovare una base di un sottospazio** (cercare se una serie di vettori sono linearmenete indipendenti):
+- creare la matrice che contiene come righe i vettori
+- utilizzare l'algorimto di gaus per creare una matrice a scala
+- i vettori formati da righe non nulle sono linearmente indipendenti
+
+
+**per ottenere una base di un sottospazio $\mathbb{R}^n$**
 
