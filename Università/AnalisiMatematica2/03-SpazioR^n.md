@@ -20,8 +20,8 @@ $\mathbb{R}^2$: spazio ordinario
 
 
 **Proprietà**:
-1. simmetrico $<x,y>= <y,x>$  
-2. $\forall x,y,z \in \mathbb{R}^n, \forall \lambda,\mu \in \mathbb{R}$ vale $<\lambda x, \mu y, z>= \lambda<x,z>+ \mu <y,z>$
+1. simmetrico: $<x,y>= <y,x>$  
+2. bilnearità: $\forall x,y,z \in \mathbb{R}^n, \forall \lambda,\mu \in \mathbb{R}$ vale $<\lambda x, \mu y, z>= \lambda<x,z>+ \mu <y,z>$
 3. $\forall x \in \mathbb{R}^n$ vale  $<x,x> \geq 0$
     - (3 bis) $<x,x>=0 \implies x=\underline{0}$
 
@@ -39,7 +39,7 @@ $\mathbb{R}^2$: spazio ordinario
 **proprietà**:
 1. $\forall x \in \mathbb{R}^n, \lambda \in \mathbb{R}$ vale $|| \lambda x || = |\lambda| \times ||x||$
 2.  $||x|| \geq 0, \forall x \in \mathbb{R}^n$  $||x||\leq 0 \iff x=0$
-    - disuguaglianza tirangolare $\forall x,y \in \mathbb{R}^n$ $||x+y||\leq ||x||+||y||$
+3. disuguaglianza tirangolare $\forall x,y \in \mathbb{R}^n$ $||x+y||\leq ||x||+||y||$
 
 
 
@@ -48,7 +48,7 @@ $\mathbb{R}^2$: spazio ordinario
 dimostrazione prop 1
 </summary>
 
-$\sqrt{<\lambda x,\lambda x>} = \sqrt{\sum^n_{k=1} (\lambda x)^2}=\sqrt{\sum^n_{k=1} \lambda^2  (x)^2}= |\lambda| ||x||$
+$\sqrt{<\lambda x,\lambda x>} = \sqrt{\sum^n_{k=1} (\lambda x)^2}=\sqrt{\sum^n_{k=1} \lambda^2  (x)^2}= |\lambda| |x|$
 
 </details>
 
@@ -97,7 +97,6 @@ dimostrazione
 
 $|x+y|^2=|x|^2+|y|^2+2<x,y> \leq |x|^2+|y|^2+2<x,y>$ per la disuguaglianza di cauchy-shwarez
 $\le|x|^2+|y|^2+2|x||y|$  ovvero $\leq (|x|+|y|)^2$
-
 </details>
 
 
