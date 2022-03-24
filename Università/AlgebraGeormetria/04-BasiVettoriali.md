@@ -2,7 +2,7 @@
 
  **def**: sia V uno spazio vettoriale, una base di vettoriale $\{v_1,\dots,v_n\}$ tali che:
  1. $v_1,\dots,v_n$ generano V  cioè V è l'insieme lineare generato da $v_1,\dots,v_n$ ($V=<v_1,\dots,v_n>$)
- 1. $v_1,\dots,v_n$ sono linearmente indiependenti
+ 2. $v_1,\dots,v_n$ sono linearmente indiependenti
  
 <details>
 <summary>
@@ -97,4 +97,5 @@ c. $<v_1,\dots,v_n>$ generano V
 
 
 **per ottenere una base di un sottospazio $\mathbb{R}^n$**
-
+- creare una matrice a scala con i vettori presi in considerazione
+- i vettori $v_1,\dots,v_m$ devono avere $m<n$, aggiungiamo $n-m$ righe e le completiamo con dei vettori linearmente indipendenti	 

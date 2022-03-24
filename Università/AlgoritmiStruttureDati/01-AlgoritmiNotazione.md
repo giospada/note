@@ -45,7 +45,7 @@ $\forall f(n) ,g(n) : f(n) = Θ(g(n)) \iff f(n) = O(g(n)) \wedge f(n) = \Omega(g
 
 Limite asintotico inferiore stretto, indica una funzione con crescita strettamente minore
 
-$o(g(n)) = \{f(n) : \text{per qualsiasi costante c > 0, esiste una costante n0 > 0 tale che  } 0 ≤ f(n) < cg(n) \forall n ≥ n0\}$
+$o(g(n)) = \{f(n) :$ per qualsiasi costante c > 0, esiste una costante $n_0 > 0$ tale che  $0 ≤ f(n) < cg(n) \forall n ≥ n_0\}$
 
 oppure
 $\displaystyle \lim_{x \rightarrow +\infty} \frac{f(x)}{g(x)}=0$
@@ -55,7 +55,7 @@ $\displaystyle \lim_{x \rightarrow +\infty} \frac{f(x)}{g(x)}=0$
 
 Limite asintotico maggiore stretto, indica una funzione che ha una crescita maggiore
 
-$\omega(g(n)) = \{f(n) : \text{per qualsiasi costante c > 0, esiste una costante n0 > 0 tale che  }     cg(n) <  f(n), \forall n ≥ n0\}$
+$\omega(g(n)) = \{f(n) :$ per qualsiasi costante c > 0, esiste una costante $n_0 > 0$ tale che    $cg(n) <  f(n), \forall n ≥ n0\}$
 
 
 ## Proprietà della notazione asintotica
