@@ -87,6 +87,13 @@
 <li><a href="#utilizzo-negli-esercizi"><span class="toc-section-number">5.2.1</span> Utilizzo negli esercizi</a></li>
 </ul></li>
 </ul></li>
+<li><a href="#funzioni"><span class="toc-section-number">6</span> Funzioni</a><ul>
+<li><a href="#immagine"><span class="toc-section-number">6.1</span> Immagine</a></li>
+<li><a href="#iniettiva"><span class="toc-section-number">6.2</span> Iniettiva</a></li>
+<li><a href="#composta"><span class="toc-section-number">6.3</span> Composta</a></li>
+<li><a href="#assegnare-un-applicazione-lineare"><span class="toc-section-number">6.4</span> Assegnare un applicazione lineare</a></li>
+<li><a href="#calcolo-del-nucleo"><span class="toc-section-number">6.5</span> Calcolo del nucleo</a></li>
+</ul></li>
 </ul>
 </nav>
 <h1 id="introduzione"><span class="header-section-number">1</span> Introduzione</h1>
@@ -443,6 +450,78 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <li>i vettori formati da righe non nulle sono linearmente indipendenti</li>
 </ul>
 <p><strong>per ottenere una base di un sottospazio <span class="math inline">\(\mathbb{R}^n\)</span></strong></p>
+<ul>
+<li>creare una matrice a scala con i vettori presi in considerazione</li>
+<li>i vettori <span class="math inline">\(v_1,\dots,v_m\)</span> devono avere <span class="math inline">\(m&lt;n\)</span>, aggiungiamo <span class="math inline">\(n-m\)</span> righe e le completiamo con dei vettori linearmente indipendenti</li>
+</ul>
+<h1 id="funzioni"><span class="header-section-number">6</span> Funzioni</h1>
+<p><strong>def</strong>: <span class="math inline">\(f:A \to B\)</span> una legge che per ogni elemento di A associa un solo elemento di B è un sottoinsieme <span class="math inline">\(\Gamma\)</span> di <span class="math inline">\(A\times B\)</span> tale che <span class="math inline">\(\forall a \in A\)</span> , <span class="math inline">\(\exists ! b\)</span> tale che <span class="math inline">\((a,b) \in \Gamma\)</span>, f è su <span class="math inline">\(x \forall b \in B \exists a \in A\)</span> tale che <span class="math inline">\(f(a)=b\)</span></p>
+<h2 id="immagine"><span class="header-section-number">6.1</span> Immagine</h2>
+<p><span class="math inline">\(Im\space f=\{f(a)|a\in A\}={b\in B | \exists a \in A, b=f(a)}\)</span></p>
+<h2 id="iniettiva"><span class="header-section-number">6.2</span> Iniettiva</h2>
+<p>f è iniettiva se <span class="math inline">\(a_1 \neq a_2 \implies f(a_1)\neq f(a_2)=\)</span>, oppure <span class="math inline">\(f(a_1)= f(a_2) \implies a_1 = a_2\)</span></p>
+<h2 id="composta"><span class="header-section-number">6.3</span> Composta</h2>
+<p>Se <span class="math inline">\(f: A \to B\)</span>, <span class="math inline">\(g:B \to C\)</span> allora <span class="math inline">\(g \cdot f: A \to C\)</span></p>
+<p>V,W spaziz vettoriali, <span class="math inline">\(F: V \to W\)</span> si dice applicazione lineare di se :</p>
+<ul>
+<li><span class="math inline">\(F(v+u)=F(u)+F(u), \forall v,u \in V\)</span></li>
+<li><span class="math inline">\(\lambda F(v)=F(\lambda u)\forall v \in V, \lambda \in \mathbb{R}\)</span></li>
+</ul>
+<p>Conseguenza <span class="math inline">\(F(\mu u+ \lambda v)=\mu F(u)+ \lambda F(v)\)</span></p>
+<p><strong>prep</strong>: Siano <span class="math inline">\(V,W\)</span> spazi vettoriali, <span class="math inline">\(F: V \to W\)</span> è un applicazione lineare allora <span class="math inline">\(F(\underline{0}_v)=\underline{0}_w\)</span></p>
+<details>
+<p><summary> dimostrazione </summary></p>
+<p><span class="math inline">\(F(0_v)=F(0 \times 0_v)=0 F(0_v)=0_w\)</span></p>
+</details>
+<p><strong>Teorema 5.1.7</strong> Siano V e W due spazi vettoriali. Se <span class="math inline">\(v_1,\dots,v_n\)</span> è una base di V e consideriamo n vettori <span class="math inline">\(w_1,\dots,w_n \in W\)</span> non necessariamente distinti, allora esiste ed è unica un’ applicazione lineare <span class="math inline">\(L:V\to W\)</span> tale che <span class="math inline">\(L(v_1)=w_1,\dots,L(v_n)=w_n\)</span></p>
+<h2 id="assegnare-un-applicazione-lineare"><span class="header-section-number">6.4</span> Assegnare un applicazione lineare</h2>
+<p><span class="math inline">\(F: \mathbb{R} \to \mathbb{R}^m\)</span></p>
+<ol type="1">
+<li><span class="math inline">\(F(x_1,\dots,x_n)=(\dots)\)</span></li>
+<li><span class="math inline">\(F(e_1)=\dots, \dots,F(e_n)=\dots\)</span></li>
+<li>Assegnamo <span class="math inline">\(A \in M_{m * n }(\mathbb{R})\)</span></li>
+</ol>
+<details>
+<p><summary> esempio </summary></p>
+<p>Primo modo:<br />
+<span class="math inline">\((5e_1+3e_2, ,-e_2, e_1-e_2)\)</span></p>
+<p>Secondo modo</p>
+<p><span class="math inline">\(F(e_1)=5e_1+3e_2\)</span> <span class="math inline">\(F(e_2)=-e_2\)</span> <span class="math inline">\(F(e_3)=e_1-e_2\)</span></p>
+<p>Terzo modo</p>
+<p><span class="math inline">\(A= \begin{pmatrix} 5 &amp; 0 &amp; 1 \\ 3 &amp; -1 &amp; -1 \end{pmatrix}\)</span></p>
+</details>
+<p><strong>Def</strong>: Sia F <span class="math inline">\(V \to W\)</span> applicazione lineare <span class="math inline">\(Im \space F= \{F(v)| v\in V\} \subseteq W\)</span> <span class="math inline">\(\ker F= \{v\in V|F(v)=\underline{0}\} \subseteq V\)</span></p>
+<p><strong>Prop</strong>: <span class="math inline">\(\ker F\)</span> sottospazio di V, <span class="math inline">\(Im \space F\)</span> è sottospazio di <span class="math inline">\(W\)</span></p>
+<p><strong>Dim</strong>: <span class="math inline">\(0_v \in \ker F\)</span> perchè <span class="math inline">\(F(0_v)=0_w\)</span></p>
+<p><strong>Prop</strong> Sia <span class="math inline">\(F V \to W\)</span> applicazione lineare:</p>
+<ol type="1">
+<li>F è surrettiva <span class="math inline">\(\iff Im \space F =W\)</span></li>
+<li>F è iniettiva <span class="math inline">\(\iff \ker F =\{\underline{0}\}\)</span></li>
+</ol>
+<blockquote>
+<p>Nota <span class="math inline">\(\{\underline{0}\}\)</span> ha dim 0, una sua base è <span class="math inline">\(\emptyset\)</span> Un sottospazio di dim 1 è del tipo <span class="math inline">\(\{\lambda u |\lambda \in \mathbb{R}\}\)</span> con <span class="math inline">\(u \neq \underline{0}=&lt;u&gt;\)</span></p>
+</blockquote>
+<details>
+<p><summary> dim </summary></p>
+<p>Supponiamo che F è iniettiva mostriamo che <span class="math inline">\(\ker F =\{\underline{0}\}\)</span> ricordiamo che F è iniettiva se <span class="math inline">\(F(u)=F(v)\implies u=v\)</span></p>
+</details>
+<h2 id="calcolo-del-nucleo"><span class="header-section-number">6.5</span> Calcolo del nucleo</h2>
+<p><span class="math inline">\(F:\mathbb{R}^n \to \mathbb{R}^m\)</span></p>
+<p><span class="math inline">\(\ker F=\{x\in \mathbb{R}^n|F(x)=\underline{0}\}\)</span></p>
+<p>Sia A matrice associata ad F</p>
+<p>cioè <span class="math inline">\(F=L_a\)</span> cioè <span class="math inline">\(F(x)=Ax\)</span>, <span class="math inline">\(\ker F=\{x\in \mathbb{R}^n | A x= \underline{0}\}\)</span></p>
+<p>Quindi <span class="math inline">\(\ker F\)</span> è l’insieme delle soluzioni del sistema lineare omogeneo associato ad A</p>
+<details>
+<p><summary> esmpio </summary></p>
+<p>Sia <span class="math inline">\(F :\mathbb{R}^3 \to \mathbb{R}^3\)</span> definita da:</p>
+<ul>
+<li><span class="math inline">\(F(e_1)=e_1-e_2+2e_3=(1,-1,2)\)</span></li>
+<li><span class="math inline">\(F(e_2)=e_1+e_2-e_3=(1,1,-1)\)</span></li>
+<li><span class="math inline">\(F(e_3)=2e_2+e_3=(2,0,1)\)</span></li>
+</ul>
+<p><span class="math inline">\(A=\begin{pmatrix}F(e_1) &amp; F(e_2) &amp;F(e_3) \\\ 1 &amp; 1 &amp; 2 \\ .1 &amp; 1 &amp;0 \\ 2 &amp; -1 &amp; 1\end{pmatrix}\)</span></p>
+<p><span class="math inline">\(\ker F={x \in \mathbb{R}^3| F(x)=\underline{0}}\)</span>= <span class="math inline">\({x \in \mathbb{R}^3| A x= \underline{0}}\)</span></p>
+</details>
 <button style="position: fixed; bottom: 20px; right: 30px; z-index: 99; border: none; outline: none; cursor: pointer; padding: 9px; border-radius: 8px; font-size: 18px; background: var(--dracula-current-line); color: var(--dracula-background);" onclick=" document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">
     top
 </button>

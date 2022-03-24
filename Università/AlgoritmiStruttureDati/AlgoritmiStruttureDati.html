@@ -75,7 +75,17 @@
 </ul></li>
 <li><a href="#binary-search-tree"><span class="toc-section-number">4</span> Binary Search Tree</a><ul>
 <li><a href="#implementazione"><span class="toc-section-number">4.1</span> Implementazione</a></li>
-<li><a href="#operazioni"><span class="toc-section-number">4.2</span> Operazioni</a></li>
+</ul></li>
+<li><a href="#avl"><span class="toc-section-number">5</span> AVL</a><ul>
+<li><a href="#operazioni"><span class="toc-section-number">5.1</span> Operazioni</a></li>
+</ul></li>
+<li><a href="#hashmap"><span class="toc-section-number">6</span> HashMap</a><ul>
+<li><a href="#costruzione"><span class="toc-section-number">6.1</span> Costruzione</a></li>
+<li><a href="#funzioni-hash-esempi"><span class="toc-section-number">6.2</span> Funzioni Hash (esempi)</a></li>
+<li><a href="#problema-delle-collisioni"><span class="toc-section-number">6.3</span> Problema delle collisioni</a><ul>
+<li><a href="#concatenamento"><span class="toc-section-number">6.3.1</span> Concatenamento</a></li>
+<li><a href="#inidirizzamento-aperto"><span class="toc-section-number">6.3.2</span> Inidirizzamento aperto</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -103,11 +113,11 @@
 <p><span class="math inline">\(\forall f(n) ,g(n) : f(n) = Θ(g(n)) \iff f(n) = O(g(n)) \wedge f(n) = \Omega(g(n))\)</span></p>
 <h3 id="o-piccolo"><span class="header-section-number">1.1.5</span> O piccolo</h3>
 <p>Limite asintotico inferiore stretto, indica una funzione con crescita strettamente minore</p>
-<p><span class="math inline">\(o(g(n)) = \{f(n) : \text{per qualsiasi costante c &gt; 0, esiste una costante n0 &gt; 0 tale che  } 0 ≤ f(n) &lt; cg(n) \forall n ≥ n0\}\)</span></p>
+<p><span class="math inline">\(o(g(n)) = \{f(n) :\)</span> per qualsiasi costante c &gt; 0, esiste una costante <span class="math inline">\(n_0 &gt; 0\)</span> tale che <span class="math inline">\(0 ≤ f(n) &lt; cg(n) \forall n ≥ n_0\}\)</span></p>
 <p>oppure <span class="math inline">\(\displaystyle \lim_{x \rightarrow +\infty} \frac{f(x)}{g(x)}=0\)</span></p>
 <h3 id="omega-piccola"><span class="header-section-number">1.1.6</span> omega piccola</h3>
 <p>Limite asintotico maggiore stretto, indica una funzione che ha una crescita maggiore</p>
-<p><span class="math inline">\(\omega(g(n)) = \{f(n) : \text{per qualsiasi costante c &gt; 0, esiste una costante n0 &gt; 0 tale che  } cg(n) &lt; f(n), \forall n ≥ n0\}\)</span></p>
+<p><span class="math inline">\(\omega(g(n)) = \{f(n) :\)</span> per qualsiasi costante c &gt; 0, esiste una costante <span class="math inline">\(n_0 &gt; 0\)</span> tale che <span class="math inline">\(cg(n) &lt; f(n), \forall n ≥ n0\}\)</span></p>
 <h2 id="proprietà-della-notazione-asintotica"><span class="header-section-number">1.2</span> Proprietà della notazione asintotica</h2>
 <h3 id="transitiva"><span class="header-section-number">1.2.1</span> Transitiva</h3>
 <p><span class="math inline">\(f (n) = O(g(n)) \wedge g(n) = O(h(n)) \implies f (n) = O(h(n))\)</span></p>
@@ -312,7 +322,16 @@ T(n)=\Bigg\lbrace  \begin{matrix}1\\T(n-1)+T(n-2)+1\end{matrix}\quad \frac{\text
 <p><strong>proprietà</strong>: tutte le chiavi nel sottoalbero sinistro di v sono ≤ v.key e tutte le chiavi nel sottoalbero destro di v sono ≥ v.key</p>
 <h2 id="implementazione"><span class="header-section-number">4.1</span> Implementazione</h2>
 <p><code>search</code>: confronta la chiave con quella del nodo corrente se è uguale ritorna il valore se è maggiore va ricorsivamente nel sottoalbero destro se è minore nel sinistro(Costo <span class="math inline">\(O(h)\)</span> dove h è l’altezza dell’albero)</p>
-<p><code>min</code> e <code>max</code>: min va nel nodo più a sinistra del’albero che riesce a trovare , il massimo nel nodo più a destra # AVL</p>
+<p><code>min</code> e <code>max</code>: min va nel nodo più a sinistra del’albero che riesce a trovare , il massimo nel nodo più a destra</p>
+<p><code>predecessore</code> il predecessore di un nodo è l’elemento che ha come valore il più vicino rispetto (algoritmo se esiste il nodo a sinistra si chiama <code>max</code> sul nodo di sinsitra il risultato è il predecessore, se non esiste prende il nodo padre se è figlio sinistro se non lo è ritorna il parent)</p>
+<p><code>insert</code> incomincia dalla root e in base alla chiave che deve inserire se è maggiore del nodo a sinistra va in quello a destra se no va in quello a sinistra e ripete ricorsivamente questo procedimento finchè non trova un nodo nullo</p>
+<p><code>rimozione</code>: abbiamo tre casi:</p>
+<ul>
+<li>il nodo è una foglia lo rimuoviamo direttamente</li>
+<li>il nodo ha un figlio, mettiamo il figlio al poso del padre</li>
+<li>il nodo ha entrabi i figli prendiamo il massimo nel sottoalbero sinistro</li>
+</ul>
+<h1 id="avl"><span class="header-section-number">5</span> AVL</h1>
 <p>È un albero bilanciato che mantiene l’altezza dell’albero così che tutte le operazioni abbiano costo algoritmico per le operazioni di <code>search</code>, <code>delete</code> e <code>insert</code> in <span class="math inline">\(O(\log n)\)</span>n le caso pessimo.</p>
 <blockquote>
 <p><strong>Fattore di bilanciamento</strong> β(v) di un nodo v è dato dalla differenza tra l’altezza del sottoalbero sinistro e destro di v: β(v) = altezza(v.left) - altezza(v.right)</p>
@@ -321,7 +340,7 @@ T(n)=\Bigg\lbrace  \begin{matrix}1\\T(n-1)+T(n-2)+1\end{matrix}\quad \frac{\text
 <p><strong>Bilanciamento in altezza</strong> se per ogni nodo v le altezze dei suoi sottoalberi sinistro e destro differiscono al più di uno <span class="math inline">\(|\beta(v)|\le 1\)</span></p>
 </blockquote>
 <p>L’albero può essere <strong>sbilanciato</strong> dalle operazioni di insert e delete</p>
-<h2 id="operazioni"><span class="header-section-number">4.2</span> Operazioni</h2>
+<h2 id="operazioni"><span class="header-section-number">5.1</span> Operazioni</h2>
 <p><strong>UpdateHeight</strong>: TODO</p>
 <p><strong>Beta</strong>: TODO</p>
 <p><a href="https://virtuale.unibo.it/pluginfile.php/1113437/mod_resource/content/5/07%20-%20Alberi%20AVL.pdf">finire pag 13</a></p>
@@ -348,6 +367,43 @@ T(n)=\Bigg\lbrace  \begin{matrix}1\\T(n-1)+T(n-2)+1\end{matrix}\quad \frac{\text
 </ol>
 <p><img src="vx_images/310112717576001.png" /></p>
 </details>
+<h1 id="hashmap"><span class="header-section-number">6</span> HashMap</h1>
+<p><strong>Tabella Hash</strong> è un implementazione della struttura dati Dizionario con: <code>insert</code>,<code>serach</code> e <code>delete</code> in <span class="math inline">\(O(1)\)</span></p>
+<h2 id="costruzione"><span class="header-section-number">6.1</span> Costruzione</h2>
+<p><strong>Indichiamo</strong>:</p>
+<ul>
+<li><span class="math inline">\(U\)</span> insieme universo (tutte le chiavi possibili)</li>
+<li><span class="math inline">\(K\)</span> chiavi effettivamente utilizzate</li>
+</ul>
+<blockquote>
+<p>NOTA se la cardinalità di K è molto vicina a quella di U convienei utilizzare un indicizzamento diretto</p>
+<p>se la cardinalità di K è molto più piccola possiamo utilizzare un <strong>HashTable</strong></p>
+</blockquote>
+<p>Per creare la <strong>tabella hash abbiamo bisogno</strong> di:</p>
+<ul>
+<li><strong>funzione di Hash</strong><br />
+</li>
+<li>metodo per <strong>gestire le collisioni</strong></li>
+<li>un <strong>vettore di dimensione</strong> <span class="math inline">\(m=\Theta(|K|)\)</span></li>
+</ul>
+<h2 id="funzioni-hash-esempi"><span class="header-section-number">6.2</span> Funzioni Hash (esempi)</h2>
+<p>metodi per creare l’hash:</p>
+<ul>
+<li><strong>modulo per un numero primo</strong></li>
+<li><strong>moltiplicazione</strong> per esempio utilizzando la formula <span class="math inline">\(\lfloor m* (kC-\lfloor kC \rfloor)\rfloor\)</span> (C è una costante tra 1 e 0 ) il valore C è un valore buono è <span class="math inline">\((\sqrt{5}-1)/2\)</span> perchè è uniforme</li>
+<li><strong>codifica algebrica</strong> <span class="math inline">\((k_nx^n + k_{n−1}x ^{n−1} +\dots + k_1x + k_0) \mod m\)</span></li>
+</ul>
+<h2 id="problema-delle-collisioni"><span class="header-section-number">6.3</span> Problema delle collisioni</h2>
+<h3 id="concatenamento"><span class="header-section-number">6.3.1</span> Concatenamento</h3>
+<p><strong>concatenamento</strong>: le chiavi con lo stesso hash vengono memorizzate attraverso una lista concatenata</p>
+<h3 id="inidirizzamento-aperto"><span class="header-section-number">6.3.2</span> Inidirizzamento aperto</h3>
+<p><strong>indirizzamento aperto</strong> tutte le chiavi sono sullo stesso array, per scegliere la posizione degli hash giù utilizzati si utilizza la funzione hash modifica per prendere un indice</p>
+<p>Metodi di ispezionamento:</p>
+<ul>
+<li><strong>ispezione linerae</strong> semplicemente si prende una funziona hash ci sia aggiunge l’indice e si fa il modulo con il numero di celle libere (<span class="math inline">\(h(k,i)=(h&#39;(k)+i )\mod m\)</span> dove i è l’indice h’ è la funzione di hash e m è il numero di celle)</li>
+<li><strong>ispezione quadratica</strong> (<span class="math inline">\(h(k,i)=(h&#39;(k)+ic_2+i^2c_1) \mod m\)</span> e dove le c sono due costanti diverse tra loro, e m è la dimensione della tabella)</li>
+<li><strong>doppio hash</strong> (<span class="math inline">\(h(k, i) = (h_1(k) + ih_2(k)) \mod m\)</span> dove m è la dimensioni della tabella e h_1 e h_2 sono due funzioni hash, h_2 non deve dare come valore 0)</li>
+</ul>
 <button style="position: fixed; bottom: 20px; right: 30px; z-index: 99; border: none; outline: none; cursor: pointer; padding: 9px; border-radius: 8px; font-size: 18px; background: var(--dracula-current-line); color: var(--dracula-background);" onclick=" document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">
     top
 </button>
