@@ -11,6 +11,71 @@
       span.underline{text-decoration: underline;}
       div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
+  <style>
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
   <link rel="stylesheet" href="../img/style.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
   <!--[if lt IE 9]>
@@ -86,6 +151,14 @@
 <li><a href="#concatenamento"><span class="toc-section-number">6.3.1</span> Concatenamento</a></li>
 <li><a href="#inidirizzamento-aperto"><span class="toc-section-number">6.3.2</span> Inidirizzamento aperto</a></li>
 </ul></li>
+</ul></li>
+<li><a href="#algoritmi-ordinamento"><span class="toc-section-number">7</span> Algoritmi Ordinamento</a><ul>
+<li><a href="#selection-sort"><span class="toc-section-number">7.1</span> Selection Sort</a></li>
+<li><a href="#insertion-sort"><span class="toc-section-number">7.2</span> Insertion Sort</a></li>
+<li><a href="#bubble-sort"><span class="toc-section-number">7.3</span> Bubble Sort</a></li>
+<li><a href="#quick-sort"><span class="toc-section-number">7.4</span> Quick Sort</a></li>
+<li><a href="#marge-sort"><span class="toc-section-number">7.5</span> Marge Sort</a></li>
+<li><a href="#heapsort"><span class="toc-section-number">7.6</span> HeapSort</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -404,6 +477,160 @@ T(n)=\Bigg\lbrace  \begin{matrix}1\\T(n-1)+T(n-2)+1\end{matrix}\quad \frac{\text
 <li><strong>ispezione quadratica</strong> (<span class="math inline">\(h(k,i)=(h&#39;(k)+ic_2+i^2c_1) \mod m\)</span> e dove le c sono due costanti diverse tra loro, e m è la dimensione della tabella)</li>
 <li><strong>doppio hash</strong> (<span class="math inline">\(h(k, i) = (h_1(k) + ih_2(k)) \mod m\)</span> dove m è la dimensioni della tabella e h_1 e h_2 sono due funzioni hash, h_2 non deve dare come valore 0)</li>
 </ul>
+<h1 id="algoritmi-ordinamento"><span class="header-section-number">7</span> Algoritmi Ordinamento</h1>
+<p><strong>Tipi di Ordinamento:</strong></p>
+<ul>
+<li><strong>in loco:</strong> utilizza lo stesso array solamente cambiando le posizione</li>
+<li><strong>stabile</strong>: gli elementi con la stessa chiave rimangono nello stesso ordine</li>
+</ul>
+<h2 id="selection-sort"><span class="header-section-number">7.1</span> Selection Sort</h2>
+<p><strong>funzionamento</strong>: <strong>ricerca il minimo</strong> in tutto l’array tranne la parte che è già stata ordinata e lo <strong>scambia con il primo elemenento</strong> della parte non ordinata, il primo elemento della parte non ordinata ora è in ordine e quindi diventa parte della parte ordinata e ricomincia</p>
+<details>
+<p><summary> implementazione </summary></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">public</span> <span class="dt">static</span> <span class="dt">void</span> <span class="fu">selectionSort</span>(<span class="bu">Comparable</span> A[]) {</span>
+<span id="cb1-2"><a href="#cb1-2"></a>    <span class="kw">for</span> (<span class="dt">int</span> k = <span class="dv">0</span>; k &lt; A.<span class="fu">length</span> - <span class="dv">1</span>; k++) {</span>
+<span id="cb1-3"><a href="#cb1-3"></a>    <span class="co">// cerca il minimo A[m] in A[k..n-1]</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>    <span class="dt">int</span> m = k;</span>
+<span id="cb1-5"><a href="#cb1-5"></a>    <span class="kw">for</span> (<span class="dt">int</span> j = k + <span class="dv">1</span>; j &lt; A.<span class="fu">length</span>; j++)</span>
+<span id="cb1-6"><a href="#cb1-6"></a>        <span class="kw">if</span> (A[j].<span class="fu">compareTo</span>(A[m]) &lt; <span class="dv">0</span>)</span>
+<span id="cb1-7"><a href="#cb1-7"></a>            m = j;</span>
+<span id="cb1-8"><a href="#cb1-8"></a>        <span class="co">// scambia A[k] con A[m]</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>        <span class="kw">if</span> (m != k) {</span>
+<span id="cb1-10"><a href="#cb1-10"></a>            <span class="bu">Comparable</span> temp = A[m];</span>
+<span id="cb1-11"><a href="#cb1-11"></a>            A[m] = A[k];</span>
+<span id="cb1-12"><a href="#cb1-12"></a>            A[k] = temp;</span>
+<span id="cb1-13"><a href="#cb1-13"></a>        }</span>
+<span id="cb1-14"><a href="#cb1-14"></a>    }</span>
+<span id="cb1-15"><a href="#cb1-15"></a>}</span></code></pre></div>
+</details>
+<p><strong>Costo computazionale</strong>:<span class="math inline">\(\Theta(n^2)\)</span></p>
+<h2 id="insertion-sort"><span class="header-section-number">7.2</span> Insertion Sort</h2>
+<p><strong>funzionamento</strong>: tiene una parte ordinata e una non ordinata, prende il primo elemento della parte non ordinata e lo inserisce ordinandolo nella parte ordinata</p>
+<details>
+<p><summary> implementazione </summary></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">public</span> <span class="dt">static</span> <span class="dt">void</span> <span class="fu">insertionSort</span>(<span class="bu">Comparable</span> A[]) {</span>
+<span id="cb2-2"><a href="#cb2-2"></a>    <span class="kw">for</span> (<span class="dt">int</span> k = <span class="dv">1</span>; k &lt;= A.<span class="fu">length</span> - <span class="dv">1</span>; k++) {</span>
+<span id="cb2-3"><a href="#cb2-3"></a>        <span class="dt">int</span> j;</span>
+<span id="cb2-4"><a href="#cb2-4"></a>        <span class="bu">Comparable</span> x = A[k];</span>
+<span id="cb2-5"><a href="#cb2-5"></a>        <span class="co">// cerca la posizione j in cui inserire A[k]</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a>        <span class="kw">for</span> (j = <span class="dv">0</span>; j &lt; k; j++)</span>
+<span id="cb2-7"><a href="#cb2-7"></a>        <span class="kw">if</span> (A[j].<span class="fu">compareTo</span>(x) &gt; <span class="dv">0</span>) <span class="kw">break</span>;</span>
+<span id="cb2-8"><a href="#cb2-8"></a>        <span class="kw">if</span> (j &lt; k) {</span>
+<span id="cb2-9"><a href="#cb2-9"></a>            <span class="co">// Sposta A[j..k-1] in A[j+1..k]</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a>            <span class="kw">for</span> (<span class="dt">int</span> t = k; t &gt; j; t--)</span>
+<span id="cb2-11"><a href="#cb2-11"></a>                A[t] = A[t – <span class="dv">1</span>];</span>
+<span id="cb2-12"><a href="#cb2-12"></a>            <span class="co">// Inserisci A[k] in posizione j</span></span>
+<span id="cb2-13"><a href="#cb2-13"></a>            A[j] = x;</span>
+<span id="cb2-14"><a href="#cb2-14"></a>        }</span>
+<span id="cb2-15"><a href="#cb2-15"></a>    }</span>
+<span id="cb2-16"><a href="#cb2-16"></a>}</span></code></pre></div>
+</details>
+<p><strong>Costo computazionale</strong>:<span class="math inline">\(\Theta(n^2)\)</span></p>
+<h2 id="bubble-sort"><span class="header-section-number">7.3</span> Bubble Sort</h2>
+<p><strong>funzionamento</strong>: intera l’array finchè non è ordinato, ogni volta che trova un elemento minore di quello che segue li swappa e continua a ciclare</p>
+<details>
+<p><summary> implementazione </summary></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">public</span> <span class="dt">static</span> <span class="dt">void</span> <span class="fu">bubbleSort</span>(<span class="bu">Comparable</span> A[]) {</span>
+<span id="cb3-2"><a href="#cb3-2"></a>    <span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">1</span>; i &lt; A.<span class="fu">length</span>; i++) {</span>
+<span id="cb3-3"><a href="#cb3-3"></a>        <span class="dt">boolean</span> scambiAvvenuti = <span class="kw">false</span>;</span>
+<span id="cb3-4"><a href="#cb3-4"></a>        <span class="kw">for</span> (<span class="dt">int</span> j = <span class="dv">1</span>; j &lt;= A.<span class="fu">length</span> - i; j++) {</span>
+<span id="cb3-5"><a href="#cb3-5"></a>        <span class="co">// Se A[j-1] &gt; A[j], scambiali</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a>            <span class="kw">if</span> (A[j - <span class="dv">1</span>].<span class="fu">compareTo</span>(A[j]) &gt; <span class="dv">0</span>) {</span>
+<span id="cb3-7"><a href="#cb3-7"></a>                <span class="bu">Comparable</span> temp = A[j - <span class="dv">1</span>];</span>
+<span id="cb3-8"><a href="#cb3-8"></a>                A[j - <span class="dv">1</span>] = A[j];</span>
+<span id="cb3-9"><a href="#cb3-9"></a>                A[j] = temp;</span>
+<span id="cb3-10"><a href="#cb3-10"></a>                scambiAvvenuti = <span class="kw">true</span>;</span>
+<span id="cb3-11"><a href="#cb3-11"></a>            }</span>
+<span id="cb3-12"><a href="#cb3-12"></a>        }</span>
+<span id="cb3-13"><a href="#cb3-13"></a>    <span class="kw">if</span> (!scambiAvvenuti) <span class="kw">break</span>;</span>
+<span id="cb3-14"><a href="#cb3-14"></a>    }</span>
+<span id="cb3-15"><a href="#cb3-15"></a>}</span></code></pre></div>
+</details>
+<p><strong>Costo computazionale</strong>:<span class="math inline">\(\Theta(n^2)\)</span></p>
+<h2 id="quick-sort"><span class="header-section-number">7.4</span> Quick Sort</h2>
+<p><strong>funzionamento</strong>:</p>
+<ul>
+<li>divide: divide l’array in due parti in cui una contiene gli elementi più piccoli del pivot e l’altra gli elementi più grandi del pivot</li>
+<li>impera: combina i due sotto array chimando quicksort ricorsivamente</li>
+<li>combina: i due sottoarray sono già ordinati</li>
+</ul>
+<p><strong>funzionamento (partition)</strong>: Manteniamo due indici, inf e sup, che vengono fatti scorrere dalle estremità del vettore verso il centro</p>
+<details>
+<p><summary> implementazione </summary></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">public</span> <span class="dt">static</span> <span class="dt">void</span> <span class="fu">quickSort</span>(<span class="bu">Comparable</span> A[]) {</span>
+<span id="cb4-2"><a href="#cb4-2"></a>    <span class="fu">quickSortRec</span>(A, <span class="dv">0</span>, A.<span class="fu">length</span> - <span class="dv">1</span>);</span>
+<span id="cb4-3"><a href="#cb4-3"></a>}</span>
+<span id="cb4-4"><a href="#cb4-4"></a></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="kw">public</span> <span class="dt">static</span> <span class="dt">void</span> <span class="fu">quickSortRec</span>(<span class="bu">Comparable</span> A[], <span class="dt">int</span> i, <span class="dt">int</span> f) {</span>
+<span id="cb4-6"><a href="#cb4-6"></a>    <span class="kw">if</span> (i &gt;= f) <span class="kw">return</span>;</span>
+<span id="cb4-7"><a href="#cb4-7"></a>    <span class="dt">int</span> m = <span class="fu">partition</span>(A, i, f);</span>
+<span id="cb4-8"><a href="#cb4-8"></a>    <span class="fu">quickSortRec</span>(A, i, m - <span class="dv">1</span>);</span>
+<span id="cb4-9"><a href="#cb4-9"></a>    <span class="fu">quickSortRec</span>(A, m+<span class="dv">1</span>, f);</span>
+<span id="cb4-10"><a href="#cb4-10"></a>}</span>
+<span id="cb4-11"><a href="#cb4-11"></a></span>
+<span id="cb4-12"><a href="#cb4-12"></a></span>
+<span id="cb4-13"><a href="#cb4-13"></a><span class="kw">private</span> <span class="dt">static</span> <span class="dt">int</span> <span class="fu">partition</span>(<span class="bu">Comparable</span> A[], <span class="dt">int</span> i, <span class="dt">int</span> f) {</span>
+<span id="cb4-14"><a href="#cb4-14"></a>    <span class="dt">int</span> inf = i, sup = f + <span class="dv">1</span>;</span>
+<span id="cb4-15"><a href="#cb4-15"></a>    <span class="bu">Comparable</span> temp, x = A[i];</span>
+<span id="cb4-16"><a href="#cb4-16"></a>    <span class="kw">while</span> (<span class="kw">true</span>) {</span>
+<span id="cb4-17"><a href="#cb4-17"></a>        <span class="kw">do</span> {</span>
+<span id="cb4-18"><a href="#cb4-18"></a>            inf++;</span>
+<span id="cb4-19"><a href="#cb4-19"></a>        } <span class="kw">while</span> (inf &lt;= f &amp;&amp; A[inf].<span class="fu">compareTo</span>(x) &lt;= <span class="dv">0</span>);</span>
+<span id="cb4-20"><a href="#cb4-20"></a>        <span class="kw">do</span> {</span>
+<span id="cb4-21"><a href="#cb4-21"></a>            sup--;</span>
+<span id="cb4-22"><a href="#cb4-22"></a>        } <span class="kw">while</span> (A[sup].<span class="fu">compareTo</span>(x) &gt; <span class="dv">0</span>);</span>
+<span id="cb4-23"><a href="#cb4-23"></a>        <span class="kw">if</span> (inf &lt; sup) {</span>
+<span id="cb4-24"><a href="#cb4-24"></a>            temp = A[inf];</span>
+<span id="cb4-25"><a href="#cb4-25"></a>            A[inf] = A[sup];</span>
+<span id="cb4-26"><a href="#cb4-26"></a>            A[sup] = temp;</span>
+<span id="cb4-27"><a href="#cb4-27"></a>        } <span class="kw">else</span> <span class="kw">break</span>;</span>
+<span id="cb4-28"><a href="#cb4-28"></a>    }</span>
+<span id="cb4-29"><a href="#cb4-29"></a>    temp = A[i];</span>
+<span id="cb4-30"><a href="#cb4-30"></a>    A[i] = A[sup];</span>
+<span id="cb4-31"><a href="#cb4-31"></a>    A[sup] = temp;</span>
+<span id="cb4-32"><a href="#cb4-32"></a>    <span class="kw">return</span> sup;</span>
+<span id="cb4-33"><a href="#cb4-33"></a>}</span></code></pre></div>
+</details>
+<p><strong>Costo di ordinamento</strong> peggiore <span class="math inline">\(\Theta (n^2)\)</span> (scegliendo come pivot il numero più piccolo), migliore <span class="math inline">\(\Theta (n \log n)\)</span> (scegliendo il numero che divide in esattamente due array)</p>
+<h2 id="marge-sort"><span class="header-section-number">7.5</span> Marge Sort</h2>
+<p><strong>funzionamento</strong>:</p>
+<ul>
+<li>divide: si divide l’array a metà</li>
+<li>impera:si chima la procedura su entrambe le metà partizionate</li>
+<li>combina:gli array sono ordinati perchè abbiamo chiamato il merge sort quindi li mergiamo togliendo il più piccolo dai due e mettendolo nella prima posizione</li>
+</ul>
+<details>
+<p><summary> implementazione </summary></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">public</span> <span class="dt">static</span> <span class="dt">void</span> <span class="fu">mergeSort</span>(<span class="bu">Comparable</span> A[]) {</span>
+<span id="cb5-2"><a href="#cb5-2"></a>    <span class="fu">mergeSortRec</span>(A, <span class="dv">0</span>, A.<span class="fu">length</span> - <span class="dv">1</span>);</span>
+<span id="cb5-3"><a href="#cb5-3"></a>}</span>
+<span id="cb5-4"><a href="#cb5-4"></a></span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="kw">private</span> <span class="dt">static</span> <span class="dt">void</span> <span class="fu">mergeSortRec</span>(<span class="bu">Comparable</span> A[], <span class="dt">int</span> i, <span class="dt">int</span> f) {</span>
+<span id="cb5-6"><a href="#cb5-6"></a>    <span class="kw">if</span> (i &gt;= f) <span class="kw">return</span>;</span>
+<span id="cb5-7"><a href="#cb5-7"></a>    <span class="dt">int</span> m = (i + f) / <span class="dv">2</span>;</span>
+<span id="cb5-8"><a href="#cb5-8"></a>    <span class="fu">mergeSortRec</span>(A, i, m);</span>
+<span id="cb5-9"><a href="#cb5-9"></a>    <span class="fu">mergeSortRec</span>(A, m + <span class="dv">1</span>, f);</span>
+<span id="cb5-10"><a href="#cb5-10"></a>    <span class="fu">merge</span>(A, i, m, f);</span>
+<span id="cb5-11"><a href="#cb5-11"></a>}</span>
+<span id="cb5-12"><a href="#cb5-12"></a></span>
+<span id="cb5-13"><a href="#cb5-13"></a><span class="kw">private</span> <span class="dt">static</span> <span class="dt">void</span> <span class="fu">merge</span>(<span class="bu">Comparable</span> A[], <span class="dt">int</span> i1, <span class="dt">int</span> f1, <span class="dt">int</span> f2) {</span>
+<span id="cb5-14"><a href="#cb5-14"></a>    <span class="bu">Comparable</span>[] X = <span class="kw">new</span> <span class="bu">Comparable</span>[f2 - i1 + <span class="dv">1</span>];</span>
+<span id="cb5-15"><a href="#cb5-15"></a>    <span class="dt">int</span> i = <span class="dv">0</span>, i2 = f1 + <span class="dv">1</span>, k = i1;</span>
+<span id="cb5-16"><a href="#cb5-16"></a>    <span class="kw">while</span> (i1 &lt;= f1 &amp;&amp; i2 &lt;= f2) {</span>
+<span id="cb5-17"><a href="#cb5-17"></a>        <span class="kw">if</span> (A[i1].<span class="fu">compareTo</span>(A[i2]) &lt; <span class="dv">0</span>)</span>
+<span id="cb5-18"><a href="#cb5-18"></a>            X[i++] = A[i1++];</span>
+<span id="cb5-19"><a href="#cb5-19"></a>        <span class="kw">else</span></span>
+<span id="cb5-20"><a href="#cb5-20"></a>            X[i++] = A[i2++];</span>
+<span id="cb5-21"><a href="#cb5-21"></a>    }</span>
+<span id="cb5-22"><a href="#cb5-22"></a>    <span class="kw">if</span> (i1 &lt;= f1)</span>
+<span id="cb5-23"><a href="#cb5-23"></a>        <span class="kw">for</span> (<span class="dt">int</span> j = i1; j &lt;= f1; j++, i++) X[i] = A[j];</span>
+<span id="cb5-24"><a href="#cb5-24"></a>    <span class="kw">else</span></span>
+<span id="cb5-25"><a href="#cb5-25"></a>        <span class="kw">for</span> (<span class="dt">int</span> j = i2; j &lt;= f2; j++, i++) X[i] = A[j];</span>
+<span id="cb5-26"><a href="#cb5-26"></a>    <span class="kw">for</span> (<span class="dt">int</span> t = <span class="dv">0</span>; k &lt;= f2; k++, t++) A[k] = X[t];</span>
+<span id="cb5-27"><a href="#cb5-27"></a>}</span></code></pre></div>
+</details>
+<p><strong>costo computaizonale</strong>: <span class="math inline">\(\Theta (n \log n)\)</span> (metodo dell’esperto <span class="math inline">\(T(n)=2T\Bigl(\frac{n}{2}\Bigr)+n\)</span>)</p>
+<h2 id="heapsort"><span class="header-section-number">7.6</span> HeapSort</h2>
 <button style="position: fixed; bottom: 20px; right: 30px; z-index: 99; border: none; outline: none; cursor: pointer; padding: 9px; border-radius: 8px; font-size: 18px; background: var(--dracula-current-line); color: var(--dracula-background);" onclick=" document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">
     top
 </button>

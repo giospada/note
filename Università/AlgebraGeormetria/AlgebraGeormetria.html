@@ -87,12 +87,16 @@
 <li><a href="#utilizzo-negli-esercizi"><span class="toc-section-number">5.2.1</span> Utilizzo negli esercizi</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#funzioni"><span class="toc-section-number">6</span> Funzioni</a><ul>
-<li><a href="#immagine"><span class="toc-section-number">6.1</span> Immagine</a></li>
-<li><a href="#iniettiva"><span class="toc-section-number">6.2</span> Iniettiva</a></li>
-<li><a href="#composta"><span class="toc-section-number">6.3</span> Composta</a></li>
-<li><a href="#assegnare-un-applicazione-lineare"><span class="toc-section-number">6.4</span> Assegnare un applicazione lineare</a></li>
-<li><a href="#calcolo-del-nucleo"><span class="toc-section-number">6.5</span> Calcolo del nucleo</a></li>
+<li><a href="#applicazini-lineari-e-nuclei"><span class="toc-section-number">6</span> Applicazini lineari e nuclei</a><ul>
+<li><a href="#funzioni"><span class="toc-section-number">6.1</span> Funzioni</a><ul>
+<li><a href="#immagine"><span class="toc-section-number">6.1.1</span> Immagine</a></li>
+<li><a href="#iniettiva"><span class="toc-section-number">6.1.2</span> Iniettiva</a></li>
+<li><a href="#composta"><span class="toc-section-number">6.1.3</span> Composta</a></li>
+</ul></li>
+<li><a href="#applicazioni-lineari"><span class="toc-section-number">6.2</span> Applicazioni lineari</a></li>
+<li><a href="#assegnare-un-applicazione-lineare"><span class="toc-section-number">6.3</span> Assegnare un applicazione lineare</a></li>
+<li><a href="#calcolo-del-nucleo"><span class="toc-section-number">6.4</span> Calcolo del nucleo</a></li>
+<li><a href="#teorema-della-dimensione"><span class="toc-section-number">6.5</span> Teorema della dimensione</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -454,14 +458,16 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <li>creare una matrice a scala con i vettori presi in considerazione</li>
 <li>i vettori <span class="math inline">\(v_1,\dots,v_m\)</span> devono avere <span class="math inline">\(m&lt;n\)</span>, aggiungiamo <span class="math inline">\(n-m\)</span> righe e le completiamo con dei vettori linearmente indipendenti</li>
 </ul>
-<h1 id="funzioni"><span class="header-section-number">6</span> Funzioni</h1>
+<h1 id="applicazini-lineari-e-nuclei"><span class="header-section-number">6</span> Applicazini lineari e nuclei</h1>
+<h2 id="funzioni"><span class="header-section-number">6.1</span> Funzioni</h2>
 <p><strong>def</strong>: <span class="math inline">\(f:A \to B\)</span> una legge che per ogni elemento di A associa un solo elemento di B è un sottoinsieme <span class="math inline">\(\Gamma\)</span> di <span class="math inline">\(A\times B\)</span> tale che <span class="math inline">\(\forall a \in A\)</span> , <span class="math inline">\(\exists ! b\)</span> tale che <span class="math inline">\((a,b) \in \Gamma\)</span>, f è su <span class="math inline">\(x \forall b \in B \exists a \in A\)</span> tale che <span class="math inline">\(f(a)=b\)</span></p>
-<h2 id="immagine"><span class="header-section-number">6.1</span> Immagine</h2>
+<h3 id="immagine"><span class="header-section-number">6.1.1</span> Immagine</h3>
 <p><span class="math inline">\(Im\space f=\{f(a)|a\in A\}={b\in B | \exists a \in A, b=f(a)}\)</span></p>
-<h2 id="iniettiva"><span class="header-section-number">6.2</span> Iniettiva</h2>
+<h3 id="iniettiva"><span class="header-section-number">6.1.2</span> Iniettiva</h3>
 <p>f è iniettiva se <span class="math inline">\(a_1 \neq a_2 \implies f(a_1)\neq f(a_2)=\)</span>, oppure <span class="math inline">\(f(a_1)= f(a_2) \implies a_1 = a_2\)</span></p>
-<h2 id="composta"><span class="header-section-number">6.3</span> Composta</h2>
+<h3 id="composta"><span class="header-section-number">6.1.3</span> Composta</h3>
 <p>Se <span class="math inline">\(f: A \to B\)</span>, <span class="math inline">\(g:B \to C\)</span> allora <span class="math inline">\(g \cdot f: A \to C\)</span></p>
+<h2 id="applicazioni-lineari"><span class="header-section-number">6.2</span> Applicazioni lineari</h2>
 <p>V,W spaziz vettoriali, <span class="math inline">\(F: V \to W\)</span> si dice applicazione lineare di se :</p>
 <ul>
 <li><span class="math inline">\(F(v+u)=F(u)+F(u), \forall v,u \in V\)</span></li>
@@ -474,7 +480,7 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <p><span class="math inline">\(F(0_v)=F(0 \times 0_v)=0 F(0_v)=0_w\)</span></p>
 </details>
 <p><strong>Teorema 5.1.7</strong> Siano V e W due spazi vettoriali. Se <span class="math inline">\(v_1,\dots,v_n\)</span> è una base di V e consideriamo n vettori <span class="math inline">\(w_1,\dots,w_n \in W\)</span> non necessariamente distinti, allora esiste ed è unica un’ applicazione lineare <span class="math inline">\(L:V\to W\)</span> tale che <span class="math inline">\(L(v_1)=w_1,\dots,L(v_n)=w_n\)</span></p>
-<h2 id="assegnare-un-applicazione-lineare"><span class="header-section-number">6.4</span> Assegnare un applicazione lineare</h2>
+<h2 id="assegnare-un-applicazione-lineare"><span class="header-section-number">6.3</span> Assegnare un applicazione lineare</h2>
 <p><span class="math inline">\(F: \mathbb{R} \to \mathbb{R}^m\)</span></p>
 <ol type="1">
 <li><span class="math inline">\(F(x_1,\dots,x_n)=(\dots)\)</span></li>
@@ -505,7 +511,7 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <p><summary> dim </summary></p>
 <p>Supponiamo che F è iniettiva mostriamo che <span class="math inline">\(\ker F =\{\underline{0}\}\)</span> ricordiamo che F è iniettiva se <span class="math inline">\(F(u)=F(v)\implies u=v\)</span></p>
 </details>
-<h2 id="calcolo-del-nucleo"><span class="header-section-number">6.5</span> Calcolo del nucleo</h2>
+<h2 id="calcolo-del-nucleo"><span class="header-section-number">6.4</span> Calcolo del nucleo</h2>
 <p><span class="math inline">\(F:\mathbb{R}^n \to \mathbb{R}^m\)</span></p>
 <p><span class="math inline">\(\ker F=\{x\in \mathbb{R}^n|F(x)=\underline{0}\}\)</span></p>
 <p>Sia A matrice associata ad F</p>
@@ -519,9 +525,12 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <li><span class="math inline">\(F(e_2)=e_1+e_2-e_3=(1,1,-1)\)</span></li>
 <li><span class="math inline">\(F(e_3)=2e_2+e_3=(2,0,1)\)</span></li>
 </ul>
-<p><span class="math inline">\(A=\begin{pmatrix}F(e_1) &amp; F(e_2) &amp;F(e_3) \\\ 1 &amp; 1 &amp; 2 \\ .1 &amp; 1 &amp;0 \\ 2 &amp; -1 &amp; 1\end{pmatrix}\)</span></p>
+<p><span class="math inline">\(A=\begin{pmatrix}F(e_1) &amp; F(e_2) &amp;F(e_3) \\\ 1 &amp; 1 &amp; 2 \\ 1 &amp; 1 &amp;0 \\ 2 &amp; -1 &amp; 1\end{pmatrix}\)</span></p>
 <p><span class="math inline">\(\ker F={x \in \mathbb{R}^3| F(x)=\underline{0}}\)</span>= <span class="math inline">\({x \in \mathbb{R}^3| A x= \underline{0}}\)</span></p>
 </details>
+<p><strong>Prep</strong> <span class="math inline">\(F:V\to W\)</span> applicazione lineare. Sia <span class="math inline">\(\beta = \{v_1,\dots,v_n\}\)</span> di base V allora <span class="math inline">\(Im \space F =&lt; F(v_1),\dots,F(v_n)&gt;\)</span></p>
+<h2 id="teorema-della-dimensione"><span class="header-section-number">6.5</span> Teorema della dimensione</h2>
+<p>Sia <span class="math inline">\(F:V \to W\)</span> applicazione lineare, allora <span class="math inline">\(\dim V=\dim \ker F+ \dim Im \space F\)</span></p>
 <button style="position: fixed; bottom: 20px; right: 30px; z-index: 99; border: none; outline: none; cursor: pointer; padding: 9px; border-radius: 8px; font-size: 18px; background: var(--dracula-current-line); color: var(--dracula-background);" onclick=" document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">
     top
 </button>
