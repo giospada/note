@@ -1,12 +1,6 @@
 # Funzioni in R^n
 
-## Insiemi aperti
 
-
-**Def**: un insieme aperto sia $A \subseteq \mathbb{R}^n$. Si dice che $A$ è aperto se $\forall x \in A, \exists r>o$ tale che $B(x,r)\subseteq A$ 
-
-
-$n=1 , A=]0,1[=\{x \in \mathbb{R}\space|\space 0<x<1\}$ $]a,b[$ è aperto $\forall a,b \in \mathbb{R}$ $]a,+\infty[$, $]-\infty,b[$ intervalli aperti
 
 ## Succcessioni in $\mathbb{R}^n$
 

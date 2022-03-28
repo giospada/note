@@ -1,4 +1,4 @@
-# Spazio R^n
+# Spazio Euclideo
 
 
 Spazio $\mathbb{R}^n=\{x=(x_1,\dots,x_n)|x_1,\dots,x_n \in \mathbb{R} \}$
@@ -8,7 +8,7 @@ $\mathbb{R}^2$: piano cartesiano
 $\mathbb{R}^2$: spazio ordinario
 
 
-# Operazioni in R^n
+## Operazioni in R^n
 
 1. somma $x=(x_1,\dots,x_n) \in \mathbb{R}^n$ ,$y=(y_1,\dots,y_n) \in \mathbb{R}^n$ $x+y:=(x_1+y_1, \dots, x_n+y_n)$  
 2. moltiplicazione $x=(x_1,\dots,x_n) \in \mathbb{R}^n$ ,$\lambda \in \mathbb{R}^n$ $x\times \lambda:=(\lambda x_1, \dots,\lambda x_n)$  
@@ -30,7 +30,7 @@ $\mathbb{R}^2$: spazio ordinario
 **Def:** $x,y \in \mathbb{R}^n$ si dice che $x$ e $y$ sono ortogonali $<x,y>=0$
 
 > NOTA:
-> Sono ortagonali o quando uno di essi è zero o quando sono perpendicolari
+> Sono ortogonali o quando uno di essi è zero o quando sono perpendicolari
 
 
 ## Norma vettore
@@ -39,7 +39,7 @@ $\mathbb{R}^2$: spazio ordinario
 **proprietà**:
 1. $\forall x \in \mathbb{R}^n, \lambda \in \mathbb{R}$ vale $|| \lambda x || = |\lambda| \times ||x||$
 2.  $||x|| \geq 0, \forall x \in \mathbb{R}^n$  $||x||\leq 0 \iff x=0$
-3. disuguaglianza tirangolare $\forall x,y \in \mathbb{R}^n$ $||x+y||\leq ||x||+||y||$
+3. disuguaglianza triangolare $\forall x,y \in \mathbb{R}^n$ $||x+y||\leq ||x||+||y||$
 
 
 
@@ -78,20 +78,14 @@ dato un vettore x con un angolo di $\alpha$ è uguale a scrivere $||x||\times(\c
 </details>
 
 
-### Disuguaglianza di couchy- schwarz
-
-
-$\forall x ,y \in \mathbb{R}^n$ vale $|<x,y>| \leq |x| \times |y|$ vale "=" solo se x,y sono dipendenti
-
-
-### Disuguaglianza triangolare
-
-
-$\forall x ,y \in \mathbb{R}^n$ vale $|<x,y>| \leq |x| + |y|$ vale "=" solo se x,y sono dipendenti
+**proprità**:
+- $|\lambda x|= |\lambda| |x| \space \forall \lambda \in \mathbb{R},x\in \mathbb{R}^n$
+- **Disuguaglianza di couchy- schwarz:**$\forall x ,y \in \mathbb{R}^n$ vale $|<x,y>| \leq |x| \times |y|$ vale "=" solo se x,y sono dipendenti
+- **Disuguaglianza triangolare**: $\forall x ,y \in \mathbb{R}^n$ vale $|<x,y>| \leq |x| + |y|$ vale "=" solo se x,y sono dipendenti
 
 <details>
 <summary>
-dimostrazione
+dimostrazione disuguaglianza triangolare
 </summary>
 
 
@@ -101,19 +95,16 @@ $\le|x|^2+|y|^2+2|x||y|$  ovvero $\leq (|x|+|y|)^2$
 
 
 
-## Formula quadrato di un binomio
-
-Dati $x,y \in \mathbb{R}^n$ $||x+y||^2=<x+y,x+y>=<x,x+y>+<y+x+y>=$ $<x,y>+<x,x>+<y,x>+<y,y>$ $=||x||^2+2<x,y>+||y||^2$
-
+## Distanza punti in R^n
 
 
 **Def**: dati $x,y \in \mathbb{R}^n$ la distanza tra $x,y$ è il numero della norma della differenza $||x-y||$ 
 
 
 
-## Intorni specifici (dischi, palle) 
+## Intorni specifici  
 
-**def** $x \in \mathbb{R},r >0$  $B(x,r)=\{y \in \mathbb{R}^n  |y-x|<r\}$
+**def**(Intorni Sferici) $x \in \mathbb{R}^n,r >0$  $B(x,r)=\{y \in \mathbb{R}^n  |y-x|<r\}$ (palla o intorno sferico con centro x e raggio r>0)
 
 <details>
 <summary>
@@ -128,13 +119,24 @@ es
  $n=2, x =(0,0,0)=\underline{0}$  $B(\underline{0},r)=\{y \in \mathbb{R}^n  |(y_1,y_2)-(0,0)|<r\}= \sqrt{y_1^2+y_2^2}<r$
 </details>
 
-**Def**: $A \subseteq \mathbb{R}^n$ si dice limitato se $\exists R>0$ tale che $P\subseteq A$
+
+### Insieme Limitato
 
 
+**Def**: $A \subseteq \mathbb{R}^n$ si dice limitato se $\exists r>0$ tale che $A \subseteq B(0,r)$
+
+### Insieme Aperto
+
+**Def**: $A \subseteq \mathbb{R}^n$ si dice limitato se $\exists r>0$ tale che $B(x,r)\subseteq A$
+
+<details>
+<summary>
+esempio
+</summary>
 
 
-
-
+$n=1 , A=]0,1[=\{x \in \mathbb{R}\space|\space 0<x<1\}$ $]a,b[$ è aperto $\forall a,b \in \mathbb{R}$ $]a,+\infty[$, $]-\infty,b[$ intervalli aperti
+</details>
 
 
 
