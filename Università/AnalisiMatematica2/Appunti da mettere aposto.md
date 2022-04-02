@@ -6,7 +6,7 @@
 
 $f: A \to \mathbb{R}, A \subseteq \mathbb{R}, f$ derivabile in $\bar{x} \in A \implies f$ è continua in $\bar{x}$
 
-funzione $f: A \to \mathbb{R}$  $A \subseteq \mathbb{R}^2$ aperto $\exists D_x f(\bar{x},\bar{y}), D_y f(\bar{x},\bar{y}) \implies$ continua in $(\bar{x}, \bar{y})$
+Funzione $f: A \to \mathbb{R}$  $A \subseteq \mathbb{R}^2$ aperto $\exists D_x f(\bar{x},\bar{y}), D_y f(\bar{x},\bar{y}) \implies$ continua in $(\bar{x}, \bar{y})$
 
 $f: \mathbb{R}^2 \to \mathbb{R}$
 

@@ -96,7 +96,7 @@ $\forall A,\forall B,\exists X ,\forall Z ,(Z \in X \iff Z \in A \vee Z \in B)$
 
 $\forall F \exists X \forall Z (Z\in X \iff \exists Y (Y \in F \wedge Z \in Y))$
 
-### 4.2.10 Assioma del singoletto
+### Assioma del singoletto
 
 $\forall X, \exists Y \forall Z (Z \in Y \iff Z = X)$
 
