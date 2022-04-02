@@ -36,6 +36,10 @@ jobs:
           git checkout ${GITHUB_REF##*/} -- $SRC_FOLDER_PATH # copy files from the source branch
           # crea l'index
           echo "# Index "> index.md
+          echo "" >> index.md
+          echo "> Nota:" >> index.md
+          echo "> Appunti personali, non sono finiti. Quindi potrebbero essere disorganizzati e indietro con le lezioni" >> index.md
+          echo "" >> index.md
           cd Università
           # build for evry file
           for i in $(find ./ -maxdepth 1 -type d  ! -name . ! -name img ); do cd $i;echo "try to build $i" ;pandoc --from markdown+markdown_in_html_blocks+lists_without_preceding_blankline --mathjax  --to html5 -s  *.md -o $i.html  --metadata pagetitle="$i"  --toc --top-level-division=chapter -N --css=../img/style.css -H ../img/head.html --include-after-body=../img/button.html;rm *.md; echo -e "\n[$i](Università/$i/$i.html)\n" >> ../../index.md;cd .. ;done #
