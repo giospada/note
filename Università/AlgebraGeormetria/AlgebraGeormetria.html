@@ -91,13 +91,24 @@
 <li><a href="#funzioni"><span class="toc-section-number">6.1</span> Funzioni</a><ul>
 <li><a href="#immagine"><span class="toc-section-number">6.1.1</span> Immagine</a></li>
 <li><a href="#iniettiva"><span class="toc-section-number">6.1.2</span> Iniettiva</a></li>
-<li><a href="#composta"><span class="toc-section-number">6.1.3</span> Composta</a></li>
+<li><a href="#surrettiva"><span class="toc-section-number">6.1.3</span> Surrettiva</a></li>
+<li><a href="#biettiva"><span class="toc-section-number">6.1.4</span> Biettiva</a></li>
+<li><a href="#composta"><span class="toc-section-number">6.1.5</span> Composta</a></li>
 </ul></li>
 <li><a href="#applicazioni-lineari"><span class="toc-section-number">6.2</span> Applicazioni lineari</a></li>
-<li><a href="#assegnare-un-applicazione-lineare"><span class="toc-section-number">6.3</span> Assegnare un applicazione lineare</a></li>
-<li><a href="#calcolo-del-nucleo"><span class="toc-section-number">6.4</span> Calcolo del nucleo</a></li>
-<li><a href="#teorema-della-dimensione"><span class="toc-section-number">6.5</span> Teorema della dimensione</a></li>
+<li><a href="#esistenza-di-una-applicazione-lineare-tra-due-spazi-vettoriali"><span class="toc-section-number">6.3</span> Esistenza di una applicazione lineare tra due spazi vettoriali</a><ul>
+<li><a href="#rappresentazione-delle-applicazioni-lineari"><span class="toc-section-number">6.3.1</span> Rappresentazione delle applicazioni lineari</a></li>
 </ul></li>
+<li><a href="#immagine-e-nucleo"><span class="toc-section-number">6.4</span> Immagine e nucleo</a></li>
+<li><a href="#calcolo-del-nucleo"><span class="toc-section-number">6.5</span> Calcolo del nucleo</a></li>
+<li><a href="#teorema-della-dimensione"><span class="toc-section-number">6.6</span> Teorema della dimensione</a></li>
+<li><a href="#isomorfismi"><span class="toc-section-number">6.7</span> Isomorfismi</a></li>
+</ul></li>
+<li><a href="#sistemi-lineari"><span class="toc-section-number">7</span> Sistemi Lineari</a><ul>
+<li><a href="#contro-immagine"><span class="toc-section-number">7.1</span> Contro Immagine</a></li>
+<li><a href="#teorema-di-rouchè-capelli-storti-e-spettinati"><span class="toc-section-number">7.2</span> Teorema di Rouchè-Capelli storti e spettinati</a></li>
+</ul></li>
+<li><a href="#determinante"><span class="toc-section-number">8</span> Determinante</a></li>
 </ul>
 </nav>
 <h1 id="introduzione"><span class="header-section-number">1</span> Introduzione</h1>
@@ -462,13 +473,17 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <h2 id="funzioni"><span class="header-section-number">6.1</span> Funzioni</h2>
 <p><strong>def</strong>: <span class="math inline">\(f:A \to B\)</span> una legge che per ogni elemento di A associa un solo elemento di B è un sottoinsieme <span class="math inline">\(\Gamma\)</span> di <span class="math inline">\(A\times B\)</span> tale che <span class="math inline">\(\forall a \in A\)</span> , <span class="math inline">\(\exists ! b\)</span> tale che <span class="math inline">\((a,b) \in \Gamma\)</span>, f è su <span class="math inline">\(x \forall b \in B \exists a \in A\)</span> tale che <span class="math inline">\(f(a)=b\)</span></p>
 <h3 id="immagine"><span class="header-section-number">6.1.1</span> Immagine</h3>
-<p><span class="math inline">\(Im\space f=\{f(a)|a\in A\}={b\in B | \exists a \in A, b=f(a)}\)</span></p>
+<p><span class="math inline">\(Im\space f=\{f(a)|a\in A\}=\{b\in B | \exists a \in A, b=f(a)\}\)</span></p>
 <h3 id="iniettiva"><span class="header-section-number">6.1.2</span> Iniettiva</h3>
 <p>f è iniettiva se <span class="math inline">\(a_1 \neq a_2 \implies f(a_1)\neq f(a_2)=\)</span>, oppure <span class="math inline">\(f(a_1)= f(a_2) \implies a_1 = a_2\)</span></p>
-<h3 id="composta"><span class="header-section-number">6.1.3</span> Composta</h3>
+<h3 id="surrettiva"><span class="header-section-number">6.1.3</span> Surrettiva</h3>
+<p>una funzione è surrettiva quando <span class="math inline">\(f:A \to B\)</span>, <span class="math inline">\(\forall y \in B, \exists f(y) \in A\)</span></p>
+<h3 id="biettiva"><span class="header-section-number">6.1.4</span> Biettiva</h3>
+<p>Una funzione è biettiva quando è sia surrettiva che iniettiva</p>
+<h3 id="composta"><span class="header-section-number">6.1.5</span> Composta</h3>
 <p>Se <span class="math inline">\(f: A \to B\)</span>, <span class="math inline">\(g:B \to C\)</span> allora <span class="math inline">\(g \cdot f: A \to C\)</span></p>
 <h2 id="applicazioni-lineari"><span class="header-section-number">6.2</span> Applicazioni lineari</h2>
-<p>V,W spaziz vettoriali, <span class="math inline">\(F: V \to W\)</span> si dice applicazione lineare di se :</p>
+<p><strong>Def</strong>(di applicazione lineare):V,W spaziz vettoriali, <span class="math inline">\(F: V \to W\)</span> si dice applicazione lineare di se :</p>
 <ul>
 <li><span class="math inline">\(F(v+u)=F(u)+F(u), \forall v,u \in V\)</span></li>
 <li><span class="math inline">\(\lambda F(v)=F(\lambda u)\forall v \in V, \lambda \in \mathbb{R}\)</span></li>
@@ -479,13 +494,14 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <p><summary> dimostrazione </summary></p>
 <p><span class="math inline">\(F(0_v)=F(0 \times 0_v)=0 F(0_v)=0_w\)</span></p>
 </details>
-<p><strong>Teorema 5.1.7</strong> Siano V e W due spazi vettoriali. Se <span class="math inline">\(v_1,\dots,v_n\)</span> è una base di V e consideriamo n vettori <span class="math inline">\(w_1,\dots,w_n \in W\)</span> non necessariamente distinti, allora esiste ed è unica un’ applicazione lineare <span class="math inline">\(L:V\to W\)</span> tale che <span class="math inline">\(L(v_1)=w_1,\dots,L(v_n)=w_n\)</span></p>
-<h2 id="assegnare-un-applicazione-lineare"><span class="header-section-number">6.3</span> Assegnare un applicazione lineare</h2>
-<p><span class="math inline">\(F: \mathbb{R} \to \mathbb{R}^m\)</span></p>
+<h2 id="esistenza-di-una-applicazione-lineare-tra-due-spazi-vettoriali"><span class="header-section-number">6.3</span> Esistenza di una applicazione lineare tra due spazi vettoriali</h2>
+<p><strong>Teorema 5.1.7</strong> Siano V e W due spazi vettoriali. Se <span class="math inline">\(v_1,\dots,v_n\)</span> è una base di V e consideriamo n vettori <span class="math inline">\(w_1,\dots,w_n \in W\)</span> non necessariamente distinti, allora <strong>esiste ed è unica un’ applicazione lineare</strong> <span class="math inline">\(L:V\to W\)</span> tale che <span class="math inline">\(L(v_1)=w_1,\dots,L(v_n)=w_n\)</span></p>
+<h3 id="rappresentazione-delle-applicazioni-lineari"><span class="header-section-number">6.3.1</span> Rappresentazione delle applicazioni lineari</h3>
+<p><strong>Teorema</strong>:Data un applicazione lineare <span class="math inline">\(F: \mathbb{R}^n \to \mathbb{R}^m\)</span> fissiamo in <span class="math inline">\(\mathbb{R}^n\)</span> e <span class="math inline">\(\mathbb{R}^m\)</span> le rispettive basi canoniche. Allora possiamo equivalentemente rappresentare <span class="math inline">\(F\)</span> in uno dei seguenti metodi:</p>
 <ol type="1">
-<li><span class="math inline">\(F(x_1,\dots,x_n)=(\dots)\)</span></li>
-<li><span class="math inline">\(F(e_1)=\dots, \dots,F(e_n)=\dots\)</span></li>
-<li>Assegnamo <span class="math inline">\(A \in M_{m * n }(\mathbb{R})\)</span></li>
+<li><p><span class="math inline">\(F(e_n)=a_{1n}e_1+...\ +a_{mn}e_m\)</span></p></li>
+<li><p><span class="math inline">\(F(x_1...\ x_n) = \begin{bmatrix} a_{11}x_1+a_{12}x_2+...+a_{1n}x_n \\ a_{21}x_1+a_{21}x_2+...+a_{2n}x_n \\ \quad \quad \quad \quad \quad \quad \vdots \\ a_{m1}x_1+a_{m1}x_2+...+a_{mn}x_n \end{bmatrix}\)</span></p></li>
+<li><p><span class="math inline">\(F(x)=Ax, \quad \text{con} \quad A = \begin{bmatrix} a_{11} &amp; a_{12} \quad &amp; a_{1n} \\ a_{21} &amp; a_{22} \quad &amp; a_{2n} \\ \quad \quad \vdots \\ a_{m1} &amp; a_{m2} \quad &amp; a_{mn} \end{bmatrix} x= \begin{bmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{bmatrix}\)</span></p></li>
 </ol>
 <details>
 <p><summary> esempio </summary></p>
@@ -496,9 +512,18 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <p>Terzo modo</p>
 <p><span class="math inline">\(A= \begin{pmatrix} 5 &amp; 0 &amp; 1 \\ 3 &amp; -1 &amp; -1 \end{pmatrix}\)</span></p>
 </details>
-<p><strong>Def</strong>: Sia F <span class="math inline">\(V \to W\)</span> applicazione lineare <span class="math inline">\(Im \space F= \{F(v)| v\in V\} \subseteq W\)</span> <span class="math inline">\(\ker F= \{v\in V|F(v)=\underline{0}\} \subseteq V\)</span></p>
-<p><strong>Prop</strong>: <span class="math inline">\(\ker F\)</span> sottospazio di V, <span class="math inline">\(Im \space F\)</span> è sottospazio di <span class="math inline">\(W\)</span></p>
-<p><strong>Dim</strong>: <span class="math inline">\(0_v \in \ker F\)</span> perchè <span class="math inline">\(F(0_v)=0_w\)</span></p>
+<h2 id="immagine-e-nucleo"><span class="header-section-number">6.4</span> Immagine e nucleo</h2>
+<p><strong>Def</strong>:(immagine e nucleo) Sia F <span class="math inline">\(V \to W\)</span> applicazione lineare :</p>
+<ul>
+<li><span class="math inline">\(Im \space F= \{F(v)| v\in V\} \subseteq W\)</span></li>
+<li><span class="math inline">\(\ker F= \{v\in V|F(v)=\underline{0}\} \subseteq V\)</span></li>
+</ul>
+<p><strong>Prop</strong>: Sia <span class="math inline">\(L:V \to W\)</span> un applicazione lineare:</p>
+<ul>
+<li>il nucleo di <span class="math inline">\(\ker L\)</span> sottospazio di V</li>
+<li>l’immagine <span class="math inline">\(Im \space L\)</span> è sottospazio di <span class="math inline">\(W\)</span></li>
+</ul>
+<p><strong>prop</strong>: Sia <span class="math inline">\(L:V\to W\)</span> un’ applizazione lineare allora il sottospazio <span class="math inline">\(Im \space L\)</span> si può ottenere dal sottospazio generato da una base di V in L, <span class="math inline">\(Im \space L=&lt;L(v_1,\dots,v_n)&gt;\)</span> dove <span class="math inline">\(\{v_1,\dots,v_n\}\)</span> è una base di V</p>
 <p><strong>Prop</strong> Sia <span class="math inline">\(F V \to W\)</span> applicazione lineare:</p>
 <ol type="1">
 <li>F è surrettiva <span class="math inline">\(\iff Im \space F =W\)</span></li>
@@ -511,7 +536,7 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <p><summary> dim </summary></p>
 <p>Supponiamo che F è iniettiva mostriamo che <span class="math inline">\(\ker F =\{\underline{0}\}\)</span> ricordiamo che F è iniettiva se <span class="math inline">\(F(u)=F(v)\implies u=v\)</span></p>
 </details>
-<h2 id="calcolo-del-nucleo"><span class="header-section-number">6.4</span> Calcolo del nucleo</h2>
+<h2 id="calcolo-del-nucleo"><span class="header-section-number">6.5</span> Calcolo del nucleo</h2>
 <p><span class="math inline">\(F:\mathbb{R}^n \to \mathbb{R}^m\)</span></p>
 <p><span class="math inline">\(\ker F=\{x\in \mathbb{R}^n|F(x)=\underline{0}\}\)</span></p>
 <p>Sia A matrice associata ad F</p>
@@ -529,8 +554,54 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <p><span class="math inline">\(\ker F={x \in \mathbb{R}^3| F(x)=\underline{0}}\)</span>= <span class="math inline">\({x \in \mathbb{R}^3| A x= \underline{0}}\)</span></p>
 </details>
 <p><strong>Prep</strong> <span class="math inline">\(F:V\to W\)</span> applicazione lineare. Sia <span class="math inline">\(\beta = \{v_1,\dots,v_n\}\)</span> di base V allora <span class="math inline">\(Im \space F =&lt; F(v_1),\dots,F(v_n)&gt;\)</span></p>
-<h2 id="teorema-della-dimensione"><span class="header-section-number">6.5</span> Teorema della dimensione</h2>
-<p>Sia <span class="math inline">\(F:V \to W\)</span> applicazione lineare, allora <span class="math inline">\(\dim V=\dim \ker F+ \dim Im \space F\)</span></p>
+<h2 id="teorema-della-dimensione"><span class="header-section-number">6.6</span> Teorema della dimensione</h2>
+<p><strong>Teorema</strong>:Sia <span class="math inline">\(F:V \to W\)</span> applicazione lineare, allora <span class="math inline">\(\dim V=\dim \ker F+ \dim Im \space F\)</span></p>
+<p><strong>prop 5.5.2</strong>: V,W spazi vettoriali:</p>
+<ol type="1">
+<li>se la <span class="math inline">\(\dim V &gt; \dim W\)</span> non esistono applicazioni lineari iniettive <span class="math inline">\(F: V\to W\)</span></li>
+<li>se <span class="math inline">\(\dim V &lt; \dim W\)</span> non esistono applicazioni surrettive lineari su <span class="math inline">\(F: V \to W\)</span></li>
+</ol>
+<details>
+<p><summary> dim </summary></p>
+<img src="vx_images/387512709268600.png" />
+</details>
+<h2 id="isomorfismi"><span class="header-section-number">6.7</span> Isomorfismi</h2>
+<p><strong>Def:</strong>(isomorfismo) un applicazione lineare si dice isomorfrismo se è invertivbile (o equivalentemente se è iniettiva e surrettiva)</p>
+<p><strong>Def</strong>:(spazi isomorfi) Due spazi vettoriali V e W sono isomorfi <span class="math inline">\(\iff\)</span> hanno la stessa dimensione ( si può dimostrare anche facendo vedere l’esistenza di un isomorfismo <span class="math inline">\(L\)</span> che va da <span class="math inline">\(V\)</span> a <span class="math inline">\(W\)</span>)</p>
+<details>
+<p><summary> dim </summary></p>
+<p>primo implica da fare per casa (si usa il teorema della dimensione)</p>
+<p>altra freccia: Sia <span class="math inline">\(\dim V = \dim W = n\)</span> vogliamo costruire un isomorfismo <span class="math inline">\(F: V \to W\)</span></p>
+<p>Sia <span class="math inline">\(\beta= \{v_1,\dots,v_n\}\)</span> base di V, <span class="math inline">\(\beta=\{w_1,\dots,w_n\}\)</span> base di W</p>
+<p><span class="math inline">\(F: V \to W\)</span> tale che <span class="math inline">\(F(v_i)=w_i \space \forall 1=\{1,\dots,n\}\)</span></p>
+<p><span class="math inline">\(\Im F= &lt;F(v_1),\dots,F(v_n)=&lt;w_1,\dots,w_n&gt;=W \implies F\)</span> è surrettiva</p>
+<p>Usando il teorema delal dimensione <span class="math inline">\(\dim V =\dim \ker F+ \dim Im \space F\)</span></p>
+<p><span class="math inline">\(\implies \dim \ker F=0\)</span></p>
+</details>
+<h1 id="sistemi-lineari"><span class="header-section-number">7</span> Sistemi Lineari</h1>
+<h2 id="contro-immagine"><span class="header-section-number">7.1</span> Contro Immagine</h2>
+<p><strong>Def:</strong>(controimmagine)Sia <span class="math inline">\(F:V\to W\)</span> un’applicazione lineare e sia <span class="math inline">\(w\in W\)</span>, si chiama controimmagine o preimmagine di <span class="math inline">\(w\)</span> mediante <span class="math inline">\(F\)</span> l’insieme <span class="math inline">\(F^{-1}( w)=\{ v\in V|F(v)=w\}\)</span>, la notazione <span class="math inline">\(F^{-1}\)</span> non ha nulla a che fare con l’invertibilità della funzione, indica semplicemente un sottoinsieme del dominio della funzione</p>
+<p><strong>Prep</strong> 6.1.4: sia <span class="math inline">\(F:V\to W\)</span> un’applicazione lineare e sia <span class="math inline">\(w \in W, \space F^{-1}( w)\neq \emptyset \iff w \in Im\ F\)</span> in tal caso si ha <span class="math inline">\(F^{-1}( w)=\{ v + z| z \in\ker F\}\)</span> ove <span class="math inline">\(v\)</span> è un qualsiasi elemento di V tale che <span class="math inline">\(F( v)= w\)</span></p>
+<p><strong>Def</strong>: Sia <span class="math inline">\(A \in M_{m,n}(\mathbb{R})\)</span> , <span class="math inline">\(rr(A)=\dim(&lt;\text{righe di A}&gt;)\)</span>, <span class="math inline">\(rc(A)= \dim(&lt;\text{colonne di A}&gt;)\)</span></p>
+<p><strong>Prep</strong>(6.2.3): Se <span class="math inline">\(A \in M_{nmn}(\mathbb{R})\)</span> allora <span class="math inline">\(rr(A)=rc(A)\)</span></p>
+<h2 id="teorema-di-rouchè-capelli-storti-e-spettinati"><span class="header-section-number">7.2</span> Teorema di Rouchè-Capelli storti e spettinati</h2>
+<p>Sia <span class="math inline">\(Ax=b\)</span> un sinstema lineare pazzo manifesto di m equazioni in n incognite (cioè <span class="math inline">\(A\in M_{n,m}(\mathbb{R})\)</span>), ammette soluzioni solo se <span class="math inline">\(rg(A)=rg(A|b)\)</span>.Se tale uguaglianza è soddisfatta, allora il sistema ha:</p>
+<ol type="1">
+<li>una sola soluzione se e solo se <span class="math inline">\(rg(A)=rg(A|b)=n\)</span></li>
+<li>infinite soluzioni se e solo se <span class="math inline">\(rg(A)=rg(A|b)&lt;n\)</span>. In tal caso le soluzioni del sistema dipendono da <span class="math inline">\(n-rg(A)\)</span> parametri</li>
+</ol>
+<h1 id="determinante"><span class="header-section-number">8</span> Determinante</h1>
+<blockquote>
+<p>Nota: in <span class="math inline">\(\mathbb{R}\)</span> hi è l’inverso di 2 è <span class="math inline">\(\frac{1}{2}\)</span> l’inverso di a è quel numero che vale btale che <span class="math inline">\(ab=1\)</span> esiste solo se <span class="math inline">\(a\neq 0\)</span></p>
+<p>Data una <span class="math inline">\(A \in M_{m,n} (\mathbb{R})\)</span> (quadrata) a chiediamo se esistes <span class="math inline">\(B \in M_{m,n}(\mathbb{R})\)</span> tale che <span class="math inline">\(AB=BA=I\)</span> i è l’elemento neutro rispetto righe più colonne che è uguale a <span class="math inline">\(I=\begin{pmatrix}1&amp;0&amp;\dots&amp;0\\0&amp;1&amp;\dots&amp;0\\ \vdots &amp; \vdots &amp; &amp; \vdots\\0&amp;0&amp;\dots&amp;1\end{pmatrix}\)</span></p>
+</blockquote>
+<p><strong>Def</strong>:il determinante è una funzione che ad ogni matrice quadrata A di ordine <span class="math inline">\(n\)</span> associa un numero reale, indicato con <span class="math inline">\(\det(A)\)</span>, in modo che valgano</p>
+<ol type="1">
+<li>se la riga <span class="math inline">\(j\)</span>-esima di <span class="math inline">\(A\)</span> è somma di due elementi $ v$ e $ u$ di <span class="math inline">\(\mathbb{R}^n\)</span>, allora il determinante di <span class="math inline">\(A\)</span> è la somma dei determinanti delle due matrici ottenute sostituendo alla riga <span class="math inline">\(j\)</span>-esima di <span class="math inline">\(A\)</span> rispettivamente $ u$ e $ v$</li>
+<li>se la riga <span class="math inline">\(j\)</span>-esima di <span class="math inline">\(A\)</span> è il prodotto <span class="math inline">\(\lambda u\)</span>, ove $ u$ è un’elemento di <span class="math inline">\(\mathbb{R}^n\)</span> e <span class="math inline">\(\lambda\)</span> è uno scalare, allora il determinante di <span class="math inline">\(A\)</span> è il prodotto di <span class="math inline">\(\lambda\)</span> e del determinante della matrice ottenuta sostituendo la riga <span class="math inline">\(j\)</span>-esima di <span class="math inline">\(A\)</span> con $ u$</li>
+<li>se due righe di <span class="math inline">\(A\)</span> sono uguali, allora il determinante di <span class="math inline">\(A\)</span> è nullo</li>
+<li>se <span class="math inline">\(I\)</span> è la matrice identità, allora <span class="math inline">\(\det(I)=1\)</span></li>
+</ol>
 <button style="position: fixed; bottom: 20px; right: 30px; z-index: 99; border: none; outline: none; cursor: pointer; padding: 9px; border-radius: 8px; font-size: 18px; background: var(--dracula-current-line); color: var(--dracula-background);" onclick=" document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">
     top
 </button>
