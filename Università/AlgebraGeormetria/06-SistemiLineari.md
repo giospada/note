@@ -14,7 +14,7 @@
 **Prep**(6.2.3): Se $A \in M_{nmn}(\mathbb{R})$ allora $rr(A)=rc(A)$
 
 
-## Teorema di Rouchè-Capelli storti e spettinati
+## Teorema di Rouchè-Capelli
 
 
 Sia $Ax=b$ un sinstema lineare pazzo manifesto di m equazioni in n incognite (cioè $A\in M_{n,m}(\mathbb{R})$), ammette soluzioni solo se  $rg(A)=rg(A|b)$.Se tale uguaglianza è soddisfatta, allora il sistema ha:

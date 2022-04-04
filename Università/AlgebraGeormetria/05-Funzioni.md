@@ -148,8 +148,6 @@ $\ker F={x \in \mathbb{R}^3| F(x)=\underline{0}}$= ${x \in \mathbb{R}^3| A x= \u
 </details>
 
 
-**Prep** $F:V\to W$ applicazione lineare. Sia $\beta = \{v_1,\dots,v_n\}$ di base V allora $Im \space F =< F(v_1),\dots,F(v_n)>$
-
 
 
 ## Teorema della dimensione
