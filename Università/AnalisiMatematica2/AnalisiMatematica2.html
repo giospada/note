@@ -108,12 +108,16 @@
 </ul></li>
 <li><a href="#calcolo-dei-minimi-e-massimi"><span class="toc-section-number">10</span> Calcolo Dei Minimi E Massimi</a><ul>
 <li><a href="#matrice-jacobiana"><span class="toc-section-number">10.1</span> Matrice Jacobiana</a></li>
-<li><a href="#derivabilità-continuità-1"><span class="toc-section-number">10.2</span> Derivabilità continuità</a></li>
-<li><a href="#curve-cammini-in-rn-1"><span class="toc-section-number">10.3</span> Curve (cammini) in R^n</a></li>
-<li><a href="#derivate-funzioni-composte-1"><span class="toc-section-number">10.4</span> Derivate funzioni composte</a><ul>
-<li><a href="#derivata-lungo-una-curva-cammino-1"><span class="toc-section-number">10.4.1</span> Derivata lungo una curva (cammino)</a></li>
+<li><a href="#matrice-jacobiana-1"><span class="toc-section-number">10.2</span> Matrice Jacobiana</a></li>
+<li><a href="#ricerca-del-massimo-e-del-minimo"><span class="toc-section-number">10.3</span> Ricerca del massimo e del minimo</a></li>
+<li><a href="#matrice-hessiana"><span class="toc-section-number">10.4</span> Matrice Hessiana</a><ul>
+<li><a href="#teorema-di-schwarz"><span class="toc-section-number">10.4.1</span> Teorema di Schwarz !!</a></li>
 </ul></li>
-<li><a href="#gradiente-e-insiemi-di-livello"><span class="toc-section-number">10.5</span> Gradiente e Insiemi di livello</a></li>
+<li><a href="#forme-quadratiche"><span class="toc-section-number">10.5</span> Forme quadratiche</a><ul>
+<li><a href="#segno-della-forma-quadratica"><span class="toc-section-number">10.5.1</span> Segno della forma quadratica</a></li>
+<li><a href="#teorema-criterio-classificazione-2x2"><span class="toc-section-number">10.5.2</span> Teorema criterio classificazione 2x2</a></li>
+<li><a href="#conseguenze-massimo-e-minimo"><span class="toc-section-number">10.5.3</span> Conseguenze (massimo e minimo)</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -709,91 +713,100 @@ r_n(t+s)= r_n(t)+r&#39;_n(t)s+o(s), s\to 0
 <p>Da una funzione differenziabile f(r(x)) in modo simile a quanto fatto prima, abbiamo che</p>
 <p><span class="math inline">\(J_f(r(t)) J_r(t)\)</span> è uguale al prodotto scalare!</p>
 <p><span class="math inline">\((\delta_1f(r(t)), ..., \delta_nf(r(t))) \cdot \begin{pmatrix} \delta_{s} r_1(t) \\ \vdots \\ \delta_{s} r_n(t) \end{pmatrix}\)</span></p>
-<p>Ossia è proprio <span class="math inline">\(\delta_t(f(r(t))\)</span> il prodotto scalare, ossia <span class="math inline">\(J_{f \cdot r}(t)\)</span> e la cosa bella è che <strong>vale per dimensione qualsiasi</strong>. (vedere gli appunti lezione 11, ci dovrebbe essere l’enunciato di questo). # 06-Appunti da mettere aposto</p>
-<h2 id="derivabilità-continuità-1"><span class="header-section-number">10.2</span> Derivabilità continuità</h2>
-<p><span class="math inline">\(f: A \to \mathbb{R}, A \subseteq \mathbb{R}, f\)</span> derivabile in <span class="math inline">\(\bar{x} \in A \implies f\)</span> è continua in <span class="math inline">\(\bar{x}\)</span></p>
-<p>Funzione <span class="math inline">\(f: A \to \mathbb{R}\)</span> <span class="math inline">\(A \subseteq \mathbb{R}^2\)</span> aperto <span class="math inline">\(\exists D_x f(\bar{x},\bar{y}), D_y f(\bar{x},\bar{y}) \implies\)</span> continua in <span class="math inline">\((\bar{x}, \bar{y})\)</span></p>
-<p><span class="math inline">\(f: \mathbb{R}^2 \to \mathbb{R}\)</span></p>
-<p><span class="math inline">\(f(x,y)= \begin{cases} \frac{xy}{x^2+y^2} &amp; \text{se } (x,y)=(0,0) \\ 0 &amp; \text{in } (x,y)=(0,0)\end{cases}\)</span></p>
-<ol type="1">
-<li><span class="math inline">\(\exists D_x f(0,0), D_y f(0,0)\)</span> f derivabile</li>
-<li>f non è continua in (0,0)</li>
-</ol>
-<p><span class="math inline">\(D_x f(0,0)=\displaystyle \lim_{h \rightarrow 0} \frac{f(h,0)-f(0,0)}{h}\)</span></p>
-<p><span class="math inline">\(f(h,0)\)</span> per <span class="math inline">\(h\neq 0\)</span> <span class="math inline">\(=\frac{h\times 0}{h^2+0^2}\)</span> <span class="math inline">\(\forall h \neq 0\)</span></p>
-<p><span class="math inline">\((h \to f(h,0)\)</span> è <span class="math inline">\(0 \forall h \in \mathbb{R})\)</span></p>
-<p><span class="math inline">\(\displaystyle \lim_{x \rightarrow 0} \frac{0-0}{h}\)</span></p>
-<p>Derivabilità differenziabilità</p>
-<p><span class="math inline">\(\mathbb{R}, f:A \to \mathbb{R}\)</span> derivabilie <span class="math inline">\(\displaystyle \lim_{x \rightarrow \infty} \frac{f(\bar{x}+h)-f(\bar{x})}{h}=f&#39;(\bar{x})\in \mathbb{R}\)</span></p>
-<p><span class="math inline">\(\displaystyle \lim_{x \rightarrow \infty} \frac{f(\bar{x}+h)-f(\bar{x})-f&#39;(\bar{x})h}{h}=0\)</span></p>
-<p><strong>Def</strong> <span class="math inline">\(g: \mathbb{R}^2 \to \mathbb{R}, (h,k)\to g(h,k)\)</span></p>
-<p>Si dice che <span class="math inline">\(g(h,k)=o(|(h,k)|)\)</span> se vale <span class="math inline">\(\forall \varepsilon &gt;0 \exists \delta_varepsilon &gt;0\)</span> tale che <span class="math inline">\(\frac{|g(h,k)|}{||(h,k)||}&lt;\varepsilon\)</span> se <span class="math inline">\(||(h,k)|| &lt; \delta_\varepsilon\)</span></p>
-<p>Dunque <span class="math inline">\(g(h,k)=ah^2+ck^2=o(|(h,k)|)\)</span></p>
-<h2 id="curve-cammini-in-rn-1"><span class="header-section-number">10.3</span> Curve (cammini) in R^n</h2>
+<p>Ossia è proprio <span class="math inline">\(\delta_t(f(r(t))\)</span> il prodotto scalare, ossia <span class="math inline">\(J_{f \cdot r}(t)\)</span> e la cosa bella è che <strong>vale per dimensione qualsiasi</strong>. (vedere gli appunti lezione 11, ci dovrebbe essere l’enunciato di questo). # Matrice Jacobiana e Matrice Hessiana</p>
+<h2 id="matrice-jacobiana-1"><span class="header-section-number">10.2</span> Matrice Jacobiana</h2>
+<p>È un modo per scrivere il gradiente di una funzione quando è in una certa forma.</p>
+<p>Data una funzione <span class="math inline">\(f: \mathbb{R}^n \to \mathbb{R}^p\)</span></p>
+<p>ossia per esempio <span class="math inline">\(x=(x_1,...,x_n) \to(f_1(x),...,f_p(x))\)</span></p>
+<p>Se le p funzioni di arrivo sono differenziabili, allora la matrice jacobiana è definita in questo modo:</p>
+<p><span class="math inline">\(J_f(x) = \begin{pmatrix} \delta_{x_1} f_1(x) &amp; ... &amp; \delta_{x_n} f_1(x)\\ . &amp; . &amp; . \\ \delta_{x_1} f_p(x) &amp; ... &amp; \delta_{x_n} f_p(x) \end{pmatrix}\)</span></p>
+<p>Una matrice con p righe e n colonne, che rappresentano <strong>tutte le derivate parziali possibile</strong></p>
+<p><strong>Osservazione</strong></p>
+<p>Da una funzione differenziabile f(r(x)) in modo simile a quanto fatto prima, abbiamo che</p>
+<p><span class="math inline">\(J_f(r(t)) J_r(t)\)</span> è uguale al prodotto scalare!</p>
+<p><span class="math inline">\((\delta_1f(r(t)), ..., \delta_nf(r(t))) \cdot \begin{pmatrix} \delta_{s} r_1(t) \\ . \\ \delta_{s} r_n(t) \end{pmatrix}\)</span></p>
+<p>Ossia è proprio <span class="math inline">\(\delta_t(f(r(t))\)</span> il prodotto scalare, ossia <span class="math inline">\(J_{f \cdot r}(t)\)</span> e la cosa bella è che <strong>vale per dimensione qualsiasi</strong>. (vedere gli appunti lezione 11, ci dovrebbe essere l’enunciato di questo).</p>
+<h2 id="ricerca-del-massimo-e-del-minimo"><span class="header-section-number">10.3</span> Ricerca del massimo e del minimo</h2>
+<blockquote>
+<p>Nota: a differenza delle funzioni a due variabili quando si parla di funzioni a più variabili non possiamo definire il massimo in quanto non abbiamo neanche più il concetto di funzione crescente</p>
+</blockquote>
+<p>sia <span class="math inline">\(f:A \to \mathbb{R}, \bar{x} \in A\)</span> è minimo locale, f è differenziabile in <span class="math inline">\(\bar{x}\)</span>, allora si ha che <span class="math inline">\(\nabla f(\bar{x}) = 0\)</span></p>
+<p>Quando il gradiente si annulla, quel punto in cui si annulla si chiama <strong>punto critico o stazionario</strong>.</p>
 <ul>
-<li><span class="math inline">\(f: \mathbb{R} \to \mathbb{R}\)</span> (scalari)</li>
-<li><span class="math inline">\(r:]a,b[ \to \mathbb{R}^n\)</span> (cammini parametrizzati)</li>
+<li>La stazionarietà non permette di distinguere massimi e minimi (valeva anche per R dim 1</li>
 </ul>
-<p>considero <span class="math inline">\(r:]a,b[ \to \mathbb{R}^n\)</span><br />
-<span class="math inline">\(]a,b[ \to t \to r(t)=(r_1(t),\dots , r_n(t))\in \mathbb{R}^n\)</span></p>
+<p>sia <span class="math inline">\(f:A \to \R, \bar{x} \in A\)</span> è minimo locale, f è differenziabile in xbar, allora si ha che <span class="math inline">\(\nabla f(\bar{x}) = 0\)</span></p>
+<p>Quando il gradiente si annulla, quel punto in cui si annulla si chiama <strong>punto critico o stazionario</strong>.</p>
+<ul>
+<li>La stazionarietà non permette di distinguere massimi e minimi (valeva anche per R dim 1</li>
+</ul>
+<h2 id="matrice-hessiana"><span class="header-section-number">10.4</span> Matrice Hessiana</h2>
+<p>Questa matrice contiene tutte le derivate seconde possibili per una certa funzione da Rn a R (sarà di dimensione n x n</p>
+<p>$$ Hf(x) = \begin{pmatrix} <em>{11} f(x) &amp; … &amp; </em>{1n} f(x)\ . &amp; . &amp; . \ <em>{n1} f(x) &amp; … &amp; </em>{nn} f(x)</p>
+<p>\end{pmatrix} $$</p>
+<h3 id="teorema-di-schwarz"><span class="header-section-number">10.4.1</span> Teorema di Schwarz !!</h3>
+<p>Sia f una funzione ben definita, con dominio multidimensionale.</p>
+<p>Siano tutte le derivate seconde ben definite.</p>
+<p>Allora <span class="math inline">\(\forall ij \in \{1,..,n\}, i \neq j\)</span> si ha che <span class="math inline">\(\delta_{ij}f = \delta_{ji}f\)</span>, ossia è un altro modo per dire che la <strong>matrice hessiana è simmetrica</strong>.</p>
 <details>
-<p><summary> es </summary></p>
-<p><span class="math inline">\(r(t)=(\cos t,\sin t)\)</span></p>
-<p>data una funzione <span class="math inline">\(h: \mathbb{R}\to \mathbb{R}\)</span></p>
-<p>allora il grafico della funzione è uguale al grafico di <span class="math inline">\(r(t)=(t,h(t))\)</span></p>
-<p>cammino a elica <span class="math inline">\(r(t)=(\cos t, \sin t ,t) \in \mathbb{R}^3\)</span></p>
+<p><summary> Dimostrazione </summary></p>
+<p>l’idea principale è utilizzare qualcosa di simile alla differenziabilità per continuità e derivabilità parziale.</p>
+<p>Considero</p>
+<p><span class="math inline">\(g(h) = f(x + h, y+h) + f(x, y) - f(x + h,y) - f(x, y + h)\)</span></p>
+<p>poi considero</p>
+<p><span class="math inline">\(u(t) = f(x + t, y+h) + f(x, y) - f(x + t,y) - f(x, y + h)\)</span> e utilizzando lagrange due volte ottengo che</p>
+<p><span class="math inline">\(g(h) = \delta_{xy}f(x + ah, y + bh)h^2\)</span></p>
+<p>Lo faccio ancora per il simmetrico (cioè costruendomi una funzione v(t) che vari a seconda della y e mi trovo che</p>
+<p><span class="math inline">\(g(h) = \delta_{yx}f(x + ah, y + bh)h^2\)</span></p>
+<p>Faccio il limite per h tendente a 0, dividendo per la stessa variabile, e trovo che sono esattamente uguali.</p>
+<p>cioè</p>
+<p><span class="math inline">\(\lim_{h \to 0} \dfrac{\delta_{yx}f(x + ah, y + bh)h^2}{h^2} = \lim_{h \to 0} \delta_{yx}f(x + ah, y + bh)= \delta_{yx}f(x,y)\)</span> l’ultimo uguale è giustificabile per la continuità della funzione f (basta aprire e controllare 🙂).</p>
 </details>
-<p><strong>Def</strong>: (Velocità di un cammino) <span class="math inline">\(r:]a,b[ \to \mathbb{R}^n\)</span> <span class="math inline">\((r(t)=(r_1(t),\dots,r_n(t)))\)</span>.<br />
-Sia <span class="math inline">\(t \in [a,b]\)</span> . Se le funzioni <span class="math inline">\(r_1,\dots,r_n\)</span> sono derivabili in t si dice che r è derivabile in t e si pone <span class="math inline">\(r&#39;(t)=(r&#39;_1(t),\dots,r&#39;_1(t))=\)</span> velocità di <span class="math inline">\(r\)</span> al tempo t.</p>
-<details>
-<p><summary> es </summary></p>
-<p><span class="math inline">\(r(t)= x+tv=(x_1+tv_1,\dots,x_n+tv_n)\)</span><br />
-<span class="math inline">\(r&#39;(t)=(v_1,\dots,v_n)=v\)</span> (constante in t)</p>
-<p><span class="math inline">\(r(t)= x+t^3v=(x_1+t^3v_1,\dots,x_n+t^3v_n)\)</span></p>
-<p><span class="math inline">\(g&#39;(t)=3t^2v \in\)</span> span <span class="math inline">\(\{ v\}, \forall t\)</span> dipendente da t</p>
-</details>
-<p><strong>Def</strong>: (velocitò scalare di <span class="math inline">\(r:]a,b[\to \mathbb{R}^n\)</span>) Se r è derivabile in <span class="math inline">\(t\in ]a,b[, r&#39;(t)\)</span> velocità, <span class="math inline">\(|r&#39;(t)|=\)</span> velocità scalare</p>
-<details>
-<p><summary> es </summary></p>
-<p><span class="math inline">\(r(t)=(\cos t,\sin t),\space r&#39;(t)=(-\sin t,\cos t)\)</span></p>
-</details>
-<h2 id="derivate-funzioni-composte-1"><span class="header-section-number">10.4</span> Derivate funzioni composte</h2>
-<p>Sia <span class="math inline">\(r:]a,b[ \to \mathbb{R}^n\)</span> derivabile in <span class="math inline">\(t \in ]a,b[\)</span></p>
+<h2 id="forme-quadratiche"><span class="header-section-number">10.5</span> Forme quadratiche</h2>
+<p>Queste cose sembrano essere un buon utilizzo della matrice hessiana.</p>
+<p>Comunque vediamo cosa sono:</p>
+<p>prendiamo una matrice <span class="math inline">\(A \in \R^{n \times n}\)</span> tale che sia simmetrica, consideriamo una funzione</p>
+<p><span class="math inline">\(q_A : \R ^n \to \R\)</span> definita in questo modo :</p>
+<p><span class="math inline">\(q_A(h) = \langle Ah, h\rangle\)</span>. Scopriremo che c’è una equivalenza (forse isomorfismo) fra un polinomio di grado n e una matrice n per n.</p>
+<p>Si può dimostrare che è uguale a una forma quadrata questa matrice, questo perché</p>
+<p><span class="math inline">\(\sum^n_{k,j=1} a_{kj}h_jh_k = \sum^n_{k=1}a_k h^2_k + 2 \sum_{ 1\leq j &lt; k \leq n} a_{jk} h_j h_k\)</span> ed è qualcosa di molto comodo perché questo non è altro che (ricordando che <span class="math inline">\(a_k\)</span> è un modo semplice per scrivere <span class="math inline">\(a_{kk}\)</span></p>
 <p><span class="math display">\[
-\begin{cases}
-r_1(t+s)= r_1(t)+r&#39;_1(t)s+o(s), s\to 0 \\
-\vdots \\
-r_n(t+s)= r_n(t)+r&#39;_n(t)s+o(s), s\to 0
-\end{cases}
+\langle Ah, h\rangle = (a_1h_1 + ...+ a_nh_n)^2
 \]</span></p>
-<p><span class="math inline">\(o(s)= (o_1(s),\dots, o_n(s))\)</span><br />
-<span class="math inline">\(r(t+s)-r(t)=r&#39;(t)s+o(s)\)</span></p>
-<p><span class="math inline">\(\displaystyle \lim_{s \rightarrow 0} \frac{|O(s)|}{s}=0\)</span></p>
+<p>Ma questo vale nel caso solo in cui <span class="math inline">\(a_ia_k = a_{ik}\)</span>, da ricordare!. Comunque c’è questa buonissima corrispondenza e ci piace molto.</p>
+<h3 id="segno-della-forma-quadratica"><span class="header-section-number">10.5.1</span> Segno della forma quadratica</h3>
+<p><strong>Positivo</strong></p>
+<p>Se per ogni h diverso da zero la forma quadratica è sempre positiva</p>
+<p>esempio se ho solo numeri sulla diagonale, probabilmente è di segno positivo</p>
+<p><strong>Negativo</strong></p>
+<p>Se per ogni h diverso da zero la forma quadratica è sempre negativa</p>
+<p><strong>Indefinita</strong></p>
+<p>Se esistono due h diversi fra loro per cui la forma della prima è minore di 0, la forma della seconda è maggiore di zero.</p>
+<p><strong>Altro</strong></p>
+<p>Ci sono anche altre caratterizzazione della forma quadratica.</p>
+<p>ad esempio q(h1, h2) = h2^2 non è né indefinita, né positiva questa è <strong>semidefinita</strong></p>
+<h3 id="teorema-criterio-classificazione-2x2"><span class="header-section-number">10.5.2</span> Teorema criterio classificazione 2x2</h3>
+<p>La matrice considerata è sempre</p>
+<p><span class="math inline">\(\begin{pmatrix} a &amp; b \\ b &amp; c \\ \end{pmatrix}\)</span></p>
+<p><strong>Positivo</strong></p>
+<p>Una forma quadratica è positiva sse <span class="math inline">\(a &gt; 0 \land ac - b^2 &gt; 0\)</span></p>
+<p><strong>Negativa</strong></p>
+<p>Una forma quadrata è negativa sse <span class="math inline">\(a &lt; 0 \land ac - b^2 &gt; 0\)</span></p>
+<p><strong>Indefinita</strong></p>
+<p>sse il determinante è negativo., se il determinante è 0 si dice che è una <strong>matrice singolare</strong>.</p>
 <details>
-<p><summary> es </summary> (curva singolare)</p>
-<p><span class="math inline">\(r(t)=(t^3,t^2)\)</span></p>
-<p><span class="math inline">\(r&#39;(t)=(3t^2,2t) \space \forall t \in \mathbb{R}\)</span></p>
-<p><span class="math inline">\(r&#39;(0)=(0,0)\)</span> <span class="math inline">\(t=0\)</span> punto singolare</p>
-<p><span class="math inline">\(r(t)=(t^3,t^2)\)</span> se <span class="math inline">\(t^3=s\)</span> allora <span class="math inline">\(g(s)=(s,|s|^{\frac{2}{3}})\)</span> (è una curva con lo stesso percorso di r)</p>
+<p><summary> Dimostrazione </summary></p>
+<p>vogliamo dimostrare un sse, andiamo per le due frecce.</p>
+<p><span class="math inline">\(\implies\)</span></p>
+<p>Se pongo h = (1, 0) ottengo <span class="math inline">\(a &gt; 0\)</span> quindi deve essere così altrimenti assurdo.</p>
+<p>se pongo h = (h,1) (nota questi due h sono diversi) ottengo <span class="math inline">\(ah ^2 + 2bh + c\)</span> che è sempre positivo quando il determinante è negativo, quindi verificato</p>
+<p><span class="math inline">\(\impliedby\)</span></p>
+<p>Se <span class="math inline">\(h_2 = 0\)</span> ottengo <span class="math inline">\(ah^2_1 &gt; 0\)</span> vero perché a &gt; 0 e ho un quadrato in R</p>
+<p>Se <span class="math inline">\(h_2 \neq 0\)</span>, allora raccogliendo un h2 e ponendo <span class="math inline">\(e = \dfrac{h1}{h2}\)</span>, ottengo</p>
+<p><span class="math inline">\(q(h) = ae^2 + 2be + c &gt; 0\)</span> (già diviso per h2 alla seconda), prendendo il determinante ho che è <span class="math inline">\(b^2 - ac\)</span> , che è sempre minore di 0, quindi sempre vera.</p>
 </details>
-<p><strong>Def</strong> <span class="math inline">\(r:]a,b[\to \mathbb{R}^n, r&#39;(t)\)</span>= velocità, Se <span class="math inline">\(\exists r&#39;&#39;_j(t) \forall j=1,\dots,n\)</span> poniamo <span class="math inline">\(r&#39;&#39;(t)=(r&#39;&#39;_1(t),\dots,r&#39;&#39;_n(t))\)</span> vettore accelerazione</p>
-<h3 id="derivata-lungo-una-curva-cammino-1"><span class="header-section-number">10.4.1</span> Derivata lungo una curva (cammino)</h3>
-<p>Sia <span class="math inline">\(r:]a,b[ \to \mathbb{R}^n, f: \mathbb{R}^n \to \mathbb{R}\)</span></p>
-<p><span class="math inline">\((f\cdot r) (t)=f(r(t)),\)</span> r è derivabile in t e f differenziabile in <span class="math inline">\(r(t)\)</span></p>
-<details>
-<p><summary> es </summary></p>
-<p><span class="math inline">\(r(t)=(2t,\cos t), f(x,y)=x^2e^{2y}\)</span></p>
-<p><span class="math inline">\((f \cdot r )(t)= f(r(t))=(2t)^2 e^{2\cos t}\)</span></p>
-<p><span class="math inline">\(D_t (f \cdot r)(t)= 8te^{2\cos t}-8 t^2 \sin t e^{2 \cos t}\)</span></p>
-</details>
-<p>Torema <span class="math inline">\(r:]a,b[ \to \mathbb{R}^n, f:\mathbb{R}^n\to \mathbb{R}\)</span> differenziale in <span class="math inline">\(r(t)\)</span> e r derivabile in t, allora <span class="math inline">\((f \cdot r)&#39;(t)=&lt;\nabla f(r(t)),r&#39;(t)&gt;\)</span> <span class="math inline">\(=\sum_{k=1}^n \frac{\delta f}{\delta x_k} (r(t)) r_k&#39;(t)\)</span></p>
-<details>
-<p><summary> es </summary></p>
-<p><span class="math inline">\(r(t) = (2t,\cos t), f(x,y)=x^2 e^{2y}\)</span> <span class="math inline">\(\nabla f(x,y)=(2xe^{2y},2x^2 e^{2y})\)</span></p>
-<p><span class="math inline">\(r&#39;(t)=(2,-\sin t)\)</span><br />
-<span class="math inline">\((f \cdot r)&#39;(t)=&lt; \nabla f(2t,\cos t),(2,-\sin t)&gt;\)</span> <span class="math inline">\(=&lt; (2 * 2t e^{2\cos t},2(2t)^2e^{2\cos t}),(2,-\sin t)&gt;\)</span> <span class="math inline">\(=8t e^{2\cos t}-8\sin(t)t^2e^{2\cos t}\)</span></p>
-</details>
-<h2 id="gradiente-e-insiemi-di-livello"><span class="header-section-number">10.5</span> Gradiente e Insiemi di livello</h2>
+<h3 id="conseguenze-massimo-e-minimo"><span class="header-section-number">10.5.3</span> Conseguenze (massimo e minimo)</h3>
+<p>Questa cosa ci piace per calcolare</p>
 <button style="position: fixed; bottom: 20px; right: 30px; z-index: 99; border: none; outline: none; cursor: pointer; padding: 9px; border-radius: 8px; font-size: 18px; background: var(--dracula-current-line); color: var(--dracula-background);" onclick=" document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">
     top
 </button>
