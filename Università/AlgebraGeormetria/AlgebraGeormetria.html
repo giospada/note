@@ -108,7 +108,21 @@
 <li><a href="#contro-immagine"><span class="toc-section-number">7.1</span> Contro Immagine</a></li>
 <li><a href="#teorema-di-rouchè-capelli"><span class="toc-section-number">7.2</span> Teorema di Rouchè-Capelli</a></li>
 </ul></li>
-<li><a href="#determinante"><span class="toc-section-number">8</span> Determinante</a></li>
+<li><a href="#determinante"><span class="toc-section-number">8</span> Determinante</a><ul>
+<li><a href="#identità"><span class="toc-section-number">8.1</span> identità</a></li>
+<li><a href="#determinante-1"><span class="toc-section-number">8.2</span> Determinante</a></li>
+<li><a href="#calcolo-del-determinante"><span class="toc-section-number">8.3</span> Calcolo del determinante</a><ul>
+<li><a href="#x2-o-3x3"><span class="toc-section-number">8.3.1</span> 2x2 o 3x3</a></li>
+<li><a href="#qualsiasi-dimensione"><span class="toc-section-number">8.3.2</span> Qualsiasi Dimensione</a></li>
+</ul></li>
+<li><a href="#teorema-di-binet"><span class="toc-section-number">8.4</span> Teorema di Binet</a></li>
+<li><a href="#matrice-invertibile"><span class="toc-section-number">8.5</span> Matrice Invertibile</a></li>
+<li><a href="#gauss-per-il-calcolo-dellinversa"><span class="toc-section-number">8.6</span> Gauss per il calcolo dell’inversa</a></li>
+<li><a href="#teoremone"><span class="toc-section-number">8.7</span> Teoremone</a></li>
+</ul></li>
+<li><a href="#cambio-di-base"><span class="toc-section-number">9</span> Cambio di Base</a><ul>
+<li><a href="#notazione"><span class="toc-section-number">9.1</span> Notazione</a></li>
+</ul></li>
 </ul>
 </nav>
 <h1 id="introduzione"><span class="header-section-number">1</span> Introduzione</h1>
@@ -582,7 +596,7 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <p><strong>Def:</strong>(controimmagine)Sia <span class="math inline">\(F:V\to W\)</span> un’applicazione lineare e sia <span class="math inline">\(w\in W\)</span>, si chiama controimmagine o preimmagine di <span class="math inline">\(w\)</span> mediante <span class="math inline">\(F\)</span> l’insieme <span class="math inline">\(F^{-1}( w)=\{ v\in V|F(v)=w\}\)</span>, la notazione <span class="math inline">\(F^{-1}\)</span> non ha nulla a che fare con l’invertibilità della funzione, indica semplicemente un sottoinsieme del dominio della funzione</p>
 <p><strong>Prep</strong> 6.1.4: sia <span class="math inline">\(F:V\to W\)</span> un’applicazione lineare e sia <span class="math inline">\(w \in W, \space F^{-1}( w)\neq \emptyset \iff w \in Im\ F\)</span> in tal caso si ha <span class="math inline">\(F^{-1}( w)=\{ v + z| z \in\ker F\}\)</span> ove <span class="math inline">\(v\)</span> è un qualsiasi elemento di V tale che <span class="math inline">\(F( v)= w\)</span></p>
 <p><strong>Def</strong>: Sia <span class="math inline">\(A \in M_{m,n}(\mathbb{R})\)</span> , <span class="math inline">\(rr(A)=\dim(&lt;\text{righe di A}&gt;)\)</span>, <span class="math inline">\(rc(A)= \dim(&lt;\text{colonne di A}&gt;)\)</span></p>
-<p><strong>Prep</strong>(6.2.3): Se <span class="math inline">\(A \in M_{nmn}(\mathbb{R})\)</span> allora <span class="math inline">\(rr(A)=rc(A)\)</span></p>
+<p><strong>Prep</strong>(6.2.3): Se <span class="math inline">\(A \in M_{n,m}(\mathbb{R})\)</span> allora <span class="math inline">\(rr(A)=rc(A)\)</span></p>
 <h2 id="teorema-di-rouchè-capelli"><span class="header-section-number">7.2</span> Teorema di Rouchè-Capelli</h2>
 <p>Sia <span class="math inline">\(Ax=b\)</span> un sinstema lineare pazzo manifesto di m equazioni in n incognite (cioè <span class="math inline">\(A\in M_{n,m}(\mathbb{R})\)</span>), ammette soluzioni solo se <span class="math inline">\(rg(A)=rg(A|b)\)</span>.Se tale uguaglianza è soddisfatta, allora il sistema ha:</p>
 <ol type="1">
@@ -590,10 +604,10 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <li>infinite soluzioni se e solo se <span class="math inline">\(rg(A)=rg(A|b)&lt;n\)</span>. In tal caso le soluzioni del sistema dipendono da <span class="math inline">\(n-rg(A)\)</span> parametri</li>
 </ol>
 <h1 id="determinante"><span class="header-section-number">8</span> Determinante</h1>
-<blockquote>
-<p>Nota: in <span class="math inline">\(\mathbb{R}\)</span> hi è l’inverso di 2 è <span class="math inline">\(\frac{1}{2}\)</span> l’inverso di a è quel numero che vale btale che <span class="math inline">\(ab=1\)</span> esiste solo se <span class="math inline">\(a\neq 0\)</span></p>
-<p>Data una <span class="math inline">\(A \in M_{m,n} (\mathbb{R})\)</span> (quadrata) a chiediamo se esistes <span class="math inline">\(B \in M_{m,n}(\mathbb{R})\)</span> tale che <span class="math inline">\(AB=BA=I\)</span> i è l’elemento neutro rispetto righe più colonne che è uguale a <span class="math inline">\(I=\begin{pmatrix}1&amp;0&amp;\dots&amp;0\\0&amp;1&amp;\dots&amp;0\\ \vdots &amp; \vdots &amp; &amp; \vdots\\0&amp;0&amp;\dots&amp;1\end{pmatrix}\)</span></p>
-</blockquote>
+<h2 id="identità"><span class="header-section-number">8.1</span> identità</h2>
+<p>la matrice identità o matrice identica di ordine <span class="math inline">\(n\)</span>, è la matrice <span class="math inline">\(n\times n\)</span> avente tutti gli elementi della diagonale principale uguali al numero 1, mentre i restanti elementi sono uguali a 0. solitamente viene indicata con <span class="math inline">\(I_n\)</span>, o con <span class="math inline">\(I\)</span> se non ci sono ambiguità</p>
+<p>matrice di idoneità :<span class="math inline">\(I=\begin{pmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;1\end{pmatrix}\)</span></p>
+<h2 id="determinante-1"><span class="header-section-number">8.2</span> Determinante</h2>
 <p><strong>Def</strong>:il determinante è una funzione che ad ogni matrice quadrata A di ordine <span class="math inline">\(n\)</span> associa un numero reale, indicato con <span class="math inline">\(\det(A)\)</span>, in modo che valgano</p>
 <ol type="1">
 <li>se la riga <span class="math inline">\(j\)</span>-esima di <span class="math inline">\(A\)</span> è somma di due elementi $ v$ e $ u$ di <span class="math inline">\(\mathbb{R}^n\)</span>, allora il determinante di <span class="math inline">\(A\)</span> è la somma dei determinanti delle due matrici ottenute sostituendo alla riga <span class="math inline">\(j\)</span>-esima di <span class="math inline">\(A\)</span> rispettivamente $ u$ e $ v$</li>
@@ -601,6 +615,116 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <li>se due righe di <span class="math inline">\(A\)</span> sono uguali, allora il determinante di <span class="math inline">\(A\)</span> è nullo</li>
 <li>se <span class="math inline">\(I\)</span> è la matrice identità, allora <span class="math inline">\(\det(I)=1\)</span></li>
 </ol>
+<p><strong>Prep</strong>(proprietà del determinatne)siano <span class="math inline">\(A\)</span> e <span class="math inline">\(B\)</span> due matrici quadrate di ordine <span class="math inline">\(n\)</span></p>
+<ol type="1">
+<li>se <span class="math inline">\(B\)</span> è ottenuta da A scambiando due righe, allora <span class="math inline">\(\det(A)=-\det(B)\)</span></li>
+<li>se <span class="math inline">\(B\)</span> è ottenuta da <span class="math inline">\(A\)</span> sommando ad una riga di <span class="math inline">\(A\)</span> una qualunque combinazione lineare delle altre righe, allora <span class="math inline">\(\det (B)=\det (A)\)</span></li>
+<li>se <span class="math inline">\(A\)</span> è una matrice triangolare superiore o inferiore, ovvero i coefficienti al di sotto o al di sopra della diagonale principale sono tutti uguali a 0, allora il determinante di <span class="math inline">\(A\)</span> è il prodotto degli elementi che si trovano sulla sua diagonale principale</li>
+</ol>
+<h2 id="calcolo-del-determinante"><span class="header-section-number">8.3</span> Calcolo del determinante</h2>
+<h3 id="x2-o-3x3"><span class="header-section-number">8.3.1</span> 2x2 o 3x3</h3>
+<p><strong>2x2</strong> (la dimostrazine è sul libro e fa semplicemente i casi): <span class="math inline">\(\det \begin{pmatrix}a_{11}&amp;a_{12}\\a_{21}&amp;a_{22}\end{pmatrix}=\)</span> <span class="math inline">\(a_{11}a_{22}-a_{21}a_{12}\)</span></p>
+<p><strong>3x3</strong>:</p>
+<p><span class="math inline">\(A= \begin{pmatrix} a_{11}&amp;a_{12}&amp;a_{13}\\ a_{21}&amp;a_{22}&amp;a_{23}\\ a_{31}&amp;a_{32}&amp;a_{33} \end{pmatrix}\)</span></p>
+<p>La riscrivo come segue (ricopio le prime 2 colonne a fianco)</p>
+<p><span class="math inline">\(A= \begin{pmatrix} a_{11}&amp;a_{12}&amp;a_{13}&amp;a_{11}&amp;a_{12}\\ a_{21}&amp;a_{22}&amp;a_{23}&amp;a_{21}&amp;a_{22}\\ a_{31}&amp;a_{32}&amp;a_{33}&amp;a_{31}&amp;a_{32} \end{pmatrix}\)</span></p>
+<p><span class="math inline">\(det(A)=\)</span> (somma delle 3 linee verdi) - (somma delle 3 linee rosse)</p>
+<p><img src="vx_images/4185115268676.png" /></p>
+<p><img src="vx_images/96465297826199.png" /></p>
+<h3 id="qualsiasi-dimensione"><span class="header-section-number">8.3.2</span> Qualsiasi Dimensione</h3>
+<p>sia <span class="math inline">\(A\)</span> una matrice quadrata</p>
+<ol type="1">
+<li>se <span class="math inline">\(A\)</span> ha ordine 1, cioè <span class="math inline">\(A=(a_{11})\)</span> ha una riga e una colonna. poniamo <span class="math inline">\(\det(A)=a_{11}\)</span></li>
+<li>supponiamo ora di saper calcolare il determinante delle matrici di ordine <span class="math inline">\(n-1\)</span></li>
+</ol>
+<p>sia</p>
+<p><span class="math display">\[
+\Gamma_{ij}=(-1)^{i+j}\det(A_{ij})
+\]</span></p>
+<p>allora</p>
+<p><span class="math display">\[
+\det(A)=a_{11}\Gamma_{11}+a_{12}\Gamma_{12}+...+a_{1n}\Gamma_{1n}=\\
+\sum^n_{k=1}a_{1k}\Gamma_{1k}
+\]</span></p>
+<h2 id="teorema-di-binet"><span class="header-section-number">8.4</span> Teorema di Binet</h2>
+<p>Sia <span class="math inline">\(A,B \in M_{n,n}(\mathbb{R})\)</span> allora <span class="math inline">\(\det(AB)=det(A)\times \det(B)\)</span></p>
+<h2 id="matrice-invertibile"><span class="header-section-number">8.5</span> Matrice Invertibile</h2>
+<p><strong>Def</strong>: Sia <span class="math inline">\(a \in m_{n,n}(\mathbb{r})\)</span> si dice invertibile se esisete una matrice <span class="math inline">\(B\in M_{n,n}(\mathbb{R})\)</span> tale che <span class="math inline">\(AB=I=BA\)</span> (i è la matrice d’identità)</p>
+<p><strong>prop</strong>: <span class="math inline">\(a \in m_{n,n}(\mathbb{r})\)</span> è invertibile <span class="math inline">\(\iff \det(A)\neq 0\)</span></p>
+<details>
+<p><summary> dimostrazione </summary></p>
+<p>Ip Sia A invertibile e sia B l’inversa, quindi <span class="math inline">\(AB=I\)</span> per il teorema di binet, il <span class="math inline">\(\det(AB)=\det(A)\times \det(B)\)</span> essendo che il determinante I è uguale a uno il determinante deve essere diverso da zero</p>
+<p>(<span class="math inline">\(\det(A^{-1})=\frac{1}{\det(B)}\)</span>)</p>
+<p>Per determinare se A è diverso da zero si può costruire l’inversa di A nel modo seguente.</p>
+<p><span class="math display">\[
+(A^{-1})_{ij}=\frac{1}{\det A }(-1)^{i+j} \det(A_{ij})
+\]</span></p>
+</details>
+<h2 id="gauss-per-il-calcolo-dellinversa"><span class="header-section-number">8.6</span> Gauss per il calcolo dell’inversa</h2>
+<p>Calcoliamo l’inversa con gauss. Si scrive la matrice <span class="math inline">\(n\times 2n,\space A |I\)</span> con l’algoritmo di gauss si arriva ad avere <span class="math inline">\(I|B\)</span>, B è l’inversa di A. Una volta che A ridotta a scala per ottenere I, prima si mettono tutti i pivot=1, si applica l’algoritmo di gauss “a ritroso”</p>
+<h2 id="teoremone"><span class="header-section-number">8.7</span> Teoremone</h2>
+<p><strong>Teorema</strong>sia <span class="math inline">\(F:\mathbb{R}^n\to\mathbb{R}^n\)</span> applicazione lineare e sia <span class="math inline">\(A\)</span> la matrice ad essa associata</p>
+<p><span class="math inline">\(F=L_A, F(\underline x)=A\underline x\)</span> (non necessario)</p>
+<p>le seguenti affermazioni sono equivalenti</p>
+<ol type="1">
+<li><span class="math inline">\(F\)</span> è un isomorfismo (iniettiva e suriettiva)</li>
+<li><span class="math inline">\(F\)</span> è iniettiva</li>
+<li><span class="math inline">\(F\)</span> è suriettiva</li>
+<li><span class="math inline">\(\dim(Im\ F)=n\)</span></li>
+<li><span class="math inline">\(rg(A)=n\)</span></li>
+<li>le colonne di <span class="math inline">\(A\)</span> sono linearmente indipendenti</li>
+<li>le righe di <span class="math inline">\(A\)</span> sono linearmente indipendenti</li>
+<li>il sistema <span class="math inline">\(A x=0\)</span> ha un’unica soluzione</li>
+<li><span class="math inline">\(\forall b \in \mathbb{R}^n\)</span> il sistema <span class="math inline">\(A x= b\)</span> ha un’unica soluzione</li>
+<li><span class="math inline">\(A\)</span> è invertibile</li>
+<li><span class="math inline">\(\det(A)\ne0\)</span></li>
+</ol>
+<details>
+<p><summary> dimostrazione </summary></p>
+<p>Per (.1) 1,2,3 sono equivalenti.</p>
+<p>3 <span class="math inline">\(\Rightarrow\)</span> 4 perché <span class="math inline">\(F\)</span> suriettiva <span class="math inline">\(\Rightarrow\)</span> <span class="math inline">\(ImF=\mathbb{R}^n\)</span> ha dimensione <span class="math inline">\(n\)</span></p>
+<p>4 <span class="math inline">\(\Rightarrow\)</span> 5 perché <span class="math inline">\(rg(A)=dim(Im(F))\)</span> per (.2)</p>
+<p>5 <span class="math inline">\(\Rightarrow\)</span> 6 per def. di rango di una matrice</p>
+<p>6 <span class="math inline">\(\Rightarrow\)</span> 7 perché <span class="math inline">\(rr(A)=rg(A)\)</span></p>
+<p>7 <span class="math inline">\(\Rightarrow\)</span> 8 perché se righe di <span class="math inline">\(A\)</span> lin. indip. quando si applica Gauss per risolvere <span class="math inline">\(Ax=0\)</span> si trova una matrice a scala con <span class="math inline">\(n\)</span> pivot, quindi soluzione unica</p>
+<p>8 <span class="math inline">\(\Rightarrow\)</span> 9 se il sistema <span class="math inline">\(Ax=0\)</span> ha soluzione unica, riducendo a scala <span class="math inline">\(A\)</span> si ottiene <span class="math inline">\(A&#39;\)</span> con esattamente <span class="math inline">\(n\)</span> pivot, quindi riducendo a scala <span class="math inline">\((A|b)\)</span> si ottiene <span class="math inline">\((A&#39;|b&#39;)\)</span> che ha <span class="math inline">\(n\)</span> pivot (quelli di <span class="math inline">\(A&#39;\)</span>), quindi <span class="math inline">\(Ax=b\)</span> ha souzione unica</p>
+<p>9 <span class="math inline">\(\Rightarrow\)</span> 2 per (.3) basta mostrare <span class="math inline">\(\ker F= 0\)</span>, ma <span class="math inline">\(\ker F\)</span> è formato dalle soluzioni del sistema lineare omogeneo <span class="math inline">\(Ax=0\)</span>, e grazie al 9, prendendo <span class="math inline">\(x=0\)</span> esso ha solo una soluzione, che deve per forza essere nulla, quindi <span class="math inline">\(F\)</span> iniettiva</p>
+<p>Quindi da 2 a 9 è dimostrato che sono equivalenti.</p>
+<p>1 <span class="math inline">\(\Rightarrow\)</span> 10 sia <span class="math inline">\(G\)</span> l’inversa di <span class="math inline">\(F\)</span>, <span class="math inline">\(F \circ G = G \circ F = id_{\mathbb{R}^n}\)</span>. Sia <span class="math inline">\(B\)</span> la matrice associata a <span class="math inline">\(G\)</span> rispetto alla base canonica, allora <span class="math inline">\(AB=BA=I\)</span>, quindi <span class="math inline">\(B\)</span> inversa di <span class="math inline">\(A\)</span>.</p>
+<p>10 <span class="math inline">\(\Rightarrow\)</span> 1 perché se <span class="math inline">\(B\)</span> inversa di <span class="math inline">\(A\)</span> e <span class="math inline">\(L_B: \mathbb{R}^n \longrightarrow \mathbb{R}^n\)</span> è l’applicazione lineare associata, allora <span class="math inline">\(L_B\)</span> è l’inversa di <span class="math inline">\(F\)</span></p>
+<p>10 è equivalente a 11 per (.4)</p>
+<hr />
+<p>(.1) se <span class="math inline">\(dim V&gt;dimW\)</span>, non esistono applicazioni lineari iniettive da <span class="math inline">\(V\)</span> in <span class="math inline">\(W\)</span> se <span class="math inline">\(dimV&lt;dimW\)</span>, non esistono applicazioni suriettive da <span class="math inline">\(V\)</span> in <span class="math inline">\(W\)</span></p>
+<p>(.2) se si legge <span class="math inline">\(A\)</span> come la matrice associata all’applicazione lineare <span class="math inline">\(L_A:\mathbb{R}^n \longrightarrow \mathbb{R}^m\)</span> rispetto alle basi canoniche, allora il rango colonne di <span class="math inline">\(A\)</span> è la dimensione dell’immagine di <span class="math inline">\(L_A\)</span></p>
+<p>(.3) sia <span class="math inline">\(L:V \longrightarrow W\)</span> un’applicazione lineare:</p>
+<ol type="1">
+<li><span class="math inline">\(L\)</span> iniettiva <span class="math inline">\(\Leftrightarrow\)</span> <span class="math inline">\(\ker L= 0_V\)</span></li>
+<li><span class="math inline">\(L\)</span> suriettiva <span class="math inline">\(\Leftrightarrow ImL=W\)</span>, cioé l’immagine coincide col codominio</li>
+</ol>
+<p>(.4) la matrice <span class="math inline">\(A\)</span> è invertibile <span class="math inline">\(\Leftrightarrow\)</span> <span class="math inline">\(\det A \neq 0\)</span></p>
+</details>
+<blockquote>
+<p>Nota:{Soluzione di <span class="math inline">\(Ax=b\)</span>}=<span class="math inline">\(F^{-1}(b)\)</span>=<span class="math inline">\(\{v+z|z\in \ker F\}\)</span></p>
+</blockquote>
+<h1 id="cambio-di-base"><span class="header-section-number">9</span> Cambio di Base</h1>
+<p>sia <span class="math inline">\(F:V\to W\)</span> lineare dove V e W sono spazi vettoriali</p>
+<p><span class="math inline">\(\beta={v_1,\dots,v_n}\)</span> base di V <span class="math inline">\(\beta&#39;={w_1,\dots,w_n}\)</span> base di W</p>
+<p>Dove <span class="math inline">\(\beta\beta&#39;\)</span> son basi ordinate</p>
+<p>esiste una matrice <span class="math inline">\(A_{\beta\beta&#39;}\in M_{n,m}(\mathbb{R})\)</span> tale che <span class="math inline">\((F(v))_{\beta&#39;}=A_{\beta\beta&#39;} \cdot (v)_\beta\)</span></p>
+<p><span class="math inline">\(A_{\beta\beta&#39;}\)</span> si dice la matrice associata ad <span class="math inline">\(F\)</span> rispetto alle basei <span class="math inline">\(\beta\)</span> (def dominio) e <span class="math inline">\(\beta&#39;\)</span> (del codominio)</p>
+<p><span class="math inline">\(A_{\beta\beta&#39;}=\begin{pmatrix}F(v_1)_{\beta&#39;}\dots F(v_n)_{\beta&#39;}\end{pmatrix}\)</span></p>
+<p>Nella i-esima colonna di <span class="math inline">\(A_{\beta\beta&#39;}\)</span> ci sono le coordinate di <span class="math inline">\(F(v_i)\)</span> rispetto alla base <span class="math inline">\(\beta&#39;\)</span>, dove <span class="math inline">\(v_i\)</span> è l’i-esimo vettore della base <span class="math inline">\(\beta\)</span></p>
+<details>
+<p><summary> dimostrazione </summary></p>
+<p>TODO:</p>
+</details>
+<h2 id="notazione"><span class="header-section-number">9.1</span> Notazione</h2>
+<p>quando <span class="math inline">\(V=W\)</span> e <span class="math inline">\(F=id\)</span> e <span class="math inline">\(\beta=\beta&#39;=\mathbb{C}\)</span></p>
+<p>le matrici associate all’identità verranno indicate con <span class="math inline">\(I_{\beta\beta&#39;}\)</span></p>
+<p><strong>osservazione</strong> <span class="math inline">\(F:\mathbb{R}^n\to\mathbb{R}^m\)</span>, <span class="math inline">\(\beta=\beta&#39;=\mathbb{C}, A_{\mathbb{C}\mathbb{C}&#39;}\)</span> è proprio la solita <span class="math inline">\(A\)</span> quindi <span class="math inline">\((w)_{\mathbb{C}}=w\)</span></p>
+<blockquote>
+<p>Nota: La composizione di applicazioni lineari, è compatibile per il prodotto righe per colonne con matrici anche nel aso di basi qualsiasi</p>
+</blockquote>
 <button style="position: fixed; bottom: 20px; right: 30px; z-index: 99; border: none; outline: none; cursor: pointer; padding: 9px; border-radius: 8px; font-size: 18px; background: var(--dracula-current-line); color: var(--dracula-background);" onclick=" document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">
     top
 </button>

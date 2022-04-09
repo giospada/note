@@ -164,6 +164,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="#quick-sort"><span class="toc-section-number">8.4</span> Quick Sort</a></li>
 <li><a href="#marge-sort"><span class="toc-section-number">8.5</span> Marge Sort</a></li>
 <li><a href="#heapsort"><span class="toc-section-number">8.6</span> HeapSort</a></li>
+<li><a href="#counting-sort"><span class="toc-section-number">8.7</span> Counting Sort</a></li>
+<li><a href="#bucket-sort"><span class="toc-section-number">8.8</span> Bucket Sort</a></li>
+<li><a href="#radix-sort"><span class="toc-section-number">8.9</span> Radix Sort</a></li>
+</ul></li>
+<li><a href="#code-priorità"><span class="toc-section-number">9</span> Code Priorità</a><ul>
+<li><a href="#d-heap"><span class="toc-section-number">9.1</span> D Heap</a><ul>
+<li><a href="#implementazione-1"><span class="toc-section-number">9.1.1</span> Implementazione</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#unionfind"><span class="toc-section-number">10</span> UnionFind</a><ul>
+<li><a href="#implementazioni"><span class="toc-section-number">10.1</span> Implementazioni</a><ul>
+<li><a href="#quick-find"><span class="toc-section-number">10.1.1</span> Quick Find</a></li>
+<li><a href="#quick-union"><span class="toc-section-number">10.1.2</span> Quick Union</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -691,6 +705,68 @@ T(n)=\Bigg\lbrace  \begin{matrix}1\\T(n-1)+T(n-2)+1\end{matrix}\quad \frac{\text
 </details>
 <p><strong>costo computaizonale</strong>: <span class="math inline">\(\Theta (n \log n)\)</span> (metodo dell’esperto <span class="math inline">\(T(n)=2T\Bigl(\frac{n}{2}\Bigr)+n\)</span>)</p>
 <h2 id="heapsort"><span class="header-section-number">8.6</span> HeapSort</h2>
+<p>Crea una max heap con in <span class="math inline">\(O(n)\)</span> poi per elminima l’elemento più grande e ristabilisce la heap, inserisce l’lemento appena tolto infondo <span class="math inline">\(O(\log n)\)</span>(nella parte che non è più nella heap) finchè la heap non è vuota.</p>
+<p><strong>costo computaizonale</strong>: <span class="math inline">\(\Theta (n \log n)\)</span></p>
+<h2 id="counting-sort"><span class="header-section-number">8.7</span> Counting Sort</h2>
+<p>Può essere utilizzato solo su un array contentente valori da 0 a k, conta la ricorrenza di ogni elemento in un array di dimensione k.</p>
+<details>
+<p><summary> implementazionoe </summary></p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb8-1"><a href="#cb8-1"></a><span class="kw">public</span> <span class="dt">static</span> <span class="dt">void</span> <span class="fu">countingSort</span>(<span class="dt">int</span>[] A, <span class="dt">int</span> k) {</span>
+<span id="cb8-2"><a href="#cb8-2"></a>    <span class="dt">int</span>[] Y = <span class="kw">new</span> <span class="dt">int</span>[k];</span>
+<span id="cb8-3"><a href="#cb8-3"></a>    <span class="dt">int</span> j = <span class="dv">0</span>;</span>
+<span id="cb8-4"><a href="#cb8-4"></a>    <span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; k; i++) Y[i] = <span class="dv">0</span>;</span>
+<span id="cb8-5"><a href="#cb8-5"></a>    <span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; A.<span class="fu">length</span>; i++) Y[A[i]]++;</span>
+<span id="cb8-6"><a href="#cb8-6"></a>    <span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; k; i++) {</span>
+<span id="cb8-7"><a href="#cb8-7"></a>        <span class="kw">while</span> (Y[i] &gt; <span class="dv">0</span>) {</span>
+<span id="cb8-8"><a href="#cb8-8"></a>            A[j] = i;</span>
+<span id="cb8-9"><a href="#cb8-9"></a>            j++;</span>
+<span id="cb8-10"><a href="#cb8-10"></a>            Y[i]--;</span>
+<span id="cb8-11"><a href="#cb8-11"></a>        }</span>
+<span id="cb8-12"><a href="#cb8-12"></a>    }</span>
+<span id="cb8-13"><a href="#cb8-13"></a>}</span></code></pre></div>
+</details>
+<p><strong>costo computazionale</strong> <span class="math inline">\(O(n+k)\)</span></p>
+<h2 id="bucket-sort"><span class="header-section-number">8.8</span> Bucket Sort</h2>
+<p>Bucket sort è come il counting, ma al posto di contare i valori si tiene una linked list che contiene tutti i gli oggetti da ordinare</p>
+<p><strong>costo computazionale</strong>: <span class="math inline">\(O(n+k)\)</span></p>
+<h2 id="radix-sort"><span class="header-section-number">8.9</span> Radix Sort</h2>
+<h1 id="code-priorità"><span class="header-section-number">9</span> Code Priorità</h1>
+<h2 id="d-heap"><span class="header-section-number">9.1</span> D Heap</h2>
+<blockquote>
+<p>la d heap è una heap non binaria infatti ogni nodo ha d figli</p>
+</blockquote>
+<p><strong>Operazioni</strong></p>
+<ul>
+<li><code>findMin() → elem</code> Restituisce un elemento associato alla chiave minima</li>
+<li><code>insert(elem e, chiave k)</code> Inserisce un nuovo elemento e con associata la chiave k</li>
+<li><code>delete(elem e)</code> Rimuove un elemento dalla coda (si assume di avere accesso diretto a tale elemento e)</li>
+<li><code>deleteMin()</code> Rimuove un elemento associato alla chiave minima</li>
+<li><code>increaseKey(elem e, chiave d)</code> Incrementa la chiave dell’elemento e della quantità d (si assume di avere accesso diretto a tale elemento e)</li>
+<li><code>decreaseKey(elem e, chiave d)</code> Decrementa la chiave dell’elemento e della quantità d (si assume di avere accesso diretto a tale elemento e)</li>
+</ul>
+<h3 id="implementazione-1"><span class="header-section-number">9.1.1</span> Implementazione</h3>
+<p>Implementazione con array, dal nodo i si può navigare:</p>
+<ul>
+<li><strong>l’ultimo figlio</strong> è in posizione <span class="math inline">\((i*d)+1\)</span></li>
+<li><strong>il primo figlio</strong> è in posizione <span class="math inline">\(((i-1)*d)+2\)</span></li>
+<li><strong>il padre</strong> è in posizione <span class="math inline">\(\lceil (i-1)/d\rceil\)</span></li>
+</ul>
+<h1 id="unionfind"><span class="header-section-number">10</span> UnionFind</h1>
+<blockquote>
+<p>È una struttura dati che mantiene degli insiemi disgiunti, permette di sapere se due elemente sono disgiunti e di unirli nello stesso set</p>
+</blockquote>
+<p><strong>Operazioni</strong></p>
+<ul>
+<li><code>union</code>: unisce due set disgiunti</li>
+<li><code>find</code>: trova il set di un elemento</li>
+</ul>
+<h2 id="implementazioni"><span class="header-section-number">10.1</span> Implementazioni</h2>
+<h3 id="quick-find"><span class="header-section-number">10.1.1</span> Quick Find</h3>
+<p>Per implementare il quick find si utilizza memorizza tutto in un albero di altezza 1, per fare ciò si diminuisce il costo di find a <span class="math inline">\(O(1)\)</span> ma il costo di union va a <span class="math inline">\(O(n)\)</span> nel caso peggiore</p>
+<p><strong>euristica size</strong>: memorizza in ogni nodo la size del sottoalbero e quando deve fare l’union aggiunge gli elementi dell’albero più piccolo</p>
+<h3 id="quick-union"><span class="header-section-number">10.1.2</span> Quick Union</h3>
+<p>Per implementare il quick union l’albero non viene riaggiustato, quindi nel caso peggiore crea un albero che è una lista quindi abbiamo il costo peggiore del find in <span class="math inline">\(O(n)\)</span> e quello di union <span class="math inline">\(O(1)\)</span></p>
+<p><strong>euristica rank</strong>: questa euristica mantiene un array dove ogni nodo mette anche la lunghezza la size del subtree</p>
 <button style="position: fixed; bottom: 20px; right: 30px; z-index: 99; border: none; outline: none; cursor: pointer; padding: 9px; border-radius: 8px; font-size: 18px; background: var(--dracula-current-line); color: var(--dracula-background);" onclick=" document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">
     top
 </button>
