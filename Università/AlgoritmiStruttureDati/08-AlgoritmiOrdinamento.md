@@ -211,6 +211,56 @@ private static void merge(Comparable A[], int i1, int f1, int f2) {
 ## HeapSort
 
 
+Crea una max heap con in $O(n)$ poi per elminima l'elemento più grande e ristabilisce la heap, inserisce l'lemento appena tolto infondo  $O(\log n)$(nella parte che non è più nella heap) finchè la heap non è vuota.
+
+
+**costo computaizonale**: $\Theta (n \log n)$ 
+
+
+## Counting Sort
+
+Può essere utilizzato solo su un array contentente valori da 0 a k, conta la ricorrenza di ogni elemento in un array di dimensione k.
+
+<details>
+<summary>
+implementazionoe
+</summary>
+
+```java
+public static void countingSort(int[] A, int k) {
+    int[] Y = new int[k];
+    int j = 0;
+    for (int i = 0; i < k; i++) Y[i] = 0;
+    for (int i = 0; i < A.length; i++) Y[A[i]]++;
+    for (int i = 0; i < k; i++) {
+        while (Y[i] > 0) {
+            A[j] = i;
+            j++;
+            Y[i]--;
+        }
+    }
+}
+```
+
+</details>
+
+
+**costo computazionale** $O(n+k)$
+
+
+##  Bucket Sort
+
+Bucket sort è come il counting, ma al posto di contare i valori si tiene una linked list che contiene tutti i gli oggetti da ordinare
+
+**costo computazionale**: $O(n+k)$
+
+
+## Radix Sort
+
+
+
+
+
 
 
 

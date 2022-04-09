@@ -53,24 +53,6 @@ dimostrazione
 
 ## Differenziabilità
 
-Riprendiamo prima alcuni concetti
-
-### o piccolo 
-
-
-**Def**: Sia $A \subseteq \mathbb{R}^2,$ un insieme aperto contentente $(0,0) \in A$, sia  $g:A \to \mathbb{R}$, e $p \ge 0$. Si scrive $g(h,k)=o(|(h,k)|^p)$ per $(h,k) \to (0,0)$ se  vale $\forall \varepsilon >0,\space \exists \delta >0$ tale che $\biggl |\frac{g(h,k)}{||(h,k)^p||}\biggr |<\varepsilon$ $\forall (h,k) \in A \cap B((0,0)\delta)$ 
-
-
-<details>
-<summary>
-esempi
-</summary>
-
-![](vx_images/145026305615214.png)
-</details>
-
-
-### Definizione di Funzione differenziabile
 
 > NOTA: in dimensione uno dire differenziabile e derivabile è la stessa cosa
 
@@ -83,6 +65,23 @@ esempi
 
 
 Formule Taylor per f del primo ordine con punto $(\bar{x},\bar{y})$ è $f(\bar{x},\bar{y})+D_x f(\bar{x},\bar{y})h + D_y f(\bar{x},\bar{y})k+o(|(|h,k)|)$
+
+<details>
+<summary>
+o piccolo 
+
+</summary>
+
+
+
+**Def**: Sia $A \subseteq \mathbb{R}^2,$ un insieme aperto contentente $(0,0) \in A$, sia  $g:A \to \mathbb{R}$, e $p \ge 0$. Si scrive $g(h,k)=o(|(h,k)|^p)$ per $(h,k) \to (0,0)$ se  vale $\forall \varepsilon >0,\space \exists \delta >0$ tale che $\biggl |\frac{g(h,k)}{||(h,k)^p||}\biggr |<\varepsilon$ $\forall (h,k) \in A \cap B((0,0)\delta)$ 
+
+
+esempi
+
+![](vx_images/145026305615214.png)
+
+</details>
 
 
 ###  Taylor

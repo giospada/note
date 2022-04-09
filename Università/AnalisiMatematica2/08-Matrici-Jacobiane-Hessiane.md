@@ -179,8 +179,32 @@ $q(h) = ae^2 + 2be + c > 0$ (già diviso per h2 alla seconda), prendendo il dete
 
 </details>
 
-### Conseguenze (massimo e minimo)
+## Formula di taylor di grado secondo
 
-Questa cosa ci piace per calcolare
+Sia f di classe $C^2$ su $A\subseteq \mathbb{R}^2$ aperto. Allora per ogni $\bar{x}=(x_1,\dots,x_n)\in A$  vale la formula:
+
+$$
+T_2(\bar{x}+h)=f(\bar{x})+<\nabla f(\bar{x}),h> + \frac{1}{2} 
+$$
+
+TODO:![](vx_images/569811914268678.png)
+
+## Teorema di classificazione dei punti
+
+**Teorema**: Sia f $A\subseteq \mathbb{R}^2$ aperto $f:A \to \mathbb{R}$, classe $C^2$ sia $\bar{x}\in A$ critico:
+- se $Hf(\bar{x})>0\implies \bar{x}$  è minimo locale
+- se $Hf(\bar{x})<0\implies \bar{x}$  è massimo locale
+- se $Hf(\bar{x})=0\implies \bar{x}$  è di sella
 
 
+Ricordo che se $A= A^t\in\mathbb{R}^{n\times n}$, $A>0\implies \exists m>0$  tale che $<Ah,h> \ge m|h^2|,\space \fo$
+
+
+
+## Funzioni convesse (derivabile)
+
+
+![](vx_images/243313216268678.png)
+
+
+In $\mathbb{R}$ la definizione di concava e convessa sono $f''(x)>0,\space \forall x$ 

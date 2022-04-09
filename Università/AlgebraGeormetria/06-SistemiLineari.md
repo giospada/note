@@ -11,7 +11,7 @@
 **Def**: Sia $A \in M_{m,n}(\mathbb{R})$ , $rr(A)=\dim(<\text{righe di A}>)$, $rc(A)= \dim(<\text{colonne di A}>)$
 
 
-**Prep**(6.2.3): Se $A \in M_{nmn}(\mathbb{R})$ allora $rr(A)=rc(A)$
+**Prep**(6.2.3): Se $A \in M_{n,m}(\mathbb{R})$ allora $rr(A)=rc(A)$
 
 
 ## Teorema di Rouchè-Capelli
