@@ -120,6 +120,14 @@
 <li><a href="#funzioni-convesse-derivabile"><span class="toc-section-number">10.8</span> Funzioni convesse (derivabile)</a></li>
 <li><a href="#formula-di-taylor-di-2-ordine"><span class="toc-section-number">10.9</span> Formula di Taylor di 2° ordine</a></li>
 <li><a href="#condizioni-sufficenti-per-minimi-massimi"><span class="toc-section-number">10.10</span> Condizioni sufficenti per minimi/ massimi</a></li>
+<li><a href="#def-funzione-convessa"><span class="toc-section-number">10.11</span> Def: Funzione Convessa</a><ul>
+<li><a href="#teorema-funzioni-convesse-derivabili"><span class="toc-section-number">10.11.1</span> Teorema funzioni convesse derivabili</a></li>
+<li><a href="#definizione-di-funzione-convessa"><span class="toc-section-number">10.11.2</span> Definizione di funzione convessa</a></li>
+</ul></li>
+<li><a href="#convessità-i-più-variabili"><span class="toc-section-number">10.12</span> Convessità i più variabili</a></li>
+<li><a href="#def-segmento-in-rn"><span class="toc-section-number">10.13</span> Def segmento in R^n</a></li>
+<li><a href="#def-insieme-convesso"><span class="toc-section-number">10.14</span> Def: Insieme convesso</a></li>
+<li><a href="#def-funzione-cnvessa-in-rn"><span class="toc-section-number">10.15</span> Def funzione cnvessa in R^n</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -872,6 +880,46 @@ det(A)=4-1=3
 <p>$$</p>
 <p>matrice definita negativa, e un terzo un terzo è un punto di massimo locale</p>
 </details>
+<h2 id="def-funzione-convessa"><span class="header-section-number">10.11</span> Def: Funzione Convessa</h2>
+<p><span class="math inline">\(f:A\to \mathbb{R},A \subseteq \mathbb{R}\)</span> , <span class="math inline">\(]a,b[\subseteq A\)</span>. f derivabile in <span class="math inline">\(]a,b[\)</span> si dice convessa in <span class="math inline">\(]a,b[\)</span> se <span class="math inline">\(\forall \bar{x}&lt;in ]a,b[\)</span> vale <span class="math inline">\(f(x)\ge f(\bar{x})+ f&#39;(\bar{x})+f&#39;(\bar{x})(x-\bar{x})\)</span></p>
+<h3 id="teorema-funzioni-convesse-derivabili"><span class="header-section-number">10.11.1</span> Teorema funzioni convesse derivabili</h3>
+<p><span class="math inline">\(f\)</span> derivabile su <span class="math inline">\(]a,b[\)</span> è convessa <span class="math inline">\(\iff\)</span> <span class="math inline">\(f&#39;\)</span> è crescente su <span class="math inline">\(]a,b[\)</span></p>
+<details>
+<p><summary> intuizione su 2 dimensioni </summary></p>
+<p>Se disegniamo una funzione concava se disegniamo le rette tangenti possiamo notare che il coefficente angolare aumenta con il’andare avanti della curva</p>
+</details>
+<details>
+<p><summary> dimostrazione </summary></p>
+<p><span class="math inline">\(\implies\)</span> <strong>Ip</strong>: f convessa, <strong>Tesi</strong> f’ crescente,</p>
+<p>Siano <span class="math inline">\(x_1,x_2 \in ]a,b[\)</span> <span class="math inline">\(\implies\)</span> <span class="math inline">\(f&#39;(x_1)\le f&#39;(x_2)\)</span></p>
+<p>scelgo <span class="math inline">\(x=x_1, y=x_1\)</span></p>
+<p><span class="math inline">\(f(x_2)\ge f(x_1)+f&#39;(x_1)(x_2-x_1)\)</span> scambio x_1 e x_2 <span class="math inline">\(f(x_1)\ge f(x_2)+f&#39;(x_2)(x_1-x_2)\)</span></p>
+<p>Sostituisco nella prima primitiva</p>
+<p><span class="math inline">\(f(x_2) \ge [ f(x_2)+ f&#39;(x_2)(x_1-x_2)]+f(x_1)(x_2-x_1)\)</span></p>
+<p><span class="math inline">\(0\ge (x_2-x_1)[-f&#39;(x_2)+f&#39;(x_2)]\)</span> <span class="math inline">\(\iff\)</span> scelgo <span class="math inline">\(x_x &gt; x_1\)</span> <span class="math inline">\(\implies\)</span> <span class="math inline">\(f&#39;(x_2) \ge f&#39;(x_1)\)</span> <span class="math inline">\(\iff\)</span> <span class="math inline">\(f&#39;(x_2- f&#39;(x_1)&gt;0\)</span></p>
+<p><span class="math inline">\(\implies\)</span> <strong>Ip</strong>: f’ crescente, <strong>Tesi</strong> f convessa</p>
+<p>da dim:<span class="math inline">\(\forall \bar{x},x\in ]a,b[\)</span> vale <span class="math inline">\(f(x) \ge f(\bar{x}) + f&#39;(\bar{x} (x-\bar{x})\)</span></p>
+<p>Caso 1: <span class="math inline">\(x&gt; \bar{x}\)</span></p>
+<p><span class="math inline">\(f(x)- f(\bar{x}( \ge f&#39;(x)(x-\bar{x})\)</span> uso lagrange in <span class="math inline">\([\bar{x},x]\)</span> <span class="math inline">\(\exists c \in ]\bar{x}, x [\)</span> tale che <span class="math inline">\(f(x)-f(\bar{x}) = f&#39;(c)(x-\bar{x})\)</span></p>
+<p>Caso 2: <span class="math inline">\(x&lt; \bar{x}\)</span></p>
+<p><span class="math inline">\(f(x)-f(\bar{x}) \ge f&#39;(\bar{x})(x-\bar{x})\)</span><br />
+<span class="math inline">\(f&#39;(c)(x-\bar{x})\ge f&#39;(\bar{x})(x-\bar{x})\)</span> <span class="math inline">\(\iff\)</span> <span class="math inline">\(f&#39;(c)(x-\bar{x})\le f&#39;(\bar{x})(\bar{x}-x)\)</span></p>
+</details>
+<p><strong>Crollario</strong> <span class="math inline">\(f:]a,b[ \to \mathbb{R}\)</span> derivabile 2 volte in <span class="math inline">\(]a,b[\)</span> Allora f è convessa <span class="math inline">\(\iff\)</span> <span class="math inline">\(f&#39;&#39;(x)\ge 0\)</span> <span class="math inline">\(\forall x \in ]a,b[\)</span></p>
+<p>Dim: f convessa <span class="math inline">\(\iff\)</span> <span class="math inline">\(f&#39;\)</span> corescente su <span class="math inline">\(]a,b[\)</span> <span class="math inline">\(\iff\)</span> <span class="math inline">\(f&#39;&#39;&gt;0\)</span> su <span class="math inline">\(]a,b[\)</span></p>
+<h3 id="definizione-di-funzione-convessa"><span class="header-section-number">10.11.2</span> Definizione di funzione convessa</h3>
+<p><span class="math inline">\(f\)</span> è convessa su <span class="math inline">\(]a,b[\)</span> <span class="math inline">\(\iff\)</span> <span class="math inline">\(\forall \bar{x} \in ]a,b[\)</span> <span class="math inline">\(\exists m \in \mathbb{R}\)</span> tale che <span class="math inline">\(f(x)\ge f(\bar{x})+ m (x-\bar{x})\)</span> <span class="math inline">\(\forall x \in ]a,b[\)</span></p>
+<p>f potrebbe non essere derivablile</p>
+<h2 id="convessità-i-più-variabili"><span class="header-section-number">10.12</span> Convessità i più variabili</h2>
+<p><span class="math inline">\(A\subseteq \mathbb{R}^n, f: A \to \mathbb{R}\)</span></p>
+<h2 id="def-segmento-in-rn"><span class="header-section-number">10.13</span> Def segmento in R^n</h2>
+<p>Dati <span class="math inline">\(x,y \in \mathbb{R}^n\)</span> il segmento individuato da x,y è l’insieme <span class="math inline">\(\{ x+t(y-x)\in \mathbb{R} | t \in [0,1]\}\)</span></p>
+<h2 id="def-insieme-convesso"><span class="header-section-number">10.14</span> Def: Insieme convesso</h2>
+<p><span class="math inline">\(\mathbb{R}^n,\)</span> <span class="math inline">\(A \subseteq \mathbb{R}^n\)</span> Si dice che A è convesso se <span class="math inline">\(\forall x,y \in A\)</span> vale <span class="math inline">\([x,y]\subseteq A\)</span></p>
+<h2 id="def-funzione-cnvessa-in-rn"><span class="header-section-number">10.15</span> Def funzione cnvessa in R^n</h2>
+<p><span class="math inline">\(A \subseteq \mathbb{R}^n\)</span> , A convesso, <span class="math inline">\(f: A \to \mathbb{R}\)</span> Si dice che f è convessa se ${x} A $ differenziabile</p>
+<p><span class="math inline">\(f(x)\ge f(\bar{x})+&lt;\nabla f(\bar{x}), (x-\bar{x})&gt;\)</span>, <span class="math inline">\(\forall x \in A\)</span></p>
+<p><strong>ordine</strong> torema di lagrange: <span class="math inline">\(f:\mathbb{R} \to \mathbb{R}\)</span>, <span class="math inline">\(\forall \bar{x}\)</span>, <span class="math inline">\(\forall x\)</span> si scrive <span class="math inline">\(f(x)=f(\bar{x})+f&#39;(c)(x-\bar{x})\)</span> Se f’ continua possi scrivere <span class="math inline">\(f(x)=f(\bar{x})+f&#39;(\bar{x})(x-\bar{x})+[f&#39;(c)- f&#39;(x)](x-\bar{x})\)</span></p>
 <button style="position: fixed; bottom: 20px; right: 30px; z-index: 99; border: none; outline: none; cursor: pointer; padding: 9px; border-radius: 8px; font-size: 18px; background: var(--dracula-current-line); color: var(--dracula-background);" onclick=" document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">
     top
 </button>

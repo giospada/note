@@ -122,6 +122,8 @@
 </ul></li>
 <li><a href="#cambio-di-base"><span class="toc-section-number">9</span> Cambio di Base</a><ul>
 <li><a href="#notazione"><span class="toc-section-number">9.1</span> Notazione</a></li>
+<li><a href="#temp"><span class="toc-section-number">9.2</span> temp</a></li>
+<li><a href="#cambio-di-base-1"><span class="toc-section-number">9.3</span> Cambio di base</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -725,6 +727,17 @@ A=\begin{pmatrix}1 &amp; -1&amp;-1&amp;2&amp;-4\\0&amp;0&amp;-1&amp;3&amp;5\\0&a
 <blockquote>
 <p>Nota: La composizione di applicazioni lineari, è compatibile per il prodotto righe per colonne con matrici anche nel aso di basi qualsiasi</p>
 </blockquote>
+<h2 id="temp"><span class="header-section-number">9.2</span> temp</h2>
+<p>Mtrice associata ad un applicazione lin <span class="math inline">\(F: V \to W\)</span> rispetto alle basi <span class="math inline">\(\beta=\{v_1,\dots,v_n\}\)</span> del dominio di <span class="math inline">\(\beta&#39;\)</span> del codominio notazione <span class="math inline">\(A_{\beta \beta&#39;}=M_{\beta \beta&#39;}(F)=\begin{pmatrix} F(v_1)_{\beta&#39;} &amp; \dots &amp;F(v_n)_{\beta&#39;}\\ \vdots &amp;\vdots &amp; \vdots \end{pmatrix}\)</span> vale <span class="math inline">\((F(v))_{\beta&#39;}=A_{\beta\beta&#39;} \cdot (v)_{\beta}\)</span> caso particolare <span class="math inline">\(F= id, \mathbb{R}^n\to \mathbb{R}^n\)</span> ,<span class="math inline">\(\beta\)</span> base <span class="math inline">\(I_{\beta\beta}=M_{\beta\beta}(id)=\begin{pmatrix} 1&amp; \dots &amp;0 \\ \vdots &amp; \vdots &amp; \vdots \\ 0 &amp;\dots &amp;1 \end{pmatrix}\)</span></p>
+<p>F=id <span class="math inline">\(\beta\)</span> nel dominio <span class="math inline">\(\mathbb{C}\)</span> nel codominio <span class="math inline">\(I_{\beta \mathbb{C}}=M_{\beta \mathbb{C}}(id)=\begin{pmatrix} v_1 &amp; \dots &amp; v_n \\ \vdots &amp;\vdots &amp; \vdots \end{pmatrix}\)</span> , <span class="math inline">\(\beta=\{v_1,\dots,v_n\}\)</span></p>
+<p><strong>Dim</strong>: <span class="math inline">\(\mathbb{R}^n_{\mathbb{C}} \to_{I_{C\beta}}\)</span> <span class="math inline">\(\mathbb{R}^n_{\beta}\)</span> <span class="math inline">\(\to_{I_{\beta C}} \mathbb{R}^n_{\mathbb{C}}\)</span> , <span class="math inline">\(I_{\beta \mathbb{C}} I_{\mathbb{C}\beta}=I_{\mathbb{C}\mathbb{C&#39;}}=I\)</span> <span class="math inline">\(=I_{\beta\beta}=I\)</span></p>
+<h2 id="cambio-di-base-1"><span class="header-section-number">9.3</span> Cambio di base</h2>
+<p>sia <span class="math inline">\(F: \mathbb{R}^n \longrightarrow \mathbb{R}R^m\)</span> un’applicazione lineare, <span class="math inline">\(A_{C,C&#39;}\)</span>, la matrice ad essa associata rispetto alle basi canoniche <span class="math inline">\(C, C&#39;\)</span> nel dominio e nel codominio rispettivamente. Allora la matrice associata a <span class="math inline">\(F\)</span> rispetto alle basi <span class="math inline">\(B\)</span> nel dominio e <span class="math inline">\(B&#39;\)</span> nel codominio è data da: <span class="math inline">\(A_{B,B&#39;}=I^{-1}_{B&#39;,C&#39;}A_{C,C&#39;}I_{B,C}\)</span> dove:</p>
+<ul>
+<li><span class="math inline">\(A_{C,C&#39;}\)</span> ha per colonne le coordinate delle immagini dei vettori della base canonica, cioé di <span class="math inline">\(F(e_1)...\ F(e_n)\)</span> rispetto alla base canonica di <span class="math inline">\(\mathbb{R}^m\)</span></li>
+<li><span class="math inline">\(I_{B&#39;,C&#39;}\)</span> ha per colonne le coordinate dei vettori della base <span class="math inline">\(B&#39;\)</span>, rispetto alla base canonica di <span class="math inline">\(\mathbb{R}^m\)</span></li>
+<li><span class="math inline">\(I_{B,C}\)</span> ha per colonna le coordinate dei vettori della base <span class="math inline">\(B\)</span>, rispetto alla base canonica di <span class="math inline">\(\mathbb{R}^n\)</span></li>
+</ul>
 <button style="position: fixed; bottom: 20px; right: 30px; z-index: 99; border: none; outline: none; cursor: pointer; padding: 9px; border-radius: 8px; font-size: 18px; background: var(--dracula-current-line); color: var(--dracula-background);" onclick=" document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">
     top
 </button>
