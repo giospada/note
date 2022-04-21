@@ -94,6 +94,21 @@ $\le|x|^2+|y|^2+2|x||y|$  ovvero $\leq (|x|+|y|)^2$
 </details>
 
 
+## Disuguaglianza di Cauchy-Schwarz
+
+
+$\forall x,y \in \mathbb{R}$ vale $|<x,y>| \le |x| \cdot |y|$
+
+<details>
+<summary>
+dimostrazione
+</summary>
+
+![](vx_images/513743215268691.png)
+
+</details>
+
+
 
 ## Distanza punti in R^n
 
